@@ -13,22 +13,26 @@ import Blog from "./Pages/Blog";
 import Contact from "./Pages/Contact";
 import Pricing from "./Pages/Pricing";
 import Footer from "./Components/Footer";
+import Checkout from "./Components/Checkout";
+import Login from "./Pages/Login";
+import Register from "./Pages/Register";
 
 export default function App() {
 	return (
 		<BrowserRouter>
 			<GlobalStateProvider>
 				<ProgressBar />
-				<Navbar />
 				<Routes>
 					<Route path="/" element={<Games />} />
 					<Route path="/books" element={<Books />} />
 					<Route path="/movies" element={<Movies />} />
 					<Route path="/blog" element={<Blog />} />
 					<Route path="/contact" element={<Contact />} />
-					<Route path="/pricing" element={<Pricing active={true}/>} />
+					<Route path="/pricing" element={<Pricing active={true} />} />
+					<Route path="/checkout" element={<Checkout />} />
+					<Route path="/login" element={<Login />} />
+					<Route path="/register" element={<Register />} />
 				</Routes>
-				<Footer />
 			</GlobalStateProvider>
 		</BrowserRouter>
 	);

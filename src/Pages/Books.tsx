@@ -1,17 +1,12 @@
+import Footer from "../Components/Footer";
+import Navbar from "../Components/Navbar";
+
 export default function Books() {
 	return (
 		<>
-			<br></br>
-			<br></br>
-			<br></br>
-			<br></br>
-			<br></br>
-			<br></br>
-			<br></br>
-			<br></br>
-			<br></br>
-			<br></br>
-			<h2>Books page</h2>
+			<Navbar />
+				<h2>Books page</h2>
+			<Footer />
 		</>
 	);
 }

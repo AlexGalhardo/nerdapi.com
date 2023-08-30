@@ -2,7 +2,7 @@ export default function Navbar() {
 	return (
 		<div className="fixed-top shadow-sm bg-light mb-5">
 
-			<nav className="container pt-2 pb-2 col-lg-12 navbar navbar-expand-lg fixed navbar-light">
+			<nav className="container pt-2 pb-2 col-lg-8 navbar navbar-expand-lg fixed navbar-light">
 
 				<div className="container-fluid">
 

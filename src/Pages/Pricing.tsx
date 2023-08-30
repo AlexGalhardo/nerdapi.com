@@ -1,6 +1,6 @@
 import { CSSProperties } from "react";
 
-export default function Pricing({ active }: {active: boolean}) {
+export default function Pricing({ active }: { active: boolean }) {
 	return (
 		<div className="container col-lg-7" style={containerPricing}>
 			<div className="row">
@@ -40,7 +40,7 @@ export default function Pricing({ active }: {active: boolean}) {
 										<li>Priority email support</li>
 										<li>Help center access</li>
 									</ul>
-									<button type="button" className="w-100 btn btn-lg btn-outline-danger">Let's Go</button>
+									<a href="/checkout" type="button" className="w-100 btn btn-lg btn-outline-danger">Let's Go</a>
 								</div>
 							</div>
 						</div>
@@ -61,7 +61,7 @@ export default function Pricing({ active }: {active: boolean}) {
 										<li>Phone and email support</li>
 										<li>Help center access</li>
 									</ul>
-									<button type="button" className="w-100 btn btn-lg btn-outline-primary">Let's Go</button>
+									<a href="/checkout" type="button" className="w-100 btn btn-lg btn-outline-primary">Let's Go</a>
 								</div>
 							</div>
 						</div>

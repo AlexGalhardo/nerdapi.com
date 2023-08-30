@@ -19,7 +19,7 @@ export default function Footer() {
 							</div>
 							<div className="col-lg-3"></div>
 							<div className="col-lg-12 text-center text-muted">
-								<small>&copy; <a className="text-primary" href="https://galhardo-telecom.up.railway.app/">Galhardo MicroSaaS</a> | CNPJ: 99.999.999/0000-00 | Rua Avenida Paulista, Nº 42, Centro, São Paulo - São Paulo | CEP 88888-888</small>
+								<small>&copy; Galhardo MicroSaaS | CNPJ: 99.999.999/0000-00 | Rua Avenida Paulista, Nº 42, Centro, São Paulo - São Paulo | CEP 88888-888</small>
 							</div>
 
 						</div>
