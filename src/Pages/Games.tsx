@@ -1,20 +1,4 @@
 import { CSSProperties, useCallback, useEffect, useState } from "react";
-// import useFetch from "../Hooks/useFetch";
-
-interface Game {
-	id: string;
-	title: string;
-	igdb_rating: number;
-	release_year: number;
-	release_date: Date;
-	cover: string;
-	igdb_url: string;
-	developer: string;
-	publisher: string;
-	platforms: string[];
-	genres: string[];
-	summary: string;
-}
 
 export default function Games() {
 
@@ -27,12 +11,7 @@ export default function Games() {
 	const [gamePlatforms, setGamePlatforms] = useState<string[]>([])
 	const [gameDeveloper, setGameDeveloper] = useState<string>()
 	const [gamePublisher, setGamePublisher] = useState<string>()
-	const [loading, setLoading] = useState(true);
-	const [error, setError] = useState<Error | null>(null);
-
-	// const { data, loading, error } = useFetch<Game[]>(
-	// 	`http://localhost:3000/games`,
-	// );
+	const [error, setError] = useState<string>()
 
 	const recommendRandomGame = useCallback(async () => {
 		const response = await fetch('https://api-games.alexgalhardo.com/games')
@@ -63,21 +42,13 @@ export default function Games() {
 				setGamePlatforms(game.platforms)
 				setGameDeveloper(game.developer)
 				setGamePublisher(game.publisher)
-				setLoading(false);
+				// setLoading(false);
 			})
 			.catch(error => {
 				setError(error);
-				setLoading(false);
+				// setLoading(false);
 			});
 	}, []);
-
-	if (loading) {
-		return <div>Loading...</div>;
-	}
-
-	if (error) {
-		return <div>Error: {error?.message}</div>;
-	}
 
 	return (
 		<div className="container" style={container}>

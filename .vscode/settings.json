@@ -58,5 +58,5 @@
 	"files.associations": {
 		"*.ts": "typescript"
 	},
-	"window.zoomLevel": 0
+	"window.zoomLevel": 1
 }

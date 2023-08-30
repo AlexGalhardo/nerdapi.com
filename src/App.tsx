@@ -9,6 +9,10 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap-icons/font/bootstrap-icons.css';
 import "./Style.css";
 import Navbar from "./Components/Navbar";
+import Blog from "./Pages/Blog";
+import Contact from "./Pages/Contact";
+import Pricing from "./Pages/Pricing";
+import Footer from "./Components/Footer";
 
 export default function App() {
 	return (
@@ -20,8 +24,11 @@ export default function App() {
 					<Route path="/" element={<Games />} />
 					<Route path="/books" element={<Books />} />
 					<Route path="/movies" element={<Movies />} />
+					<Route path="/blog" element={<Blog />} />
+					<Route path="/contact" element={<Contact />} />
+					<Route path="/pricing" element={<Pricing active={true}/>} />
 				</Routes>
-				{/* <Footer /> */}
+				<Footer />
 			</GlobalStateProvider>
 		</BrowserRouter>
 	);
