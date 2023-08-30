@@ -6,6 +6,14 @@ export default function Checkout() {
 
 			<div className="row">
 
+				<h2 className="text-center text-muted mb-4">
+					<a className="text-decoration-none" href="/">
+						<b className="appTitle fw-bold text-primary">
+							Galhardo MicroSaaS
+						</b>
+					</a>
+				</h2>
+
 				<form id="formCreditCard" action="/plan/premium/post" method="POST" />
 
 				<input type="text" name="plan_name" value="PREMIUM" hidden />
@@ -40,12 +48,19 @@ export default function Checkout() {
 					<div className="col-lg-6 mt-5">
 
 						<div id="credit-card" className="tab-pane fade show active">
-							<div className="form-floating mb-3 mt-3">
-								<input type="text" className="form-control" name="holder_name" id="holder_name" value="" />
-								<label htmlFor="holder_name">CARD_HOLDER_NAME</label>
+							<div className="form-group mb-2">
+								<span className="hidden-xs">
+									<h6 className="text-muted small">Card Holder Name</h6>
+								</span>
+								<div className="input-group">
+									<input type="text" className="form-control" name="holder_name" id="holder_name" value="" />
+								</div>
 							</div>
 
 							<div className="form-group mb-2">
+								<span className="hidden-xs">
+									<h6 className="text-muted small">Card Number</h6>
+								</span>
 								<div className="input-group">
 									<input type="text" name="card_number" placeholder="Credit Card Number" className="form-control" value="4242424242424242" required />
 									<div className="input-group-append"> <span className="input-group-text text-muted"> <i className="bi bi-credit-card h-100"></i> </span> </div>
@@ -65,7 +80,7 @@ export default function Checkout() {
 										</div>
 									</div>
 								</div>
-								<div className="col-sm-4">
+								<div className="col-sm-4" style={cvv}>
 									<div className="form-group mb-2">
 										<label data-toggle="tooltip" title="Digite os 3 dígitos de segurança atrás do Credit Card." />
 										<h6 className="text-muted small">CVV
@@ -77,8 +92,8 @@ export default function Checkout() {
 							</div>
 
 							<div>
-								<button type="submit" className="mt-1 mb-3 mt-3 btn btn-outline-success btn-block shadow w-100">
-									<span className="fw-bold">Pay $1.99 / Month</span>
+								<button type="submit" className="button btn-lg mt-1 mb-3 mt-3 btn btn-outline-success btn-block w-100">
+									<span className="fw-bold">Pay USD $ 4.99 / Month</span>
 								</button>
 							</div>
 
@@ -88,10 +103,16 @@ export default function Checkout() {
 
 				</div>
 
+				<div className="col-lg-12 text-center text-muted">
+					<small>&copy; Galhardo MicroSaaS 2023</small>
+				</div>
+
 			</div>
-
-
 
 		</div>
 	);
+}
+
+const cvv = {
+	marginTop: '-8px'
 }

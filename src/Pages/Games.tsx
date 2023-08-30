@@ -5,6 +5,7 @@ import Footer from "../Components/Footer";
 export default function Games() {
 
 	const [gameTitle, setGameTitle] = useState<string>()
+	const [gameIGDBLink, setGameIGDBLink] = useState<string>()
 	const [gameCover, setGameCover] = useState<string>()
 	const [gameSummary, setGameSummary] = useState<string>()
 	const [gameReleaseYear, setGameReleaseYear] = useState<number>()
@@ -20,6 +21,7 @@ export default function Games() {
 		const json = await response.json()
 		const game = json[Math.floor(Math.random() * json?.length)]
 		setGameTitle(game.title)
+		setGameIGDBLink(game.igdb_url)
 		setGameCover(game.cover)
 		setGameSummary(game.summary)
 		setGameReleaseYear(game.release_year)
@@ -36,6 +38,7 @@ export default function Games() {
 			.then(json => {
 				const game = json[Math.floor(Math.random() * json?.length)]
 				setGameTitle(game.title)
+				setGameIGDBLink(game.igdb_url)
 				setGameCover(game.cover)
 				setGameSummary(game.summary)
 				setGameReleaseYear(game.release_year)
@@ -60,7 +63,7 @@ export default function Games() {
 
 					<div className="col-lg-3 text-center">
 						<img id="game_image" src={gameCover} className="shadow mx-auto d-block w-75 image-fluid mb-3" alt="game_image" />
-						<button className="mt-3 w-80 btn btn-outline-primary shadow mb-3" onClick={recommendRandomGame}>
+						<button className="button mt-3 w-80 btn btn-lg btn-outline-primary mb-3" onClick={recommendRandomGame}>
 							<i className="bi bi-play-fill"></i>
 							Recommend Other Game
 						</button>
@@ -72,7 +75,7 @@ export default function Games() {
 
 							<div className="d-flex justify-content-between mb-3">
 
-								<a target="_blank" id="game_igdb_link" href="{{igdb_link}}" className="fs-3 card-link text-decoration-none">
+								<a target="_blank" id="game_igdb_link" href={gameIGDBLink} className="fs-3 card-link text-decoration-none">
 									<span id="game_title" className="fw-bold">{gameTitle} </span>
 									(<span id="game_year_release" className="text-muted">{gameReleaseYear}</span>)
 								</a>

@@ -12,34 +12,34 @@ export default function Blog() {
 
 			<form action="/login" method="POST">
 
-				<div className="form-floating mb-3">
-					<input value="test@gmail.com"
+				<div className="form-group mb-4 mt-5">
+					<label htmlFor="email" className="text-muted">Your Email Address</label>
+					<input value=""
 						type="email"
-						className="form-control"
+						className="fs-4 form-control"
 						id="email"
 						name="email"
 						pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
-						placeholder="Enter your email"
+						placeholder="Digit your email"
 						autoFocus
 						required />
-					<label htmlFor="email">Your Email Address</label>
 				</div>
 
-				<div className="form-floating mb-3">
-					<input type="password" className="mb-3 form-control" id="password" name="password" placeholder="Enter your password" required value="test123" />
-					<label htmlFor="password">Your Password</label>
+				<div className="form-group mb-4">
+					<label htmlFor="password" className="text-muted">Your Password</label>
+					<input type="password" className="fs-4 mb-3 form-control" id="password" name="password" placeholder="Digit your password" required value="" />
 				</div>
 
-				<div className="form-group">
-					<button type="submit" className="shadow mb-3 w-100 btn btn-success btn-block login-btn">Login</button>
+				<div className="form-group mb-5">
+					<button type="submit" className="button mb-3 w-100 btn btn-outline-success btn-lg btn-block login-btn fw-bold">Login</button>
 				</div>
-
-
-
 			</form>
 
+			<hr></hr>
+
 			<div className="text-center">
-				<p className="text-center mb-3">
+
+				<p className="text-center mb-3 mt-5">
 					<a href="/forgetPassword" className="text-decoration-none">
 						<b>Forget My Password</b>
 					</a>

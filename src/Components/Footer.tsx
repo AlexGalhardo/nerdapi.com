@@ -9,29 +9,20 @@ export default function Footer() {
 						<div className="row gy-4 gx-5">
 							<div className="col-lg-3"></div>
 							<div className="col-lg-6 col-md-6">
-								<p className="small text-muted">Receive new updates with our monthly newsletter!</p>
+								<p className="small text-muted text-center">Receive new updates with our monthly newsletter!</p>
 								<form action="#">
 									<div className="input-group mb-3">
 										<input className="form-control" type="text" placeholder="Digit your email" aria-label="Recipient's username" aria-describedby="button-addon2" />
-										<button className="btn btn-success fw-bold" id="button-addon2" type="button">Lets Goo!</button>
+										<button className="button btn btn-outline-success fw-bold" id="button-addon2" type="button">Lets Goo!</button>
 									</div>
 								</form>
 							</div>
 							<div className="col-lg-3"></div>
 							<div className="col-lg-12 text-center text-muted">
-								<small>&copy; Galhardo MicroSaaS | CNPJ: 99.999.999/0000-00 | Rua Avenida Paulista, Nº 42, Centro, São Paulo - São Paulo | CEP 88888-888</small>
+								<small>&copy; Galhardo MicroSaaS 2023</small>
 							</div>
-
 						</div>
 					</div>
-
-					{/* <div className="alert text-center" role="alert" id="cookieAlert">
-					<b>We use cookies to improve your experience, offers and advertisements on the site. Our <a href="/privacy">Privacy and Terms of Use Policy</a></b>
-
-					<button type="button" className="fw-bold btn btn-success btn-sm" id="acceptCookies">
-						I Agree
-					</button>
-				</div> */}
 				</footer>
 			</div>
 		</div>

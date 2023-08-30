@@ -1,13 +1,13 @@
 export default function Navbar() {
 	return (
-		<div className="fixed-top shadow-sm bg-light mb-5">
+		<div className="fixed-top shadow bg-light mb-5">
 
 			<nav className="container pt-2 pb-2 col-lg-8 navbar navbar-expand-lg fixed navbar-light">
 
 				<div className="container-fluid">
 
-					<a className="navbar-brand fw-bold" href="/">
-						<span className="fs-4 fw-bold">Galhardo MicroSaaS</span>
+					<a className="navbar-brand appTitle" href="/">
+						<span className="fs-4 fw-bold navbarTitle">Galhardo MicroSaaS</span>
 					</a>
 
 					<button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -42,9 +42,9 @@ export default function Navbar() {
 
 						<div className="pull-right">
 
-							<a href="/login" className="shadow-sm fw-bold fs-5 btn btn-outline-success" type="submit">Login</a>
+							<a href="/login" className="button fw-bold fs-5 btn btn-outline-success" type="submit">Login</a>
 
-							<a href="/register" className="shadow-sm fw-bold fs-5 ms-2 btn btn-outline-primary" type="submit">Sign Up</a>
+							<a href="/register" className="button fw-bold fs-5 ms-2 btn btn-outline-primary" type="submit">Sign Up</a>
 						</div>
 
 					</div>

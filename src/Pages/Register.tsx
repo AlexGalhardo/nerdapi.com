@@ -15,43 +15,43 @@ export default function Register() {
 
 					<small><span id="alert_name" className="fw-bold text-danger"></span></small>
 
-					<div className="form-floating mb-3">
-						<input type="text" className="form-control mb-3" id="username" name="username" placeholder="Enter your username" required autoFocus value="" minLength={4} maxLength={32} />
+					<div className="form-group mb-3">
 						<label htmlFor="username">Username</label>
+						<input type="text" className="fs-4 form-control mb-3" id="username" name="username" placeholder="Digit your username" required autoFocus value="" minLength={4} maxLength={32} />
 					</div>
 
 					<small><span id="alert_email" className="fw-bold text-danger"></span></small>
 
-					<div className="form-floating mb-3">
-						<input type="email" className="form-control mb-3" name="email" id="email" required value="" title="You can't delete email if sign up with social login" />
+					<div className="form-group mb-3">
 						<label htmlFor="email">Email</label>
+						<input type="email" className="fs-4 form-control mb-3" name="email" id="email" required value="" placeholder="Digit your email" />
 					</div>
 
 					<small><span id="alert_password" className="fw-bold text-danger"></span></small>
 
-					<div className="form-floating mb-3">
-						<input type="password" className="mb-3 form-control" id="password" name="password" placeholder="Enter your password" minLength={6} required />
+					<div className="form-group mb-3">
 						<label htmlFor="password">Password</label>
+						<input type="password" className="fs-4 mb-3 form-control" id="password" name="password" placeholder="Digit your password" minLength={6} required />
 					</div>
 
-					<div className="form-floating mb-3">
-						<input type="password" className="mb-3 form-control" id="confirm_password" name="confirm_password" placeholder="Confirm your password" minLength={6} required />
+					<div className="form-group mb-3">
 						<label htmlFor="confirm_password">Confirm Password</label>
+						<input type="password" className="mb-3 form-control fs-4" id="confirm_password" name="confirm_password" placeholder="Confirm your password" minLength={6} required />
 					</div>
 
-					<div className="mb-3 form-check">
+					<div className="mb-3 mt-4 form-check">
 						<small><span id="alert_checkbox" className="fw-bold text-danger"></span></small>
 						<input type="checkbox" className="form-check-input" id="checkbox_policy" />
 						<label className="form-check-label" htmlFor="checkbox_policy">
 							<small>
 								By registering your account, you agree with our
-								<a target="_blank" href="/privacy">Privacy and Terms of Use Policy</a> and accept to receive newsletter offers and advertisements.
+								<a target="_blank" href="/privacy"> Privacy and Terms of Use Policy</a> and accept to receive newsletter offers and advertisements.
 							</small>
 						</label>
 					</div>
 
 					<div className="form-group">
-						<button type="submit" className="shadow mb-3 w-100 btn btn-primary btn-block login-btn" id="button_register">Register Account</button>
+						<button type="submit" className="button btn-lg mb-3 w-100 btn btn-outline-primary btn-block login-btn" id="button_register">Register Account</button>
 					</div>
 
 				</form>

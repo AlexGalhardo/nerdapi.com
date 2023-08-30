@@ -1,3 +1,43 @@
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans');
+
+html {
+  --color-1: #463220;
+  --color-2: #66593c;
+  --color-3: #eceadd;
+  --color-4: #f7f8f5;
+  --color-5: #ffffff;
+  --color-6: #5881a9;
+  --gap-s: 0.625rem;
+  --gap: 1rem;
+}
+
+body {
+  font-family: 'Josefin Sans', sans-serif;
+  margin: 0px;
+  color: var(--color-1);
+  background: var(--color-4);
+  font-size: 1.3rem;
+}
+
+.button {
+  text-align: center;
+  /* cursor: pointer; */
+  /* outline: none;
+  color: #fff; */
+  /* border: none; */
+  border-radius: 10px;
+  box-shadow: 5px 5px #999;
+}
+
+.button:active {
+  box-shadow: 25px 30px #666;
+  transform: translateY(4px);
+}
+
+a {
+	text-shadow: 5 5px #666;
+}
+
 /*
  * Bootstrap Cookie Alert by Wruczek
  * https://github.com/Wruczek/Bootstrap-Cookie-Alert
@@ -72,5 +112,5 @@
 	top: 0;
 	right: 100%;
 	width: 100%;
-	height: 10px;
+	height: 5px;
 }
