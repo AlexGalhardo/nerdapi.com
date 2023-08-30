@@ -13,7 +13,7 @@ export default function Footer() {
 								<form action="#">
 									<div className="input-group mb-3">
 										<input className="form-control" type="text" placeholder="Digit your email" aria-label="Recipient's username" aria-describedby="button-addon2" />
-										<button className="button btn btn-outline-success fw-bold" id="button-addon2" type="button">Lets Goo!</button>
+										<button className="btn btn-outline-success fw-bold" id="button-addon2" type="button">Lets Goo!</button>
 									</div>
 								</form>
 							</div>

@@ -9,6 +9,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap-icons/font/bootstrap-icons.css';
 import "./Style.css";
 import Blog from "./Pages/Blog";
+import BlogPost from "./Pages/BlogPost";
 import Contact from "./Pages/Contact";
 import Pricing from "./Pages/Pricing";
 import Checkout from "./Components/Checkout";
@@ -25,6 +26,7 @@ export default function App() {
 					<Route path="/books" element={<Books />} />
 					<Route path="/movies" element={<Movies />} />
 					<Route path="/blog" element={<Blog />} />
+					<Route path="/blogPost" element={<BlogPost />} />
 					<Route path="/contact" element={<Contact />} />
 					<Route path="/pricing" element={<Pricing active={true} />} />
 					<Route path="/checkout" element={<Checkout />} />

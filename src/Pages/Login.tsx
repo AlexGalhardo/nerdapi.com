@@ -2,19 +2,19 @@ export default function Blog() {
 	return (
 		<div className="container col-lg-3 mt-5">
 
-			<h2 className="text-center text-muted mb-4">
+			<h1 className="text-center mb-4">
 				<a className="text-decoration-none" href="/">
 					<b className="fw-bold text-primary">
 						Galhardo MicroSaaS
 					</b>
 				</a>
-			</h2>
+			</h1>
 
 			<form action="/login" method="POST">
 
 				<div className="form-group mb-4 mt-5">
 					<label htmlFor="email" className="text-muted">Your Email Address</label>
-					<input value=""
+					<input
 						type="email"
 						className="fs-4 form-control"
 						id="email"
@@ -27,11 +27,11 @@ export default function Blog() {
 
 				<div className="form-group mb-4">
 					<label htmlFor="password" className="text-muted">Your Password</label>
-					<input type="password" className="fs-4 mb-3 form-control" id="password" name="password" placeholder="Digit your password" required value="" />
+					<input type="password" className="fs-4 mb-3 form-control" id="password" name="password" placeholder="Digit your password" required />
 				</div>
 
 				<div className="form-group mb-5">
-					<button type="submit" className="button mb-3 w-100 btn btn-outline-success btn-lg btn-block login-btn fw-bold">Login</button>
+					<button type="submit" className="fs-4 button mb-3 w-100 btn btn-outline-success btn-lg btn-block login-btn fw-bold">Login</button>
 				</div>
 			</form>
 

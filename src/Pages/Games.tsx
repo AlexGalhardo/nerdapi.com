@@ -62,7 +62,7 @@ export default function Games() {
 				<div className="row mt-5">
 
 					<div className="col-lg-3 text-center">
-						<img id="game_image" src={gameCover} className="shadow mx-auto d-block w-75 image-fluid mb-3" alt="game_image" />
+						<img id="game_image" src={gameCover} className="shadow mx-auto d-block w-100 image-fluid mb-3" alt="game_image" />
 						<button className="button mt-3 w-80 btn btn-lg btn-outline-primary mb-3" onClick={recommendRandomGame}>
 							<i className="bi bi-play-fill"></i>
 							Recommend Other Game
@@ -104,10 +104,10 @@ export default function Games() {
 					<div className="col-lg-3 mb-3">
 
 						<form className="mb-3" action="/searchGame" method="GET">
-							<input className="form-control" type="search" placeholder="Search Game Title..." aria-label="Search" name="title" />
+							<input className="shadow fs-5 form-control" type="search" placeholder="Search Game Title..." aria-label="Search" name="title" />
 						</form>
 
-						<div className="list-group">
+						<div className="list-group shadow-sm">
 							<a href="/" className="d-flex justify-content-between list-group-item list-group-item-action text-white bg-dark">
 								<i className="bi bi-controller"></i>
 								<span>Games</span>

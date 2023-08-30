@@ -3,13 +3,13 @@ export default function Register() {
 		<>
 			<div className="container col-lg-3 mt-5">
 
-				<h2 className="text-center text-muted mb-4">
+				<h1 className="text-center text-muted mb-4">
 					<a className="text-decoration-none" href="/">
 						<b className="fw-bold text-primary">
 							Galhardo MicroSaaS
 						</b>
 					</a>
-				</h2>
+				</h1>
 
 				<form action="/register" method="POST" id="form_register">
 
@@ -17,14 +17,14 @@ export default function Register() {
 
 					<div className="form-group mb-3">
 						<label htmlFor="username">Username</label>
-						<input type="text" className="fs-4 form-control mb-3" id="username" name="username" placeholder="Digit your username" required autoFocus value="" minLength={4} maxLength={32} />
+						<input type="text" className="fs-4 form-control mb-3" id="username" name="username" placeholder="Digit your username" required autoFocus minLength={4} maxLength={32} />
 					</div>
 
 					<small><span id="alert_email" className="fw-bold text-danger"></span></small>
 
 					<div className="form-group mb-3">
 						<label htmlFor="email">Email</label>
-						<input type="email" className="fs-4 form-control mb-3" name="email" id="email" required value="" placeholder="Digit your email" />
+						<input type="email" className="fs-4 form-control mb-3" name="email" id="email" required placeholder="Digit your email" />
 					</div>
 
 					<small><span id="alert_password" className="fw-bold text-danger"></span></small>
@@ -51,7 +51,7 @@ export default function Register() {
 					</div>
 
 					<div className="form-group">
-						<button type="submit" className="button btn-lg mb-3 w-100 btn btn-outline-primary btn-block login-btn" id="button_register">Register Account</button>
+						<button type="submit" className="fs-4 fw-bold button btn-lg mb-3 w-100 btn btn-outline-primary btn-block login-btn" id="button_register">Register Account</button>
 					</div>
 
 				</form>

@@ -22,11 +22,11 @@ export default function Contact() {
 							<input type="email" id="email" name="email" className="fs-4 form-control" required />
 						</div>
 
-						<select className="form-select mb-3" name="subject" required>
-							<option value="Problema Técnico Na Instalação">I want to report a bug</option>
-							<option value="Internet Lenta">I want to give a feedback</option>
-							<option value="Outro Assunto">I need support with API</option>
-							<option value="Outro Assunto">Other</option>
+						<select className="fs-4 form-select mb-3" name="subject" required>
+							<option value="bug">I want to report a bug</option>
+							<option value="feedback">I want to give a feedback</option>
+							<option value="supportAPI">I need support with API</option>
+							<option value="other">Other</option>
 						</select>
 
 						<div className="mb-3">
