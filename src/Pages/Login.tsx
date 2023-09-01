@@ -1,4 +1,12 @@
-export default function Blog() {
+import { useContext } from "react";
+import { Navigate } from "react-router-dom";
+import { UserContext } from "../Context/UserStateContext";
+
+export default function Login() {
+    const { login } = useContext(UserContext);
+
+    if (login === true) return <Navigate to="/profile" />;
+
     return (
         <div className="container col-lg-3 mt-5">
             <h1 className="text-center mb-4">
