@@ -1,33 +1,47 @@
-import { useCallback, useEffect, useState, createContext, useMemo, useReducer } from "react";
-import { TOKEN_POST, TOKEN_VALIDATE_POST, USER_GET } from "../Api";
+import { useCallback, useEffect, useState, createContext, useMemo, useReducer, useContext } from "react";
+import { LOGIN_USER, TOKEN_VALIDATE_POST, USER_GET } from "../Api";
 import { useNavigate } from "react-router-dom";
-import { DispatchActionType } from "./GlobalStateContext";
-
-export const UserContext = createContext<UserStateContextPort | undefined>(undefined);
-
-interface DispatchAction {
-    type: DispatchActionType;
-    payload: { wallIndex: number; totalFreeWallAreaToPaint?: number; hasWallBusinessRulesErrors?: boolean };
-}
 
 interface UserState {
-    test: string;
+	LOGGED_IN: boolean,
+	NAME: string | undefined
+	EMAIL: string | undefined
+	TELEGRAM_NUMBER: string | undefined
+	API_TOKEN: string | undefined
+	STRIPE: {
+		CUSTOMER_ID: string | undefined
+		CARD_ID: string | undefined
+		CARD_LAST_4_DIGITS: string | undefined
+		CARD_EXP_MONTH: string | undefined
+		CARD_EXP_YEAR: string | undefined
+	},
+	SUBSCRIPTION: {
+		ID: string | undefined
+		CURRENTLY_PLAN: string | undefined,
+		STARTED_AT: string  | undefined,
+		ENDS_AT: string  | undefined
+	}
+}
+
+export enum DispatchUserActionType {
+    YOU_NEED_TO_LOGIN_FIRST,
+	YOU_ARE_ALREADY_LOGGED_IN
+}
+
+interface DispatchUserAction {
+    type: DispatchUserActionType;
 }
 
 interface UserStateContextPort {
-    userLogin: (username: string, password: string) => Promise<void>;
-    userLogout: () => Promise<void>;
-    data: any | null;
-    error: string | null;
-	loading: boolean;
-	login: null | boolean;
-    // userState: UserState;
-    // dispatch: React.Dispatch<DispatchAction>;
+    userState: UserState;
+    userDispatch: React.Dispatch<DispatchUserAction>;
 }
+
+const UserStateContext = createContext<UserStateContextPort | undefined>(undefined);
 
 export const UserStateProvider = ({ children }: React.PropsWithChildren) => {
     const [data, setData] = useState<any | null>(null);
-    const [login, setLogin] = useState<null | boolean>(null);
+    const [userLoggedIn, setuserLoggedIn] = useState<boolean>(true);
     const [loading, setLoading] = useState(false);
     const [error, setError] = useState(null);
     const navigate = useNavigate();
@@ -36,7 +50,7 @@ export const UserStateProvider = ({ children }: React.PropsWithChildren) => {
         setData(null);
         setError(null);
         setLoading(false);
-        setLogin(false);
+        setuserLoggedIn(false);
         window.localStorage.removeItem("token");
     }, []);
 
@@ -45,14 +59,14 @@ export const UserStateProvider = ({ children }: React.PropsWithChildren) => {
         const response = await fetch(url, options);
         const json = await response.json();
         setData(json);
-        setLogin(true);
+        setuserLoggedIn(true);
     }
 
     async function userLogin(username: string, password: string) {
         try {
             setError(null);
             setLoading(true);
-            const { url, options } = TOKEN_POST({ username, password });
+            const { url, options } = LOGIN_USER({ username, password });
             const tokenRes = await fetch(url, options);
             if (!tokenRes.ok) throw new Error(`Error: ${tokenRes.statusText}`);
             const { token } = await tokenRes.json();
@@ -61,7 +75,7 @@ export const UserStateProvider = ({ children }: React.PropsWithChildren) => {
             navigate("/profile");
         } catch (err: any) {
             setError(err.message);
-            setLogin(false);
+            setuserLoggedIn(false);
         } finally {
             setLoading(false);
         }
@@ -84,46 +98,61 @@ export const UserStateProvider = ({ children }: React.PropsWithChildren) => {
                     setLoading(false);
                 }
             } else {
-                setLogin(false);
+                setuserLoggedIn(false);
             }
         }
         autoLogin();
     }, [userLogout]);
 
     const startUserState: UserState = {
-        test: "ola",
+		LOGGED_IN: true,
+		NAME: 'Alex Galhardo',
+		EMAIL: 'alex@gmail.com',
+		TELEGRAM_NUMBER: '+55 18 996971459',
+		API_TOKEN: 'apskdpoaskopd',
+		STRIPE: {
+			CUSTOMER_ID: 'poakspoakos',
+			CARD_ID: 'apkspoakoaps',
+			CARD_LAST_4_DIGITS: '4567',
+			CARD_EXP_MONTH: '10',
+			CARD_EXP_YEAR: '2023',
+		},
+		SUBSCRIPTION: {
+			ID: 'apskdpoaskopd',
+			CURRENTLY_PLAN: 'PRO',
+			STARTED_AT: '23/09/2023 14:56:23',
+			ENDS_AT: '23/10/2023 14:56:23',
+		}
     };
 
-    const reducer = (userState: UserState, action: DispatchAction): UserState => {
+    const reducer = (userState: UserState, action: DispatchUserAction): UserState => {
         switch (action.type) {
-            case DispatchActionType.UPDATE_FREE_AREA_TO_PAINT:
-                console.log("teste");
-
+			case DispatchUserActionType.YOU_ARE_ALREADY_LOGGED_IN:
+				userState.LOGGED_IN = true
                 return { ...userState, ...action };
 
-            case DispatchActionType.HAS_WALL_BUSINESS_RULES_ERROR:
-                console.log("ola");
-
-                return { ...userState, ...action };
-
-            default:
+			default:
                 return { ...userState, ...action };
         }
     };
 
-    const [userState, dispatch] = useReducer(reducer, startUserState);
+    const [userState, userDispatch] = useReducer(reducer, startUserState);
 
     const contextValue = useMemo(() => {
-        return { userState, dispatch };
-    }, [userState, dispatch]);
-
-    // { userLogin, userLogout, data, error, loading, login }
+        return { userState, userDispatch };
+    }, [userState, userDispatch]);
 
     return (
-        <UserContext.Provider value={{ userLogin, userLogout, data, error, loading, login }}>
+        <UserStateContext.Provider value={contextValue}>
             {children}
-        </UserContext.Provider>
-
-        // return <GlobalStateContext.Provider value={contextValue}>{children}</GlobalStateContext.Provider>;
+        </UserStateContext.Provider>
     );
+};
+
+export const useUserState = (): UserStateContextPort => {
+    const context = useContext(UserStateContext);
+    if (!context) {
+        throw new Error("useUserState must be used inside UserStateProvider");
+    }
+    return context;
 };

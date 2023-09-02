@@ -21,17 +21,13 @@ body {
 
 .button {
   text-align: center;
-  /* cursor: pointer; */
-  /* outline: none;
-  color: #fff; */
-  /* border: none; */
   border-radius: 10px;
   box-shadow: 5px 5px #999;
 }
 
 .button:active {
-  box-shadow: 25px 30px #666;
-  transform: translateY(4px);
+  box-shadow: 5px 5px #666;
+  transform: translateY(3px);
 }
 
 a {

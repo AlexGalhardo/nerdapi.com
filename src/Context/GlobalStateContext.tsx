@@ -1,58 +1,60 @@
-import { createContext, useCallback, useContext, useMemo, useReducer } from "react";
+import { createContext, useContext, useMemo, useReducer } from "react";
 interface GlobalState {
-    test: string
+    FLASH_MESSAGES: {
+		YOU_NEED_TO_LOGIN_FIRST: boolean | string
+		YOU_ARE_ALREADY_LOGGED_IN: boolean | string
+	}
 }
 
 export enum DispatchActionType {
-    UPDATE_FREE_AREA_TO_PAINT,
-    HAS_WALL_BUSINESS_RULES_ERROR,
+    YOU_NEED_TO_LOGIN_FIRST,
+	YOU_ARE_ALREADY_LOGGED_IN
 }
 
 interface DispatchAction {
     type: DispatchActionType;
-    payload: { wallIndex: number; totalFreeWallAreaToPaint?: number; hasWallBusinessRulesErrors?: boolean };
+    payload?: {  };
 }
 
 interface GlobalStateContextPort {
     globalState: GlobalState;
-    dispatch: React.Dispatch<DispatchAction>;
+    globalDispatch: React.Dispatch<DispatchAction>;
 }
 
 const GlobalStateContext = createContext<GlobalStateContextPort | undefined>(undefined);
 
-export const useData = () => {
-    const context = useContext(GlobalStateContext);
-    if (!context) throw new Error("useData must be used in a component inside GlobalStateProvider");
-    return context;
-};
-
 export const GlobalStateProvider = ({ children }: React.PropsWithChildren) => {
     const startGlobalState: GlobalState = {
-        test: 'ola'
+        FLASH_MESSAGES: {
+			YOU_NEED_TO_LOGIN_FIRST: false,
+			YOU_ARE_ALREADY_LOGGED_IN: false
+		}
     };
 
     const reducer = (globalState: GlobalState, action: DispatchAction): GlobalState => {
         switch (action.type) {
-            case DispatchActionType.UPDATE_FREE_AREA_TO_PAINT:
-                console.log('teste')
 
+			case DispatchActionType.YOU_NEED_TO_LOGIN_FIRST:
+                globalState.FLASH_MESSAGES.YOU_NEED_TO_LOGIN_FIRST = "You need to login first"
+				globalState.FLASH_MESSAGES.YOU_ARE_ALREADY_LOGGED_IN = false
                 return { ...globalState, ...action };
 
-            case DispatchActionType.HAS_WALL_BUSINESS_RULES_ERROR:
-                console.log('ola')
 
+			case DispatchActionType.YOU_ARE_ALREADY_LOGGED_IN:
+                globalState.FLASH_MESSAGES.YOU_ARE_ALREADY_LOGGED_IN = "You are already logged in"
+				globalState.FLASH_MESSAGES.YOU_NEED_TO_LOGIN_FIRST = false
                 return { ...globalState, ...action };
 
-            default:
+			default:
                 return { ...globalState, ...action };
         }
     };
 
-    const [globalState, dispatch] = useReducer(reducer, startGlobalState);
+    const [globalState, globalDispatch] = useReducer(reducer, startGlobalState);
 
     const contextValue = useMemo(() => {
-        return { globalState, dispatch };
-    }, [globalState, dispatch]);
+        return { globalState, globalDispatch };
+    }, [globalState, globalDispatch]);
 
     return <GlobalStateContext.Provider value={contextValue}>{children}</GlobalStateContext.Provider>;
 };

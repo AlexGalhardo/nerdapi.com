@@ -1,11 +1,18 @@
-import { useContext } from "react";
 import { Navigate } from "react-router-dom";
-import { UserContext } from "../Context/UserStateContext";
+import { useUserState } from "../Context/UserStateContext";
+import { DispatchActionType, useGlobalState } from "../Context/GlobalStateContext";
 
 export default function Login() {
-    const { login } = useContext(UserContext);
+	const {userState} = useUserState();
+	const { globalState, globalDispatch } = useGlobalState();
 
-    if (login === true) return <Navigate to="/profile" />;
+	if (userState?.LOGGED_IN) {
+		globalDispatch({
+            type: DispatchActionType.YOU_ARE_ALREADY_LOGGED_IN
+        });
+
+		return <Navigate to="/profile" />;
+	}
 
     return (
         <div className="container col-lg-3 mt-5">
@@ -15,8 +22,15 @@ export default function Login() {
                 </a>
             </h1>
 
+			{globalState.FLASH_MESSAGES.YOU_NEED_TO_LOGIN_FIRST ?
+			<p className="alert alert-danger text-center fw-bold fs-4">
+				{globalState.FLASH_MESSAGES.YOU_NEED_TO_LOGIN_FIRST}
+			</p>
+			: undefined}
+
             <div className="form-group mb-2">
                 <button
+					disabled
                     type="submit"
                     className="fs-4 button w-100 btn btn-outline-dark btn-lg btn-block login-btn fw-bold"
                 >
@@ -26,6 +40,7 @@ export default function Login() {
 
             <div className="form-group mb-2">
                 <button
+					disabled
                     type="submit"
                     className="fs-4 button w-100 btn btn-outline-danger btn-lg btn-block login-btn fw-bold"
                 >
@@ -35,6 +50,7 @@ export default function Login() {
 
             <div className="form-group mb-3">
                 <button
+					disabled
                     type="submit"
                     className="fs-4 button w-100 btn btn-outline-primary btn-lg btn-block login-btn fw-bold"
                 >

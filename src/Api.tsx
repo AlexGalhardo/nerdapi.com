@@ -1,8 +1,8 @@
-export const API_URL = "https://dogsapi.origamid.dev/json";
+export const API_URL = "https://microsaas-api.alexgalhardo.com";
 
-export function TOKEN_POST(body: any) {
+export function LOGIN_USER(body: any) {
     return {
-        url: API_URL + "/jwt-auth/v1/token",
+        url: API_URL + "/login",
         options: {
             method: "POST",
             headers: {
@@ -37,9 +37,9 @@ export function USER_GET(token: string) {
     };
 }
 
-export function USER_POST(body: any) {
+export function REGISTER_USER(body: any) {
     return {
-        url: API_URL + "/api/user",
+        url: API_URL + "/register",
         options: {
             method: "POST",
             headers: {

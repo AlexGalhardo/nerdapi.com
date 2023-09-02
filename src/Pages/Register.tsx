@@ -1,4 +1,20 @@
+import { Navigate } from "react-router-dom";
+import { DispatchActionType, useGlobalState } from "../Context/GlobalStateContext";
+import { useUserState } from "../Context/UserStateContext";
+
 export default function Register() {
+
+	const {userState} = useUserState();
+	const { globalDispatch } = useGlobalState();
+
+	if (userState?.LOGGED_IN) {
+		globalDispatch({
+            type: DispatchActionType.YOU_ARE_ALREADY_LOGGED_IN
+        });
+
+		return <Navigate to="/profile" />;
+	}
+
 	return (
 		<>
 			<div className="container col-lg-3 mt-5">
