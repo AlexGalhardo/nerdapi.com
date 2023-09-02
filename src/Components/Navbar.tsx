@@ -1,4 +1,8 @@
+import { useGlobalState } from "../Context/GlobalStateContext";
+
 export default function Navbar() {
+	const {globalState } = useGlobalState();
+
 	return (
 		<div className="fixed-top shadow bg-light mb-5">
 
@@ -40,12 +44,29 @@ export default function Navbar() {
 
 						</ul>
 
-						<div className="pull-right">
+						{globalState.LOGGED_IN ?
+							<ul className="navbar-nav me-auto mb-2 mb-lg-0 right">
+								<li className="nav-item dropdown">
+									<a className="fs-4 fw-bold nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+										{globalState.NAME}
+									</a>
+									<ul className="dropdown-menu" aria-labelledby="navbarDropdown">
+										<li><a className="fs-5 fw-bold dropdown-item" href="/profile"><i className="bi bi-person-circle"></i> Profile</a></li>
+										<li><a className="fs-5 fw-bold dropdown-item" href="/profile/transactions"><i className="bi bi-award"></i> Transactions</a></li>
+										<li><hr className="dropdown-divider"/></li>
+										<li><a className="fs-5 fw-bold dropdown-item" href="/logout"><i className="bi bi-x-lg"></i> Logout</a></li>
+									</ul>
+								</li>
+							</ul>
+						:
 
-							<a href="/login" className="button fw-bold fs-5 btn btn-outline-success" type="submit">Login</a>
+							<div className="pull-right">
 
-							<a href="/register" className="button fw-bold fs-5 ms-2 btn btn-outline-primary" type="submit">Sign Up</a>
-						</div>
+								<a href="/login" className="button fw-bold fs-5 btn btn-outline-success" type="submit">Login</a>
+
+								<a href="/register" className="button fw-bold fs-5 ms-2 btn btn-outline-primary" type="submit">Sign Up</a>
+							</div>
+						}
 
 					</div>
 

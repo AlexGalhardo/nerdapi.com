@@ -1,20 +1,18 @@
 import Footer from "../Components/Footer";
 import Navbar from "../Components/Navbar";
-import { useUserState } from "../Context/UserStateContext";
-import { Navigate } from "react-router-dom";
-import { useGlobalState, DispatchActionType } from "../Context/GlobalStateContext";
+import { useNavigate } from "react-router-dom";
+import { useGlobalState } from "../Context/GlobalStateContext";
+import { useEffect } from "react";
 
 export default function Profile() {
-	const { userState } = useUserState();
-	const { globalState, globalDispatch } = useGlobalState();
+	const { globalState } = useGlobalState();
+	const navigate = useNavigate();
 
-	if (!userState.LOGGED_IN) {
-		globalDispatch({
-            type: DispatchActionType.YOU_NEED_TO_LOGIN_FIRST
-        });
-
-		return <Navigate to="/login" />;
-	}
+	useEffect(() => {
+		if (!window.localStorage.getItem("USER")) {
+			navigate('/login')
+		}
+	}, [])
 
     return (
         <>
@@ -42,7 +40,7 @@ export default function Profile() {
                                 <input
                                     type="text"
                                     className="fs-4 form-control"
-                                    value={userState.NAME}
+                                    value={globalState.NAME}
                                     name="name"
                                     id="name"
                                 />
@@ -54,7 +52,7 @@ export default function Profile() {
 
                             <div className="form-group mb-3">
                                 <label htmlFor="email">Email</label>
-                                <input type="email" className="fs-4 form-control" name="email" id="email" value={userState.EMAIL} readOnly />
+                                <input type="email" className="fs-4 form-control" name="email" id="email" value={globalState.EMAIL} readOnly />
                             </div>
 
                             <div className="form-group mb-3">
@@ -67,7 +65,7 @@ export default function Profile() {
                                     pattern="\d{3}\.?\d{3}\.?\d{3}-?\d{2}"
                                     minLength={11}
                                     maxLength={11}
-									value={userState.TELEGRAM_NUMBER}
+									value={globalState.TELEGRAM_NUMBER}
                                     required
                                 />
                             </div>
@@ -113,7 +111,7 @@ export default function Profile() {
 								className="fs-4 mb-2 form-control"
 								name="stripe_customer_id"
 								type="text"
-								value={userState.STRIPE.CUSTOMER_ID}
+								value={globalState.STRIPE.CUSTOMER_ID}
 								readOnly
 							/>
                         </div>
@@ -125,7 +123,7 @@ export default function Profile() {
                                 name="stripe_card_id"
                                 className="fs-4 mb-2 form-control"
                                 type="text"
-								value={userState.STRIPE.CARD_ID}
+								value={globalState.STRIPE.CARD_ID}
                                 readOnly
                             />
                         </div>
@@ -137,7 +135,7 @@ export default function Profile() {
                                 name="stripe_card_last_4_digits"
                                 className="fs-4 mb-2 form-control"
                                 type="text"
-								value={userState.STRIPE.CARD_LAST_4_DIGITS}
+								value={globalState.STRIPE.CARD_LAST_4_DIGITS}
                                 readOnly
                             />
                         </div>
@@ -151,7 +149,7 @@ export default function Profile() {
                                         className="fs-4 form-control"
                                         name="card_exp_year"
                                         id="card_exp_month"
-										value={userState.STRIPE.CARD_EXP_MONTH}
+										value={globalState.STRIPE.CARD_EXP_MONTH}
                                         readOnly
                                     />
                                 </div>
@@ -164,7 +162,7 @@ export default function Profile() {
                                         className="fs-4 form-control"
                                         name="card_exp_year"
                                         id="card_exp_year"
-										value={userState.STRIPE.CARD_EXP_YEAR}
+										value={globalState.STRIPE.CARD_EXP_YEAR}
                                         readOnly
                                     />
                                 </div>
@@ -178,7 +176,7 @@ export default function Profile() {
                                 name="apiToken"
                                 className="fs-4 mb-2 form-control"
                                 type="text"
-								value={userState.API_TOKEN}
+								value={globalState.API_TOKEN}
                                 readOnly
                             />
                         </div>
@@ -190,7 +188,7 @@ export default function Profile() {
                             <input
 								className="fs-4 mb-2 form-control"
 								type="text"
-								value={userState.SUBSCRIPTION.CURRENTLY_PLAN}
+								value={globalState.SUBSCRIPTION.CURRENTLY_PLAN}
 								readOnly
 							/>
                         </div>
@@ -200,7 +198,7 @@ export default function Profile() {
                             <input
 								className="fs-4 mb-2 form-control"
 								type="text"
-								value={userState.SUBSCRIPTION.ID}
+								value={globalState.SUBSCRIPTION.ID}
 								readOnly
 							/>
                         </div>
@@ -211,7 +209,7 @@ export default function Profile() {
                                 className="fs-4 mb-2 form-control"
                                 name="SUBSCRIPTION_START_DATE_TIME"
                                 type="text"
-								value={userState.SUBSCRIPTION.STARTED_AT}
+								value={globalState.SUBSCRIPTION.STARTED_AT}
                                 readOnly
                             />
                         </div>
@@ -222,7 +220,7 @@ export default function Profile() {
                                 className="fs-4 mb-2 form-control"
                                 name="SUBSCRIPTION_END_DATE_TIME"
                                 type="text"
-								value={userState.SUBSCRIPTION.ENDS_AT}
+								value={globalState.SUBSCRIPTION.ENDS_AT}
                                 readOnly
                             />
                         </div>

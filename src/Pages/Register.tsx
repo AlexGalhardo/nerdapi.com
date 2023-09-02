@@ -1,19 +1,16 @@
-import { Navigate } from "react-router-dom";
-import { DispatchActionType, useGlobalState } from "../Context/GlobalStateContext";
-import { useUserState } from "../Context/UserStateContext";
+import { useNavigate } from "react-router-dom";
+import { useGlobalState } from "../Context/GlobalStateContext";
+import { useEffect } from "react";
 
 export default function Register() {
+	const {globalState} = useGlobalState()
+	const navigate = useNavigate();
 
-	const {userState} = useUserState();
-	const { globalDispatch } = useGlobalState();
+	if(globalState.LOGGED_IN) navigate("/profile");
 
-	if (userState?.LOGGED_IN) {
-		globalDispatch({
-            type: DispatchActionType.YOU_ARE_ALREADY_LOGGED_IN
-        });
-
-		return <Navigate to="/profile" />;
-	}
+	// useEffect(() => {
+	// 	if(globalState.LOGGED_IN) navigate("/profile");
+	// }, [globalState.LOGGED_IN])
 
 	return (
 		<>

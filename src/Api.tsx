@@ -1,6 +1,6 @@
 export const API_URL = "https://microsaas-api.alexgalhardo.com";
 
-export function LOGIN_USER(body: any) {
+export function USER_LOGIN(body: any) {
     return {
         url: API_URL + "/login",
         options: {
@@ -9,6 +9,19 @@ export function LOGIN_USER(body: any) {
                 "Content-Type": "application/json",
             },
             body: JSON.stringify(body),
+        },
+    };
+}
+
+export function USER_LOGOUT(token: string) {
+    return {
+        url: API_URL + "/logout",
+        options: {
+            method: "POST",
+            headers: {
+                "Content-Type": "application/json",
+				Authorization: "Bearer " + token,
+            },
         },
     };
 }

@@ -17,13 +17,14 @@ import Login from "./Pages/Login";
 import Register from "./Pages/Register";
 import NotFound from "./Pages/NotFound";
 import Profile from "./Pages/Profile";
-import { UserStateProvider } from "./Context/UserStateContext";
+// import { UserStateProvider } from "./Context/UserStateContext";
+import Logout from "./Pages/Logout";
 
 export default function App() {
     return (
         <BrowserRouter>
             <GlobalStateProvider>
-                <UserStateProvider>
+                {/* <UserStateProvider> */}
                     <ProgressBar />
                     <Routes>
                         <Route path="/" element={<Games />} />
@@ -37,9 +38,10 @@ export default function App() {
                         <Route path="/login" element={<Login />} />
                         <Route path="/register" element={<Register />} />
                         <Route path="/profile" element={<Profile />} />
+						<Route path="/logout" element={<Logout />} />
                         <Route path="*" element={<NotFound />} />
                     </Routes>
-                </UserStateProvider>
+                {/* </UserStateProvider> */}
             </GlobalStateProvider>
         </BrowserRouter>
     );

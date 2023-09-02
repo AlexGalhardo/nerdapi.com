@@ -1,17 +1,28 @@
-import { Navigate } from "react-router-dom";
-import { useUserState } from "../Context/UserStateContext";
-import { DispatchActionType, useGlobalState } from "../Context/GlobalStateContext";
+import { useNavigate } from "react-router-dom";
+import { useGlobalState } from "../Context/GlobalStateContext";
+import { useEffect } from "react";
 
 export default function Login() {
-	const {userState} = useUserState();
-	const { globalState, globalDispatch } = useGlobalState();
+	const { globalState, userLogin } = useGlobalState();
+	const navigate = useNavigate();
 
-	if (userState?.LOGGED_IN) {
-		globalDispatch({
-            type: DispatchActionType.YOU_ARE_ALREADY_LOGGED_IN
-        });
+	if(globalState.LOGGED_IN) navigate("/profile");
 
-		return <Navigate to="/profile" />;
+	// useEffect(() => {
+
+	// }, [globalState.LOGGED_IN])
+
+	async function handleSubmit(event: any) {
+		event.preventDefault();
+		console.log('entrou dentro do handleSubmit...')
+		// const { url, options } = USER_POST({
+		// username: username.value,
+		// email: email.value,
+		// password: password.value,
+		// });
+		// const { response } = await request(url, options);
+		// if (response.ok) userLogin(username.value, password.value);
+		return await userLogin()
 	}
 
     return (
@@ -58,46 +69,48 @@ export default function Login() {
                 </button>
             </div>
 
-            <form action="/login" method="POST">
-                <div className="form-group mb-4 mt-5">
-                    <label htmlFor="email" className="text-muted">
-                        Your Email Address
-                    </label>
-                    <input
-                        type="email"
-                        className="fs-4 form-control"
-                        id="email"
-                        name="email"
-                        pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
-                        placeholder="Digit your email"
-                        autoFocus
-                        required
-                    />
-                </div>
+			<form onSubmit={handleSubmit}>
 
-                <div className="form-group mb-4">
-                    <label htmlFor="password" className="text-muted">
-                        Your Password
-                    </label>
-                    <input
-                        type="password"
-                        className="fs-4 mb-3 form-control"
-                        id="password"
-                        name="password"
-                        placeholder="Digit your password"
-                        required
-                    />
-                </div>
+				<div className="form-group mb-4 mt-5">
+					<label htmlFor="email" className="text-muted">
+						Your Email Address
+					</label>
+					<input
+						type="email"
+						className="fs-4 form-control"
+						id="email"
+						name="email"
+						placeholder="Digit your email"
+						// value="test@gmail.com"
+						autoFocus
+						required
+					/>
+				</div>
 
-                <div className="form-group mb-3">
-                    <button
-                        type="submit"
-                        className="fs-4 button mb-3 w-100 btn btn-outline-success btn-lg btn-block login-btn fw-bold"
-                    >
-                        Login
-                    </button>
-                </div>
-            </form>
+				<div className="form-group mb-4">
+					<label htmlFor="password" className="text-muted">
+						Your Password
+					</label>
+					<input
+						type="password"
+						className="fs-4 mb-3 form-control"
+						id="password"
+						name="password"
+						// value="testBR@123"
+						placeholder="Digit your password"
+						required
+					/>
+				</div>
+
+				<div className="form-group mb-3">
+					<button
+						type="submit"
+						className="fs-4 button mb-3 w-100 btn btn-outline-success btn-lg btn-block login-btn fw-bold"
+					>
+						Login
+					</button>
+				</div>
+			</form>
 
             <div className="text-center mt-5">
                 <p className="text-center mb-3 mt-3">
