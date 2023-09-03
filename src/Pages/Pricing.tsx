@@ -1,15 +1,14 @@
 import { CSSProperties } from "react";
 import Navbar from "../Components/Navbar";
-import Footer from "../Components/Footer";
 
-export default function Pricing({ active }: { active: boolean }) {
+export default function Pricing() {
 	return (
 		<>
 			<Navbar />
 			<div className="container col-lg-7" style={containerPricing}>
 				<div className="row">
 					<div className="pricing-header p-3 pb-md-4 text-center mt-5">
-						<p className="fs-5 text-muted">Quickly build an effective pricing table for your potential customers with this Bootstrap example. It’s built with default Bootstrap components and utilities with little customization.</p>
+						<p className="fs-5 text-muted">Elevate your entertainment experience with our subscription plans for access to a vast library of games, books, and movies through our API. Dive into a world of endless entertainment options, from the latest blockbuster films to best-selling novels and captivating video games. With our user-friendly interface and lightning-fast API, you'll have instant access to the ultimate source of digital entertainment.</p>
 					</div>
 
 					<main>
@@ -22,7 +21,7 @@ export default function Pricing({ active }: { active: boolean }) {
 									<div className="card-body">
 										<h1 className="card-title pricing-card-title">$0<small className="text-muted fw-light">/month</small></h1>
 										<ul className="list-unstyled mt-3 mb-4">
-											<li>Without access API Token</li>
+											<li>No Access API Token</li>
 											<li>Limited Recomendations</li>
 										</ul>
 									</div>
@@ -36,12 +35,12 @@ export default function Pricing({ active }: { active: boolean }) {
 									<div className="card-body">
 										<h1 className="card-title pricing-card-title">$1.99<small className="text-muted fw-light">/month</small></h1>
 										<ul className="list-unstyled mt-3 mb-4">
-											<li>20 users included</li>
-											<li>10 GB of storage</li>
-											<li>Priority email support</li>
+											<li>Access to API Token</li>
+											<li>1000 API Requests Day</li>
+											<li>Priority Email Support</li>
 											<li>Help center access</li>
 										</ul>
-										<a href="/checkout" type="button" className="button w-100 btn btn-lg btn-outline-danger">Let's Go</a>
+										<a href="/checkout/casual" type="button" className="button w-100 btn btn-lg btn-outline-danger">Let's Go</a>
 									</div>
 								</div>
 							</div>
@@ -53,13 +52,13 @@ export default function Pricing({ active }: { active: boolean }) {
 									<div className="card-body">
 										<h1 className="card-title pricing-card-title">$4.99<small className="text-muted fw-light">/month</small></h1>
 										<ul className="list-unstyled mt-3 mb-4">
-											<li>30 users included</li>
-											<li>15 GB of storage</li>
-											<li>Phone and email support</li>
-											<li>Help center access</li>
-											<li>30 users included</li>
+											<li>Access to API Token</li>
+											<li>5000 API Requests Day</li>
+											<li>Access to Telegram BOT</li>
+											<li>Priority Email Support</li>
+											<li>Priority Telegram Support</li>
 										</ul>
-										<a href="/checkout" type="button" className="button w-100 btn btn-lg btn-outline-primary">Let's Go</a>
+										<a href="/checkout/pro" type="button" className="button w-100 btn btn-lg btn-outline-primary">Let's Go</a>
 									</div>
 								</div>
 							</div>
@@ -68,7 +67,9 @@ export default function Pricing({ active }: { active: boolean }) {
 					</main>
 				</div>
 			</div>
-			<Footer />
+			<div className="col-lg-12 text-center text-muted mb-3 mt-3">
+				<small>&copy; Galhardo MicroSaaS 2023</small>
+			</div>
 		</>
 	);
 }

@@ -19,7 +19,7 @@ export default function useFetch() {
 			setError(err.message);
 			console.log(err.message)
 		} finally {
-			setData(json);
+			setData(json.data);
 			setLoading(false);
 			return { response, json };
 		}
