@@ -60,6 +60,9 @@
 
 *   Go to: <http://localhost:5173/>
 
+
+## Build for production
+
 *   Create build
 
 <!---->
@@ -72,7 +75,7 @@
 
     npm run preview
 
-*   Open production build local server
+*   Open production build local server (build + preview)
 
 <!---->
 
