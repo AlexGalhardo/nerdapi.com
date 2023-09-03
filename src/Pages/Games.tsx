@@ -35,8 +35,6 @@ export default function Games() {
     }, []);
 
     useEffect(() => {
-        console.log("\n globalState na HOME é ===> ", globalState);
-
         fetch("https://api-games.alexgalhardo.com/games")
             .then((response) => response.json())
             .then((json) => {

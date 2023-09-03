@@ -12,8 +12,6 @@ export default function CheckoutPage() {
 
     const { slug } = useParams();
 
-    console.log("slug é ==> ", slug);
-
     return (
         <div className="container col-lg-6 mt-5">
             <div className="row">
