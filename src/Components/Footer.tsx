@@ -1,5 +1,4 @@
 import { CSSProperties } from "react";
-// import { useUserState } from "../Context/UserStateContext";
 import Newsletter from "./Newsletter";
 import { useGlobalState } from "../Context/GlobalStateContext";
 
@@ -12,7 +11,7 @@ export default function Footer() {
 				<footer className="container col-lg-7 w-100 py-4 flex-shrink-0">
 					<div className="container py-4">
 						<div className="row gy-4 gx-5">
-							{!globalState.ACCEPTED_TO_RECEIVE_NEWSLETTER ?
+							{!globalState.USER.ACCEPTED_TO_RECEIVE_NEWSLETTER ?
 								<Newsletter />
 								: undefined}
 							<div className="col-lg-12 text-center text-muted">
