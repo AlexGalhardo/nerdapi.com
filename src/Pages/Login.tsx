@@ -6,6 +6,7 @@ import Error from '../Components/Helper/Error';
 import Button from "../Components/Forms/Button";
 import { useEffect } from "react";
 import { VALIDATE_TOKEN } from "../Api";
+import ErrorAlertMessage from "../Components/Helper/Error";
 
 export default function Login() {
 	const navigate = useNavigate();
@@ -91,12 +92,12 @@ export default function Login() {
 				</div>
 
 				{loading ? (
-					<Button disabled>Processing...</Button>
+					<Button disabled={true}>Processing...</Button>
 					) : (
 					<Button>Login</Button>
 				)}
 
-				<Error error={error && 'Invalid email or/and password'} />
+				<ErrorAlertMessage error={error && 'Invalid email or/and password'} />
 			</form>
 
             <div className="text-center mt-5">

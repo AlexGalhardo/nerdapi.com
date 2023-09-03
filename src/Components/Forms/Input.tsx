@@ -1,4 +1,17 @@
-export default function Input({ label, type, name, value, onChange, error, onBlur, placeholder }) {
+import { ChangeEventHandler, FocusEventHandler } from "react"
+
+interface FormInput {
+	label: string 
+	type: string 
+	name: string 
+	value: string 
+	onChange: ChangeEventHandler<HTMLInputElement> 
+	error: string | null
+	onBlur: FocusEventHandler<HTMLInputElement> 
+	placeholder: string
+}
+
+export default function Input({ label, type, name, value, onChange, error, onBlur, placeholder }: FormInput) {
   return (
     <div className="">
 		<label htmlFor={name} className="text-muted">
