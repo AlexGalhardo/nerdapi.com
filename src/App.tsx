@@ -16,6 +16,7 @@ import Checkout from "./Components/Checkout";
 import NotFound from "./Components/NotFound";
 import Profile from "./Components/Profile/Profile";
 import Auth from "./Components/Auth/Auth";
+import TVShows from "./Pages/TVShows";
 
 export default function App() {
     return (
@@ -26,6 +27,7 @@ export default function App() {
 					<Route path="/" element={<Games />} />
 					<Route path="/books" element={<Books />} />
 					<Route path="/movies" element={<Movies />} />
+					<Route path="/tvshows" element={<TVShows />} />
 					<Route path="/blog/*" element={<Blog />} />
 					<Route path="/contact" element={<Contact />} />
 					<Route path="/pricing" element={<Pricing active={true} />} />

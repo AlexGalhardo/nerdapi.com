@@ -67,7 +67,7 @@ export default function Games() {
 
 					<div className="col-lg-3 text-center">
 						<img id="game_image" src={gameCover} className="shadow mx-auto d-block w-100 image-fluid mb-3" alt="game_image" />
-						<button className="button mt-3 w-80 btn btn-lg btn-outline-primary mb-3" onClick={recommendRandomGame}>
+						<button className="button mt-3 w-80 btn btn-lg btn-outline-dark mb-3" onClick={recommendRandomGame}>
 							<i className="bi bi-play-fill"></i>
 							Recommend Other Game
 						</button>

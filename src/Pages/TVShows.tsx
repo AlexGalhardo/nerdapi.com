@@ -1,8 +1,11 @@
 import { CSSProperties, useCallback, useEffect, useState } from "react";
 import Navbar from "../Components/Navbar";
 import Footer from "../Components/Footer";
+import { useGlobalState } from "../Context/GlobalStateContext";
 
-export default function Movies() {
+export default function TVShows() {
+	const {globalState} = useGlobalState()
+
 	const [gameTitle, setGameTitle] = useState<string>()
 	const [gameIGDBLink, setGameIGDBLink] = useState<string>()
 	const [gameCover, setGameCover] = useState<string>()
@@ -15,7 +18,7 @@ export default function Movies() {
 	const [gamePublisher, setGamePublisher] = useState<string>()
 	const [error, setError] = useState<string>()
 
-	const recommendRandomMovie = useCallback(async () => {
+	const recommendRandomGame = useCallback(async () => {
 		const response = await fetch('https://api-games.alexgalhardo.com/games')
 		const json = await response.json()
 		const game = json[Math.floor(Math.random() * json?.length)]
@@ -32,6 +35,8 @@ export default function Movies() {
 	}, [])
 
 	useEffect(() => {
+		console.log('\n globalState na HOME é ===> ', globalState)
+
 		fetch('https://api-games.alexgalhardo.com/games')
 			.then(response => response.json())
 			.then(json => {
@@ -46,9 +51,11 @@ export default function Movies() {
 				setGamePlatforms(game.platforms)
 				setGameDeveloper(game.developer)
 				setGamePublisher(game.publisher)
+				// setLoading(false);
 			})
 			.catch(error => {
 				setError(error);
+				// setLoading(false);
 			});
 	}, []);
 
@@ -60,9 +67,9 @@ export default function Movies() {
 
 					<div className="col-lg-3 text-center">
 						<img id="game_image" src={gameCover} className="shadow mx-auto d-block w-100 image-fluid mb-3" alt="game_image" />
-						<button className="button mt-3 w-80 btn btn-lg btn-outline-primary mb-3" onClick={recommendRandomMovie}>
+						<button className="button mt-3 w-80 btn btn-lg btn-outline-primary mb-3" onClick={recommendRandomGame}>
 							<i className="bi bi-play-fill"></i>
-							Recommend Other Movie
+							Recommend Other TVShow
 						</button>
 					</div>
 
@@ -101,7 +108,7 @@ export default function Movies() {
 					<div className="col-lg-3 mb-3">
 
 						<form className="mb-3" action="/searchGame" method="GET">
-							<input className="shadow-sm fs-5 form-control" type="search" placeholder="Search Movie Title..." aria-label="Search" name="title" />
+							<input className="shadow-sm fs-5 form-control" type="search" placeholder="Search TVShow Title..." aria-label="Search" name="title" />
 						</form>
 
 						<div className="list-group shadow-sm">
@@ -117,13 +124,13 @@ export default function Movies() {
 								<span>10</span>
 							</a>
 
-							<a href="/movies" className="d-flex justify-content-between list-group-item list-group-item-action text-white bg-dark">
+							<a href="/movies" className="d-flex justify-content-between list-group-item list-group-item-action">
 								<i className="bi bi-camera-video"></i>
 								<span>Movies</span>
 								<span>30</span>
 							</a>
 
-							<a href="/tvshows" className="d-flex justify-content-between list-group-item list-group-item-action">
+							<a href="/tvshows" className="d-flex justify-content-between list-group-item list-group-item-action text-white bg-dark">
 								<i className="bi bi-tv"></i>
 								<span>TV Shows</span>
 								<span>20</span>
