@@ -1,6 +1,6 @@
 import {  createContext, useCallback, useContext, useEffect, useState } from "react";
 import {  useNavigate } from "react-router-dom";
-import {  USER_LOGIN, VALIDATE_TOKEN } from "../Api";
+import {  SEND_CONTACT, USER_LOGIN, VALIDATE_TOKEN } from "../Api";
 interface GlobalState {
     FLASH_MESSAGES: {
 		YOU_NEED_TO_LOGIN_FIRST: string | undefined
@@ -29,27 +29,16 @@ interface GlobalState {
 		}
 	}
 }
-
-export enum DispatchActionType {
-    YOU_NEED_TO_LOGIN_FIRST,
-	YOU_ARE_ALREADY_LOGGED_IN,
-	LOGIN,
-	LOGOUT
-}
-
-interface DispatchAction {
-    type: DispatchActionType;
-    payload?: {  };
-}
-
 interface GlobalStateContextPort {
 	error: null | string;
 	loading: boolean;
-	userLogin: (username: string, password: string) => Promise<Element | undefined>;
-	userLogout: () => Promise<void>
-    globalState: GlobalState;
+	globalState: GlobalState;
 	data: any | null;
 	login: null | boolean;
+	contactSend: boolean;
+	userLogin: (username: string, password: string) => Promise<Element | undefined>;
+	userLogout: () => Promise<void>;
+	sendContact: (name: string, email: string, subject: string, message: string) => Promise<any>;
 	getUser: (token: string) => Promise<void>;
 }
 
@@ -60,6 +49,7 @@ export const GlobalStateProvider = ({ children }: React.PropsWithChildren) => {
 	const [login, setLogin] = useState<null | boolean>(null);
 	const [loading, setLoading] = useState<boolean>(false);
   	const [error, setError] = useState<null | string>(null);
+	const [contactSend, setContactSend] = useState<boolean>(false)
 	const navigate = useNavigate();
 
     const [globalState, setGlobalState] = useState<GlobalState>({
@@ -138,6 +128,22 @@ export const GlobalStateProvider = ({ children }: React.PropsWithChildren) => {
 		})
 	}, []);
 
+	async function sendContact(name: string, email: string, subject: string, message: string): Promise<any> {
+		try {
+			setError(null);
+			setLoading(true);
+			const { url, options } = SEND_CONTACT({ name, email, subject, message});
+			const response = await fetch(url, options);
+			if (!response.ok) throw new Error(`Error: ${response.statusText}`);
+		} catch (err: any) {
+			setError(err.message);
+			setContactSend(false);
+		} finally {
+			setContactSend(true);
+			setLoading(false)
+		}
+	}
+
 	async function userLogin(email: string, password: string): Promise<any> {
 		try {
 			setError(null);
@@ -188,7 +194,9 @@ export const GlobalStateProvider = ({ children }: React.PropsWithChildren) => {
 		error,
 		loading,
 		login,
-		getUser
+		getUser,
+		contactSend,
+		sendContact
 	}}>
 		{children}
 	</GlobalStateContext.Provider>;

@@ -3,7 +3,7 @@ import { useGlobalState } from "../../Context/GlobalStateContext";
 import useForm from "../../Hooks/useForm";
 import Input from "../Forms/Input";
 import Button from "../Forms/Button";
-import ErrorAlertMessage from "../Helper/Error";
+import ErrorAlertMessage from "../Alerts/ErrorAlertMessage";
 
 export default function ForgetPasswordForm() {
 	const { userLogin, error, loading, login } = useGlobalState();

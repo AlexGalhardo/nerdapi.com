@@ -2,7 +2,6 @@ import { useGlobalState } from "../../Context/GlobalStateContext";
 import { Navigate, useParams } from "react-router-dom";
 import CheckoutCasual from "./CheckoutCasual";
 import CheckoutPro from "./CheckoutPro";
-import NotFound from "../NotFound";
 
 export default function CheckoutPage() {
 	const { login } = useGlobalState();

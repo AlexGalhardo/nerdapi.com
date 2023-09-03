@@ -1,6 +1,6 @@
 import { useEffect } from "react";
 import { useParams } from "react-router-dom";
-import ErrorAlertMessage from "../Helper/Error";
+import ErrorAlertMessage from "../Alerts/ErrorAlertMessage";
 import Loading from "../Loading";
 import { GET_BLOG_BY_SLUG } from "../../Api";
 import useFetch from "../../Hooks/useFetch";

@@ -50,6 +50,19 @@ export function USER_GET(token: string) {
     };
 }
 
+export function SEND_CONTACT(body: any) {
+    return {
+        url: API_URL + "/contact",
+        options: {
+            method: "POST",
+            headers: {
+                "Content-Type": "application/json",
+            },
+			body: JSON.stringify(body),
+        },
+    };
+}
+
 export function USER_REGISTER(body: {username: string, email: string, password: string}) {
     return {
         url: API_URL + "/register",

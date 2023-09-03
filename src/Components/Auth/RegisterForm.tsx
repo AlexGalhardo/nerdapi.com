@@ -4,7 +4,7 @@ import useForm from "../../Hooks/useForm";
 import useFetch from "../../Hooks/useFetch";
 import { USER_REGISTER } from "../../Api";
 import Button from "../Forms/Button";
-import ErrorAlertMessage from "../Helper/Error";
+import ErrorAlertMessage from "../Alerts/ErrorAlertMessage";
 import Input from "../Forms/Input";
 
 export default function RegisterForm() {
