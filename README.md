@@ -17,20 +17,20 @@
 
 ## Tools and Services Used
 
-- [Linux Mint XFCE 21.04](https://linuxmint.com/)
-- [Git for control version](https://git-scm.com/)
-- [Vite v4](https://vitejs.dev/)
-- [Boostrap v5](https://getbootstrap.com/)
-- [ReacJS](https://react.dev/) v18 + TypeScript v5.2.2
-- [NodeJS v20](https://nodejs.org/en)
-- [VSCode version 1.81 (July 2023)](https://code.visualstudio.com/)
-- [Insomnia for HTTP Requests Tests](https://insomnia.rest/)
-- [Vercel.com for FrontEnd deploy](https://vercel.com/)
-- [Render.com for Backend (API) deploy](https://render.com/)
-- [Resend.com for emails](https://resend.com/)
-- [Stripe.com for payments](https://stripe.com/)
-- Frontend Global State Management:
-   - [React Hooks: createContext, useContext, useMemo, useReducer, useCallback](https://react.dev/reference/react)
+*   [Linux Mint XFCE 21.04](https://linuxmint.com/)
+*   [Git for control version](https://git-scm.com/)
+*   [Vite v4](https://vitejs.dev/)
+*   [Boostrap v5](https://getbootstrap.com/)
+*   [ReacJS](https://react.dev/) v18 + TypeScript v5.2.2
+*   [NodeJS v20](https://nodejs.org/en)
+*   [VSCode version 1.81 (July 2023)](https://code.visualstudio.com/)
+*   [Insomnia for HTTP Requests Tests](https://insomnia.rest/)
+*   [Vercel.com for FrontEnd deploy](https://vercel.com/)
+*   [Render.com for Backend (API) deploy](https://render.com/)
+*   [Resend.com for emails](https://resend.com/)
+*   [Stripe.com for payments](https://stripe.com/)
+*   Frontend Global State Management:
+    *   [React Hooks: createContext, useContext, useMemo, useReducer, useCallback](https://react.dev/reference/react)
 
 ## Development Setup Local - FrontEnd
 
@@ -59,7 +59,6 @@
     npm run dev
 
 *   Go to: <http://localhost:5173/>
-
 
 ## Build for production
 

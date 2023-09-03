@@ -7,7 +7,7 @@ export default function CheckoutPage() {
     const { login } = useGlobalState();
 
     if (login === false) {
-		window.localStorage.setItem('YOU_NEED_TO_LOGIN_FIRST', 'true')
+        window.localStorage.setItem("YOU_NEED_TO_LOGIN_FIRST", "true");
         return <Navigate to="/auth" />;
     }
 

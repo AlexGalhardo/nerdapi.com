@@ -9,14 +9,14 @@ export default function Contact() {
     const [name, setName] = useState<string>();
     const [email, setEmail] = useState<string>();
     const [subject, setSubject] = useState<string | undefined>("BUG");
-    const [message, setMessage] = useState<string>('');
+    const [message, setMessage] = useState<string>("");
     const [error, setError] = useState<string | undefined>(undefined);
-	const [messageLength, setMessageLength] = useState<number>(0)
-	let messageMaxLength = 1024;
+    const [messageLength, setMessageLength] = useState<number>(0);
+    let messageMaxLength = 1024;
 
-	useEffect(() => {
-		setMessageLength(messageMaxLength - message.length)
-	}, [message.length])
+    useEffect(() => {
+        setMessageLength(messageMaxLength - message.length);
+    }, [message.length]);
 
     const { contactSend, sendContact, loading } = useGlobalState();
 
@@ -30,12 +30,12 @@ export default function Contact() {
         } catch (error: any) {
             setError(error);
         } finally {
-			setName('');
-			setEmail('');
-			setSubject('');
-			setMessage('');
-			setError('');
-		}
+            setName("");
+            setEmail("");
+            setSubject("");
+            setMessage("");
+            setError("");
+        }
     }
 
     return (
@@ -52,7 +52,7 @@ export default function Contact() {
                                 id="name"
                                 name="name"
                                 required
-								value={name}
+                                value={name}
                                 autoFocus
                                 onChange={(e) => setName(e.target.value)}
                             />
@@ -65,7 +65,7 @@ export default function Contact() {
                                 id="email"
                                 name="email"
                                 className="fs-4 form-control"
-								value={email}
+                                value={email}
                                 required
                                 onChange={(e) => setEmail(e.target.value)}
                             />
@@ -88,7 +88,7 @@ export default function Contact() {
 
                         <div className="mb-3">
                             <label htmlFor="message" className="form-label">
-                                Digit your message ({(messageLength) ?? undefined} characters remaining)
+                                Digit your message ({messageLength ?? undefined} characters remaining)
                             </label>
                             <small id="count" className="text-muted"></small>
                             <textarea
@@ -96,7 +96,7 @@ export default function Contact() {
                                 maxLength={1024}
                                 className="fs-4 form-control"
                                 name="message"
-								value={message}
+                                value={message}
                                 rows={7}
                                 required
                                 onChange={(e) => setMessage(e.target.value)}

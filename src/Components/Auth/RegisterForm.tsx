@@ -18,9 +18,9 @@ export default function RegisterForm() {
 
     async function handleSubmit(event: any) {
         event.preventDefault();
-		if(username && email && password){
-			userRegister(username.value, email.value, password.value)
-		}
+        if (username && email && password) {
+            userRegister(username.value, email.value, password.value);
+        }
     }
 
     return (

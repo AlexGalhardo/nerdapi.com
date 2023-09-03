@@ -63,7 +63,7 @@ export function SEND_CONTACT(body: any) {
     };
 }
 
-export function RECOVER_PASSWORD(body: {email: string}) {
+export function RECOVER_PASSWORD(body: { email: string }) {
     return {
         url: API_URL + "/recover-password",
         options: {

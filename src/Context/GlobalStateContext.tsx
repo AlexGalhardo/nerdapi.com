@@ -36,13 +36,13 @@ interface GlobalStateContextPort {
     data: any | null;
     login: null | boolean;
     contactSend: boolean;
-	sendRecoverPassword: boolean;
+    sendRecoverPassword: boolean;
     userLogin: (username: string, password: string) => Promise<Element | undefined>;
     userLogout: () => Promise<void>;
     sendContact: (name: string, email: string, subject: string, message: string) => Promise<any>;
     getUser: (token: string) => Promise<void>;
-	userRegister: (username: string, email: string, password: string) => Promise<any>;
-	recoverPassword: (email: string) => Promise<any>;
+    userRegister: (username: string, email: string, password: string) => Promise<any>;
+    recoverPassword: (email: string) => Promise<any>;
 }
 
 const GlobalStateContext = createContext<GlobalStateContextPort | undefined>(undefined);
@@ -53,13 +53,13 @@ export const GlobalStateProvider = ({ children }: React.PropsWithChildren) => {
     const [loading, setLoading] = useState<boolean>(false);
     const [error, setError] = useState<null | string>(null);
     const [contactSend, setContactSend] = useState<boolean>(false);
-	const [sendRecoverPassword, setSendRecoverPassword] = useState<boolean>(false);
+    const [sendRecoverPassword, setSendRecoverPassword] = useState<boolean>(false);
     const navigate = useNavigate();
 
     const [globalState, setGlobalState] = useState<GlobalState>({
         FLASH_MESSAGES: {
-            YOU_NEED_TO_LOGIN_FIRST: 'You need to login first',
-            USER_ARE_ALREADY_LOGGED_IN: 'You are already logged in',
+            YOU_NEED_TO_LOGIN_FIRST: "You need to login first",
+            USER_ARE_ALREADY_LOGGED_IN: "You are already logged in",
         },
         USER: {
             LOGGED_IN: false,
@@ -148,7 +148,7 @@ export const GlobalStateProvider = ({ children }: React.PropsWithChildren) => {
         }
     }
 
-	async function recoverPassword(email: string): Promise<any> {
+    async function recoverPassword(email: string): Promise<any> {
         try {
             setError(null);
             setLoading(true);
@@ -183,7 +183,7 @@ export const GlobalStateProvider = ({ children }: React.PropsWithChildren) => {
         }
     }
 
-	async function userRegister(username: string, email: string, password: string): Promise<any> {
+    async function userRegister(username: string, email: string, password: string): Promise<any> {
         try {
             setError(null);
             setLoading(true);
@@ -198,7 +198,7 @@ export const GlobalStateProvider = ({ children }: React.PropsWithChildren) => {
             setError(err.message);
             setLogin(false);
         } finally {
-			setLogin(true)
+            setLogin(true);
             setLoading(false);
         }
     }
@@ -239,9 +239,9 @@ export const GlobalStateProvider = ({ children }: React.PropsWithChildren) => {
                 getUser,
                 contactSend,
                 sendContact,
-				userRegister,
-				sendRecoverPassword,
-				recoverPassword
+                userRegister,
+                sendRecoverPassword,
+                recoverPassword,
             }}
         >
             {children}

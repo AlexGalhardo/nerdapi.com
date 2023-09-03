@@ -20,14 +20,13 @@ export default function ForgetPasswordForm() {
         event.preventDefault();
 
         if (email.validate()) {
-			try {
-				await recoverPassword(email.value);
-			} catch(error: any){
-				setError(error);
-			} finally {
-				email.setValue('')
-			}
-
+            try {
+                await recoverPassword(email.value);
+            } catch (error: any) {
+                setError(error);
+            } finally {
+                email.setValue("");
+            }
         }
     }
 
@@ -51,7 +50,11 @@ export default function ForgetPasswordForm() {
                     <Button>Send me a email to recover password</Button>
                 )}
 
-				<SuccessAlertMessage message={sendRecoverPassword && 'If this email exists, a email was send with a link to recover password!'} />
+                <SuccessAlertMessage
+                    message={
+                        sendRecoverPassword && "If this email exists, a email was send with a link to recover password!"
+                    }
+                />
 
                 <ErrorAlertMessage error={error && "Invalid email or/and password"} />
             </form>
