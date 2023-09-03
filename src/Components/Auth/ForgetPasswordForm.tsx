@@ -4,20 +4,30 @@ import useForm from "../../Hooks/useForm";
 import Input from "../Forms/Input";
 import Button from "../Forms/Button";
 import ErrorAlertMessage from "../Alerts/ErrorAlertMessage";
+import SuccessAlertMessage from "../Alerts/SuccessAlertMessage";
+import { useState } from "react";
 
 export default function ForgetPasswordForm() {
-    const { userLogin, error, loading, login } = useGlobalState();
+    const { recoverPassword, sendRecoverPassword, loading, login } = useGlobalState();
 
     if (login === true) return <Navigate to="/profile" />;
 
+    const [error, setError] = useState<string | undefined>(undefined);
+
     const email = useForm("email");
-    const password = useForm("password");
 
     async function handleSubmit(event: any) {
         event.preventDefault();
 
-        if (email.validate() && password.validate()) {
-            userLogin(email.value, password.value);
+        if (email.validate()) {
+			try {
+				await recoverPassword(email.value);
+			} catch(error: any){
+				setError(error);
+			} finally {
+				email.setValue('')
+			}
+
         }
     }
 
@@ -27,7 +37,7 @@ export default function ForgetPasswordForm() {
                 <div className="form-group mb-4 mt-5">
                     <Input
                         minLength={12}
-                        placeholder="Digit your email"
+                        placeholder="Digit your email to recover password"
                         label="Digit your email"
                         type="email"
                         name="email"
@@ -40,6 +50,8 @@ export default function ForgetPasswordForm() {
                 ) : (
                     <Button>Send me a email to recover password</Button>
                 )}
+
+				<SuccessAlertMessage message={sendRecoverPassword && 'If this email exists, a email was send with a link to recover password!'} />
 
                 <ErrorAlertMessage error={error && "Invalid email or/and password"} />
             </form>

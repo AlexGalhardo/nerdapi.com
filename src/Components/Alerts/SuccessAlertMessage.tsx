@@ -1,5 +1,5 @@
 interface AlertSuccess {
-    message: string | null | undefined;
+    message: string | null | undefined | boolean;
 }
 
 export default function SuccessAlertMessage({ message }: AlertSuccess) {

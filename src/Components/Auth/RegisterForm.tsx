@@ -1,14 +1,12 @@
 import { Navigate } from "react-router-dom";
 import { useGlobalState } from "../../Context/GlobalStateContext";
 import useForm from "../../Hooks/useForm";
-import useFetch from "../../Hooks/useFetch";
-import { USER_REGISTER } from "../../Api";
 import Button from "../Forms/Button";
 import ErrorAlertMessage from "../Alerts/ErrorAlertMessage";
 import Input from "../Forms/Input";
 
 export default function RegisterForm() {
-    const { login, userLogin } = useGlobalState();
+    const { login, userRegister, loading, error } = useGlobalState();
 
     if (login === true) {
         return <Navigate to="/profile" />;
@@ -18,17 +16,11 @@ export default function RegisterForm() {
     const email = useForm("email");
     const password = useForm("password");
 
-    const { loading, error, request } = useFetch();
-
     async function handleSubmit(event: any) {
         event.preventDefault();
-        const { url, options } = USER_REGISTER({
-            username: username.value,
-            email: email.value,
-            password: password.value,
-        });
-        const { response } = await request(url, options);
-        if (response?.ok) userLogin(email.value, password.value);
+		if(username && email && password){
+			userRegister(username.value, email.value, password.value)
+		}
     }
 
     return (

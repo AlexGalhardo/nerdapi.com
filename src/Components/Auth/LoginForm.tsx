@@ -4,9 +4,11 @@ import useForm from "../../Hooks/useForm";
 import Input from "../Forms/Input";
 import Button from "../Forms/Button";
 import ErrorAlertMessage from "../Alerts/ErrorAlertMessage";
+import { useEffect } from "react";
 
 export default function LoginForm() {
     const { globalState, userLogin, error, loading, login } = useGlobalState();
+	let YOU_NEED_TO_LOGIN_FIRST = undefined;
 
     if (login === true) {
         return <Navigate to="/profile" />;
@@ -25,11 +27,11 @@ export default function LoginForm() {
 
     return (
         <>
-            {globalState.FLASH_MESSAGES.YOU_NEED_TO_LOGIN_FIRST ? (
+            {/* {window.localStorage.getItem('YOU_NEED_TO_LOGIN_FIRST') ? (
                 <p className="alert alert-danger text-center fw-bold fs-4">
                     {globalState.FLASH_MESSAGES.YOU_NEED_TO_LOGIN_FIRST}
                 </p>
-            ) : undefined}
+            ) : undefined} */}
 
             <div className="form-group mb-2">
                 <button

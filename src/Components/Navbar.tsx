@@ -62,6 +62,18 @@ export default function Navbar() {
                                     API
                                 </a>
                             </li>
+
+							<li className="nav-item">
+                                <a
+                                    className="fs-5 nav-link fw-bold"
+                                    aria-current="page"
+                                    href="https://github.com/AlexGalhardo/Galhardo-MicroSaaS"
+                                    target="_blank"
+                                >
+                                    {" "}
+                                    Source Code
+                                </a>
+                            </li>
                         </ul>
 
                         {globalState.USER.LOGGED_IN ? (
