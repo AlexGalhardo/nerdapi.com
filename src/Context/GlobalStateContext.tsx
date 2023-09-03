@@ -108,16 +108,17 @@ export const GlobalStateProvider = ({ children }: React.PropsWithChildren) => {
 	async function getUser(token: string) {
 		const { url, options } = VALIDATE_TOKEN(token);
 		const response = await fetch(url, options);
-		const {data} = await response.json();
+		const json = await response.json();
 		setGlobalState({
 			...globalState,
 			USER: {
 				...globalState.USER,
 				LOGGED_IN: true,
-				NAME: data.username,
-				EMAIL: data.email,
+				NAME: json.data.username,
+				EMAIL: json.data.email,
 			}
 		});
+		setData(json)
 		setLogin(true);
 	}
 
@@ -130,8 +131,8 @@ export const GlobalStateProvider = ({ children }: React.PropsWithChildren) => {
 			if (!tokenRes.ok) throw new Error(`Error: ${tokenRes.statusText}`);
 			const { token } = await tokenRes.json();
 			window.localStorage.setItem('token', token);
-			VALIDATE_TOKEN(token);
-			return navigate('/profile');
+			getUser(token);
+			navigate('/profile');
 		} catch (err: any) {
 			setError(err.message);
 			setLogin(false);
@@ -141,7 +142,6 @@ export const GlobalStateProvider = ({ children }: React.PropsWithChildren) => {
 	}
 
 	useEffect(() => {
-		console.log('ENTROU........')
 		async function autoLogin() {
 			const token = window.localStorage.getItem('token');
 			if (token) {

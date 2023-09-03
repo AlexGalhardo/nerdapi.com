@@ -1,7 +1,14 @@
+import { useNavigate } from "react-router-dom";
 import { useGlobalState } from "../Context/GlobalStateContext";
 
 export default function Navbar() {
-	const { globalState } = useGlobalState();
+	const { globalState, userLogout } = useGlobalState();
+	const navigate = useNavigate();
+
+	function handleLogout() {
+		userLogout();
+		navigate('/auth');
+	}
 
 	return (
 		<div className="fixed-top shadow bg-light mb-5">
@@ -54,7 +61,7 @@ export default function Navbar() {
 										<li><a className="fs-5 fw-bold dropdown-item" href="/profile"><i className="bi bi-person-circle"></i> Profile</a></li>
 										<li><a className="fs-5 fw-bold dropdown-item" href="/profile/transactions"><i className="bi bi-award"></i> Transactions</a></li>
 										<li><hr className="dropdown-divider"/></li>
-										<li><a className="fs-5 fw-bold dropdown-item" href="/logout"><i className="bi bi-x-lg"></i> Logout</a></li>
+										<li><a className="fs-5 fw-bold dropdown-item" onClick={handleLogout}><i className="bi bi-x-lg"></i> Logout</a></li>
 									</ul>
 								</li>
 							</ul>
@@ -62,9 +69,9 @@ export default function Navbar() {
 
 							<div className="pull-right">
 
-								<a href="/login" className="button fw-bold fs-5 btn btn-outline-success" type="submit">Login</a>
+								<a href="/auth" className="button fw-bold fs-5 btn btn-outline-success" type="submit">Login</a>
 
-								<a href="/register" className="button fw-bold fs-5 ms-2 btn btn-outline-primary" type="submit">Sign Up</a>
+								<a href="/auth/register" className="button fw-bold fs-5 ms-2 btn btn-outline-primary" type="submit">Sign Up</a>
 							</div>
 						}
 

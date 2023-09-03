@@ -50,7 +50,7 @@ export function USER_GET(token: string) {
     };
 }
 
-export function REGISTER_USER(body: any) {
+export function USER_REGISTER(body: any) {
     return {
         url: API_URL + "/register",
         options: {
@@ -96,6 +96,18 @@ export function STATS_GET() {
             method: "GET",
             headers: {
                 Authorization: "Bearer " + window.localStorage.getItem("token"),
+            },
+        },
+    };
+}
+
+export function GET_BLOG_BY_SLUG(slug: string){
+    return {
+        url: API_URL + `/blog/${slug}`,
+        options: {
+            method: "GET",
+            headers: {
+                "Content-Type": "application/json",
             },
         },
     };

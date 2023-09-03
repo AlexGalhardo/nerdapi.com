@@ -1,4 +1,4 @@
-import React from "react";
+import { useState } from "react";
 
 function isPasswordSecure(password: string) {
 	// Check if the password meets the following criteria:
@@ -23,6 +23,11 @@ function isPasswordSecure(password: string) {
 	);
 }
 
+function isValidEmail(email: string){
+  	var emailPattern = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+  	return emailPattern.test(email);
+}
+
 const types = {
     email: {
         regex: /^[a-z0-9.]+@[a-z0-9]+\.[a-z]+\.([a-z]+)?$/i,
@@ -38,23 +43,21 @@ const types = {
     },
 };
 
-const useForm = (type: "email" | "password" | "number") => {
-    const [value, setValue] = React.useState("");
-    const [error, setError] = React.useState<null | string>(null);
+export default function useForm(type: "email" | "password" | "number" | "username"){
+    const [value, setValue] = useState("");
+    const [error, setError] = useState<null | string>(null);
 
     function validate(value: string) {
-        // if (typeof type !== "string") return true;
+        if (typeof type === 'number') return true;
         if (value.length === 0) {
             setError("Waiting input value...");
             return false;
-		} else if (types['password'] && !isPasswordSecure(value)) {
+		} else if (type === 'password' && !isPasswordSecure(value)) {
             setError(types[type].message);
             return false;
-		// }
-		// else if (types[type] && !types['email' || 'number'].regex.test(value)) {
-		// 	setError(types[type].message);
-		// 	return false;
-
+		} else if (type === 'email' && !isValidEmail(value)) {
+		 	setError(types[type].message);
+		 	return false;
 		} else {
             setError(null);
             return true;
@@ -75,5 +78,3 @@ const useForm = (type: "email" | "password" | "number") => {
         onBlur: () => validate(value),
     };
 };
-
-export default useForm;
