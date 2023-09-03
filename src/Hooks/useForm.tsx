@@ -1,17 +1,40 @@
 import React from "react";
 
+function isPasswordSecure(password: string) {
+	// Check if the password meets the following criteria:
+	// 1. At least 8 characters long
+	// 2. Contains at least one lowercase letter
+	// 3. Contains at least one uppercase letter
+	// 4. Contains at least one digit (0-9)
+	// 5. Contains at least one special character (e.g., !@#$%^&*)
+
+	const lengthRegex = /^.{8,}$/;
+	const lowercaseRegex = /[a-z]/;
+	const uppercaseRegex = /[A-Z]/;
+	const digitRegex = /\d/;
+	const specialCharRegex = /[!@#$%^&*]/;
+
+	return (
+		lengthRegex.test(password) &&
+		lowercaseRegex.test(password) &&
+		uppercaseRegex.test(password) &&
+		digitRegex.test(password) &&
+		specialCharRegex.test(password)
+	);
+}
+
 const types = {
     email: {
-        regex: /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/,
-        message: "Preencha um email válido",
+        regex: /^[a-z0-9.]+@[a-z0-9]+\.[a-z]+\.([a-z]+)?$/i,
+        message: "Digit a valid email",
     },
     password: {
-        regex: /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])[0-9a-zA-Z]{8,}$/,
-        message: "A senha precisa ter 1 caracter maíusculo, 1 minúsculo e 1 digito. Com no mínimo 8 caracteres.",
+        // regex: /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])[0-9a-zA-Z]{8,}$/,
+        message: "The password must have 8 characters, 1 uppercase, 1 lowercase and 1 digit",
     },
     number: {
         regex: /^\d+$/,
-        message: "Utilize números apenas.",
+        message: "Only numbers",
     },
 };
 
@@ -20,14 +43,19 @@ const useForm = (type: "email" | "password" | "number") => {
     const [error, setError] = React.useState<null | string>(null);
 
     function validate(value: string) {
-        // if (type === false) return true;
+        // if (typeof type !== "string") return true;
         if (value.length === 0) {
-            setError("Preencha um valor.");
+            setError("Waiting input value...");
             return false;
-        } else if (types[type] && !types[type].regex.test(value)) {
+		} else if (types['password'] && !isPasswordSecure(value)) {
             setError(types[type].message);
             return false;
-        } else {
+		// }
+		// else if (types[type] && !types['email' || 'number'].regex.test(value)) {
+		// 	setError(types[type].message);
+		// 	return false;
+
+		} else {
             setError(null);
             return true;
         }

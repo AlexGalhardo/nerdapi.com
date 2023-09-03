@@ -1,28 +1,39 @@
 import { useNavigate } from "react-router-dom";
 import { useGlobalState } from "../Context/GlobalStateContext";
+import useForm from "../Hooks/useForm";
+import Input from "../Components/Forms/Input";
+import Error from '../Components/Helper/Error';
+import Button from "../Components/Forms/Button";
 import { useEffect } from "react";
+import { VALIDATE_TOKEN } from "../Api";
 
 export default function Login() {
-	const { globalState, userLogin } = useGlobalState();
 	const navigate = useNavigate();
+	const { globalState, userLogin, error, loading } = useGlobalState();
 
-	if(globalState.LOGGED_IN) navigate("/profile");
+	if(globalState.USER.LOGGED_IN) navigate("/profile");
 
-	// useEffect(() => {
+	useEffect(() => {
+		async function autoLogin() {
+			const token = window.localStorage.getItem('token');
+			if (token) {
+				const { url, options } = VALIDATE_TOKEN(token);
+				const response = await fetch(url, options);
+				if(response.status === 200) navigate('/profile')
+			}
+		}
+		autoLogin();
+	}, [window.localStorage.getItem('token')])
 
-	// }, [globalState.LOGGED_IN])
+	const email = useForm('email');
+  	const password = useForm('password');
 
 	async function handleSubmit(event: any) {
 		event.preventDefault();
-		console.log('entrou dentro do handleSubmit...')
-		// const { url, options } = USER_POST({
-		// username: username.value,
-		// email: email.value,
-		// password: password.value,
-		// });
-		// const { response } = await request(url, options);
-		// if (response.ok) userLogin(username.value, password.value);
-		return await userLogin()
+
+		if (email.validate() && password.validate()) {
+			userLogin(email.value, password.value);
+		}
 	}
 
     return (
@@ -72,44 +83,20 @@ export default function Login() {
 			<form onSubmit={handleSubmit}>
 
 				<div className="form-group mb-4 mt-5">
-					<label htmlFor="email" className="text-muted">
-						Your Email Address
-					</label>
-					<input
-						type="email"
-						className="fs-4 form-control"
-						id="email"
-						name="email"
-						placeholder="Digit your email"
-						// value="test@gmail.com"
-						autoFocus
-						required
-					/>
+					<Input placeholder="Digit your email" label="Digit your email" type="email" name="email" {...email} />
 				</div>
 
 				<div className="form-group mb-4">
-					<label htmlFor="password" className="text-muted">
-						Your Password
-					</label>
-					<input
-						type="password"
-						className="fs-4 mb-3 form-control"
-						id="password"
-						name="password"
-						// value="testBR@123"
-						placeholder="Digit your password"
-						required
-					/>
+					<Input placeholder="Digit your password" label="Digit your password" type="password" name="password" {...password} />
 				</div>
 
-				<div className="form-group mb-3">
-					<button
-						type="submit"
-						className="fs-4 button mb-3 w-100 btn btn-outline-success btn-lg btn-block login-btn fw-bold"
-					>
-						Login
-					</button>
-				</div>
+				{loading ? (
+					<Button disabled>Processing...</Button>
+					) : (
+					<Button>Login</Button>
+				)}
+
+				<Error error={error && 'Invalid email or/and password'} />
 			</form>
 
             <div className="text-center mt-5">

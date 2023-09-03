@@ -1,7 +1,7 @@
 import { useGlobalState } from "../Context/GlobalStateContext";
 
 export default function Navbar() {
-	const {globalState } = useGlobalState();
+	const { globalState } = useGlobalState();
 
 	return (
 		<div className="fixed-top shadow bg-light mb-5">
@@ -44,11 +44,11 @@ export default function Navbar() {
 
 						</ul>
 
-						{globalState.LOGGED_IN ?
+						{globalState.USER.LOGGED_IN ?
 							<ul className="navbar-nav me-auto mb-2 mb-lg-0 right">
 								<li className="nav-item dropdown">
 									<a className="fs-4 fw-bold nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-										{globalState.NAME}
+										{globalState.USER.NAME}
 									</a>
 									<ul className="dropdown-menu" aria-labelledby="navbarDropdown">
 										<li><a className="fs-5 fw-bold dropdown-item" href="/profile"><i className="bi bi-person-circle"></i> Profile</a></li>

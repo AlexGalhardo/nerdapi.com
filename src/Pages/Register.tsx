@@ -6,11 +6,11 @@ export default function Register() {
 	const {globalState} = useGlobalState()
 	const navigate = useNavigate();
 
-	if(globalState.LOGGED_IN) navigate("/profile");
+	if(globalState.USER.LOGGED_IN) navigate("/profile");
 
 	// useEffect(() => {
-	// 	if(globalState.LOGGED_IN) navigate("/profile");
-	// }, [globalState.LOGGED_IN])
+	// 	if(globalState.USER.LOGGED_IN) navigate("/profile");
+	// }, [globalState.USER.LOGGED_IN])
 
 	return (
 		<>

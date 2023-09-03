@@ -26,9 +26,9 @@ export function USER_LOGOUT(token: string) {
     };
 }
 
-export function TOKEN_VALIDATE_POST(token: string) {
+export function VALIDATE_TOKEN(token: string) {
     return {
-        url: API_URL + "/jwt-auth/v1/token/validate",
+        url: API_URL + "/validate",
         options: {
             method: "POST",
             headers: {
@@ -40,7 +40,7 @@ export function TOKEN_VALIDATE_POST(token: string) {
 
 export function USER_GET(token: string) {
     return {
-        url: API_URL + "/api/user",
+        url: API_URL + "/user",
         options: {
             method: "GET",
             headers: {
