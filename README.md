@@ -8,8 +8,8 @@
 
 *   This is personal project and challenge I created to learn ReactJS with Typescript using Single Page Applications (SPA) principles, to see if I could program a microsaas MVP within a week.
 *   This project uses JWT tokens using stateless authentication.
-*   BackEnd is a simple Typescript with Express REST API endpoints using Clean Architecture Principles (ports, useCases, etc)
-*   I choose to save data in a JSON as database for simplicity and velocity of development.
+*   BackEnd is a simple Typescript code using Express REST API endpoints using Clean Architecture Principles (ports, useCases, etc)
+*   I choosed to save data in a JSON as database for simplicity and development velocity reasons.
 
 ## Code Statistics (FrontEnd + BackEnd)
 
@@ -17,20 +17,20 @@
 
 ## Tools and Services Used
 
-    *   [Linux Mint XFCE 21.04](https://linuxmint.com/)
-    *   [Git for control version](https://git-scm.com/)
-    *   [Vite v4](https://vitejs.dev/)
-    *   [Boostrap v5](https://getbootstrap.com/)
-    *   [ReacJS](https://react.dev/) v18 + TypeScript v5.2.2
-    *   [NodeJS v20](https://nodejs.org/en)
-    *   [VSCode version 1.81 (July 2023)](https://code.visualstudio.com/)
-    *   [Insomnia for HTTP Requests Tests](https://insomnia.rest/)
-    *   [Vercel.com for FrontEnd deploy](https://vercel.com/)
-    *   [Render.com for Backend (API) deploy](https://render.com/)
-    *   [Resend.com for emails](https://resend.com/)
-    *   [Stripe.com for payments](https://stripe.com/)
-    *   Frontend Global State Management:
-        *   [React Hooks: createContext, useContext, useMemo, useReducer, useCallback](https://react.dev/reference/react)
+- [Linux Mint XFCE 21.04](https://linuxmint.com/)
+- [Git for control version](https://git-scm.com/)
+- [Vite v4](https://vitejs.dev/)
+- [Boostrap v5](https://getbootstrap.com/)
+- [ReacJS](https://react.dev/) v18 + TypeScript v5.2.2
+- [NodeJS v20](https://nodejs.org/en)
+- [VSCode version 1.81 (July 2023)](https://code.visualstudio.com/)
+- [Insomnia for HTTP Requests Tests](https://insomnia.rest/)
+- [Vercel.com for FrontEnd deploy](https://vercel.com/)
+- [Render.com for Backend (API) deploy](https://render.com/)
+- [Resend.com for emails](https://resend.com/)
+- [Stripe.com for payments](https://stripe.com/)
+- Frontend Global State Management:
+   - [React Hooks: createContext, useContext, useMemo, useReducer, useCallback](https://react.dev/reference/react)
 
 ## Development Setup Local - FrontEnd
 
