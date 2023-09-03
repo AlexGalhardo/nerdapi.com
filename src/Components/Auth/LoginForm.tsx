@@ -6,34 +6,34 @@ import Button from "../Forms/Button";
 import ErrorAlertMessage from "../Alerts/ErrorAlertMessage";
 
 export default function LoginForm() {
-	const { globalState, userLogin, error, loading, login } = useGlobalState();
+    const { globalState, userLogin, error, loading, login } = useGlobalState();
 
     if (login === true) {
-		return <Navigate to="/profile" />;
-	}
+        return <Navigate to="/profile" />;
+    }
 
-	const email = useForm('email');
-  	const password = useForm('password');
+    const email = useForm("email");
+    const password = useForm("password");
 
-	async function handleSubmit(event: any) {
-		event.preventDefault();
+    async function handleSubmit(event: any) {
+        event.preventDefault();
 
-		if (email.validate() && password.validate()) {
-			userLogin(email.value, password.value);
-		}
-	}
+        if (email.validate() && password.validate()) {
+            userLogin(email.value, password.value);
+        }
+    }
 
     return (
         <>
-			{globalState.FLASH_MESSAGES.YOU_NEED_TO_LOGIN_FIRST ?
-				<p className="alert alert-danger text-center fw-bold fs-4">
-					{globalState.FLASH_MESSAGES.YOU_NEED_TO_LOGIN_FIRST}
-				</p>
-			: undefined}
+            {globalState.FLASH_MESSAGES.YOU_NEED_TO_LOGIN_FIRST ? (
+                <p className="alert alert-danger text-center fw-bold fs-4">
+                    {globalState.FLASH_MESSAGES.YOU_NEED_TO_LOGIN_FIRST}
+                </p>
+            ) : undefined}
 
             <div className="form-group mb-2">
                 <button
-					disabled
+                    disabled
                     type="submit"
                     className="fs-4 button w-100 btn btn-outline-dark btn-lg btn-block login-btn fw-bold"
                 >
@@ -43,7 +43,7 @@ export default function LoginForm() {
 
             <div className="form-group mb-2">
                 <button
-					disabled
+                    disabled
                     type="submit"
                     className="fs-4 button w-100 btn btn-outline-danger btn-lg btn-block login-btn fw-bold"
                 >
@@ -53,7 +53,7 @@ export default function LoginForm() {
 
             <div className="form-group mb-3">
                 <button
-					disabled
+                    disabled
                     type="submit"
                     className="fs-4 button w-100 btn btn-outline-primary btn-lg btn-block login-btn fw-bold"
                 >
@@ -61,24 +61,33 @@ export default function LoginForm() {
                 </button>
             </div>
 
-			<form onSubmit={handleSubmit}>
+            <form onSubmit={handleSubmit}>
+                <div className="form-group mb-4 mt-5">
+                    <Input
+                        minLength={12}
+                        placeholder="Digit your email"
+                        label="Digit your email"
+                        type="email"
+                        name="email"
+                        {...email}
+                    />
+                </div>
 
-				<div className="form-group mb-4 mt-5">
-					<Input minLength={12} placeholder="Digit your email" label="Digit your email" type="email" name="email" {...email} />
-				</div>
+                <div className="form-group mb-4">
+                    <Input
+                        minLength={8}
+                        placeholder="Digit your password"
+                        label="Digit your password"
+                        type="password"
+                        name="password"
+                        {...password}
+                    />
+                </div>
 
-				<div className="form-group mb-4">
-					<Input minLength={8} placeholder="Digit your password" label="Digit your password" type="password" name="password" {...password} />
-				</div>
+                {loading ? <Button disabled={true}>Processing...</Button> : <Button>Login</Button>}
 
-				{loading ? (
-					<Button disabled={true}>Processing...</Button>
-					) : (
-					<Button>Login</Button>
-				)}
-
-				<ErrorAlertMessage error={error && 'Invalid email or/and password'} />
-			</form>
+                <ErrorAlertMessage error={error && "Invalid email or/and password"} />
+            </form>
 
             <div className="text-center mt-5">
                 <p className="text-center mb-3 mt-3">

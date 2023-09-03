@@ -5,24 +5,20 @@ import NotFound from "../NotFound";
 import CheckoutPage from "./CheckoutPage";
 
 export default function Checkout() {
-	return (
-		<>
-			<Navbar />
-			
-			<main className="container col-lg-8 mt-5">
+    return (
+        <>
+            <Navbar />
 
-				<div className="row">
+            <main className="container col-lg-8 mt-5">
+                <div className="row">
+                    <Routes>
+                        <Route path="/:slug" element={<CheckoutPage />} />
+                        <Route path="*" element={<NotFound />} />
+                    </Routes>
+                </div>
+            </main>
 
-					<Routes>
-						<Route path="/:slug" element={<CheckoutPage />} />
-						<Route path="*" element={<NotFound />} />
-					</Routes>
-					
-				</div>
-
-			</main>
-
-			<Footer />
-		</>
-	);
+            <Footer />
+        </>
+    );
 }

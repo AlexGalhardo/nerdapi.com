@@ -20,7 +20,7 @@ export function USER_LOGOUT(token: string) {
             method: "POST",
             headers: {
                 "Content-Type": "application/json",
-				Authorization: "Bearer " + token,
+                Authorization: "Bearer " + token,
             },
         },
     };
@@ -58,12 +58,12 @@ export function SEND_CONTACT(body: any) {
             headers: {
                 "Content-Type": "application/json",
             },
-			body: JSON.stringify(body),
+            body: JSON.stringify(body),
         },
     };
 }
 
-export function USER_REGISTER(body: {username: string, email: string, password: string}) {
+export function USER_REGISTER(body: { username: string; email: string; password: string }) {
     return {
         url: API_URL + "/register",
         options: {
@@ -114,7 +114,7 @@ export function STATS_GET() {
     };
 }
 
-export function GET_BLOG_BY_SLUG(slug: string){
+export function GET_BLOG_BY_SLUG(slug: string) {
     return {
         url: API_URL + `/blog/${slug}`,
         options: {

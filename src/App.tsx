@@ -20,21 +20,21 @@ export default function App() {
     return (
         <BrowserRouter>
             <GlobalStateProvider>
-				<ProgressBar />
-				<Routes>
-					<Route path="/" element={<Games />} />
-					<Route path="/games/*" element={<Games />} />
-					<Route path="/books" element={<Books />} />
-					<Route path="/movies" element={<Movies />} />
-					<Route path="/tvshows" element={<TVShows />} />
-					<Route path="/blog/*" element={<Blog />} />
-					<Route path="/contact" element={<Contact />} />
-					<Route path="/pricing" element={<Pricing />} />
-					<Route path="/checkout/:slug" element={<Checkout />} />
-					<Route path="/auth/*" element={<Auth />} />
-					<Route path="/profile/*" element={<Profile />} />
-					<Route path="*" element={<NotFound />} />
-				</Routes>
+                <ProgressBar />
+                <Routes>
+                    <Route path="/" element={<Games />} />
+                    <Route path="/games/*" element={<Games />} />
+                    <Route path="/books" element={<Books />} />
+                    <Route path="/movies" element={<Movies />} />
+                    <Route path="/tvshows" element={<TVShows />} />
+                    <Route path="/blog/*" element={<Blog />} />
+                    <Route path="/contact" element={<Contact />} />
+                    <Route path="/pricing" element={<Pricing />} />
+                    <Route path="/checkout/:slug" element={<Checkout />} />
+                    <Route path="/auth/*" element={<Auth />} />
+                    <Route path="/profile/*" element={<Profile />} />
+                    <Route path="*" element={<NotFound />} />
+                </Routes>
             </GlobalStateProvider>
         </BrowserRouter>
     );
