@@ -50,7 +50,7 @@ export function USER_GET(token: string) {
     };
 }
 
-export function USER_REGISTER(body: any) {
+export function USER_REGISTER(body: {username: string, email: string, password: string}) {
     return {
         url: API_URL + "/register",
         options: {

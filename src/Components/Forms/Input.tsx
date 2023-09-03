@@ -9,9 +9,10 @@ interface FormInput {
 	error: string | null
 	onBlur: FocusEventHandler<HTMLInputElement> 
 	placeholder: string
+	minLength: number
 }
 
-export default function Input({ label, type, name, value, onChange, error, onBlur, placeholder }: FormInput) {
+export default function Input({ label, type, name, value, onChange, error, onBlur, placeholder, minLength }: FormInput) {
   return (
     <div className="">
 		<label htmlFor={name} className="text-muted">
@@ -26,6 +27,7 @@ export default function Input({ label, type, name, value, onChange, error, onBlu
 			onChange={onChange}
 			onBlur={onBlur}
 			placeholder={placeholder}
+			minLength={minLength}
 			required
       	/>
       	{error && <p className="alert alert-danger fs-4 fw-bold text-center">{error}</p>}

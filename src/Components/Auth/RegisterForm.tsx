@@ -3,13 +3,18 @@ import { useGlobalState } from "../../Context/GlobalStateContext";
 import useForm from "../../Hooks/useForm";
 import useFetch from "../../Hooks/useFetch";
 import { USER_REGISTER } from "../../Api";
+import Button from "../Forms/Button";
+import ErrorAlertMessage from "../Helper/Error";
+import Input from "../Forms/Input";
 
 export default function RegisterForm() {
 	const { login, userLogin } = useGlobalState();
 
-    if (login === true) return <Navigate to="/profile" />;
+    if (login === true) {
+		return <Navigate to="/profile" />;
+	}
 
-	const username = useForm('username');
+	const username = useForm('text');
 	const email = useForm('email');
 	const password = useForm('password');
 
@@ -23,7 +28,7 @@ export default function RegisterForm() {
 			password: password.value,
 		});
 		const { response } = await request(url, options);
-		if (response?.ok) userLogin(username.value, password.value);
+		if (response?.ok) userLogin(email.value, password.value);
 	}
 
 	return (
@@ -33,27 +38,19 @@ export default function RegisterForm() {
 				<small><span id="alert_name" className="fw-bold text-danger"></span></small>
 
 				<div className="form-group mb-3">
-					<label htmlFor="username">Username</label>
-					<input type="text" className="fs-4 form-control mb-3" id="username" name="username" placeholder="Digit your username" required autoFocus minLength={4} maxLength={32} />
+					<Input minLength={4} placeholder="Digit your username" label="Digit your username" type="text" name="username" {...username} />
 				</div>
 
 				<small><span id="alert_email" className="fw-bold text-danger"></span></small>
 
 				<div className="form-group mb-3">
-					<label htmlFor="email">Email</label>
-					<input type="email" className="fs-4 form-control mb-3" name="email" id="email" required placeholder="Digit your email" />
+					<Input minLength={12} placeholder="Digit your email" label="Digit your email" type="email" name="email" {...email} />
 				</div>
 
 				<small><span id="alert_password" className="fw-bold text-danger"></span></small>
 
 				<div className="form-group mb-3">
-					<label htmlFor="password">Password</label>
-					<input type="password" className="fs-4 mb-3 form-control" id="password" name="password" placeholder="Digit your password" minLength={6} required />
-				</div>
-
-				<div className="form-group mb-3">
-					<label htmlFor="confirm_password">Confirm Password</label>
-					<input type="password" className="mb-3 form-control fs-4" id="confirm_password" name="confirm_password" placeholder="Confirm your password" minLength={6} required />
+					<Input minLength={8} placeholder="Digit your password" label="Digit your password" type="password" name="password" {...password} />
 				</div>
 
 				<div className="mb-3 mt-4 form-check">
@@ -68,7 +65,13 @@ export default function RegisterForm() {
 				</div>
 
 				<div className="form-group">
-					<button type="submit" className="fs-4 fw-bold button btn-lg mb-3 w-100 btn btn-outline-primary btn-block login-btn" id="button_register">Register Account</button>
+					{loading ? (
+						<Button disabled={true}>Processing...</Button>
+						) : (
+						<Button>Register Account</Button>
+					)}
+
+					<ErrorAlertMessage error={error && 'Invalid email or passwords'} />
 				</div>
 
 			</form>

@@ -16,7 +16,7 @@ export default function BlogPost() {
 
 	if (error) return <ErrorAlertMessage error={error} />;
 	if (loading) return <Loading />;
-	if (data)
+	if (data){
 		return (
 			<>
 				<div className="container col-md-8 mt-5">
@@ -29,5 +29,6 @@ export default function BlogPost() {
 				</div>
 			</>
 		);
+	}
 	else return null;
 }

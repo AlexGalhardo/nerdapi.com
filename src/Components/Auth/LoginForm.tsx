@@ -8,7 +8,9 @@ import ErrorAlertMessage from "../Helper/Error";
 export default function LoginForm() {
 	const { globalState, userLogin, error, loading, login } = useGlobalState();
 
-    if (login === true) return <Navigate to="/profile" />;
+    if (login === true) {
+		return <Navigate to="/profile" />;
+	}
 
 	const email = useForm('email');
   	const password = useForm('password');
@@ -24,9 +26,9 @@ export default function LoginForm() {
     return (
         <>
 			{globalState.FLASH_MESSAGES.YOU_NEED_TO_LOGIN_FIRST ?
-			<p className="alert alert-danger text-center fw-bold fs-4">
-				{globalState.FLASH_MESSAGES.YOU_NEED_TO_LOGIN_FIRST}
-			</p>
+				<p className="alert alert-danger text-center fw-bold fs-4">
+					{globalState.FLASH_MESSAGES.YOU_NEED_TO_LOGIN_FIRST}
+				</p>
 			: undefined}
 
             <div className="form-group mb-2">
@@ -62,11 +64,11 @@ export default function LoginForm() {
 			<form onSubmit={handleSubmit}>
 
 				<div className="form-group mb-4 mt-5">
-					<Input placeholder="Digit your email" label="Digit your email" type="email" name="email" {...email} />
+					<Input minLength={12} placeholder="Digit your email" label="Digit your email" type="email" name="email" {...email} />
 				</div>
 
 				<div className="form-group mb-4">
-					<Input placeholder="Digit your password" label="Digit your password" type="password" name="password" {...password} />
+					<Input minLength={8} placeholder="Digit your password" label="Digit your password" type="password" name="password" {...password} />
 				</div>
 
 				{loading ? (

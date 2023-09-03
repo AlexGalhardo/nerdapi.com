@@ -4,12 +4,24 @@ import { useGlobalState } from "../../Context/GlobalStateContext";
 export default function ProfileUser() {
 	const { globalState, login } = useGlobalState();
 
-    if (login === false) return <Navigate to="/login" />;
+    if (login === false) {
+		return <Navigate to="/auth" />;
+	}
+
+	async function handleSubmit(event: any) {
+		event.preventDefault();
+	}
 
     return (
         <>
+			{globalState.FLASH_MESSAGES.USER_ARE_ALREADY_LOGGED_IN ?
+				<p className="alert alert-danger text-center fw-bold fs-4">
+					{globalState.FLASH_MESSAGES.USER_ARE_ALREADY_LOGGED_IN}
+				</p>
+			: undefined}
+
 			<div className="col-lg-4 mt-5">
-				<form action="/profile" method="POST" id="form_update_profile">
+				<form onSubmit={handleSubmit}>
 
 					<small>
 						<span id="alert_name" className="fw-bold text-danger"></span>
@@ -20,7 +32,7 @@ export default function ProfileUser() {
 						<input
 							type="text"
 							className="fs-4 form-control"
-							value={globalState.USER.NAME}
+							defaultValue={globalState.USER.NAME}
 							name="name"
 							id="name"
 						/>
@@ -32,7 +44,7 @@ export default function ProfileUser() {
 
 					<div className="form-group mb-3">
 						<label htmlFor="email">Email</label>
-						<input type="email" className="fs-4 form-control" name="email" id="email" value={globalState.USER.EMAIL} readOnly />
+						<input type="email" className="fs-4 form-control" name="email" id="email" defaultValue={globalState.USER.EMAIL} readOnly />
 					</div>
 
 					<div className="form-group mb-3">
@@ -45,7 +57,7 @@ export default function ProfileUser() {
 							pattern="\d{3}\.?\d{3}\.?\d{3}-?\d{2}"
 							minLength={11}
 							maxLength={11}
-							value={globalState.USER.TELEGRAM_NUMBER}
+							defaultValue={globalState.USER.TELEGRAM_NUMBER}
 							required
 						/>
 					</div>

@@ -1,5 +1,5 @@
 interface FormError {
-	error: string | null
+	error: string | null | undefined
 }
 
 export default function ErrorAlertMessage({ error }: FormError) {

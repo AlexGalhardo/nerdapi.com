@@ -6,7 +6,7 @@ import Button from "../Forms/Button";
 import ErrorAlertMessage from "../Helper/Error";
 
 export default function ForgetPasswordForm() {
-	const { globalState, userLogin, error, loading, login } = useGlobalState();
+	const { userLogin, error, loading, login } = useGlobalState();
 
     if (login === true) return <Navigate to="/profile" />;
 
@@ -26,7 +26,7 @@ export default function ForgetPasswordForm() {
 			<form onSubmit={handleSubmit}>
 
 				<div className="form-group mb-4 mt-5">
-					<Input placeholder="Digit your email" label="Digit your email" type="email" name="email" {...email} />
+					<Input minLength={12} placeholder="Digit your email" label="Digit your email" type="email" name="email" {...email} />
 				</div>
 
 				{loading ? (

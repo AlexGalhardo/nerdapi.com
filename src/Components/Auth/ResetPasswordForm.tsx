@@ -6,7 +6,9 @@ import Navbar from "../Navbar";
 export default function ResetPasswordForm() {
     const { login } = useGlobalState();
 
-    if (login === true) return <Navigate to="/profile" />;
+    if (login === true) {
+		return <Navigate to="/profile" />;
+	}
 
     return (
         <>

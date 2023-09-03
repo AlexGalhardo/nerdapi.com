@@ -9,7 +9,9 @@ import NotFound from "../NotFound";
 export default function Profile() {
 	const { login } = useGlobalState();
 
-    if (login === false) return <Navigate to="/auth" />;
+    if (login === false) {
+		return <Navigate to="/auth" />;
+	}
 
     return (
         <>
@@ -24,9 +26,9 @@ export default function Profile() {
                         <Route path="transactions" element={<ProfileTransactions />} />
                         <Route path="*" element={<NotFound />} />
                     </Routes>
-                
+
                 </div>
-                
+
             </main>
 
             <Footer />

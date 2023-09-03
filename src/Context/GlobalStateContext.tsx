@@ -1,10 +1,10 @@
 import {  createContext, useCallback, useContext, useEffect, useState } from "react";
 import {  useNavigate } from "react-router-dom";
-import { USER_GET, USER_LOGIN, VALIDATE_TOKEN } from "../Api";
+import {  USER_LOGIN, VALIDATE_TOKEN } from "../Api";
 interface GlobalState {
     FLASH_MESSAGES: {
-		YOU_NEED_TO_LOGIN_FIRST: boolean | string
-		YOU_ARE_ALREADY_LOGGED_IN: boolean | string
+		YOU_NEED_TO_LOGIN_FIRST: string | undefined
+		USER_ARE_ALREADY_LOGGED_IN: string | undefined
 	},
 	USER: {
 		LOGGED_IN: boolean,
@@ -64,8 +64,8 @@ export const GlobalStateProvider = ({ children }: React.PropsWithChildren) => {
 
     const [globalState, setGlobalState] = useState<GlobalState>({
         FLASH_MESSAGES: {
-			YOU_NEED_TO_LOGIN_FIRST: false,
-			YOU_ARE_ALREADY_LOGGED_IN: false
+			YOU_NEED_TO_LOGIN_FIRST: undefined,
+			USER_ARE_ALREADY_LOGGED_IN: undefined
 		},
 		USER: {
             LOGGED_IN: false,
@@ -102,10 +102,17 @@ export const GlobalStateProvider = ({ children }: React.PropsWithChildren) => {
 		setError(null);
 		setLoading(false);
 		setLogin(false);
+		setGlobalState({
+			...globalState,
+			USER: {
+				...globalState.USER,
+				LOGGED_IN: false
+			}
+		})
 		window.localStorage.removeItem('token');
 	}, []);
 
-	async function getUser(token: string) {
+	const getUser = useCallback(async function (token: string) {
 		const { url, options } = VALIDATE_TOKEN(token);
 		const response = await fetch(url, options);
 		const json = await response.json();
@@ -120,7 +127,16 @@ export const GlobalStateProvider = ({ children }: React.PropsWithChildren) => {
 		});
 		setData(json)
 		setLogin(true);
-	}
+		setGlobalState({
+			...globalState,
+			USER: {
+				...globalState.USER,
+				NAME: json.data.username,
+				EMAIL: json.data.email,
+				LOGGED_IN: true
+			}
+		})
+	}, []);
 
 	async function userLogin(email: string, password: string): Promise<any> {
 		try {
@@ -164,7 +180,18 @@ export const GlobalStateProvider = ({ children }: React.PropsWithChildren) => {
 		autoLogin();
 	}, []);
 
-    return <GlobalStateContext.Provider value={{globalState, userLogin, userLogout, data, error, loading, login, getUser }}>{children}</GlobalStateContext.Provider>;
+    return <GlobalStateContext.Provider value={{
+		globalState,
+		userLogin,
+		userLogout,
+		data,
+		error,
+		loading,
+		login,
+		getUser
+	}}>
+		{children}
+	</GlobalStateContext.Provider>;
 };
 
 export const useGlobalState = (): GlobalStateContextPort => {

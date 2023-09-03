@@ -43,7 +43,7 @@ const types = {
     },
 };
 
-export default function useForm(type: "email" | "password" | "number" | "username"){
+export default function useForm(type: "email" | "password" | "number" | "text"){
     const [value, setValue] = useState("");
     const [error, setError] = useState<null | string>(null);
 
