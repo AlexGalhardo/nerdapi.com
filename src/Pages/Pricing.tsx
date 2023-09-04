@@ -82,10 +82,6 @@ export default function Pricing() {
                                             <li>Priority Email Support</li>
                                             <li>Help center access</li>
                                         </ul>
-										{/* <form action="https://microsaas-api.alexgalhardo.com/create-checkout-session" method="POST">
-											<input type="hidden" name="lookup_key" value="plan_casual" />
-											<button className="button w-100 btn btn-lg btn-outline-danger" id="checkout-and-portal-button" type="submit">Let's Go</button>
-										</form> */}
 										<form onSubmit={handleSubmit}>
 											<button className="button w-100 btn btn-lg btn-outline-danger" id="checkout-and-portal-button" type="submit">Let's Go</button>
 										</form>
@@ -110,13 +106,9 @@ export default function Pricing() {
                                             <li>Priority Email Support</li>
                                             <li>Priority Telegram Support</li>
                                         </ul>
-                                        {/* <form action="https://microsaas-api.alexgalhardo.com/create-checkout-session" method="POST">
-											<input type="hidden" name="lookup_key" value="plan_pro" />
-											<button className="button w-100 btn btn-lg btn-outline-danger" id="checkout-and-portal-button" type="submit">Let's Go</button>
-										</form> */}
 										<form action="http://localhost:3000/create-checkout-session" method="POST">
 											<input type="hidden" name="lookup_key" value="plan_pro" />
-											<button className="button w-100 btn btn-lg btn-outline-danger" id="checkout-and-portal-button" type="submit">Let's Go</button>
+											<button className="button w-100 btn btn-lg btn-outline-primary" id="checkout-and-portal-button" type="submit">Let's Go</button>
 										</form>
                                     </div>
                                 </div>
