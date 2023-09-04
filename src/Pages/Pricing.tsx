@@ -1,12 +1,13 @@
 import { CSSProperties } from "react";
 import Navbar from "../Components/Navbar";
+import { API_URL } from "../Api";
 
 export default function Pricing() {
 	const handleSubmitCasual = async (e: any) => {
 		e.preventDefault();
 
 		try {
-			const response = await fetch('http://localhost:3000/create-checkout-session', {
+			const response = await fetch(`${API_URL}/create-checkout-session`, {
 				method: 'POST',
 				body: JSON.stringify({
 					lookup_key: 'plan_casual'
@@ -36,7 +37,7 @@ export default function Pricing() {
 		e.preventDefault();
 
 		try {
-			const response = await fetch('http://localhost:3000/create-checkout-session', {
+			const response = await fetch(`${API_URL}/create-checkout-session`, {
 				method: 'POST',
 				body: JSON.stringify({
 					lookup_key: 'plan_pro'
