@@ -27,7 +27,9 @@ export default function Profile() {
                 </div>
             </main>
 
-            <Footer />
+			<div className="col-lg-12 text-center text-muted mb-3 mt-3">
+				<small>&copy; Galhardo MicroSaaS 2023</small>
+			</div>
         </>
     );
 }

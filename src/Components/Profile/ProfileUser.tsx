@@ -14,12 +14,6 @@ export default function ProfileUser() {
 
     return (
         <>
-            {globalState.FLASH_MESSAGES.USER_ARE_ALREADY_LOGGED_IN ? (
-                <p className="alert alert-danger text-center fw-bold fs-4">
-                    {globalState.FLASH_MESSAGES.USER_ARE_ALREADY_LOGGED_IN}
-                </p>
-            ) : undefined}
-
             <div className="col-lg-4 mt-5">
                 <form onSubmit={handleSubmit}>
                     <small>
@@ -99,70 +93,6 @@ export default function ProfileUser() {
 
             <div className="col-lg-4 mt-5">
                 <div className="form-group mb-3">
-                    <label htmlFor="name">Stripe Customer ID</label>
-                    <input
-                        className="fs-4 mb-2 form-control"
-                        name="stripe_customer_id"
-                        type="text"
-                        value={globalState.USER.STRIPE.CUSTOMER_ID}
-                        readOnly
-                    />
-                </div>
-
-                <div className="form-group mb-3">
-                    <label htmlFor="stripe_card_id">Stripe Card ID</label>
-                    <input
-                        id="stripe_card_id"
-                        name="stripe_card_id"
-                        className="fs-4 mb-2 form-control"
-                        type="text"
-                        value={globalState.USER.STRIPE.CARD_ID}
-                        readOnly
-                    />
-                </div>
-
-                <div className="form-group mb-3">
-                    <label htmlFor="stripe_card_last_4_digits">Stripe Card Last 4 Digits</label>
-                    <input
-                        id="stripe_card_last_4_digits"
-                        name="stripe_card_last_4_digits"
-                        className="fs-4 mb-2 form-control"
-                        type="text"
-                        value={globalState.USER.STRIPE.CARD_LAST_4_DIGITS}
-                        readOnly
-                    />
-                </div>
-
-                <div className="row g-2 mb-3">
-                    <div className="col-md">
-                        <div className="form-group">
-                            <label htmlFor="card_exp_month">Card Exp Month</label>
-                            <input
-                                type="text"
-                                className="fs-4 form-control"
-                                name="card_exp_year"
-                                id="card_exp_month"
-                                value={globalState.USER.STRIPE.CARD_EXP_MONTH}
-                                readOnly
-                            />
-                        </div>
-                    </div>
-                    <div className="col-md">
-                        <div className="form-group">
-                            <label htmlFor="card_exp_year">Card Exp Year</label>
-                            <input
-                                type="text"
-                                className="fs-4 form-control"
-                                name="card_exp_year"
-                                id="card_exp_year"
-                                value={globalState.USER.STRIPE.CARD_EXP_YEAR}
-                                readOnly
-                            />
-                        </div>
-                    </div>
-                </div>
-
-                <div className="form-group mb-3">
                     <label htmlFor="stripe_card_last_4_digits">API Token</label>
                     <input
                         id="apiToken"
@@ -182,16 +112,6 @@ export default function ProfileUser() {
                         className="fs-4 mb-2 form-control"
                         type="text"
                         value={globalState.USER.SUBSCRIPTION.CURRENTLY_PLAN}
-                        readOnly
-                    />
-                </div>
-
-                <div className="form-group mb-3">
-                    <label htmlFor="name">Currently Subscription ID</label>
-                    <input
-                        className="fs-4 mb-2 form-control"
-                        type="text"
-                        value={globalState.USER.SUBSCRIPTION.ID}
                         readOnly
                     />
                 </div>
@@ -217,6 +137,13 @@ export default function ProfileUser() {
                         readOnly
                     />
                 </div>
+
+				<input
+					type="submit"
+					id="button_cancel_subs"
+					className="button fs-4 mt-3 mb-3 w-100 btn btn btn-outline-danger"
+					value="Cancel Subscription"
+				/>
             </div>
         </>
     );

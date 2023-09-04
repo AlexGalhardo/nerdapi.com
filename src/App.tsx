@@ -30,7 +30,7 @@ export default function App() {
                     <Route path="/blog/*" element={<Blog />} />
                     <Route path="/contact" element={<Contact />} />
                     <Route path="/pricing" element={<Pricing />} />
-                    <Route path="/checkout" element={<Checkout />} />
+                    <Route path="/checkout/*" element={<Checkout />} />
                     <Route path="/auth/*" element={<Auth />} />
                     <Route path="/profile/*" element={<Profile />} />
                     <Route path="*" element={<NotFound />} />

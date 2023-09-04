@@ -4,10 +4,9 @@ import CheckoutProSuccess from "./CheckoutProSuccess";
 import { useGlobalState } from "../../Context/GlobalStateContext";
 
 export default function CheckoutSuccess() {
-	const { login } = useGlobalState();
+	const { login, userLogin } = useGlobalState();
 
     if (login === false) {
-        window.localStorage.setItem("YOU_NEED_TO_LOGIN_FIRST", "true");
         return <Navigate to="/auth" />;
     }
 

@@ -7,7 +7,6 @@ export default function NotFound() {
         <>
             <Navbar />
             <img className="mt-5" src={notfound} />
-            <Footer />
         </>
     );
 }
