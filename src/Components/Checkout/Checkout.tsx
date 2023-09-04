@@ -2,7 +2,7 @@ import { Route, Routes } from "react-router-dom";
 import Footer from "../Footer";
 import Navbar from "../Navbar";
 import NotFound from "../NotFound";
-import CheckoutPage from "./CheckoutPage";
+import CheckoutSuccess from "./CheckoutSuccess";
 
 export default function Checkout() {
     return (
@@ -12,7 +12,7 @@ export default function Checkout() {
             <main className="container col-lg-8 mt-5">
                 <div className="row">
                     <Routes>
-                        <Route path="/:slug" element={<CheckoutPage />} />
+                        <Route path="/success" element={<CheckoutSuccess />} />
                         <Route path="*" element={<NotFound />} />
                     </Routes>
                 </div>

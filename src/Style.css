@@ -21,13 +21,13 @@ body {
 
 .button {
   text-align: center;
-  border-radius: 10px;
-  box-shadow: 5px 5px #999;
+  border-radius: 5px;
+  box-shadow: 3px 3px #999;
 }
 
 .button:active {
-  box-shadow: 5px 5px #666;
-  transform: translateY(3px);
+  box-shadow: 3px 3px #666;
+  transform: translateY(2px);
 }
 
 a {
