@@ -1,9 +1,11 @@
+import { API_URL } from "../../Api";
+
 export default function CheckoutCasualSuccess({sessionId}: {sessionId: string}) {
 	const handleSubmit = async (e: any) => {
 		e.preventDefault();
 
 		try {
-			const response = await fetch('http://localhost:3000/create-portal-session', {
+			const response = await fetch(`${API_URL}/create-portal-session`, {
 				method: 'POST',
 				body: JSON.stringify({
 					session_id: sessionId
@@ -45,7 +47,7 @@ export default function CheckoutCasualSuccess({sessionId}: {sessionId: string}) 
 				</ul>
 
 				<form onSubmit={handleSubmit}>
-					<button className="button w-100 btn btn-lg btn-outline-danger" id="checkout-and-portal-button" type="submit">Manage your billing information</button>
+					<button className="fs-4 fw-bold button w-100 btn btn-lg btn-outline-danger" id="checkout-and-portal-button" type="submit">Manage your billing information</button>
 				</form>
 			</div>
 		</div>
