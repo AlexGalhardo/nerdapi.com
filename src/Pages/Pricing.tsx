@@ -2,7 +2,7 @@ import { CSSProperties } from "react";
 import Navbar from "../Components/Navbar";
 
 export default function Pricing() {
-	const handleSubmit = async (e: any) => {
+	const handleSubmitCasual = async (e: any) => {
 		e.preventDefault();
 
 		try {
@@ -10,6 +10,36 @@ export default function Pricing() {
 				method: 'POST',
 				body: JSON.stringify({
 					lookup_key: 'plan_casual'
+				}),
+				headers: {
+					'Content-Type': 'application/json',
+				},
+			})
+
+			if (response.ok) {
+				const json = await response.json();
+
+				if (json.redirect) {
+					window.location.href = json.redirect;
+				} else {
+					console.error('Response does not contain a redirect URL.');
+				}
+			} else {
+				console.error('Error:', response.statusText);
+			}
+		} catch (error) {
+			console.error('Error:', error);
+		}
+	};
+
+	const handleSubmitPro = async (e: any) => {
+		e.preventDefault();
+
+		try {
+			const response = await fetch('http://localhost:3000/create-checkout-session', {
+				method: 'POST',
+				body: JSON.stringify({
+					lookup_key: 'plan_pro'
 				}),
 				headers: {
 					'Content-Type': 'application/json',
@@ -82,7 +112,7 @@ export default function Pricing() {
                                             <li>Priority Email Support</li>
                                             <li>Help center access</li>
                                         </ul>
-										<form onSubmit={handleSubmit}>
+										<form onSubmit={handleSubmitCasual}>
 											<button className="button w-100 btn btn-lg btn-outline-danger" id="checkout-and-portal-button" type="submit">Let's Go</button>
 										</form>
                                     </div>
@@ -106,8 +136,7 @@ export default function Pricing() {
                                             <li>Priority Email Support</li>
                                             <li>Priority Telegram Support</li>
                                         </ul>
-										<form action="http://localhost:3000/create-checkout-session" method="POST">
-											<input type="hidden" name="lookup_key" value="plan_pro" />
+										<form onSubmit={handleSubmitPro}>
 											<button className="button w-100 btn btn-lg btn-outline-primary" id="checkout-and-portal-button" type="submit">Let's Go</button>
 										</form>
                                     </div>

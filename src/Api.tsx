@@ -1,4 +1,6 @@
-export const API_URL = "https://microsaas-api.alexgalhardo.com";
+export const API_URL = import.meta.env.VITE_NODE_ENV === "development" ? "http://localhost:3000" : "https://microsaas-api.alexgalhardo.com"
+
+console.log('API_URL => ', API_URL)
 
 export function USER_LOGIN(body: any) {
     return {
