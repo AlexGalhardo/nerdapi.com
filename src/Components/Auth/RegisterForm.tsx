@@ -6,7 +6,7 @@ import ErrorAlertMessage from "../Alerts/ErrorAlertMessage";
 import Input from "../Forms/Input";
 
 export default function RegisterForm() {
-    const { login, userRegister, loading, error } = useGlobalState();
+    let { login, userRegister, loading, error } = useGlobalState();
 
     if (login === true) {
         return <Navigate to="/profile" />;
@@ -21,6 +21,7 @@ export default function RegisterForm() {
         if (username && email && password) {
             userRegister(username.value, email.value, password.value);
         }
+		error = 'Something went wrong'
     }
 
     return (

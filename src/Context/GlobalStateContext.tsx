@@ -119,17 +119,8 @@ export const GlobalStateProvider = ({ children }: React.PropsWithChildren) => {
                 EMAIL: json.data.email,
             },
         });
-        setData(json);
+        setData(json.data);
         setLogin(true);
-        setGlobalState({
-            ...globalState,
-            USER: {
-                ...globalState.USER,
-                NAME: json.data.username,
-                EMAIL: json.data.email,
-                LOGGED_IN: true,
-            },
-        });
     }, []);
 
     async function sendContact(name: string, email: string, subject: string, message: string): Promise<any> {
@@ -173,7 +164,7 @@ export const GlobalStateProvider = ({ children }: React.PropsWithChildren) => {
             if (!tokenRes.ok) throw new Error(`Error: ${tokenRes.statusText}`);
             const { token } = await tokenRes.json();
             window.localStorage.setItem("token", token);
-            getUser(token);
+            await getUser(token);
             navigate("/profile");
         } catch (err: any) {
             setError(err.message);
@@ -188,11 +179,13 @@ export const GlobalStateProvider = ({ children }: React.PropsWithChildren) => {
             setError(null);
             setLoading(true);
             const { url, options } = USER_REGISTER({ username, email, password });
+			console.log('\n chegou ANTES do response....')
             const response = await fetch(url, options);
+			console.log('\n chegou depois do response....')
             if (!response.ok) throw new Error(`Error: ${response.statusText}`);
             const { token } = await response.json();
             window.localStorage.setItem("token", token);
-            getUser(token);
+            await getUser(token);
             navigate("/profile");
         } catch (err: any) {
             setError(err.message);
