@@ -1,12 +1,19 @@
-import { Navigate } from "react-router-dom";
+import { Navigate, useLocation } from "react-router-dom";
 import { useGlobalState } from "../../Context/GlobalStateContext";
+import SuccessAlertMessage from "../Alerts/SuccessAlertMessage";
 
 export default function ProfileUser() {
-    const { globalState, login } = useGlobalState();
+    const { user, login } = useGlobalState();
 
     if (login === false) {
         return <Navigate to="/auth" />;
     }
+
+    console.log("\n\n user é => ", user);
+
+    const location = useLocation();
+    const queryParams = new URLSearchParams(location.search);
+    const registred = queryParams.get("registred");
 
     async function handleSubmit(event: any) {
         event.preventDefault();
@@ -14,6 +21,15 @@ export default function ProfileUser() {
 
     return (
         <>
+            {registred && (
+                <SuccessAlertMessage
+                    message={
+                        registred === "true" &&
+                        "Welcome, your password is your email! You can change your password in this page."
+                    }
+                />
+            )}
+
             <div className="col-lg-4 mt-5">
                 <form onSubmit={handleSubmit}>
                     <small>
@@ -25,7 +41,7 @@ export default function ProfileUser() {
                         <input
                             type="text"
                             className="fs-4 form-control"
-                            defaultValue={globalState.USER.NAME}
+                            defaultValue={user.username}
                             name="name"
                             id="name"
                         />
@@ -42,7 +58,7 @@ export default function ProfileUser() {
                             className="fs-4 form-control"
                             name="email"
                             id="email"
-                            defaultValue={globalState.USER.EMAIL}
+                            defaultValue={user.email}
                             readOnly
                         />
                     </div>
@@ -57,7 +73,7 @@ export default function ProfileUser() {
                             pattern="\d{3}\.?\d{3}\.?\d{3}-?\d{2}"
                             minLength={11}
                             maxLength={11}
-                            defaultValue={globalState.USER.TELEGRAM_NUMBER}
+                            defaultValue={user.telegram_number}
                             required
                         />
                     </div>
@@ -99,7 +115,7 @@ export default function ProfileUser() {
                         name="apiToken"
                         className="fs-4 mb-2 form-control"
                         type="text"
-                        value={globalState.USER.API_TOKEN}
+                        value={user.api_token}
                         readOnly
                     />
                 </div>
@@ -111,7 +127,7 @@ export default function ProfileUser() {
                     <input
                         className="fs-4 mb-2 form-control"
                         type="text"
-                        value={globalState.USER.SUBSCRIPTION.CURRENTLY_PLAN}
+                        value={user.stripe.subscription.name}
                         readOnly
                     />
                 </div>
@@ -122,7 +138,7 @@ export default function ProfileUser() {
                         className="fs-4 mb-2 form-control"
                         name="SUBSCRIPTION_START_DATE_TIME"
                         type="text"
-                        value={globalState.USER.SUBSCRIPTION.STARTED_AT}
+                        value={user.stripe.subscription.starts_at}
                         readOnly
                     />
                 </div>
@@ -133,17 +149,17 @@ export default function ProfileUser() {
                         className="fs-4 mb-2 form-control"
                         name="SUBSCRIPTION_END_DATE_TIME"
                         type="text"
-                        value={globalState.USER.SUBSCRIPTION.ENDS_AT}
+                        value={user.stripe.subscription.ends_at}
                         readOnly
                     />
                 </div>
 
-				<input
-					type="submit"
-					id="button_cancel_subs"
-					className="button fs-4 mt-3 mb-3 w-100 btn btn btn-outline-danger"
-					value="Cancel Subscription"
-				/>
+                <input
+                    type="submit"
+                    id="button_cancel_subs"
+                    className="button fs-4 mt-3 mb-3 w-100 btn btn btn-outline-danger"
+                    value="Cancel Subscription"
+                />
             </div>
         </>
     );

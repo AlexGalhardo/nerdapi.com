@@ -4,11 +4,9 @@ import useForm from "../../Hooks/useForm";
 import Input from "../Forms/Input";
 import Button from "../Forms/Button";
 import ErrorAlertMessage from "../Alerts/ErrorAlertMessage";
-import { useEffect } from "react";
 
 export default function LoginForm() {
-    const { globalState, userLogin, error, loading, login } = useGlobalState();
-    let YOU_NEED_TO_LOGIN_FIRST = undefined;
+    const { userLogin, error, loading, login } = useGlobalState();
 
     if (login === true) {
         return <Navigate to="/profile" />;
@@ -27,41 +25,27 @@ export default function LoginForm() {
 
     return (
         <>
-            {/* {window.localStorage.getItem('YOU_NEED_TO_LOGIN_FIRST') ? (
-                <p className="alert alert-danger text-center fw-bold fs-4">
-                    {globalState.FLASH_MESSAGES.YOU_NEED_TO_LOGIN_FIRST}
-                </p>
-            ) : undefined} */}
+            <div
+                id="g_id_onload"
+                data-client_id="944810954683-ahhpp7q8ndotmd10f96ri6es0kpv2nh1.apps.googleusercontent.com"
+                data-context="signin"
+                data-ux_mode="popup"
+                data-login_uri="http://localhost:3000/callback/google/login"
+                data-nonce=""
+                data-auto_select="true"
+                data-itp_support="true"
+            ></div>
 
-            <div className="form-group mb-2">
-                <button
-                    disabled
-                    type="submit"
-                    className="fs-4 button w-100 btn btn-outline-dark btn-lg btn-block login-btn fw-bold"
-                >
-                    <i className="bi bi-github" /> Login with Github
-                </button>
-            </div>
-
-            <div className="form-group mb-2">
-                <button
-                    disabled
-                    type="submit"
-                    className="fs-4 button w-100 btn btn-outline-danger btn-lg btn-block login-btn fw-bold"
-                >
-                    <i className="bi bi-google" /> Login with Google
-                </button>
-            </div>
-
-            <div className="form-group mb-3">
-                <button
-                    disabled
-                    type="submit"
-                    className="fs-4 button w-100 btn btn-outline-primary btn-lg btn-block login-btn fw-bold"
-                >
-                    <i className="bi bi-facebook" /> Login with Facebook
-                </button>
-            </div>
+            <div
+                className="g_id_signin"
+                data-type="standard"
+                data-shape="rectangular"
+                data-theme="outline"
+                data-text="signin_with"
+                data-size="large"
+                data-logo_alignment="left"
+                data-width="400px"
+            ></div>
 
             <form onSubmit={handleSubmit}>
                 <div className="form-group mb-4 mt-5">

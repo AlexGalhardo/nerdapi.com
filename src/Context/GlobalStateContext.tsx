@@ -8,32 +8,13 @@ interface GlobalState {
     };
     USER: {
         LOGGED_IN: boolean;
-        TOKEN: string | undefined;
-        NAME: string | undefined;
-        EMAIL: string | undefined;
-        TELEGRAM_NUMBER: string | undefined;
-        API_TOKEN: string | undefined;
-        ACCEPTED_TO_RECEIVE_NEWSLETTER: false;
-        STRIPE: {
-            CUSTOMER_ID: string | undefined;
-            CARD_ID: string | undefined;
-            CARD_LAST_4_DIGITS: string | undefined;
-            CARD_EXP_MONTH: string | undefined;
-            CARD_EXP_YEAR: string | undefined;
-        };
-        SUBSCRIPTION: {
-            ID: string | undefined;
-            CURRENTLY_PLAN: string | undefined;
-            STARTED_AT: string | undefined;
-            ENDS_AT: string | undefined;
-        };
     };
 }
 interface GlobalStateContextPort {
     error: null | string;
     loading: boolean;
     globalState: GlobalState;
-    data: any | null;
+    user: any | null;
     login: null | boolean;
     contactSend: boolean;
     sendRecoverPassword: boolean;
@@ -45,10 +26,68 @@ interface GlobalStateContextPort {
     recoverPassword: (email: string) => Promise<any>;
 }
 
+export interface User {
+    id: string | null;
+    username: string | null;
+    email: string | null;
+    telegram_number: string | null;
+    password: string | null;
+    jwt_token: string | null;
+    api_token: string | null;
+    reset_password_token: string | null;
+    reset_password_token_expires_at: string | null;
+    stripe: {
+        customer_id: string | null;
+        subscription: {
+            active: boolean;
+            name: string | null;
+            starts_at: string | null;
+            ends_at: string | null;
+            charge_id: string | null;
+            receipt_url: string | null;
+            hosted_invoice_url: string | null;
+        };
+        updated_at: string | null;
+        updated_at_pt_br: string | null;
+    };
+    created_at: string | null;
+    updated_at: string | null;
+    created_at_pt_br: string | null;
+    updated_at_pt_br: string | null;
+}
+
 const GlobalStateContext = createContext<GlobalStateContextPort | undefined>(undefined);
 
 export const GlobalStateProvider = ({ children }: React.PropsWithChildren) => {
-    const [data, setData] = useState<any | null>(null);
+    const [user, setUser] = useState<User>({
+        id: null,
+        username: null,
+        email: null,
+        telegram_number: null,
+        password: null,
+        jwt_token: null,
+        api_token: null,
+        reset_password_token: null,
+        reset_password_token_expires_at: null,
+        stripe: {
+            customer_id: null,
+            subscription: {
+                active: false,
+                name: null,
+                starts_at: null,
+                ends_at: null,
+                charge_id: null,
+                receipt_url: null,
+                hosted_invoice_url: null,
+            },
+            updated_at: null,
+            updated_at_pt_br: null,
+        },
+        created_at: null,
+        updated_at: null,
+        created_at_pt_br: null,
+        updated_at_pt_br: null,
+    });
     const [login, setLogin] = useState<null | boolean>(null);
     const [loading, setLoading] = useState<boolean>(false);
     const [error, setError] = useState<null | string>(null);
@@ -63,36 +102,10 @@ export const GlobalStateProvider = ({ children }: React.PropsWithChildren) => {
         },
         USER: {
             LOGGED_IN: false,
-            TOKEN: undefined,
-            NAME: undefined,
-            EMAIL: undefined,
-            TELEGRAM_NUMBER: undefined,
-            API_TOKEN: undefined,
-            ACCEPTED_TO_RECEIVE_NEWSLETTER: false,
-            STRIPE: {
-                CUSTOMER_ID: undefined,
-                CARD_ID: undefined,
-                CARD_LAST_4_DIGITS: undefined,
-                CARD_EXP_MONTH: undefined,
-                CARD_EXP_YEAR: undefined,
-            },
-            SUBSCRIPTION: {
-                ID: undefined,
-                CURRENTLY_PLAN: undefined,
-                STARTED_AT: undefined,
-                ENDS_AT: undefined,
-            },
         },
     });
 
     const userLogout = useCallback(async function () {
-        setGlobalState({
-            ...globalState,
-            USER: {
-                ...globalState.USER,
-                LOGGED_IN: false,
-            },
-        });
         setError(null);
         setLoading(false);
         setLogin(false);
@@ -103,23 +116,63 @@ export const GlobalStateProvider = ({ children }: React.PropsWithChildren) => {
                 LOGGED_IN: false,
             },
         });
-        window.localStorage.removeItem("token");
+        //window.localStorage.removeItem("token");
     }, []);
 
     const getUser = useCallback(async function (token: string) {
-        const { url, options } = VALIDATE_TOKEN(token);
-        const response = await fetch(url, options);
+        const response = await fetch("http://localhost:3000/tokenUser", {
+            method: "POST",
+            headers: {
+                "Content-Type": "application/json",
+                Authorization: `Bearer ${token}`,
+            },
+        });
+
         const json = await response.json();
+        console.log("json.data é => ", json.data);
+        setUser({
+            id: json.data.id,
+            username: json.data.username,
+            email: json.data.email,
+            telegram_number: json.data.telegram_number,
+            password: json.data.password,
+            jwt_token: json.data.jwt_token,
+            api_token: json.data.api_token,
+            reset_password_token: json.data.reset_password_token,
+            reset_password_token_expires_at: json.data.reset_password_token_expires_at,
+            stripe: {
+                customer_id: json.data.stripe.customer_id,
+                subscription: {
+                    active: json.data.stripe.subscription.active,
+                    name: json.data.stripe.subscription.name,
+                    starts_at: json.stripe.subscription.starts_at,
+                    ends_at: json.data.stripe.subscription.ends_at,
+                    charge_id: json.data.stripe.subscription.charge_id,
+                    receipt_url: json.data.stripe.subscription.receipt_url,
+                    hosted_invoice_url: json.stripe.subscription.hosted_invoice_url,
+                },
+                updated_at: json.data.stripe.updated_at,
+                updated_at_pt_br: json.data.stripe.updated_at_pt_br,
+            },
+            created_at: json.data.created_at,
+            updated_at: json.data.updated_at,
+            created_at_pt_br: json.data.created_at_pt_br,
+            updated_at_pt_br: json.data.updated_at_pt_br,
+        });
+
+        console.log("user é => ", user);
+
+        window.localStorage.setItem("token", token);
+
         setGlobalState({
             ...globalState,
             USER: {
                 ...globalState.USER,
                 LOGGED_IN: true,
-                NAME: json.data.username,
-                EMAIL: json.data.email,
             },
         });
-        setData(json.data);
+        console.log("globalState é => ", globalState);
+
         setLogin(true);
     }, []);
 
@@ -158,13 +211,65 @@ export const GlobalStateProvider = ({ children }: React.PropsWithChildren) => {
     async function userLogin(email: string, password: string): Promise<any> {
         try {
             setError(null);
+
             setLoading(true);
+
             const { url, options } = USER_LOGIN({ email, password });
+
             const tokenRes = await fetch(url, options);
+
             if (!tokenRes.ok) throw new Error(`Error: ${tokenRes.statusText}`);
-            const { token } = await tokenRes.json();
-            window.localStorage.setItem("token", token);
-            await getUser(token);
+
+            const { jwt_token } = await tokenRes.json();
+
+            window.localStorage.setItem("token", jwt_token);
+
+            const response = await fetch("http://localhost:3000/tokenUser", {
+                method: "POST",
+                headers: {
+                    "Content-Type": "application/json",
+                    Authorization: `Bearer ${jwt_token}`,
+                },
+            });
+            const json = await response.json();
+            setUser({
+                id: json.data.id,
+                username: json.data.username,
+                email: json.data.email,
+                telegram_number: json.data.telegram_number,
+                password: json.data.password,
+                jwt_token: json.data.jwt_token,
+                api_token: json.data.api_token,
+                reset_password_token: json.data.reset_password_token,
+                reset_password_token_expires_at: json.data.reset_password_token_expires_at,
+                stripe: {
+                    customer_id: json.data.stripe.customer_id,
+                    subscription: {
+                        active: json.data.stripe.subscription.active,
+                        name: json.data.stripe.subscription.name,
+                        starts_at: json.stripe.subscription.starts_at,
+                        ends_at: json.data.stripe.subscription.ends_at,
+                        charge_id: json.data.stripe.subscription.charge_id,
+                        receipt_url: json.data.stripe.subscription.receipt_url,
+                        hosted_invoice_url: json.stripe.subscription.hosted_invoice_url,
+                    },
+                    updated_at: json.data.stripe.updated_at,
+                    updated_at_pt_br: json.data.stripe.updated_at_pt_br,
+                },
+                created_at: json.data.created_at,
+                updated_at: json.data.updated_at,
+                created_at_pt_br: json.data.created_at_pt_br,
+                updated_at_pt_br: json.data.updated_at_pt_br,
+            });
+            setGlobalState({
+                ...globalState,
+                USER: {
+                    ...globalState.USER,
+                    LOGGED_IN: true,
+                },
+            });
+            setLogin(true);
+
             navigate("/profile");
         } catch (err: any) {
             setError(err.message);
@@ -179,9 +284,9 @@ export const GlobalStateProvider = ({ children }: React.PropsWithChildren) => {
             setError(null);
             setLoading(true);
             const { url, options } = USER_REGISTER({ username, email, password });
-			console.log('\n chegou ANTES do response....')
+            console.log("\n chegou ANTES do response....");
             const response = await fetch(url, options);
-			console.log('\n chegou depois do response....')
+            console.log("\n chegou depois do response....");
             if (!response.ok) throw new Error(`Error: ${response.statusText}`);
             const { token } = await response.json();
             window.localStorage.setItem("token", token);
@@ -191,23 +296,35 @@ export const GlobalStateProvider = ({ children }: React.PropsWithChildren) => {
             setError(err.message);
             setLogin(false);
         } finally {
-            setLogin(true);
             setLoading(false);
         }
     }
 
     useEffect(() => {
         async function autoLogin() {
-            const token = window.localStorage.getItem("token");
+            const currentUrl = window.location.href;
+            const urlSearchParams = new URLSearchParams(currentUrl.split("?")[1]);
+            let token = null;
+
+            if (urlSearchParams.get("token")) token = urlSearchParams.get("token");
+            if (window.localStorage.getItem("token")) token = window.localStorage.getItem("token");
+
             if (token) {
                 try {
                     setError(null);
                     setLoading(true);
-                    const { url, options } = VALIDATE_TOKEN(token);
-                    const response = await fetch(url, options);
-                    if (!response.ok) throw new Error("Token inválido");
+                    const response = await fetch("http://localhost:3000/tokenUser", {
+                        method: "POST",
+                        headers: {
+                            "Content-Type": "application/json",
+                            Authorization: `Bearer ${token}`,
+                        },
+                    });
+                    if (!response.ok) throw new Error("Invalid JWT Token");
+                    window.localStorage.setItem("token", token);
                     await getUser(token);
                 } catch (err) {
+                    console.log("\n err => ", err);
                     userLogout();
                 } finally {
                     setLoading(false);
@@ -225,7 +342,7 @@ export const GlobalStateProvider = ({ children }: React.PropsWithChildren) => {
                 globalState,
                 userLogin,
                 userLogout,
-                data,
+                user,
                 error,
                 loading,
                 login,

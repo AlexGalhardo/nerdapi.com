@@ -3,65 +3,65 @@ import Navbar from "../Components/Navbar";
 import { API_URL } from "../Api";
 
 export default function Pricing() {
-	const handleSubmitCasual = async (e: any) => {
-		e.preventDefault();
+    const handleSubmitCasual = async (e: any) => {
+        e.preventDefault();
 
-		try {
-			const response = await fetch(`${API_URL}/create-checkout-session`, {
-				method: 'POST',
-				body: JSON.stringify({
-					lookup_key: 'plan_casual'
-				}),
-				headers: {
-					'Content-Type': 'application/json',
-				},
-			})
+        try {
+            const response = await fetch(`${API_URL}/create-checkout-session`, {
+                method: "POST",
+                body: JSON.stringify({
+                    lookup_key: "plan_casual",
+                }),
+                headers: {
+                    "Content-Type": "application/json",
+                },
+            });
 
-			if (response.ok) {
-				const json = await response.json();
+            if (response.ok) {
+                const json = await response.json();
 
-				if (json.redirect) {
-					window.location.href = json.redirect;
-				} else {
-					console.error('Response does not contain a redirect URL.');
-				}
-			} else {
-				console.error('Error:', response.statusText);
-			}
-		} catch (error) {
-			console.error('Error:', error);
-		}
-	};
+                if (json.redirect) {
+                    window.location.href = json.redirect;
+                } else {
+                    console.error("Response does not contain a redirect URL.");
+                }
+            } else {
+                console.error("Error:", response.statusText);
+            }
+        } catch (error) {
+            console.error("Error:", error);
+        }
+    };
 
-	const handleSubmitPro = async (e: any) => {
-		e.preventDefault();
+    const handleSubmitPro = async (e: any) => {
+        e.preventDefault();
 
-		try {
-			const response = await fetch(`${API_URL}/create-checkout-session`, {
-				method: 'POST',
-				body: JSON.stringify({
-					lookup_key: 'plan_pro'
-				}),
-				headers: {
-					'Content-Type': 'application/json',
-				},
-			})
+        try {
+            const response = await fetch(`${API_URL}/create-checkout-session`, {
+                method: "POST",
+                body: JSON.stringify({
+                    lookup_key: "plan_pro",
+                }),
+                headers: {
+                    "Content-Type": "application/json",
+                },
+            });
 
-			if (response.ok) {
-				const json = await response.json();
+            if (response.ok) {
+                const json = await response.json();
 
-				if (json.redirect) {
-					window.location.href = json.redirect;
-				} else {
-					console.error('Response does not contain a redirect URL.');
-				}
-			} else {
-				console.error('Error:', response.statusText);
-			}
-		} catch (error) {
-			console.error('Error:', error);
-		}
-	};
+                if (json.redirect) {
+                    window.location.href = json.redirect;
+                } else {
+                    console.error("Response does not contain a redirect URL.");
+                }
+            } else {
+                console.error("Error:", response.statusText);
+            }
+        } catch (error) {
+            console.error("Error:", error);
+        }
+    };
 
     return (
         <>
@@ -113,9 +113,15 @@ export default function Pricing() {
                                             <li>Priority Email Support</li>
                                             <li>Help center access</li>
                                         </ul>
-										<form onSubmit={handleSubmitCasual}>
-											<button className="button w-100 btn btn-lg btn-outline-danger" id="checkout-and-portal-button" type="submit">Let's Go</button>
-										</form>
+                                        <form onSubmit={handleSubmitCasual}>
+                                            <button
+                                                className="button w-100 btn btn-lg btn-outline-danger"
+                                                id="checkout-and-portal-button"
+                                                type="submit"
+                                            >
+                                                Let's Go
+                                            </button>
+                                        </form>
                                     </div>
                                 </div>
                             </div>
@@ -137,9 +143,15 @@ export default function Pricing() {
                                             <li>Priority Email Support</li>
                                             <li>Priority Telegram Support</li>
                                         </ul>
-										<form onSubmit={handleSubmitPro}>
-											<button className="button w-100 btn btn-lg btn-outline-primary" id="checkout-and-portal-button" type="submit">Let's Go</button>
-										</form>
+                                        <form onSubmit={handleSubmitPro}>
+                                            <button
+                                                className="button w-100 btn btn-lg btn-outline-primary"
+                                                id="checkout-and-portal-button"
+                                                type="submit"
+                                            >
+                                                Let's Go
+                                            </button>
+                                        </form>
                                     </div>
                                 </div>
                             </div>

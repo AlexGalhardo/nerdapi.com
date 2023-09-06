@@ -2,7 +2,7 @@ import { useNavigate } from "react-router-dom";
 import { useGlobalState } from "../Context/GlobalStateContext";
 
 export default function Navbar() {
-    const { globalState, userLogout } = useGlobalState();
+    const { user, userLogout } = useGlobalState();
     const navigate = useNavigate();
 
     function handleLogout() {
@@ -76,7 +76,7 @@ export default function Navbar() {
                             </li>
                         </ul>
 
-                        {globalState.USER.LOGGED_IN ? (
+                        {user ? (
                             <ul className="navbar-nav me-auto mb-2 mb-lg-0 right">
                                 <li className="nav-item dropdown">
                                     <a
@@ -87,7 +87,7 @@ export default function Navbar() {
                                         data-bs-toggle="dropdown"
                                         aria-expanded="false"
                                     >
-                                        {globalState.USER.NAME}
+                                        {user.username}
                                     </a>
                                     <ul className="dropdown-menu" aria-labelledby="navbarDropdown">
                                         <li>

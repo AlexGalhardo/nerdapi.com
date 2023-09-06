@@ -1,6 +1,9 @@
-export const API_URL = import.meta.env.VITE_NODE_ENV === "development" ? "http://localhost:3000" : "https://microsaas-api.alexgalhardo.com"
+export const API_URL =
+    import.meta.env.VITE_NODE_ENV === "development"
+        ? "http://localhost:3000"
+        : "https://microsaas-api.alexgalhardo.com";
 
-console.log('API_URL => ', API_URL)
+console.log("API_URL => ", API_URL);
 
 export function USER_LOGIN(body: any) {
     return {
@@ -30,10 +33,11 @@ export function USER_LOGOUT(token: string) {
 
 export function VALIDATE_TOKEN(token: string) {
     return {
-        url: API_URL + "/validate",
+        url: API_URL + "/tokenUser",
         options: {
             method: "POST",
             headers: {
+                "Content-Type": "application/json",
                 Authorization: "Bearer " + token,
             },
         },

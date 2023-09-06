@@ -21,7 +21,7 @@ export default function RegisterForm() {
         if (username && email && password) {
             userRegister(username.value, email.value, password.value);
         }
-		error = 'Something went wrong'
+        error = "Something went wrong";
     }
 
     return (

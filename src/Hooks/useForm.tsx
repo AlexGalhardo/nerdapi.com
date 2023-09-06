@@ -52,9 +52,9 @@ export default function useForm(type: "email" | "password" | "number" | "text") 
         if (value.length === 0) {
             setError("Waiting input value...");
             return false;
-        } else if (type === "password" && !isPasswordSecure(value)) {
-            setError(types[type].message);
-            return false;
+            // } else if (type === "password" && !isPasswordSecure(value)) {
+            //     setError(types[type].message);
+            //     return false;
         } else if (type === "email" && !isValidEmail(value)) {
             setError(types[type].message);
             return false;
