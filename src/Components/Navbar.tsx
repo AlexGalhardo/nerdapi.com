@@ -15,7 +15,7 @@ export default function Navbar() {
             <nav className="container pt-2 pb-2 col-lg-8 navbar navbar-expand-lg fixed navbar-light">
                 <div className="container-fluid">
                     <a className="navbar-brand appTitle" href="/">
-                        <span className="fs-4 fw-bold navbarTitle">Galhardo MicroSaaS</span>
+                        <span className="fs-4 fw-bold navbarTitle">NerdAPI</span>
                     </a>
 
                     <button

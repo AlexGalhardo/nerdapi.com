@@ -40,7 +40,7 @@ export default function CheckoutProSuccess({ sessionId }: { sessionId: string })
             </div>
             <div className="card-body">
                 <ul className="list-unstyled mt-3 mb-4">
-                    <li>Access to API Token</li>
+                    <li>Access to API KEY</li>
                     <li>5000 API Requests Day</li>
                     <li>Access to Telegram BOT</li>
                     <li>Priority Email Support</li>

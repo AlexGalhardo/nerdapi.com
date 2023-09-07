@@ -27,7 +27,6 @@ export default function App() {
                     <Route path="/books" element={<Books />} />
                     <Route path="/movies" element={<Movies />} />
                     <Route path="/tvshows" element={<TVShows />} />
-                    <Route path="/blog/*" element={<Blog />} />
                     <Route path="/contact" element={<Contact />} />
                     <Route path="/pricing" element={<Pricing />} />
                     <Route path="/checkout/*" element={<Checkout />} />

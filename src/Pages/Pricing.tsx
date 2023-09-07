@@ -91,7 +91,7 @@ export default function Pricing() {
                                             $0<small className="text-muted fw-light">/month</small>
                                         </h1>
                                         <ul className="list-unstyled mt-3 mb-4">
-                                            <li>No Access API Token</li>
+                                            <li>No Access API KEY</li>
                                             <li>Website Limited Recomendations</li>
                                         </ul>
                                     </div>
@@ -137,7 +137,7 @@ export default function Pricing() {
                                             $4.99<small className="text-muted fw-light">/month</small>
                                         </h1>
                                         <ul className="list-unstyled mt-3 mb-4">
-                                            <li>Access to API Token</li>
+                                            <li>Access to API KEY</li>
                                             <li>5000 API Requests Day</li>
                                             <li>Access to Telegram BOT</li>
                                             <li>Priority Email Support</li>

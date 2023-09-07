@@ -42,10 +42,22 @@ export default function Contact() {
     return (
         <>
             <Navbar />
-            <div className="container col-lg-4 mt-5" style={containerContact}>
+
+            <div className="container col-lg-8 mt-5" style={containerContact}>
                 <div className="row mt-5">
+
+					<div className="container col-lg-6 mt-5" style={containerContact}>
+						<p>Are you someone who finds joy in both the world of code and the realms of movies, games, TV shows, and books? We have an exciting opportunity for you! Our mission is to enhance user experience and streamline functionality on our website and API, and we believe the best innovations come from those who share our passion for all things geek. Whether you're a seasoned developer or just someone who loves diving into captivating stories, your unique perspective can help us create a extraordinary API.</p>
+
+						<p>With every line of code, we're building a sanctuary for the true enthusiasts, where information flows like a river, feeding your hunger for nerd knowledge. Our mission is clear: create an API that sets a new standard for developer experiences, catering specifically to the geek, the nerd, and the programmer in you. It's not just about data; it's about crafting a seamless bridge between your craft and the narratives that fuel your imagination. Together, let's transform the way we connect with games, movies, books, and TV shows. This isn't just an API; it's an invitation to immerse yourself in a world tailored to your unique passions.</p>
+					</div>
+
+
+
+
+					<div className="container col-lg-6 mt-5" style={containerContact}>
                     <form onSubmit={handleSubmit}>
-                        <div className="form-group mb-3 mt-5">
+                        <div className="form-group mb-3">
                             <label htmlFor="name">Your Name</label>
                             <input
                                 type="text"
@@ -110,6 +122,8 @@ export default function Contact() {
                     {contactSend && <SuccessAlertMessage message={"Message send!"} />}
 
                     {error && <ErrorAlertMessage error={error} />}
+
+					</div>
                 </div>
 
                 <Footer />

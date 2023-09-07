@@ -15,7 +15,7 @@ const Login = () => {
         <div className="container col-lg-3 mt-5">
             <h1 className="text-center text-muted mb-4">
                 <a className="text-decoration-none" href="/">
-                    <b className="fw-bold text-primary">Galhardo MicroSaaS</b>
+                    <b className="fw-bold text-primary">NerdAPI</b>
                 </a>
             </h1>
 

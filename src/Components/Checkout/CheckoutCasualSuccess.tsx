@@ -40,7 +40,7 @@ export default function CheckoutCasualSuccess({ sessionId }: { sessionId: string
             </div>
             <div className="card-body">
                 <ul className="list-unstyled mt-3 mb-4">
-                    <li>Access to API Token</li>
+                    <li>Access to API KEY</li>
                     <li>1000 API Requests Day</li>
                     <li>Priority Email Support</li>
                     <li>Help center access</li>
