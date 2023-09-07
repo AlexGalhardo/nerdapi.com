@@ -1,6 +1,6 @@
 import { createContext, useCallback, useContext, useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
-import { RECOVER_PASSWORD, SEND_CONTACT, USER_LOGIN, USER_REGISTER, VALIDATE_TOKEN } from "../Api";
+import { API_URL, RECOVER_PASSWORD, SEND_CONTACT, USER_LOGIN, USER_REGISTER, VALIDATE_TOKEN } from "../Api";
 interface GlobalState {
     FLASH_MESSAGES: {
         YOU_NEED_TO_LOGIN_FIRST: string | undefined;
@@ -120,7 +120,7 @@ export const GlobalStateProvider = ({ children }: React.PropsWithChildren) => {
     }, []);
 
     const getUser = useCallback(async function (token: string) {
-        const response = await fetch("http://localhost:3000/tokenUser", {
+        const response = await fetch(`${API_URL}/tokenUser`, {
             method: "POST",
             headers: {
                 "Content-Type": "application/json",
@@ -224,7 +224,7 @@ export const GlobalStateProvider = ({ children }: React.PropsWithChildren) => {
 
             window.localStorage.setItem("token", jwt_token);
 
-            const response = await fetch("http://localhost:3000/tokenUser", {
+            const response = await fetch(`${API_URL}/tokenUser`, {
                 method: "POST",
                 headers: {
                     "Content-Type": "application/json",
@@ -313,7 +313,7 @@ export const GlobalStateProvider = ({ children }: React.PropsWithChildren) => {
                 try {
                     setError(null);
                     setLoading(true);
-                    const response = await fetch("http://localhost:3000/tokenUser", {
+                    const response = await fetch(`${API_URL}/tokenUser`, {
                         method: "POST",
                         headers: {
                             "Content-Type": "application/json",

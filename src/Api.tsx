@@ -3,7 +3,7 @@ export const API_URL =
         ? "http://localhost:3000"
         : "https://api.nerdapi.com";
 
-console.log("API_URL => ", API_URL);
+
 
 export function USER_LOGIN(body: any) {
     return {
@@ -38,7 +38,7 @@ export function VALIDATE_TOKEN(token: string) {
             method: "POST",
             headers: {
                 "Content-Type": "application/json",
-                Authorization: "Bearer " + token,
+                "Authorization": `Bearer ${token}`,
             },
         },
     };

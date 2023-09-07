@@ -1,60 +1,194 @@
 import { CSSProperties, useCallback, useEffect, useState } from "react";
 import Navbar from "../Components/Navbar";
 import Footer from "../Components/Footer";
-import { useGlobalState } from "../Context/GlobalStateContext";
+import { API_URL } from "../Api";
+
+export interface PlatformAvailable {
+	id: string;
+	name: string;
+}
+
+export interface Developer {
+	id: string;
+	name: string;
+}
+
+export interface Publisher {
+	id: string;
+	name: string;
+}
+
+export interface Genre {
+	id: string;
+	name: string;
+}
+
+export interface Game {
+    id: string;
+    title: string;
+	cover_image: string;
+	summary: string;
+    release: {
+		year: number;
+		date: string;
+	}
+    igdb: {
+		url: string | null;
+		rating: number | null;
+	}
+	metacritic: {
+		url: string | null;
+		rating: number | null;
+	}
+	where_to_buy: {
+		amazon_url: string;
+		steam_url: string;
+		gog_url: string;
+		epic_games: string;
+		playstation_store: string;
+		nitendo_store: string;
+		xbox_store: string;
+		google_play: string;
+		apple_app_store: string;
+	}
+	developer: Developer
+	publisher: Publisher
+	platforms_available: PlatformAvailable[]
+	genres: Genre[]
+	how_long_to_beat?: {
+		url: string | null;
+		main_story: {
+			average: string | null;
+		}
+		completionist: {
+			average: string | null;
+		}
+	}
+    created_at: string;
+    updated_at: string | null;
+    created_at_pt_br: string;
+    updated_at_pt_br: string | null;
+}
 
 export default function Games() {
-    const { globalState } = useGlobalState();
-
-    const [gameTitle, setGameTitle] = useState<string>();
-    const [gameIGDBLink, setGameIGDBLink] = useState<string>();
-    const [gameCover, setGameCover] = useState<string>();
-    const [gameSummary, setGameSummary] = useState<string>();
-    const [gameReleaseYear, setGameReleaseYear] = useState<number>();
-    const [gameIGDBRating, setGameIGDBRating] = useState<number>();
-    const [gameGenres, setGameGenres] = useState<string[]>([]);
-    const [gamePlatforms, setGamePlatforms] = useState<string[]>([]);
-    const [gameDeveloper, setGameDeveloper] = useState<string>();
-    const [gamePublisher, setGamePublisher] = useState<string>();
     const [error, setError] = useState<string>();
+	const [game, setGame] = useState<Game | null>(null)
+
+	let whereToBuy = [
+			{
+				id: '123',
+				name: 'Buy On Amazon',
+				url: 'https://www.amazon.com/'
+			},
+			{
+				id: '432',
+				name: 'Buy On Steam',
+				url: 'https://store.steampowered.com/'
+			},
+			// {
+			// 	id: '123',
+			// 	name: 'Buy On GOG',
+			// 	url: 'https://www.gog.com/'
+			// },
+			// {
+			// 	id: '123',
+			// 	name: 'Buy On EpicStore',
+			// 	url: 'https://store.epicgames.com/en-US/'
+			// },
+			// {
+			// 	id: '123',
+			// 	name: 'Buy On PlayStation Store',
+			// 	url: 'https://store.playstation.com/pt-br/pages/latest'
+			// },
+			// {
+			// 	id: '123',
+			// 	name: 'Buy On Nintendo Store',
+			// 	url: 'https://www.nintendo.com/store/games/'
+			// },
+			// {
+			// 	id: '123',
+			// 	name: 'Buy On Xbox Store',
+			// 	url: 'https://www.xbox.com/en-US/microsoft-store'
+			// },
+			// {
+			// 	id: '123',
+			// 	name: 'Buy On GooglePlay',
+			// 	url: 'https://play.google.com/store/games?gl=US'
+			// },
+			// {
+			// 	id: '123',
+			// 	name: 'Buy On Apple Story',
+			// 	url: 'https://www.apple.com/app-store/'
+			// }
+		]
 
     const recommendRandomGame = useCallback(async () => {
-        const response = await fetch("https://api-games.alexgalhardo.com/games");
+        const response = await fetch(`${API_URL}/games/random`);
         const json = await response.json();
-        const game = json[Math.floor(Math.random() * json?.length)];
-        setGameTitle(game.title);
-        setGameIGDBLink(game.igdb_url);
-        setGameCover(game.cover);
-        setGameSummary(game.summary);
-        setGameReleaseYear(game.release_year);
-        setGameIGDBRating(game.igdb_rating);
-        setGameGenres(game.genres);
-        setGamePlatforms(game.platforms);
-        setGameDeveloper(game.developer);
-        setGamePublisher(game.publisher);
+		const {data} = json;
+		// console.log('\n\n data é => ', data)
+		setGame({
+			id: data.id,
+			title: data.title,
+			cover_image: data.cover_image,
+			summary: data.summary,
+			release: {
+				year: data.release.year,
+				date: data.release.date,
+			},
+			igdb: {
+				url: data.igdb.url,
+				rating: data.igdb.rating,
+			},
+			metacritic: {
+				url: data.metacritic.url,
+				rating: data.metacritic.rating,
+			},
+			where_to_buy: {
+				amazon_url: data.where_to_buy.amazon_url,
+				steam_url: data.where_to_buy.steam_url,
+				gog_url: data.where_to_buy.gog_url,
+				epic_games: data.where_to_buy.epic_games,
+				playstation_store: data.where_to_buy.playstation_store,
+				nitendo_store: data.where_to_buy.nitendo_store,
+				xbox_store: data.where_to_buy.xbox_store,
+				google_play: data.where_to_buy.google_play,
+				apple_app_store: data.where_to_buy.apple_app_store,
+			},
+			developer: data.developer,
+			publisher: data.publisher,
+			platforms_available: data.platforms_available,
+			genres: data.genres,
+			how_long_to_beat: {
+				url: data.how_long_to_beat.url,
+				main_story: {
+					average: data.how_long_to_beat.main_story.average,
+				},
+				completionist: {
+					average: data.how_long_to_beat.completionist.average,
+				}
+			},
+			created_at: data.created_at,
+			updated_at: data.updated_at,
+			created_at_pt_br: data.created_at_pt_br,
+			updated_at_pt_br: data.updated_at_pt_br,
+		})
+
+		const whereToBuy = {
+			amazon_url: 'url_here',
+			steam_url: 'url_here',
+			gog_url: 'url_here',
+			epic_games: 'url_here',
+			playstation_store: 'url_here',
+			nitendo_store: 'url_here',
+			xbox_store: 'url_here',
+			google_play: 'url_here',
+			apple_app_store: 'url_here',
+		};
     }, []);
 
     useEffect(() => {
-        fetch("https://api-games.alexgalhardo.com/games")
-            .then((response) => response.json())
-            .then((json) => {
-                const game = json[Math.floor(Math.random() * json?.length)];
-                setGameTitle(game.title);
-                setGameIGDBLink(game.igdb_url);
-                setGameCover(game.cover);
-                setGameSummary(game.summary);
-                setGameReleaseYear(game.release_year);
-                setGameIGDBRating(game.igdb_rating);
-                setGameGenres(game.genres);
-                setGamePlatforms(game.platforms);
-                setGameDeveloper(game.developer);
-                setGamePublisher(game.publisher);
-                // setLoading(false);
-            })
-            .catch((error) => {
-                setError(error);
-                // setLoading(false);
-            });
+        recommendRandomGame()
     }, []);
 
     return (
@@ -65,7 +199,7 @@ export default function Games() {
                     <div className="col-lg-3 text-center">
                         <img
                             id="game_image"
-                            src={gameCover}
+                            src={game?.cover_image}
                             className="shadow mx-auto d-block w-100 image-fluid mb-3"
                             alt="game_image"
                         />
@@ -78,7 +212,7 @@ export default function Games() {
                         </button>
                     </div>
 
-                    <div className="col-lg-5">
+                    <div className="col-lg-6">
                         <div className="card-body">
                             <div className="d-flex justify-content-between mb-3">
                                 <b
@@ -86,76 +220,85 @@ export default function Games() {
                                     className="fs-2 card-link text-decoration-none"
                                 >
                                     <span id="game_title" className="fw-bold">
-                                        {gameTitle}{" "}
+                                        {game?.title}{" "}
                                     </span>
                                     (
                                     <span id="game_year_release" className="text-muted">
-                                        {gameReleaseYear}
+                                        {game?.release.year}
                                     </span>
                                     )
                                 </b>
                             </div>
 
                             <p className="card-text" id="game_resume">
-                                {gameSummary}
+                                {game?.summary}
                             </p>
 
 
                         </div>
                     </div>
 
-                    <div className="col-lg-4 mb-3">
+                    <div className="col-lg-3 mb-3">
                         <ul className="mt-3">
 							<li className="">
 								<b>Where To Buy:</b>
 								<ul>
-									<li><a href="https://metacritic.com" target="_blank">Buy on Amazon:</a></li>
-									<li><a href="https://store.steampowered.com/" target="_blank">Steam Page</a></li>
+									{whereToBuy.map(item => (
+										<li key={item.id}>
+											<a href={item.url}>{item.name}</a>
+										</li>
+									))}
 								</ul>
 							</li>
 							<li className="">
 								<b>Ratings:</b>
 								<ul>
 									<li className="">
-										<a href="https://metacritic.com" target="_blank">Metacritic Rating:</a> ⭐<span id="game_igdb_rating">{gameIGDBRating}</span>
+										<a href={game?.metacritic.url as string} target="_blank">Metacritic Rating:</a> ⭐<span id="game_igdb_rating">{game?.metacritic.rating}</span>
 									</li>
 									<li className="">
-										<a href="https://igdb.com" target="_blank">IGDB Rating:</a> ⭐<span id="game_igdb_rating">{gameIGDBRating}</span>
+										<a href={game?.igdb.url as string} target="_blank">IGDB Rating:</a> ⭐<span id="game_igdb_rating">{game?.igdb.rating}</span>
 									</li>
 								</ul>
 							</li>
 							<li className="">
 								<b>Developer:</b>
 								<ul>
-									<li><a href="https://store.steampowered.com/" target="_blank">{gameDeveloper}</a></li>
+									<li><a href={`/developer/${game?.developer.name}`} target="_blank">{game?.developer.name}</a></li>
 								</ul>
 							</li>
 							<li className="">
 								<b>Publisher:</b>
 								<ul>
-									<li><a href="https://store.steampowered.com/" target="_blank">{gamePublisher}</a></li>
+									<li><a href={`/publisher/${game?.publisher.name}`} target="_blank">{game?.publisher.name}</a></li>
 								</ul>
 							</li>
 							<li className="">
 								<b>Genres:</b>
 								<ul>
-									<li><a href="https://store.steampowered.com/" target="_blank">Action</a></li>
-									<li><a href="https://store.steampowered.com/" target="_blank">RPG</a></li>
+									{game?.genres.map(genre => (
+										<li key={genre.id}>
+											<a href={`/genre/${genre.name}`}>{genre.name}</a>
+										</li>
+									))}
 								</ul>
 							</li>
 							<li className="">
 								<b>Platforms available:</b>
 								<ul>
-									<li><a href="#" target="_blank">Windows PC</a></li>
-									<li><a href="#" target="_blank">PlayStation 4</a></li>
+									{game?.platforms_available.map(platform => (
+										<li key={platform.id}>
+											<a href={`/platform/${platform.name}`}>{platform.name}</a>
+										</li>
+									))}
 								</ul>
 							</li>
 							<li className="">
 								<b>HowLongToBeat:</b>
 								<ul>
-									<li><a href="https://store.steampowered.com/" target="_blank">Page</a></li>
-									<li>History: 20 hours</li>
-									<li>Completed: 35 hours</li>
+									<li><a href={game?.how_long_to_beat?.url as string} target="_blank">Page</a></li>
+									<li>Main History: {game?.how_long_to_beat?.main_story.average}</li>
+									<li>Completionist: {game?.how_long_to_beat?.completionist.average}</li>
 								</ul>
 							</li>
 						</ul>
