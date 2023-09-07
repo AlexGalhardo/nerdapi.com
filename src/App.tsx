@@ -1,8 +1,6 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import { GlobalStateProvider } from "./Context/GlobalStateContext";
 import Games from "./Pages/Games";
-import Books from "./Pages/Books";
-import Movies from "./Pages/Movies";
 import ProgressBar from "./Components/ProgressBar";
 import Contact from "./Pages/Contact";
 import Pricing from "./Pages/Pricing";
@@ -10,10 +8,10 @@ import Checkout from "./Components/Checkout/Checkout";
 import NotFound from "./Components/NotFound";
 import Profile from "./Components/Profile/Profile";
 import Auth from "./Components/Auth/Auth";
-import TVShows from "./Pages/TVShows";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap-icons/font/bootstrap-icons.css";
 import "./Style.css";
+import About from "./Pages/About";
 
 export default function App() {
     return (
@@ -23,9 +21,7 @@ export default function App() {
                 <Routes>
                     <Route path="/" element={<Games />} />
                     <Route path="/games/*" element={<Games />} />
-                    <Route path="/books" element={<Books />} />
-                    <Route path="/movies" element={<Movies />} />
-                    <Route path="/tvshows" element={<TVShows />} />
+					<Route path="/About" element={<About />} />
                     <Route path="/contact" element={<Contact />} />
                     <Route path="/pricing" element={<Pricing />} />
                     <Route path="/checkout/*" element={<Checkout />} />

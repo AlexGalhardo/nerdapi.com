@@ -1,7 +1,7 @@
 export const API_URL =
     import.meta.env.VITE_NODE_ENV === "development"
         ? "http://localhost:3000"
-        : "https://microsaas-api.alexgalhardo.com";
+        : "https://api.nerdapi.com";
 
 console.log("API_URL => ", API_URL);
 
