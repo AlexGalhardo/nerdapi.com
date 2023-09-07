@@ -1,6 +1,7 @@
 import { CSSProperties } from "react";
 import Navbar from "../Components/Navbar";
 import { API_URL } from "../Api";
+import Footer from "../Components/Footer";
 
 export default function Pricing() {
     const handleSubmitCasual = async (e: any) => {
@@ -69,9 +70,9 @@ export default function Pricing() {
             <div className="container col-lg-7" style={containerPricing}>
                 <div className="row">
                     <div className="pricing-header p-3 pb-md-4 text-center mt-5">
-                        <p className="fs-5 text-muted">
-                            Elevate your entertainment experience with our subscription plans for access to a vast
-                            library of games, books, and movies through our API. Dive into a world of endless
+                        <p className="fs-3">
+                            Elevate your development experience with our subscription plans for access to a vast
+                            library of games, books, movies and TV Shows through our API. Dive into a world of endless
                             entertainment options, from the latest blockbuster films to best-selling novels and
                             captivating video games. With our user-friendly interface and lightning-fast API, you'll
                             have instant access to the ultimate source of digital entertainment.
@@ -91,7 +92,7 @@ export default function Pricing() {
                                         </h1>
                                         <ul className="list-unstyled mt-3 mb-4">
                                             <li>No Access API Token</li>
-                                            <li>Limited Recomendations</li>
+                                            <li>Website Limited Recomendations</li>
                                         </ul>
                                     </div>
                                 </div>
@@ -108,10 +109,9 @@ export default function Pricing() {
                                             $1.99<small className="text-muted fw-light">/month</small>
                                         </h1>
                                         <ul className="list-unstyled mt-3 mb-4">
-                                            <li>Access to API Token</li>
+                                            <li>Access to API KEY</li>
                                             <li>1000 API Requests Day</li>
                                             <li>Priority Email Support</li>
-                                            <li>Help center access</li>
                                         </ul>
                                         <form onSubmit={handleSubmitCasual}>
                                             <button
@@ -141,7 +141,7 @@ export default function Pricing() {
                                             <li>5000 API Requests Day</li>
                                             <li>Access to Telegram BOT</li>
                                             <li>Priority Email Support</li>
-                                            <li>Priority Telegram Support</li>
+                                            <li>Exclusive Telegram Support</li>
                                         </ul>
                                         <form onSubmit={handleSubmitPro}>
                                             <button
@@ -159,9 +159,7 @@ export default function Pricing() {
                     </main>
                 </div>
             </div>
-            <div className="col-lg-12 text-center text-muted mb-3 mt-3">
-                <small>&copy; Galhardo MicroSaaS 2023</small>
-            </div>
+            <Footer />
         </>
     );
 }

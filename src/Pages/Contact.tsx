@@ -4,6 +4,7 @@ import ErrorAlertMessage from "../Components/Alerts/ErrorAlertMessage";
 import { useGlobalState } from "../Context/GlobalStateContext";
 import SuccessAlertMessage from "../Components/Alerts/SuccessAlertMessage";
 import Button from "../Components/Forms/Button";
+import Footer from "../Components/Footer";
 
 export default function Contact() {
     const [name, setName] = useState<string>();
@@ -111,9 +112,7 @@ export default function Contact() {
                     {error && <ErrorAlertMessage error={error} />}
                 </div>
 
-                <div className="col-lg-12 text-center text-muted mb-3 mt-3">
-                    <small>&copy; Galhardo MicroSaaS 2023</small>
-                </div>
+                <Footer />
             </div>
         </>
     );

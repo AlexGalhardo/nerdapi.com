@@ -33,12 +33,6 @@ export default function Navbar() {
                     <div className="collapse navbar-collapse" id="navbarSupportedContent">
                         <ul className="navbar-nav me-auto mb-2 mb-lg-0">
                             <li className="nav-item">
-                                <a className="fs-5 nav-link fw-bold" aria-current="page" href="/blog">
-                                    Blog
-                                </a>
-                            </li>
-
-                            <li className="nav-item">
                                 <a className="fs-5 nav-link fw-bold" aria-current="page" href="/contact">
                                     Contact
                                 </a>
@@ -55,28 +49,16 @@ export default function Navbar() {
                                 <a
                                     className="fs-5 nav-link fw-bold"
                                     aria-current="page"
-                                    href="https://nerdapi.com"
+                                    href="https://docs.nerdapi.com"
                                     target="_blank"
                                 >
                                     {" "}
                                     API
                                 </a>
                             </li>
-
-                            <li className="nav-item">
-                                <a
-                                    className="fs-5 nav-link fw-bold"
-                                    aria-current="page"
-                                    href="https://github.com/AlexGalhardo/Galhardo-MicroSaaS"
-                                    target="_blank"
-                                >
-                                    {" "}
-                                    Source Code
-                                </a>
-                            </li>
                         </ul>
 
-                        {user ? (
+                        {user.id ? (
                             <ul className="navbar-nav me-auto mb-2 mb-lg-0 right">
                                 <li className="nav-item dropdown">
                                     <a
