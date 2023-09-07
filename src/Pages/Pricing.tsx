@@ -71,8 +71,8 @@ export default function Pricing() {
                 <div className="row">
                     <div className="pricing-header p-3 pb-md-4 text-center mt-5">
                         <p className="fs-3">
-                            Elevate your development experience with our subscription plans for access to a vast
-                            library of games, books, movies and TV Shows through our API. Dive into a world of endless
+                            Elevate your development experience with our subscription plans for access to a vast library
+                            of games, books, movies and TV Shows through our API. Dive into a world of endless
                             entertainment options, from the latest blockbuster films to best-selling novels and
                             captivating video games. With our user-friendly interface and lightning-fast API, you'll
                             have instant access to the ultimate source of digital entertainment.
