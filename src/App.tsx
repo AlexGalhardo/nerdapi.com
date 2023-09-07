@@ -4,7 +4,6 @@ import Games from "./Pages/Games";
 import Books from "./Pages/Books";
 import Movies from "./Pages/Movies";
 import ProgressBar from "./Components/ProgressBar";
-import Blog from "./Components/Blog/Blog";
 import Contact from "./Pages/Contact";
 import Pricing from "./Pages/Pricing";
 import Checkout from "./Components/Checkout/Checkout";
