@@ -116,7 +116,7 @@ export const GlobalStateProvider = ({ children }: React.PropsWithChildren) => {
                 LOGGED_IN: false,
             },
         });
-        //window.localStorage.removeItem("token");
+        window.localStorage.removeItem("token");
     }, []);
 
     const getUser = useCallback(async function (token: string) {
@@ -145,11 +145,11 @@ export const GlobalStateProvider = ({ children }: React.PropsWithChildren) => {
                 subscription: {
                     active: json.data.stripe.subscription.active,
                     name: json.data.stripe.subscription.name,
-                    starts_at: json.stripe.subscription.starts_at,
+                    starts_at: json.data.stripe.subscription.starts_at,
                     ends_at: json.data.stripe.subscription.ends_at,
                     charge_id: json.data.stripe.subscription.charge_id,
                     receipt_url: json.data.stripe.subscription.receipt_url,
-                    hosted_invoice_url: json.stripe.subscription.hosted_invoice_url,
+                    hosted_invoice_url: json.data.stripe.subscription.hosted_invoice_url,
                 },
                 updated_at: json.data.stripe.updated_at,
                 updated_at_pt_br: json.data.stripe.updated_at_pt_br,
@@ -216,22 +216,34 @@ export const GlobalStateProvider = ({ children }: React.PropsWithChildren) => {
 
             const { url, options } = USER_LOGIN({ email, password });
 
-            const tokenRes = await fetch(url, options);
+            const response = await fetch(url, options);
 
-            if (!tokenRes.ok) throw new Error(`Error: ${tokenRes.statusText}`);
+            if (!response.ok) throw new Error(`Error: ${response.statusText}`);
 
-            const { jwt_token } = await tokenRes.json();
+            if (response.ok) {
+                const json = await response.json();
+
+                if (json.redirect) {
+                    window.location.href = json.redirect;
+                } else {
+                    console.error("Response does not contain a redirect URL.");
+                }
+            } else {
+                console.error("Error:", response.statusText);
+            }
+
+            const { jwt_token } = await response.json();
 
             window.localStorage.setItem("token", jwt_token);
 
-            const response = await fetch(`${API_URL}/tokenUser`, {
+            const getUserResponse = await fetch(`${API_URL}/tokenUser`, {
                 method: "POST",
                 headers: {
                     "Content-Type": "application/json",
                     Authorization: `Bearer ${jwt_token}`,
                 },
             });
-            const json = await response.json();
+            const json = await getUserResponse.json();
             setUser({
                 id: json.data.id,
                 username: json.data.username,
@@ -307,7 +319,7 @@ export const GlobalStateProvider = ({ children }: React.PropsWithChildren) => {
             let token = null;
 
             if (urlSearchParams.get("token")) token = urlSearchParams.get("token");
-            if (window.localStorage.getItem("token")) token = window.localStorage.getItem("token");
+            else if (window.localStorage.getItem("token")) token = window.localStorage.getItem("token");
 
             if (token) {
                 try {
@@ -326,6 +338,7 @@ export const GlobalStateProvider = ({ children }: React.PropsWithChildren) => {
                 } catch (err) {
                     console.log("\n err => ", err);
                     userLogout();
+                    setLogin(false);
                 } finally {
                     setLoading(false);
                 }

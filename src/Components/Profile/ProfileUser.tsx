@@ -4,16 +4,15 @@ import SuccessAlertMessage from "../Alerts/SuccessAlertMessage";
 
 export default function ProfileUser() {
     const { user, login } = useGlobalState();
-
-    if (login === false) {
-        return <Navigate to="/auth" />;
-    }
-
-    console.log("\n\n user é => ", user);
-
     const location = useLocation();
     const queryParams = new URLSearchParams(location.search);
-    const registred = queryParams.get("registred");
+    let registred = null;
+
+    if (!queryParams.get("token") || !queryParams.get("registred")) {
+        if (login === false) {
+            return <Navigate to="/auth" />;
+        }
+    }
 
     async function handleSubmit(event: any) {
         event.preventDefault();
@@ -115,7 +114,7 @@ export default function ProfileUser() {
                         name="apiToken"
                         className="fs-4 mb-2 form-control"
                         type="text"
-                        value={user.api_token}
+                        defaultValue={user.api_token ?? undefined}
                         readOnly
                     />
                 </div>
@@ -127,7 +126,7 @@ export default function ProfileUser() {
                     <input
                         className="fs-4 mb-2 form-control"
                         type="text"
-                        value={user.stripe.subscription.name}
+                        defaultValue={user.stripe.subscription.name ?? undefined}
                         readOnly
                     />
                 </div>
@@ -138,7 +137,7 @@ export default function ProfileUser() {
                         className="fs-4 mb-2 form-control"
                         name="SUBSCRIPTION_START_DATE_TIME"
                         type="text"
-                        value={user.stripe.subscription.starts_at}
+                        defaultValue={user.stripe.subscription.starts_at ?? undefined}
                         readOnly
                     />
                 </div>
@@ -149,7 +148,7 @@ export default function ProfileUser() {
                         className="fs-4 mb-2 form-control"
                         name="SUBSCRIPTION_END_DATE_TIME"
                         type="text"
-                        value={user.stripe.subscription.ends_at}
+                        defaultValue={user.stripe.subscription.ends_at ?? undefined}
                         readOnly
                     />
                 </div>

@@ -5,18 +5,18 @@ import { useState } from "react";
 export default function Navbar() {
     const { user, userLogout } = useGlobalState();
     const navigate = useNavigate();
-	const [search, setSearch] = useState<string | undefined>()
+    const [search, setSearch] = useState<string | undefined>();
 
     function handleLogout() {
         userLogout();
         navigate("/auth");
     }
 
-	function handleSearch(event: any){
-		event.preventDefault();
+    function handleSearch(event: any) {
+        event.preventDefault();
 
-		navigate(`/?search=${search}`);
-	}
+        navigate(`/?search=${search}`);
+    }
 
     return (
         <div className="fixed-top shadow bg-light mb-5 bg-dark">
@@ -26,12 +26,17 @@ export default function Navbar() {
                         <span className="fs-4 fw-bold navbarTitle">NerdAPI</span>
                     </a>
 
-					<form className="d-flex w-50" onSubmit={handleSearch}>
-						<div className="input-group">
-							<input type="text" name="search" className="fs-5 form-control" placeholder="Search game title..." 
-							onChange={(e) => setSearch(e.target.value)}/>
-						</div>
-					</form>
+                    <form className="d-flex w-50" onSubmit={handleSearch}>
+                        <div className="input-group">
+                            <input
+                                type="text"
+                                name="search"
+                                className="fs-5 form-control"
+                                placeholder="Search game title..."
+                                onChange={(e) => setSearch(e.target.value)}
+                            />
+                        </div>
+                    </form>
 
                     <button
                         className="navbar-toggler"
@@ -56,7 +61,7 @@ export default function Navbar() {
                             <li className="nav-item">
                                 <a className="fs-5 nav-link fw-bold" aria-current="page" href="/pricing">
                                     {" "}
-									<i className="bi bi-award"></i>
+                                    <i className="bi bi-award"></i>
                                     Pricing
                                 </a>
                             </li>
@@ -73,7 +78,7 @@ export default function Navbar() {
                             </li>
                         </ul>
 
-                        {false ? (
+                        {user ? (
                             <ul className="navbar-nav me-auto mb-2 mb-lg-0 right">
                                 <li className="nav-item dropdown">
                                     <a
@@ -84,7 +89,7 @@ export default function Navbar() {
                                         data-bs-toggle="dropdown"
                                         aria-expanded="false"
                                     >
-                                        {user.username ?? 'Alex Galhardo'}
+                                        {user.username ?? "Alex Galhardo"}
                                     </a>
                                     <ul className="dropdown-menu" aria-labelledby="navbarDropdown">
                                         <li>

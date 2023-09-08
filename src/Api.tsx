@@ -1,9 +1,5 @@
 export const API_URL =
-    import.meta.env.VITE_NODE_ENV === "development"
-        ? "http://localhost:3000"
-        : "https://api.nerdapi.com";
-
-
+    import.meta.env.VITE_NODE_ENV === "development" ? "http://localhost:3000" : "https://api.nerdapi.com";
 
 export function USER_LOGIN(body: any) {
     return {
@@ -38,7 +34,7 @@ export function VALIDATE_TOKEN(token: string) {
             method: "POST",
             headers: {
                 "Content-Type": "application/json",
-                "Authorization": `Bearer ${token}`,
+                Authorization: `Bearer ${token}`,
             },
         },
     };
