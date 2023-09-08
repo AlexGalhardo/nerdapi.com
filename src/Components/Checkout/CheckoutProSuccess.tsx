@@ -12,6 +12,7 @@ export default function CheckoutProSuccess({ sessionId }: { sessionId: string })
                 }),
                 headers: {
                     "Content-Type": "application/json",
+					"Authorization": `Bearer ${window.localStorage.getItem("token")}`
                 },
             });
 

@@ -15,8 +15,11 @@ export default function Pricing() {
                 }),
                 headers: {
                     "Content-Type": "application/json",
+					"Authorization": `Bearer ${window.localStorage.getItem("token")}`
                 },
             });
+
+			console.log('\n\n response => ', response)
 
             if (response.ok) {
                 const json = await response.json();
@@ -45,6 +48,7 @@ export default function Pricing() {
                 }),
                 headers: {
                     "Content-Type": "application/json",
+					"Authorization": `Bearer ${window.localStorage.getItem("token")}`
                 },
             });
 
