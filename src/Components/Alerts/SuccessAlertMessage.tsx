@@ -5,7 +5,7 @@ interface AlertSuccess {
 export default function SuccessAlertMessage({ message }: AlertSuccess) {
     if (!message) return null;
     return (
-        <p className="mt-3 fw-bold fs-4 text-center alert alert-success" role="alert">
+        <p className="fw-bold fs-3 text-center alert alert-success mb-5" role="alert">
             {message}
         </p>
     );

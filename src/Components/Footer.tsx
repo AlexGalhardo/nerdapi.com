@@ -1,11 +1,10 @@
 import { CSSProperties } from "react";
-import Newsletter from "./Newsletter";
 
 export default function Footer() {
     return (
         <div className="container" style={containerFooter}>
             <div className="row">
-                <div className="col-lg-12 text-center text-muted mb-3 mt-5">
+                <div className="col-lg-12 text-center text-muted mb-5 mt-3">
                     <small>&copy; NerdAPI.com 2023</small>
                     <br />
                 </div>
