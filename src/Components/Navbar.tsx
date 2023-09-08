@@ -11,8 +11,8 @@ export default function Navbar() {
     }
 
     return (
-        <div className="fixed-top shadow bg-light mb-5">
-            <nav className="container col-lg-8 navbar navbar-expand-lg fixed navbar-light">
+        <div className="fixed-top shadow bg-light mb-5 bg-dark">
+            <nav className="container col-lg-10 navbar navbar-expand-lg fixed navbar-dark bg-dark">
                 <div className="container-fluid">
                     <a className="navbar-brand appTitle" href="/">
                         <span className="fs-4 fw-bold navbarTitle">NerdAPI</span>
@@ -20,10 +20,7 @@ export default function Navbar() {
 
 					<form className="d-flex w-50">
 						<div className="input-group">
-							<input type="text" className="form-control" placeholder="Search game title..."/>
-							<span className="input-group-btn">
-								<button className="btn fw-bold btn-outline-success" type="submit"><i className="bi bi-search"></i></button>
-							</span>
+							<input type="text" name="search" className="fs-5 form-control" placeholder="Search game title..."/>
 						</div>
 					</form>
 
@@ -41,7 +38,7 @@ export default function Navbar() {
 
                     <div className="collapse navbar-collapse pull-right" id="navbarSupportedContent">
                         <ul className="navbar-nav me-auto mb-2 mb-lg-0">
-							<li className="nav-item dropdown">
+							{/* <li className="nav-item dropdown">
 								<a className="nav-link dropdown-toggle fw-bold" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
 									Learn More
 								</a>
@@ -51,16 +48,17 @@ export default function Navbar() {
 									<li><a className="fw-bold fs-5 dropdown-item" href="/pricing"><i className="bi bi-award"></i> Pricing</a></li>
 									<li><a className="fw-bold fs-5 dropdown-item" href="https://docs.nerdapi.com" target="_blank"><i className="bi bi-code"></i> API Docs</a></li>
 								</ul>
-							</li>
-                            {/* <li className="nav-item">
+							</li> */}
+                            <li className="nav-item">
                                 <a className="fs-5 nav-link fw-bold" aria-current="page" href="/contact">
-                                    Contact
+                                    <i className="bi bi-envelope"></i> Contact
                                 </a>
                             </li>
 
                             <li className="nav-item">
                                 <a className="fs-5 nav-link fw-bold" aria-current="page" href="/pricing">
                                     {" "}
+									<i className="bi bi-award"></i>
                                     Pricing
                                 </a>
                             </li>
@@ -72,10 +70,9 @@ export default function Navbar() {
                                     href="https://docs.nerdapi.com"
                                     target="_blank"
                                 >
-                                    {" "}
-                                    API
+                                    <i className="bi bi-code"></i> API
                                 </a>
-                            </li> */}
+                            </li>
                         </ul>
 
                         {false ? (
@@ -115,7 +112,7 @@ export default function Navbar() {
                             </ul>
                         ) : (
                             <div className="pull-right">
-                                <a href="/auth" className="button fw-bold btn btn-outline-success" type="submit">
+                                <a href="/auth" className="button fw-bold fs-5 btn btn-outline-success" type="submit">
                                     <i className="bi bi-person-fill-lock"></i> Login
                                 </a>
 

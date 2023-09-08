@@ -22,11 +22,11 @@ body {
 .button {
   text-align: center;
   border-radius: 5px;
-  box-shadow: 3px 3px #999;
+  box-shadow: 3px 3px gray;
 }
 
 .button:active {
-  box-shadow: 3px 3px #666;
+  box-shadow: 3px 3px #fff;
   transform: translateY(2px);
 }
 
