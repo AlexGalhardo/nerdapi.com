@@ -1,14 +1,22 @@
 import { useNavigate } from "react-router-dom";
 import { useGlobalState } from "../Context/GlobalStateContext";
+import { useState } from "react";
 
 export default function Navbar() {
     const { user, userLogout } = useGlobalState();
     const navigate = useNavigate();
+	const [search, setSearch] = useState<string | undefined>()
 
     function handleLogout() {
         userLogout();
         navigate("/auth");
     }
+
+	function handleSearch(event: any){
+		event.preventDefault();
+
+		navigate(`/?search=${search}`);
+	}
 
     return (
         <div className="fixed-top shadow bg-light mb-5 bg-dark">
@@ -18,9 +26,10 @@ export default function Navbar() {
                         <span className="fs-4 fw-bold navbarTitle">NerdAPI</span>
                     </a>
 
-					<form className="d-flex w-50">
+					<form className="d-flex w-50" onSubmit={handleSearch}>
 						<div className="input-group">
-							<input type="text" name="search" className="fs-5 form-control" placeholder="Search game title..."/>
+							<input type="text" name="search" className="fs-5 form-control" placeholder="Search game title..." 
+							onChange={(e) => setSearch(e.target.value)}/>
 						</div>
 					</form>
 
@@ -38,17 +47,6 @@ export default function Navbar() {
 
                     <div className="collapse navbar-collapse pull-right" id="navbarSupportedContent">
                         <ul className="navbar-nav me-auto mb-2 mb-lg-0">
-							{/* <li className="nav-item dropdown">
-								<a className="nav-link dropdown-toggle fw-bold" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-									Learn More
-								</a>
-								<ul className="dropdown-menu" aria-labelledby="navbarDropdown">
-									<li><a className="fw-bold fs-5 dropdown-item" href="/about"><i className="bi bi-chat-square-text"></i> About</a></li>
-									<li><a className="fw-bold fs-5 dropdown-item" href="/contact"><i className="bi bi-envelope"></i> Contact</a></li>
-									<li><a className="fw-bold fs-5 dropdown-item" href="/pricing"><i className="bi bi-award"></i> Pricing</a></li>
-									<li><a className="fw-bold fs-5 dropdown-item" href="https://docs.nerdapi.com" target="_blank"><i className="bi bi-code"></i> API Docs</a></li>
-								</ul>
-							</li> */}
                             <li className="nav-item">
                                 <a className="fs-5 nav-link fw-bold" aria-current="page" href="/contact">
                                     <i className="bi bi-envelope"></i> Contact
@@ -115,14 +113,6 @@ export default function Navbar() {
                                 <a href="/auth" className="button fw-bold fs-5 btn btn-outline-success" type="submit">
                                     <i className="bi bi-person-fill-lock"></i> Login
                                 </a>
-
-                                {/* <a
-                                    href="/auth/register"
-                                    className="button fw-bold fs-5 ms-2 btn btn-outline-primary"
-                                    type="submit"
-                                >
-                                    Sign Up
-                                </a> */}
                             </div>
                         )}
                     </div>

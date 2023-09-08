@@ -2,6 +2,7 @@ import { CSSProperties, useCallback, useEffect, useState } from "react";
 import Navbar from "../Components/Navbar";
 import Footer from "../Components/Footer";
 import { API_URL } from "../Api";
+import { useLocation } from 'react-router-dom';
 
 export interface PlatformAvailable {
 	id: string;
@@ -23,6 +24,12 @@ export interface Genre {
 	name: string;
 }
 
+export interface WhereToBuy {
+	id: string;
+	name: string;
+	url: string;
+}
+
 export interface Game {
     id: string;
     title: string;
@@ -40,17 +47,7 @@ export interface Game {
 		url: string | null;
 		rating: number | null;
 	}
-	where_to_buy: {
-		amazon_url: string;
-		steam_url: string;
-		gog_url: string;
-		epic_games: string;
-		playstation_store: string;
-		nitendo_store: string;
-		xbox_store: string;
-		google_play: string;
-		apple_app_store: string;
-	}
+	where_to_buy: WhereToBuy[],
 	developer: Developer
 	publisher: Publisher
 	platforms_available: PlatformAvailable[]
@@ -74,59 +71,14 @@ export default function Games() {
     const [error, setError] = useState<string>();
 	const [game, setGame] = useState<Game | null>(null)
 
-	let whereToBuy = [
-			{
-				id: '123',
-				name: 'Buy On Amazon',
-				url: 'https://www.amazon.com/'
-			},
-			{
-				id: '432',
-				name: 'Buy On Steam',
-				url: 'https://store.steampowered.com/'
-			},
-			// {
-			// 	id: '123',
-			// 	name: 'Buy On GOG',
-			// 	url: 'https://www.gog.com/'
-			// },
-			// {
-			// 	id: '123',
-			// 	name: 'Buy On EpicStore',
-			// 	url: 'https://store.epicgames.com/en-US/'
-			// },
-			// {
-			// 	id: '123',
-			// 	name: 'Buy On PlayStation Store',
-			// 	url: 'https://store.playstation.com/pt-br/pages/latest'
-			// },
-			// {
-			// 	id: '123',
-			// 	name: 'Buy On Nintendo Store',
-			// 	url: 'https://www.nintendo.com/store/games/'
-			// },
-			// {
-			// 	id: '123',
-			// 	name: 'Buy On Xbox Store',
-			// 	url: 'https://www.xbox.com/en-US/microsoft-store'
-			// },
-			// {
-			// 	id: '123',
-			// 	name: 'Buy On GooglePlay',
-			// 	url: 'https://play.google.com/store/games?gl=US'
-			// },
-			// {
-			// 	id: '123',
-			// 	name: 'Buy On Apple Story',
-			// 	url: 'https://www.apple.com/app-store/'
-			// }
-		]
+	const location = useLocation();
+  	const queryParams = new URLSearchParams(location.search);
 
     const recommendRandomGame = useCallback(async () => {
         const response = await fetch(`${API_URL}/games/random`);
         const json = await response.json();
 		const {data} = json;
-		// console.log('\n\n data é => ', data)
+
 		setGame({
 			id: data.id,
 			title: data.title,
@@ -144,17 +96,7 @@ export default function Games() {
 				url: data.metacritic.url,
 				rating: data.metacritic.rating,
 			},
-			where_to_buy: {
-				amazon_url: data.where_to_buy.amazon_url,
-				steam_url: data.where_to_buy.steam_url,
-				gog_url: data.where_to_buy.gog_url,
-				epic_games: data.where_to_buy.epic_games,
-				playstation_store: data.where_to_buy.playstation_store,
-				nitendo_store: data.where_to_buy.nitendo_store,
-				xbox_store: data.where_to_buy.xbox_store,
-				google_play: data.where_to_buy.google_play,
-				apple_app_store: data.where_to_buy.apple_app_store,
-			},
+			where_to_buy: data.where_to_buy,
 			developer: data.developer,
 			publisher: data.publisher,
 			platforms_available: data.platforms_available,
@@ -173,23 +115,64 @@ export default function Games() {
 			created_at_pt_br: data.created_at_pt_br,
 			updated_at_pt_br: data.updated_at_pt_br,
 		})
+    }, []);
 
-		const whereToBuy = {
-			amazon_url: 'url_here',
-			steam_url: 'url_here',
-			gog_url: 'url_here',
-			epic_games: 'url_here',
-			playstation_store: 'url_here',
-			nitendo_store: 'url_here',
-			xbox_store: 'url_here',
-			google_play: 'url_here',
-			apple_app_store: 'url_here',
-		};
+	const searchGameByTitle = useCallback(async (gameTitle: string | null) => {
+		if(gameTitle){
+			const response = await fetch(`${API_URL}/games/title/${gameTitle}`);
+			const json = await response.json();
+			const {data} = json;
+
+			if(!data) return setError('Game not found')
+
+			setGame({
+				id: data[0].id,
+				title: data[0].title,
+				cover_image: data[0].cover_image,
+				summary: data[0].summary,
+				release: {
+					year: data[0].release.year,
+					date: data[0].release.date,
+				},
+				igdb: {
+					url: data[0].igdb.url,
+					rating: data[0].igdb.rating,
+				},
+				metacritic: {
+					url: data[0].metacritic.url,
+					rating: data[0].metacritic.rating,
+				},
+				where_to_buy: data[0].where_to_buy,
+				developer: data[0].developer,
+				publisher: data[0].publisher,
+				platforms_available: data[0].platforms_available,
+				genres: data[0].genres,
+				how_long_to_beat: {
+					url: data[0].how_long_to_beat.url,
+					main_story: {
+						average: data[0].how_long_to_beat.main_story.average,
+					},
+					completionist: {
+						average: data[0].how_long_to_beat.completionist.average,
+					}
+				},
+				created_at: data[0].created_at,
+				updated_at: data[0].updated_at,
+				created_at_pt_br: data[0].created_at_pt_br,
+				updated_at_pt_br: data[0].updated_at_pt_br,
+			})
+		}
     }, []);
 
     useEffect(() => {
-        recommendRandomGame()
-    }, []);
+		if(queryParams.get('search')){
+			const search = queryParams.get('search');
+			searchGameByTitle(search)
+		}
+		else {
+			recommendRandomGame()
+		}
+    }, [queryParams.get('search')]);
 
     return (
         <>
@@ -243,7 +226,7 @@ export default function Games() {
 							<li className="">
 								<b>Where To Buy:</b>
 								<ul>
-									{whereToBuy.map(item => (
+									{game?.where_to_buy.map(item => (
 										<li key={item.id}>
 											<a href={item.url}>{item.name}</a>
 										</li>
