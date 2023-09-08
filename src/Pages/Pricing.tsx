@@ -8,7 +8,7 @@ export default function Pricing() {
         e.preventDefault();
 
         try {
-            const response = await fetch(`${API_URL}/create-checkout-session`, {
+            const response = await fetch(`${API_URL}/stripe/create-checkout-session`, {
                 method: "POST",
                 body: JSON.stringify({
                     lookup_key: "plan_casual",
@@ -38,7 +38,7 @@ export default function Pricing() {
         e.preventDefault();
 
         try {
-            const response = await fetch(`${API_URL}/create-checkout-session`, {
+            const response = await fetch(`${API_URL}/stripe/create-checkout-session`, {
                 method: "POST",
                 body: JSON.stringify({
                     lookup_key: "plan_pro",

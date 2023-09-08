@@ -5,7 +5,7 @@ export default function CheckoutProSuccess({ sessionId }: { sessionId: string })
         e.preventDefault();
 
         try {
-            const response = await fetch(`${API_URL}/create-portal-session`, {
+            const response = await fetch(`${API_URL}/stripe/create-portal-session`, {
                 method: "POST",
                 body: JSON.stringify({
                     session_id: sessionId,
