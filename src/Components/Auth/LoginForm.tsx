@@ -4,6 +4,7 @@ import useForm from "../../Hooks/useForm";
 import Input from "../Forms/Input";
 import Button from "../Forms/Button";
 import ErrorAlertMessage from "../Alerts/ErrorAlertMessage";
+import { API_URL } from "../../Utils/Envs";
 
 export default function LoginForm() {
     const { userLogin, error, loading, login } = useGlobalState();
@@ -30,7 +31,7 @@ export default function LoginForm() {
                 data-client_id="944810954683-ahhpp7q8ndotmd10f96ri6es0kpv2nh1.apps.googleusercontent.com"
                 data-context="signin"
                 data-ux_mode="popup"
-                data-login_uri="http://localhost:3000/callback/google/login"
+                data-login_uri={`${API_URL}/callback/google/login`}
                 data-nonce=""
                 data-auto_select="true"
                 data-itp_support="true"
