@@ -45,7 +45,7 @@ export default function LoginForm() {
                 data-text="signin_with"
                 data-size="large"
                 data-logo_alignment="left"
-                data-width="400px"
+                data-width="100%"
             ></div>
 
             <form onSubmit={handleSubmit}>

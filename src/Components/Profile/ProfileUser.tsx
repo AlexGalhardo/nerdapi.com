@@ -1,4 +1,3 @@
-import { Navigate, useLocation } from "react-router-dom";
 import { useGlobalState } from "../../Context/GlobalStateContext";
 import SuccessAlertMessage from "../Alerts/SuccessAlertMessage";
 import ClipboardJS from 'clipboard';
@@ -8,22 +7,13 @@ import 'react-toastify/dist/ReactToastify.css';
 import ErrorAlertMessage from "../Alerts/ErrorAlertMessage";
 
 export default function ProfileUser() {
-	const location = useLocation();
-    const queryParams = new URLSearchParams(location.search);
-	const { user, login, updateProfile, loading, error, updatedProfile } = useGlobalState();
+	const { user, updateProfile, loading, error, updatedProfile } = useGlobalState();
     let registred = null;
-
-    if (!queryParams.get("token") || !queryParams.get("registred")) {
-        if (!login) {
-            return <Navigate to="/auth" />;
-        }
-    }
 
 	const [username, setUsername] = useState<string>(user?.username as string)
 	let [telegramNumber, setTelegramNumber] = useState<string>(user?.telegram_number as string)
 	const [olderPassword, setOlderPassword] = useState<string>()
 	const [newPassword, setNewPassword] = useState<string>()
-	let canUpdateProfile = false
 
 	const notifyCopiedAPIKEY = () => toast.success("API KEY COPIED!", {
 		position: "top-right",
@@ -61,48 +51,45 @@ export default function ProfileUser() {
 				});
 			}
 
-			if (telegramNumber?.length !== 13) { invalidTelegramNumber(); canUpdateProfile = false; return false; }
+			if (telegramNumber && telegramNumber?.length !== 13) { invalidTelegramNumber(); return false; }
 
-			if (parseInt(telegramNumber.substring(4, 5)) !== 9) { invalidTelegramNumber(); canUpdateProfile = false; return false; }
+			if (telegramNumber && parseInt(telegramNumber.substring(4, 5)) !== 9) { invalidTelegramNumber(); return false; }
 
-			if (new Set(telegramNumber).size === 1) { invalidTelegramNumber(); canUpdateProfile = false; return false; }
+			if (telegramNumber && new Set(telegramNumber).size === 1) { invalidTelegramNumber(); return false; }
 
-			if (BRAZIL_VALID_PHONE_DDD.indexOf(parseInt(telegramNumber.substring(2, 4))) == -1) { invalidTelegramNumber(); canUpdateProfile = false; return false; }
+			if (telegramNumber && BRAZIL_VALID_PHONE_DDD.indexOf(parseInt(telegramNumber.substring(2, 4))) == -1) { invalidTelegramNumber(); return false; }
 
 			return true;
 		}
 
 		function isValidUsername(): boolean {
 			function isValidSingleName(name: string): boolean {
-				if (!name || name.length <= 3) {
-					toast.error("Invalid Username: must have at least 4 characters or more", {
-						position: "top-right",
-						autoClose: 3000,
-						hideProgressBar: false,
-						closeOnClick: true,
-						pauseOnHover: true,
-						draggable: true,
-						progress: undefined,
-						theme: "dark",
-					});
-					canUpdateProfile = false;
-					return false;
-				}
 				const regexOfValidNamesWithAcents = /^[a-zA-ZÀ-ú]+$/g;
 				return regexOfValidNamesWithAcents.test(name);
 			}
 
-			const names = username.split(" ");
+			if (!user?.username || user?.username.length <= 3) {
+				toast.error("Invalid Username: must have at least 4 characters or more", {
+					position: "top-right",
+					autoClose: 3000,
+					hideProgressBar: false,
+					closeOnClick: true,
+					pauseOnHover: true,
+					draggable: true,
+					progress: undefined,
+					theme: "dark",
+				});
+				return false;
+			}
+
+			const names = user?.username?.split(" ") as string[];
 			if (names.length > 1){
 				for (const name of names) {
-					if (!isValidSingleName(name)) canUpdateProfile = false; return false;
+					if (!isValidSingleName(name)) return false;
 				}
 			}
 			else {
-				if (!isValidSingleName(username)) {
-					canUpdateProfile = false;
-					return false;
-				}
+				if (!isValidSingleName(username)) return false;
 				return true
 			}
 			return true;
@@ -120,7 +107,6 @@ export default function ProfileUser() {
 					progress: undefined,
 					theme: "dark",
 				});
-				canUpdateProfile = false;
 				return false;
 			}
 
@@ -147,7 +133,6 @@ export default function ProfileUser() {
 					progress: undefined,
 					theme: "dark",
 				});
-				canUpdateProfile = false;
 				return false
 			}
 			return true;
@@ -286,7 +271,7 @@ export default function ProfileUser() {
 							min={4}
 							max={16}
                             className="fs-4 form-control"
-                            defaultValue={username}
+                            defaultValue={user?.username as string}
                             name="name"
 							onChange={(e) => setUsername(e.target.value)}
                         />

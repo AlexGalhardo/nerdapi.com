@@ -10,8 +10,8 @@ import HeadScript from "../HeadScript";
 export default function Profile() {
     const { login } = useGlobalState();
 
-    if (login === false) {
-        return <Navigate to="/auth" />;
+	if (login === false) {
+		return <Navigate to="/auth" />;
     }
 
     return (

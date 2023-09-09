@@ -77,6 +77,8 @@ export const GlobalStateProvider = ({ children }: React.PropsWithChildren) => {
     }, []);
 
     async function getUser(token: string) {
+		setLogin(true);
+
         const response = await fetch(`${API_URL}/tokenUser`, {
             method: "POST",
             headers: {
@@ -116,8 +118,6 @@ export const GlobalStateProvider = ({ children }: React.PropsWithChildren) => {
             created_at_pt_br: data.created_at_pt_br,
             updated_at_pt_br: data.updated_at_pt_br,
         });
-
-        setLogin(true);
     };
 
     async function sendContact(name: string, email: string, subject: string, message: string): Promise<any> {
@@ -252,24 +252,24 @@ export const GlobalStateProvider = ({ children }: React.PropsWithChildren) => {
 			const currentUrl = window.location.href;
 			const urlSearchParams = new URLSearchParams(currentUrl.split("?")[1]);
 			let token = null;
-			if (urlSearchParams.get("token")) token = urlSearchParams.get("token");
+			if (urlSearchParams.get("token")) {
+				console.log('urlSearchParams.get("token") ======> ', urlSearchParams.get("token"))
+				token = urlSearchParams.get("token");
+				window.localStorage.setItem("token", token as string)
+			}
 			else if (window.localStorage.getItem("token")) token = window.localStorage.getItem("token");
+
+			// console.log('\n\n token é => ', token)
+
 			// const token = window.localStorage.getItem('token');
 			if (token) {
 				try {
 					setError(null);
 					setLoading(true);
-					const response = await fetch(`${API_URL}/tokenUser`, {
-						method: "POST",
-						headers: {
-							"Content-Type": "application/json",
-							Authorization: `Bearer ${token}`,
-						},
-					});
-					if (!response.ok) throw new Error("Invalid JWT Token");
 					await getUser(token)
 				} catch (err) {
-					userLogout();
+					alert('ACIONOU USER LOGOUT PORRA')
+					// userLogout();
 				} finally {
 					setLoading(false);
 				}
@@ -278,7 +278,7 @@ export const GlobalStateProvider = ({ children }: React.PropsWithChildren) => {
 			}
 		}
         autoLogin();
-    }, [userLogout]);
+    }, []);
 
     return (
         <GlobalStateContext.Provider
