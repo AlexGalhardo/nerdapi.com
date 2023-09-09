@@ -1,5 +1,5 @@
 interface AlertError {
-    message: string | null | undefined;
+    message: string | null | boolean | undefined;
 }
 
 export default function ErrorAlertMessage({ message }: AlertError) {
