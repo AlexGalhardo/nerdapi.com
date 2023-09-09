@@ -268,8 +268,7 @@ export const GlobalStateProvider = ({ children }: React.PropsWithChildren) => {
 					setLoading(true);
 					await getUser(token)
 				} catch (err) {
-					alert('ACIONOU USER LOGOUT PORRA')
-					// userLogout();
+					userLogout();
 				} finally {
 					setLoading(false);
 				}
