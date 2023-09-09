@@ -56,7 +56,7 @@ export default function ForgetPasswordForm() {
                     }
                 />
 
-                <ErrorAlertMessage error={error && "Invalid email or/and password"} />
+                <ErrorAlertMessage message={error && "Invalid email or/and password"} />
             </form>
         </>
     );

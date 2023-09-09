@@ -3,11 +3,11 @@ import { useNavigate } from "react-router-dom";
 import { RECOVER_PASSWORD, SEND_CONTACT, USER_LOGIN, USER_REGISTER } from "../Api";
 import { API_URL } from "../Utils/Envs";
 
-interface UpdateProfileDTO {
-	username?: string,
-	telegramNumber?: string,
-	olderPassword?: string,
-	newPassword?: string
+export interface ProfileUpdateDTO {
+    username?: string | null;
+    telegramNumber?: string | null;
+    olderPassword?: string | null;
+    newPassword?: string | null;
 }
 interface GlobalStateContextPort {
     error: null | string;
@@ -15,6 +15,7 @@ interface GlobalStateContextPort {
     user: User | null;
     login: null | boolean;
     contactSend: boolean;
+	updatedProfile: boolean;
     sendRecoverPassword: boolean;
     userLogin: (username: string, password: string) => Promise<Element | undefined>;
     userLogout: () => Promise<void>;
@@ -22,7 +23,7 @@ interface GlobalStateContextPort {
     getUser: (token: string) => Promise<void>;
     userRegister: (username: string, email: string, password: string) => Promise<any>;
     recoverPassword: (email: string) => Promise<any>;
-	updateProfile({username, telegramNumber, olderPassword, newPassword}: UpdateProfileDTO): void;
+	updateProfile({username, telegramNumber, olderPassword, newPassword}: ProfileUpdateDTO): void;
 }
 
 export interface User {
@@ -64,6 +65,7 @@ export const GlobalStateProvider = ({ children }: React.PropsWithChildren) => {
     const [error, setError] = useState<null | string>(null);
     const [contactSend, setContactSend] = useState<boolean>(false);
     const [sendRecoverPassword, setSendRecoverPassword] = useState<boolean>(false);
+	const [updatedProfile, setUpdatedProfile] = useState<boolean>(false)
     const navigate = useNavigate();
 
     const userLogout = useCallback(async function () {
@@ -84,8 +86,6 @@ export const GlobalStateProvider = ({ children }: React.PropsWithChildren) => {
         });
 
         const { data } = await response.json();
-
-		console.log('\n\n data => ', data)
 
         setUser({
             id: data.id,
@@ -182,7 +182,7 @@ export const GlobalStateProvider = ({ children }: React.PropsWithChildren) => {
         }
     }
 
-	async function updateProfile({username, telegramNumber, olderPassword, newPassword}: UpdateProfileDTO){
+	async function updateProfile({username, telegramNumber, olderPassword, newPassword}: ProfileUpdateDTO){
 		try {
 			setError(null);
             setLoading(true);
@@ -210,12 +210,19 @@ export const GlobalStateProvider = ({ children }: React.PropsWithChildren) => {
 						telegram_number: data.telegramNumber,
 						password: data.password
 					})
+					setUpdatedProfile(true)
 				}
+			}
+			else {
+				const { message } = await response.json();
+				setError(message)
+				setUpdatedProfile(false)
 			}
 		}
 		catch(error: any){
 			setError(error.message);
 			setLoading(false);
+			setUpdatedProfile(false)
 		} finally {
 			setLoading(false);
 		}
@@ -242,14 +249,12 @@ export const GlobalStateProvider = ({ children }: React.PropsWithChildren) => {
 
     useEffect(() => {
 		async function autoLogin() {
-			console.log('\n\n entrou no autologin...')
-			// const currentUrl = window.location.href;
-			// const urlSearchParams = new URLSearchParams(currentUrl.split("?")[1]);
-			// let token = null;
-			// if (urlSearchParams.get("token")) token = urlSearchParams.get("token");
-			// else if (window.localStorage.getItem("token")) token = window.localStorage.getItem("token");
-			const token = window.localStorage.getItem('token');
-			console.log('\n\n token => ', token)
+			const currentUrl = window.location.href;
+			const urlSearchParams = new URLSearchParams(currentUrl.split("?")[1]);
+			let token = null;
+			if (urlSearchParams.get("token")) token = urlSearchParams.get("token");
+			else if (window.localStorage.getItem("token")) token = window.localStorage.getItem("token");
+			// const token = window.localStorage.getItem('token');
 			if (token) {
 				try {
 					setError(null);
@@ -290,7 +295,8 @@ export const GlobalStateProvider = ({ children }: React.PropsWithChildren) => {
                 userRegister,
                 sendRecoverPassword,
                 recoverPassword,
-				updateProfile
+				updateProfile,
+				updatedProfile
             }}
         >
             {children}

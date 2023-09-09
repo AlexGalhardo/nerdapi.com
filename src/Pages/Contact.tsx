@@ -137,7 +137,7 @@ export default function Contact() {
 
                         {contactSend && <SuccessAlertMessage message={"Message send!"} />}
 
-                        {error && <ErrorAlertMessage error={error} />}
+                        {error && <ErrorAlertMessage message={error} />}
                     </div>
                 </div>
 

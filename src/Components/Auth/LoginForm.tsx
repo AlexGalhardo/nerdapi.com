@@ -72,7 +72,7 @@ export default function LoginForm() {
 
                 {loading ? <Button disabled={true}>Processing...</Button> : <Button>Login</Button>}
 
-                <ErrorAlertMessage error={error && "Invalid email or/and password"} />
+                <ErrorAlertMessage message={error && "Invalid email or/and password"} />
             </form>
 
             <div className="text-center mt-5">
@@ -87,12 +87,6 @@ export default function LoginForm() {
                         <b>Register Account</b>
                     </a>
                 </p>
-
-                {/* <p>
-                    <a href="/confirmEmail" className="text-info text-decoration-none">
-                        <b>Resend Confirm Email Link</b>
-                    </a>
-                </p> */}
             </div>
         </>
     );

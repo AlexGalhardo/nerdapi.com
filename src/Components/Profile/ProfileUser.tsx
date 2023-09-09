@@ -5,11 +5,12 @@ import ClipboardJS from 'clipboard';
 import { useEffect, useState } from "react";
 import { ToastContainer, toast } from "react-toastify";
 import 'react-toastify/dist/ReactToastify.css';
+import ErrorAlertMessage from "../Alerts/ErrorAlertMessage";
 
 export default function ProfileUser() {
 	const location = useLocation();
     const queryParams = new URLSearchParams(location.search);
-	const { user, login, updateProfile } = useGlobalState();
+	const { user, login, updateProfile, loading, error, updatedProfile } = useGlobalState();
     let registred = null;
 
     if (!queryParams.get("token") || !queryParams.get("registred")) {
@@ -22,6 +23,7 @@ export default function ProfileUser() {
 	let [telegramNumber, setTelegramNumber] = useState<string>(user?.telegram_number as string)
 	const [olderPassword, setOlderPassword] = useState<string>()
 	const [newPassword, setNewPassword] = useState<string>()
+	let canUpdateProfile = false
 
 	const notifyCopiedAPIKEY = () => toast.success("API KEY COPIED!", {
 		position: "top-right",
@@ -40,14 +42,14 @@ export default function ProfileUser() {
 		91, 92, 93, 94, 95, 96, 97, 98, 99,
 	];
 
-    async function handleSubmit(event: any) {
+    async function handleSubmitUpdateProfile(event: any) {
         event.preventDefault();
 
 		function isValidTelegramNumber(): boolean {
 			telegramNumber = telegramNumber?.replace(/\D/g, "");
 
 			function invalidTelegramNumber(){
-				toast.error("Invalid Telegram Number", {
+				toast.error("Invalid Telegram Number: Use only numbers in Brazil Phone Format like 5518999999999", {
 					position: "top-right",
 					autoClose: 3000,
 					hideProgressBar: false,
@@ -59,37 +61,55 @@ export default function ProfileUser() {
 				});
 			}
 
-			if (telegramNumber?.length !== 13) { invalidTelegramNumber(); return false; }
+			if (telegramNumber?.length !== 13) { invalidTelegramNumber(); canUpdateProfile = false; return false; }
 
-			if (parseInt(telegramNumber.substring(4, 5)) !== 9) { invalidTelegramNumber(); return false; }
+			if (parseInt(telegramNumber.substring(4, 5)) !== 9) { invalidTelegramNumber(); canUpdateProfile = false; return false; }
 
-			if (new Set(telegramNumber).size === 1) { invalidTelegramNumber(); return false; }
+			if (new Set(telegramNumber).size === 1) { invalidTelegramNumber(); canUpdateProfile = false; return false; }
 
-			if (BRAZIL_VALID_PHONE_DDD.indexOf(parseInt(telegramNumber.substring(2, 4))) == -1) { invalidTelegramNumber(); return false; }
+			if (BRAZIL_VALID_PHONE_DDD.indexOf(parseInt(telegramNumber.substring(2, 4))) == -1) { invalidTelegramNumber(); canUpdateProfile = false; return false; }
 
 			return true;
 		}
 
 		function isValidUsername(): boolean {
-			if (!username || username.length <= 3) {
-				toast.error("Invalid Username", {
-					position: "top-right",
-					autoClose: 3000,
-					hideProgressBar: false,
-					closeOnClick: true,
-					pauseOnHover: true,
-					draggable: true,
-					progress: undefined,
-					theme: "dark",
-				});
-				return false;
+			function isValidSingleName(name: string): boolean {
+				if (!name || name.length <= 3) {
+					toast.error("Invalid Username: must have at least 4 characters or more", {
+						position: "top-right",
+						autoClose: 3000,
+						hideProgressBar: false,
+						closeOnClick: true,
+						pauseOnHover: true,
+						draggable: true,
+						progress: undefined,
+						theme: "dark",
+					});
+					canUpdateProfile = false;
+					return false;
+				}
+				const regexOfValidNamesWithAcents = /^[a-zA-ZÀ-ú]+$/g;
+				return regexOfValidNamesWithAcents.test(name);
 			}
-			const regexOfValidNamesWithAcents = /^[a-zA-ZÀ-ú]+$/g;
-			return regexOfValidNamesWithAcents.test(username);
+
+			const names = username.split(" ");
+			if (names.length > 1){
+				for (const name of names) {
+					if (!isValidSingleName(name)) canUpdateProfile = false; return false;
+				}
+			}
+			else {
+				if (!isValidSingleName(username)) {
+					canUpdateProfile = false;
+					return false;
+				}
+				return true
+			}
+			return true;
 		}
 
 		function isNewPasswordSecure(newPassword: string): boolean {
-			if (newPassword.length < 12) {
+			if (newPassword && newPassword.length < 12) {
 				toast.error("Password must has at least 12 caracters", {
 					position: "top-right",
 					autoClose: 3000,
@@ -100,6 +120,7 @@ export default function ProfileUser() {
 					progress: undefined,
 					theme: "dark",
 				});
+				canUpdateProfile = false;
 				return false;
 			}
 
@@ -114,8 +135,8 @@ export default function ProfileUser() {
 			);
 		}
 
-		async function isNewPasswordValid(): Promise<boolean> {
-			if (!isNewPasswordSecure(newPassword as string)) {
+		async function isValidNewPassword(): Promise<boolean> {
+			if (olderPassword && newPassword && !isNewPasswordSecure(newPassword as string)) {
 				toast.error("Password must has at least 1 upperCase, 1 letter and 1 special character", {
 					position: "top-right",
 					autoClose: 3000,
@@ -126,16 +147,21 @@ export default function ProfileUser() {
 					progress: undefined,
 					theme: "dark",
 				});
+				canUpdateProfile = false;
 				return false
 			}
 			return true;
 		}
 
+		isValidUsername()
+		isValidTelegramNumber()
+		isValidNewPassword()
+
 		updateProfile({
-			username: isValidUsername() ? username : undefined,
-			telegramNumber: isValidTelegramNumber() ? telegramNumber : undefined,
-			olderPassword: await isNewPasswordValid() ? olderPassword : undefined,
-			newPassword: await isNewPasswordValid() ? newPassword : undefined,
+			username: username ?? null,
+			telegramNumber: telegramNumber ?? null,
+			olderPassword: olderPassword ?? null,
+			newPassword: newPassword ?? null,
 		})
     }
 
@@ -156,6 +182,8 @@ export default function ProfileUser() {
                     }
                 />
             )}
+
+			<ToastContainer />
 
 			<div className="container col-lg-5">
 				<div className="form-group mt-5">
@@ -246,7 +274,7 @@ export default function ProfileUser() {
 			</div>
 
             <div className="col-lg-5 mt-5">
-                <form onSubmit={handleSubmit}>
+                <form onSubmit={handleSubmitUpdateProfile}>
                     <small>
                         <span id="alert_name" className="fw-bold text-danger"></span>
                     </small>
@@ -255,6 +283,8 @@ export default function ProfileUser() {
                         <label htmlFor="name">Username</label>
                         <input
                             type="text"
+							min={4}
+							max={16}
                             className="fs-4 form-control"
                             defaultValue={username}
                             name="name"
@@ -278,10 +308,11 @@ export default function ProfileUser() {
                         <label htmlFor="telegram_number">Telegram Number</label>
                         <input
                             className="fs-4 mb-2 form-control"
-                            type="text"
+                            type="number"
                             name="telegram_number"
-                            minLength={11}
-                            maxLength={11}
+							pattern="^55[0-9]{11}$"
+                            minLength={13}
+                            maxLength={13}
                             defaultValue={user?.telegram_number as string}
 							onChange={(e) => setTelegramNumber(e.target.value)}
                         />
@@ -311,11 +342,28 @@ export default function ProfileUser() {
 						/>
                     </div>
 
-                    <input
-                        type="submit"
-                        className="button fs-4 mt-3 mb-3 w-50 btn btn btn-outline-success"
-                        value="Update Profile"
-                    />
+					{loading ?
+						<button
+							type="submit"
+							className="button fs-4 mt-3 mb-3 w-50 btn btn btn-outline-success"
+							disabled={true}
+						>
+							Processing...
+						</button>
+
+					:
+						<button
+							type="submit"
+							className="button fs-4 mt-3 mb-3 w-50 btn btn btn-outline-success"
+							disabled={false}
+						>
+							Update Profile
+						</button>
+					}
+
+                	<ErrorAlertMessage message={error && !updatedProfile && `ERROR: ${error}`} />
+
+					<SuccessAlertMessage message={!error && updatedProfile && `Profile Updated!`} />
                 </form>
             </div>
         </>

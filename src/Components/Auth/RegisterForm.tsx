@@ -92,7 +92,7 @@ export default function RegisterForm() {
                 <div className="form-group">
                     {loading ? <Button disabled={true}>Processing...</Button> : <Button>Register Account</Button>}
 
-                    <ErrorAlertMessage error={error && "Invalid email or passwords"} />
+                    <ErrorAlertMessage message={error && "Invalid email or passwords"} />
                 </div>
             </form>
 

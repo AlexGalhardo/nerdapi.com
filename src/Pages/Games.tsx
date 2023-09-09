@@ -172,7 +172,7 @@ export default function Games() {
             <Navbar />
             <div className="container" style={container}>
                 <div className="row mt-5">
-                    {error && <ErrorAlertMessage error={error} />}
+                    {error && <ErrorAlertMessage message={error} />}
 
                     {totalGamesFound && <SuccessAlertMessage message={`Total games found: ${totalGamesFound}`} />}
 
