@@ -11,7 +11,6 @@ import Auth from "./Components/Auth/Auth";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap-icons/font/bootstrap-icons.css";
 import "./Style.css";
-import About from "./Pages/About";
 
 export default function App() {
     return (
@@ -21,7 +20,6 @@ export default function App() {
                 <Routes>
                     <Route path="/" element={<Games />} />
                     <Route path="/games/*" element={<Games />} />
-                    <Route path="/About" element={<About />} />
                     <Route path="/contact" element={<Contact />} />
                     <Route path="/pricing" element={<Pricing />} />
                     <Route path="/checkout/*" element={<Checkout />} />

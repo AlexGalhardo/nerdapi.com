@@ -1,5 +1,4 @@
-export const API_URL =
-    import.meta.env.VITE_NODE_ENV === "development" ? "http://localhost:3000" : "https://api.nerdapi.com";
+import { API_URL } from "./Utils/Envs";
 
 export function USER_LOGIN(body: any) {
     return {

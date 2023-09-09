@@ -1,7 +1,8 @@
 import { CSSProperties } from "react";
 import Navbar from "../Components/Navbar";
-import { API_URL } from "../Api";
 import Footer from "../Components/Footer";
+import { API_URL } from "../Utils/Envs";
+import Head from "../Components/Head";
 
 export default function Pricing() {
     const handleSubmitCasual = async (e: any) => {
@@ -70,6 +71,7 @@ export default function Pricing() {
 
     return (
         <>
+			<Head title="Pricing" description="See ours plans to get access to NerdAPI!"/>
             <Navbar />
             <div className="container col-lg-7" style={containerPricing}>
                 <div className="row">

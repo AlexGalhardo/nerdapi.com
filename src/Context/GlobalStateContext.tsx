@@ -1,6 +1,7 @@
 import { createContext, useCallback, useContext, useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
-import { API_URL, RECOVER_PASSWORD, SEND_CONTACT, USER_LOGIN, USER_REGISTER, VALIDATE_TOKEN } from "../Api";
+import { RECOVER_PASSWORD, SEND_CONTACT, USER_LOGIN, USER_REGISTER } from "../Api";
+import { API_URL } from "../Utils/Envs";
 interface GlobalState {
     FLASH_MESSAGES: {
         YOU_NEED_TO_LOGIN_FIRST: string | undefined;

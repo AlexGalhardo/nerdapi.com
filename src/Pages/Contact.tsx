@@ -5,6 +5,7 @@ import { useGlobalState } from "../Context/GlobalStateContext";
 import SuccessAlertMessage from "../Components/Alerts/SuccessAlertMessage";
 import Button from "../Components/Forms/Button";
 import Footer from "../Components/Footer";
+import Head from "../Components/Head";
 
 export default function Contact() {
     const [name, setName] = useState<string>();
@@ -41,6 +42,7 @@ export default function Contact() {
 
     return (
         <>
+			<Head title="Contact" description="Send us a message, feedback or report a bug!"/>
             <Navbar />
 
             <div className="container col-lg-8 mt-5" style={containerContact}>
@@ -124,3 +126,7 @@ export default function Contact() {
 const containerContact: CSSProperties = {
     marginTop: "300px",
 };
+function querySelector(arg0: string) {
+	throw new Error("Function not implemented.");
+}
+

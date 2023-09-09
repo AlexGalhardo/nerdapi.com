@@ -1,5 +1,5 @@
 {
-	"name": "nerdapi-frontend",
+	"name": "nerdapi.com",
 	"version": "1.0.0",
 	"type": "module",
 	"scripts": {
@@ -13,14 +13,18 @@
 	"dependencies": {
 		"bootstrap": "^5.3.1",
 		"bootstrap-icons": "^1.10.5",
+		"clipboard": "^2.0.11",
 		"react": "^18.2.0",
 		"react-bootstrap": "^2.8.0",
 		"react-dom": "^18.2.0",
-		"react-router-dom": "^6.15.0"
+		"react-router-dom": "^6.15.0",
+		"react-toastify": "^9.1.3",
+		"string-similarity": "^4.0.4"
 	},
 	"devDependencies": {
 		"@types/react": "^18.2.21",
 		"@types/react-dom": "^18.2.7",
+		"@types/string-similarity": "^4.0.0",
 		"@typescript-eslint/eslint-plugin": "^6.5.0",
 		"@typescript-eslint/parser": "^6.5.0",
 		"@vitejs/plugin-react": "^4.0.4",

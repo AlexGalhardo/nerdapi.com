@@ -1,4 +1,4 @@
-import { useNavigate } from "react-router-dom";
+import { useLocation, useNavigate } from "react-router-dom";
 import { useGlobalState } from "../Context/GlobalStateContext";
 import { useState } from "react";
 
@@ -6,6 +6,8 @@ export default function Navbar() {
     const { user, userLogout } = useGlobalState();
     const navigate = useNavigate();
     const [search, setSearch] = useState<string | undefined>();
+	const location = useLocation()
+	console.log('location.pathname => ', location.pathname)
 
     function handleLogout() {
         userLogout();
@@ -31,7 +33,7 @@ export default function Navbar() {
                             <input
                                 type="text"
                                 name="search"
-                                className="fs-5 form-control"
+                                className="fs-6 form-control"
                                 placeholder="Search game title..."
                                 onChange={(e) => setSearch(e.target.value)}
                             />
@@ -53,13 +55,13 @@ export default function Navbar() {
                     <div className="collapse navbar-collapse pull-right" id="navbarSupportedContent">
                         <ul className="navbar-nav me-auto mb-2 mb-lg-0">
                             <li className="nav-item">
-                                <a className="fs-5 nav-link fw-bold" aria-current="page" href="/contact">
+                                <a className={`fs-5 nav-link fw-bold ${location.pathname === '/contact' ? 'text-white' : undefined}`} aria-current="page" href="/contact">
                                     <i className="bi bi-envelope"></i> Contact
                                 </a>
                             </li>
 
                             <li className="nav-item">
-                                <a className="fs-5 nav-link fw-bold" aria-current="page" href="/pricing">
+                                <a className={`fs-5 nav-link fw-bold ${location.pathname === '/pricing' ? 'text-white' : undefined}`} aria-current="page" href="/pricing">
                                     {" "}
                                     <i className="bi bi-award"></i>
                                     Pricing
@@ -95,11 +97,6 @@ export default function Navbar() {
                                         <li>
                                             <a className="fs-5 fw-bold dropdown-item" href="/profile">
                                                 <i className="bi bi-person-circle"></i> Profile
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a className="fs-5 fw-bold dropdown-item" href="/profile/transactions">
-                                                <i className="bi bi-award"></i> Transactions
                                             </a>
                                         </li>
                                         <li>

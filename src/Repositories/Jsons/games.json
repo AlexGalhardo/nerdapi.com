@@ -1,0 +1,5811 @@
+[
+	{
+		"id": "ccd06e28-6f65-465a-8c6e-c47d106797a7",
+		"title": "The Last of Us",
+		"cover_image": "https://images.igdb.com/igdb/image/upload/t_cover_big/co1r7f.jpg",
+		"summary": "A third person shooter/stealth/survival hybrid, in which twenty years after the outbreak of a parasitic fungus which takes over the neural functions of humans, Joel, a Texan with a tragic familial past, finds himself responsible with smuggling a fourteen year old girl named Ellie to a militia group called the Fireflies, while avoiding strict and deadly authorities, infected fungal hosts and other violent survivors.",
+		"release": {
+			"year": 2013,
+			"date": "2013-06-14T00:00:00.000Z"
+		},
+		"igdb": {
+			"url": "https://www.igdb.com/games/the-last-of-us",
+			"rating": 92
+		},
+		"metacritic": {
+			"url": "https://www.igdb.com/games/the-last-of-us",
+			"rating": 92
+		},
+		"where_to_buy": [
+			{
+				"id": "48af6a58-66ff-446d-98b2-076916c842e8",
+				"name": "Buy On Amazon",
+				"url": "https://www.amazon.com/"
+			},
+			{
+				"id": "07673070-2026-4e27-8d6c-670c7946c6d8",
+				"name": "Buy On Steam",
+				"url": "https://store.steampowered.com/"
+			}
+		],
+		"developer": {
+			"id": "0332e00d-a7f5-4a16-8da2-d4eb44c1aa9e",
+			"name": "Naughty Dog"
+		},
+		"publisher": {
+			"id": "186a89fd-f51b-4444-b09a-e470db2c1521",
+			"name": "Sony Computer Entertainment"
+		},
+		"platforms_available": [
+			{
+				"id": "a7528d9b-5d8c-44f6-afe6-f7cc6dd68c46",
+				"name": "PlayStation 3"
+			}
+		],
+		"genres": [
+			{
+				"id": "d8c41fb2-feed-47a4-88fe-544aa8001053",
+				"name": "Shooter"
+			},
+			{
+				"id": "e634fa9e-0a98-4b55-b731-aa830d7b8f44",
+				"name": "Adventure"
+			}
+		],
+		"how_long_to_beat": {
+			"url": "https://howlongtobeat.com/",
+			"main_story": {
+				"average": "20h 42m"
+			},
+			"completionist": {
+				"average": "64h 34m"
+			}
+		},
+		"created_at": "Thu Sep 07 2023 18:39:40 GMT-0300 (Brasilia Standard Time)",
+		"updated_at": null,
+		"created_at_pt_br": "07/09/2023 18:39:40",
+		"updated_at_pt_br": null
+	},
+	{
+		"id": "90dac7e0-6c61-4f87-8706-996d4c5fd79c",
+		"title": "Grand Theft Auto V",
+		"cover_image": "https://images.igdb.com/igdb/image/upload/t_cover_big/co2lbd.jpg",
+		"summary": "Grand Theft Auto V is a vast open world game set in Los Santos, a sprawling sun-soaked metropolis struggling to stay afloat in an era of economic uncertainty and cheap reality TV. The game blends storytelling and gameplay in new ways as players repeatedly jump in and out of the lives of the game’s three lead characters, playing all sides of the game’s interwoven story.",
+		"release": {
+			"year": 2013,
+			"date": "2013-09-17T00:00:00.000Z"
+		},
+		"igdb": {
+			"url": "https://www.igdb.com/games/grand-theft-auto-v",
+			"rating": 89
+		},
+		"metacritic": {
+			"url": "https://www.igdb.com/games/grand-theft-auto-v",
+			"rating": 89
+		},
+		"where_to_buy": [
+			{
+				"id": "b2625bdd-814d-407f-b4fb-67a4a7d2fb50",
+				"name": "Buy On Amazon",
+				"url": "https://www.amazon.com/"
+			},
+			{
+				"id": "cabccaf0-6b04-41a7-bc26-4dde8014f35c",
+				"name": "Buy On Steam",
+				"url": "https://store.steampowered.com/"
+			}
+		],
+		"developer": {
+			"id": "67d975a8-89e9-467e-814f-fd9f845ee67d",
+			"name": "Rockstar North"
+		},
+		"publisher": {
+			"id": "ad3ed05f-08da-4dbd-98f0-a32bf97a367f",
+			"name": "Rockstar Games"
+		},
+		"platforms_available": [
+			{
+				"id": "53daca97-0972-4bcd-b7bb-178a7eef8ecb",
+				"name": "PC (Microsoft Windows)"
+			},
+			{
+				"id": "53eb8ce1-f55a-4c0a-838d-8b8976168515",
+				"name": "PlayStation 3"
+			},
+			{
+				"id": "55433456-41c9-4258-bc07-b1a7d8ea19ff",
+				"name": "PlayStation 4"
+			},
+			{
+				"id": "20eaa98d-7c50-4d96-a962-ef967c324974",
+				"name": "Xbox 360"
+			},
+			{
+				"id": "9544ee95-06f3-470d-8a60-d48d6f630c16",
+				"name": "Xbox One"
+			}
+		],
+		"genres": [
+			{
+				"id": "5f280164-8cc6-4f08-89a8-3d2c8365c69b",
+				"name": "Shooter"
+			},
+			{
+				"id": "0f5ee59a-4f0f-4e47-8bcb-ee616bf6e018",
+				"name": "Racing"
+			},
+			{
+				"id": "68c94640-391e-42c9-a169-1d854e8b30a4",
+				"name": "Adventure"
+			}
+		],
+		"how_long_to_beat": {
+			"url": "https://howlongtobeat.com/",
+			"main_story": {
+				"average": "23h 42m"
+			},
+			"completionist": {
+				"average": "46h 41m"
+			}
+		},
+		"created_at": "Thu Sep 07 2023 18:39:46 GMT-0300 (Brasilia Standard Time)",
+		"updated_at": null,
+		"created_at_pt_br": "07/09/2023 18:39:46",
+		"updated_at_pt_br": null
+	},
+	{
+		"id": "c3385162-fec6-46ff-8fc9-43865c417a92",
+		"title": "Gears 5",
+		"cover_image": "https://images.igdb.com/igdb/image/upload/t_cover_big/co2oz5.jpg",
+		"summary": "From one of gaming’s most acclaimed sagas, Gears is bigger than ever, with five thrilling modes and the deepest campaign yet. With all-out war descending, Kait Diaz breaks away to uncover her connection to the enemy and discovers the true danger to Sera – herself.",
+		"release": {
+			"year": 2019,
+			"date": "2019-09-09T00:00:00.000Z"
+		},
+		"igdb": {
+			"url": "https://www.igdb.com/games/gears-5",
+			"rating": 84
+		},
+		"metacritic": {
+			"url": "https://www.igdb.com/games/gears-5",
+			"rating": 84
+		},
+		"where_to_buy": [
+			{
+				"id": "38927582-e170-42c1-afde-8b3e063c17b2",
+				"name": "Buy On Amazon",
+				"url": "https://www.amazon.com/"
+			},
+			{
+				"id": "32d403a7-50ec-4014-9378-d8244d5c81d4",
+				"name": "Buy On Steam",
+				"url": "https://store.steampowered.com/"
+			}
+		],
+		"developer": {
+			"id": "d161d371-fdad-43e7-ac32-1c32fd42a6df",
+			"name": "The Coalition"
+		},
+		"publisher": {
+			"id": "bafecab5-a212-4bb8-a7f3-ff693bc0c9af",
+			"name": "Xbox Game Studios"
+		},
+		"platforms_available": [
+			{
+				"id": "911518e3-e6e1-4511-bd7a-6c5d988f3147",
+				"name": "PC (Microsoft Windows)"
+			},
+			{
+				"id": "cdaf7ecf-4a88-4244-8b4a-a61c03dfad91",
+				"name": "Xbox Series X|S"
+			},
+			{
+				"id": "e093710e-22f2-406a-a758-cc3789275681",
+				"name": "Xbox One"
+			}
+		],
+		"genres": [
+			{
+				"id": "d22c328e-4b31-4234-b43c-484b56c36e2c",
+				"name": "Shooter"
+			},
+			{
+				"id": "f2cc232f-70d1-4e4b-be94-28acaddc7452",
+				"name": "Adventure"
+			}
+		],
+		"how_long_to_beat": {
+			"url": "https://howlongtobeat.com/",
+			"main_story": {
+				"average": "20h 35m"
+			},
+			"completionist": {
+				"average": "50h 25m"
+			}
+		},
+		"created_at": "Thu Sep 07 2023 18:39:53 GMT-0300 (Brasilia Standard Time)",
+		"updated_at": null,
+		"created_at_pt_br": "07/09/2023 18:39:53",
+		"updated_at_pt_br": null
+	},
+	{
+		"id": "6f76a6ab-7a9e-4ba3-91b6-ac672d19f209",
+		"title": "Bloons TD 6",
+		"cover_image": "https://images.igdb.com/igdb/image/upload/t_cover_big/co1n4k.jpg",
+		"summary": "The Bloons are back and better than ever! Craft your perfect defense from a combination of awesome monkey towers, upgrades, Heroes, and activated abilities, then pop every last Bloon that comes your way!",
+		"release": {
+			"year": 2018,
+			"date": "2018-06-14T00:00:00.000Z"
+		},
+		"igdb": {
+			"url": "https://www.igdb.com/games/bloons-td-6",
+			"rating": 81
+		},
+		"metacritic": {
+			"url": "https://www.igdb.com/games/bloons-td-6",
+			"rating": 81
+		},
+		"where_to_buy": [
+			{
+				"id": "e32c0ced-a1a8-4c93-92e7-fc554ee4cfc5",
+				"name": "Buy On Amazon",
+				"url": "https://www.amazon.com/"
+			},
+			{
+				"id": "b6d19cba-dc69-4642-9ad0-865251ee4bd6",
+				"name": "Buy On Steam",
+				"url": "https://store.steampowered.com/"
+			}
+		],
+		"developer": {
+			"id": "c27f5b2d-b8ee-472b-aaff-cd0d5bf5c2b5",
+			"name": "Ninja Kiwi"
+		},
+		"publisher": {
+			"id": "3caf5b33-4550-4e80-8835-7e56186252e5",
+			"name": "Ninja Kiwi"
+		},
+		"platforms_available": [
+			{
+				"id": "fe930ecf-451d-45ee-bf9f-d7d531564822",
+				"name": "iOS"
+			},
+			{
+				"id": "18dde854-5657-495e-8afd-5b3feb122bdc",
+				"name": "PC (Microsoft Windows)"
+			},
+			{
+				"id": "cc8d14e8-505b-4342-94ba-f63256aef750",
+				"name": "Mac"
+			},
+			{
+				"id": "a93cbf8c-cc5f-4e6e-96ee-2183c6afd6f6",
+				"name": "Android"
+			},
+			{
+				"id": "c1866e70-71a0-49a5-b252-d77a27cbd550",
+				"name": "Xbox One"
+			}
+		],
+		"genres": [
+			{
+				"id": "75878150-edc2-49ab-9873-48bf370fe437",
+				"name": "Strategy"
+			},
+			{
+				"id": "5007aa90-4c67-4f1a-93ef-3d4b61024190",
+				"name": "Tactical"
+			}
+		],
+		"how_long_to_beat": {
+			"url": "https://howlongtobeat.com/",
+			"main_story": {
+				"average": "12h 39m"
+			},
+			"completionist": {
+				"average": "79h 46m"
+			}
+		},
+		"created_at": "Thu Sep 07 2023 18:39:58 GMT-0300 (Brasilia Standard Time)",
+		"updated_at": null,
+		"created_at_pt_br": "07/09/2023 18:39:58",
+		"updated_at_pt_br": null
+	},
+	{
+		"id": "2f5e5e41-8e86-424f-b8a1-7d181ce4d9aa",
+		"title": "Assassin's Creed: Bloodlines",
+		"cover_image": "https://images.igdb.com/igdb/image/upload/t_cover_big/co1xia.jpg",
+		"summary": "Assassin’s Creed: Bloodlines on PSP is the first Assassin’s Creed game on the PSP system. It follows the story of Altair right after the events of Assassin’s Creed as Altair tracks down the last Templars who fled the Holy Land and retreated to the Island of Cyprus.",
+		"release": {
+			"year": 2009,
+			"date": "2009-11-17T00:00:00.000Z"
+		},
+		"igdb": {
+			"url": "https://www.igdb.com/games/assassins-creed-bloodlines",
+			"rating": 52
+		},
+		"metacritic": {
+			"url": "https://www.igdb.com/games/assassins-creed-bloodlines",
+			"rating": 52
+		},
+		"where_to_buy": [
+			{
+				"id": "4b657845-5abb-40d6-bd87-7bdcf07a59fd",
+				"name": "Buy On Amazon",
+				"url": "https://www.amazon.com/"
+			},
+			{
+				"id": "64323c58-c340-4493-8111-8d6fa7885a0c",
+				"name": "Buy On Steam",
+				"url": "https://store.steampowered.com/"
+			}
+		],
+		"developer": {
+			"id": "68b01de6-0bfc-45db-96fe-f72049d4e5a1",
+			"name": "Griptonite Games"
+		},
+		"publisher": {
+			"id": "255de601-a680-4f82-bd21-dbc61b9b22dd",
+			"name": "Sony Interactive Entertainment"
+		},
+		"platforms_available": [
+			{
+				"id": "d7cc59e1-7cc0-4c05-9dac-466ae3053870",
+				"name": "PlayStation Portable"
+			}
+		],
+		"genres": [
+			{
+				"id": "bd9c08c9-2d55-45b7-bf83-cffad16896de",
+				"name": "Adventure"
+			}
+		],
+		"how_long_to_beat": {
+			"url": "https://howlongtobeat.com/",
+			"main_story": {
+				"average": "13h 10m"
+			},
+			"completionist": {
+				"average": "58h 20m"
+			}
+		},
+		"created_at": "Thu Sep 07 2023 18:40:03 GMT-0300 (Brasilia Standard Time)",
+		"updated_at": null,
+		"created_at_pt_br": "07/09/2023 18:40:03",
+		"updated_at_pt_br": null
+	},
+	{
+		"id": "55b8c43c-1353-4048-9c85-2901831f497c",
+		"title": "Super Mario World",
+		"cover_image": "https://images.igdb.com/igdb/image/upload/t_cover_big/co65za.jpg",
+		"summary": "A 2D platformer and first entry on the SNES in the Super Mario franchise, Super Mario World follows Mario as he attempts to defeat Bowser's underlings and rescue Princess Peach from his clutches. The game features a save system, a less linear world map, an expanded movement arsenal and numerous new items for Mario, alongside new approaches to level design and art direction.",
+		"release": {
+			"year": 1990,
+			"date": "1990-11-21T00:00:00.000Z"
+		},
+		"igdb": {
+			"url": "https://www.igdb.com/games/super-mario-world",
+			"rating": 96
+		},
+		"metacritic": {
+			"url": "https://www.igdb.com/games/super-mario-world",
+			"rating": 96
+		},
+		"where_to_buy": [
+			{
+				"id": "eff22a0a-1ff5-43fe-b53d-1c2a44e26ba0",
+				"name": "Buy On Amazon",
+				"url": "https://www.amazon.com/"
+			},
+			{
+				"id": "d3546f37-49b2-40ef-a51e-2e4eb5e2a7b0",
+				"name": "Buy On Steam",
+				"url": "https://store.steampowered.com/"
+			}
+		],
+		"developer": {
+			"id": "d5833e50-dade-46a6-8dd1-0c3a4f0dc00a",
+			"name": "Nintendo EAD"
+		},
+		"publisher": {
+			"id": "6284954b-7c89-419b-a123-24007d3f1598",
+			"name": "Playtronic"
+		},
+		"platforms_available": [
+			{
+				"id": "2da5da32-3049-43b5-a5c9-6ec0d3cbd6f8",
+				"name": "Wii U"
+			},
+			{
+				"id": "8a34de3a-83c5-49ce-9bc6-5e0fa4daa9be",
+				"name": "Super Nintendo Entertainment System"
+			},
+			{
+				"id": "16a74458-746d-4ac1-bfbc-0f7919882828",
+				"name": "Super Famicom"
+			},
+			{
+				"id": "56ec6cb0-0186-40c5-b445-a2f44127577e",
+				"name": "New Nintendo 3DS"
+			},
+			{
+				"id": "8729d46e-cfa2-4ca4-bbd8-22043421dabc",
+				"name": "Wii"
+			},
+			{
+				"id": "6d296eb6-a9f3-41b5-bc76-571c5c2c708f",
+				"name": "Arcade"
+			}
+		],
+		"genres": [
+			{
+				"id": "af1d390f-c54e-48e7-8603-98a1504fcf81",
+				"name": "Platform"
+			},
+			{
+				"id": "5cf52a43-b4dd-419f-9abb-07a5a956d5cc",
+				"name": "Adventure"
+			}
+		],
+		"how_long_to_beat": {
+			"url": "https://howlongtobeat.com/",
+			"main_story": {
+				"average": "26h 39m"
+			},
+			"completionist": {
+				"average": "38h 11m"
+			}
+		},
+		"created_at": "Thu Sep 07 2023 18:40:08 GMT-0300 (Brasilia Standard Time)",
+		"updated_at": null,
+		"created_at_pt_br": "07/09/2023 18:40:08",
+		"updated_at_pt_br": null
+	},
+	{
+		"id": "a124e60f-b476-4150-a48f-b822a8884b70",
+		"title": "Super Mario 64",
+		"cover_image": "https://images.igdb.com/igdb/image/upload/t_cover_big/co6ybp.jpg",
+		"summary": "The first three dimensional entry in the Mario franchise, Super Mario 64 follows Mario as he puts his broadened 3D movement arsenal to use in order to rescue Princess Peach from the clutches of his arch rival Bowser. Mario has to jump into worlds-within-paintings ornamenting the walls of Peach's castle, uncover secrets and hidden challenges and collect golden stars as reward for platforming trials.",
+		"release": {
+			"year": 1996,
+			"date": "1996-06-23T00:00:00.000Z"
+		},
+		"igdb": {
+			"url": "https://www.igdb.com/games/super-mario-64",
+			"rating": 89
+		},
+		"metacritic": {
+			"url": "https://www.igdb.com/games/super-mario-64",
+			"rating": 89
+		},
+		"where_to_buy": [
+			{
+				"id": "a340efcb-84ee-4837-bab0-cac471a8e8da",
+				"name": "Buy On Amazon",
+				"url": "https://www.amazon.com/"
+			},
+			{
+				"id": "8137ddd5-4972-4c8f-8140-0ae0fe389761",
+				"name": "Buy On Steam",
+				"url": "https://store.steampowered.com/"
+			}
+		],
+		"developer": {
+			"id": "30815917-90ef-485e-9959-c31ff5d8691d",
+			"name": "Nintendo EAD"
+		},
+		"publisher": {
+			"id": "36aad7a6-e33e-4149-a5e4-d96afc8c3ff2",
+			"name": "Nintendo"
+		},
+		"platforms_available": [
+			{
+				"id": "a8768f88-356c-4b1d-bbe2-f083773ddcc7",
+				"name": "Nintendo 64"
+			},
+			{
+				"id": "a148dc48-e507-483f-b1b8-5d02eeb8f268",
+				"name": "Wii U"
+			},
+			{
+				"id": "e260071d-5499-4f94-8ec4-2f31c5331958",
+				"name": "Wii"
+			}
+		],
+		"genres": [
+			{
+				"id": "846b3947-ca5b-4324-81ed-edef55286127",
+				"name": "Platform"
+			},
+			{
+				"id": "5e373d82-163f-45b0-af79-93779a06e67d",
+				"name": "Adventure"
+			}
+		],
+		"how_long_to_beat": {
+			"url": "https://howlongtobeat.com/",
+			"main_story": {
+				"average": "27h 21m"
+			},
+			"completionist": {
+				"average": "54h 21m"
+			}
+		},
+		"created_at": "Thu Sep 07 2023 18:40:14 GMT-0300 (Brasilia Standard Time)",
+		"updated_at": null,
+		"created_at_pt_br": "07/09/2023 18:40:14",
+		"updated_at_pt_br": null
+	},
+	{
+		"id": "47df6e7e-996a-4346-a053-03b7ff1eec7e",
+		"title": "Uncharted: The Nathan Drake Collection",
+		"cover_image": "https://images.igdb.com/igdb/image/upload/t_cover_big/co1tps.jpg",
+		"summary": "Uncharted: The Nathan Drake Collection is a remastered compilation of the action-adventure shooter platform video games Drake's Fortune, Among Thieves, and Drake's Deception. Ported by Bluepoint Games, the collection was released exclusively for the PlayStation 4 on October 7, 2015 in Europe and October 9th, 2015 in North America.\n\nThe Nathan Drake Collection features the original three games in the Uncharted series with 1080p resolution, 60 frames per second, better lighting, textures and models. The collection also implements a \"Photo Mode\", a mode where the player can freeze the game at any moment to take personalized screenshots, derived from Naughty Dog's other remastered entry, The Last of Us Remastered, as well as new trophies. The ported games only include their respective single-player modes.\n\nThe pre-ordered version of The Nathan Drake Collection includes the \"Nathan Drake Pack\", which consists of single-player skins of iconic Nathan Drake outfits, as well as two weapons: the Golden AK-47 and Golden 92FS - 9mm. Pre-ordering the collection as a digital download through the PlayStation Store would also give an exclusive Uncharted: The Nathan Drake Collection PlayStation 4 dynamic theme.\n\nPurchasing The Nathan Drake Collection, and owning a valid subscription to PlayStation Plus, before the expiry date of December 13, 2015 would grant the player exclusive access to the multiplayer beta of A Thief's End.",
+		"release": {
+			"year": 2015,
+			"date": "2015-10-07T00:00:00.000Z"
+		},
+		"igdb": {
+			"url": "https://www.igdb.com/games/uncharted-the-nathan-drake-collection",
+			"rating": 86
+		},
+		"metacritic": {
+			"url": "https://www.igdb.com/games/uncharted-the-nathan-drake-collection",
+			"rating": 86
+		},
+		"where_to_buy": [
+			{
+				"id": "12b85410-f325-4b26-b053-370483a3d3c8",
+				"name": "Buy On Amazon",
+				"url": "https://www.amazon.com/"
+			},
+			{
+				"id": "1ae9cf6f-25a1-4c2c-abb0-a767a5df5d8f",
+				"name": "Buy On Steam",
+				"url": "https://store.steampowered.com/"
+			}
+		],
+		"developer": {
+			"id": "6a6b6849-2832-4704-a791-3aeafc9683b8",
+			"name": "Naughty Dog"
+		},
+		"publisher": {
+			"id": "83b2c28f-97a6-4c40-a974-8559a308b06b",
+			"name": "Sony Computer Entertainment"
+		},
+		"platforms_available": [
+			{
+				"id": "fa482b9f-e82f-4009-b989-9bfd72751cc1",
+				"name": "PlayStation 4"
+			}
+		],
+		"genres": [
+			{
+				"id": "ec343510-c8b2-4dfa-87f3-6a01a9d23ecd",
+				"name": "Shooter"
+			},
+			{
+				"id": "24253bc2-6c75-4382-a322-c25b013d33f6",
+				"name": "Platform"
+			},
+			{
+				"id": "87971546-44ad-42be-a3ea-1dc92a5dcaf5",
+				"name": "Adventure"
+			}
+		],
+		"how_long_to_beat": {
+			"url": "https://howlongtobeat.com/",
+			"main_story": {
+				"average": "17h 12m"
+			},
+			"completionist": {
+				"average": "62h 37m"
+			}
+		},
+		"created_at": "Thu Sep 07 2023 18:40:19 GMT-0300 (Brasilia Standard Time)",
+		"updated_at": null,
+		"created_at_pt_br": "07/09/2023 18:40:19",
+		"updated_at_pt_br": null
+	},
+	{
+		"id": "f872dd7e-297c-4c97-8b89-167d8629b231",
+		"title": "Gears of War 4",
+		"cover_image": "https://images.igdb.com/igdb/image/upload/t_cover_big/co2y29.jpg",
+		"summary": "A new saga begins for one of the most acclaimed video game franchises in history. After narrowly escaping an attack on their village, JD Fenix and his friends, Kait and Del, must rescue the ones they love and discover the source of a monstrous new enemy.",
+		"release": {
+			"year": 2016,
+			"date": "2016-10-11T00:00:00.000Z"
+		},
+		"igdb": {
+			"url": "https://www.igdb.com/games/gears-of-war-4",
+			"rating": 79
+		},
+		"metacritic": {
+			"url": "https://www.igdb.com/games/gears-of-war-4",
+			"rating": 79
+		},
+		"where_to_buy": [
+			{
+				"id": "a3f81623-9d1e-4897-b213-e03d46b1b9bf",
+				"name": "Buy On Amazon",
+				"url": "https://www.amazon.com/"
+			},
+			{
+				"id": "2420fc62-c1db-4714-bbc5-ee527ae51fb5",
+				"name": "Buy On Steam",
+				"url": "https://store.steampowered.com/"
+			}
+		],
+		"developer": {
+			"id": "bee94312-7edb-4cbf-a3ee-f6a5e71b2d73",
+			"name": "The Coalition"
+		},
+		"publisher": {
+			"id": "9d25ef9b-084c-4cc8-a01f-e0e4867b6fc2",
+			"name": "Microsoft Studios"
+		},
+		"platforms_available": [
+			{
+				"id": "cdfc276a-7587-4009-8ec6-d4551b3e2f93",
+				"name": "PC (Microsoft Windows)"
+			},
+			{
+				"id": "24612aeb-a723-483f-9652-0340f9039136",
+				"name": "Xbox One"
+			}
+		],
+		"genres": [
+			{
+				"id": "3caf0ba0-e471-4649-acec-8c2e237c058a",
+				"name": "Shooter"
+			}
+		],
+		"how_long_to_beat": {
+			"url": "https://howlongtobeat.com/",
+			"main_story": {
+				"average": "21h 34m"
+			},
+			"completionist": {
+				"average": "53h 50m"
+			}
+		},
+		"created_at": "Thu Sep 07 2023 18:40:24 GMT-0300 (Brasilia Standard Time)",
+		"updated_at": null,
+		"created_at_pt_br": "07/09/2023 18:40:24",
+		"updated_at_pt_br": null
+	},
+	{
+		"id": "b7163223-8918-427a-b358-e6eb47e04b14",
+		"title": "NieR: Automata",
+		"cover_image": "https://images.igdb.com/igdb/image/upload/t_cover_big/co5pcj.jpg",
+		"summary": "NieR: Automata tells the story of androids 2B, 9S and A2 and their battle to reclaim the machine-driven dystopia overrun by powerful machines.",
+		"release": {
+			"year": 2017,
+			"date": "2017-02-23T00:00:00.000Z"
+		},
+		"igdb": {
+			"url": "https://www.igdb.com/games/nier-automata",
+			"rating": 88
+		},
+		"metacritic": {
+			"url": "https://www.igdb.com/games/nier-automata",
+			"rating": 88
+		},
+		"where_to_buy": [
+			{
+				"id": "77e354fd-aa3c-4e86-bd91-d3e05e89347e",
+				"name": "Buy On Amazon",
+				"url": "https://www.amazon.com/"
+			},
+			{
+				"id": "748bb685-8a39-494d-bbfe-8980bee68d0b",
+				"name": "Buy On Steam",
+				"url": "https://store.steampowered.com/"
+			}
+		],
+		"developer": {
+			"id": "1ed7a716-e3d3-46bd-8478-e94b4cb16791",
+			"name": "PlatinumGames"
+		},
+		"publisher": {
+			"id": "f94094c5-b133-4ec7-9800-6e4830013f3c",
+			"name": "Square Enix"
+		},
+		"platforms_available": [
+			{
+				"id": "4760632a-77c3-44e5-9db1-5025584efb7a",
+				"name": "PC (Microsoft Windows)"
+			},
+			{
+				"id": "106d02be-36e1-4c61-b81a-b12df377c4ad",
+				"name": "PlayStation 4"
+			}
+		],
+		"genres": [
+			{
+				"id": "11342e18-966b-4a33-8e65-12dae05f492f",
+				"name": "Role-playing (RPG)"
+			},
+			{
+				"id": "07fac59a-46ff-4766-a1fd-3ebc075845f4",
+				"name": "Hack and slash/Beat 'em up"
+			}
+		],
+		"how_long_to_beat": {
+			"url": "https://howlongtobeat.com/",
+			"main_story": {
+				"average": "15h 39m"
+			},
+			"completionist": {
+				"average": "30h 42m"
+			}
+		},
+		"created_at": "Thu Sep 07 2023 18:40:28 GMT-0300 (Brasilia Standard Time)",
+		"updated_at": null,
+		"created_at_pt_br": "07/09/2023 18:40:28",
+		"updated_at_pt_br": null
+	},
+	{
+		"id": "4b1d76ad-5cea-4115-ae14-1107eec9d92c",
+		"title": "God of War Ragnarök",
+		"cover_image": "https://images.igdb.com/igdb/image/upload/t_cover_big/co5s5v.jpg",
+		"summary": "God of War: Ragnarök is the ninth installment in the God of War series and the sequel to 2018's God of War. Continuing with the Norse mythology theme, the game is set in ancient Norway and feature series protagonists Kratos, the former Greek God of War, and his young son Atreus. The game is expected to kick off the events of Ragnarök, where Kratos and Atreus must journey to each of the Nine Realms in search of answers as they prepare for the prophesied battle that will end the world.",
+		"release": {
+			"year": 2022,
+			"date": "2022-11-09T00:00:00.000Z"
+		},
+		"igdb": {
+			"url": "https://www.igdb.com/games/god-of-war-ragnarok",
+			"rating": 94
+		},
+		"metacritic": {
+			"url": "https://www.igdb.com/games/god-of-war-ragnarok",
+			"rating": 94
+		},
+		"where_to_buy": [
+			{
+				"id": "871a75ab-9d85-44bc-a714-bc1d1cdee708",
+				"name": "Buy On Amazon",
+				"url": "https://www.amazon.com/"
+			},
+			{
+				"id": "2fb0cd10-69b4-42bb-b5cb-6393737798b0",
+				"name": "Buy On Steam",
+				"url": "https://store.steampowered.com/"
+			}
+		],
+		"developer": {
+			"id": "18697fca-d60a-4c73-9d99-f62b43f256f7",
+			"name": "SIE Santa Monica Studio"
+		},
+		"publisher": {
+			"id": "2b3ae505-5311-400b-8737-0bdf27e7ee2b",
+			"name": "Sony Interactive Entertainment"
+		},
+		"platforms_available": [
+			{
+				"id": "a44cbf1d-9179-4224-a3f8-6b80179e2040",
+				"name": "PlayStation 4"
+			},
+			{
+				"id": "77f60f24-4366-4535-8432-c748bda63bb9",
+				"name": "PlayStation 5"
+			}
+		],
+		"genres": [
+			{
+				"id": "ca23c066-e0aa-421e-8de1-09baed68539f",
+				"name": "Hack and slash/Beat 'em up"
+			},
+			{
+				"id": "1c946a3f-6c62-4c22-8742-e05487330fbe",
+				"name": "Adventure"
+			}
+		],
+		"how_long_to_beat": {
+			"url": "https://howlongtobeat.com/",
+			"main_story": {
+				"average": "16h 44m"
+			},
+			"completionist": {
+				"average": "53h 43m"
+			}
+		},
+		"created_at": "Thu Sep 07 2023 18:40:33 GMT-0300 (Brasilia Standard Time)",
+		"updated_at": null,
+		"created_at_pt_br": "07/09/2023 18:40:33",
+		"updated_at_pt_br": null
+	},
+	{
+		"id": "7db399f6-08ff-4db9-97d2-e62f78b03a6b",
+		"title": "Assassin's Creed Brotherhood",
+		"cover_image": "https://images.igdb.com/igdb/image/upload/t_cover_big/co6t4d.jpg",
+		"summary": "Live and breathe as Ezio, a legendary Master Assassin, in his enduring struggle against the powerful Templar Order. He must journey into Italy’s greatest city, Rome, center of power, greed and corruption to strike at the heart of the enemy.\nDefeating the corrupt tyrants entrenched there will require not only strength, but leadership, as Ezio commands an entire Brotherhood who will rally to his side. Only by working together can the Assassins defeat their mortal enemies.\nAnd for the first time, introducing a never-before-seen multiplayer layer that allows you to choose from a wide range of unique characters, each with their own signature weapons and assassination techniques, and match your skills against other players from around the world.\nIt’s time to join the Brotherhood.",
+		"release": {
+			"year": 2010,
+			"date": "2010-11-16T00:00:00.000Z"
+		},
+		"igdb": {
+			"url": "https://www.igdb.com/games/assassins-creed-brotherhood",
+			"rating": 83
+		},
+		"metacritic": {
+			"url": "https://www.igdb.com/games/assassins-creed-brotherhood",
+			"rating": 83
+		},
+		"where_to_buy": [
+			{
+				"id": "20ca0fce-bd2a-40c4-882c-eb8ddd8a5b75",
+				"name": "Buy On Amazon",
+				"url": "https://www.amazon.com/"
+			},
+			{
+				"id": "c17ed4e0-4577-4347-933a-b1c884646588",
+				"name": "Buy On Steam",
+				"url": "https://store.steampowered.com/"
+			}
+		],
+		"developer": {
+			"id": "a8fd7450-6202-43aa-98f7-e022d924983a",
+			"name": "Ubisoft Montreal"
+		},
+		"publisher": {
+			"id": "a5639b80-9c31-464d-a857-cf2edab55285",
+			"name": "Ubisoft Entertainment"
+		},
+		"platforms_available": [
+			{
+				"id": "529f79fb-5b3f-440f-9c27-704f352d825f",
+				"name": "PC (Microsoft Windows)"
+			},
+			{
+				"id": "8e7164aa-8531-432d-a521-a2ab3d39f546",
+				"name": "PlayStation 3"
+			},
+			{
+				"id": "379e440f-e4c1-446c-bf82-da3cda4000af",
+				"name": "Mac"
+			},
+			{
+				"id": "57a61e7d-5ac0-4890-a712-14402cbeb0f5",
+				"name": "Xbox 360"
+			}
+		],
+		"genres": [
+			{
+				"id": "58133553-b73f-447a-a01d-c7a635269b54",
+				"name": "Puzzle"
+			},
+			{
+				"id": "691757f3-01e1-4c62-b10c-144f17011643",
+				"name": "Adventure"
+			}
+		],
+		"how_long_to_beat": {
+			"url": "https://howlongtobeat.com/",
+			"main_story": {
+				"average": "20h 11m"
+			},
+			"completionist": {
+				"average": "58h 45m"
+			}
+		},
+		"created_at": "Thu Sep 07 2023 18:40:37 GMT-0300 (Brasilia Standard Time)",
+		"updated_at": null,
+		"created_at_pt_br": "07/09/2023 18:40:37",
+		"updated_at_pt_br": null
+	},
+	{
+		"id": "5fddac3f-28ba-4769-8817-1ab18170a5ac",
+		"title": "Elden Ring",
+		"cover_image": "https://images.igdb.com/igdb/image/upload/t_cover_big/co4jni.jpg",
+		"summary": "Elden Ring is a fantasy, action and open world game with RPG elements such as stats, weapons and spells. Rise, Tarnished, and be guided by grace to brandish the power of the Elden Ring and become an Elden Lord in the Lands Between.",
+		"release": {
+			"year": 2022,
+			"date": "2022-02-25T00:00:00.000Z"
+		},
+		"igdb": {
+			"url": "https://www.igdb.com/games/elden-ring",
+			"rating": 96
+		},
+		"metacritic": {
+			"url": "https://www.igdb.com/games/elden-ring",
+			"rating": 96
+		},
+		"where_to_buy": [
+			{
+				"id": "1b71bc71-678a-4eea-9eb4-d14458cf1668",
+				"name": "Buy On Amazon",
+				"url": "https://www.amazon.com/"
+			},
+			{
+				"id": "9dd844d7-3b47-4580-890a-68d80138461d",
+				"name": "Buy On Steam",
+				"url": "https://store.steampowered.com/"
+			}
+		],
+		"developer": {
+			"id": "3a741fe6-ad7e-46a4-b90b-266110344f75",
+			"name": "FromSoftware"
+		},
+		"publisher": {
+			"id": "00275cfa-e656-4f39-b213-bc23a44057f4",
+			"name": "FromSoftware"
+		},
+		"platforms_available": [
+			{
+				"id": "a3da3400-d59c-4efe-8908-3bd3ba251ce8",
+				"name": "PC (Microsoft Windows)"
+			},
+			{
+				"id": "a0e26fd1-640b-4be6-91ce-ff44796040c6",
+				"name": "PlayStation 4"
+			},
+			{
+				"id": "91174e4b-59fa-4830-be07-48fe7d04811b",
+				"name": "PlayStation 5"
+			},
+			{
+				"id": "af2e8c1f-5283-4a9c-be07-80eb3772ec66",
+				"name": "Xbox Series X|S"
+			},
+			{
+				"id": "fb33ccc1-69ca-4ef9-8322-f81303d0c53a",
+				"name": "Xbox One"
+			}
+		],
+		"genres": [
+			{
+				"id": "78e10928-41ed-4284-90df-5b2768a7f40d",
+				"name": "Role-playing (RPG)"
+			},
+			{
+				"id": "ffedd1f2-1fb8-4fd8-a937-a577d654eef1",
+				"name": "Adventure"
+			}
+		],
+		"how_long_to_beat": {
+			"url": "https://howlongtobeat.com/",
+			"main_story": {
+				"average": "15h 45m"
+			},
+			"completionist": {
+				"average": "53h 19m"
+			}
+		},
+		"created_at": "Thu Sep 07 2023 18:40:42 GMT-0300 (Brasilia Standard Time)",
+		"updated_at": null,
+		"created_at_pt_br": "07/09/2023 18:40:42",
+		"updated_at_pt_br": null
+	},
+	{
+		"id": "de6193d9-9a49-4bf6-a134-d73b93c81c42",
+		"title": "Baldur's Gate 3",
+		"cover_image": "https://images.igdb.com/igdb/image/upload/t_cover_big/co670h.jpg",
+		"summary": "An ancient evil has returned to Baldur's Gate, intent on devouring it from the inside out. The fate of Faerun lies in your hands. Alone, you may resist. But together, you can overcome.",
+		"release": {
+			"year": 2020,
+			"date": "2020-10-06T00:00:00.000Z"
+		},
+		"igdb": {
+			"url": "https://www.igdb.com/games/baldurs-gate-3",
+			"rating": 90
+		},
+		"metacritic": {
+			"url": "https://www.igdb.com/games/baldurs-gate-3",
+			"rating": 90
+		},
+		"where_to_buy": [
+			{
+				"id": "184defa6-84be-4252-8043-5430866d3633",
+				"name": "Buy On Amazon",
+				"url": "https://www.amazon.com/"
+			},
+			{
+				"id": "3cabe8fc-4624-4af4-a37b-516e054ea2d2",
+				"name": "Buy On Steam",
+				"url": "https://store.steampowered.com/"
+			}
+		],
+		"developer": {
+			"id": "a9bcf915-8d2a-44f5-b937-c544e3d3feda",
+			"name": "Larian Studios"
+		},
+		"publisher": {
+			"id": "9748436c-bda5-4ff4-afcc-1faab7e9519d",
+			"name": "Larian Studios"
+		},
+		"platforms_available": [
+			{
+				"id": "72219d18-ac4a-4ef2-b0ab-5ff9038d1195",
+				"name": "PC (Microsoft Windows)"
+			},
+			{
+				"id": "69b6a9c7-1403-4100-ad9a-da0247a9b764",
+				"name": "Mac"
+			},
+			{
+				"id": "6a97f0eb-348d-42de-b3d2-1eb9974267ae",
+				"name": "Google Stadia"
+			},
+			{
+				"id": "e9904a8c-8a63-45d8-8618-095d8ea317f6",
+				"name": "PlayStation 5"
+			},
+			{
+				"id": "bc58d06a-cc5e-48d1-8de8-f1fedbd56d86",
+				"name": "Xbox Series X|S"
+			}
+		],
+		"genres": [
+			{
+				"id": "3d361336-d591-4815-90d4-f2835d05f8f7",
+				"name": "Role-playing (RPG)"
+			},
+			{
+				"id": "36e57b24-7cd6-4cc9-9dc1-b2c3b93658be",
+				"name": "Strategy"
+			},
+			{
+				"id": "7c9c2b4c-9ec0-45c5-b635-1676c0334660",
+				"name": "Turn-based strategy (TBS)"
+			},
+			{
+				"id": "af279ee8-6ea8-4a21-b89d-6cc9c86a427f",
+				"name": "Tactical"
+			},
+			{
+				"id": "96e8cc73-9a62-40b5-8d8b-1bba32cb1115",
+				"name": "Adventure"
+			}
+		],
+		"how_long_to_beat": {
+			"url": "https://howlongtobeat.com/",
+			"main_story": {
+				"average": "12h 37m"
+			},
+			"completionist": {
+				"average": "62h 47m"
+			}
+		},
+		"created_at": "Thu Sep 07 2023 18:40:47 GMT-0300 (Brasilia Standard Time)",
+		"updated_at": null,
+		"created_at_pt_br": "07/09/2023 18:40:47",
+		"updated_at_pt_br": null
+	},
+	{
+		"id": "ab105e72-45bd-43cb-b0bf-be6b248c838f",
+		"title": "Call of Duty: Modern Warfare",
+		"cover_image": "https://images.igdb.com/igdb/image/upload/t_cover_big/co1rsg.jpg",
+		"summary": "Prepare to go dark, Modern Warfare is back!\n\nThe stakes have never been higher as players take on the role of lethal Tier One operators in a heart-racing saga that will affect the global balance of power. Call of Duty: Modern Warfare engulfs fans in an incredibly raw, gritty, provocative narrative that brings unrivaled intensity and shines a light on the changing nature of modern war.\n\nPlayers will be thrust into an immersive narrative spanning the entire game. Experience the ultimate online playground with classic multiplayer or squad-up and play cooperatively in a collection of elite operations, accessible to all skill levels.",
+		"release": {
+			"year": 2019,
+			"date": "2019-10-25T00:00:00.000Z"
+		},
+		"igdb": {
+			"url": "https://www.igdb.com/games/call-of-duty-modern-warfare",
+			"rating": 79
+		},
+		"metacritic": {
+			"url": "https://www.igdb.com/games/call-of-duty-modern-warfare",
+			"rating": 79
+		},
+		"where_to_buy": [
+			{
+				"id": "11bdc10f-cdf8-4752-b64f-67d9046ae519",
+				"name": "Buy On Amazon",
+				"url": "https://www.amazon.com/"
+			},
+			{
+				"id": "99e1f247-d731-4d8d-88da-1b2171779d96",
+				"name": "Buy On Steam",
+				"url": "https://store.steampowered.com/"
+			}
+		],
+		"developer": {
+			"id": "677e686d-196f-4826-b388-93b25ec36a07",
+			"name": "Infinity Ward"
+		},
+		"publisher": {
+			"id": "6760a555-2e82-4d37-8735-5add2f9e4577",
+			"name": "Activision"
+		},
+		"platforms_available": [
+			{
+				"id": "0c9b752f-14e5-4e68-bdc9-ccca725ccbb0",
+				"name": "PC (Microsoft Windows)"
+			},
+			{
+				"id": "5b912fd0-ae6c-47f0-bc1f-9586093de66b",
+				"name": "PlayStation 4"
+			},
+			{
+				"id": "eb05cdb5-aba4-44d2-ba79-6a751a4bfaff",
+				"name": "Xbox One"
+			}
+		],
+		"genres": [
+			{
+				"id": "ad283819-d74f-490a-9edd-48059e1e2b1e",
+				"name": "Shooter"
+			}
+		],
+		"how_long_to_beat": {
+			"url": "https://howlongtobeat.com/",
+			"main_story": {
+				"average": "15h 25m"
+			},
+			"completionist": {
+				"average": "67h 25m"
+			}
+		},
+		"created_at": "Thu Sep 07 2023 18:40:51 GMT-0300 (Brasilia Standard Time)",
+		"updated_at": null,
+		"created_at_pt_br": "07/09/2023 18:40:51",
+		"updated_at_pt_br": null
+	},
+	{
+		"id": "65fc9e44-6b35-487b-bc2e-7eadcb86e451",
+		"title": "The Legend of Zelda: Tears of the Kingdom",
+		"cover_image": "https://images.igdb.com/igdb/image/upload/t_cover_big/co5vmg.jpg",
+		"summary": "The Legend of Zelda: Tears of the Kingdom is the sequel to The Legend of Zelda: Breath of the Wild. The setting for Link’s adventure has been expanded to include the skies above the vast lands of Hyrule.",
+		"release": {
+			"year": 2023,
+			"date": "2023-05-12T00:00:00.000Z"
+		},
+		"igdb": {
+			"url": "https://www.igdb.com/games/the-legend-of-zelda-tears-of-the-kingdom",
+			"rating": 96
+		},
+		"metacritic": {
+			"url": "https://www.igdb.com/games/the-legend-of-zelda-tears-of-the-kingdom",
+			"rating": 96
+		},
+		"where_to_buy": [
+			{
+				"id": "5d94f26a-5931-4fad-b3df-b7dc05ef0e74",
+				"name": "Buy On Amazon",
+				"url": "https://www.amazon.com/"
+			},
+			{
+				"id": "e99c5d93-07d2-4289-8308-e250ab47a51d",
+				"name": "Buy On Steam",
+				"url": "https://store.steampowered.com/"
+			}
+		],
+		"developer": {
+			"id": "8de56180-311a-448b-84fd-91e340765263",
+			"name": "Nintendo EPD Production Group No. 3"
+		},
+		"publisher": {
+			"id": "fcb4ac0a-791c-4ba8-af47-c8b0c55c59d7",
+			"name": "Nintendo"
+		},
+		"platforms_available": [
+			{
+				"id": "d3a60681-edba-491d-b80c-39884cc9ba1a",
+				"name": "Nintendo Switch"
+			}
+		],
+		"genres": [
+			{
+				"id": "f2d3426c-2bf5-415a-a457-259ecb45f4f3",
+				"name": "Role-playing (RPG)"
+			},
+			{
+				"id": "c3dbf8ec-2a4b-4de9-956c-d612b34ef0bb",
+				"name": "Adventure"
+			}
+		],
+		"how_long_to_beat": {
+			"url": "https://howlongtobeat.com/",
+			"main_story": {
+				"average": "24h 41m"
+			},
+			"completionist": {
+				"average": "48h 30m"
+			}
+		},
+		"created_at": "Thu Sep 07 2023 18:40:56 GMT-0300 (Brasilia Standard Time)",
+		"updated_at": null,
+		"created_at_pt_br": "07/09/2023 18:40:56",
+		"updated_at_pt_br": null
+	},
+	{
+		"id": "440fb9ad-d5d0-4e41-b7aa-f7490d8a2c4f",
+		"title": "Left 4 Dead 2",
+		"cover_image": "https://images.igdb.com/igdb/image/upload/t_cover_big/co1y2f.jpg",
+		"summary": "Left 4 Dead 2 is a cooperative first-person shooter video game, the sequel to Valve Corporation's Left 4 Dead. The Game builds upon cooperatively focused gameplay and Valve's proprietary Source engine, the same game engine used in the original Left 4 Dead. Set during the aftermath of an apocalyptic pandemic, Left 4 Dead 2 focuses on four new Survivors, fighting against hordes of the Infected, who develop severe psychosis and exhibit zombie-like tendencies. The Survivors must fight their way through five campaigns, interspersed with safe houses that act as checkpoints, with the goal of escape at each campaign's finale.",
+		"release": {
+			"year": 2009,
+			"date": "2009-11-17T00:00:00.000Z"
+		},
+		"igdb": {
+			"url": "https://www.igdb.com/games/left-4-dead-2",
+			"rating": 85
+		},
+		"metacritic": {
+			"url": "https://www.igdb.com/games/left-4-dead-2",
+			"rating": 85
+		},
+		"where_to_buy": [
+			{
+				"id": "e96c768e-fd8c-41df-9a07-41fc0e0ad8c9",
+				"name": "Buy On Amazon",
+				"url": "https://www.amazon.com/"
+			},
+			{
+				"id": "2668ea40-5944-4c82-bdc5-fbddac1e5a05",
+				"name": "Buy On Steam",
+				"url": "https://store.steampowered.com/"
+			}
+		],
+		"developer": {
+			"id": "65599da6-3d89-4fa3-b45c-ca9d248f4779",
+			"name": "Valve"
+		},
+		"publisher": {
+			"id": "0118e17e-f6dd-4891-9ada-6dd52893227f",
+			"name": "Valve"
+		},
+		"platforms_available": [
+			{
+				"id": "ce9ff008-589b-41dd-9456-205aea95d6f9",
+				"name": "PC (Microsoft Windows)"
+			},
+			{
+				"id": "af7b367f-e916-401b-9b01-dc6f4fe5d13d",
+				"name": "Mac"
+			},
+			{
+				"id": "43fc2689-0268-4126-9ce3-8636cfa6c64f",
+				"name": "Linux"
+			},
+			{
+				"id": "4a641a6f-fa3f-4298-92a7-bd7626a7fdf9",
+				"name": "Xbox 360"
+			}
+		],
+		"genres": [
+			{
+				"id": "4ab94955-f042-417e-8176-1f690e103ebb",
+				"name": "Shooter"
+			}
+		],
+		"how_long_to_beat": {
+			"url": "https://howlongtobeat.com/",
+			"main_story": {
+				"average": "13h 41m"
+			},
+			"completionist": {
+				"average": "65h 37m"
+			}
+		},
+		"created_at": "Thu Sep 07 2023 18:41:01 GMT-0300 (Brasilia Standard Time)",
+		"updated_at": null,
+		"created_at_pt_br": "07/09/2023 18:41:01",
+		"updated_at_pt_br": null
+	},
+	{
+		"id": "52b9d954-0b4c-428e-ab6b-c8fef6ddbc45",
+		"title": "Diablo IV",
+		"cover_image": "https://images.igdb.com/igdb/image/upload/t_cover_big/co69sm.jpg",
+		"summary": "Endless demons to slaughter. Deep customization through Talents, Skill Points, Runes, and Legendary loot. Randomized dungeons contained in a dynamic open world. Survive and conquer darkness—or succumb to the shadows.",
+		"release": {
+			"year": 2023,
+			"date": "2023-06-02T00:00:00.000Z"
+		},
+		"igdb": {
+			"url": "https://www.igdb.com/games/diablo-iv",
+			"rating": 88
+		},
+		"metacritic": {
+			"url": "https://www.igdb.com/games/diablo-iv",
+			"rating": 88
+		},
+		"where_to_buy": [
+			{
+				"id": "13719a6b-1c8b-4fec-a9fa-c6250bac4f23",
+				"name": "Buy On Amazon",
+				"url": "https://www.amazon.com/"
+			},
+			{
+				"id": "a6c70757-958a-40dd-bf0d-1619546596b5",
+				"name": "Buy On Steam",
+				"url": "https://store.steampowered.com/"
+			}
+		],
+		"developer": {
+			"id": "9e7abcd8-8f57-4d03-ba75-bf39b1f47e73",
+			"name": "Blizzard Entertainment"
+		},
+		"publisher": {
+			"id": "674dfa41-d270-47fc-b048-611c093e066d",
+			"name": "Blizzard Entertainment"
+		},
+		"platforms_available": [
+			{
+				"id": "aa8f668f-75a3-438b-98a6-ffa0509a05c9",
+				"name": "PC (Microsoft Windows)"
+			},
+			{
+				"id": "428656af-fcbe-492f-8c76-8d97e64fe542",
+				"name": "PlayStation 4"
+			},
+			{
+				"id": "4d26881d-5f5e-4ac8-a64e-8ddda510174c",
+				"name": "PlayStation 5"
+			},
+			{
+				"id": "ba55134c-a311-4c7f-96fa-4f6f9a6847e3",
+				"name": "Xbox Series X|S"
+			},
+			{
+				"id": "82031a57-bb3b-4fd1-a2a5-b58f8291079b",
+				"name": "Xbox One"
+			}
+		],
+		"genres": [
+			{
+				"id": "b84a19ac-0632-4e43-92f7-99ee901b48bb",
+				"name": "Role-playing (RPG)"
+			},
+			{
+				"id": "eb8a9c91-9662-4a89-acca-01022e4150c9",
+				"name": "Hack and slash/Beat 'em up"
+			}
+		],
+		"how_long_to_beat": {
+			"url": "https://howlongtobeat.com/",
+			"main_story": {
+				"average": "21h 44m"
+			},
+			"completionist": {
+				"average": "34h 16m"
+			}
+		},
+		"created_at": "Thu Sep 07 2023 18:41:06 GMT-0300 (Brasilia Standard Time)",
+		"updated_at": null,
+		"created_at_pt_br": "07/09/2023 18:41:06",
+		"updated_at_pt_br": null
+	},
+	{
+		"id": "d38df939-03f6-404f-b539-c06d8394174e",
+		"title": "Overwatch 2",
+		"cover_image": "https://images.igdb.com/igdb/image/upload/t_cover_big/co6srp.jpg",
+		"summary": "Reunite and stand together in a new age of heroes. Overwatch 2 builds on an award-winning foundation of epic competitive play, and challenges the world’s heroes to team up, power up, and take on an overwhelming outbreak of threats around the globe.",
+		"release": {
+			"year": 2022,
+			"date": "2022-10-04T00:00:00.000Z"
+		},
+		"igdb": {
+			"url": "https://www.igdb.com/games/overwatch-2",
+			"rating": 76
+		},
+		"metacritic": {
+			"url": "https://www.igdb.com/games/overwatch-2",
+			"rating": 76
+		},
+		"where_to_buy": [
+			{
+				"id": "534b22f5-fb0b-4bd8-8d7f-0b1f27c64ee3",
+				"name": "Buy On Amazon",
+				"url": "https://www.amazon.com/"
+			},
+			{
+				"id": "356c8692-a734-4df8-ac0c-95d3a21e2c87",
+				"name": "Buy On Steam",
+				"url": "https://store.steampowered.com/"
+			}
+		],
+		"developer": {
+			"id": "a4ff9b25-48b6-4323-84af-b25ca832e9de",
+			"name": "Blizzard Entertainment"
+		},
+		"publisher": {
+			"id": "5e247fea-9879-4ff4-84e0-1a4e9d525473",
+			"name": "Blizzard Entertainment"
+		},
+		"platforms_available": [
+			{
+				"id": "dcb678f4-2165-408c-a4ea-9ee080d283e8",
+				"name": "PC (Microsoft Windows)"
+			},
+			{
+				"id": "7834fff0-027c-461f-b8c4-8c2a33e1b6f4",
+				"name": "Nintendo Switch"
+			},
+			{
+				"id": "e0d51b0c-01d3-4a98-9aba-68914213bc62",
+				"name": "PlayStation 4"
+			},
+			{
+				"id": "192cbbdc-cf99-4c38-a916-6a623718abdf",
+				"name": "PlayStation 5"
+			},
+			{
+				"id": "d067760d-cd57-412a-94d4-82995f87cf10",
+				"name": "Xbox Series X|S"
+			},
+			{
+				"id": "e07b72cf-fbd2-47eb-b47f-c38e07facb20",
+				"name": "Xbox One"
+			}
+		],
+		"genres": [
+			{
+				"id": "fe1ab0be-c7d8-4708-bf08-1946a7925894",
+				"name": "Shooter"
+			}
+		],
+		"how_long_to_beat": {
+			"url": "https://howlongtobeat.com/",
+			"main_story": {
+				"average": "18h 48m"
+			},
+			"completionist": {
+				"average": "74h 15m"
+			}
+		},
+		"created_at": "Thu Sep 07 2023 18:41:11 GMT-0300 (Brasilia Standard Time)",
+		"updated_at": null,
+		"created_at_pt_br": "07/09/2023 18:41:11",
+		"updated_at_pt_br": null
+	},
+	{
+		"id": "754859e4-2a67-4323-af97-24dfb0add29e",
+		"title": "Assassin's Creed III",
+		"cover_image": "https://images.igdb.com/igdb/image/upload/t_cover_big/co1xii.jpg",
+		"summary": "The American Colonies, 1775. A brave young warrior fights to save his homeland. But what begins as a struggle over territory turns into an extraordinary journey that will transform him into a Master Assassin—and will forever change the destiny of a nation.\n\nYou are Connor, warrior son of a Native American mother and British father. As the colonies draw closer to revolution, you will dedicate your life to the freedom of your clan –becoming the spark that ignites the revolution into full blaze. Your crusade will take you through blood-soaked battlefields to crowded city streets, to perilous wilderness and beyond. You will not only witness history—you will make it.\nWelcome to an entirely new chapter in the Assassin’s Creed saga.",
+		"release": {
+			"year": 2012,
+			"date": "2012-10-30T00:00:00.000Z"
+		},
+		"igdb": {
+			"url": "https://www.igdb.com/games/assassin-s-creed-iii",
+			"rating": 77
+		},
+		"metacritic": {
+			"url": "https://www.igdb.com/games/assassin-s-creed-iii",
+			"rating": 77
+		},
+		"where_to_buy": [
+			{
+				"id": "07f51453-dbe6-4715-9dce-cd0fb7570907",
+				"name": "Buy On Amazon",
+				"url": "https://www.amazon.com/"
+			},
+			{
+				"id": "a0f0c570-87cb-4200-beb8-c0d9dddb7123",
+				"name": "Buy On Steam",
+				"url": "https://store.steampowered.com/"
+			}
+		],
+		"developer": {
+			"id": "b29333d9-ed31-4a4c-a3c1-8feed26e2264",
+			"name": "Ubisoft Montreal"
+		},
+		"publisher": {
+			"id": "72872b0e-568d-47ed-b3e2-c833e20529cc",
+			"name": "Ubisoft Entertainment"
+		},
+		"platforms_available": [
+			{
+				"id": "8e6c4caf-4294-4d8c-917c-78f9bb4367aa",
+				"name": "PC (Microsoft Windows)"
+			},
+			{
+				"id": "1333fba7-6b64-447b-88cc-7678b8a724b7",
+				"name": "Wii U"
+			},
+			{
+				"id": "ee07614f-9951-47d4-b3aa-bdaadb9a741a",
+				"name": "PlayStation 3"
+			},
+			{
+				"id": "31186695-50f6-4978-83c3-161d268532a5",
+				"name": "Xbox 360"
+			}
+		],
+		"genres": [
+			{
+				"id": "4f27c6a4-79a3-4948-b677-c4f91bdb74be",
+				"name": "Strategy"
+			},
+			{
+				"id": "333abdff-f2f3-48a5-b47d-bc8d5e5aaccb",
+				"name": "Adventure"
+			}
+		],
+		"how_long_to_beat": {
+			"url": "https://howlongtobeat.com/",
+			"main_story": {
+				"average": "28h 35m"
+			},
+			"completionist": {
+				"average": "42h 22m"
+			}
+		},
+		"created_at": "Thu Sep 07 2023 18:41:17 GMT-0300 (Brasilia Standard Time)",
+		"updated_at": null,
+		"created_at_pt_br": "07/09/2023 18:41:17",
+		"updated_at_pt_br": null
+	},
+	{
+		"id": "1deb04fe-232b-4eb2-b405-4b49b0f08569",
+		"title": "Assassin's Creed II",
+		"cover_image": "https://images.igdb.com/igdb/image/upload/t_cover_big/co1rcf.jpg",
+		"summary": "Discover an intriguing and epic story of power, revenge and conspiracy set during a pivotal moment in history: the Italian Renaissance.\nExperience the freedom and immersion of an all new open world and mission structure with settings such as the rooftops and canals of beautiful Venice. Your options in combat, assassination and escape are vast, with many new weapons, settings and gameplay elements.",
+		"release": {
+			"year": 2009,
+			"date": "2009-11-17T00:00:00.000Z"
+		},
+		"igdb": {
+			"url": "https://www.igdb.com/games/assassin-s-creed-ii",
+			"rating": 88
+		},
+		"metacritic": {
+			"url": "https://www.igdb.com/games/assassin-s-creed-ii",
+			"rating": 88
+		},
+		"where_to_buy": [
+			{
+				"id": "cbe85fe2-73ae-4675-9d7e-587750543223",
+				"name": "Buy On Amazon",
+				"url": "https://www.amazon.com/"
+			},
+			{
+				"id": "c564678d-5af0-427b-ba8d-8ff95a4e01bb",
+				"name": "Buy On Steam",
+				"url": "https://store.steampowered.com/"
+			}
+		],
+		"developer": {
+			"id": "e5cc0851-458f-4289-845b-e49b810b54ba",
+			"name": "Ubisoft Montreal"
+		},
+		"publisher": {
+			"id": "37d11ffd-79b8-44c4-ade4-13f52185e65f",
+			"name": "Ubisoft Entertainment"
+		},
+		"platforms_available": [
+			{
+				"id": "8d62d259-79a3-4bff-9c17-d0ca4fc40fd9",
+				"name": "iOS"
+			},
+			{
+				"id": "7624e531-4ee2-41d9-b8d5-c5f74ab185f1",
+				"name": "PC (Microsoft Windows)"
+			},
+			{
+				"id": "ed8945c7-c563-4949-b9bf-908e3512338c",
+				"name": "PlayStation 3"
+			},
+			{
+				"id": "c546cfad-1d05-43b9-8bf9-a0518255a40e",
+				"name": "Mac"
+			},
+			{
+				"id": "8119e2a6-90ff-4dfb-a6a0-0422191c5c24",
+				"name": "Xbox 360"
+			}
+		],
+		"genres": [
+			{
+				"id": "59f486b3-6a17-4fcd-b008-40c4f4272e7a",
+				"name": "Platform"
+			},
+			{
+				"id": "c610a4e0-e8d2-4d85-9246-3f6a6c606a28",
+				"name": "Adventure"
+			}
+		],
+		"how_long_to_beat": {
+			"url": "https://howlongtobeat.com/",
+			"main_story": {
+				"average": "29h 26m"
+			},
+			"completionist": {
+				"average": "67h 36m"
+			}
+		},
+		"created_at": "Thu Sep 07 2023 18:41:22 GMT-0300 (Brasilia Standard Time)",
+		"updated_at": null,
+		"created_at_pt_br": "07/09/2023 18:41:22",
+		"updated_at_pt_br": null
+	},
+	{
+		"id": "ccd39d8d-8e62-4a4f-9608-a19226c078c9",
+		"title": "Assassin's Creed",
+		"cover_image": "https://images.igdb.com/igdb/image/upload/t_cover_big/co1rrw.jpg",
+		"summary": "Assassin's Creed is a non-linear action-adventure video game, during which the player controls a 12th-century Levantine Assassin named Altaïr Ibn-La'Ahad during the Third Crusade, whose life is experienced through the Animus by his 21st century descendant, Desmond Miles.",
+		"release": {
+			"year": 2007,
+			"date": "2007-11-13T00:00:00.000Z"
+		},
+		"igdb": {
+			"url": "https://www.igdb.com/games/assassin-s-creed",
+			"rating": 77
+		},
+		"metacritic": {
+			"url": "https://www.igdb.com/games/assassin-s-creed",
+			"rating": 77
+		},
+		"where_to_buy": [
+			{
+				"id": "b26eae88-b840-4c64-8725-7e1cfc14e19a",
+				"name": "Buy On Amazon",
+				"url": "https://www.amazon.com/"
+			},
+			{
+				"id": "474de7ef-1d0e-468b-a09e-a86f21f8e9a5",
+				"name": "Buy On Steam",
+				"url": "https://store.steampowered.com/"
+			}
+		],
+		"developer": {
+			"id": "d6de4a05-1ce4-4848-ac5f-b545c4e55437",
+			"name": "Ubisoft Montreal"
+		},
+		"publisher": {
+			"id": "02314336-0d2f-446d-8ccd-98b83083f405",
+			"name": "Ubisoft Entertainment"
+		},
+		"platforms_available": [
+			{
+				"id": "9d6c15da-a63b-4cb9-80d6-690b66cf369b",
+				"name": "PC (Microsoft Windows)"
+			},
+			{
+				"id": "51c378f8-7643-4fd1-b76e-1ec79712e2a1",
+				"name": "PlayStation 3"
+			},
+			{
+				"id": "e548048f-253f-4647-a36e-c982527c6cf6",
+				"name": "Xbox 360"
+			}
+		],
+		"genres": [
+			{
+				"id": "022d5be7-ffb0-4f22-b346-a66285bd02c5",
+				"name": "Platform"
+			},
+			{
+				"id": "5f1759a3-d7cc-4745-a155-f72b715bc60f",
+				"name": "Adventure"
+			}
+		],
+		"how_long_to_beat": {
+			"url": "https://howlongtobeat.com/",
+			"main_story": {
+				"average": "11h 18m"
+			},
+			"completionist": {
+				"average": "58h 27m"
+			}
+		},
+		"created_at": "Thu Sep 07 2023 18:41:27 GMT-0300 (Brasilia Standard Time)",
+		"updated_at": null,
+		"created_at_pt_br": "07/09/2023 18:41:27",
+		"updated_at_pt_br": null
+	},
+	{
+		"id": "3b761287-ad28-4692-ac89-a2db904fa981",
+		"title": "God of War: Ascension",
+		"cover_image": "https://images.igdb.com/igdb/image/upload/t_cover_big/co3die.jpg",
+		"summary": "Vengeance is born in the fires of betrayal in this prequel to the best-selling God of War franchise. Six months have passed since Kratos stood over the bodies of his wife and child, his hands stained with their blood - tricked by Ares into murdering the only people he ever loved. Swearing to avenge them, Kratos broke the blood oath that bound him to Ares, but oaths to Olympus are not so easily broken... Sentenced to an eternity chained within a prison for the living damned, Kratos battles insanity at the hands of the Furies. He will be tested as he seeks freedom, redemption for his sins, and the clarity to avenge his family.",
+		"release": {
+			"year": 2013,
+			"date": "2013-03-12T00:00:00.000Z"
+		},
+		"igdb": {
+			"url": "https://www.igdb.com/games/god-of-war-ascension",
+			"rating": 74
+		},
+		"metacritic": {
+			"url": "https://www.igdb.com/games/god-of-war-ascension",
+			"rating": 74
+		},
+		"where_to_buy": [
+			{
+				"id": "3fd8fd52-935c-46f3-8bd1-9c511581bfed",
+				"name": "Buy On Amazon",
+				"url": "https://www.amazon.com/"
+			},
+			{
+				"id": "303a23d8-e891-4d16-a85d-fa7cad13a50d",
+				"name": "Buy On Steam",
+				"url": "https://store.steampowered.com/"
+			}
+		],
+		"developer": {
+			"id": "2ff45692-9716-49e6-8812-ffe2f5b2cf9e",
+			"name": "SCE Santa Monica Studio"
+		},
+		"publisher": {
+			"id": "344cd478-89aa-4e8c-a217-d08b34c6630d",
+			"name": "Sony Computer Entertainment"
+		},
+		"platforms_available": [
+			{
+				"id": "ee965978-3aa6-4cbf-adaa-5def520f1d65",
+				"name": "PlayStation 3"
+			}
+		],
+		"genres": [
+			{
+				"id": "c0d473cb-8cd7-42e4-85cf-b93670052f04",
+				"name": "Hack and slash/Beat 'em up"
+			},
+			{
+				"id": "fa9e3e8e-0a0f-4a07-a8a3-e8745a16b66a",
+				"name": "Adventure"
+			}
+		],
+		"how_long_to_beat": {
+			"url": "https://howlongtobeat.com/",
+			"main_story": {
+				"average": "15h 36m"
+			},
+			"completionist": {
+				"average": "62h 16m"
+			}
+		},
+		"created_at": "Thu Sep 07 2023 18:41:32 GMT-0300 (Brasilia Standard Time)",
+		"updated_at": null,
+		"created_at_pt_br": "07/09/2023 18:41:32",
+		"updated_at_pt_br": null
+	},
+	{
+		"id": "fe88891d-6453-43e2-bd3e-59f3237e9f00",
+		"title": "Call of Duty: Warzone",
+		"cover_image": "https://images.igdb.com/igdb/image/upload/t_cover_big/co20o8.jpg",
+		"summary": "Welcome to Warzone, the new massive free-to-play combat arena from the world of Modern Warfare. Drop in, armor up, loot for rewards, and battle your way to the top.",
+		"release": {
+			"year": 2020,
+			"date": "2020-03-10T00:00:00.000Z"
+		},
+		"igdb": {
+			"url": "https://www.igdb.com/games/call-of-duty-warzone",
+			"rating": 79
+		},
+		"metacritic": {
+			"url": "https://www.igdb.com/games/call-of-duty-warzone",
+			"rating": 79
+		},
+		"where_to_buy": [
+			{
+				"id": "fe75d024-e2a4-4bf5-af8b-e10fcbff7e9c",
+				"name": "Buy On Amazon",
+				"url": "https://www.amazon.com/"
+			},
+			{
+				"id": "706a9489-2c1a-44ed-95f6-6ceb48c993a2",
+				"name": "Buy On Steam",
+				"url": "https://store.steampowered.com/"
+			}
+		],
+		"developer": {
+			"id": "41a302f4-ffcd-485f-a07f-d8fa4856f30a",
+			"name": "Infinity Ward"
+		},
+		"publisher": {
+			"id": "55790a69-8ded-436f-85e2-ac708c226de2",
+			"name": "Activision"
+		},
+		"platforms_available": [
+			{
+				"id": "cc95dec1-18d4-46e9-a13b-d49ab6273e27",
+				"name": "PC (Microsoft Windows)"
+			},
+			{
+				"id": "85c0d367-f9b6-48bb-b7f1-7dc93340ca4d",
+				"name": "PlayStation 4"
+			},
+			{
+				"id": "423794dc-5e26-45bf-be3c-97a0ddc40d32",
+				"name": "Xbox One"
+			}
+		],
+		"genres": [
+			{
+				"id": "97feb0f2-7aa1-4046-98a3-5389723ca9b0",
+				"name": "Shooter"
+			}
+		],
+		"how_long_to_beat": {
+			"url": "https://howlongtobeat.com/",
+			"main_story": {
+				"average": "11h 38m"
+			},
+			"completionist": {
+				"average": "62h 42m"
+			}
+		},
+		"created_at": "Thu Sep 07 2023 18:41:36 GMT-0300 (Brasilia Standard Time)",
+		"updated_at": null,
+		"created_at_pt_br": "07/09/2023 18:41:36",
+		"updated_at_pt_br": null
+	},
+	{
+		"id": "548721cb-3fba-4bd1-8e1d-9a389d45554b",
+		"title": "Sea of Stars",
+		"cover_image": "https://images.igdb.com/igdb/image/upload/t_cover_big/co215b.jpg",
+		"summary": "Sea of Stars is a turn-based RPG inspired by the classics. Promising the Sabotage touch in every system, Sea of Stars aims to modernize the classic RPG in terms of turn-based combat, storytelling, exploration and interactions with the environment, while still offering a hearty slice of nostalgia and good old, simple fun.",
+		"release": {
+			"year": 2023,
+			"date": "2023-08-28T00:00:00.000Z"
+		},
+		"igdb": {
+			"url": "https://www.igdb.com/games/sea-of-stars",
+			"rating": 88
+		},
+		"metacritic": {
+			"url": "https://www.igdb.com/games/sea-of-stars",
+			"rating": 88
+		},
+		"where_to_buy": [
+			{
+				"id": "37c34c23-c79a-425a-a367-ed742a57226f",
+				"name": "Buy On Amazon",
+				"url": "https://www.amazon.com/"
+			},
+			{
+				"id": "7bc8e38f-03ea-46c4-9e81-99d81484482f",
+				"name": "Buy On Steam",
+				"url": "https://store.steampowered.com/"
+			}
+		],
+		"developer": {
+			"id": "91166475-3e11-4f53-b1d6-b991d83e1895",
+			"name": "Sabotage"
+		},
+		"publisher": {
+			"id": "82fb0b6c-99fd-4cc8-9ca3-851252a97bf9",
+			"name": "Sabotage"
+		},
+		"platforms_available": [
+			{
+				"id": "6ade01d8-b0bf-417a-9c43-8198de8b63fc",
+				"name": "PC (Microsoft Windows)"
+			},
+			{
+				"id": "5aa7af7f-516e-4fdb-abd3-c30132d92246",
+				"name": "Nintendo Switch"
+			},
+			{
+				"id": "7cfabc20-8a3f-4cb4-a20e-fbc7f918bb93",
+				"name": "PlayStation 4"
+			},
+			{
+				"id": "82694cb4-a162-4448-ba5f-29d8bd05361a",
+				"name": "PlayStation 5"
+			},
+			{
+				"id": "687df3c5-a627-4b96-b846-47ac9b3bf021",
+				"name": "Xbox Series X|S"
+			},
+			{
+				"id": "f4b26f97-0381-472d-a9fd-b9fdc9990911",
+				"name": "Xbox One"
+			}
+		],
+		"genres": [
+			{
+				"id": "12db452c-7d40-4bd1-9895-377b85aa0460",
+				"name": "Role-playing (RPG)"
+			},
+			{
+				"id": "a81ee47d-09df-449e-a745-d2dcee27c0be",
+				"name": "Turn-based strategy (TBS)"
+			},
+			{
+				"id": "1390e3cb-b6de-45fe-bbc3-ba71b3c11e30",
+				"name": "Adventure"
+			},
+			{
+				"id": "0dcfca85-86ed-4a83-99f3-c57f2e9b789a",
+				"name": "Indie"
+			}
+		],
+		"how_long_to_beat": {
+			"url": "https://howlongtobeat.com/",
+			"main_story": {
+				"average": "19h 12m"
+			},
+			"completionist": {
+				"average": "39h 17m"
+			}
+		},
+		"created_at": "Thu Sep 07 2023 18:41:40 GMT-0300 (Brasilia Standard Time)",
+		"updated_at": null,
+		"created_at_pt_br": "07/09/2023 18:41:40",
+		"updated_at_pt_br": null
+	},
+	{
+		"id": "e6620c30-61a4-4d97-8729-63b979f58aac",
+		"title": "Gears of War: Judgment",
+		"cover_image": "https://images.igdb.com/igdb/image/upload/t_cover_big/co2y2a.jpg",
+		"summary": "\"Gears of War: Judgment\" takes you back before events of the original \"Gears of War\" trilogy to the immediate aftermath of Emergence Day - the defining event of the \"Gears of War\" universe. Follow Kilo Squad, led by Damon Baird and Augustus \"The Cole Train\" Cole, as they fight to save the city of Halvo Bay from an unstoppable enemy in the most intense 'Gears' game yet.",
+		"release": {
+			"year": 2013,
+			"date": "2013-03-19T00:00:00.000Z"
+		},
+		"igdb": {
+			"url": "https://www.igdb.com/games/gears-of-war-judgment",
+			"rating": 73
+		},
+		"metacritic": {
+			"url": "https://www.igdb.com/games/gears-of-war-judgment",
+			"rating": 73
+		},
+		"where_to_buy": [
+			{
+				"id": "1d21cfe8-2384-4c91-a266-72e2b46e2b14",
+				"name": "Buy On Amazon",
+				"url": "https://www.amazon.com/"
+			},
+			{
+				"id": "bfb2a7ce-a3de-4e84-a10c-b7012e8d48cd",
+				"name": "Buy On Steam",
+				"url": "https://store.steampowered.com/"
+			}
+		],
+		"developer": {
+			"id": "1ab073a3-14d3-4df0-a238-ce777e6c5bfd",
+			"name": "People Can Fly"
+		},
+		"publisher": {
+			"id": "8fb8d343-e94c-4a46-90fc-01fd5ee0d039",
+			"name": "Microsoft Studios"
+		},
+		"platforms_available": [
+			{
+				"id": "e5e9249f-6af8-42bf-8d51-26f3fc17c526",
+				"name": "Xbox 360"
+			},
+			{
+				"id": "2f21fa74-a69c-4f33-9315-2cfb66f74bbc",
+				"name": "Xbox One"
+			}
+		],
+		"genres": [
+			{
+				"id": "98c0cf54-6239-4621-9f5e-80c9a4a4c64e",
+				"name": "Shooter"
+			}
+		],
+		"how_long_to_beat": {
+			"url": "https://howlongtobeat.com/",
+			"main_story": {
+				"average": "11h 23m"
+			},
+			"completionist": {
+				"average": "62h 27m"
+			}
+		},
+		"created_at": "Thu Sep 07 2023 18:41:46 GMT-0300 (Brasilia Standard Time)",
+		"updated_at": null,
+		"created_at_pt_br": "07/09/2023 18:41:46",
+		"updated_at_pt_br": null
+	},
+	{
+		"id": "8a5a3e7d-3935-4bd6-a700-b3555862ea3b",
+		"title": "Assassin's Creed Valhalla",
+		"cover_image": "https://images.igdb.com/igdb/image/upload/t_cover_big/co2ed3.jpg",
+		"summary": "In Assassin's Creed Valhalla, become Eivor, a legendary Viking raider on a quest for glory. Explore a dynamic and beautiful open world set against the brutal backdrop of England’s Dark Ages. Raid your enemies, grow your settlement, and build your political power in the quest to earn a place among the gods in Valhalla.",
+		"release": {
+			"year": 2020,
+			"date": "2020-11-10T00:00:00.000Z"
+		},
+		"igdb": {
+			"url": "https://www.igdb.com/games/assassins-creed-valhalla",
+			"rating": 80
+		},
+		"metacritic": {
+			"url": "https://www.igdb.com/games/assassins-creed-valhalla",
+			"rating": 80
+		},
+		"where_to_buy": [
+			{
+				"id": "05842600-8e9d-4289-8e27-ed11b22ea1b2",
+				"name": "Buy On Amazon",
+				"url": "https://www.amazon.com/"
+			},
+			{
+				"id": "c32cd67b-5320-4f9f-90e7-f006b5bd4905",
+				"name": "Buy On Steam",
+				"url": "https://store.steampowered.com/"
+			}
+		],
+		"developer": {
+			"id": "a3074b6f-6037-4562-bc3e-18524c132f08",
+			"name": "Ubisoft Montreal"
+		},
+		"publisher": {
+			"id": "cf29feaa-711a-4f97-bf14-5f69c67f14ab",
+			"name": "Sony Interactive Entertainment"
+		},
+		"platforms_available": [
+			{
+				"id": "e03a397b-b70c-4f5e-9b93-4cab83ce3216",
+				"name": "PC (Microsoft Windows)"
+			},
+			{
+				"id": "3bcb7eee-53e8-4562-834b-a96c7d856c43",
+				"name": "PlayStation 4"
+			},
+			{
+				"id": "b55234d7-335d-46b8-93a4-ef91b0790130",
+				"name": "Google Stadia"
+			},
+			{
+				"id": "ec3ea872-d88c-4bae-9ed6-6eeaa052f776",
+				"name": "PlayStation 5"
+			},
+			{
+				"id": "580d357c-81c1-4d6d-9774-a0bc1f76c0e3",
+				"name": "Xbox Series X|S"
+			},
+			{
+				"id": "dbbd0e33-6398-45d0-a597-bf1ca4a5d777",
+				"name": "Xbox One"
+			}
+		],
+		"genres": [
+			{
+				"id": "8cc1b0d0-e9bd-49d2-a75e-3359c32e3721",
+				"name": "Role-playing (RPG)"
+			},
+			{
+				"id": "f62c9224-f238-415a-8e23-b90b0e6d5245",
+				"name": "Adventure"
+			}
+		],
+		"how_long_to_beat": {
+			"url": "https://howlongtobeat.com/",
+			"main_story": {
+				"average": "10h 25m"
+			},
+			"completionist": {
+				"average": "44h 38m"
+			}
+		},
+		"created_at": "Thu Sep 07 2023 18:41:51 GMT-0300 (Brasilia Standard Time)",
+		"updated_at": null,
+		"created_at_pt_br": "07/09/2023 18:41:51",
+		"updated_at_pt_br": null
+	},
+	{
+		"id": "3cc06a02-6317-485d-bc47-3b921a55342b",
+		"title": "Hollow Knight",
+		"cover_image": "https://images.igdb.com/igdb/image/upload/t_cover_big/co1rgi.jpg",
+		"summary": "A 2D metroidvania with an emphasis on close combat and exploration in which the player enters the once-prosperous now-bleak insect kingdom of Hallownest, travels through its various districts, meets friendly inhabitants, fights hostile ones and uncovers the kingdom's history while improving their combat abilities and movement arsenal by fighting bosses and accessing out-of-the-way areas.",
+		"release": {
+			"year": 2017,
+			"date": "2017-02-24T00:00:00.000Z"
+		},
+		"igdb": {
+			"url": "https://www.igdb.com/games/hollow-knight",
+			"rating": 91
+		},
+		"metacritic": {
+			"url": "https://www.igdb.com/games/hollow-knight",
+			"rating": 91
+		},
+		"where_to_buy": [
+			{
+				"id": "8fd50a93-22ff-4561-9f16-35c594512769",
+				"name": "Buy On Amazon",
+				"url": "https://www.amazon.com/"
+			},
+			{
+				"id": "4f400a90-e809-4629-9065-d4bbe02e3e53",
+				"name": "Buy On Steam",
+				"url": "https://store.steampowered.com/"
+			}
+		],
+		"developer": {
+			"id": "4a513eba-b51e-42ce-80c7-a34fc8751299",
+			"name": "Team Cherry"
+		},
+		"publisher": {
+			"id": "1d0f35a4-5c47-4354-bc7f-d946555b0092",
+			"name": "Team Cherry"
+		},
+		"platforms_available": [
+			{
+				"id": "a5f4887c-e89c-4d30-9f92-2ffaa43053c9",
+				"name": "PC (Microsoft Windows)"
+			},
+			{
+				"id": "4450368a-2730-410e-aef1-2fcdf358183d",
+				"name": "Nintendo Switch"
+			},
+			{
+				"id": "ca01e598-b5ed-43ec-87e5-8e2c505e36e0",
+				"name": "Wii U"
+			},
+			{
+				"id": "75a862d0-bc80-4cd5-a96b-b1557a402e0f",
+				"name": "Mac"
+			},
+			{
+				"id": "d43c704b-3824-4e1e-9ced-b776b49de132",
+				"name": "Linux"
+			}
+		],
+		"genres": [
+			{
+				"id": "14fcefb9-a44a-4e30-a55c-bc646467726a",
+				"name": "Platform"
+			},
+			{
+				"id": "2ae6bdcc-67de-4ed2-b990-d76a07b56e47",
+				"name": "Adventure"
+			},
+			{
+				"id": "f23490c0-8eac-42dc-8042-a766f5636e2f",
+				"name": "Indie"
+			}
+		],
+		"how_long_to_beat": {
+			"url": "https://howlongtobeat.com/",
+			"main_story": {
+				"average": "28h 26m"
+			},
+			"completionist": {
+				"average": "48h 27m"
+			}
+		},
+		"created_at": "Thu Sep 07 2023 18:41:56 GMT-0300 (Brasilia Standard Time)",
+		"updated_at": null,
+		"created_at_pt_br": "07/09/2023 18:41:56",
+		"updated_at_pt_br": null
+	},
+	{
+		"id": "82fc5b2a-a9be-4626-82cc-67f6d9f44353",
+		"title": "Chrono Trigger",
+		"cover_image": "https://images.igdb.com/igdb/image/upload/t_cover_big/co3plw.jpg",
+		"summary": "In this turn-based Japanese RPG, young Crono must travel through time through a misfunctioning teleporter to rescue his misfortunate companion and take part in an intricate web of past and present perils. The adventure that ensues soon unveils an evil force set to destroy the world, triggering Crono's race against time to change the course of history and bring about a brighter future.",
+		"release": {
+			"year": 1995,
+			"date": "1995-03-11T00:00:00.000Z"
+		},
+		"igdb": {
+			"url": "https://www.igdb.com/games/chrono-trigger",
+			"rating": 92
+		},
+		"metacritic": {
+			"url": "https://www.igdb.com/games/chrono-trigger",
+			"rating": 92
+		},
+		"where_to_buy": [
+			{
+				"id": "7e2ed38a-7c0c-40b7-98c4-a89ab6525227",
+				"name": "Buy On Amazon",
+				"url": "https://www.amazon.com/"
+			},
+			{
+				"id": "2ccc47d1-2199-42ec-a729-e41b2145496d",
+				"name": "Buy On Steam",
+				"url": "https://store.steampowered.com/"
+			}
+		],
+		"developer": {
+			"id": "c7e7b203-2980-4db6-8cec-5fb8468484b1",
+			"name": "Square"
+		},
+		"publisher": {
+			"id": "d6d8382b-ed5e-4fdd-83e5-44d6205be0ef",
+			"name": "Square"
+		},
+		"platforms_available": [
+			{
+				"id": "a22e8dd8-9460-43da-9478-aac06442b0fd",
+				"name": "PlayStation 3"
+			},
+			{
+				"id": "ed6d0d8e-668a-4bbc-b7d5-0cb7c06ffb9f",
+				"name": "Satellaview"
+			},
+			{
+				"id": "874da681-e9bc-46f8-8460-6a2a0d250571",
+				"name": "Super Nintendo Entertainment System"
+			},
+			{
+				"id": "3ec36f73-636f-42d6-a948-edb4f2b4e6cb",
+				"name": "Super Famicom"
+			},
+			{
+				"id": "d16060c8-9140-4253-ae49-eb13d42b94c3",
+				"name": "Wii"
+			}
+		],
+		"genres": [
+			{
+				"id": "39e53daf-74a4-498c-9335-11ad463356f9",
+				"name": "Role-playing (RPG)"
+			},
+			{
+				"id": "a0e6721c-c688-4e90-9286-eb2f65c880ba",
+				"name": "Adventure"
+			}
+		],
+		"how_long_to_beat": {
+			"url": "https://howlongtobeat.com/",
+			"main_story": {
+				"average": "19h 27m"
+			},
+			"completionist": {
+				"average": "40h 17m"
+			}
+		},
+		"created_at": "Thu Sep 07 2023 18:42:01 GMT-0300 (Brasilia Standard Time)",
+		"updated_at": null,
+		"created_at_pt_br": "07/09/2023 18:42:01",
+		"updated_at_pt_br": null
+	},
+	{
+		"id": "264fd477-e432-4ea2-bbb4-afb0217c2b7c",
+		"title": "The Witcher 3: Wild Hunt",
+		"cover_image": "https://images.igdb.com/igdb/image/upload/t_cover_big/co1wyy.jpg",
+		"summary": "RPG and sequel to The Witcher 2 (2011), The Witcher 3 follows witcher Geralt of Rivia as he seeks out his former lover and his young subject while intermingling with the political workings of the wartorn Northern Kingdoms. Geralt has to fight monsters and deal with people of all sorts in order to solve complex problems and settle contentious disputes, each ranging from the personal to the world-changing.",
+		"release": {
+			"year": 2015,
+			"date": "2015-05-19T00:00:00.000Z"
+		},
+		"igdb": {
+			"url": "https://www.igdb.com/games/the-witcher-3-wild-hunt",
+			"rating": 93
+		},
+		"metacritic": {
+			"url": "https://www.igdb.com/games/the-witcher-3-wild-hunt",
+			"rating": 93
+		},
+		"where_to_buy": [
+			{
+				"id": "01c2f0cc-2b09-4dd2-8271-3efaa1a0add3",
+				"name": "Buy On Amazon",
+				"url": "https://www.amazon.com/"
+			},
+			{
+				"id": "dcdee2dc-cf12-43ab-b1a5-30bae3048141",
+				"name": "Buy On Steam",
+				"url": "https://store.steampowered.com/"
+			}
+		],
+		"developer": {
+			"id": "2c747cee-eea6-493a-a199-7ea171f4cbdd",
+			"name": "CD Projekt RED"
+		},
+		"publisher": {
+			"id": "9a2af902-fd5e-42fd-89e6-3f51c6f322d4",
+			"name": "cdp.pl"
+		},
+		"platforms_available": [
+			{
+				"id": "813667fb-2904-47a3-94bb-d31c8cf1dcb7",
+				"name": "PC (Microsoft Windows)"
+			},
+			{
+				"id": "92d4ba41-1fcc-40fc-9447-274210ae72bc",
+				"name": "Nintendo Switch"
+			},
+			{
+				"id": "4c7084e0-4c1d-4e16-94e1-2c45e9933c6c",
+				"name": "PlayStation 4"
+			},
+			{
+				"id": "56f1680a-a923-4166-b630-4be9e4638620",
+				"name": "PlayStation 5"
+			},
+			{
+				"id": "180ced19-7533-4d98-87aa-33324f88396e",
+				"name": "Xbox Series X|S"
+			},
+			{
+				"id": "78d11a62-351b-4a59-bae7-6aec51db3e07",
+				"name": "Xbox One"
+			}
+		],
+		"genres": [
+			{
+				"id": "1c5505d9-cfbd-4e8f-83e6-2d010203ddaf",
+				"name": "Role-playing (RPG)"
+			},
+			{
+				"id": "d3c44f13-19e2-4d78-8a7d-f19923cdd351",
+				"name": "Adventure"
+			}
+		],
+		"how_long_to_beat": {
+			"url": "https://howlongtobeat.com/",
+			"main_story": {
+				"average": "24h 16m"
+			},
+			"completionist": {
+				"average": "74h 23m"
+			}
+		},
+		"created_at": "Thu Sep 07 2023 18:42:06 GMT-0300 (Brasilia Standard Time)",
+		"updated_at": null,
+		"created_at_pt_br": "07/09/2023 18:42:06",
+		"updated_at_pt_br": null
+	},
+	{
+		"id": "19d4f588-f09a-459a-9bb0-dcf606fd70fa",
+		"title": "God of War",
+		"cover_image": "https://images.igdb.com/igdb/image/upload/t_cover_big/co1tmu.jpg",
+		"summary": "God of War is the sequel to God of War III as well as a continuation of the canon God of War chronology. Unlike previous installments, this game focuses on Norse mythology and follows an older and more seasoned Kratos and his son Atreus in the years since the third game. It is in this harsh, unforgiving world that he must fight to survive… and teach his son to do the same.",
+		"release": {
+			"year": 2018,
+			"date": "2018-04-20T00:00:00.000Z"
+		},
+		"igdb": {
+			"url": "https://www.igdb.com/games/god-of-war--1",
+			"rating": 94
+		},
+		"metacritic": {
+			"url": "https://www.igdb.com/games/god-of-war--1",
+			"rating": 94
+		},
+		"where_to_buy": [
+			{
+				"id": "5083c88b-d409-4a82-af02-390a694f7489",
+				"name": "Buy On Amazon",
+				"url": "https://www.amazon.com/"
+			},
+			{
+				"id": "ea5c4a73-a178-4218-a7f1-1cf8622c4260",
+				"name": "Buy On Steam",
+				"url": "https://store.steampowered.com/"
+			}
+		],
+		"developer": {
+			"id": "78872963-478a-4ff1-8389-32c0a072fee8",
+			"name": "SIE Santa Monica Studio"
+		},
+		"publisher": {
+			"id": "179a5422-8e31-4c24-aa39-9d6bae4dfe54",
+			"name": "Sony Interactive Entertainment"
+		},
+		"platforms_available": [
+			{
+				"id": "d5c8f37d-d3c3-4bb0-a467-76fdca08ec40",
+				"name": "PC (Microsoft Windows)"
+			},
+			{
+				"id": "600a923f-35d0-42a5-8915-7816be948ffa",
+				"name": "PlayStation 4"
+			}
+		],
+		"genres": [
+			{
+				"id": "7e20dfce-5430-49fc-a27e-356875f3786f",
+				"name": "Role-playing (RPG)"
+			},
+			{
+				"id": "e3190c71-26a2-411e-a53a-e2c0b67cf691",
+				"name": "Hack and slash/Beat 'em up"
+			},
+			{
+				"id": "67a5d71e-5129-4875-8f90-ef498c0d3058",
+				"name": "Adventure"
+			}
+		],
+		"how_long_to_beat": {
+			"url": "https://howlongtobeat.com/",
+			"main_story": {
+				"average": "11h 25m"
+			},
+			"completionist": {
+				"average": "41h 26m"
+			}
+		},
+		"created_at": "Thu Sep 07 2023 18:42:12 GMT-0300 (Brasilia Standard Time)",
+		"updated_at": null,
+		"created_at_pt_br": "07/09/2023 18:42:12",
+		"updated_at_pt_br": null
+	},
+	{
+		"id": "d22e1711-e440-4ca1-ae6b-30cb77469479",
+		"title": "Death Stranding",
+		"cover_image": "https://images.igdb.com/igdb/image/upload/t_cover_big/co5vq8.jpg",
+		"summary": "From legendary game creator Hideo Kojima comes an all-new, genre-defying open world action adventure, starring Norman Reedus, Mads Mikkelsen, Léa Seydoux and Lindsay Wagner.\n\nIn the near future, mysterious explosions have rocked the globe, setting off a series of supernatural events known as the Death Stranding. With otherworldly creatures plaguing the landscape, and mass extinction imminent, it’s up to Sam Porter Bridges to travel across the ravaged wasteland and save humanity from impending annihilation.",
+		"release": {
+			"year": 2019,
+			"date": "2019-11-08T00:00:00.000Z"
+		},
+		"igdb": {
+			"url": "https://www.igdb.com/games/death-stranding",
+			"rating": 85
+		},
+		"metacritic": {
+			"url": "https://www.igdb.com/games/death-stranding",
+			"rating": 85
+		},
+		"where_to_buy": [
+			{
+				"id": "1136e45f-cf7a-4358-beb1-ee6a1bcfd726",
+				"name": "Buy On Amazon",
+				"url": "https://www.amazon.com/"
+			},
+			{
+				"id": "d59745a2-194d-4a83-923f-a90b650b47ab",
+				"name": "Buy On Steam",
+				"url": "https://store.steampowered.com/"
+			}
+		],
+		"developer": {
+			"id": "08694837-4046-4677-b569-41e2338e90c0",
+			"name": "Kojima Productions"
+		},
+		"publisher": {
+			"id": "41228f29-08f3-4f4e-bfc2-36991591418b",
+			"name": "505 Games"
+		},
+		"platforms_available": [
+			{
+				"id": "4ab4b7fc-ebdb-44fa-a1d0-87f741be8549",
+				"name": "PC (Microsoft Windows)"
+			},
+			{
+				"id": "24df09d7-7620-4099-9cbe-4ef8faa78fc3",
+				"name": "PlayStation 4"
+			}
+		],
+		"genres": [
+			{
+				"id": "d05ae9cd-92ca-4840-b260-37212d44bae6",
+				"name": "Shooter"
+			},
+			{
+				"id": "667b032c-da30-43b8-8393-99a4ea4e9318",
+				"name": "Role-playing (RPG)"
+			},
+			{
+				"id": "a9803a66-009a-414f-9b21-bf19ac2c9d5b",
+				"name": "Adventure"
+			}
+		],
+		"how_long_to_beat": {
+			"url": "https://howlongtobeat.com/",
+			"main_story": {
+				"average": "19h 27m"
+			},
+			"completionist": {
+				"average": "47h 27m"
+			}
+		},
+		"created_at": "Thu Sep 07 2023 18:42:16 GMT-0300 (Brasilia Standard Time)",
+		"updated_at": null,
+		"created_at_pt_br": "07/09/2023 18:42:16",
+		"updated_at_pt_br": null
+	},
+	{
+		"id": "d5c7fea8-5d23-4a0b-afb4-b8cc2d35d5d7",
+		"title": "Marvel's Spider-Man",
+		"cover_image": "https://images.igdb.com/igdb/image/upload/t_cover_big/co1r77.jpg",
+		"summary": "Starring the world’s most iconic Super Hero, Spider-Man features the acrobatic abilities, improvisation and web-slinging that the wall-crawler is famous for, while also introducing elements never-before-seen in a Spider-Man game. From traversing with parkour and utilizing the environment, to new combat and blockbuster set pieces, it’s Spider-Man unlike any you’ve played before.",
+		"release": {
+			"year": 2018,
+			"date": "2018-09-07T00:00:00.000Z"
+		},
+		"igdb": {
+			"url": "https://www.igdb.com/games/marvels-spider-man",
+			"rating": 88
+		},
+		"metacritic": {
+			"url": "https://www.igdb.com/games/marvels-spider-man",
+			"rating": 88
+		},
+		"where_to_buy": [
+			{
+				"id": "4cd2c1ff-6cf7-43f3-b96e-e0ef25fd4f5c",
+				"name": "Buy On Amazon",
+				"url": "https://www.amazon.com/"
+			},
+			{
+				"id": "9cd1c064-3d42-4560-8c22-62689e0a94ae",
+				"name": "Buy On Steam",
+				"url": "https://store.steampowered.com/"
+			}
+		],
+		"developer": {
+			"id": "ee1cb7ea-68af-443c-9d33-5073b6d915b5",
+			"name": "Insomniac Games"
+		},
+		"publisher": {
+			"id": "1fedfd76-0c85-4bf8-b19f-5147a8b5b075",
+			"name": "Sony Interactive Entertainment"
+		},
+		"platforms_available": [
+			{
+				"id": "a6899867-49d4-4f9f-8776-30e0eca9363c",
+				"name": "PlayStation 4"
+			}
+		],
+		"genres": [
+			{
+				"id": "6aed23d4-6af9-4a40-9619-18b7d3d9070b",
+				"name": "Hack and slash/Beat 'em up"
+			},
+			{
+				"id": "ebcb8e8d-54a6-48fe-9cd7-e4f9ac15bef9",
+				"name": "Adventure"
+			}
+		],
+		"how_long_to_beat": {
+			"url": "https://howlongtobeat.com/",
+			"main_story": {
+				"average": "18h 18m"
+			},
+			"completionist": {
+				"average": "33h 19m"
+			}
+		},
+		"created_at": "Thu Sep 07 2023 18:42:21 GMT-0300 (Brasilia Standard Time)",
+		"updated_at": null,
+		"created_at_pt_br": "07/09/2023 18:42:21",
+		"updated_at_pt_br": null
+	},
+	{
+		"id": "981b675d-20db-498f-8446-7c871e7d4c06",
+		"title": "BioShock",
+		"cover_image": "https://images.igdb.com/igdb/image/upload/t_cover_big/co2mli.jpg",
+		"summary": "BioShock is a horror-themed first-person shooter set in a steampunk underwater dystopia. The player is urged to turn everything into a weapon: biologically modifying their own body with Plasmids, hacking devices and systems, upgrading their weapons, crafting new ammo variants, and experimenting with different battle techniques are all possible. The game is described by the developers as a spiritual successor to their previous PC title System Shock 2. BioShock received high praise in critical reviews for its atmospheric audio and visual quality, absorbing and original plot and its unique gaming experience.",
+		"release": {
+			"year": 2007,
+			"date": "2007-08-21T00:00:00.000Z"
+		},
+		"igdb": {
+			"url": "https://www.igdb.com/games/bioshock",
+			"rating": 89
+		},
+		"metacritic": {
+			"url": "https://www.igdb.com/games/bioshock",
+			"rating": 89
+		},
+		"where_to_buy": [
+			{
+				"id": "4f774bc2-798b-45f2-a9f2-56ee15b924d2",
+				"name": "Buy On Amazon",
+				"url": "https://www.amazon.com/"
+			},
+			{
+				"id": "1084ce38-ebcd-4b4c-b7e6-5c5c429c7ca1",
+				"name": "Buy On Steam",
+				"url": "https://store.steampowered.com/"
+			}
+		],
+		"developer": {
+			"id": "adf5e696-5210-4068-86fe-2eb302a7dc87",
+			"name": "2K Boston"
+		},
+		"publisher": {
+			"id": "9fe1f408-68e9-464f-8e51-a48e8ff18a6e",
+			"name": "2K Games"
+		},
+		"platforms_available": [
+			{
+				"id": "6f6789f8-4e8c-4ae0-8de0-a2f635fbb78f",
+				"name": "PC (Microsoft Windows)"
+			},
+			{
+				"id": "5ed9ec40-83b7-4a63-8210-f24f6be2c3fc",
+				"name": "PlayStation 3"
+			},
+			{
+				"id": "19ec6b51-ac7e-4129-9dc6-53c97d40ed1b",
+				"name": "Mac"
+			},
+			{
+				"id": "54990ca8-f8d4-4d3a-a6d0-353b54748eb0",
+				"name": "Xbox 360"
+			}
+		],
+		"genres": [
+			{
+				"id": "ea89ff18-62f6-4e30-a73b-382f67732d69",
+				"name": "Shooter"
+			},
+			{
+				"id": "8a2a4921-f157-4183-9289-c87ec51707d8",
+				"name": "Puzzle"
+			},
+			{
+				"id": "fb7980fc-34e7-4e56-ada7-167789b43a79",
+				"name": "Role-playing (RPG)"
+			},
+			{
+				"id": "27f199b6-8f15-4cdf-8050-fcdb8a0e89dc",
+				"name": "Adventure"
+			}
+		],
+		"how_long_to_beat": {
+			"url": "https://howlongtobeat.com/",
+			"main_story": {
+				"average": "15h 23m"
+			},
+			"completionist": {
+				"average": "64h 11m"
+			}
+		},
+		"created_at": "Thu Sep 07 2023 18:42:26 GMT-0300 (Brasilia Standard Time)",
+		"updated_at": null,
+		"created_at_pt_br": "07/09/2023 18:42:26",
+		"updated_at_pt_br": null
+	},
+	{
+		"id": "29fdc44a-9856-47f2-94b3-c4bd852db506",
+		"title": "BioShock 2",
+		"cover_image": "https://images.igdb.com/igdb/image/upload/t_cover_big/co2mlj.jpg",
+		"summary": "BioShock 2 is the second game of the BioShock series and the sequel to BioShock. It continues the grand storyline of the underwater metropolis Rapture. BioShock 2 capitalizes and improves upon the high-quality effects, unique gameplay elements, and immersive atmosphere that defined the first game. It explores more brutal gameplay than its predecessor, with new enemies, weapons, Plasmids, and Gene Tonics.",
+		"release": {
+			"year": 2010,
+			"date": "2010-02-09T00:00:00.000Z"
+		},
+		"igdb": {
+			"url": "https://www.igdb.com/games/bioshock-2",
+			"rating": 84
+		},
+		"metacritic": {
+			"url": "https://www.igdb.com/games/bioshock-2",
+			"rating": 84
+		},
+		"where_to_buy": [
+			{
+				"id": "c0b873a9-0510-4081-b9b8-82a95215b2a4",
+				"name": "Buy On Amazon",
+				"url": "https://www.amazon.com/"
+			},
+			{
+				"id": "b136495f-1e96-45a4-9342-263c59fad599",
+				"name": "Buy On Steam",
+				"url": "https://store.steampowered.com/"
+			}
+		],
+		"developer": {
+			"id": "cd88efe8-f02b-47e1-b36b-024b5b874c37",
+			"name": "2K Australia"
+		},
+		"publisher": {
+			"id": "d7f308e0-3324-491b-9e17-0816f62a109b",
+			"name": "2K Games"
+		},
+		"platforms_available": [
+			{
+				"id": "d38553f6-dfde-4cac-9554-548f6f9f03e0",
+				"name": "PC (Microsoft Windows)"
+			},
+			{
+				"id": "4eccbc87-b4b7-4c62-a507-7b6ea6da9a5c",
+				"name": "PlayStation 3"
+			},
+			{
+				"id": "c8b14144-6cb7-4b31-92a9-d07cd144ab71",
+				"name": "Mac"
+			},
+			{
+				"id": "3124d5c9-44c4-4fbf-96ab-b9b9327637fc",
+				"name": "Xbox 360"
+			}
+		],
+		"genres": [
+			{
+				"id": "53c3c9a4-bc8f-4c5d-8772-43d69cd9f021",
+				"name": "Shooter"
+			},
+			{
+				"id": "615b4a17-90b9-4643-9afc-326cb4ee3988",
+				"name": "Puzzle"
+			},
+			{
+				"id": "5a882e1d-b09a-40eb-8c6f-e5bd244fe202",
+				"name": "Role-playing (RPG)"
+			},
+			{
+				"id": "35a8ef37-80a7-41a3-bda5-1695c99a2130",
+				"name": "Adventure"
+			}
+		],
+		"how_long_to_beat": {
+			"url": "https://howlongtobeat.com/",
+			"main_story": {
+				"average": "24h 21m"
+			},
+			"completionist": {
+				"average": "34h 43m"
+			}
+		},
+		"created_at": "Thu Sep 07 2023 18:42:30 GMT-0300 (Brasilia Standard Time)",
+		"updated_at": null,
+		"created_at_pt_br": "07/09/2023 18:42:30",
+		"updated_at_pt_br": null
+	},
+	{
+		"id": "21f1bf52-638d-4445-bbe8-a71f925dca9b",
+		"title": "BioShock",
+		"cover_image": "https://images.igdb.com/igdb/image/upload/t_cover_big/co54xh.jpg",
+		"summary": "The iOS port of BioShock is a completely functional version of the original game with a graphics engine optimized for iOS devices. The mechanics are identical to the original game with all the same Plasmids, Gene Tonics and Weapons. One noteworthy function this version lacks is jumping and the Research Camera feature. The game can additionally be played with a separate Bluetooth-enabled controller.",
+		"release": {
+			"year": 2014,
+			"date": "2014-08-27T00:00:00.000Z"
+		},
+		"igdb": {
+			"url": "https://www.igdb.com/games/bioshock--3",
+			"rating": null
+		},
+		"metacritic": {
+			"url": "https://www.igdb.com/games/bioshock--3",
+			"rating": null
+		},
+		"where_to_buy": [
+			{
+				"id": "bc4ad2a2-73d7-42a7-a171-22dce0d8ca71",
+				"name": "Buy On Amazon",
+				"url": "https://www.amazon.com/"
+			},
+			{
+				"id": "5e64f27c-4460-43a5-8936-f4a191b9a135",
+				"name": "Buy On Steam",
+				"url": "https://store.steampowered.com/"
+			}
+		],
+		"developer": {
+			"id": "2f53d8b0-315e-4eb0-b663-7b8f2446c4bf",
+			"name": "2K Australia"
+		},
+		"publisher": {
+			"id": "07ba3781-b4aa-4e34-8ab5-25aeffd7e5e2",
+			"name": "2K Games"
+		},
+		"platforms_available": [
+			{
+				"id": "9a794fdf-1d3f-4f34-9418-5c909dc18f75",
+				"name": "iOS"
+			}
+		],
+		"genres": [
+			{
+				"id": "e8fa20d2-ea4c-49e9-8269-39577d1ea08d",
+				"name": "Shooter"
+			},
+			{
+				"id": "a87a033a-7191-4607-8db2-bab00dc73c38",
+				"name": "Role-playing (RPG)"
+			},
+			{
+				"id": "789bc9a9-0d7b-437c-8f2b-60bb69966f8c",
+				"name": "Adventure"
+			}
+		],
+		"how_long_to_beat": {
+			"url": "https://howlongtobeat.com/",
+			"main_story": {
+				"average": "11h 25m"
+			},
+			"completionist": {
+				"average": "34h 36m"
+			}
+		},
+		"created_at": "Thu Sep 07 2023 18:42:35 GMT-0300 (Brasilia Standard Time)",
+		"updated_at": null,
+		"created_at_pt_br": "07/09/2023 18:42:35",
+		"updated_at_pt_br": null
+	},
+	{
+		"id": "e05d481c-0351-45bf-8f71-3bc2cb9c1fb5",
+		"title": "God of War: Ghost of Sparta",
+		"cover_image": "https://images.igdb.com/igdb/image/upload/t_cover_big/co5qi1.jpg",
+		"summary": "An HD remaster of God of War: Ghost of Sparta included in \"God of War: Origins Collection.\"\n\nSet in the realm of Greek mythology, God of War: Ghost of Sparta is a single-player game that allows players to take on the powerful role of Spartan warrior Kratos. This new adventure picks up after God of War concludes, telling the story of Kratos' ascension to power as the God of War. In his quest to rid himself of the nightmares that haunt him, Kratos must embark on a journey that will reveal the origins of lost worlds, and finally answer long-awaited questions about his dark past. Armed with the deadly chained Blades of Chaos, he will have to overcome armies of mythological monsters, legions of undead soldiers, and amazingly dangerous and brutal landscapes throughout his merciless quest.",
+		"release": {
+			"year": 2011,
+			"date": "2011-09-13T00:00:00.000Z"
+		},
+		"igdb": {
+			"url": "https://www.igdb.com/games/god-of-war-ghost-of-sparta--1",
+			"rating": 73
+		},
+		"metacritic": {
+			"url": "https://www.igdb.com/games/god-of-war-ghost-of-sparta--1",
+			"rating": 73
+		},
+		"where_to_buy": [
+			{
+				"id": "0433c0ab-4ebc-41b1-9f3a-d02704ee816d",
+				"name": "Buy On Amazon",
+				"url": "https://www.amazon.com/"
+			},
+			{
+				"id": "6e3afb04-6222-4593-8223-8a3f5e59095e",
+				"name": "Buy On Steam",
+				"url": "https://store.steampowered.com/"
+			}
+		],
+		"developer": {
+			"id": "e08ddea8-54e7-48b7-880e-5c20f80632ae",
+			"name": "SCE Santa Monica Studio"
+		},
+		"publisher": {
+			"id": "27ac00d9-00e2-4165-8f7d-020d89296765",
+			"name": "Sony Computer Entertainment"
+		},
+		"platforms_available": [
+			{
+				"id": "b1c5a24f-a643-4e8c-91c8-e4fd8ceb9f44",
+				"name": "PlayStation 3"
+			}
+		],
+		"genres": [
+			{
+				"id": "4717f6ef-8c6c-4a40-af5a-194dd33e1ef2",
+				"name": "Hack and slash/Beat 'em up"
+			},
+			{
+				"id": "d9bef48b-6fc8-4a62-8ee4-443b249a622b",
+				"name": "Adventure"
+			}
+		],
+		"how_long_to_beat": {
+			"url": "https://howlongtobeat.com/",
+			"main_story": {
+				"average": "10h 25m"
+			},
+			"completionist": {
+				"average": "70h 42m"
+			}
+		},
+		"created_at": "Thu Sep 07 2023 18:42:40 GMT-0300 (Brasilia Standard Time)",
+		"updated_at": null,
+		"created_at_pt_br": "07/09/2023 18:42:40",
+		"updated_at_pt_br": null
+	},
+	{
+		"id": "c54057a3-0b4c-440d-826a-695ed2b1e72c",
+		"title": "Half-Life 2",
+		"cover_image": "https://images.igdb.com/igdb/image/upload/t_cover_big/co1nmw.jpg",
+		"summary": "1998. HALF-LIFE sends a shock through the game industry with its combination of pounding action and continuous, immersive storytelling.\n\nNOW. By taking the suspense, challenge and visceral charge of the original, and adding startling new realism and responsiveness, Half-Life 2 opens the door to a world where the player's presence affects everything around them, from the physical environment to the behaviors even the emotions of both friends and enemies.",
+		"release": {
+			"year": 2004,
+			"date": "2004-11-16T00:00:00.000Z"
+		},
+		"igdb": {
+			"url": "https://www.igdb.com/games/half-life-2",
+			"rating": 90
+		},
+		"metacritic": {
+			"url": "https://www.igdb.com/games/half-life-2",
+			"rating": 90
+		},
+		"where_to_buy": [
+			{
+				"id": "4e749e06-ef2d-4b1c-83fd-4058091fba0a",
+				"name": "Buy On Amazon",
+				"url": "https://www.amazon.com/"
+			},
+			{
+				"id": "8f2dcda9-c28a-4f33-90c6-f72a87d425b3",
+				"name": "Buy On Steam",
+				"url": "https://store.steampowered.com/"
+			}
+		],
+		"developer": {
+			"id": "ff6f66a1-9ea0-4506-9e07-f918c3d8873e",
+			"name": "Valve"
+		},
+		"publisher": {
+			"id": "f4684eb1-bdad-4de2-b48d-8b8eb77c5607",
+			"name": "Sierra Entertainment"
+		},
+		"platforms_available": [
+			{
+				"id": "fd3fafaa-a5fb-43d7-9e28-e86d3f6463c9",
+				"name": "PC (Microsoft Windows)"
+			},
+			{
+				"id": "88d8e39e-523f-465c-a9e1-ce55729631e3",
+				"name": "Xbox"
+			},
+			{
+				"id": "f9f4e674-7b07-4b4a-99b0-ad5a3d588972",
+				"name": "PlayStation 3"
+			},
+			{
+				"id": "684f4101-8208-4aef-9732-a948979364bc",
+				"name": "Mac"
+			},
+			{
+				"id": "1bf3d35c-0973-4237-979f-2d4c9d75f837",
+				"name": "Android"
+			},
+			{
+				"id": "fdd849f6-23d1-4fca-b792-12c71ccf051e",
+				"name": "Linux"
+			},
+			{
+				"id": "e0ac2ad7-ce5c-463a-871b-089a8082dde8",
+				"name": "Xbox 360"
+			}
+		],
+		"genres": [
+			{
+				"id": "34c9daec-e32e-4c62-b98e-5f139237980d",
+				"name": "Shooter"
+			}
+		],
+		"how_long_to_beat": {
+			"url": "https://howlongtobeat.com/",
+			"main_story": {
+				"average": "13h 15m"
+			},
+			"completionist": {
+				"average": "54h 50m"
+			}
+		},
+		"created_at": "Thu Sep 07 2023 18:42:44 GMT-0300 (Brasilia Standard Time)",
+		"updated_at": null,
+		"created_at_pt_br": "07/09/2023 18:42:44",
+		"updated_at_pt_br": null
+	},
+	{
+		"id": "198915ac-3065-491d-a65b-71ee80c2d201",
+		"title": "Counter-Strike",
+		"cover_image": "https://images.igdb.com/igdb/image/upload/t_cover_big/co3dav.jpg",
+		"summary": "Play the world's number 1 online action game. Engage in an incredibly realistic brand of terrorist warfare in this wildly popular team-based game. Ally with teammates to complete strategic missions. Take out enemy sites. Rescue hostages. Your role affects your team's success. Your team's success affects your role.",
+		"release": {
+			"year": 2000,
+			"date": "2000-11-09T00:00:00.000Z"
+		},
+		"igdb": {
+			"url": "https://www.igdb.com/games/counter-strike",
+			"rating": 76
+		},
+		"metacritic": {
+			"url": "https://www.igdb.com/games/counter-strike",
+			"rating": 76
+		},
+		"where_to_buy": [
+			{
+				"id": "e1eb1519-ef4f-4dc5-8bfd-ea6feb07499e",
+				"name": "Buy On Amazon",
+				"url": "https://www.amazon.com/"
+			},
+			{
+				"id": "9421ab61-42a7-424e-89db-e9c9e629f897",
+				"name": "Buy On Steam",
+				"url": "https://store.steampowered.com/"
+			}
+		],
+		"developer": {
+			"id": "294d505e-0a21-45ea-9a4c-2dec8bf3a8cd",
+			"name": "Valve"
+		},
+		"publisher": {
+			"id": "44deb23c-78e5-48c2-bbd0-f3f557564267",
+			"name": "Vivendi Universal"
+		},
+		"platforms_available": [
+			{
+				"id": "d63e9e2d-8578-435b-8832-bc521d9de969",
+				"name": "PC (Microsoft Windows)"
+			},
+			{
+				"id": "15c40608-8566-4599-8414-8eaf956efc93",
+				"name": "Xbox"
+			},
+			{
+				"id": "47a19db9-b1f5-49ad-a41d-eac8c61ac8fe",
+				"name": "Mac"
+			},
+			{
+				"id": "33d3e1f3-0969-49ef-8608-ddfc1d1dd301",
+				"name": "Linux"
+			}
+		],
+		"genres": [
+			{
+				"id": "baa58bb2-c89c-4707-8b11-50428a5b8172",
+				"name": "Shooter"
+			}
+		],
+		"how_long_to_beat": {
+			"url": "https://howlongtobeat.com/",
+			"main_story": {
+				"average": "24h 28m"
+			},
+			"completionist": {
+				"average": "79h 42m"
+			}
+		},
+		"created_at": "Thu Sep 07 2023 18:42:49 GMT-0300 (Brasilia Standard Time)",
+		"updated_at": null,
+		"created_at_pt_br": "07/09/2023 18:42:49",
+		"updated_at_pt_br": null
+	},
+	{
+		"id": "46ad6663-248f-447b-9205-dae558fd3e08",
+		"title": "Counter-Strike 2",
+		"cover_image": "https://images.igdb.com/igdb/image/upload/t_cover_big/co6ab2.jpg",
+		"summary": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc euismod quam sed quam elementum pellentesque. Fusce ultricies mauris sed lectus luctus condimentum non quis est. Mauris ligula libero, ullamcorper in nisi vitae, faucibus facilisis odio. Nullam felis erat, varius eget auctor id, interdum at nunc. Sed rhoncus pellentesque pulvinar. Ut vel ligula lacinia, malesuada lectus venenatis, faucibus diam. Suspendisse est eros, auctor vitae ex nec, dictum blandit enim. Duis aliquam ipsum lacus, vitae finibus quam vehicula sit amet. Etiam mollis eu diam vel auctor. Fusce auctor mi vitae dolor mollis, placerat ullamcorper massa condimentum. Proin tempor odio eu rhoncus convallis. Duis ut dui eleifend velit fringilla elementum. Cras imperdiet mauris dictum leo scelerisque, lacinia blandit dui molestie. Quisque ut rhoncus nulla. Proin tincidunt, diam non luctus pharetra, lectus quam bibendum orci, vitae condimentum orci ligula id sapien. Mauris venenatis tellus turpis, in lacinia nunc dignissim eu. In lobortis ante in faucibus cursus.",
+		"release": {
+			"year": 2023,
+			"date": "23/092023"
+		},
+		"igdb": {
+			"url": "https://www.igdb.com/games/counter-strike-2",
+			"rating": 95
+		},
+		"metacritic": {
+			"url": "https://www.igdb.com/games/counter-strike-2",
+			"rating": 95
+		},
+		"where_to_buy": [
+			{
+				"id": "58eff409-b687-41e1-880b-b5673cdd8c24",
+				"name": "Buy On Amazon",
+				"url": "https://www.amazon.com/"
+			},
+			{
+				"id": "25f0203a-a434-433a-aa5a-22d6f2651753",
+				"name": "Buy On Steam",
+				"url": "https://store.steampowered.com/"
+			}
+		],
+		"developer": {
+			"id": "b8c96cd9-f602-49e1-90c3-54f6b58e3136",
+			"name": "Valve Software"
+		},
+		"publisher": {
+			"id": "b6b91119-1488-4250-8a96-2811ae192e11",
+			"name": "Valve Software"
+		},
+		"platforms_available": [
+			{
+				"id": "9937d30f-d5ad-4406-a1f0-5c2c8adb2ef4",
+				"name": "PC (Microsoft Windows)"
+			},
+			{
+				"id": "e9d67873-a794-45d1-9f62-d172f8bf8724",
+				"name": "Mac"
+			},
+			{
+				"id": "2b985cfa-8427-43e4-9478-6ea578ce9656",
+				"name": "Linux"
+			}
+		],
+		"genres": [
+			{
+				"id": "013dccd4-d5b7-4e91-824c-532636e315c9",
+				"name": "Shooter"
+			},
+			{
+				"id": "5a44fa89-2da5-4167-88e9-5dd2474f4524",
+				"name": "Tactical"
+			}
+		],
+		"how_long_to_beat": {
+			"url": "https://howlongtobeat.com/",
+			"main_story": {
+				"average": "29h 45m"
+			},
+			"completionist": {
+				"average": "44h 29m"
+			}
+		},
+		"created_at": "Thu Sep 07 2023 18:42:54 GMT-0300 (Brasilia Standard Time)",
+		"updated_at": null,
+		"created_at_pt_br": "07/09/2023 18:42:54",
+		"updated_at_pt_br": null
+	},
+	{
+		"id": "9d9e037d-0565-4333-9f39-639d089195a4",
+		"title": "Red Dead Redemption 2",
+		"cover_image": "https://images.igdb.com/igdb/image/upload/t_cover_big/co1q1f.jpg",
+		"summary": "Red Dead Redemption 2 is the epic tale of outlaw Arthur Morgan and the infamous Van der Linde gang, on the run across America at the dawn of the modern age.",
+		"release": {
+			"year": 2018,
+			"date": "2018-10-26T00:00:00.000Z"
+		},
+		"igdb": {
+			"url": "https://www.igdb.com/games/red-dead-redemption-2",
+			"rating": 93
+		},
+		"metacritic": {
+			"url": "https://www.igdb.com/games/red-dead-redemption-2",
+			"rating": 93
+		},
+		"where_to_buy": [
+			{
+				"id": "a38f0448-d39e-4cb0-9f43-dd5751bb6cdb",
+				"name": "Buy On Amazon",
+				"url": "https://www.amazon.com/"
+			},
+			{
+				"id": "13329845-d6a0-4ea2-9be7-36b83d4926bf",
+				"name": "Buy On Steam",
+				"url": "https://store.steampowered.com/"
+			}
+		],
+		"developer": {
+			"id": "f9c1789a-67a6-4120-bdbb-019930cad616",
+			"name": "Rockstar Games"
+		},
+		"publisher": {
+			"id": "488a9093-cf03-447d-af5f-671f16bc2ebb",
+			"name": "Take-Two Interactive"
+		},
+		"platforms_available": [
+			{
+				"id": "86fec09d-0067-45a6-8e83-6c202101e4d1",
+				"name": "PC (Microsoft Windows)"
+			},
+			{
+				"id": "3b0611f1-e005-4733-aec7-29622b43eb48",
+				"name": "PlayStation 4"
+			},
+			{
+				"id": "180e3446-04fc-43cf-a374-f79cd9d215c6",
+				"name": "Google Stadia"
+			},
+			{
+				"id": "30eda2c3-4ac5-4cd4-b1ea-558cd4930595",
+				"name": "Xbox One"
+			}
+		],
+		"genres": [
+			{
+				"id": "0909c999-d4ca-406e-8631-60e682bc59e1",
+				"name": "Shooter"
+			},
+			{
+				"id": "a954850f-2bca-4699-8faf-8613c103081a",
+				"name": "Role-playing (RPG)"
+			},
+			{
+				"id": "669a02b8-a17b-40b5-8301-a7dde4f6b5fd",
+				"name": "Adventure"
+			}
+		],
+		"how_long_to_beat": {
+			"url": "https://howlongtobeat.com/",
+			"main_story": {
+				"average": "21h 45m"
+			},
+			"completionist": {
+				"average": "42h 20m"
+			}
+		},
+		"created_at": "Thu Sep 07 2023 18:42:59 GMT-0300 (Brasilia Standard Time)",
+		"updated_at": null,
+		"created_at_pt_br": "07/09/2023 18:42:59",
+		"updated_at_pt_br": null
+	},
+	{
+		"id": "4101db81-9f9e-4da3-8b44-9c3b47d19c68",
+		"title": "Super Mario RPG",
+		"cover_image": "https://images.igdb.com/igdb/image/upload/t_cover_big/co6nmf.jpg",
+		"summary": "Mario, Bowser, and Peach partner up to repair the wish-granting Star Road in this approachable role-playing adventure.\n\nTeam up with an oddball group of heroes to save Star Road and stop the troublemaking Smithy Gang. This colorful RPG has updated graphics and cinematics that add even more charm to the unexpected alliance between Mario, Bowser, Peach, and original characters Mallow and Geno.\n\nEnter (or revisit) this world of eccentric allies and offbeat enemies in an RPG for everyone.",
+		"release": {
+			"year": 2023,
+			"date": "2023-11-17T00:00:00.000Z"
+		},
+		"igdb": {
+			"url": "https://www.igdb.com/games/super-mario-rpg",
+			"rating": null
+		},
+		"metacritic": {
+			"url": "https://www.igdb.com/games/super-mario-rpg",
+			"rating": null
+		},
+		"where_to_buy": [
+			{
+				"id": "5609761a-1106-44c2-a739-52e88e91a7ae",
+				"name": "Buy On Amazon",
+				"url": "https://www.amazon.com/"
+			},
+			{
+				"id": "489df4ce-a16d-4b4a-851b-6d6c5a95e63b",
+				"name": "Buy On Steam",
+				"url": "https://store.steampowered.com/"
+			}
+		],
+		"developer": {
+			"id": "f1ef54ff-5e20-4aa4-bc55-729d806d94b5",
+			"name": "SuperAlloy Interactive"
+		},
+		"publisher": {
+			"id": "0c9add9d-ff03-4911-b099-2c8efda73752",
+			"name": "Nintendo"
+		},
+		"platforms_available": [
+			{
+				"id": "66c17703-36cb-4838-8901-f8c8fb7acaac",
+				"name": "Nintendo Switch"
+			}
+		],
+		"genres": [
+			{
+				"id": "5326baa0-9768-435e-b236-5e618552432a",
+				"name": "Role-playing (RPG)"
+			},
+			{
+				"id": "ce17c753-b1e4-4ade-9987-036e371a2be2",
+				"name": "Adventure"
+			}
+		],
+		"how_long_to_beat": {
+			"url": "https://howlongtobeat.com/",
+			"main_story": {
+				"average": "29h 44m"
+			},
+			"completionist": {
+				"average": "71h 27m"
+			}
+		},
+		"created_at": "Thu Sep 07 2023 18:43:05 GMT-0300 (Brasilia Standard Time)",
+		"updated_at": null,
+		"created_at_pt_br": "07/09/2023 18:43:05",
+		"updated_at_pt_br": null
+	},
+	{
+		"id": "f73d7456-d24d-45aa-84fa-9d0195a882aa",
+		"title": "The Last of Us Part II",
+		"cover_image": "https://images.igdb.com/igdb/image/upload/t_cover_big/co5ziw.jpg",
+		"summary": "The Last of Us Part II is an action-adventure game set five years after the events of The Last of Us. The player traverses post-apocalyptic environments such as buildings and forests to advance the story. He can use firearms, improvised weapons, and stealth to defend against hostile humans and cannibalistic creatures infected by a mutated strain of the Cordyceps fungus. The game intermittently switches control between Ellie and Abby, and also briefly Joel in the opening sequence. The nimble nature of the player character introduces platforming elements, allowing the player to jump and climb to traverse environments and gain advantages during combat.",
+		"release": {
+			"year": 2020,
+			"date": "2020-06-19T00:00:00.000Z"
+		},
+		"igdb": {
+			"url": "https://www.igdb.com/games/the-last-of-us-part-ii",
+			"rating": 93
+		},
+		"metacritic": {
+			"url": "https://www.igdb.com/games/the-last-of-us-part-ii",
+			"rating": 93
+		},
+		"where_to_buy": [
+			{
+				"id": "51b46993-c9c5-4d8c-b360-217e8bdddc1e",
+				"name": "Buy On Amazon",
+				"url": "https://www.amazon.com/"
+			},
+			{
+				"id": "71e42f63-2b52-4aed-9561-f225eef30f55",
+				"name": "Buy On Steam",
+				"url": "https://store.steampowered.com/"
+			}
+		],
+		"developer": {
+			"id": "53160e6e-4057-4fd9-b1bd-6850e27434be",
+			"name": "Naughty Dog"
+		},
+		"publisher": {
+			"id": "839f6537-1969-4cdf-8de6-e1bd7ab93785",
+			"name": "Sony Interactive Entertainment"
+		},
+		"platforms_available": [
+			{
+				"id": "da0866ed-2354-4bd1-8dc2-1b5d35cbefd8",
+				"name": "PlayStation 4"
+			}
+		],
+		"genres": [
+			{
+				"id": "c0746645-8efc-4bda-b0d1-70de1a4c792f",
+				"name": "Shooter"
+			},
+			{
+				"id": "b434529f-d295-4411-81d0-630f81d196d7",
+				"name": "Adventure"
+			}
+		],
+		"how_long_to_beat": {
+			"url": "https://howlongtobeat.com/",
+			"main_story": {
+				"average": "21h 35m"
+			},
+			"completionist": {
+				"average": "62h 13m"
+			}
+		},
+		"created_at": "Thu Sep 07 2023 18:43:11 GMT-0300 (Brasilia Standard Time)",
+		"updated_at": null,
+		"created_at_pt_br": "07/09/2023 18:43:11",
+		"updated_at_pt_br": null
+	},
+	{
+		"id": "dc8f8497-fc69-429b-85c0-ee31f7087253",
+		"title": "Uncharted: The Lost Legacy",
+		"cover_image": "https://images.igdb.com/igdb/image/upload/t_cover_big/co1tp9.jpg",
+		"summary": "From the critically acclaimed developer, Naughty Dog, comes the first standalone adventure in the Uncharted series. Fan-favorite character, Chloe Frazer, must enlist the aid of renowned mercenary Nadine Ross from Uncharted 4: A Thief’s End in order to recover a fabled ancient Indian artifact and keep it out of the hands of a ruthless war profiteer. Together, they’ll venture deep into the mountains of India in search of the legendary artifact. Along the way, they’ll learn to work together to unearth the mystery of the artifact, fight their way through fierce opposition, and prevent the region from falling into chaos.",
+		"release": {
+			"year": 2017,
+			"date": "2017-08-22T00:00:00.000Z"
+		},
+		"igdb": {
+			"url": "https://www.igdb.com/games/uncharted-the-lost-legacy",
+			"rating": 84
+		},
+		"metacritic": {
+			"url": "https://www.igdb.com/games/uncharted-the-lost-legacy",
+			"rating": 84
+		},
+		"where_to_buy": [
+			{
+				"id": "f4b5e981-22ef-44d9-bd85-2b70c9c750db",
+				"name": "Buy On Amazon",
+				"url": "https://www.amazon.com/"
+			},
+			{
+				"id": "b5d9e405-880b-4f02-bef9-f9c7d983a845",
+				"name": "Buy On Steam",
+				"url": "https://store.steampowered.com/"
+			}
+		],
+		"developer": {
+			"id": "1081338b-d877-4c18-a872-6546930e442f",
+			"name": "Naughty Dog"
+		},
+		"publisher": {
+			"id": "64689512-0e2c-4748-93ed-40884ba719e6",
+			"name": "Sony Interactive Entertainment"
+		},
+		"platforms_available": [
+			{
+				"id": "e5ae2d6c-29d5-42c9-b50d-5df680851c3a",
+				"name": "PlayStation 4"
+			}
+		],
+		"genres": [
+			{
+				"id": "08a4c36e-a87f-4353-ae83-83515acd698c",
+				"name": "Shooter"
+			},
+			{
+				"id": "56278e63-ee43-41a9-89f6-3462ef4ed324",
+				"name": "Puzzle"
+			},
+			{
+				"id": "b12da8b4-9770-4c4d-8785-1ff6652f1707",
+				"name": "Adventure"
+			}
+		],
+		"how_long_to_beat": {
+			"url": "https://howlongtobeat.com/",
+			"main_story": {
+				"average": "20h 36m"
+			},
+			"completionist": {
+				"average": "73h 31m"
+			}
+		},
+		"created_at": "Thu Sep 07 2023 18:43:16 GMT-0300 (Brasilia Standard Time)",
+		"updated_at": null,
+		"created_at_pt_br": "07/09/2023 18:43:16",
+		"updated_at_pt_br": null
+	},
+	{
+		"id": "1bcf89ec-bfe7-4041-bf41-cb023c546c1f",
+		"title": "Disco Elysium",
+		"cover_image": "https://images.igdb.com/igdb/image/upload/t_cover_big/co1sfj.jpg",
+		"summary": "A CRPG in which, waking up in a hotel room a total amnesiac with highly opinionated voices in his head, a middle-aged detective on a murder case inadvertently ends up playing a part in the political dispute between a local labour union and a larger international body, all while struggling to piece together his past, diagnose the nature of the reality around him and come to terms with said reality.",
+		"release": {
+			"year": 2019,
+			"date": "2019-10-15T00:00:00.000Z"
+		},
+		"igdb": {
+			"url": "https://www.igdb.com/games/disco-elysium",
+			"rating": 92
+		},
+		"metacritic": {
+			"url": "https://www.igdb.com/games/disco-elysium",
+			"rating": 92
+		},
+		"where_to_buy": [
+			{
+				"id": "0beadea5-d75e-4eeb-895f-764c60f36883",
+				"name": "Buy On Amazon",
+				"url": "https://www.amazon.com/"
+			},
+			{
+				"id": "d955a310-084c-455b-99ab-e3da554be12e",
+				"name": "Buy On Steam",
+				"url": "https://store.steampowered.com/"
+			}
+		],
+		"developer": {
+			"id": "ed9d0a08-dac6-452f-bd3a-6003a5ddaed9",
+			"name": "ZA/UM"
+		},
+		"publisher": {
+			"id": "75191a18-ee87-46e5-82c0-6fc1afd00541",
+			"name": "ZA/UM"
+		},
+		"platforms_available": [
+			{
+				"id": "a5b0e82d-99a4-4f2b-9a79-51d0e16ad07e",
+				"name": "PC (Microsoft Windows)"
+			},
+			{
+				"id": "80f92ea5-a16f-48be-b1c1-6d0a8e883223",
+				"name": "Mac"
+			}
+		],
+		"genres": [
+			{
+				"id": "1662bb45-0bb6-461b-beaf-f1b62f51e42b",
+				"name": "Role-playing (RPG)"
+			},
+			{
+				"id": "d2dd6631-82db-44a9-b072-8c10d8e71c52",
+				"name": "Adventure"
+			}
+		],
+		"how_long_to_beat": {
+			"url": "https://howlongtobeat.com/",
+			"main_story": {
+				"average": "14h 29m"
+			},
+			"completionist": {
+				"average": "46h 22m"
+			}
+		},
+		"created_at": "Thu Sep 07 2023 18:43:20 GMT-0300 (Brasilia Standard Time)",
+		"updated_at": null,
+		"created_at_pt_br": "07/09/2023 18:43:20",
+		"updated_at_pt_br": null
+	},
+	{
+		"id": "4ceaea07-687e-4fa6-972a-815f8d011d78",
+		"title": "A Plague Tale: Innocence",
+		"cover_image": "https://images.igdb.com/igdb/image/upload/t_cover_big/co1lat.jpg",
+		"summary": "A Plague Tale: Innocence, on PlayStation 4, Xbox One and PC, tells the grim story of two siblings fighting together for survival in the darkest hours of History. This new video game from Asobo Studio sends you on an emotional journey through the 14th century France, with gameplay combining adventure, action and stealth, supported by a compelling story. Follow the young Amicia and her little brother Hugo, who face the brutality of a ravaged world as they discover their purpose to expose a dark secret. On the run from the Inquisition's soldiers, surrounded by unstoppable swarms of rats incarnating the Black Death, Amicia and Hugo will learn to know and trust each other as they struggle for their lives against all odds.",
+		"release": {
+			"year": 2019,
+			"date": "2019-05-14T00:00:00.000Z"
+		},
+		"igdb": {
+			"url": "https://www.igdb.com/games/a-plague-tale-innocence",
+			"rating": 81
+		},
+		"metacritic": {
+			"url": "https://www.igdb.com/games/a-plague-tale-innocence",
+			"rating": 81
+		},
+		"where_to_buy": [
+			{
+				"id": "737ccb88-2af4-4d81-a6dd-c0a55f57afba",
+				"name": "Buy On Amazon",
+				"url": "https://www.amazon.com/"
+			},
+			{
+				"id": "27021933-33cc-45b0-b2b3-fd992745cbb1",
+				"name": "Buy On Steam",
+				"url": "https://store.steampowered.com/"
+			}
+		],
+		"developer": {
+			"id": "ab332af2-9f54-444b-beab-31e3f8709f58",
+			"name": "Asobo Studio"
+		},
+		"publisher": {
+			"id": "0c9b25ed-a9f5-4e35-a04b-d683302ba453",
+			"name": "Focus Entertainment"
+		},
+		"platforms_available": [
+			{
+				"id": "1c1ff292-dbfb-400d-9fad-221593f6572d",
+				"name": "PC (Microsoft Windows)"
+			},
+			{
+				"id": "765ecd63-5ea0-4002-b9af-8409b465c4e1",
+				"name": "PlayStation 4"
+			},
+			{
+				"id": "dcfedfe4-7ccb-4f0a-b709-9d1df1c78eae",
+				"name": "PlayStation 5"
+			},
+			{
+				"id": "eb92d350-a72b-4d21-93aa-7d92509a7043",
+				"name": "Xbox Series X|S"
+			},
+			{
+				"id": "05057c58-c613-4b3a-8d5c-5cbd18a49d15",
+				"name": "Xbox One"
+			}
+		],
+		"genres": [
+			{
+				"id": "266da01b-54bf-4272-be09-4f91ff83d1dd",
+				"name": "Role-playing (RPG)"
+			},
+			{
+				"id": "b2768de2-7c61-45e3-9581-a50a49b443f4",
+				"name": "Adventure"
+			}
+		],
+		"how_long_to_beat": {
+			"url": "https://howlongtobeat.com/",
+			"main_story": {
+				"average": "18h 47m"
+			},
+			"completionist": {
+				"average": "34h 37m"
+			}
+		},
+		"created_at": "Thu Sep 07 2023 18:43:25 GMT-0300 (Brasilia Standard Time)",
+		"updated_at": null,
+		"created_at_pt_br": "07/09/2023 18:43:25",
+		"updated_at_pt_br": null
+	},
+	{
+		"id": "1b34fa3a-1e96-4a1b-bed1-23ff501bd77b",
+		"title": "Assassin's Creed Origins",
+		"cover_image": "https://images.igdb.com/igdb/image/upload/t_cover_big/co1rbe.jpg",
+		"summary": "For the last four years, the team behind Assassin’s Creed IV Black Flag has been crafting a new beginning for the Assassin’s Creed franchise.\n\nSet in Ancient Egypt, players will journey to the most mysterious place in history, during a crucial period that will shape the world and give rise to the Assassin’s Brotherhood. Plunged into a living, systemic and majestic open world, players are going to discover vibrant ecosystems, made of diverse and exotic landscapes that will provide them with infinite opportunities of pure exploration, adventures and challenges.\n\nPowered by a new fight philosophy, Assassin's Creed Originsembraces a brand new RPG direction where players level up, loot, and choose abilities to shape and customize their very own skilled Assassin as they grow in power and expertise while exploring the entire country of Ancient Egypt.",
+		"release": {
+			"year": 2017,
+			"date": "2017-10-26T00:00:00.000Z"
+		},
+		"igdb": {
+			"url": "https://www.igdb.com/games/assassins-creed-origins",
+			"rating": 84
+		},
+		"metacritic": {
+			"url": "https://www.igdb.com/games/assassins-creed-origins",
+			"rating": 84
+		},
+		"where_to_buy": [
+			{
+				"id": "5dd9efce-5c66-4d1f-bc3f-e00efffa2030",
+				"name": "Buy On Amazon",
+				"url": "https://www.amazon.com/"
+			},
+			{
+				"id": "655ab072-17f3-4ff2-908e-93abee66bc7e",
+				"name": "Buy On Steam",
+				"url": "https://store.steampowered.com/"
+			}
+		],
+		"developer": {
+			"id": "8c02f575-da65-4c5a-bbaa-b9266cd1de6a",
+			"name": "Ubisoft Montreal"
+		},
+		"publisher": {
+			"id": "93c288ec-8df7-42f8-998c-d73e37947bf5",
+			"name": "Sony Interactive Entertainment"
+		},
+		"platforms_available": [
+			{
+				"id": "a38bf390-ce82-44cd-ab36-a619fe03e6a8",
+				"name": "PC (Microsoft Windows)"
+			},
+			{
+				"id": "743a1ee7-71ed-4c04-a9c6-ea8f052ed41c",
+				"name": "PlayStation 4"
+			},
+			{
+				"id": "a1d04fc0-25a3-4185-8ec2-21b0459aee1b",
+				"name": "Google Stadia"
+			},
+			{
+				"id": "8d57dcc7-00ae-4709-9a20-7112865b0248",
+				"name": "Xbox One"
+			}
+		],
+		"genres": [
+			{
+				"id": "af554a85-dc18-4a26-abff-b90b7621e39c",
+				"name": "Role-playing (RPG)"
+			},
+			{
+				"id": "a9db3423-127a-4281-a4a8-0c7a147cd78a",
+				"name": "Adventure"
+			}
+		],
+		"how_long_to_beat": {
+			"url": "https://howlongtobeat.com/",
+			"main_story": {
+				"average": "25h 12m"
+			},
+			"completionist": {
+				"average": "46h 18m"
+			}
+		},
+		"created_at": "Thu Sep 07 2023 18:43:29 GMT-0300 (Brasilia Standard Time)",
+		"updated_at": null,
+		"created_at_pt_br": "07/09/2023 18:43:29",
+		"updated_at_pt_br": null
+	},
+	{
+		"id": "73df0e14-4af9-4ada-be23-1b3c9941cff8",
+		"title": "Children of Morta",
+		"cover_image": "https://images.igdb.com/igdb/image/upload/t_cover_big/co2iw2.jpg",
+		"summary": "Children of Morta is a narrative driven hack and slash roguelike. Take on the role of a member of the Bergson family, the Guardians of Mount Morta, as you fight desperately against the Corruption. Experience not only what it means to be a hero, but to be part of a family that bears the weight of the mountain together.",
+		"release": {
+			"year": 2019,
+			"date": "2019-09-03T00:00:00.000Z"
+		},
+		"igdb": {
+			"url": "https://www.igdb.com/games/children-of-morta",
+			"rating": 76
+		},
+		"metacritic": {
+			"url": "https://www.igdb.com/games/children-of-morta",
+			"rating": 76
+		},
+		"where_to_buy": [
+			{
+				"id": "29d10ea8-1ac7-432e-97c0-170c62d2b14a",
+				"name": "Buy On Amazon",
+				"url": "https://www.amazon.com/"
+			},
+			{
+				"id": "8b373de5-dbe9-4a0b-ad3d-0d73ac24d161",
+				"name": "Buy On Steam",
+				"url": "https://store.steampowered.com/"
+			}
+		],
+		"developer": {
+			"id": "44adffbe-9ea5-45c5-b9a4-c811d9aa3eef",
+			"name": "Dead Mage"
+		},
+		"publisher": {
+			"id": "e99f35aa-b14a-4749-8c26-9b7757764dec",
+			"name": "11 bit studios"
+		},
+		"platforms_available": [
+			{
+				"id": "1f71b6ec-0f2f-4e24-8bec-b6730c24397b",
+				"name": "PC (Microsoft Windows)"
+			},
+			{
+				"id": "039fa17d-75bf-4e41-a1a5-77048e68138a",
+				"name": "Nintendo Switch"
+			},
+			{
+				"id": "61b2c4e6-40c3-444f-90bd-8e92fe3e2e27",
+				"name": "Mac"
+			},
+			{
+				"id": "16e74e2b-b8f0-4edc-8881-34e369f231ab",
+				"name": "PlayStation 4"
+			},
+			{
+				"id": "afee7979-4825-405d-96da-6eb141bf0f7d",
+				"name": "Linux"
+			},
+			{
+				"id": "ce5961fb-49da-462b-9a7a-60c5772105b4",
+				"name": "Xbox One"
+			}
+		],
+		"genres": [
+			{
+				"id": "60c6ac60-7137-4737-92ef-d20c6019bb16",
+				"name": "Role-playing (RPG)"
+			},
+			{
+				"id": "9704fd2e-5e5b-4b97-bae4-cf717a846e66",
+				"name": "Adventure"
+			},
+			{
+				"id": "26f1399f-c343-40ca-bb36-1513beebdd77",
+				"name": "Indie"
+			}
+		],
+		"how_long_to_beat": {
+			"url": "https://howlongtobeat.com/",
+			"main_story": {
+				"average": "20h 16m"
+			},
+			"completionist": {
+				"average": "43h 23m"
+			}
+		},
+		"created_at": "Thu Sep 07 2023 18:43:34 GMT-0300 (Brasilia Standard Time)",
+		"updated_at": null,
+		"created_at_pt_br": "07/09/2023 18:43:34",
+		"updated_at_pt_br": null
+	},
+	{
+		"id": "2584fd95-4a8d-4b5c-89c5-fe0f64c1c756",
+		"title": "Monster Hunter: World",
+		"cover_image": "https://images.igdb.com/igdb/image/upload/t_cover_big/co1rst.jpg",
+		"summary": "Welcome to a new world! Take on the role of a hunter and slay ferocious monsters in a living, breathing ecosystem where you can use the landscape and its diverse inhabitants to get the upper hand. Hunt alone or in co-op with up to three other players, and use materials collected from fallen foes to craft new gear and take on even bigger, badder beasts!",
+		"release": {
+			"year": 2018,
+			"date": "2018-01-26T00:00:00.000Z"
+		},
+		"igdb": {
+			"url": "https://www.igdb.com/games/monster-hunter-world",
+			"rating": 88
+		},
+		"metacritic": {
+			"url": "https://www.igdb.com/games/monster-hunter-world",
+			"rating": 88
+		},
+		"where_to_buy": [
+			{
+				"id": "bf87e828-86b0-40d5-8641-f607d1e44c99",
+				"name": "Buy On Amazon",
+				"url": "https://www.amazon.com/"
+			},
+			{
+				"id": "30d729b9-13f5-4e00-993c-7e0bb5ed0220",
+				"name": "Buy On Steam",
+				"url": "https://store.steampowered.com/"
+			}
+		],
+		"developer": {
+			"id": "1b494bfe-38b6-4b7a-b24c-51f2afef4790",
+			"name": "Capcom"
+		},
+		"publisher": {
+			"id": "b8938cbb-d662-4b82-a140-ffdb877217c8",
+			"name": "Capcom"
+		},
+		"platforms_available": [
+			{
+				"id": "7e8e9aaa-4f12-4b92-b727-e8688c536284",
+				"name": "PC (Microsoft Windows)"
+			},
+			{
+				"id": "4fec51bf-e267-42a1-915f-2ffb63571ed3",
+				"name": "PlayStation 4"
+			},
+			{
+				"id": "4138778b-5923-45d0-b218-8748544070fb",
+				"name": "Xbox One"
+			}
+		],
+		"genres": [
+			{
+				"id": "f239caf5-30c7-4ee6-800f-0b1a213262e8",
+				"name": "Role-playing (RPG)"
+			},
+			{
+				"id": "63906710-a470-4e71-a228-b0feb438d5da",
+				"name": "Adventure"
+			}
+		],
+		"how_long_to_beat": {
+			"url": "https://howlongtobeat.com/",
+			"main_story": {
+				"average": "27h 31m"
+			},
+			"completionist": {
+				"average": "33h 48m"
+			}
+		},
+		"created_at": "Thu Sep 07 2023 18:43:38 GMT-0300 (Brasilia Standard Time)",
+		"updated_at": null,
+		"created_at_pt_br": "07/09/2023 18:43:38",
+		"updated_at_pt_br": null
+	},
+	{
+		"id": "a32c4297-7023-4941-867e-f1509a05d793",
+		"title": "Uncharted 2: Among Thieves - Limited Edition Collector's Box",
+		"cover_image": "https://images.igdb.com/igdb/image/upload/t_cover_big/co2mct.jpg",
+		"summary": "Uncharted 2: Among Thieves is the story of Nathan Drake, a fortune-hunter with a shady reputation and an even shadier past who is lured back into the treacherous world of thieves and mercenary treasure-seekers.\n\nAvailable in the EU only through GAME.\n\nThe Collectors Box contains:\n- 2 Exclusive Art Cards\n- 2 Multiplayer Gold Plated Guns\n- 2 Exclusive Multiplayer Character Skins\n- Exclusive PS3 XMB Theme\n- Comes in Steekbook",
+		"release": {
+			"year": 2009,
+			"date": "2009-10-16T00:00:00.000Z"
+		},
+		"igdb": {
+			"url": "https://www.igdb.com/games/uncharted-2-among-thieves-limited-edition-collectors-box",
+			"rating": 90
+		},
+		"metacritic": {
+			"url": "https://www.igdb.com/games/uncharted-2-among-thieves-limited-edition-collectors-box",
+			"rating": 90
+		},
+		"where_to_buy": [
+			{
+				"id": "14999982-102e-4edd-b6bb-ffd6319e8f39",
+				"name": "Buy On Amazon",
+				"url": "https://www.amazon.com/"
+			},
+			{
+				"id": "9c35ed24-0770-4190-9560-2623cc52a618",
+				"name": "Buy On Steam",
+				"url": "https://store.steampowered.com/"
+			}
+		],
+		"developer": {
+			"id": "ca074a7a-3d44-4e3d-b275-ecc4e0f00ac0",
+			"name": "Naughty Dog"
+		},
+		"publisher": {
+			"id": "4606582d-bd98-46ac-a4d8-c81691ccf294",
+			"name": "Sony Computer Entertainment"
+		},
+		"platforms_available": [
+			{
+				"id": "4b65db51-b342-4257-ac7c-a71eb83ee87a",
+				"name": "PlayStation 3"
+			}
+		],
+		"genres": [
+			{
+				"id": "a9f0df23-8154-4938-a786-71a454cb8228",
+				"name": "Shooter"
+			},
+			{
+				"id": "04dd02c1-32fd-4251-9307-a4d6cb0c56ca",
+				"name": "Platform"
+			},
+			{
+				"id": "1656248e-4369-41be-bb5b-d5cf38d51171",
+				"name": "Adventure"
+			}
+		],
+		"how_long_to_beat": {
+			"url": "https://howlongtobeat.com/",
+			"main_story": {
+				"average": "12h 17m"
+			},
+			"completionist": {
+				"average": "42h 41m"
+			}
+		},
+		"created_at": "Thu Sep 07 2023 18:43:43 GMT-0300 (Brasilia Standard Time)",
+		"updated_at": null,
+		"created_at_pt_br": "07/09/2023 18:43:43",
+		"updated_at_pt_br": null
+	},
+	{
+		"id": "ba2e8918-17af-4cac-9d2c-543df51bafed",
+		"title": "Final Fantasy VII",
+		"cover_image": "https://images.igdb.com/igdb/image/upload/t_cover_big/co2kx2.jpg",
+		"summary": "Final Fantasy VII is the seventh main installment in the Final Fantasy series, and was the first title to feature three-dimensional graphics, pre-rendered backgrounds and numerous full motion videos.\n\nThe gameplay is a departure from previous entries in the series in many ways. Though it retains the Active Time Battle pseudo-turn based menu command system, FFVII features three party members rather than four. The Materia system allows the player to customize each party member's abilities to their liking, and the Limit system grants them unique combat skills.\n\nThough minigames had been a recurring feature, FFVII introduces numerous new ones, many of them playable in the theme park Gold Saucer varying from racing with Chocobos to snowboarding.",
+		"release": {
+			"year": 1997,
+			"date": "1997-01-31T00:00:00.000Z"
+		},
+		"igdb": {
+			"url": "https://www.igdb.com/games/final-fantasy-vii",
+			"rating": 87
+		},
+		"metacritic": {
+			"url": "https://www.igdb.com/games/final-fantasy-vii",
+			"rating": 87
+		},
+		"where_to_buy": [
+			{
+				"id": "be18b850-a388-491b-a6cf-6eaadb8761c5",
+				"name": "Buy On Amazon",
+				"url": "https://www.amazon.com/"
+			},
+			{
+				"id": "edec0b1a-fb7c-4d5d-9432-548ee3eba831",
+				"name": "Buy On Steam",
+				"url": "https://store.steampowered.com/"
+			}
+		],
+		"developer": {
+			"id": "5ff5f965-0f9b-48d4-908e-cb5e4bd92a45",
+			"name": "Square"
+		},
+		"publisher": {
+			"id": "1b85c29f-c900-4489-8005-72df94225731",
+			"name": "Square Enix"
+		},
+		"platforms_available": [
+			{
+				"id": "5830b200-ef55-4989-aa05-4b134c1e694d",
+				"name": "PlayStation Portable"
+			},
+			{
+				"id": "7526eb90-13ed-4bdc-b886-8adf2e72f43f",
+				"name": "PlayStation 3"
+			},
+			{
+				"id": "3983a236-6022-4328-a7f7-1145545bc60f",
+				"name": "PlayStation Vita"
+			},
+			{
+				"id": "78881471-e260-4e50-82df-a55da5ffba2a",
+				"name": "PlayStation"
+			}
+		],
+		"genres": [
+			{
+				"id": "5f185407-bdd0-47fb-b52b-7141709de808",
+				"name": "Role-playing (RPG)"
+			},
+			{
+				"id": "23225573-db1f-4980-8e32-00238386a28a",
+				"name": "Turn-based strategy (TBS)"
+			},
+			{
+				"id": "d71c2849-857c-4866-b76e-911c8a24a0cc",
+				"name": "Adventure"
+			}
+		],
+		"how_long_to_beat": {
+			"url": "https://howlongtobeat.com/",
+			"main_story": {
+				"average": "26h 27m"
+			},
+			"completionist": {
+				"average": "40h 42m"
+			}
+		},
+		"created_at": "Thu Sep 07 2023 18:43:48 GMT-0300 (Brasilia Standard Time)",
+		"updated_at": null,
+		"created_at_pt_br": "07/09/2023 18:43:48",
+		"updated_at_pt_br": null
+	},
+	{
+		"id": "06b17946-f3e7-4d2c-b5af-1ff77038b2a9",
+		"title": "Uncharted: Drake's Fortune",
+		"cover_image": "https://images.igdb.com/igdb/image/upload/t_cover_big/co1tp7.jpg",
+		"summary": "A 400-year-old clue in the coffin of Sir Francis Drake sets a modern-day fortune hunter on an exploration for the fabled treasure of El Dorado, leading to the discovery of a forgotten island in the middle of the Pacific Ocean.\n\nThe search turns deadly when Nathan Drake becomes stranded on the island and hunted by mercenaries. Outnumbered and outgunned, Drake and his companions must fight to survive as they begin to unravel the terrible secrets hidden on the Island.",
+		"release": {
+			"year": 2007,
+			"date": "2007-11-16T00:00:00.000Z"
+		},
+		"igdb": {
+			"url": "https://www.igdb.com/games/uncharted-drake-s-fortune",
+			"rating": 83
+		},
+		"metacritic": {
+			"url": "https://www.igdb.com/games/uncharted-drake-s-fortune",
+			"rating": 83
+		},
+		"where_to_buy": [
+			{
+				"id": "9c07077b-d74b-45b0-a426-a44dea3ad6f6",
+				"name": "Buy On Amazon",
+				"url": "https://www.amazon.com/"
+			},
+			{
+				"id": "3a1ab11c-b341-4004-bde6-35dee14d3cbb",
+				"name": "Buy On Steam",
+				"url": "https://store.steampowered.com/"
+			}
+		],
+		"developer": {
+			"id": "6e41861c-def4-4f12-a19e-cdf6cea4bc06",
+			"name": "Naughty Dog"
+		},
+		"publisher": {
+			"id": "a34addd1-1d52-4a5a-b19f-404d6d2116ac",
+			"name": "Sony Computer Entertainment"
+		},
+		"platforms_available": [
+			{
+				"id": "4e8decf2-7ec3-460a-b5ed-c185655490c2",
+				"name": "PlayStation 3"
+			}
+		],
+		"genres": [
+			{
+				"id": "0e0240c6-4253-4d02-b988-976f90614aaa",
+				"name": "Shooter"
+			},
+			{
+				"id": "574b42ab-1da6-4c4b-93ba-2fc483666fc9",
+				"name": "Platform"
+			},
+			{
+				"id": "4c9b89ed-a872-45c8-99c6-b83db929b372",
+				"name": "Adventure"
+			}
+		],
+		"how_long_to_beat": {
+			"url": "https://howlongtobeat.com/",
+			"main_story": {
+				"average": "25h 17m"
+			},
+			"completionist": {
+				"average": "56h 41m"
+			}
+		},
+		"created_at": "Thu Sep 07 2023 18:43:52 GMT-0300 (Brasilia Standard Time)",
+		"updated_at": null,
+		"created_at_pt_br": "07/09/2023 18:43:52",
+		"updated_at_pt_br": null
+	},
+	{
+		"id": "488f33e9-b5fd-47b2-bbbc-3c60885db119",
+		"title": "Red Dead Redemption",
+		"cover_image": "https://images.igdb.com/igdb/image/upload/t_cover_big/co2lcv.jpg",
+		"summary": "A modern-day Western epic, Red Dead Redemption takes John Marston, a relic from the fast-closing time of the gunslinger, through an open-world filled with wildlife, mini games and shootouts. Marston sets out to hunt down his old gang mates for the government, who have taken away his family, and meets many characters emblematic of the Wild West, heroism and the new civilization along his journey.",
+		"release": {
+			"year": 2010,
+			"date": "2010-05-18T00:00:00.000Z"
+		},
+		"igdb": {
+			"url": "https://www.igdb.com/games/red-dead-redemption",
+			"rating": 90
+		},
+		"metacritic": {
+			"url": "https://www.igdb.com/games/red-dead-redemption",
+			"rating": 90
+		},
+		"where_to_buy": [
+			{
+				"id": "2897e260-3d46-4842-bea4-a510b621d36b",
+				"name": "Buy On Amazon",
+				"url": "https://www.amazon.com/"
+			},
+			{
+				"id": "7f0fd6e9-7800-42cf-abd8-acb7a7fb0ed7",
+				"name": "Buy On Steam",
+				"url": "https://store.steampowered.com/"
+			}
+		],
+		"developer": {
+			"id": "70fb70f9-47a6-4a30-9617-5994d7fbd0f1",
+			"name": "Rockstar San Diego"
+		},
+		"publisher": {
+			"id": "aa47c51d-2d61-4b49-8b4c-56d6ecf5bfdc",
+			"name": "Take-Two Interactive"
+		},
+		"platforms_available": [
+			{
+				"id": "c0f6d30f-9f62-42cf-89c6-81de1d042416",
+				"name": "PlayStation 3"
+			},
+			{
+				"id": "54ac3243-0983-4de7-b4b7-8ccc117e2aaa",
+				"name": "Xbox 360"
+			}
+		],
+		"genres": [
+			{
+				"id": "d9762adb-4324-465f-a1cd-be38d87c6658",
+				"name": "Shooter"
+			},
+			{
+				"id": "bda5c362-2aab-40bc-921f-b2968b3f2df8",
+				"name": "Role-playing (RPG)"
+			},
+			{
+				"id": "0bdb5873-fab0-4ebd-9642-db9341878eca",
+				"name": "Adventure"
+			}
+		],
+		"how_long_to_beat": {
+			"url": "https://howlongtobeat.com/",
+			"main_story": {
+				"average": "29h 36m"
+			},
+			"completionist": {
+				"average": "47h 34m"
+			}
+		},
+		"created_at": "Thu Sep 07 2023 18:43:57 GMT-0300 (Brasilia Standard Time)",
+		"updated_at": null,
+		"created_at_pt_br": "07/09/2023 18:43:57",
+		"updated_at_pt_br": null
+	},
+	{
+		"id": "6a10a222-7941-441f-b6fa-3324871262f7",
+		"title": "Gears of War 3",
+		"cover_image": "https://images.igdb.com/igdb/image/upload/t_cover_big/co2a21.jpg",
+		"summary": "Gears of War 3 is the spectacular conclusion to one of the most memorable and celebrated sagas in videogames. Gears of War 3 plunges players into a harrowing tale of hope, survival and brotherhood. In Gears of War 3, players fight on as Marcus Fenix, the grizzled war hero and leader of Delta Squad. Eighteen months after the fall of the last human city, the war against the Locust rages on. Meanwhile, deep beneath the surface, a fearsome new threat is infecting the planet from within. With survivors scattered and civilization in ruins, time is running out for Marcus and his comrades as they fight to save the human race.",
+		"release": {
+			"year": 2011,
+			"date": "2011-09-20T00:00:00.000Z"
+		},
+		"igdb": {
+			"url": "https://www.igdb.com/games/gears-of-war-3",
+			"rating": 89
+		},
+		"metacritic": {
+			"url": "https://www.igdb.com/games/gears-of-war-3",
+			"rating": 89
+		},
+		"where_to_buy": [
+			{
+				"id": "9496d733-e19c-4b52-bb1a-7bcaf4b5c34e",
+				"name": "Buy On Amazon",
+				"url": "https://www.amazon.com/"
+			},
+			{
+				"id": "74742bbd-a11b-4443-9fd3-1061b5da36cf",
+				"name": "Buy On Steam",
+				"url": "https://store.steampowered.com/"
+			}
+		],
+		"developer": {
+			"id": "9f33bf93-a6c3-48b5-90ca-17602cd63b62",
+			"name": "Epic Games"
+		},
+		"publisher": {
+			"id": "08184abe-f473-418a-89ae-80276bbf8017",
+			"name": "Microsoft Game Studios"
+		},
+		"platforms_available": [
+			{
+				"id": "b9b31ebe-500d-4c49-a2cc-50788371d20a",
+				"name": "Xbox 360"
+			},
+			{
+				"id": "d83f6474-1517-4fe3-9c15-403ef8f0f8a0",
+				"name": "Xbox One"
+			}
+		],
+		"genres": [
+			{
+				"id": "f98b5708-6a54-4e58-879e-d3109a442db9",
+				"name": "Shooter"
+			}
+		],
+		"how_long_to_beat": {
+			"url": "https://howlongtobeat.com/",
+			"main_story": {
+				"average": "12h 36m"
+			},
+			"completionist": {
+				"average": "47h 29m"
+			}
+		},
+		"created_at": "Thu Sep 07 2023 18:44:02 GMT-0300 (Brasilia Standard Time)",
+		"updated_at": null,
+		"created_at_pt_br": "07/09/2023 18:44:02",
+		"updated_at_pt_br": null
+	},
+	{
+		"id": "ec8fdbf6-d2f7-480f-a5db-2cf42169d367",
+		"title": "God of War III",
+		"cover_image": "https://images.igdb.com/igdb/image/upload/t_cover_big/co3koi.jpg",
+		"summary": "Set in the realm of brutal Greek mythology, God of War III is a single-player game that allows players to take on the climatic role of the ex-Spartan warrior, Kratos, as he scales through the intimidating heights of Mt. Olympus and the dark depths of Hell to seek revenge on those who have betrayed him. Armed with double-chained blades, and an array of new weapons and magic for this iteration of the trilogy, Kratos must take on mythology's darkest creatures while solving intricate puzzles throughout his merciless quest to destroy Olympus. Utilizing a new game engine built from the ground up and state-of-the-art visual technologies, the development team behind God of War III has made standard-setting strides in giving players the realistic feel of actually being on the battlegrounds. With texture resolutions quadrupling since God of War II on PlayStation 2 computer entertainment system, God of War III, in its debut on the PS3 system, will feature fluid, life-like characters, as well as dynamic lighting effects, a robust weapon system, and world-changing scenarios that will truly bring unmistakable realism to Kratos' fateful quest. Players will have a chance to join battles on a grand scale that is four times larger than its predecessor.",
+		"release": {
+			"year": 2010,
+			"date": "2010-03-16T00:00:00.000Z"
+		},
+		"igdb": {
+			"url": "https://www.igdb.com/games/god-of-war-iii",
+			"rating": 90
+		},
+		"metacritic": {
+			"url": "https://www.igdb.com/games/god-of-war-iii",
+			"rating": 90
+		},
+		"where_to_buy": [
+			{
+				"id": "7a8014ff-7aae-40b4-bba7-892b24c9a5b1",
+				"name": "Buy On Amazon",
+				"url": "https://www.amazon.com/"
+			},
+			{
+				"id": "638d0ea3-d213-49e8-a592-7388539332e6",
+				"name": "Buy On Steam",
+				"url": "https://store.steampowered.com/"
+			}
+		],
+		"developer": {
+			"id": "8c615ae6-63c3-45c2-a805-ef00d773d100",
+			"name": "SCE Santa Monica Studio"
+		},
+		"publisher": {
+			"id": "6840a363-6bb2-46d4-aa84-cfbe04d53d4a",
+			"name": "Sony Computer Entertainment"
+		},
+		"platforms_available": [
+			{
+				"id": "e7816715-6e07-4d0c-be16-54d802eac9fb",
+				"name": "PlayStation 3"
+			},
+			{
+				"id": "f7454c6c-e321-4061-b85a-c5dbe75e4a43",
+				"name": "PlayStation 4"
+			}
+		],
+		"genres": [
+			{
+				"id": "896379ec-66a2-46ad-af94-b0eca290d23e",
+				"name": "Hack and slash/Beat 'em up"
+			},
+			{
+				"id": "6f89c1e0-9914-44c1-808d-7f24f056fdb9",
+				"name": "Adventure"
+			}
+		],
+		"how_long_to_beat": {
+			"url": "https://howlongtobeat.com/",
+			"main_story": {
+				"average": "24h 10m"
+			},
+			"completionist": {
+				"average": "45h 36m"
+			}
+		},
+		"created_at": "Thu Sep 07 2023 18:44:06 GMT-0300 (Brasilia Standard Time)",
+		"updated_at": null,
+		"created_at_pt_br": "07/09/2023 18:44:06",
+		"updated_at_pt_br": null
+	},
+	{
+		"id": "2dadde0e-4027-41a9-84a5-f077182458b9",
+		"title": "To the Moon",
+		"cover_image": "https://images.igdb.com/igdb/image/upload/t_cover_big/co25yv.jpg",
+		"summary": "Join Dr. Rosalene and Dr. Watts as they enter a patient named Johnny's mind on his death bed to grant his final request. Watch, interact, and change the past as Johnny's life unfolds before you and takes you on a magical journey inside one's head that asks the greatest question of all: \"What if...?\"\nIf you had the chance to relive your life, would you change things? Would you try to achieve some grand goal? Could you find love? Fame? Fortune? Or would you realize that sometimes the past is meant to stay the same. Join Dr. Rosalene and Watts on their journey and travel To The Moon.",
+		"release": {
+			"year": 2011,
+			"date": "2011-11-01T00:00:00.000Z"
+		},
+		"igdb": {
+			"url": "https://www.igdb.com/games/to-the-moon",
+			"rating": 82
+		},
+		"metacritic": {
+			"url": "https://www.igdb.com/games/to-the-moon",
+			"rating": 82
+		},
+		"where_to_buy": [
+			{
+				"id": "2a6840ba-74e8-4d29-a451-50e2df6bf92d",
+				"name": "Buy On Amazon",
+				"url": "https://www.amazon.com/"
+			},
+			{
+				"id": "54898c6b-f7d4-481e-97d1-02096a00faad",
+				"name": "Buy On Steam",
+				"url": "https://store.steampowered.com/"
+			}
+		],
+		"developer": {
+			"id": "58be1069-d06e-4f21-ac2c-4969c1a388cf",
+			"name": "Freebird Games"
+		},
+		"publisher": {
+			"id": "16a6c414-991d-4880-b3e1-03e964933746",
+			"name": "Freebird Games"
+		},
+		"platforms_available": [
+			{
+				"id": "a03fd018-4f99-4c7d-9eeb-2c40859a1265",
+				"name": "iOS"
+			},
+			{
+				"id": "af0ebfc0-d8d6-4129-b37b-e520e04f750e",
+				"name": "PC (Microsoft Windows)"
+			},
+			{
+				"id": "0476fdae-edab-4c4e-85c7-ada0143a8439",
+				"name": "Nintendo Switch"
+			},
+			{
+				"id": "275ab3ff-45d8-46ce-ae7a-9b4857248eb9",
+				"name": "Mac"
+			},
+			{
+				"id": "c7e4d352-bdb9-4e04-b6aa-84e3f4c363b1",
+				"name": "Android"
+			},
+			{
+				"id": "37e3177b-6e0e-49d3-9262-f70accf76274",
+				"name": "Linux"
+			}
+		],
+		"genres": [
+			{
+				"id": "1bccd1b7-4a5f-44d6-8eb4-03f249dc356c",
+				"name": "Puzzle"
+			},
+			{
+				"id": "b232ef61-b2f8-47e1-a9cd-52e0b4793d8f",
+				"name": "Role-playing (RPG)"
+			},
+			{
+				"id": "1a361e38-4b72-4a72-b78c-2ac78be4aada",
+				"name": "Adventure"
+			},
+			{
+				"id": "9b793fd7-cfcf-4462-ad7b-2f82a7319508",
+				"name": "Indie"
+			},
+			{
+				"id": "d2d05f31-b02d-41d0-a24a-0235174b0f12",
+				"name": "Point-and-click"
+			}
+		],
+		"how_long_to_beat": {
+			"url": "https://howlongtobeat.com/",
+			"main_story": {
+				"average": "14h 41m"
+			},
+			"completionist": {
+				"average": "32h 13m"
+			}
+		},
+		"created_at": "Thu Sep 07 2023 18:44:11 GMT-0300 (Brasilia Standard Time)",
+		"updated_at": null,
+		"created_at_pt_br": "07/09/2023 18:44:11",
+		"updated_at_pt_br": null
+	},
+	{
+		"id": "3c3134bc-a950-4415-ae53-3b8315c3bbd0",
+		"title": "Uncharted 3: Drake's Deception",
+		"cover_image": "https://images.igdb.com/igdb/image/upload/t_cover_big/co1tp8.jpg",
+		"summary": "A search for the fabled \"Atlantis of the Sands\" propels fortune hunter Nathan Drake on a trek into the heart of the Arabian Desert. When the terrible secrets of this lost city are unearthed, Drake's quest descends into a desperate bid for survival that strains the limits of his endurance and forces him to confront his deepest fears.",
+		"release": {
+			"year": 2011,
+			"date": "2011-11-01T00:00:00.000Z"
+		},
+		"igdb": {
+			"url": "https://www.igdb.com/games/uncharted-3-drake-s-deception",
+			"rating": 89
+		},
+		"metacritic": {
+			"url": "https://www.igdb.com/games/uncharted-3-drake-s-deception",
+			"rating": 89
+		},
+		"where_to_buy": [
+			{
+				"id": "415b8217-1611-4df4-9631-c29e4cfd322f",
+				"name": "Buy On Amazon",
+				"url": "https://www.amazon.com/"
+			},
+			{
+				"id": "21284729-9e63-44e1-89c3-d28676c663e6",
+				"name": "Buy On Steam",
+				"url": "https://store.steampowered.com/"
+			}
+		],
+		"developer": {
+			"id": "ad084552-d306-4b69-937b-26888d57acef",
+			"name": "Naughty Dog"
+		},
+		"publisher": {
+			"id": "7099337c-513f-4587-925c-0566c2eaaffd",
+			"name": "Sony Computer Entertainment"
+		},
+		"platforms_available": [
+			{
+				"id": "bedc198e-2652-418c-8c2f-143187fee6a5",
+				"name": "PlayStation 3"
+			}
+		],
+		"genres": [
+			{
+				"id": "bc71d1cb-5331-49f0-8c83-13c1977c56c5",
+				"name": "Shooter"
+			},
+			{
+				"id": "70c8cbe1-f288-4db9-8037-366f80485a8d",
+				"name": "Platform"
+			},
+			{
+				"id": "ee97cdc4-3574-4def-b1e8-f28e5d9d7b0c",
+				"name": "Adventure"
+			}
+		],
+		"how_long_to_beat": {
+			"url": "https://howlongtobeat.com/",
+			"main_story": {
+				"average": "20h 31m"
+			},
+			"completionist": {
+				"average": "77h 34m"
+			}
+		},
+		"created_at": "Thu Sep 07 2023 18:44:15 GMT-0300 (Brasilia Standard Time)",
+		"updated_at": null,
+		"created_at_pt_br": "07/09/2023 18:44:15",
+		"updated_at_pt_br": null
+	},
+	{
+		"id": "a57aedbe-4008-4a05-a882-5614e24436e7",
+		"title": "Assassin's Creed Revelations",
+		"cover_image": "https://images.igdb.com/igdb/image/upload/t_cover_big/co1xih.jpg",
+		"summary": "Assassin's Creed Revelations presents the most immersive experience available in the series to date and the culmination of Ezio's adventure. In Assassin's Creed Revelations, master assassin Ezio Auditore walks in the footsteps of his legendary mentor, Altair, on a journey of discovery and revelation. It is a perilous path - one that will take Ezio to Constantinople, the heart of the Ottoman Empire, where a growing army of Templars threatens to destabilize the region.\n\nIn addition to Ezio's award-winning story, the acclaimed online multiplayer experience from Assassin's Creed Brotherhood returns; refined and expanded, with more modes, more maps and more characters that allow players to test their assassin skills against others from around the world. The latest chapter in the Assassin's Creed saga also includes revolutionary gameplay, allowing players to manipulate the construct of Desmond's memories and the Animus to decipher the mysteries of his past and gain insight into the future.",
+		"release": {
+			"year": 2011,
+			"date": "2011-11-14T00:00:00.000Z"
+		},
+		"igdb": {
+			"url": "https://www.igdb.com/games/assassins-creed-revelations",
+			"rating": 79
+		},
+		"metacritic": {
+			"url": "https://www.igdb.com/games/assassins-creed-revelations",
+			"rating": 79
+		},
+		"where_to_buy": [
+			{
+				"id": "6328e5c0-bb8d-4a3c-9630-91dde2c2afa0",
+				"name": "Buy On Amazon",
+				"url": "https://www.amazon.com/"
+			},
+			{
+				"id": "6ef7be61-c638-4b5a-9861-a00aacf1b1d2",
+				"name": "Buy On Steam",
+				"url": "https://store.steampowered.com/"
+			}
+		],
+		"developer": {
+			"id": "a8c1c11f-b443-4634-98bb-4756632a79d1",
+			"name": "Ubisoft Montreal"
+		},
+		"publisher": {
+			"id": "a5d7ceb8-a20b-4ed7-a9c9-c27867753bd0",
+			"name": "Ubisoft Entertainment"
+		},
+		"platforms_available": [
+			{
+				"id": "6b2ae367-077f-42b2-8720-a8d90d1e1801",
+				"name": "PC (Microsoft Windows)"
+			},
+			{
+				"id": "a62b517b-514d-432a-8359-cb2d98285e5c",
+				"name": "PlayStation 3"
+			},
+			{
+				"id": "019462b7-aa7e-4b80-a146-4f25fe84c6f2",
+				"name": "Xbox 360"
+			}
+		],
+		"genres": [
+			{
+				"id": "b402a34f-6e95-4f01-8ab9-afa0fec0dbd4",
+				"name": "Adventure"
+			}
+		],
+		"how_long_to_beat": {
+			"url": "https://howlongtobeat.com/",
+			"main_story": {
+				"average": "21h 21m"
+			},
+			"completionist": {
+				"average": "42h 12m"
+			}
+		},
+		"created_at": "Thu Sep 07 2023 18:44:21 GMT-0300 (Brasilia Standard Time)",
+		"updated_at": null,
+		"created_at_pt_br": "07/09/2023 18:44:21",
+		"updated_at_pt_br": null
+	},
+	{
+		"id": "d8e2ee5e-d789-4d7e-8fdd-333b3b16bb36",
+		"title": "BioShock Infinite",
+		"cover_image": "https://images.igdb.com/igdb/image/upload/t_cover_big/co2n12.jpg",
+		"summary": "BioShock Infinite is the third game in the BioShock series. It is not a direct sequel/prequel to any of the previous BioShock games but takes place in an entirely different setting, although it shares similar features, gameplay and concepts with the previous games. BioShock Infinite features a range of environments that force the player to adapt, with different weapons and strategies for each situation. Interior spaces feature close combat with enemies, but unlike previous games set in Rapture, the setting of Infinite contains open spaces with emphasis on sniping and ranged combat against as many as fifteen enemies at once.",
+		"release": {
+			"year": 2013,
+			"date": "2013-02-26T00:00:00.000Z"
+		},
+		"igdb": {
+			"url": "https://www.igdb.com/games/bioshock-infinite",
+			"rating": 89
+		},
+		"metacritic": {
+			"url": "https://www.igdb.com/games/bioshock-infinite",
+			"rating": 89
+		},
+		"where_to_buy": [
+			{
+				"id": "ff3d4533-9656-4aae-9031-6720865a8bca",
+				"name": "Buy On Amazon",
+				"url": "https://www.amazon.com/"
+			},
+			{
+				"id": "6aa14a7d-9a42-4942-9285-3ebd4ead8732",
+				"name": "Buy On Steam",
+				"url": "https://store.steampowered.com/"
+			}
+		],
+		"developer": {
+			"id": "f4b93d54-b9c7-4ab9-8b71-bc54f7d67e7e",
+			"name": "Irrational Games"
+		},
+		"publisher": {
+			"id": "cd2635ca-209a-4ac1-bc44-66a53e585e91",
+			"name": "2K Games"
+		},
+		"platforms_available": [
+			{
+				"id": "52c620d9-eaf0-4558-a387-72a387a7355f",
+				"name": "PC (Microsoft Windows)"
+			},
+			{
+				"id": "b88185e2-5b85-402b-a0ed-2fb64828303e",
+				"name": "Nintendo Switch"
+			},
+			{
+				"id": "19cfbef5-21ee-4221-b82b-a9a2e7954547",
+				"name": "PlayStation 3"
+			},
+			{
+				"id": "d2b72e4b-95da-466b-8189-991f701cf4f8",
+				"name": "Mac"
+			},
+			{
+				"id": "7dca622a-4667-4e12-a6b8-30020dd05e44",
+				"name": "PlayStation 4"
+			},
+			{
+				"id": "bea9929c-2e5e-4755-83d0-8f0280c9757c",
+				"name": "Linux"
+			},
+			{
+				"id": "e8349053-9ef8-4d2f-adfc-6330f535fda4",
+				"name": "Xbox 360"
+			},
+			{
+				"id": "7ecc593d-e1fa-40c3-acc9-52c5864394cb",
+				"name": "Xbox One"
+			}
+		],
+		"genres": [
+			{
+				"id": "3d422ac9-248d-4047-87f4-dc9a80918a02",
+				"name": "Shooter"
+			},
+			{
+				"id": "e43f21f3-054e-4671-81ab-c62b586c0545",
+				"name": "Adventure"
+			}
+		],
+		"how_long_to_beat": {
+			"url": "https://howlongtobeat.com/",
+			"main_story": {
+				"average": "27h 31m"
+			},
+			"completionist": {
+				"average": "49h 15m"
+			}
+		},
+		"created_at": "Thu Sep 07 2023 18:44:25 GMT-0300 (Brasilia Standard Time)",
+		"updated_at": null,
+		"created_at_pt_br": "07/09/2023 18:44:25",
+		"updated_at_pt_br": null
+	},
+	{
+		"id": "b8bbddb5-d72f-4f6c-beb7-9e7fa1c5b998",
+		"title": "Super Mario RPG: Legend of the Seven Stars",
+		"cover_image": "https://images.igdb.com/igdb/image/upload/t_cover_big/co5r6p.jpg",
+		"summary": "A JRPG entry in the Super Mario franchise in which Mario meets many unlikely allies in order to jump and fight his way through the Mushroom Kingdom and collect stars to repair the Star Road, the pathway that grants people's wishes, which was destroyed by Smithy, the otherworldly entity that hijacked Bowser's castle and threw the Kingdom into disarray.",
+		"release": {
+			"year": 1996,
+			"date": "1996-03-09T00:00:00.000Z"
+		},
+		"igdb": {
+			"url": "https://www.igdb.com/games/super-mario-rpg-legend-of-the-seven-stars",
+			"rating": 88
+		},
+		"metacritic": {
+			"url": "https://www.igdb.com/games/super-mario-rpg-legend-of-the-seven-stars",
+			"rating": 88
+		},
+		"where_to_buy": [
+			{
+				"id": "0f95c744-afa7-464d-ba75-c2d813bf0994",
+				"name": "Buy On Amazon",
+				"url": "https://www.amazon.com/"
+			},
+			{
+				"id": "00876113-fb98-4f43-ad05-2b72f8d50244",
+				"name": "Buy On Steam",
+				"url": "https://store.steampowered.com/"
+			}
+		],
+		"developer": {
+			"id": "d960b42a-6007-4d6f-9201-b661decc098e",
+			"name": "Square Enix"
+		},
+		"publisher": {
+			"id": "ddd53ee8-5b08-49c7-9159-3122b438a39c",
+			"name": "Nintendo"
+		},
+		"platforms_available": [
+			{
+				"id": "de00fa7b-d37a-4406-9205-e964d88697b3",
+				"name": "Wii U"
+			},
+			{
+				"id": "b9b597ca-cefd-4762-aa50-5b2c458c974f",
+				"name": "Super Nintendo Entertainment System"
+			},
+			{
+				"id": "d8b887c6-fe95-47ae-8ec6-3979fdf286d0",
+				"name": "Super Famicom"
+			},
+			{
+				"id": "4a96bf50-d4c0-4323-90be-b9da145ba1f5",
+				"name": "Wii"
+			}
+		],
+		"genres": [
+			{
+				"id": "9e294d41-0c22-4dd1-8056-0a3069ee1d06",
+				"name": "Platform"
+			},
+			{
+				"id": "fc6fb920-ef9f-479a-b241-1ff2db0219c0",
+				"name": "Role-playing (RPG)"
+			},
+			{
+				"id": "57305f53-e761-4b4a-99d8-d97eddd1111d",
+				"name": "Adventure"
+			}
+		],
+		"how_long_to_beat": {
+			"url": "https://howlongtobeat.com/",
+			"main_story": {
+				"average": "26h 48m"
+			},
+			"completionist": {
+				"average": "34h 29m"
+			}
+		},
+		"created_at": "Thu Sep 07 2023 18:44:30 GMT-0300 (Brasilia Standard Time)",
+		"updated_at": null,
+		"created_at_pt_br": "07/09/2023 18:44:30",
+		"updated_at_pt_br": null
+	},
+	{
+		"id": "9a7b65ca-baab-451e-b52c-046c7b8875bc",
+		"title": "Gears of War",
+		"cover_image": "https://images.igdb.com/igdb/image/upload/t_cover_big/co28gi.jpg",
+		"summary": "A third-person tactical shooter from Epic, running on the Unreal Engine 3. Gears of War thrusts gamers into a deep and harrowing story of humankind's epic battle for survival against the Locust Horde, a nightmarish race of creatures that surface from the bowels of the planet.\n\nUnlike other shooters, Gears of War is all about teamwork in a big way. All game modes, levels and scenarios are designed specifically to encourage co-operative play, whether it be with A.I. partners or human players (with A.I. teammates designed with specific strengths, weaknesses and personalities.) On top of that, voice recognition will be available for players, and obviously voice chat to discuss strategy with your friends. In addition to voice chat, gamers will be able to experience individualized matchmaking, view player statistics, earn player achievements, customize their games, and build and personalize their gamer profiles over Xbox Live.",
+		"release": {
+			"year": 2006,
+			"date": "2006-11-07T00:00:00.000Z"
+		},
+		"igdb": {
+			"url": "https://www.igdb.com/games/gears-of-war",
+			"rating": 82
+		},
+		"metacritic": {
+			"url": "https://www.igdb.com/games/gears-of-war",
+			"rating": 82
+		},
+		"where_to_buy": [
+			{
+				"id": "6f7717d6-9dc2-4d4e-a5fc-83b79f03e82b",
+				"name": "Buy On Amazon",
+				"url": "https://www.amazon.com/"
+			},
+			{
+				"id": "a67088ca-519d-4ae8-9bd2-0db62ee3cd25",
+				"name": "Buy On Steam",
+				"url": "https://store.steampowered.com/"
+			}
+		],
+		"developer": {
+			"id": "15bcd43c-cd71-43f0-8889-bc1206143a07",
+			"name": "Epic Games"
+		},
+		"publisher": {
+			"id": "cb5851fe-9850-472c-884f-b530f471745e",
+			"name": "Microsoft Game Studios"
+		},
+		"platforms_available": [
+			{
+				"id": "453f05f1-181d-4dbc-be32-100e325175e2",
+				"name": "PC (Microsoft Windows)"
+			},
+			{
+				"id": "29da108f-08e8-4ec9-bfe5-f3536c5600ec",
+				"name": "Xbox 360"
+			}
+		],
+		"genres": [
+			{
+				"id": "e1588f0d-4526-4c00-94a2-ab5c57dc5f25",
+				"name": "Shooter"
+			}
+		],
+		"how_long_to_beat": {
+			"url": "https://howlongtobeat.com/",
+			"main_story": {
+				"average": "13h 39m"
+			},
+			"completionist": {
+				"average": "39h 30m"
+			}
+		},
+		"created_at": "Thu Sep 07 2023 18:44:35 GMT-0300 (Brasilia Standard Time)",
+		"updated_at": null,
+		"created_at_pt_br": "07/09/2023 18:44:35",
+		"updated_at_pt_br": null
+	},
+	{
+		"id": "b0fd9c8d-21b9-437f-8e2a-a6da1c7f86fe",
+		"title": "Gears of War 2",
+		"cover_image": "https://images.igdb.com/igdb/image/upload/t_cover_big/co28gg.jpg",
+		"summary": "In Gears of War 2, The COG continues its fight against the Locust horde, who are attempting to sink all of the cities on the planet Sera by using a big riftworm to eat the ground beneath them. Sergeant Marcus Fenix leads Delta Squad into the depths of the planet to try to stop the worm from eating but instead they discover the true intent of the Locust actions.",
+		"release": {
+			"year": 2008,
+			"date": "2008-11-07T00:00:00.000Z"
+		},
+		"igdb": {
+			"url": "https://www.igdb.com/games/gears-of-war-2",
+			"rating": 87
+		},
+		"metacritic": {
+			"url": "https://www.igdb.com/games/gears-of-war-2",
+			"rating": 87
+		},
+		"where_to_buy": [
+			{
+				"id": "d32c9668-ace2-4a80-ab47-925411afe59d",
+				"name": "Buy On Amazon",
+				"url": "https://www.amazon.com/"
+			},
+			{
+				"id": "f346f35c-63a7-42e8-8f1c-ae4d977e7785",
+				"name": "Buy On Steam",
+				"url": "https://store.steampowered.com/"
+			}
+		],
+		"developer": {
+			"id": "8c7073b0-a386-4f86-a0a4-f9371fa2b252",
+			"name": "Epic Games"
+		},
+		"publisher": {
+			"id": "aa7eda65-591d-4dff-b3e5-b358b0897a8d",
+			"name": "Microsoft Game Studios"
+		},
+		"platforms_available": [
+			{
+				"id": "ba93be03-590f-46c6-9bd2-63d8aae302d8",
+				"name": "Xbox 360"
+			}
+		],
+		"genres": [
+			{
+				"id": "8ba6ab54-3608-428a-a3a2-e85a4ed2fce5",
+				"name": "Shooter"
+			}
+		],
+		"how_long_to_beat": {
+			"url": "https://howlongtobeat.com/",
+			"main_story": {
+				"average": "21h 29m"
+			},
+			"completionist": {
+				"average": "50h 10m"
+			}
+		},
+		"created_at": "Thu Sep 07 2023 18:44:40 GMT-0300 (Brasilia Standard Time)",
+		"updated_at": null,
+		"created_at_pt_br": "07/09/2023 18:44:40",
+		"updated_at_pt_br": null
+	},
+	{
+		"id": "ff4c3435-546f-4b72-97e4-e0eb5145a7c5",
+		"title": "God of War",
+		"cover_image": "https://images.igdb.com/igdb/image/upload/t_cover_big/co3ddc.jpg",
+		"summary": "Similar to franchises like Devil May Cry, Rygar, and Castlevania, the game draws its inspiration from ancient Greek mythology and boasts a heavy emphasis on exploration and battle strategy. Broken into three to four acts, the game also has a strong focus on story-telling and boast tons of magic spells and abilities. Described as \"Clash of the Titans meets Heavy Metal\", God of War equips its hero with a pair of sword-like chain weapons that can grab enemies, perform multi-hit combos, and pull off a variety of different aerial attacks. Slight platforming elements and an energy collection system similar to that of Onimusha have been incorporated as well, and players are even able to use certain elements of their fallen enemies as a weapon (re: Medusa's head, for instance, can be used to turn enemies to stone after you've defeated her).",
+		"release": {
+			"year": 2005,
+			"date": "2005-03-22T00:00:00.000Z"
+		},
+		"igdb": {
+			"url": "https://www.igdb.com/games/god-of-war",
+			"rating": 88
+		},
+		"metacritic": {
+			"url": "https://www.igdb.com/games/god-of-war",
+			"rating": 88
+		},
+		"where_to_buy": [
+			{
+				"id": "80363f7f-4382-4aee-b31e-a852893f2aac",
+				"name": "Buy On Amazon",
+				"url": "https://www.amazon.com/"
+			},
+			{
+				"id": "caa71286-0d06-467a-9390-da1691c9153b",
+				"name": "Buy On Steam",
+				"url": "https://store.steampowered.com/"
+			}
+		],
+		"developer": {
+			"id": "0403e8d7-1309-4b95-97be-bb62845edc28",
+			"name": "SCE Santa Monica Studio"
+		},
+		"publisher": {
+			"id": "c31f08ca-7b24-45e1-b800-57b4952d4fb2",
+			"name": "Capcom"
+		},
+		"platforms_available": [
+			{
+				"id": "028a539e-c31c-4424-b3ee-13aa3cc91537",
+				"name": "PlayStation 2"
+			}
+		],
+		"genres": [
+			{
+				"id": "3b7d504b-ddc8-467c-a269-48add7db17e0",
+				"name": "Puzzle"
+			},
+			{
+				"id": "23152482-1364-4961-adf6-05875cac8341",
+				"name": "Strategy"
+			},
+			{
+				"id": "4f91fa97-41d1-4ab8-87b4-f8337f908320",
+				"name": "Hack and slash/Beat 'em up"
+			},
+			{
+				"id": "bd781adb-79a5-446a-925a-cab6e1ba4dbe",
+				"name": "Adventure"
+			}
+		],
+		"how_long_to_beat": {
+			"url": "https://howlongtobeat.com/",
+			"main_story": {
+				"average": "29h 18m"
+			},
+			"completionist": {
+				"average": "54h 23m"
+			}
+		},
+		"created_at": "Thu Sep 07 2023 18:44:45 GMT-0300 (Brasilia Standard Time)",
+		"updated_at": null,
+		"created_at_pt_br": "07/09/2023 18:44:45",
+		"updated_at_pt_br": null
+	},
+	{
+		"id": "728c8787-081e-4a39-a108-11a0148bb16b",
+		"title": "God of War II",
+		"cover_image": "https://images.igdb.com/igdb/image/upload/t_cover_big/co3dik.jpg",
+		"summary": "Kratos is now the God of War, having defeated the Olympian god Ares. Shunned by the other gods and still haunted by nightmares from his past, Kratos decides to join an army of Spartans in an attack on the city of Rhodes. Kratos also ignores a warning from the goddess Athena that his lust for revenge is alienating the other gods.",
+		"release": {
+			"year": 2007,
+			"date": "2007-03-13T00:00:00.000Z"
+		},
+		"igdb": {
+			"url": "https://www.igdb.com/games/god-of-war-ii",
+			"rating": 89
+		},
+		"metacritic": {
+			"url": "https://www.igdb.com/games/god-of-war-ii",
+			"rating": 89
+		},
+		"where_to_buy": [
+			{
+				"id": "19a8461f-5947-4d44-8ff3-3e8e85e351ea",
+				"name": "Buy On Amazon",
+				"url": "https://www.amazon.com/"
+			},
+			{
+				"id": "d728e60c-1480-409a-976d-70b45e1e8cf5",
+				"name": "Buy On Steam",
+				"url": "https://store.steampowered.com/"
+			}
+		],
+		"developer": {
+			"id": "9e01dd5e-8c22-4eb1-ae76-30f64de0b08f",
+			"name": "SCE Santa Monica Studio"
+		},
+		"publisher": {
+			"id": "320e812a-c610-4146-8329-ef066aeed776",
+			"name": "Capcom"
+		},
+		"platforms_available": [
+			{
+				"id": "0da1bb39-a85d-443a-8bfa-9648a3392c26",
+				"name": "PlayStation 2"
+			}
+		],
+		"genres": [
+			{
+				"id": "c9c29d29-7b55-43fc-9cd5-3f62378515e0",
+				"name": "Platform"
+			},
+			{
+				"id": "f97ebfc7-6e9c-4006-bfe7-288ad9f63d2c",
+				"name": "Hack and slash/Beat 'em up"
+			},
+			{
+				"id": "db4558be-2600-41c1-92e7-6a013935fec3",
+				"name": "Adventure"
+			}
+		],
+		"how_long_to_beat": {
+			"url": "https://howlongtobeat.com/",
+			"main_story": {
+				"average": "10h 25m"
+			},
+			"completionist": {
+				"average": "64h 32m"
+			}
+		},
+		"created_at": "Thu Sep 07 2023 18:44:51 GMT-0300 (Brasilia Standard Time)",
+		"updated_at": null,
+		"created_at_pt_br": "07/09/2023 18:44:51",
+		"updated_at_pt_br": null
+	},
+	{
+		"id": "5962a297-6b38-4d42-a6b9-35e235d69059",
+		"title": "Assassin's Creed Unity",
+		"cover_image": "https://images.igdb.com/igdb/image/upload/t_cover_big/co1xiq.jpg",
+		"summary": "Paris, 1789. The French Revolution turns a once-magnificent city into a place of terror and chaos. Its cobblestoned streets run red with the blood of commoners who dare to rise up against an oppressive aristocracy. Yet as the nation tears itself apart, a young man named Arno will embark upon an extraordinary journey to expose the true powers behind the Revolution. His pursuit will throw him into the middle of a ruthless struggle for the fate of a nation, and transform him into a true Master Assassin.",
+		"release": {
+			"year": 2014,
+			"date": "2014-11-11T00:00:00.000Z"
+		},
+		"igdb": {
+			"url": "https://www.igdb.com/games/assassins-creed-unity",
+			"rating": 71
+		},
+		"metacritic": {
+			"url": "https://www.igdb.com/games/assassins-creed-unity",
+			"rating": 71
+		},
+		"where_to_buy": [
+			{
+				"id": "dd3a22a6-2524-4494-b47c-292b4398a915",
+				"name": "Buy On Amazon",
+				"url": "https://www.amazon.com/"
+			},
+			{
+				"id": "44f09827-4af8-42c4-88d9-32517db08a77",
+				"name": "Buy On Steam",
+				"url": "https://store.steampowered.com/"
+			}
+		],
+		"developer": {
+			"id": "902982d7-7afd-46a1-a6e2-ccbb842b230b",
+			"name": "Ubisoft Montreal"
+		},
+		"publisher": {
+			"id": "0da1b549-583c-4e66-8e76-56d9efc9d8e6",
+			"name": "Ubisoft Entertainment"
+		},
+		"platforms_available": [
+			{
+				"id": "a8676a74-eb24-47ff-b49a-9aca7e4d5a32",
+				"name": "PC (Microsoft Windows)"
+			},
+			{
+				"id": "5cb14ad6-0999-496b-90fa-8e272d9b5c76",
+				"name": "PlayStation 4"
+			},
+			{
+				"id": "94982c97-51b6-4b01-9e13-a7921c3bfe2e",
+				"name": "Google Stadia"
+			},
+			{
+				"id": "8adc11fa-7ac3-4c5d-a517-438cc9008731",
+				"name": "Xbox One"
+			}
+		],
+		"genres": [
+			{
+				"id": "8219237a-d5be-4c51-9cac-ac91df85fdd5",
+				"name": "Role-playing (RPG)"
+			},
+			{
+				"id": "63cd767d-df8c-4dd8-86a3-d02d6725b930",
+				"name": "Adventure"
+			}
+		],
+		"how_long_to_beat": {
+			"url": "https://howlongtobeat.com/",
+			"main_story": {
+				"average": "11h 28m"
+			},
+			"completionist": {
+				"average": "75h 19m"
+			}
+		},
+		"created_at": "Thu Sep 07 2023 18:44:56 GMT-0300 (Brasilia Standard Time)",
+		"updated_at": null,
+		"created_at_pt_br": "07/09/2023 18:44:56",
+		"updated_at_pt_br": null
+	},
+	{
+		"id": "306426c5-0dec-42f6-871d-ef19e78379a3",
+		"title": "Black Mesa",
+		"cover_image": "https://images.igdb.com/igdb/image/upload/t_cover_big/co20n4.jpg",
+		"summary": "Black Mesa is a re-envisioning of Valve Software's classic science fiction first person shooter, Half-Life. Powered by Source Engine, You will re-visit the inaugural role of Gordon Freeman and his memorable journey through the Black Mesa Research Facility. Expect detailed environments to explore, a huge cast of characters and experimental weaponry. All-new music, voice acting, choreography and added dialogue give way to a more expansive and immersive experience than ever before.",
+		"release": {
+			"year": 2015,
+			"date": "2015-05-05T00:00:00.000Z"
+		},
+		"igdb": {
+			"url": "https://www.igdb.com/games/black-mesa",
+			"rating": 88
+		},
+		"metacritic": {
+			"url": "https://www.igdb.com/games/black-mesa",
+			"rating": 88
+		},
+		"where_to_buy": [
+			{
+				"id": "7cf5ce34-8c18-42c9-ad1f-d1e2872728ee",
+				"name": "Buy On Amazon",
+				"url": "https://www.amazon.com/"
+			},
+			{
+				"id": "1ff2a1fd-73ad-4a93-82b8-4bb3cefad442",
+				"name": "Buy On Steam",
+				"url": "https://store.steampowered.com/"
+			}
+		],
+		"developer": {
+			"id": "0192f91d-5b65-4e3a-931c-0b71990e1bfc",
+			"name": "Crowbar Collective"
+		},
+		"publisher": {
+			"id": "d1f07115-df39-4b46-bea5-745badce4d87",
+			"name": "Crowbar Collective"
+		},
+		"platforms_available": [
+			{
+				"id": "80cd919a-bb72-47d1-aaa9-d21fde0d003a",
+				"name": "PC (Microsoft Windows)"
+			},
+			{
+				"id": "75932e66-6a47-49cc-8ea3-cb73257b9fe8",
+				"name": "Linux"
+			}
+		],
+		"genres": [
+			{
+				"id": "a6634929-8e2e-47c6-baa2-cb0bd216a997",
+				"name": "Shooter"
+			},
+			{
+				"id": "96f7807d-4066-40e1-9efa-505ee5d8e77b",
+				"name": "Platform"
+			},
+			{
+				"id": "6d5b62b4-68ce-489c-867e-36c6b8ce20e8",
+				"name": "Adventure"
+			},
+			{
+				"id": "7e9d0517-b908-472b-b400-319622ff01be",
+				"name": "Indie"
+			}
+		],
+		"how_long_to_beat": {
+			"url": "https://howlongtobeat.com/",
+			"main_story": {
+				"average": "16h 21m"
+			},
+			"completionist": {
+				"average": "55h 19m"
+			}
+		},
+		"created_at": "Thu Sep 07 2023 18:45:02 GMT-0300 (Brasilia Standard Time)",
+		"updated_at": null,
+		"created_at_pt_br": "07/09/2023 18:45:02",
+		"updated_at_pt_br": null
+	},
+	{
+		"id": "2ef1ddb9-726f-4d50-b25a-8e8475212952",
+		"title": "Portal 2",
+		"cover_image": "https://images.igdb.com/igdb/image/upload/t_cover_big/co1rs4.jpg",
+		"summary": "Sequel to the acclaimed Portal (2007), Portal 2 pits the protagonist of the original game, Chell, and her new robot friend, Wheatley, against more puzzles conceived by GLaDOS, an A.I. with the sole purpose of testing the Portal Gun's mechanics and taking revenge on Chell for the events of Portal. As a result of several interactions and revelations, Chell once again pushes to escape Aperture Science Labs.",
+		"release": {
+			"year": 2011,
+			"date": "2011-04-18T00:00:00.000Z"
+		},
+		"igdb": {
+			"url": "https://www.igdb.com/games/portal-2",
+			"rating": 92
+		},
+		"metacritic": {
+			"url": "https://www.igdb.com/games/portal-2",
+			"rating": 92
+		},
+		"where_to_buy": [
+			{
+				"id": "519fac44-07ef-49d4-ac0d-862482562536",
+				"name": "Buy On Amazon",
+				"url": "https://www.amazon.com/"
+			},
+			{
+				"id": "3d28db88-c4d9-456e-a42c-3876b3a7e961",
+				"name": "Buy On Steam",
+				"url": "https://store.steampowered.com/"
+			}
+		],
+		"developer": {
+			"id": "50b14e69-64a1-47af-ac83-7619486d4f3a",
+			"name": "Valve"
+		},
+		"publisher": {
+			"id": "45d5f3ef-3b0e-45b7-b918-ec7457e5f07d",
+			"name": "Valve"
+		},
+		"platforms_available": [
+			{
+				"id": "6da3cb75-b45d-4e9c-8423-c6afed7f9859",
+				"name": "PC (Microsoft Windows)"
+			},
+			{
+				"id": "2d130cc1-21d3-44d4-a0a4-4fcedd6447df",
+				"name": "Nintendo Switch"
+			},
+			{
+				"id": "386204a9-040c-426c-984d-3429528b388f",
+				"name": "PlayStation 3"
+			},
+			{
+				"id": "9b790631-7620-423a-94b8-30cf048a2836",
+				"name": "Mac"
+			},
+			{
+				"id": "2b16e70d-e8e2-4834-8e41-240fdd77b18c",
+				"name": "Linux"
+			},
+			{
+				"id": "6bbb5116-5f3e-42f3-a47f-0cb0b617ec18",
+				"name": "Xbox 360"
+			}
+		],
+		"genres": [
+			{
+				"id": "7752bbb5-5255-4b24-9ca2-1c729fff052f",
+				"name": "Shooter"
+			},
+			{
+				"id": "8a5f2368-cac3-4e5e-9bc6-61693bbe998f",
+				"name": "Platform"
+			},
+			{
+				"id": "3d697a80-7eb9-43f2-b71b-acf91ba5938f",
+				"name": "Puzzle"
+			},
+			{
+				"id": "3ba5e48f-9269-473a-a7a4-d285ec0d8646",
+				"name": "Adventure"
+			}
+		],
+		"how_long_to_beat": {
+			"url": "https://howlongtobeat.com/",
+			"main_story": {
+				"average": "29h 39m"
+			},
+			"completionist": {
+				"average": "31h 36m"
+			}
+		},
+		"created_at": "Thu Sep 07 2023 18:45:06 GMT-0300 (Brasilia Standard Time)",
+		"updated_at": null,
+		"created_at_pt_br": "07/09/2023 18:45:06",
+		"updated_at_pt_br": null
+	},
+	{
+		"id": "5c004847-bb8a-4bd4-9502-b234cb193aff",
+		"title": "Grand Theft Auto: San Andreas",
+		"cover_image": "https://images.igdb.com/igdb/image/upload/t_cover_big/co2lb9.jpg",
+		"summary": "Returning after his mother's murder to the semi-fictional city of Los Santos (based on Los Angeles), Carl Johnson, a former gang banger, must take back the streets for his family and friends by gaining respect and once again gaining control over the streets. However, a story filled with crime, lies and corruption will lead him to trudge the entire state of San Andreas (based on California and Nevada) to rebuild his life.",
+		"release": {
+			"year": 2004,
+			"date": "2004-10-26T00:00:00.000Z"
+		},
+		"igdb": {
+			"url": "https://www.igdb.com/games/grand-theft-auto-san-andreas",
+			"rating": 91
+		},
+		"metacritic": {
+			"url": "https://www.igdb.com/games/grand-theft-auto-san-andreas",
+			"rating": 91
+		},
+		"where_to_buy": [
+			{
+				"id": "addc5803-2b10-4add-a4ed-e978860b2967",
+				"name": "Buy On Amazon",
+				"url": "https://www.amazon.com/"
+			},
+			{
+				"id": "dd8f050c-70fc-4bb1-ac62-d12b69c7b91b",
+				"name": "Buy On Steam",
+				"url": "https://store.steampowered.com/"
+			}
+		],
+		"developer": {
+			"id": "0b99874f-8a9a-4c27-8fd8-c12b4a6a8f45",
+			"name": "Rockstar North"
+		},
+		"publisher": {
+			"id": "479e86e5-6ac5-4c15-a7b3-dcd54c70ff63",
+			"name": "Take-Two Interactive"
+		},
+		"platforms_available": [
+			{
+				"id": "01ffea2f-7c19-493c-8891-d1eb1077130a",
+				"name": "PlayStation 2"
+			},
+			{
+				"id": "f2618b13-681e-4be5-a7e5-60a06ffaaa5f",
+				"name": "iOS"
+			},
+			{
+				"id": "b3e19749-85e9-45ea-b99f-d031858cfd63",
+				"name": "PC (Microsoft Windows)"
+			},
+			{
+				"id": "c638e12e-cc80-48c0-aec0-a2da48e269b2",
+				"name": "Xbox"
+			},
+			{
+				"id": "6bec2e66-40c1-4b8a-b5f2-1f511a9e4aea",
+				"name": "PlayStation 3"
+			},
+			{
+				"id": "c3e4a80b-5b6f-4cde-ae41-a922873d74d2",
+				"name": "Mac"
+			},
+			{
+				"id": "c5e01bed-fd93-46d2-a74a-024c53fffd3b",
+				"name": "Android"
+			},
+			{
+				"id": "bbaf74a3-130a-4237-b281-a3ce0b7e5cda",
+				"name": "PlayStation 4"
+			},
+			{
+				"id": "96ebf560-04d2-4e21-ad51-3a0b663ec3ec",
+				"name": "Xbox 360"
+			}
+		],
+		"genres": [
+			{
+				"id": "46e98c89-71fd-4404-aa6a-713c82a19ee7",
+				"name": "Shooter"
+			},
+			{
+				"id": "c90d6b5a-7c3d-4cea-9bce-aa62a2687ef0",
+				"name": "Racing"
+			},
+			{
+				"id": "64a3aecb-8290-4b9b-99f2-01c6f43a98ca",
+				"name": "Adventure"
+			}
+		],
+		"how_long_to_beat": {
+			"url": "https://howlongtobeat.com/",
+			"main_story": {
+				"average": "20h 23m"
+			},
+			"completionist": {
+				"average": "52h 20m"
+			}
+		},
+		"created_at": "Thu Sep 07 2023 18:45:11 GMT-0300 (Brasilia Standard Time)",
+		"updated_at": null,
+		"created_at_pt_br": "07/09/2023 18:45:11",
+		"updated_at_pt_br": null
+	},
+	{
+		"id": "fd769cb5-8fdf-4b25-a177-d7bf0590536c",
+		"title": "Uncharted 4: A Thief's End",
+		"cover_image": "https://images.igdb.com/igdb/image/upload/t_cover_big/co1r7h.jpg",
+		"summary": "Several years after his last adventure, retired fortune hunter, Nathan Drake, is forced back into the world of thieves. With the stakes much more personal, Drake embarks on a globe-trotting journey in pursuit of a historical conspiracy behind a fabled pirate treasure. His greatest adventure will test his physical limits, his resolve, and ultimately what he's willing to sacrifice to save the ones he loves.",
+		"release": {
+			"year": 2016,
+			"date": "2016-05-10T00:00:00.000Z"
+		},
+		"igdb": {
+			"url": "https://www.igdb.com/games/uncharted-4-a-thief-s-end",
+			"rating": 92
+		},
+		"metacritic": {
+			"url": "https://www.igdb.com/games/uncharted-4-a-thief-s-end",
+			"rating": 92
+		},
+		"where_to_buy": [
+			{
+				"id": "329c8520-f172-4cdc-9125-b4185c4f12ae",
+				"name": "Buy On Amazon",
+				"url": "https://www.amazon.com/"
+			},
+			{
+				"id": "97abc53c-da1f-45fc-9041-a46aba6da422",
+				"name": "Buy On Steam",
+				"url": "https://store.steampowered.com/"
+			}
+		],
+		"developer": {
+			"id": "5631fffb-89c8-429c-a79e-293bc33b489e",
+			"name": "Naughty Dog"
+		},
+		"publisher": {
+			"id": "84a302d4-c6d6-4fb4-9754-d29b66044b34",
+			"name": "Sony Interactive Entertainment"
+		},
+		"platforms_available": [
+			{
+				"id": "5984a1c1-9332-4d3f-9b43-17bbeff975f6",
+				"name": "PlayStation 4"
+			}
+		],
+		"genres": [
+			{
+				"id": "1cd02dba-d5df-4b81-83d4-f110008f5bef",
+				"name": "Shooter"
+			},
+			{
+				"id": "60bda847-c3b0-400e-bcbb-848ad44822b0",
+				"name": "Adventure"
+			}
+		],
+		"how_long_to_beat": {
+			"url": "https://howlongtobeat.com/",
+			"main_story": {
+				"average": "21h 31m"
+			},
+			"completionist": {
+				"average": "43h 19m"
+			}
+		},
+		"created_at": "Thu Sep 07 2023 18:45:16 GMT-0300 (Brasilia Standard Time)",
+		"updated_at": null,
+		"created_at_pt_br": "07/09/2023 18:45:16",
+		"updated_at_pt_br": null
+	},
+	{
+		"id": "e85dde0e-4b58-4dfb-8dfe-289b580228fc",
+		"title": "Mass Effect 2",
+		"cover_image": "https://images.igdb.com/igdb/image/upload/t_cover_big/co20ac.jpg",
+		"summary": "Are you prepared to lose everything to save the galaxy? You'll need to be, Commander Shephard. It's time to bring together your greatest allies and recruit the galaxy's fighting elite to continue the resistance against the invading Reapers. So steel yourself, because this is an astronomical mission where sacrifices must be made. You'll face tougher choices and new, deadlier enemies. Arm yourself and prepare for an unforgettable intergalactic adventure.\n\nGame Features:\n\nShift the fight in your favour. Equip yourself with powerful new weapons almost instantly thanks to a new inventory system. Plus, an improved health regeneration system means you'll spend less time hunting for restorative items.\n\nMake every decision matter. Divisive crew members are just the tip of the iceberg, Commander, because you'll also be tasked with issues of intergalactic diplomacy. And time's a wastin' so don't be afraid to use new prompt-based actions that let you interrupt conversations, even if they could alter the fate of your crew...and the galaxy.\n\nForge new alliances, carefully. You'll fight alongside some of your most trustworthy crew members, but you'll also get the opportunity to recruit new talent. Just choose your new partners with care because the fate of the galaxy rests on your shoulders, Commander.",
+		"release": {
+			"year": 2010,
+			"date": "2010-01-26T00:00:00.000Z"
+		},
+		"igdb": {
+			"url": "https://www.igdb.com/games/mass-effect-2",
+			"rating": 93
+		},
+		"metacritic": {
+			"url": "https://www.igdb.com/games/mass-effect-2",
+			"rating": 93
+		},
+		"where_to_buy": [
+			{
+				"id": "833bbfe3-4494-4abe-99f7-be55b0c56dd3",
+				"name": "Buy On Amazon",
+				"url": "https://www.amazon.com/"
+			},
+			{
+				"id": "d3f7202c-35d2-47ae-8870-3432b22069ab",
+				"name": "Buy On Steam",
+				"url": "https://store.steampowered.com/"
+			}
+		],
+		"developer": {
+			"id": "58aedc2f-69a2-4699-af03-7b4ce2bb4e4b",
+			"name": "BioWare"
+		},
+		"publisher": {
+			"id": "fcb95812-2d4d-4b44-ac0a-bb2998c7a4b8",
+			"name": "Electronic Arts"
+		},
+		"platforms_available": [
+			{
+				"id": "b90a6858-1704-4e5e-890e-7e1963ff334d",
+				"name": "PC (Microsoft Windows)"
+			},
+			{
+				"id": "499fa7b6-a630-4eec-bea5-679e6244a1c3",
+				"name": "PlayStation 3"
+			},
+			{
+				"id": "76ceb944-5747-4058-8293-86c03518f17a",
+				"name": "Xbox 360"
+			}
+		],
+		"genres": [
+			{
+				"id": "f5c338d2-a18b-4280-a999-877bed2d10ca",
+				"name": "Shooter"
+			},
+			{
+				"id": "550cde82-eb01-4478-8225-54388a54143a",
+				"name": "Role-playing (RPG)"
+			},
+			{
+				"id": "c478f87b-2a9a-443c-95ae-4d5d1b970441",
+				"name": "Adventure"
+			}
+		],
+		"how_long_to_beat": {
+			"url": "https://howlongtobeat.com/",
+			"main_story": {
+				"average": "13h 10m"
+			},
+			"completionist": {
+				"average": "56h 26m"
+			}
+		},
+		"created_at": "Thu Sep 07 2023 18:45:21 GMT-0300 (Brasilia Standard Time)",
+		"updated_at": null,
+		"created_at_pt_br": "07/09/2023 18:45:21",
+		"updated_at_pt_br": null
+	},
+	{
+		"id": "3dd6d5ad-dc9f-43c6-b889-2314bd9a6144",
+		"title": "Ghost of Tsushima",
+		"cover_image": "https://images.igdb.com/igdb/image/upload/t_cover_big/co2crj.jpg",
+		"summary": "Uncover the hidden wonders of Tsushima in this open-world action adventure. Forge a new path and wage an unconventional war for the freedom of Tsushima. Challenge opponents with your katana, master the bow to eliminate distant threats, develop stealth tactics to ambush enemies in order to win over the mongols.",
+		"release": {
+			"year": 2020,
+			"date": "2020-07-17T00:00:00.000Z"
+		},
+		"igdb": {
+			"url": "https://www.igdb.com/games/ghost-of-tsushima",
+			"rating": 90
+		},
+		"metacritic": {
+			"url": "https://www.igdb.com/games/ghost-of-tsushima",
+			"rating": 90
+		},
+		"where_to_buy": [
+			{
+				"id": "a284da6e-0585-4231-9e6a-99d4d4bdef17",
+				"name": "Buy On Amazon",
+				"url": "https://www.amazon.com/"
+			},
+			{
+				"id": "3fbdd030-4428-4b75-8d96-dc57e81d591a",
+				"name": "Buy On Steam",
+				"url": "https://store.steampowered.com/"
+			}
+		],
+		"developer": {
+			"id": "aaeb6e97-72dd-4fd3-a313-effb607c634c",
+			"name": "Sucker Punch Productions"
+		},
+		"publisher": {
+			"id": "d8956c66-23ec-4115-985f-fcf90bb91da0",
+			"name": "Sony Interactive Entertainment"
+		},
+		"platforms_available": [
+			{
+				"id": "a22e0097-2811-4e72-923c-5f7ca7561bbb",
+				"name": "PlayStation 4"
+			}
+		],
+		"genres": [
+			{
+				"id": "93bf43e9-91ff-4515-b532-2746aabe8245",
+				"name": "Role-playing (RPG)"
+			},
+			{
+				"id": "f4665470-94d5-4c9d-b0f1-e30a1610d8c3",
+				"name": "Hack and slash/Beat 'em up"
+			},
+			{
+				"id": "fcf85c11-b217-48a9-ad5b-580c672f0e55",
+				"name": "Adventure"
+			}
+		],
+		"how_long_to_beat": {
+			"url": "https://howlongtobeat.com/",
+			"main_story": {
+				"average": "28h 23m"
+			},
+			"completionist": {
+				"average": "41h 31m"
+			}
+		},
+		"created_at": "Thu Sep 07 2023 18:45:26 GMT-0300 (Brasilia Standard Time)",
+		"updated_at": null,
+		"created_at_pt_br": "07/09/2023 18:45:26",
+		"updated_at_pt_br": null
+	},
+	{
+		"id": "ae7cddc7-28f4-4ff2-b43c-6c6caff1534e",
+		"title": "Assassin's Creed Rogue",
+		"cover_image": "https://images.igdb.com/igdb/image/upload/t_cover_big/co1xir.jpg",
+		"summary": "1751. North America. Amidst the chaos and violence of the French and Indian War, Shay Patrick Cormac, a fearless young member of the Assassins order, undergoes a dark transformation that will shape the future of the brotherhood forever. After arguing over a dangerous mission gone tragically wrong, Shay is betrayed by the Assassins who attempt to end his life. Cast aside by those he once called brothers, Shay sets out on a mission to wipe out all who turned against him and ultimately become the most feared Assassin hunter in history. Introducing Assassin’s Creed Rogue, the darkest chapter in the Assassin’s Creed franchise yet. As Shay, you will experience the slow transformation from Assassin to Assassin Hunter. Follow your own creed and set off on an extraordinary journey through New York City, the wild river valley, and far away to the icy cold waters of the North Atlantic in pursuit of your ultimate goal to bring down the Assassins.",
+		"release": {
+			"year": 2014,
+			"date": "2014-11-11T00:00:00.000Z"
+		},
+		"igdb": {
+			"url": "https://www.igdb.com/games/assassins-creed-rogue",
+			"rating": 71
+		},
+		"metacritic": {
+			"url": "https://www.igdb.com/games/assassins-creed-rogue",
+			"rating": 71
+		},
+		"where_to_buy": [
+			{
+				"id": "7c4fad1f-90a7-4f39-b9e8-fe012a7975e7",
+				"name": "Buy On Amazon",
+				"url": "https://www.amazon.com/"
+			},
+			{
+				"id": "626a676d-8438-470e-850a-00cc962767f9",
+				"name": "Buy On Steam",
+				"url": "https://store.steampowered.com/"
+			}
+		],
+		"developer": {
+			"id": "6a42de11-8282-4f10-976f-1e23b0cd6b35",
+			"name": "Ubisoft Chengdu"
+		},
+		"publisher": {
+			"id": "12e99156-8dd7-4774-a1b1-6cdad54c2d5e",
+			"name": "Sony Interactive Entertainment"
+		},
+		"platforms_available": [
+			{
+				"id": "26db72de-7a1c-4376-9f63-5e6b36a53c0b",
+				"name": "PC (Microsoft Windows)"
+			},
+			{
+				"id": "c550fb44-5a17-467f-b318-2158d479a96c",
+				"name": "Nintendo Switch"
+			},
+			{
+				"id": "daf501ad-b14b-4ee8-9dbe-77e6a1445cb2",
+				"name": "PlayStation 3"
+			},
+			{
+				"id": "452a1dac-f77d-442b-bc31-2a630c8d7a58",
+				"name": "Xbox 360"
+			}
+		],
+		"genres": [
+			{
+				"id": "24a57fa0-5796-4153-b285-1c4b5930d61f",
+				"name": "Role-playing (RPG)"
+			},
+			{
+				"id": "192e5b6b-a4ab-4f6c-b84b-7750135cfa4a",
+				"name": "Adventure"
+			}
+		],
+		"how_long_to_beat": {
+			"url": "https://howlongtobeat.com/",
+			"main_story": {
+				"average": "23h 35m"
+			},
+			"completionist": {
+				"average": "51h 48m"
+			}
+		},
+		"created_at": "Thu Sep 07 2023 18:45:31 GMT-0300 (Brasilia Standard Time)",
+		"updated_at": null,
+		"created_at_pt_br": "07/09/2023 18:45:31",
+		"updated_at_pt_br": null
+	},
+	{
+		"id": "30b7f4f8-ade3-467e-9436-a7d88252d251",
+		"title": "Assassin's Creed Syndicate",
+		"cover_image": "https://images.igdb.com/igdb/image/upload/t_cover_big/co1xis.jpg",
+		"summary": "London, 1868. The Industrial Revolution unleashes an incredible age of invention, transforming the lives of millions with technologies once thought impossible. Opportunities created during this period have people rushing to London to engage in this new world, a world no longer controlled by kings, emperors, politicians, or religion, but by a new common denominator: money.\n\nNot everyone is able to enjoy the benefits of this boom, however. Despite fueling the engine of the British Empire, workers’ lives are little more than legalized slavery while the top few percent profit from their labor. Living poor and dying young, the lower class unite in protest as a new kind of family, gangs, who turn to a life in the underworld in their struggle to survive. A struggle, until watchful Assassins come to their side and re-ignite an age-old conflict involving London’s leaders that will echo throughout modern history, from the underground up.\n\nIntroducing Jacob Frye, who with the help of his twin sister Evie, will change the fate of millions in Assassin’s Creed Syndicate. Rise to rally and lead the underworld to break the corrupt stranglehold on London in a visceral adventure filled with action, intrigue, and brutal combat.",
+		"release": {
+			"year": 2015,
+			"date": "2015-10-23T00:00:00.000Z"
+		},
+		"igdb": {
+			"url": "https://www.igdb.com/games/assassins-creed-syndicate",
+			"rating": 73
+		},
+		"metacritic": {
+			"url": "https://www.igdb.com/games/assassins-creed-syndicate",
+			"rating": 73
+		},
+		"where_to_buy": [
+			{
+				"id": "b02db006-e08a-4806-b119-f3dd48a399a9",
+				"name": "Buy On Amazon",
+				"url": "https://www.amazon.com/"
+			},
+			{
+				"id": "263e9749-cabb-4f02-bbdc-f0883593e8ba",
+				"name": "Buy On Steam",
+				"url": "https://store.steampowered.com/"
+			}
+		],
+		"developer": {
+			"id": "165ea63e-2c4e-4e0c-bf18-4b941274a34b",
+			"name": "Ubisoft Québec"
+		},
+		"publisher": {
+			"id": "9533cc9f-791a-41e6-9fdd-28e4ad1417f7",
+			"name": "Sony Interactive Entertainment"
+		},
+		"platforms_available": [
+			{
+				"id": "d3ccfdf1-c340-4b1c-8907-6adebfd5e228",
+				"name": "PC (Microsoft Windows)"
+			},
+			{
+				"id": "2570b878-1dc2-430d-8fdb-eb63645c01c3",
+				"name": "PlayStation 4"
+			},
+			{
+				"id": "89309120-9651-4023-b889-2cbde372cd07",
+				"name": "Google Stadia"
+			},
+			{
+				"id": "5da10880-8e26-4325-adac-a191cfa687ae",
+				"name": "Xbox One"
+			}
+		],
+		"genres": [
+			{
+				"id": "e2bd9bc8-e1f2-445a-a0fe-cbba42df0c75",
+				"name": "Adventure"
+			}
+		],
+		"how_long_to_beat": {
+			"url": "https://howlongtobeat.com/",
+			"main_story": {
+				"average": "17h 41m"
+			},
+			"completionist": {
+				"average": "51h 19m"
+			}
+		},
+		"created_at": "Thu Sep 07 2023 18:45:34 GMT-0300 (Brasilia Standard Time)",
+		"updated_at": null,
+		"created_at_pt_br": "07/09/2023 18:45:34",
+		"updated_at_pt_br": null
+	},
+	{
+		"id": "a5037aca-6394-4f14-961a-41d8f3b2896f",
+		"title": "Call of Duty: Black Ops III",
+		"cover_image": "https://images.igdb.com/igdb/image/upload/t_cover_big/co20yw.jpg",
+		"summary": "Call of Duty: Black Ops 3 deploys players into a dark, twisted future where a new breed of Black Ops soldier emerges and the lines are blurred between our own humanity and the technology we created to stay ahead, in a world where cutting-edge military robotics define warfare. With three unique game modes: Campaign, Multiplayer and Zombies, providing fans with the deepest and most ambitious Call of Duty ever.",
+		"release": {
+			"year": 2015,
+			"date": "2015-11-06T00:00:00.000Z"
+		},
+		"igdb": {
+			"url": "https://www.igdb.com/games/call-of-duty-black-ops-iii",
+			"rating": 71
+		},
+		"metacritic": {
+			"url": "https://www.igdb.com/games/call-of-duty-black-ops-iii",
+			"rating": 71
+		},
+		"where_to_buy": [
+			{
+				"id": "b192c92e-3591-4ba0-a561-0eff3d97cc38",
+				"name": "Buy On Amazon",
+				"url": "https://www.amazon.com/"
+			},
+			{
+				"id": "ad9c0cf2-9f62-4292-92d1-ae253c8344e2",
+				"name": "Buy On Steam",
+				"url": "https://store.steampowered.com/"
+			}
+		],
+		"developer": {
+			"id": "c449efc3-c201-4b7c-a5d3-2948c8009825",
+			"name": "Treyarch"
+		},
+		"publisher": {
+			"id": "2c10f734-e7a5-4810-9293-aac7e7e2d1ee",
+			"name": "Activision"
+		},
+		"platforms_available": [
+			{
+				"id": "8ac06043-e499-4015-8337-a7d477b15288",
+				"name": "PC (Microsoft Windows)"
+			},
+			{
+				"id": "32b4894b-3738-4460-a6f2-5079feb5cbca",
+				"name": "PlayStation 3"
+			},
+			{
+				"id": "cc712a1f-d51d-4dbe-94bf-57ea20415151",
+				"name": "Mac"
+			},
+			{
+				"id": "865e427f-5c26-4edb-a81c-41e34ba86772",
+				"name": "PlayStation 4"
+			},
+			{
+				"id": "2d6aa891-ce37-41c1-83c5-725c5a60a9a8",
+				"name": "Xbox 360"
+			},
+			{
+				"id": "a2e8780d-02b2-40aa-ae87-d7194f535879",
+				"name": "Xbox One"
+			}
+		],
+		"genres": [
+			{
+				"id": "6c4f6deb-00d6-487d-bc19-a0e6c0ba8735",
+				"name": "Shooter"
+			},
+			{
+				"id": "fd8a1feb-6164-4493-b8e3-1868b2d59701",
+				"name": "Adventure"
+			}
+		],
+		"how_long_to_beat": {
+			"url": "https://howlongtobeat.com/",
+			"main_story": {
+				"average": "16h 21m"
+			},
+			"completionist": {
+				"average": "77h 28m"
+			}
+		},
+		"created_at": "Thu Sep 07 2023 18:45:38 GMT-0300 (Brasilia Standard Time)",
+		"updated_at": null,
+		"created_at_pt_br": "07/09/2023 18:45:38",
+		"updated_at_pt_br": null
+	},
+	{
+		"id": "034097f0-82a3-4fca-a19c-e1bada0f091e",
+		"title": "Tibia",
+		"cover_image": "https://images.igdb.com/igdb/image/upload/t_cover_big/co255g.jpg",
+		"summary": "Tibia is one of the oldest and most successful massively multiplayer online role-playing games (MMORPG) created in Europe. In an MMORPG people from all over the world meet on a virtual playground to explore areas, solve tricky riddles and undertake heroic exploits.",
+		"release": {
+			"year": 1996,
+			"date": "1997-01-01T00:00:00.000Z"
+		},
+		"igdb": {
+			"url": "https://www.igdb.com/games/tibia",
+			"rating": 79
+		},
+		"metacritic": {
+			"url": "https://www.igdb.com/games/tibia",
+			"rating": 79
+		},
+		"where_to_buy": [
+			{
+				"id": "96d776df-d15b-49bf-a296-f7e45f1b74a5",
+				"name": "Buy On Amazon",
+				"url": "https://www.amazon.com/"
+			},
+			{
+				"id": "f39e6838-611b-46b0-bd4b-0617bdd0f633",
+				"name": "Buy On Steam",
+				"url": "https://store.steampowered.com/"
+			}
+		],
+		"developer": {
+			"id": "4afc95eb-445d-4e9d-b8f7-a02f5476ed85",
+			"name": "CipSoft"
+		},
+		"publisher": {
+			"id": "dfa91494-ddec-41a3-9f5b-a95703effa58",
+			"name": "CipSoft"
+		},
+		"platforms_available": [
+			{
+				"id": "8e3eb2e9-1e25-4d9e-a0c4-0922f43aee8b",
+				"name": "PC (Microsoft Windows)"
+			},
+			{
+				"id": "c557d004-f2d3-4421-804e-d50b45b86ff0",
+				"name": "Mac"
+			},
+			{
+				"id": "4675521e-09f8-4875-941e-ecad42689dd1",
+				"name": "Linux"
+			}
+		],
+		"genres": [
+			{
+				"id": "3b977f0d-32dd-407a-a7e4-747ed039714f",
+				"name": "Role-playing (RPG)"
+			},
+			{
+				"id": "d194fe5f-cc74-4841-aa4c-f678106a6a1d",
+				"name": "Adventure"
+			}
+		],
+		"how_long_to_beat": {
+			"url": "https://howlongtobeat.com/",
+			"main_story": {
+				"average": "30h 49m"
+			},
+			"completionist": {
+				"average": "56h 30m"
+			}
+		},
+		"created_at": "Thu Sep 07 2023 18:45:43 GMT-0300 (Brasilia Standard Time)",
+		"updated_at": null,
+		"created_at_pt_br": "07/09/2023 18:45:43",
+		"updated_at_pt_br": null
+	}
+]

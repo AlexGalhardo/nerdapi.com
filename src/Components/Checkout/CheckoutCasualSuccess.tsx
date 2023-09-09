@@ -1,4 +1,5 @@
-import { API_URL } from "../../Api";
+import { API_URL } from "../../Utils/Envs";
+
 
 export default function CheckoutCasualSuccess({ sessionId }: { sessionId: string }) {
     const handleSubmit = async (e: any) => {

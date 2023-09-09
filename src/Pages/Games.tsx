@@ -1,73 +1,11 @@
 import { CSSProperties, useCallback, useEffect, useState } from "react";
 import Navbar from "../Components/Navbar";
 import Footer from "../Components/Footer";
-import { API_URL } from "../Api";
 import { useLocation } from "react-router-dom";
 import ErrorAlertMessage from "../Components/Alerts/ErrorAlertMessage";
 import SuccessAlertMessage from "../Components/Alerts/SuccessAlertMessage";
-
-export interface PlatformAvailable {
-    id: string;
-    name: string;
-}
-
-export interface Developer {
-    id: string;
-    name: string;
-}
-
-export interface Publisher {
-    id: string;
-    name: string;
-}
-
-export interface Genre {
-    id: string;
-    name: string;
-}
-
-export interface WhereToBuy {
-    id: string;
-    name: string;
-    url: string;
-}
-
-export interface Game {
-    id: string;
-    title: string;
-    cover_image: string;
-    summary: string;
-    release: {
-        year: number;
-        date: string;
-    };
-    igdb: {
-        url: string | null;
-        rating: number | null;
-    };
-    metacritic: {
-        url: string | null;
-        rating: number | null;
-    };
-    where_to_buy: WhereToBuy[];
-    developer: Developer;
-    publisher: Publisher;
-    platforms_available: PlatformAvailable[];
-    genres: Genre[];
-    how_long_to_beat?: {
-        url: string | null;
-        main_story: {
-            average: string | null;
-        };
-        completionist: {
-            average: string | null;
-        };
-    };
-    created_at: string;
-    updated_at: string | null;
-    created_at_pt_br: string;
-    updated_at_pt_br: string | null;
-}
+import GamesRepository, { Game } from "../Repositories/Games.repository";
+import Head from "../Components/Head";
 
 export default function Games() {
     const [error, setError] = useState<string | null>();
@@ -81,143 +19,139 @@ export default function Games() {
 
     const recommendRandomGame = useCallback(async () => {
         setError("");
-        const response = await fetch(`${API_URL}/games/random`);
-        const json = await response.json();
-        const { data } = json;
+		const randomGame = new GamesRepository().getRandom()
 
         setGame({
-            id: data.id,
-            title: data.title,
-            cover_image: data.cover_image,
-            summary: data.summary,
+            id: randomGame.id,
+            title: randomGame.title,
+            cover_image: randomGame.cover_image,
+            summary: randomGame.summary,
             release: {
-                year: data.release.year,
-                date: data.release.date,
+                year: randomGame.release.year,
+                date: randomGame.release.date,
             },
             igdb: {
-                url: data.igdb.url,
-                rating: data.igdb.rating,
+                url: randomGame.igdb.url,
+                rating: randomGame.igdb.rating,
             },
             metacritic: {
-                url: data.metacritic.url,
-                rating: data.metacritic.rating,
+                url: randomGame.metacritic.url,
+                rating: randomGame.metacritic.rating,
             },
-            where_to_buy: data.where_to_buy,
-            developer: data.developer,
-            publisher: data.publisher,
-            platforms_available: data.platforms_available,
-            genres: data.genres,
+            where_to_buy: randomGame.where_to_buy,
+            developer: randomGame.developer,
+            publisher: randomGame.publisher,
+            platforms_available: randomGame.platforms_available,
+            genres: randomGame.genres,
             how_long_to_beat: {
-                url: data.how_long_to_beat.url,
+                url: randomGame.how_long_to_beat.url,
                 main_story: {
-                    average: data.how_long_to_beat.main_story.average,
+                    average: randomGame.how_long_to_beat.main_story.average,
                 },
                 completionist: {
-                    average: data.how_long_to_beat.completionist.average,
+                    average: randomGame.how_long_to_beat.completionist.average,
                 },
             },
-            created_at: data.created_at,
-            updated_at: data.updated_at,
-            created_at_pt_br: data.created_at_pt_br,
-            updated_at_pt_br: data.updated_at_pt_br,
+            created_at: randomGame.created_at,
+            updated_at: randomGame.updated_at,
+            created_at_pt_br: randomGame.created_at_pt_br,
+            updated_at_pt_br: randomGame.updated_at_pt_br,
         });
     }, []);
 
     const searchGameByTitle = useCallback(async (gameTitle: string | null) => {
         if (gameTitle) {
-            const response = await fetch(`${API_URL}/games/title/${gameTitle}`);
-            const json = await response.json();
-            const { data } = json;
+			const searchGameTitle = new GamesRepository().getByTitle(gameTitle)
 
-            if (!data.length) {
+            if (!searchGameTitle.length) {
                 setError(`Nothing found for search "${gameTitle}". Recommending random game...`);
                 setTogalGamesFound(null);
                 setGames(null);
                 setFoundMoreThanOne(false);
 
-                const response = await fetch(`${API_URL}/games/random`);
-                const json = await response.json();
-                const { data } = json;
+                const randomGame = new GamesRepository().getRandom()
 
-                setGame({
-                    id: data.id,
-                    title: data.title,
-                    cover_image: data.cover_image,
-                    summary: data.summary,
-                    release: {
-                        year: data.release.year,
-                        date: data.release.date,
-                    },
-                    igdb: {
-                        url: data.igdb.url,
-                        rating: data.igdb.rating,
-                    },
-                    metacritic: {
-                        url: data.metacritic.url,
-                        rating: data.metacritic.rating,
-                    },
-                    where_to_buy: data.where_to_buy,
-                    developer: data.developer,
-                    publisher: data.publisher,
-                    platforms_available: data.platforms_available,
-                    genres: data.genres,
-                    how_long_to_beat: {
-                        url: data.how_long_to_beat.url,
-                        main_story: {
-                            average: data.how_long_to_beat.main_story.average,
-                        },
-                        completionist: {
-                            average: data.how_long_to_beat.completionist.average,
-                        },
-                    },
-                    created_at: data.created_at,
-                    updated_at: data.updated_at,
-                    created_at_pt_br: data.created_at_pt_br,
-                    updated_at_pt_br: data.updated_at_pt_br,
-                });
+				setGame({
+					id: randomGame.id,
+					title: randomGame.title,
+					cover_image: randomGame.cover_image,
+					summary: randomGame.summary,
+					release: {
+						year: randomGame.release.year,
+						date: randomGame.release.date,
+					},
+					igdb: {
+						url: randomGame.igdb.url,
+						rating: randomGame.igdb.rating,
+					},
+					metacritic: {
+						url: randomGame.metacritic.url,
+						rating: randomGame.metacritic.rating,
+					},
+					where_to_buy: randomGame.where_to_buy,
+					developer: randomGame.developer,
+					publisher: randomGame.publisher,
+					platforms_available: randomGame.platforms_available,
+					genres: randomGame.genres,
+					how_long_to_beat: {
+						url: randomGame.how_long_to_beat.url,
+						main_story: {
+							average: randomGame.how_long_to_beat.main_story.average,
+						},
+						completionist: {
+							average: randomGame.how_long_to_beat.completionist.average,
+						},
+					},
+					created_at: randomGame.created_at,
+					updated_at: randomGame.updated_at,
+					created_at_pt_br: randomGame.created_at_pt_br,
+					updated_at_pt_br: randomGame.updated_at_pt_br,
+				});
             }
 
-            if (data.length > 1) {
+            if (searchGameTitle.length > 1) {
+				setError('')
                 setFoundMoreThanOne(true);
-                setTogalGamesFound(data.length);
-                setGames(data);
+                setTogalGamesFound(searchGameTitle.length);
+                setGames(searchGameTitle);
             } else {
+                setGames(null);
                 setFoundMoreThanOne(false);
                 setGame({
-                    id: data[0].id,
-                    title: data[0].title,
-                    cover_image: data[0].cover_image,
-                    summary: data[0].summary,
+                    id: searchGameTitle[0].id,
+                    title: searchGameTitle[0].title,
+                    cover_image: searchGameTitle[0].cover_image,
+                    summary: searchGameTitle[0].summary,
                     release: {
-                        year: data[0].release.year,
-                        date: data[0].release.date,
+                        year: searchGameTitle[0].release.year,
+                        date: searchGameTitle[0].release.date,
                     },
                     igdb: {
-                        url: data[0].igdb.url,
-                        rating: data[0].igdb.rating,
+                        url: searchGameTitle[0].igdb.url,
+                        rating: searchGameTitle[0].igdb.rating,
                     },
                     metacritic: {
-                        url: data[0].metacritic.url,
-                        rating: data[0].metacritic.rating,
+                        url: searchGameTitle[0].metacritic.url,
+                        rating: searchGameTitle[0].metacritic.rating,
                     },
-                    where_to_buy: data[0].where_to_buy,
-                    developer: data[0].developer,
-                    publisher: data[0].publisher,
-                    platforms_available: data[0].platforms_available,
-                    genres: data[0].genres,
+                    where_to_buy: searchGameTitle[0].where_to_buy,
+                    developer: searchGameTitle[0].developer,
+                    publisher: searchGameTitle[0].publisher,
+                    platforms_available: searchGameTitle[0].platforms_available,
+                    genres: searchGameTitle[0].genres,
                     how_long_to_beat: {
-                        url: data[0].how_long_to_beat.url,
+                        url: searchGameTitle[0].how_long_to_beat.url,
                         main_story: {
-                            average: data[0].how_long_to_beat.main_story.average,
+                            average: searchGameTitle[0].how_long_to_beat.main_story.average,
                         },
                         completionist: {
-                            average: data[0].how_long_to_beat.completionist.average,
+                            average: searchGameTitle[0].how_long_to_beat.completionist.average,
                         },
                     },
-                    created_at: data[0].created_at,
-                    updated_at: data[0].updated_at,
-                    created_at_pt_br: data[0].created_at_pt_br,
-                    updated_at_pt_br: data[0].updated_at_pt_br,
+                    created_at: searchGameTitle[0].created_at,
+                    updated_at: searchGameTitle[0].updated_at,
+                    created_at_pt_br: searchGameTitle[0].created_at_pt_br,
+                    updated_at_pt_br: searchGameTitle[0].updated_at_pt_br,
                 });
             }
         }
@@ -234,6 +168,7 @@ export default function Games() {
 
     return (
         <>
+			<Head title="The Best Developer Experience API for Games" description="Come look to see great games!"/>
             <Navbar />
             <div className="container" style={container}>
                 <div className="row mt-5">
