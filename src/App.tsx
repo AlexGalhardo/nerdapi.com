@@ -11,6 +11,7 @@ import Auth from "./Components/Auth/Auth";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap-icons/font/bootstrap-icons.css";
 import "./Style.css";
+import Privacy from "./Pages/Privacy";
 
 export default function App() {
     return (
@@ -25,6 +26,7 @@ export default function App() {
                     <Route path="/checkout/*" element={<Checkout />} />
                     <Route path="/auth/*" element={<Auth />} />
                     <Route path="/profile/*" element={<Profile />} />
+					<Route path="/privacy/*" element={<Privacy />} />
                     <Route path="*" element={<NotFound />} />
                 </Routes>
             </GlobalStateProvider>
