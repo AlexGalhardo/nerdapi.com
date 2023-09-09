@@ -6,6 +6,8 @@ import SuccessAlertMessage from "../Components/Alerts/SuccessAlertMessage";
 import Button from "../Components/Forms/Button";
 import Footer from "../Components/Footer";
 import Head from "../Components/Head";
+import { ToastContainer, toast } from "react-toastify";
+import 'react-toastify/dist/ReactToastify.css';
 
 export default function Contact() {
     const [name, setName] = useState<string>();
@@ -31,12 +33,32 @@ export default function Contact() {
             }
         } catch (error: any) {
             setError(error);
+			toast.error(`ERROR: ${error}`, {
+				position: "top-right",
+				autoClose: 3000,
+				hideProgressBar: false,
+				closeOnClick: true,
+				pauseOnHover: true,
+				draggable: true,
+				progress: undefined,
+				theme: "dark",
+			});
         } finally {
             setName("");
             setEmail("");
             setSubject("");
             setMessage("");
             setError("");
+			toast.success("MESSAGE SEND!", {
+				position: "bottom-right",
+				autoClose: 3000,
+				hideProgressBar: false,
+				closeOnClick: true,
+				pauseOnHover: true,
+				draggable: true,
+				progress: undefined,
+				theme: "dark",
+			});
         }
     }
 
@@ -111,6 +133,8 @@ export default function Contact() {
                             {loading ? <Button disabled={true}>Processing...</Button> : <Button>Send Message</Button>}
                         </form>
 
+						<ToastContainer />
+
                         {contactSend && <SuccessAlertMessage message={"Message send!"} />}
 
                         {error && <ErrorAlertMessage error={error} />}
@@ -126,7 +150,3 @@ export default function Contact() {
 const containerContact: CSSProperties = {
     marginTop: "300px",
 };
-function querySelector(arg0: string) {
-	throw new Error("Function not implemented.");
-}
-

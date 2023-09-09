@@ -20,8 +20,6 @@ export default function Pricing() {
                 },
             });
 
-			console.log('\n\n response => ', response)
-
             if (response.ok) {
                 const json = await response.json();
 

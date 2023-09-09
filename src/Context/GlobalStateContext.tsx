@@ -2,20 +2,17 @@ import { createContext, useCallback, useContext, useEffect, useState } from "rea
 import { useNavigate } from "react-router-dom";
 import { RECOVER_PASSWORD, SEND_CONTACT, USER_LOGIN, USER_REGISTER } from "../Api";
 import { API_URL } from "../Utils/Envs";
-interface GlobalState {
-    FLASH_MESSAGES: {
-        YOU_NEED_TO_LOGIN_FIRST: string | undefined;
-        USER_ARE_ALREADY_LOGGED_IN: string | undefined;
-    };
-    USER: {
-        LOGGED_IN: boolean;
-    };
+
+interface UpdateProfileDTO {
+	username?: string,
+	telegramNumber?: string,
+	olderPassword?: string,
+	newPassword?: string
 }
 interface GlobalStateContextPort {
     error: null | string;
     loading: boolean;
-    globalState: GlobalState;
-    user: any | null;
+    user: User | null;
     login: null | boolean;
     contactSend: boolean;
     sendRecoverPassword: boolean;
@@ -25,6 +22,7 @@ interface GlobalStateContextPort {
     getUser: (token: string) => Promise<void>;
     userRegister: (username: string, email: string, password: string) => Promise<any>;
     recoverPassword: (email: string) => Promise<any>;
+	updateProfile({username, telegramNumber, olderPassword, newPassword}: UpdateProfileDTO): void;
 }
 
 export interface User {
@@ -60,35 +58,7 @@ export interface User {
 const GlobalStateContext = createContext<GlobalStateContextPort | undefined>(undefined);
 
 export const GlobalStateProvider = ({ children }: React.PropsWithChildren) => {
-    const [user, setUser] = useState<User>({
-        id: null,
-        username: null,
-        email: null,
-        telegram_number: null,
-        password: null,
-        jwt_token: null,
-        api_token: null,
-        reset_password_token: null,
-        reset_password_token_expires_at: null,
-        stripe: {
-            customer_id: null,
-            subscription: {
-                active: false,
-                name: null,
-                starts_at: null,
-                ends_at: null,
-                charge_id: null,
-                receipt_url: null,
-                hosted_invoice_url: null,
-            },
-            updated_at: null,
-            updated_at_pt_br: null,
-        },
-        created_at: null,
-        updated_at: null,
-        created_at_pt_br: null,
-        updated_at_pt_br: null,
-    });
+    const [user, setUser] = useState<User | null>(null);
     const [login, setLogin] = useState<null | boolean>(null);
     const [loading, setLoading] = useState<boolean>(false);
     const [error, setError] = useState<null | string>(null);
@@ -96,31 +66,15 @@ export const GlobalStateProvider = ({ children }: React.PropsWithChildren) => {
     const [sendRecoverPassword, setSendRecoverPassword] = useState<boolean>(false);
     const navigate = useNavigate();
 
-    const [globalState, setGlobalState] = useState<GlobalState>({
-        FLASH_MESSAGES: {
-            YOU_NEED_TO_LOGIN_FIRST: "You need to login first",
-            USER_ARE_ALREADY_LOGGED_IN: "You are already logged in",
-        },
-        USER: {
-            LOGGED_IN: false,
-        },
-    });
-
     const userLogout = useCallback(async function () {
+		setUser(null)
         setError(null);
         setLoading(false);
         setLogin(false);
-        setGlobalState({
-            ...globalState,
-            USER: {
-                ...globalState.USER,
-                LOGGED_IN: false,
-            },
-        });
         window.localStorage.removeItem("token");
     }, []);
 
-    const getUser = useCallback(async function (token: string) {
+    async function getUser(token: string) {
         const response = await fetch(`${API_URL}/tokenUser`, {
             method: "POST",
             headers: {
@@ -129,53 +83,42 @@ export const GlobalStateProvider = ({ children }: React.PropsWithChildren) => {
             },
         });
 
-        const json = await response.json();
-        console.log("json.data é => ", json.data);
+        const { data } = await response.json();
+
+		console.log('\n\n data => ', data)
+
         setUser({
-            id: json.data.id,
-            username: json.data.username,
-            email: json.data.email,
-            telegram_number: json.data.telegram_number,
-            password: json.data.password,
-            jwt_token: json.data.jwt_token,
-            api_token: json.data.api_token,
-            reset_password_token: json.data.reset_password_token,
-            reset_password_token_expires_at: json.data.reset_password_token_expires_at,
+            id: data.id,
+            username: data.username,
+            email: data.email,
+            telegram_number: data.telegram_number,
+            password: data.password,
+            jwt_token: data.jwt_token,
+            api_token: data.api_token,
+            reset_password_token: data.reset_password_token,
+            reset_password_token_expires_at: data.reset_password_token_expires_at,
             stripe: {
-                customer_id: json.data.stripe.customer_id,
+                customer_id: data.stripe.customer_id,
                 subscription: {
-                    active: json.data.stripe.subscription.active,
-                    name: json.data.stripe.subscription.name,
-                    starts_at: json.data.stripe.subscription.starts_at,
-                    ends_at: json.data.stripe.subscription.ends_at,
-                    charge_id: json.data.stripe.subscription.charge_id,
-                    receipt_url: json.data.stripe.subscription.receipt_url,
-                    hosted_invoice_url: json.data.stripe.subscription.hosted_invoice_url,
+                    active: data.stripe.subscription.active,
+                    name: data.stripe.subscription.name,
+                    starts_at: data.stripe.subscription.starts_at,
+                    ends_at: data.stripe.subscription.ends_at,
+                    charge_id: data.stripe.subscription.charge_id,
+                    receipt_url: data.stripe.subscription.receipt_url,
+                    hosted_invoice_url: data.stripe.subscription.hosted_invoice_url,
                 },
-                updated_at: json.data.stripe.updated_at,
-                updated_at_pt_br: json.data.stripe.updated_at_pt_br,
+                updated_at: data.stripe.updated_at,
+                updated_at_pt_br: data.stripe.updated_at_pt_br,
             },
-            created_at: json.data.created_at,
-            updated_at: json.data.updated_at,
-            created_at_pt_br: json.data.created_at_pt_br,
-            updated_at_pt_br: json.data.updated_at_pt_br,
+            created_at: data.created_at,
+            updated_at: data.updated_at,
+            created_at_pt_br: data.created_at_pt_br,
+            updated_at_pt_br: data.updated_at_pt_br,
         });
-
-        console.log("user é => ", user);
-
-        window.localStorage.setItem("token", token);
-
-        setGlobalState({
-            ...globalState,
-            USER: {
-                ...globalState.USER,
-                LOGGED_IN: true,
-            },
-        });
-        console.log("globalState é => ", globalState);
 
         setLogin(true);
-    }, []);
+    };
 
     async function sendContact(name: string, email: string, subject: string, message: string): Promise<any> {
         try {
@@ -221,68 +164,15 @@ export const GlobalStateProvider = ({ children }: React.PropsWithChildren) => {
 
             if (!response.ok) throw new Error(`Error: ${response.statusText}`);
 
-            if (response.ok) {
-                const json = await response.json();
+			const json = await response.json();
 
-                if (json.redirect) {
-                    window.location.href = json.redirect;
-                } else {
-                    console.error("Response does not contain a redirect URL.");
-                }
-            } else {
-                console.error("Error:", response.statusText);
-            }
+			if (json.redirect) {
+				window.location.href = json.redirect;
+			}
 
-            const { jwt_token } = await response.json();
-
+            const { jwt_token } = json
             window.localStorage.setItem("token", jwt_token);
-
-            const getUserResponse = await fetch(`${API_URL}/tokenUser`, {
-                method: "POST",
-                headers: {
-                    "Content-Type": "application/json",
-                    Authorization: `Bearer ${jwt_token}`,
-                },
-            });
-            const json = await getUserResponse.json();
-            setUser({
-                id: json.data.id,
-                username: json.data.username,
-                email: json.data.email,
-                telegram_number: json.data.telegram_number,
-                password: json.data.password,
-                jwt_token: json.data.jwt_token,
-                api_token: json.data.api_token,
-                reset_password_token: json.data.reset_password_token,
-                reset_password_token_expires_at: json.data.reset_password_token_expires_at,
-                stripe: {
-                    customer_id: json.data.stripe.customer_id,
-                    subscription: {
-                        active: json.data.stripe.subscription.active,
-                        name: json.data.stripe.subscription.name,
-                        starts_at: json.stripe.subscription.starts_at,
-                        ends_at: json.data.stripe.subscription.ends_at,
-                        charge_id: json.data.stripe.subscription.charge_id,
-                        receipt_url: json.data.stripe.subscription.receipt_url,
-                        hosted_invoice_url: json.stripe.subscription.hosted_invoice_url,
-                    },
-                    updated_at: json.data.stripe.updated_at,
-                    updated_at_pt_br: json.data.stripe.updated_at_pt_br,
-                },
-                created_at: json.data.created_at,
-                updated_at: json.data.updated_at,
-                created_at_pt_br: json.data.created_at_pt_br,
-                updated_at_pt_br: json.data.updated_at_pt_br,
-            });
-            setGlobalState({
-                ...globalState,
-                USER: {
-                    ...globalState.USER,
-                    LOGGED_IN: true,
-                },
-            });
-            setLogin(true);
-
+            await getUser(jwt_token);
             navigate("/profile");
         } catch (err: any) {
             setError(err.message);
@@ -292,14 +182,51 @@ export const GlobalStateProvider = ({ children }: React.PropsWithChildren) => {
         }
     }
 
+	async function updateProfile({username, telegramNumber, olderPassword, newPassword}: UpdateProfileDTO){
+		try {
+			setError(null);
+            setLoading(true);
+
+			const response = await fetch(`${API_URL}/profile`, {
+				method: "PUT",
+				headers: {
+					"Content-Type": "application/json",
+					Authorization: `Bearer ${window.localStorage.getItem("token")}`,
+				},
+				body: JSON.stringify({
+					username,
+					telegramNumber,
+					olderPassword,
+					newPassword
+				})
+			});
+
+			if(response.ok){
+				const {data} = await response.json();
+				if(user){
+					setUser({
+						...user,
+						username: data.username,
+						telegram_number: data.telegramNumber,
+						password: data.password
+					})
+				}
+			}
+		}
+		catch(error: any){
+			setError(error.message);
+			setLoading(false);
+		} finally {
+			setLoading(false);
+		}
+	}
+
     async function userRegister(username: string, email: string, password: string): Promise<any> {
         try {
             setError(null);
             setLoading(true);
             const { url, options } = USER_REGISTER({ username, email, password });
-            console.log("\n chegou ANTES do response....");
             const response = await fetch(url, options);
-            console.log("\n chegou depois do response....");
             if (!response.ok) throw new Error(`Error: ${response.statusText}`);
             const { token } = await response.json();
             window.localStorage.setItem("token", token);
@@ -314,46 +241,43 @@ export const GlobalStateProvider = ({ children }: React.PropsWithChildren) => {
     }
 
     useEffect(() => {
-        async function autoLogin() {
-            const currentUrl = window.location.href;
-            const urlSearchParams = new URLSearchParams(currentUrl.split("?")[1]);
-            let token = null;
-
-            if (urlSearchParams.get("token")) token = urlSearchParams.get("token");
-            else if (window.localStorage.getItem("token")) token = window.localStorage.getItem("token");
-
-            if (token) {
-                try {
-                    setError(null);
-                    setLoading(true);
-                    const response = await fetch(`${API_URL}/tokenUser`, {
-                        method: "POST",
-                        headers: {
-                            "Content-Type": "application/json",
-                            Authorization: `Bearer ${token}`,
-                        },
-                    });
-                    if (!response.ok) throw new Error("Invalid JWT Token");
-                    window.localStorage.setItem("token", token);
-                    await getUser(token);
-                } catch (err) {
-                    console.log("\n err => ", err);
-                    userLogout();
-                    setLogin(false);
-                } finally {
-                    setLoading(false);
-                }
-            } else {
-                setLogin(false);
-            }
-        }
+		async function autoLogin() {
+			console.log('\n\n entrou no autologin...')
+			// const currentUrl = window.location.href;
+			// const urlSearchParams = new URLSearchParams(currentUrl.split("?")[1]);
+			// let token = null;
+			// if (urlSearchParams.get("token")) token = urlSearchParams.get("token");
+			// else if (window.localStorage.getItem("token")) token = window.localStorage.getItem("token");
+			const token = window.localStorage.getItem('token');
+			console.log('\n\n token => ', token)
+			if (token) {
+				try {
+					setError(null);
+					setLoading(true);
+					const response = await fetch(`${API_URL}/tokenUser`, {
+						method: "POST",
+						headers: {
+							"Content-Type": "application/json",
+							Authorization: `Bearer ${token}`,
+						},
+					});
+					if (!response.ok) throw new Error("Invalid JWT Token");
+					await getUser(token)
+				} catch (err) {
+					userLogout();
+				} finally {
+					setLoading(false);
+				}
+			} else {
+				setLogin(false);
+			}
+		}
         autoLogin();
-    }, []);
+    }, [userLogout]);
 
     return (
         <GlobalStateContext.Provider
             value={{
-                globalState,
                 userLogin,
                 userLogout,
                 user,
@@ -366,6 +290,7 @@ export const GlobalStateProvider = ({ children }: React.PropsWithChildren) => {
                 userRegister,
                 sendRecoverPassword,
                 recoverPassword,
+				updateProfile
             }}
         >
             {children}

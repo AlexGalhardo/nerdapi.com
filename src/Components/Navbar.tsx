@@ -7,7 +7,6 @@ export default function Navbar() {
     const navigate = useNavigate();
     const [search, setSearch] = useState<string | undefined>();
 	const location = useLocation()
-	console.log('location.pathname => ', location.pathname)
 
     function handleLogout() {
         userLogout();
