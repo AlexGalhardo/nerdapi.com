@@ -1,3 +1,0 @@
-ID=74viw19bhlhb7to8kdf6dlahas2uj1
-SECRET=wjpwdv0vzk9gm1x9jvoy5vg85te98d
-access_token=csxmyu1ie6gpp5ikr0w8vboysuzq4h
