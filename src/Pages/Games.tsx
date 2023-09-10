@@ -222,7 +222,8 @@ export default function Games() {
                                         <ul>
                                             {game?.where_to_buy.map((item) => (
                                                 <li key={item.id}>
-                                                    <a href={item.url} target="_blank">
+                                                    {/* <a href={item.url} target="_blank"> */}
+													<a href="#">
                                                         {item.name}
                                                     </a>
                                                 </li>
@@ -233,13 +234,15 @@ export default function Games() {
                                         <b>Ratings:</b>
                                         <ul>
                                             <li className="">
-                                                <a href={game?.metacritic.url as string} target="_blank">
+                                                {/* <a href={game?.metacritic.url as string} target="_blank"> */}
+												<a href="#">
                                                     Metacritic Rating:
                                                 </a>{" "}
                                                 ⭐<span id="game_igdb_rating">{game?.metacritic.rating}</span>
                                             </li>
                                             <li className="">
-                                                <a href={game?.igdb.url as string} target="_blank">
+                                                {/* <a href={game?.igdb.url as string} target="_blank"> */}
+												<a href="#">
                                                     IGDB Rating:
                                                 </a>{" "}
                                                 ⭐<span id="game_igdb_rating">{game?.igdb.rating}</span>
@@ -250,7 +253,8 @@ export default function Games() {
                                         <b>Developer:</b>
                                         <ul>
                                             <li>
-                                                <a href={`/developer/${game?.developer.name}`} target="_blank">
+                                                {/* <a href={`/developer/${game?.developer.name}`} target="_blank"> */}
+												<a href="#">
                                                     {game?.developer.name}
                                                 </a>
                                             </li>
@@ -260,7 +264,8 @@ export default function Games() {
                                         <b>Publisher:</b>
                                         <ul>
                                             <li>
-                                                <a href={`/publisher/${game?.publisher.name}`} target="_blank">
+                                                {/* <a href={`/publisher/${game?.publisher.name}`} target="_blank"> */}
+												<a href="#">
                                                     {game?.publisher.name}
                                                 </a>
                                             </li>
@@ -271,7 +276,8 @@ export default function Games() {
                                         <ul>
                                             {game?.genres.map((genre) => (
                                                 <li key={genre.id}>
-                                                    <a href={`/genre/${genre.name}`}>{genre.name}</a>
+                                                    {/* <a href={`/genre/${genre.name}`}>{genre.name}</a> */}
+													<a href="#">{genre.name}</a>
                                                 </li>
                                             ))}
                                         </ul>
@@ -281,7 +287,8 @@ export default function Games() {
                                         <ul>
                                             {game?.platforms_available.map((platform) => (
                                                 <li key={platform.id}>
-                                                    <a href={`/platform/${platform.name}`}>{platform.name}</a>
+                                                    {/* <a href={`/platform/${platform.name}`}>{platform.name}</a> */}
+													<a href="#">{platform.name}</a>
                                                 </li>
                                             ))}
                                         </ul>
@@ -290,7 +297,8 @@ export default function Games() {
                                         <b>HowLongToBeat:</b>
                                         <ul>
                                             <li>
-                                                <a href={game?.how_long_to_beat?.url as string} target="_blank">
+                                                {/* <a href={game?.how_long_to_beat?.url as string} target="_blank"> */}
+												<a href="#">
                                                     Page
                                                 </a>
                                             </li>
@@ -345,7 +353,8 @@ export default function Games() {
                                             <ul>
                                                 {game?.where_to_buy.map((item) => (
                                                     <li key={item.id}>
-                                                        <a href={item.url} target="_blank">
+														{/* <a href={item.url} target="_blank"> */}
+                                                        <a href="#">
                                                             {item.name}
                                                         </a>
                                                     </li>
@@ -356,13 +365,15 @@ export default function Games() {
                                             <b>Ratings:</b>
                                             <ul>
                                                 <li className="">
-                                                    <a href={game?.metacritic.url as string} target="_blank">
+                                                    {/* <a href={game?.metacritic.url as string} target="_blank"> */}
+													<a href="#">
                                                         Metacritic Rating:
                                                     </a>{" "}
                                                     ⭐<span id="game_igdb_rating">{game?.metacritic.rating}</span>
                                                 </li>
                                                 <li className="">
-                                                    <a href={game?.igdb.url as string} target="_blank">
+                                                    {/* <a href={game?.igdb.url as string} target="_blank"> */}
+													<a href="#">
                                                         IGDB Rating:
                                                     </a>{" "}
                                                     ⭐<span id="game_igdb_rating">{game?.igdb.rating}</span>
@@ -373,7 +384,8 @@ export default function Games() {
                                             <b>Developer:</b>
                                             <ul>
                                                 <li>
-                                                    <a href={`/developer/${game?.developer.name}`} target="_blank">
+                                                    {/* <a href={`/developer/${game?.developer.name}`} target="_blank"> */}
+													<a href="#">
                                                         {game?.developer.name}
                                                     </a>
                                                 </li>
@@ -383,7 +395,8 @@ export default function Games() {
                                             <b>Publisher:</b>
                                             <ul>
                                                 <li>
-                                                    <a href={`/publisher/${game?.publisher.name}`} target="_blank">
+                                                    {/* <a href={`/publisher/${game?.publisher.name}`} target="_blank"> */}
+													<a href="#">
                                                         {game?.publisher.name}
                                                     </a>
                                                 </li>
@@ -394,7 +407,8 @@ export default function Games() {
                                             <ul>
                                                 {game?.genres.map((genre) => (
                                                     <li key={genre.id}>
-                                                        <a href={`/genre/${genre.name}`}>{genre.name}</a>
+                                                        {/* <a href={`/genre/${genre.name}`}>{genre.name}</a> */}
+														<a href="#">{genre.name}</a>
                                                     </li>
                                                 ))}
                                             </ul>
@@ -404,7 +418,8 @@ export default function Games() {
                                             <ul>
                                                 {game?.platforms_available.map((platform) => (
                                                     <li key={platform.id}>
-                                                        <a href={`/platform/${platform.name}`}>{platform.name}</a>
+                                                        {/* <a href={`/platform/${platform.name}`}>{platform.name}</a> */}
+														<a href="#">{platform.name}</a>
                                                     </li>
                                                 ))}
                                             </ul>
@@ -413,7 +428,8 @@ export default function Games() {
                                             <b>HowLongToBeat:</b>
                                             <ul>
                                                 <li>
-                                                    <a href={game?.how_long_to_beat?.url as string} target="_blank">
+                                                    {/* <a href={game?.how_long_to_beat?.url as string} target="_blank"> */}
+													<a href="#">
                                                         Page
                                                     </a>
                                                 </li>
