@@ -5,14 +5,11 @@ import Input from "../Forms/Input";
 import Button from "../Forms/Button";
 import ErrorAlertMessage from "../Alerts/ErrorAlertMessage";
 import SuccessAlertMessage from "../Alerts/SuccessAlertMessage";
-import { useState } from "react";
 
 export default function ForgetPasswordForm() {
-    const { recoverPassword, sendRecoverPassword, loading, login } = useGlobalState();
+    const { forgetPassword, sendRecoverPassword, loading, login, error } = useGlobalState();
 
     if (login === true) return <Navigate to="/profile" />;
-
-    const [error, setError] = useState<string | undefined>(undefined);
 
     const email = useForm("email");
 
@@ -20,13 +17,8 @@ export default function ForgetPasswordForm() {
         event.preventDefault();
 
         if (email.validate()) {
-            try {
-                await recoverPassword(email.value);
-            } catch (error: any) {
-                setError(error);
-            } finally {
-                email.setValue("");
-            }
+            await forgetPassword(email.value);
+            email.setValue("");
         }
     }
 

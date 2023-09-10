@@ -1,6 +1,13 @@
 import { createContext, useCallback, useContext, useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
-import { RECOVER_PASSWORD, SEND_CONTACT, USER_LOGIN, USER_REGISTER } from "../Api";
+import {
+    CHECK_RESET_PASSWORD_TOKEN,
+    FORGET_PASSWORD,
+    RESET_PASSWORD,
+    SEND_CONTACT,
+    USER_LOGIN,
+    USER_REGISTER,
+} from "../Api";
 import { API_URL } from "../Utils/Envs";
 
 export interface ProfileUpdateDTO {
@@ -8,22 +15,6 @@ export interface ProfileUpdateDTO {
     telegramNumber?: string | null;
     olderPassword?: string | null;
     newPassword?: string | null;
-}
-interface GlobalStateContextPort {
-    error: null | string;
-    loading: boolean;
-    user: User | null;
-    login: null | boolean;
-    contactSend: boolean;
-	updatedProfile: boolean;
-    sendRecoverPassword: boolean;
-    userLogin: (username: string, password: string) => Promise<Element | undefined>;
-    userLogout: () => Promise<void>;
-    sendContact: (name: string, email: string, subject: string, message: string) => Promise<any>;
-    getUser: (token: string) => Promise<void>;
-    userRegister: (username: string, email: string, password: string) => Promise<any>;
-    recoverPassword: (email: string) => Promise<any>;
-	updateProfile({username, telegramNumber, olderPassword, newPassword}: ProfileUpdateDTO): void;
 }
 
 export interface User {
@@ -56,6 +47,26 @@ export interface User {
     updated_at_pt_br: string | null;
 }
 
+interface GlobalStateContextPort {
+    error: null | string;
+    loading: boolean;
+    user: User | null;
+    login: null | boolean;
+    contactSend: boolean;
+    updatedProfile: boolean;
+    sendRecoverPassword: boolean;
+    sendResetPassword: boolean;
+    userLogin: (username: string, password: string) => Promise<Element | undefined>;
+    userLogout: () => Promise<void>;
+    sendContact: (name: string, email: string, subject: string, message: string) => Promise<any>;
+    getUser: (token: string) => Promise<void>;
+    userRegister: (username: string, email: string, password: string) => Promise<any>;
+    updateProfile({ username, telegramNumber, olderPassword, newPassword }: ProfileUpdateDTO): void;
+    forgetPassword: (email: string) => Promise<any>;
+    resetPassword(resetPasswordToken: string, newPassword: string, confirmNewPassword: string): Promise<any>;
+    isValidResetPasswordToken(resetPasswordToken: string): Promise<boolean>;
+}
+
 const GlobalStateContext = createContext<GlobalStateContextPort | undefined>(undefined);
 
 export const GlobalStateProvider = ({ children }: React.PropsWithChildren) => {
@@ -65,11 +76,12 @@ export const GlobalStateProvider = ({ children }: React.PropsWithChildren) => {
     const [error, setError] = useState<null | string>(null);
     const [contactSend, setContactSend] = useState<boolean>(false);
     const [sendRecoverPassword, setSendRecoverPassword] = useState<boolean>(false);
-	const [updatedProfile, setUpdatedProfile] = useState<boolean>(false)
+    const [sendResetPassword, setSendResetPassword] = useState<boolean>(false);
+    const [updatedProfile, setUpdatedProfile] = useState<boolean>(false);
     const navigate = useNavigate();
 
     const userLogout = useCallback(async function () {
-		setUser(null)
+        setUser(null);
         setError(null);
         setLoading(false);
         setLogin(false);
@@ -77,7 +89,7 @@ export const GlobalStateProvider = ({ children }: React.PropsWithChildren) => {
     }, []);
 
     async function getUser(token: string) {
-		setLogin(true);
+        setLogin(true);
 
         const response = await fetch(`${API_URL}/tokenUser`, {
             method: "POST",
@@ -118,7 +130,7 @@ export const GlobalStateProvider = ({ children }: React.PropsWithChildren) => {
             created_at_pt_br: data.created_at_pt_br,
             updated_at_pt_br: data.updated_at_pt_br,
         });
-    };
+    }
 
     async function sendContact(name: string, email: string, subject: string, message: string): Promise<any> {
         try {
@@ -136,11 +148,11 @@ export const GlobalStateProvider = ({ children }: React.PropsWithChildren) => {
         }
     }
 
-    async function recoverPassword(email: string): Promise<any> {
+    async function forgetPassword(email: string): Promise<any> {
         try {
             setError(null);
             setLoading(true);
-            const { url, options } = RECOVER_PASSWORD({ email });
+            const { url, options } = FORGET_PASSWORD(email);
             const response = await fetch(url, options);
             if (!response.ok) throw new Error(`Error: ${response.statusText}`);
         } catch (err: any) {
@@ -152,25 +164,50 @@ export const GlobalStateProvider = ({ children }: React.PropsWithChildren) => {
         }
     }
 
+    async function resetPassword(
+        resetPasswordToken: string,
+        newPassword: string,
+        confirmNewPassword: string,
+    ): Promise<any> {
+        try {
+            setError(null);
+            setLoading(true);
+            const { url, options } = RESET_PASSWORD(resetPasswordToken, newPassword, confirmNewPassword);
+            const response = await fetch(url, options);
+            if (!response.ok) throw new Error(`Error: ${response.statusText}`);
+        } catch (err: any) {
+            setError(err.message);
+            setSendResetPassword(true);
+        } finally {
+            setSendResetPassword(true);
+            setLoading(false);
+        }
+    }
+
+    async function isValidResetPasswordToken(resetPasswordToken: string): Promise<any> {
+        try {
+            const { url, options } = CHECK_RESET_PASSWORD_TOKEN(resetPasswordToken);
+            const response = await fetch(url, options);
+            const json = await response.json();
+            if (!json.success) navigate("/");
+        } catch (err: any) {
+            setError(err.message);
+            navigate("/");
+        }
+    }
+
     async function userLogin(email: string, password: string): Promise<any> {
         try {
             setError(null);
-
             setLoading(true);
-
             const { url, options } = USER_LOGIN({ email, password });
-
             const response = await fetch(url, options);
-
             if (!response.ok) throw new Error(`Error: ${response.statusText}`);
-
-			const json = await response.json();
-
-			if (json.redirect) {
-				window.location.href = json.redirect;
-			}
-
-            const { jwt_token } = json
+            const json = await response.json();
+            if (json.redirect) {
+                window.location.href = json.redirect;
+            }
+            const { jwt_token } = json;
             window.localStorage.setItem("token", jwt_token);
             await getUser(jwt_token);
             navigate("/profile");
@@ -182,51 +219,49 @@ export const GlobalStateProvider = ({ children }: React.PropsWithChildren) => {
         }
     }
 
-	async function updateProfile({username, telegramNumber, olderPassword, newPassword}: ProfileUpdateDTO){
-		try {
-			setError(null);
+    async function updateProfile({ username, telegramNumber, olderPassword, newPassword }: ProfileUpdateDTO) {
+        try {
+            setError(null);
             setLoading(true);
 
-			const response = await fetch(`${API_URL}/profile`, {
-				method: "PUT",
-				headers: {
-					"Content-Type": "application/json",
-					Authorization: `Bearer ${window.localStorage.getItem("token")}`,
-				},
-				body: JSON.stringify({
-					username,
-					telegramNumber,
-					olderPassword,
-					newPassword
-				})
-			});
+            const response = await fetch(`${API_URL}/profile`, {
+                method: "PUT",
+                headers: {
+                    "Content-Type": "application/json",
+                    Authorization: `Bearer ${window.localStorage.getItem("token")}`,
+                },
+                body: JSON.stringify({
+                    username,
+                    telegramNumber,
+                    olderPassword,
+                    newPassword,
+                }),
+            });
 
-			if(response.ok){
-				const {data} = await response.json();
-				if(user){
-					setUser({
-						...user,
-						username: data.username,
-						telegram_number: data.telegramNumber,
-						password: data.password
-					})
-					setUpdatedProfile(true)
-				}
-			}
-			else {
-				const { message } = await response.json();
-				setError(message)
-				setUpdatedProfile(false)
-			}
-		}
-		catch(error: any){
-			setError(error.message);
-			setLoading(false);
-			setUpdatedProfile(false)
-		} finally {
-			setLoading(false);
-		}
-	}
+            if (response.ok) {
+                const { data } = await response.json();
+                if (user) {
+                    setUser({
+                        ...user,
+                        username: data.username,
+                        telegram_number: data.telegramNumber,
+                        password: data.password,
+                    });
+                    setUpdatedProfile(true);
+                }
+            } else {
+                const { message } = await response.json();
+                setError(message);
+                setUpdatedProfile(false);
+            }
+        } catch (error: any) {
+            setError(error.message);
+            setLoading(false);
+            setUpdatedProfile(false);
+        } finally {
+            setLoading(false);
+        }
+    }
 
     async function userRegister(username: string, email: string, password: string): Promise<any> {
         try {
@@ -248,34 +283,29 @@ export const GlobalStateProvider = ({ children }: React.PropsWithChildren) => {
     }
 
     useEffect(() => {
-		async function autoLogin() {
-			const currentUrl = window.location.href;
-			const urlSearchParams = new URLSearchParams(currentUrl.split("?")[1]);
-			let token = null;
-			if (urlSearchParams.get("token")) {
-				console.log('urlSearchParams.get("token") ======> ', urlSearchParams.get("token"))
-				token = urlSearchParams.get("token");
-				window.localStorage.setItem("token", token as string)
-			}
-			else if (window.localStorage.getItem("token")) token = window.localStorage.getItem("token");
-
-			// console.log('\n\n token é => ', token)
-
-			// const token = window.localStorage.getItem('token');
-			if (token) {
-				try {
-					setError(null);
-					setLoading(true);
-					await getUser(token)
-				} catch (err) {
-					userLogout();
-				} finally {
-					setLoading(false);
-				}
-			} else {
-				setLogin(false);
-			}
-		}
+        async function autoLogin() {
+            const currentUrl = window.location.href;
+            const urlSearchParams = new URLSearchParams(currentUrl.split("?")[1]);
+            let token = null;
+            if (urlSearchParams.get("token")) {
+                console.log('urlSearchParams.get("token") ======> ', urlSearchParams.get("token"));
+                token = urlSearchParams.get("token");
+                window.localStorage.setItem("token", token as string);
+            } else if (window.localStorage.getItem("token")) token = window.localStorage.getItem("token");
+            if (token) {
+                try {
+                    setError(null);
+                    setLoading(true);
+                    await getUser(token);
+                } catch (err) {
+                    userLogout();
+                } finally {
+                    setLoading(false);
+                }
+            } else {
+                setLogin(false);
+            }
+        }
         autoLogin();
     }, []);
 
@@ -293,9 +323,12 @@ export const GlobalStateProvider = ({ children }: React.PropsWithChildren) => {
                 sendContact,
                 userRegister,
                 sendRecoverPassword,
-                recoverPassword,
-				updateProfile,
-				updatedProfile
+                forgetPassword,
+                updateProfile,
+                updatedProfile,
+                resetPassword,
+                sendResetPassword,
+                isValidResetPasswordToken,
             }}
         >
             {children}

@@ -19,7 +19,7 @@ export default function Games() {
 
     const recommendRandomGame = useCallback(async () => {
         setError("");
-		const randomGame = new GamesRepository().getRandom()
+        const randomGame = new GamesRepository().getRandom();
 
         setGame({
             id: randomGame.id,
@@ -61,7 +61,7 @@ export default function Games() {
 
     const searchGameByTitle = useCallback(async (gameTitle: string | null) => {
         if (gameTitle) {
-			const searchGameTitle = new GamesRepository().getByTitle(gameTitle)
+            const searchGameTitle = new GamesRepository().getByTitle(gameTitle);
 
             if (!searchGameTitle.length) {
                 setError(`Nothing found for search "${gameTitle}". Recommending random game...`);
@@ -69,48 +69,48 @@ export default function Games() {
                 setGames(null);
                 setFoundMoreThanOne(false);
 
-                const randomGame = new GamesRepository().getRandom()
+                const randomGame = new GamesRepository().getRandom();
 
-				setGame({
-					id: randomGame.id,
-					title: randomGame.title,
-					cover_image: randomGame.cover_image,
-					summary: randomGame.summary,
-					release: {
-						year: randomGame.release.year,
-						date: randomGame.release.date,
-					},
-					igdb: {
-						url: randomGame.igdb.url,
-						rating: randomGame.igdb.rating,
-					},
-					metacritic: {
-						url: randomGame.metacritic.url,
-						rating: randomGame.metacritic.rating,
-					},
-					where_to_buy: randomGame.where_to_buy,
-					developer: randomGame.developer,
-					publisher: randomGame.publisher,
-					platforms_available: randomGame.platforms_available,
-					genres: randomGame.genres,
-					how_long_to_beat: {
-						url: randomGame.how_long_to_beat.url,
-						main_story: {
-							average: randomGame.how_long_to_beat.main_story.average,
-						},
-						completionist: {
-							average: randomGame.how_long_to_beat.completionist.average,
-						},
-					},
-					created_at: randomGame.created_at,
-					updated_at: randomGame.updated_at,
-					created_at_pt_br: randomGame.created_at_pt_br,
-					updated_at_pt_br: randomGame.updated_at_pt_br,
-				});
+                setGame({
+                    id: randomGame.id,
+                    title: randomGame.title,
+                    cover_image: randomGame.cover_image,
+                    summary: randomGame.summary,
+                    release: {
+                        year: randomGame.release.year,
+                        date: randomGame.release.date,
+                    },
+                    igdb: {
+                        url: randomGame.igdb.url,
+                        rating: randomGame.igdb.rating,
+                    },
+                    metacritic: {
+                        url: randomGame.metacritic.url,
+                        rating: randomGame.metacritic.rating,
+                    },
+                    where_to_buy: randomGame.where_to_buy,
+                    developer: randomGame.developer,
+                    publisher: randomGame.publisher,
+                    platforms_available: randomGame.platforms_available,
+                    genres: randomGame.genres,
+                    how_long_to_beat: {
+                        url: randomGame.how_long_to_beat.url,
+                        main_story: {
+                            average: randomGame.how_long_to_beat.main_story.average,
+                        },
+                        completionist: {
+                            average: randomGame.how_long_to_beat.completionist.average,
+                        },
+                    },
+                    created_at: randomGame.created_at,
+                    updated_at: randomGame.updated_at,
+                    created_at_pt_br: randomGame.created_at_pt_br,
+                    updated_at_pt_br: randomGame.updated_at_pt_br,
+                });
             }
 
             if (searchGameTitle.length > 1) {
-				setError('')
+                setError("");
                 setFoundMoreThanOne(true);
                 setTogalGamesFound(searchGameTitle.length);
                 setGames(searchGameTitle);
@@ -168,7 +168,7 @@ export default function Games() {
 
     return (
         <>
-			<Head title="The Best Developer Experience API for Games" description="Come look to see great games!"/>
+            <Head title="The Best Developer Experience API for Games" description="Come look to see great games!" />
             <Navbar />
             <div className="container" style={container}>
                 <div className="row mt-5">
@@ -223,9 +223,7 @@ export default function Games() {
                                             {game?.where_to_buy.map((item) => (
                                                 <li key={item.id}>
                                                     {/* <a href={item.url} target="_blank"> */}
-													<a href="#">
-                                                        {item.name}
-                                                    </a>
+                                                    <a href="#">{item.name}</a>
                                                 </li>
                                             ))}
                                         </ul>
@@ -235,17 +233,13 @@ export default function Games() {
                                         <ul>
                                             <li className="">
                                                 {/* <a href={game?.metacritic.url as string} target="_blank"> */}
-												<a href="#">
-                                                    Metacritic Rating:
-                                                </a>{" "}
-                                                ⭐<span id="game_igdb_rating">{game?.metacritic.rating}</span>
+                                                <a href="#">Metacritic Rating:</a> ⭐
+                                                <span id="game_igdb_rating">{game?.metacritic.rating}</span>
                                             </li>
                                             <li className="">
                                                 {/* <a href={game?.igdb.url as string} target="_blank"> */}
-												<a href="#">
-                                                    IGDB Rating:
-                                                </a>{" "}
-                                                ⭐<span id="game_igdb_rating">{game?.igdb.rating}</span>
+                                                <a href="#">IGDB Rating:</a> ⭐
+                                                <span id="game_igdb_rating">{game?.igdb.rating}</span>
                                             </li>
                                         </ul>
                                     </li>
@@ -254,9 +248,7 @@ export default function Games() {
                                         <ul>
                                             <li>
                                                 {/* <a href={`/developer/${game?.developer.name}`} target="_blank"> */}
-												<a href="#">
-                                                    {game?.developer.name}
-                                                </a>
+                                                <a href="#">{game?.developer.name}</a>
                                             </li>
                                         </ul>
                                     </li>
@@ -265,9 +257,7 @@ export default function Games() {
                                         <ul>
                                             <li>
                                                 {/* <a href={`/publisher/${game?.publisher.name}`} target="_blank"> */}
-												<a href="#">
-                                                    {game?.publisher.name}
-                                                </a>
+                                                <a href="#">{game?.publisher.name}</a>
                                             </li>
                                         </ul>
                                     </li>
@@ -277,7 +267,7 @@ export default function Games() {
                                             {game?.genres.map((genre) => (
                                                 <li key={genre.id}>
                                                     {/* <a href={`/genre/${genre.name}`}>{genre.name}</a> */}
-													<a href="#">{genre.name}</a>
+                                                    <a href="#">{genre.name}</a>
                                                 </li>
                                             ))}
                                         </ul>
@@ -288,7 +278,7 @@ export default function Games() {
                                             {game?.platforms_available.map((platform) => (
                                                 <li key={platform.id}>
                                                     {/* <a href={`/platform/${platform.name}`}>{platform.name}</a> */}
-													<a href="#">{platform.name}</a>
+                                                    <a href="#">{platform.name}</a>
                                                 </li>
                                             ))}
                                         </ul>
@@ -298,9 +288,7 @@ export default function Games() {
                                         <ul>
                                             <li>
                                                 {/* <a href={game?.how_long_to_beat?.url as string} target="_blank"> */}
-												<a href="#">
-                                                    Page
-                                                </a>
+                                                <a href="#">Page</a>
                                             </li>
                                             <li>Main History: {game?.how_long_to_beat?.main_story.average}</li>
                                             <li>Completionist: {game?.how_long_to_beat?.completionist.average}</li>
@@ -353,10 +341,8 @@ export default function Games() {
                                             <ul>
                                                 {game?.where_to_buy.map((item) => (
                                                     <li key={item.id}>
-														{/* <a href={item.url} target="_blank"> */}
-                                                        <a href="#">
-                                                            {item.name}
-                                                        </a>
+                                                        {/* <a href={item.url} target="_blank"> */}
+                                                        <a href="#">{item.name}</a>
                                                     </li>
                                                 ))}
                                             </ul>
@@ -366,17 +352,13 @@ export default function Games() {
                                             <ul>
                                                 <li className="">
                                                     {/* <a href={game?.metacritic.url as string} target="_blank"> */}
-													<a href="#">
-                                                        Metacritic Rating:
-                                                    </a>{" "}
-                                                    ⭐<span id="game_igdb_rating">{game?.metacritic.rating}</span>
+                                                    <a href="#">Metacritic Rating:</a> ⭐
+                                                    <span id="game_igdb_rating">{game?.metacritic.rating}</span>
                                                 </li>
                                                 <li className="">
                                                     {/* <a href={game?.igdb.url as string} target="_blank"> */}
-													<a href="#">
-                                                        IGDB Rating:
-                                                    </a>{" "}
-                                                    ⭐<span id="game_igdb_rating">{game?.igdb.rating}</span>
+                                                    <a href="#">IGDB Rating:</a> ⭐
+                                                    <span id="game_igdb_rating">{game?.igdb.rating}</span>
                                                 </li>
                                             </ul>
                                         </li>
@@ -385,9 +367,7 @@ export default function Games() {
                                             <ul>
                                                 <li>
                                                     {/* <a href={`/developer/${game?.developer.name}`} target="_blank"> */}
-													<a href="#">
-                                                        {game?.developer.name}
-                                                    </a>
+                                                    <a href="#">{game?.developer.name}</a>
                                                 </li>
                                             </ul>
                                         </li>
@@ -396,9 +376,7 @@ export default function Games() {
                                             <ul>
                                                 <li>
                                                     {/* <a href={`/publisher/${game?.publisher.name}`} target="_blank"> */}
-													<a href="#">
-                                                        {game?.publisher.name}
-                                                    </a>
+                                                    <a href="#">{game?.publisher.name}</a>
                                                 </li>
                                             </ul>
                                         </li>
@@ -408,7 +386,7 @@ export default function Games() {
                                                 {game?.genres.map((genre) => (
                                                     <li key={genre.id}>
                                                         {/* <a href={`/genre/${genre.name}`}>{genre.name}</a> */}
-														<a href="#">{genre.name}</a>
+                                                        <a href="#">{genre.name}</a>
                                                     </li>
                                                 ))}
                                             </ul>
@@ -419,7 +397,7 @@ export default function Games() {
                                                 {game?.platforms_available.map((platform) => (
                                                     <li key={platform.id}>
                                                         {/* <a href={`/platform/${platform.name}`}>{platform.name}</a> */}
-														<a href="#">{platform.name}</a>
+                                                        <a href="#">{platform.name}</a>
                                                     </li>
                                                 ))}
                                             </ul>
@@ -429,9 +407,7 @@ export default function Games() {
                                             <ul>
                                                 <li>
                                                     {/* <a href={game?.how_long_to_beat?.url as string} target="_blank"> */}
-													<a href="#">
-                                                        Page
-                                                    </a>
+                                                    <a href="#">Page</a>
                                                 </li>
                                                 <li>Main History: {game?.how_long_to_beat?.main_story.average}</li>
                                                 <li>Completionist: {game?.how_long_to_beat?.completionist.average}</li>

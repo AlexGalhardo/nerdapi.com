@@ -64,15 +64,48 @@ export function SEND_CONTACT(body: any) {
     };
 }
 
-export function RECOVER_PASSWORD(body: { email: string }) {
+export function FORGET_PASSWORD(email: string) {
     return {
-        url: API_URL + "/recover-password",
+        url: API_URL + "/forget-password",
         options: {
             method: "POST",
             headers: {
                 "Content-Type": "application/json",
             },
-            body: JSON.stringify(body),
+            body: JSON.stringify({
+                email,
+            }),
+        },
+    };
+}
+
+export function RESET_PASSWORD(resetPasswordToken: string, newPassword: string, confirmNewPassword: string) {
+    return {
+        url: `${API_URL}/reset-password/${resetPasswordToken}`,
+        options: {
+            method: "POST",
+            headers: {
+                "Content-Type": "application/json",
+            },
+            body: JSON.stringify({
+                newPassword,
+                confirmNewPassword,
+            }),
+        },
+    };
+}
+
+export function CHECK_RESET_PASSWORD_TOKEN(resetPasswordToken: string) {
+    return {
+        url: `${API_URL}/check-reset-password-token`,
+        options: {
+            method: "POST",
+            headers: {
+                "Content-Type": "application/json",
+            },
+            body: JSON.stringify({
+                resetPasswordToken,
+            }),
         },
     };
 }

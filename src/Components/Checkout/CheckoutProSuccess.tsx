@@ -1,6 +1,5 @@
 import { API_URL } from "../../Utils/Envs";
 
-
 export default function CheckoutProSuccess({ sessionId }: { sessionId: string }) {
     const handleSubmit = async (e: any) => {
         e.preventDefault();
@@ -13,7 +12,7 @@ export default function CheckoutProSuccess({ sessionId }: { sessionId: string })
                 }),
                 headers: {
                     "Content-Type": "application/json",
-					"Authorization": `Bearer ${window.localStorage.getItem("token")}`
+                    Authorization: `Bearer ${window.localStorage.getItem("token")}`,
                 },
             });
 

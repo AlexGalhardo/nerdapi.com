@@ -25,7 +25,7 @@ export default function Input({
 }: FormInput) {
     return (
         <div className="">
-            <label htmlFor={name} className="text-muted">
+            <label htmlFor={name} className="text-muted mt-3">
                 {label}
             </label>
             <input

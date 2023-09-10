@@ -16,7 +16,7 @@ export default function Pricing() {
                 }),
                 headers: {
                     "Content-Type": "application/json",
-					"Authorization": `Bearer ${window.localStorage.getItem("token")}`
+                    Authorization: `Bearer ${window.localStorage.getItem("token")}`,
                 },
             });
 
@@ -47,7 +47,7 @@ export default function Pricing() {
                 }),
                 headers: {
                     "Content-Type": "application/json",
-					"Authorization": `Bearer ${window.localStorage.getItem("token")}`
+                    Authorization: `Bearer ${window.localStorage.getItem("token")}`,
                 },
             });
 
@@ -69,7 +69,7 @@ export default function Pricing() {
 
     return (
         <>
-			<Head title="Pricing" description="See ours plans to get access to NerdAPI!"/>
+            <Head title="Pricing" description="See ours plans to get access to NerdAPI!" />
             <Navbar />
             <div className="container col-lg-7" style={containerPricing}>
                 <div className="row">

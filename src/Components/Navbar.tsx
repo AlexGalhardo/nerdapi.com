@@ -6,7 +6,7 @@ export default function Navbar() {
     const { user, userLogout } = useGlobalState();
     const navigate = useNavigate();
     const [search, setSearch] = useState<string | undefined>();
-	const location = useLocation()
+    const location = useLocation();
 
     function handleLogout() {
         userLogout();
@@ -54,13 +54,25 @@ export default function Navbar() {
                     <div className="collapse navbar-collapse pull-right" id="navbarSupportedContent">
                         <ul className="navbar-nav me-auto mb-2 mb-lg-0">
                             <li className="nav-item">
-                                <a className={`fs-5 nav-link fw-bold ${location.pathname === '/contact' ? 'text-white' : undefined}`} aria-current="page" href="/contact">
+                                <a
+                                    className={`fs-5 nav-link fw-bold ${
+                                        location.pathname === "/contact" ? "text-white" : undefined
+                                    }`}
+                                    aria-current="page"
+                                    href="/contact"
+                                >
                                     <i className="bi bi-envelope"></i> Contact
                                 </a>
                             </li>
 
                             <li className="nav-item">
-                                <a className={`fs-5 nav-link fw-bold ${location.pathname === '/pricing' ? 'text-white' : undefined}`} aria-current="page" href="/pricing">
+                                <a
+                                    className={`fs-5 nav-link fw-bold ${
+                                        location.pathname === "/pricing" ? "text-white" : undefined
+                                    }`}
+                                    aria-current="page"
+                                    href="/pricing"
+                                >
                                     {" "}
                                     <i className="bi bi-award"></i>
                                     Pricing

@@ -7,7 +7,7 @@ import Button from "../Components/Forms/Button";
 import Footer from "../Components/Footer";
 import Head from "../Components/Head";
 import { ToastContainer, toast } from "react-toastify";
-import 'react-toastify/dist/ReactToastify.css';
+import "react-toastify/dist/ReactToastify.css";
 
 export default function Contact() {
     const [name, setName] = useState<string>();
@@ -33,38 +33,38 @@ export default function Contact() {
             }
         } catch (error: any) {
             setError(error);
-			toast.error(`ERROR: ${error}`, {
-				position: "top-right",
-				autoClose: 3000,
-				hideProgressBar: false,
-				closeOnClick: true,
-				pauseOnHover: true,
-				draggable: true,
-				progress: undefined,
-				theme: "dark",
-			});
+            toast.error(`ERROR: ${error}`, {
+                position: "top-right",
+                autoClose: 3000,
+                hideProgressBar: false,
+                closeOnClick: true,
+                pauseOnHover: true,
+                draggable: true,
+                progress: undefined,
+                theme: "dark",
+            });
         } finally {
             setName("");
             setEmail("");
             setSubject("");
             setMessage("");
             setError("");
-			toast.success("MESSAGE SEND!", {
-				position: "bottom-right",
-				autoClose: 3000,
-				hideProgressBar: false,
-				closeOnClick: true,
-				pauseOnHover: true,
-				draggable: true,
-				progress: undefined,
-				theme: "dark",
-			});
+            toast.success("MESSAGE SEND!", {
+                position: "bottom-right",
+                autoClose: 3000,
+                hideProgressBar: false,
+                closeOnClick: true,
+                pauseOnHover: true,
+                draggable: true,
+                progress: undefined,
+                theme: "dark",
+            });
         }
     }
 
     return (
         <>
-			<Head title="Contact" description="Send us a message, feedback or report a bug!"/>
+            <Head title="Contact" description="Send us a message, feedback or report a bug!" />
             <Navbar />
 
             <div className="container col-lg-8 mt-5" style={containerContact}>
@@ -133,7 +133,7 @@ export default function Contact() {
                             {loading ? <Button disabled={true}>Processing...</Button> : <Button>Send Message</Button>}
                         </form>
 
-						<ToastContainer />
+                        <ToastContainer />
 
                         {contactSend && <SuccessAlertMessage message={"Message send!"} />}
 

@@ -22,8 +22,8 @@ const Login = () => {
             <Routes>
                 <Route path="/" element={<LoginForm />} />
                 <Route path="register" element={<RegisterForm />} />
-                <Route path="forgetPassword" element={<ForgetPasswordForm />} />
-                <Route path="resetPassword" element={<ResetPasswordForm />} />
+                <Route path="forget-password" element={<ForgetPasswordForm />} />
+                <Route path="reset-password/:reset_password_token" element={<ResetPasswordForm />} />
                 <Route path="*" element={<NotFound />} />
             </Routes>
         </div>

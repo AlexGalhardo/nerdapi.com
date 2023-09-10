@@ -26,7 +26,7 @@ export default function App() {
                     <Route path="/checkout/*" element={<Checkout />} />
                     <Route path="/auth/*" element={<Auth />} />
                     <Route path="/profile/*" element={<Profile />} />
-					<Route path="/privacy/*" element={<Privacy />} />
+                    <Route path="/privacy/*" element={<Privacy />} />
                     <Route path="*" element={<NotFound />} />
                 </Routes>
             </GlobalStateProvider>
