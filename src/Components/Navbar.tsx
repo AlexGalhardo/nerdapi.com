@@ -10,7 +10,7 @@ export default function Navbar() {
 
     function handleLogout() {
         userLogout();
-        navigate("/auth");
+        navigate("/login");
     }
 
     function handleSearch(event: any) {
@@ -123,7 +123,7 @@ export default function Navbar() {
                             </ul>
                         ) : (
                             <div className="pull-right">
-                                <a href="/auth" className="button fw-bold fs-5 btn btn-outline-success" type="submit">
+                                <a href="/login" className="button fw-bold fs-5 btn btn-outline-success" type="submit">
                                     <i className="bi bi-person-fill-lock"></i> Login
                                 </a>
                             </div>

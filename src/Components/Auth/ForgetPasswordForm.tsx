@@ -24,32 +24,41 @@ export default function ForgetPasswordForm() {
 
     return (
         <>
-            <form onSubmit={handleSubmit}>
-                <div className="form-group mb-4 mt-5">
-                    <Input
-                        minLength={12}
-                        placeholder="Digit your email to recover password"
-                        label="Digit your email"
-                        type="email"
-                        name="email"
-                        {...email}
+            <div className="container col-lg-3 mt-5">
+                <h1 className="text-center text-muted mb-4">
+                    <a className="text-decoration-none" href="/">
+                        <b className="fw-bold text-primary">NerdAPI</b>
+                    </a>
+                </h1>
+
+                <form onSubmit={handleSubmit}>
+                    <div className="form-group mb-4 mt-5">
+                        <Input
+                            minLength={12}
+                            placeholder="Digit your email to recover password"
+                            label="Digit your email"
+                            type="email"
+                            name="email"
+                            {...email}
+                        />
+                    </div>
+
+                    {loading ? (
+                        <Button disabled={true}>Processing...</Button>
+                    ) : (
+                        <Button>Send me a email to recover password</Button>
+                    )}
+
+                    <SuccessAlertMessage
+                        message={
+                            sendRecoverPassword &&
+                            "If this email exists, a email was send with a link to recover password!"
+                        }
                     />
-                </div>
 
-                {loading ? (
-                    <Button disabled={true}>Processing...</Button>
-                ) : (
-                    <Button>Send me a email to recover password</Button>
-                )}
-
-                <SuccessAlertMessage
-                    message={
-                        sendRecoverPassword && "If this email exists, a email was send with a link to recover password!"
-                    }
-                />
-
-                <ErrorAlertMessage message={error && "Invalid email or/and password"} />
-            </form>
+                    <ErrorAlertMessage message={error && "Invalid email or/and password"} />
+                </form>
+            </div>
         </>
     );
 }
