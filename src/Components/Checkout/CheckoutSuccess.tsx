@@ -7,10 +7,10 @@ export default function CheckoutSuccess() {
     const { login } = useGlobalState();
 
     setTimeout(() => {
-		if (login === false) {
-        	return <Navigate to="/login" />;
-    	}
-	}, 1000)
+        if (login === false) {
+            return <Navigate to="/login" />;
+        }
+    }, 1000);
 
     const location = useLocation();
     const queryParams = new URLSearchParams(location.search);

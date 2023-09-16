@@ -8,16 +8,16 @@ import { useNavigate } from "react-router-dom";
 import SuccessAlertMessage from "../Components/Alerts/SuccessAlertMessage";
 
 export default function Pricing() {
-	const { login, user } = useGlobalState();
-	const [alreadyMember, setAlreadyMember] = useState<boolean>(false)
-	const navigate = useNavigate();
+    const { login, user } = useGlobalState();
+    const [alreadyMember, setAlreadyMember] = useState<boolean>(false);
+    const navigate = useNavigate();
 
     const handleSubmitCasual = async (e: any) => {
         e.preventDefault();
 
-		if (login === false) {
-        	navigate("/login");
-    	}
+        if (login === false) {
+            navigate("/login");
+        }
 
         try {
             const response = await fetch(`${API_URL}/stripe/create-checkout-session`, {
@@ -37,7 +37,7 @@ export default function Pricing() {
                 if (json.redirect) {
                     window.location.href = json.redirect;
                 } else {
-                    setAlreadyMember(true)
+                    setAlreadyMember(true);
                 }
             } else {
                 console.error("Error:", response.statusText);
@@ -50,9 +50,9 @@ export default function Pricing() {
     const handleSubmitPro = async (e: any) => {
         e.preventDefault();
 
-		if (login === false) {
-        	navigate("/login");
-    	}
+        if (login === false) {
+            navigate("/login");
+        }
 
         try {
             const response = await fetch(`${API_URL}/stripe/create-checkout-session`, {
@@ -98,9 +98,7 @@ export default function Pricing() {
                         </p>
                     </div>
 
-					{alreadyMember && (
-						<SuccessAlertMessage message={"You already has a subscription active!"} />
-					)}
+                    {alreadyMember && <SuccessAlertMessage message={"You already has a subscription active!"} />}
 
                     <main>
                         <div className="row row-cols-1 row-cols-md-3 mb-3 text-center">
@@ -137,27 +135,24 @@ export default function Pricing() {
                                             <li>Priority Email Support</li>
                                         </ul>
                                         <form onSubmit={handleSubmitCasual}>
-											{user && user.stripe.subscription.active ?
-												<button
-													className="button w-100 btn btn-lg btn-outline-danger"
-													id="checkout-and-portal-button"
-													type="submit"
-													disabled={true}
-												>
-												Already Member
-												</button>
-
-												:
-
-												<button
-													className="button w-100 btn btn-lg btn-outline-danger"
-													id="checkout-and-portal-button"
-													type="submit"
-												>
-												Let's Go
-												</button>
-
-											}
+                                            {user && user.stripe.subscription.active ? (
+                                                <button
+                                                    className="button w-100 btn btn-lg btn-outline-danger"
+                                                    id="checkout-and-portal-button"
+                                                    type="submit"
+                                                    disabled={true}
+                                                >
+                                                    Already Member
+                                                </button>
+                                            ) : (
+                                                <button
+                                                    className="button w-100 btn btn-lg btn-outline-danger"
+                                                    id="checkout-and-portal-button"
+                                                    type="submit"
+                                                >
+                                                    Let's Go
+                                                </button>
+                                            )}
                                         </form>
                                     </div>
                                 </div>
@@ -181,26 +176,24 @@ export default function Pricing() {
                                             <li>Exclusive Telegram Support</li>
                                         </ul>
                                         <form onSubmit={handleSubmitPro}>
-                                            {user && user.stripe.subscription.active ?
-												<button
-													className="button w-100 btn btn-lg btn-outline-primary"
-													id="checkout-and-portal-button"
-													type="submit"
-													disabled={true}
-												>
-												Already Member
-												</button>
-
-												:
-
-												<button
-													className="button w-100 btn btn-lg btn-outline-primary"
-													id="checkout-and-portal-button"
-													type="submit"
-												>
-												Let's Go
-												</button>
-											}
+                                            {user && user.stripe.subscription.active ? (
+                                                <button
+                                                    className="button w-100 btn btn-lg btn-outline-primary"
+                                                    id="checkout-and-portal-button"
+                                                    type="submit"
+                                                    disabled={true}
+                                                >
+                                                    Already Member
+                                                </button>
+                                            ) : (
+                                                <button
+                                                    className="button w-100 btn btn-lg btn-outline-primary"
+                                                    id="checkout-and-portal-button"
+                                                    type="submit"
+                                                >
+                                                    Let's Go
+                                                </button>
+                                            )}
                                         </form>
                                     </div>
                                 </div>

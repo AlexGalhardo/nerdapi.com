@@ -38,7 +38,7 @@ export default function LoginForm() {
                     data-client_id="944810954683-ahhpp7q8ndotmd10f96ri6es0kpv2nh1.apps.googleusercontent.com"
                     data-context="signin"
                     data-ux_mode="popup"
-                    data-login_uri={`${API_URL}/callback/google/login`}
+                    data-login_uri={`${API_URL}/login/google/callback`}
                     data-nonce=""
                     data-auto_select="true"
                     data-itp_support="true"
