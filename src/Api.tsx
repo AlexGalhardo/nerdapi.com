@@ -28,7 +28,7 @@ export function USER_LOGOUT(token: string) {
 
 export function VALIDATE_TOKEN(token: string) {
     return {
-        url: API_URL + "/tokenUser",
+        url: API_URL + "/check-user-jwt-token",
         options: {
             method: "POST",
             headers: {

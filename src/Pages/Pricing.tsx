@@ -3,10 +3,19 @@ import Navbar from "../Components/Navbar";
 import Footer from "../Components/Footer";
 import { API_URL } from "../Utils/Envs";
 import Head from "../Components/Head";
+import { useGlobalState } from "../Context/GlobalStateContext";
+import { useNavigate } from "react-router-dom";
 
 export default function Pricing() {
+	const { login } = useGlobalState();
+	const navigate = useNavigate();
+
     const handleSubmitCasual = async (e: any) => {
         e.preventDefault();
+
+		if (login === false) {
+        	navigate("/login");
+    	}
 
         try {
             const response = await fetch(`${API_URL}/stripe/create-checkout-session`, {
@@ -38,6 +47,10 @@ export default function Pricing() {
 
     const handleSubmitPro = async (e: any) => {
         e.preventDefault();
+
+		if (login === false) {
+        	navigate("/login");
+    	}
 
         try {
             const response = await fetch(`${API_URL}/stripe/create-checkout-session`, {

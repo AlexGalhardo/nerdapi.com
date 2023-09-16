@@ -93,13 +93,13 @@ export default function LoginForm() {
 
                 <div className="text-center mt-5">
                     <p className="text-center mb-3 mt-3">
-                        <a href="/auth/forgetPassword" className="text-decoration-none">
+                        <a href="/forget-password" className="text-decoration-none">
                             <b>Forget My Password</b>
                         </a>
                     </p>
 
                     <p>
-                        <a href="/auth/register" className="text-success text-decoration-none">
+                        <a href="/register" className="text-success text-decoration-none">
                             <b>Register Account</b>
                         </a>
                     </p>

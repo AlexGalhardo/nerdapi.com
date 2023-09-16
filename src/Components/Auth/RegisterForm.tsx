@@ -105,7 +105,7 @@ export default function RegisterForm() {
                 <div className="text-center mt-5">
                     <h4>Already have a account?</h4>
                     <h4>
-                        <a href="/auth" className="text-success text-decoration-none">
+                        <a href="/login" className="text-success text-decoration-none">
                             <b>Login</b>
                         </a>
                     </h4>

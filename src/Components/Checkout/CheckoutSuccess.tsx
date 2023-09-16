@@ -6,9 +6,11 @@ import { useGlobalState } from "../../Context/GlobalStateContext";
 export default function CheckoutSuccess() {
     const { login } = useGlobalState();
 
-    if (login === false) {
-        return <Navigate to="/auth" />;
-    }
+    setTimeout(() => {
+		if (login === false) {
+        	return <Navigate to="/login" />;
+    	}
+	}, 1000)
 
     const location = useLocation();
     const queryParams = new URLSearchParams(location.search);

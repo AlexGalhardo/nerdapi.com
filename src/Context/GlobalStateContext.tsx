@@ -91,7 +91,7 @@ export const GlobalStateProvider = ({ children }: React.PropsWithChildren) => {
     async function getUser(token: string) {
         setLogin(true);
 
-        const response = await fetch(`${API_URL}/tokenUser`, {
+        const response = await fetch(`${API_URL}/check-user-jwt-token`, {
             method: "POST",
             headers: {
                 "Content-Type": "application/json",

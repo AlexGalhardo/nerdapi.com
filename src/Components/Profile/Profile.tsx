@@ -11,7 +11,7 @@ export default function Profile() {
     const { login } = useGlobalState();
 
     if (login === false) {
-        return <Navigate to="/auth" />;
+        return <Navigate to="/login" />;
     }
 
     return (
