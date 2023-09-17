@@ -15,6 +15,7 @@ import LoginForm from "./Components/Auth/LoginForm";
 import RegisterForm from "./Components/Auth/RegisterForm";
 import ForgetPasswordForm from "./Components/Auth/ForgetPasswordForm";
 import ResetPasswordForm from "./Components/Auth/ResetPasswordForm";
+import Plans from "./Pages/Plans";
 
 export default function App() {
     return (

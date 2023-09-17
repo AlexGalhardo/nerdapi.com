@@ -88,13 +88,9 @@ export default function Pricing() {
             <Navbar />
             <div className="container col-lg-7" style={containerPricing}>
                 <div className="row">
-                    <div className="pricing-header p-3 pb-md-4 text-center mt-5">
-                        <p className="fs-3">
-                            Elevate your development experience with our subscription plans for access to a vast library
-                            of games, books, movies and TV Shows through our API. Dive into a world of endless
-                            entertainment options, from the latest blockbuster films to best-selling novels and
-                            captivating video games. With our user-friendly interface and lightning-fast API, you'll
-                            have instant access to the ultimate source of digital entertainment.
+                    <div className="mt-5 text-center">
+                        <p className="fs-3 mb-5 mt-3">
+                            It's hard to find good sources to consume video games data on the internet. <br/><strong>We want to change that. We're building the best Games API with a awesome experience for software developers and gamers out there to consume and enjoy.</strong> <br/>You can help us by being a subscription member, sharing the site with your friends and acquaintances, reporting bugs, and sugesting missing or wrong video game data.
                         </p>
                     </div>
 
@@ -103,17 +99,18 @@ export default function Pricing() {
                     <main>
                         <div className="row row-cols-1 row-cols-md-3 mb-3 text-center">
                             <div className="col">
-                                <div className="card mb-4 rounded-3 shadow">
+                                <div className="card mb-4 rounded-3 shadow border-success">
                                     <div className="card-header py-3 bg-success">
-                                        <h4 className="my-0 fw-bold text-white">Noob</h4>
+                                        <h4 className="my-0 fw-bold text-white">NOOB</h4>
                                     </div>
                                     <div className="card-body">
                                         <h1 className="card-title pricing-card-title">
-                                            $0<small className="text-muted fw-light">/month</small>
+                                            <small>$</small><big>0</big><small className="text-muted fw-light">/mo</small>
                                         </h1>
                                         <ul className="list-unstyled mt-3 mb-4">
-                                            <li>No Access API KEY</li>
-                                            <li>Website Limited Recomendations</li>
+                                            <li><i className="bi bi-check-circle"></i> 50 API Requests/daily</li>
+                                            <li><s>Priority Email Support</s></li>
+											<li><s>Access To Telegram BOT</s></li>
                                         </ul>
                                     </div>
                                 </div>
@@ -122,17 +119,17 @@ export default function Pricing() {
                                 <div className="card mb-4 rounded-3 shadow border-danger">
                                     <div className="card-header py-3 bg-danger">
                                         <h4 className="my-0 fw-bold text-white">
-                                            <i className="bi bi-award"></i> Casual
+                                            <i className="bi bi-award"></i> CASUAL
                                         </h4>
                                     </div>
                                     <div className="card-body">
                                         <h1 className="card-title pricing-card-title">
-                                            $1.99<small className="text-muted fw-light">/month</small>
+                                            <small>$</small><big>1.99</big><small className="text-muted fw-light">/mo</small>
                                         </h1>
                                         <ul className="list-unstyled mt-3 mb-4">
-                                            <li>Access to API KEY</li>
-                                            <li>1000 API Requests Day</li>
-                                            <li>Priority Email Support</li>
+                                            <li><i className="bi bi-check-circle"></i> 1000 API Requests/daily</li>
+                                            <li><i className="bi bi-check-circle"></i> Priority Email Support</li>
+											<li><s>Access To Telegram BOT</s></li>
                                         </ul>
                                         <form onSubmit={handleSubmitCasual}>
                                             {user && user.stripe.subscription.active ? (
@@ -146,11 +143,11 @@ export default function Pricing() {
                                                 </button>
                                             ) : (
                                                 <button
-                                                    className="button w-100 btn btn-lg btn-outline-danger"
+                                                    className="button w-100 btn btn-lg btn-outline-danger fw-bold fs-4"
                                                     id="checkout-and-portal-button"
                                                     type="submit"
                                                 >
-                                                    Let's Go
+                                                    Get Started
                                                 </button>
                                             )}
                                         </form>
@@ -161,19 +158,17 @@ export default function Pricing() {
                                 <div className="card mb-4 rounded-3 shadow border-primary">
                                     <div className="card-header py-3 text-white border-primary bg-primary">
                                         <h4 className="my-0 fw-bold text-white">
-                                            <i className="bi bi-award"></i>Pro
+                                            <i className="bi bi-award"></i>PRO
                                         </h4>
                                     </div>
                                     <div className="card-body">
                                         <h1 className="card-title pricing-card-title">
-                                            $4.99<small className="text-muted fw-light">/month</small>
+                                            <small>$</small><big>4.99</big><small className="text-muted fw-light">/mo</small>
                                         </h1>
                                         <ul className="list-unstyled mt-3 mb-4">
-                                            <li>Access to API KEY</li>
-                                            <li>5000 API Requests Day</li>
-                                            <li>Access to Telegram BOT</li>
-                                            <li>Priority Email Support</li>
-                                            <li>Exclusive Telegram Support</li>
+                                            <li><i className="bi bi-check-circle"></i> 5000 API Requests/daily</li>
+                                            <li><i className="bi bi-check-circle"></i> Priority Email Support</li>
+											<li><i className="bi bi-check-circle"></i> Access To Telegram BOT</li>
                                         </ul>
                                         <form onSubmit={handleSubmitPro}>
                                             {user && user.stripe.subscription.active ? (
@@ -187,11 +182,11 @@ export default function Pricing() {
                                                 </button>
                                             ) : (
                                                 <button
-                                                    className="button w-100 btn btn-lg btn-outline-primary"
+                                                    className="button w-100 btn btn-lg btn-outline-primary fw-bold fs-4"
                                                     id="checkout-and-portal-button"
                                                     type="submit"
                                                 >
-                                                    Let's Go
+                                                    Get Started
                                                 </button>
                                             )}
                                         </form>
@@ -199,6 +194,64 @@ export default function Pricing() {
                                 </div>
                             </div>
                         </div>
+
+						<h3 className="fw-bold text-center mt-5 mb-4 text-muted">Frequently Asked Questions</h3>
+
+						<div className="container col-lg-8">
+
+						<div className="accordion" id="accordionExample">
+  <div className="accordion-item">
+    <h2 className="accordion-header" id="headingOne">
+      <button className="accordion-button fs-5 " type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+        There's any discount or annual subscriptions?
+      </button>
+    </h2>
+    <div id="collapseOne" className="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+      <div className="accordion-body">
+        No, for now we only provide monthly plans with no discounts.
+      </div>
+    </div>
+  </div>
+  <div className="accordion-item">
+    <h2 className="accordion-header" id="headingTwo">
+      <button className="accordion-button collapsed fs-5 " type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+        The transactions are secure?
+      </button>
+    </h2>
+    <div id="collapseTwo" className="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+      <div className="accordion-body">
+        Sure. All payments transactions data are take care by Stripe, one of the most reliable and secure payments processor on internet.
+      </div>
+    </div>
+  </div>
+  <div className="accordion-item">
+    <h2 className="accordion-header" id="headingFour">
+      <button className="accordion-button collapsed fs-5 " type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+        What payments methods I can use?
+      </button>
+    </h2>
+    <div id="collapseFour" className="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
+      <div className="accordion-body">
+        In our stripe checkout, we accept all major credit cards and other payment methods linked to your stripe account.
+      </div>
+    </div>
+  </div>
+  <div className="accordion-item">
+    <h2 className="accordion-header" id="headingThree">
+      <button className="accordion-button collapsed fs-5 " type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+        I can upgrade, dowgrade or cancel my subscription at any time?
+      </button>
+    </h2>
+    <div id="collapseThree" className="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+      <div className="accordion-body">
+        You can cancel your subscription at any time, by clicking on "Manage Subscription" in your profile page, then you'll be redirect to Stripe portal.
+		To upgrade or downgrade your plan, you need first to wait until the currently subscription is expired.
+      </div>
+    </div>
+  </div>
+</div>
+
+</div>
                     </main>
                 </div>
             </div>
