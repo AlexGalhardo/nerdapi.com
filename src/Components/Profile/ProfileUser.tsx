@@ -165,18 +165,6 @@ export default function ProfileUser() {
 
     return (
         <>
-            {apiRequestError &&
-                toast.error(`API Request Error: ${apiRequestError}`, {
-                    position: "top-right",
-                    autoClose: 3000,
-                    hideProgressBar: false,
-                    closeOnClick: true,
-                    pauseOnHover: false,
-                    draggable: true,
-                    progress: undefined,
-                    theme: "dark",
-                })}
-
             {registred && (
                 <SuccessAlertMessage
                     message={

@@ -2,18 +2,17 @@ import { Navigate } from "react-router-dom";
 import { useGlobalState } from "../../Context/GlobalStateContext";
 import Button from "../Forms/Button";
 import ErrorAlertMessage from "../Alerts/ErrorAlertMessage";
-import { useEffect, useState } from "react";
-import { ToastContainer, toast } from "react-toastify";
+import { useState } from "react";
 
 export default function RegisterForm() {
-    let { login, userRegister, loading, error, apiRequestError } = useGlobalState();
+    let { login, userRegister, loading, apiRequestError } = useGlobalState();
     const [isChecked, setIsChecked] = useState(false);
     const [username, setUsername] = useState<string>();
     const [email, setEmail] = useState<string>();
     const [password, setPassword] = useState<string>();
     const [errorCheckBox, setErrorCheckBox] = useState(false);
-    const [errorUsername, setErrorUsername] = useState(false);
-    const [errorEmail, setErrorError] = useState(false);
+    const [errorUsername, setErrorUsername] = useState<string>();
+    const [errorEmail, setErrorEmail] = useState<string>();
     const [errorPassword, setErrorPassword] = useState<string>();
 
     if (login === true) {
@@ -24,6 +23,30 @@ export default function RegisterForm() {
         setIsChecked(!isChecked);
     };
 
+    function isValidSingleName(name: string): boolean {
+        if (!name || name.length <= 3) return false;
+        const regexOfValidNamesWithAcents = /^[a-zA-ZÀ-ú]+$/g;
+        return regexOfValidNamesWithAcents.test(name);
+    }
+
+    function isValidUserName(fullName: string): boolean {
+        const names = fullName.split(" ");
+        if (names.length > 1) {
+            for (const name of names) {
+                if (!isValidSingleName(name)) return false;
+            }
+        } else {
+            if (!isValidSingleName(fullName)) return false;
+            return true;
+        }
+        return true;
+    }
+
+    function isValidEmail(email: string): boolean {
+        const regex = /\S+@\S+\.\S+/;
+        return regex.test(email);
+    }
+
     async function handleSubmit(event: any) {
         event.preventDefault();
 
@@ -31,7 +54,15 @@ export default function RegisterForm() {
             setErrorCheckBox(true);
         } else {
             setErrorCheckBox(false);
-            if (password) {
+
+            if (username && !isValidUserName(username)) {
+                setErrorUsername("Invalid username");
+            } else if (email && !isValidEmail(email)) {
+                setErrorUsername("");
+                setErrorEmail("Invalid email");
+            } else if (password) {
+                setErrorUsername("");
+                setErrorEmail("");
                 const specialCharRegex = /[!@#$%^&*()_+{}\[\]:;<>,.?~\\-]/;
                 const uppercaseRegex = /[A-Z]/;
                 const numberRegex = /[0-9]/;
@@ -56,20 +87,6 @@ export default function RegisterForm() {
 
     return (
         <>
-            <ToastContainer />
-
-            {apiRequestError &&
-                toast.error(`API Request Error: ${apiRequestError}`, {
-                    position: "top-right",
-                    autoClose: 3000,
-                    hideProgressBar: false,
-                    closeOnClick: true,
-                    pauseOnHover: false,
-                    draggable: true,
-                    progress: undefined,
-                    theme: "dark",
-                })}
-
             <div className="container col-lg-3 mt-5">
                 <h1 className="text-center text-muted mb-4">
                     <a className="text-decoration-none" href="/">
@@ -179,7 +196,7 @@ export default function RegisterForm() {
                     <div className="form-group">
                         {loading ? <Button disabled={true}>Processing...</Button> : <Button>Register Account</Button>}
 
-                        <ErrorAlertMessage message={error && "Invalid email or passwords"} />
+                        {apiRequestError && <ErrorAlertMessage message={apiRequestError} />}
                     </div>
                 </form>
 

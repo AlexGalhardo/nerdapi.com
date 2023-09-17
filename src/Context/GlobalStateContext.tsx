@@ -181,9 +181,25 @@ export const GlobalStateProvider = ({ children }: React.PropsWithChildren) => {
         try {
             setError(null);
             setLoading(true);
-            const { url, options } = RESET_PASSWORD(resetPasswordToken, newPassword, confirmNewPassword);
-            const response = await fetch(url, options);
-            if (!response.ok) throw new Error(`Error: ${response.statusText}`);
+            const response = await fetch(`${API_URL}/reset-password/${resetPasswordToken}`, {
+                method: "POST",
+                headers: {
+                    "Content-Type": "application/json",
+                },
+                body: JSON.stringify({
+                    newPassword,
+                    confirmNewPassword,
+                }),
+            });
+            if (!response.ok) {
+                const { message } = await response.json();
+                setError(message);
+            } else {
+                setSendResetPassword(true);
+                setTimeout(() => {
+                    navigate("/");
+                }, 5000);
+            }
         } catch (err: any) {
             setError(err.message);
             setSendResetPassword(true);
@@ -195,8 +211,15 @@ export const GlobalStateProvider = ({ children }: React.PropsWithChildren) => {
 
     async function isValidResetPasswordToken(resetPasswordToken: string): Promise<any> {
         try {
-            const { url, options } = CHECK_RESET_PASSWORD_TOKEN(resetPasswordToken);
-            const response = await fetch(url, options);
+            const response = await fetch(`${API_URL}/check-reset-password-token`, {
+                method: "POST",
+                headers: {
+                    "Content-Type": "application/json",
+                },
+                body: JSON.stringify({
+                    resetPasswordToken,
+                }),
+            });
             const json = await response.json();
             if (!json.success) navigate("/");
         } catch (err: any) {

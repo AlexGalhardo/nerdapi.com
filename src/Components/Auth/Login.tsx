@@ -1,26 +1,24 @@
 import { Navigate } from "react-router-dom";
 import { useGlobalState } from "../../Context/GlobalStateContext";
-import useForm from "../../Hooks/useForm";
-import Input from "../Forms/Input";
 import Button from "../Forms/Button";
 import ErrorAlertMessage from "../Alerts/ErrorAlertMessage";
 import { API_URL } from "../../Utils/Envs";
+import { useState } from "react";
 
 export default function LoginForm() {
     const { userLogin, error, loading, login } = useGlobalState();
+    const [email, setEmail] = useState<string>();
+    const [password, setPassword] = useState<string>();
 
     if (login === true) {
         return <Navigate to="/profile" />;
     }
 
-    const email = useForm("email");
-    const password = useForm("password");
-
     async function handleSubmit(event: any) {
         event.preventDefault();
 
-        if (email.validate() && password.validate()) {
-            userLogin(email.value, password.value);
+        if (email && password) {
+            userLogin(email, password);
         }
     }
 
@@ -51,24 +49,32 @@ export default function LoginForm() {
 
                 <form onSubmit={handleSubmit}>
                     <div className="form-group mb-4 mt-5">
-                        <Input
-                            minLength={12}
+                        <label htmlFor="email" className="text-muted mt-3">
+                            Digit Your Email
+                        </label>
+                        <input
+                            className="fs-4 form-control"
                             placeholder="Digit your email"
-                            label="Digit your email"
+                            minLength={8}
                             type="email"
                             name="email"
-                            {...email}
+                            onChange={(e) => setEmail(e.target.value)}
+                            required
                         />
                     </div>
 
                     <div className="form-group mb-4">
-                        <Input
-                            minLength={8}
+                        <label htmlFor="password" className="text-muted mt-3">
+                            Digit Your Password
+                        </label>
+                        <input
+                            className="fs-4 form-control"
+                            minLength={12}
                             placeholder="Digit your password"
-                            label="Digit your password"
                             type="password"
                             name="password"
-                            {...password}
+                            onChange={(e) => setPassword(e.target.value)}
+                            required
                         />
                     </div>
 

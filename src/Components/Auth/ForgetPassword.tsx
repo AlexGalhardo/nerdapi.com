@@ -1,24 +1,30 @@
 import { Navigate } from "react-router-dom";
 import { useGlobalState } from "../../Context/GlobalStateContext";
-import useForm from "../../Hooks/useForm";
-import Input from "../Forms/Input";
 import Button from "../Forms/Button";
-import ErrorAlertMessage from "../Alerts/ErrorAlertMessage";
 import SuccessAlertMessage from "../Alerts/SuccessAlertMessage";
+import { useState } from "react";
 
 export default function ForgetPasswordForm() {
-    const { forgetPassword, sendRecoverPassword, loading, login, error } = useGlobalState();
+    const { forgetPassword, sendRecoverPassword, loading, login } = useGlobalState();
+    const [email, setEmail] = useState<string>();
+    const [errorEmail, setErrorEmail] = useState<string>();
 
     if (login === true) return <Navigate to="/profile" />;
 
-    const email = useForm("email");
+    function isValidEmail(email: string): boolean {
+        const regex = /\S+@\S+\.\S+/;
+        return regex.test(email);
+    }
 
     async function handleSubmit(event: any) {
         event.preventDefault();
 
-        if (email.validate()) {
-            await forgetPassword(email.value);
-            email.setValue("");
+        if (email && !isValidEmail(email)) {
+            setErrorEmail("Invalid Email");
+        } else if (email && isValidEmail(email)) {
+            setErrorEmail("");
+            await forgetPassword(email);
+            setEmail("");
         }
     }
 
@@ -33,14 +39,24 @@ export default function ForgetPasswordForm() {
 
                 <form onSubmit={handleSubmit}>
                     <div className="form-group mb-4 mt-5">
-                        <Input
-                            minLength={12}
-                            placeholder="Digit your email to recover password"
-                            label="Digit your email"
+                        <label htmlFor="email" className="text-muted mt-3">
+                            Digit Your Email
+                        </label>
+                        <input
+                            className="fs-4 form-control"
+                            placeholder="Digit your email"
+                            minLength={8}
+                            value={email}
                             type="email"
                             name="email"
-                            {...email}
+                            onChange={(e) => setEmail(e.target.value)}
+                            required
                         />
+                        {errorEmail && (
+                            <small>
+                                <span className="fw-bold text-danger">Email invalid</span>
+                            </small>
+                        )}
                     </div>
 
                     {loading ? (
@@ -55,8 +71,6 @@ export default function ForgetPasswordForm() {
                             "If this email exists, a email was send with a link to recover password!"
                         }
                     />
-
-                    <ErrorAlertMessage message={error && "Invalid email or/and password"} />
                 </form>
             </div>
         </>
