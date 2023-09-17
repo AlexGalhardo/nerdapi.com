@@ -56,6 +56,7 @@ interface GlobalStateContextPort {
     updatedProfile: boolean;
     sendRecoverPassword: boolean;
     sendResetPassword: boolean;
+    apiRequestError: string | undefined;
     userLogin: (username: string, password: string) => Promise<Element | undefined>;
     userLogout: () => Promise<void>;
     sendContact: (name: string, email: string, subject: string, message: string) => Promise<any>;
@@ -78,6 +79,7 @@ export const GlobalStateProvider = ({ children }: React.PropsWithChildren) => {
     const [sendRecoverPassword, setSendRecoverPassword] = useState<boolean>(false);
     const [sendResetPassword, setSendResetPassword] = useState<boolean>(false);
     const [updatedProfile, setUpdatedProfile] = useState<boolean>(false);
+    const [apiRequestError, setAPIRequestError] = useState<string | undefined>(undefined);
     const navigate = useNavigate();
 
     const userLogout = useCallback(async function () {
@@ -152,8 +154,15 @@ export const GlobalStateProvider = ({ children }: React.PropsWithChildren) => {
         try {
             setError(null);
             setLoading(true);
-            const { url, options } = FORGET_PASSWORD(email);
-            const response = await fetch(url, options);
+            const response = await fetch(`${API_URL}/forget-password`, {
+                method: "POST",
+                headers: {
+                    "Content-Type": "application/json",
+                },
+                body: JSON.stringify({
+                    email,
+                }),
+            });
             if (!response.ok) throw new Error(`Error: ${response.statusText}`);
         } catch (err: any) {
             setError(err.message);
@@ -200,17 +209,29 @@ export const GlobalStateProvider = ({ children }: React.PropsWithChildren) => {
         try {
             setError(null);
             setLoading(true);
-            const { url, options } = USER_LOGIN({ email, password });
-            const response = await fetch(url, options);
-            if (!response.ok) throw new Error(`Error: ${response.statusText}`);
-            const json = await response.json();
-            if (json.redirect) {
-                window.location.href = json.redirect;
+            const response = await fetch(`${API_URL}/login`, {
+                method: "POST",
+                headers: {
+                    "Content-Type": "application/json",
+                },
+                body: JSON.stringify({
+                    email,
+                    password,
+                }),
+            });
+            if (!response.ok) {
+                const { message } = await response.json();
+                setAPIRequestError(message);
+                setError("Email and/or Password Invalid");
+            } else {
+                const json = await response.json();
+                if (json.redirect) {
+                    window.location.href = json.redirect;
+                }
+                window.localStorage.setItem("token", json.jwt_token);
+                await getUser(json.jwt_token);
+                navigate("/profile");
             }
-            const { jwt_token } = json;
-            window.localStorage.setItem("token", jwt_token);
-            await getUser(jwt_token);
-            navigate("/profile");
         } catch (err: any) {
             setError(err.message);
             setLogin(false);
@@ -223,7 +244,6 @@ export const GlobalStateProvider = ({ children }: React.PropsWithChildren) => {
         try {
             setError(null);
             setLoading(true);
-
             const response = await fetch(`${API_URL}/profile`, {
                 method: "PUT",
                 headers: {
@@ -238,7 +258,12 @@ export const GlobalStateProvider = ({ children }: React.PropsWithChildren) => {
                 }),
             });
 
-            if (response.ok) {
+            if (!response.ok) {
+                const { message } = await response.json();
+                setError(message);
+                setUpdatedProfile(false);
+                setAPIRequestError(message);
+            } else {
                 const { data } = await response.json();
                 if (user) {
                     setUser({
@@ -248,11 +273,8 @@ export const GlobalStateProvider = ({ children }: React.PropsWithChildren) => {
                         password: data.password,
                     });
                     setUpdatedProfile(true);
+                    setAPIRequestError("");
                 }
-            } else {
-                const { message } = await response.json();
-                setError(message);
-                setUpdatedProfile(false);
             }
         } catch (error: any) {
             setError(error.message);
@@ -267,13 +289,26 @@ export const GlobalStateProvider = ({ children }: React.PropsWithChildren) => {
         try {
             setError(null);
             setLoading(true);
-            const { url, options } = USER_REGISTER({ username, email, password });
-            const response = await fetch(url, options);
-            if (!response.ok) throw new Error(`Error: ${response.statusText}`);
-            const { token } = await response.json();
-            window.localStorage.setItem("token", token);
-            await getUser(token);
-            navigate("/profile");
+            const response = await fetch(`${API_URL}/register`, {
+                method: "POST",
+                headers: {
+                    "Content-Type": "application/json",
+                },
+                body: JSON.stringify({
+                    username,
+                    email,
+                    password,
+                }),
+            });
+            if (!response.ok) {
+                const { message } = await response.json();
+                setAPIRequestError(message);
+            } else {
+                const { jwt_token } = await response.json();
+                window.localStorage.setItem("token", jwt_token);
+                await getUser(jwt_token);
+                navigate("/profile");
+            }
         } catch (err: any) {
             setError(err.message);
             setLogin(false);
@@ -329,6 +364,7 @@ export const GlobalStateProvider = ({ children }: React.PropsWithChildren) => {
                 resetPassword,
                 sendResetPassword,
                 isValidResetPasswordToken,
+                apiRequestError,
             }}
         >
             {children}

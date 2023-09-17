@@ -7,7 +7,7 @@ import "react-toastify/dist/ReactToastify.css";
 import ErrorAlertMessage from "../Alerts/ErrorAlertMessage";
 
 export default function ProfileUser() {
-    const { user, updateProfile, loading, error, updatedProfile } = useGlobalState();
+    const { user, updateProfile, loading, error, updatedProfile, apiRequestError } = useGlobalState();
     let registred = null;
 
     const [username, setUsername] = useState<string>(user?.username as string);
@@ -21,9 +21,7 @@ export default function ProfileUser() {
             autoClose: 3000,
             hideProgressBar: false,
             closeOnClick: true,
-            pauseOnHover: true,
-            draggable: true,
-            progress: undefined,
+            pauseOnHover: false,
             theme: "dark",
         });
 
@@ -138,9 +136,7 @@ export default function ProfileUser() {
                     autoClose: 3000,
                     hideProgressBar: false,
                     closeOnClick: true,
-                    pauseOnHover: true,
-                    draggable: true,
-                    progress: undefined,
+                    pauseOnHover: false,
                     theme: "dark",
                 });
                 return false;
@@ -169,6 +165,18 @@ export default function ProfileUser() {
 
     return (
         <>
+            {apiRequestError &&
+                toast.error(`API Request Error: ${apiRequestError}`, {
+                    position: "top-right",
+                    autoClose: 3000,
+                    hideProgressBar: false,
+                    closeOnClick: true,
+                    pauseOnHover: false,
+                    draggable: true,
+                    progress: undefined,
+                    theme: "dark",
+                })}
+
             {registred && (
                 <SuccessAlertMessage
                     message={
@@ -180,12 +188,105 @@ export default function ProfileUser() {
 
             <ToastContainer />
 
-            <div className="container col-lg-5">
+            <div className="col-lg-5 mt-5">
+                <form onSubmit={handleSubmitUpdateProfile}>
+                    <small>
+                        <span id="alert_name" className="fw-bold text-danger"></span>
+                    </small>
+
+                    <div className="form-group mb-3">
+                        <label htmlFor="name">Username</label>
+                        <input
+                            type="text"
+                            min={4}
+                            max={16}
+                            className="fs-4 form-control"
+                            defaultValue={user?.username as string}
+                            name="name"
+                            onChange={(e) => setUsername(e.target.value)}
+                        />
+                    </div>
+
+                    <div className="form-group mb-3">
+                        <label htmlFor="email">Email</label>
+                        <input
+                            type="email"
+                            className="fs-4 form-control"
+                            name="email"
+                            defaultValue={user?.email as string}
+                            readOnly
+                            disabled
+                        />
+                    </div>
+
+                    <div className="form-group mb-3">
+                        <label htmlFor="telegram_number">Telegram Number</label>
+                        <input
+                            className="fs-4 mb-2 form-control"
+                            type="number"
+                            name="telegram_number"
+                            pattern="^55[0-9]{11}$"
+                            minLength={13}
+                            maxLength={13}
+                            defaultValue={user?.telegram_number as string}
+                            onChange={(e) => setTelegramNumber(e.target.value)}
+                        />
+                    </div>
+
+                    <div className="form-group mb-3">
+                        <label htmlFor="olderPassword">Older Password</label>
+                        <input
+                            type="password"
+                            className="fs-4 form-control"
+                            name="olderPassword"
+                            onChange={(e) => setOlderPassword(e.target.value)}
+                        />
+                    </div>
+
+                    <small>
+                        <span id="alert_password" className="fw-bold text-danger"></span>
+                    </small>
+
+                    <div className="form-group mb-3">
+                        <label htmlFor="newPassword">New Password</label>
+                        <input
+                            type="password"
+                            className="fs-4 form-control"
+                            name="newPassword"
+                            onChange={(e) => setNewPassword(e.target.value)}
+                        />
+                    </div>
+
+                    {loading ? (
+                        <button
+                            type="submit"
+                            className="button fs-4 mt-3 mb-3 w-50 btn btn btn-outline-success"
+                            disabled={true}
+                        >
+                            Processing...
+                        </button>
+                    ) : (
+                        <button
+                            type="submit"
+                            className="button fs-4 mt-3 mb-3 w-50 btn btn btn-outline-success"
+                            disabled={false}
+                        >
+                            Update Profile
+                        </button>
+                    )}
+
+                    <ErrorAlertMessage message={error && !updatedProfile && `ERROR: ${error}`} />
+
+                    <SuccessAlertMessage message={!error && updatedProfile && `Profile Updated!`} />
+                </form>
+            </div>
+
+            <div className="container col-lg-7">
                 <div className="form-group mt-5">
-                    <label htmlFor="stripe_card_last_4_digits">API KEY</label>
+                    <label htmlFor="apiKey">API KEY</label>
                     <input
-                        id="apiToken"
-                        name="apiToken"
+                        id="apiKey"
+                        name="apiKey"
                         className="fs-4 mb-2 form-control"
                         type="text"
                         defaultValue={user?.api_token ?? undefined}
@@ -270,99 +371,6 @@ export default function ProfileUser() {
                         </a>
                     )}
                 </div>
-            </div>
-
-            <div className="col-lg-5 mt-5">
-                <form onSubmit={handleSubmitUpdateProfile}>
-                    <small>
-                        <span id="alert_name" className="fw-bold text-danger"></span>
-                    </small>
-
-                    <div className="form-group mb-3">
-                        <label htmlFor="name">Username</label>
-                        <input
-                            type="text"
-                            min={4}
-                            max={16}
-                            className="fs-4 form-control"
-                            defaultValue={user?.username as string}
-                            name="name"
-                            onChange={(e) => setUsername(e.target.value)}
-                        />
-                    </div>
-
-                    <div className="form-group mb-3">
-                        <label htmlFor="email">Email</label>
-                        <input
-                            type="email"
-                            className="fs-4 form-control"
-                            name="email"
-                            defaultValue={user?.email as string}
-                            readOnly
-                            disabled
-                        />
-                    </div>
-
-                    <div className="form-group mb-3">
-                        <label htmlFor="telegram_number">Telegram Number</label>
-                        <input
-                            className="fs-4 mb-2 form-control"
-                            type="number"
-                            name="telegram_number"
-                            pattern="^55[0-9]{11}$"
-                            minLength={13}
-                            maxLength={13}
-                            defaultValue={user?.telegram_number as string}
-                            onChange={(e) => setTelegramNumber(e.target.value)}
-                        />
-                    </div>
-
-                    <div className="form-group mb-3">
-                        <label htmlFor="older_password">Older Password</label>
-                        <input
-                            type="password"
-                            className="fs-4 form-control"
-                            name="older_password"
-                            onChange={(e) => setOlderPassword(e.target.value)}
-                        />
-                    </div>
-
-                    <small>
-                        <span id="alert_password" className="fw-bold text-danger"></span>
-                    </small>
-
-                    <div className="form-group mb-3">
-                        <label htmlFor="new_password">New Password</label>
-                        <input
-                            type="password"
-                            className="fs-4 form-control"
-                            name="new_password"
-                            onChange={(e) => setNewPassword(e.target.value)}
-                        />
-                    </div>
-
-                    {loading ? (
-                        <button
-                            type="submit"
-                            className="button fs-4 mt-3 mb-3 w-50 btn btn btn-outline-success"
-                            disabled={true}
-                        >
-                            Processing...
-                        </button>
-                    ) : (
-                        <button
-                            type="submit"
-                            className="button fs-4 mt-3 mb-3 w-50 btn btn btn-outline-success"
-                            disabled={false}
-                        >
-                            Update Profile
-                        </button>
-                    )}
-
-                    <ErrorAlertMessage message={error && !updatedProfile && `ERROR: ${error}`} />
-
-                    <SuccessAlertMessage message={!error && updatedProfile && `Profile Updated!`} />
-                </form>
             </div>
         </>
     );

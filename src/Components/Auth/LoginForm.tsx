@@ -4,8 +4,7 @@ import useForm from "../../Hooks/useForm";
 import Input from "../Forms/Input";
 import Button from "../Forms/Button";
 import ErrorAlertMessage from "../Alerts/ErrorAlertMessage";
-import { useEffect } from "react";
-import { API_URL, APP_URL } from "../../Utils/Envs";
+import { API_URL } from "../../Utils/Envs";
 
 export default function LoginForm() {
     const { userLogin, error, loading, login } = useGlobalState();
@@ -75,7 +74,7 @@ export default function LoginForm() {
 
                     {loading ? <Button disabled={true}>Processing...</Button> : <Button>Login</Button>}
 
-                    <ErrorAlertMessage message={error && "Invalid email or/and password"} />
+                    <ErrorAlertMessage message={error && "Email and/or Password Invalid"} />
                 </form>
 
                 <div className="text-center mt-5">
