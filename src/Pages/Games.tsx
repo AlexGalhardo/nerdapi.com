@@ -168,7 +168,7 @@ export default function Games() {
 
     return (
         <>
-            <Head title="The Best Developer Experience API for Games" description="Come look to see great games!" />
+            <Head title="Games API for Developers" description="The best games recomendation system and api for developers & gamers on internet." />
             <Navbar />
             <div className="container" style={container}>
                 <div className="row mt-5">

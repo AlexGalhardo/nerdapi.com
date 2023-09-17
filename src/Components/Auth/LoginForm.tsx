@@ -33,27 +33,42 @@ export default function LoginForm() {
                     </a>
                 </h1>
 
-                <div
+                {/* <div
                     id="g_id_onload"
                     data-client_id="944810954683-ahhpp7q8ndotmd10f96ri6es0kpv2nh1.apps.googleusercontent.com"
                     data-context="signin"
-                    data-ux_mode="popup"
+                    // data-ux_mode="popup"
                     data-login_uri={`${API_URL}/login/google/callback`}
-                    data-nonce=""
-                    data-auto_select="true"
-                    data-itp_support="true"
-                ></div>
+                    // data-nonce=""
+                    // data-auto_select="true"
+                    // data-itp_support="true"
+					data-locale="en">
+                </div>
 
                 <div
                     className="g_id_signin"
                     data-type="standard"
-                    data-shape="rectangular"
-                    data-theme="outline"
-                    data-text="signin_with"
+                    // data-shape="rectangular"
+                    // data-theme="outline"
+                    data-text="Login with Google"
                     data-size="large"
                     data-logo_alignment="left"
                     data-width="100%"
-                ></div>
+                ></div> */}
+				<a
+                    href="https://accounts.google.com/o/oauth2/v2/auth
+							?response_type=id_token
+							&client_id=944810954683-ahhpp7q8ndotmd10f96ri6es0kpv2nh1.apps.googleusercontent.com
+							&redirect_uri=https://api.nerdapi.com/login/google/callback
+							&scope=openid%20email%20profile
+							&state==auhsiudasd
+							&nonce=aiushisauhdas"
+                    className="fs-4 fw-bold button btn-lg btn btn-outline-danger w-100 mb-3"
+                >
+                    <i className="bi bi-google me-2"></i>
+                    Login with Google
+                </a>
+
 
                 <a
                     href="https://github.com/login/oauth/authorize?client_id=dc8d30a5f12828c5d3f9"
