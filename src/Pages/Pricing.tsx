@@ -200,58 +200,58 @@ export default function Pricing() {
 						<div className="container col-lg-8">
 
 						<div className="accordion" id="accordionExample">
-  <div className="accordion-item">
-    <h2 className="accordion-header" id="headingOne">
-      <button className="accordion-button fs-5 " type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-        There's any discount or annual subscriptions?
-      </button>
-    </h2>
-    <div id="collapseOne" className="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
-      <div className="accordion-body">
-        No, for now we only provide monthly plans with no discounts.
-      </div>
-    </div>
-  </div>
-  <div className="accordion-item">
-    <h2 className="accordion-header" id="headingTwo">
-      <button className="accordion-button collapsed fs-5 " type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-        The transactions are secure?
-      </button>
-    </h2>
-    <div id="collapseTwo" className="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
-      <div className="accordion-body">
-        Sure. All payments transactions data are take care by Stripe, one of the most reliable and secure payments processor on internet.
-      </div>
-    </div>
-  </div>
-  <div className="accordion-item">
-    <h2 className="accordion-header" id="headingFour">
-      <button className="accordion-button collapsed fs-5 " type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
-        What payments methods I can use?
-      </button>
-    </h2>
-    <div id="collapseFour" className="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
-      <div className="accordion-body">
-        In our stripe checkout, we accept all major credit cards and other payment methods linked to your stripe account.
-      </div>
-    </div>
-  </div>
-  <div className="accordion-item">
-    <h2 className="accordion-header" id="headingThree">
-      <button className="accordion-button collapsed fs-5 " type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-        I can upgrade, dowgrade or cancel my subscription at any time?
-      </button>
-    </h2>
-    <div id="collapseThree" className="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
-      <div className="accordion-body">
-        You can cancel your subscription at any time, by clicking on "Manage Subscription" in your profile page, then you'll be redirect to Stripe portal.
-		To upgrade or downgrade your plan, you need first to wait until the currently subscription is expired.
-      </div>
-    </div>
-  </div>
-</div>
+						<div className="accordion-item">
+							<h2 className="accordion-header" id="headingOne">
+							<button className="accordion-button fs-5 " type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+								There's any discount or annual subscriptions?
+							</button>
+							</h2>
+							<div id="collapseOne" className="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+							<div className="accordion-body">
+								No, for now we only provide monthly plans with no discounts.
+							</div>
+							</div>
+						</div>
+						<div className="accordion-item">
+							<h2 className="accordion-header" id="headingTwo">
+							<button className="accordion-button collapsed fs-5 " type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+								The transactions are secure?
+							</button>
+							</h2>
+							<div id="collapseTwo" className="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+							<div className="accordion-body">
+								Sure. All payments transactions data are take care by Stripe, one of the most reliable and secure payments processor on internet.
+							</div>
+							</div>
+						</div>
+						<div className="accordion-item">
+							<h2 className="accordion-header" id="headingFour">
+							<button className="accordion-button collapsed fs-5 " type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+								What payments methods I can use?
+							</button>
+							</h2>
+							<div id="collapseFour" className="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
+							<div className="accordion-body">
+								In our stripe checkout, we accept all major credit cards and other payment methods linked to your stripe account.
+							</div>
+							</div>
+						</div>
+						<div className="accordion-item">
+							<h2 className="accordion-header" id="headingThree">
+							<button className="accordion-button collapsed fs-5 " type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+								I can upgrade, dowgrade or cancel my subscription at any time?
+							</button>
+							</h2>
+							<div id="collapseThree" className="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+							<div className="accordion-body">
+								You can cancel your subscription at any time, by clicking on "Manage Subscription" in your profile page, then you'll be redirect to Stripe portal.
+								To upgrade or downgrade your plan, you need first to wait until the currently subscription is expired.
+							</div>
+							</div>
+						</div>
+						</div>
 
-</div>
+						</div>
                     </main>
                 </div>
             </div>
