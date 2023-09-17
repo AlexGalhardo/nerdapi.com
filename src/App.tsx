@@ -7,15 +7,14 @@ import Pricing from "./Pages/Pricing";
 import Checkout from "./Components/Checkout/Checkout";
 import NotFound from "./Components/NotFound";
 import Profile from "./Components/Profile/Profile";
-import "bootstrap/dist/css/bootstrap.min.css";
-import "bootstrap-icons/font/bootstrap-icons.css";
-import "./Style.css";
 import Privacy from "./Pages/Privacy";
 import LoginForm from "./Components/Auth/LoginForm";
 import RegisterForm from "./Components/Auth/RegisterForm";
 import ForgetPasswordForm from "./Components/Auth/ForgetPasswordForm";
 import ResetPasswordForm from "./Components/Auth/ResetPasswordForm";
-import Plans from "./Pages/Plans";
+import "bootstrap/dist/css/bootstrap.min.css";
+import "bootstrap-icons/font/bootstrap-icons.css";
+import "./Style.css";
 
 export default function App() {
     return (

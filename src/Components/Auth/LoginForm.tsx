@@ -5,17 +5,10 @@ import Input from "../Forms/Input";
 import Button from "../Forms/Button";
 import ErrorAlertMessage from "../Alerts/ErrorAlertMessage";
 import { useEffect } from "react";
-import { APP_URL } from "../../Utils/Envs";
+import { API_URL, APP_URL } from "../../Utils/Envs";
 
 export default function LoginForm() {
     const { userLogin, error, loading, login } = useGlobalState();
-    const googleLoginLink = `https://accounts.google.com/o/oauth2/v2/auth
-							?response_type=id_token
-							&client_id=944810954683-ahhpp7q8ndotmd10f96ri6es0kpv2nh1.apps.googleusercontent.com
-							&prompt=select_account
-							&redirect_uri=${APP_URL}/login
-							&scope=openid%20email%20profile
-							&nonce=9g1c02ng2wd6s39e`;
 
     if (login === true) {
         return <Navigate to="/profile" />;
@@ -32,27 +25,6 @@ export default function LoginForm() {
         }
     }
 
-    useEffect(() => {
-        if (window.location.href.includes("id_token")) {
-            const url = window.location.href;
-            const params = new URLSearchParams(url.split("#")[1]);
-
-            const loginGoogle = async (idToken: string) => {
-                try {
-                    const response = await fetch(`http://localhost:4000/login/google/callback?id_token=${idToken}`);
-                    const json = await response.json();
-                    if (json.redirect) {
-                        window.location.href = json.redirect;
-                    }
-                } catch (error) {
-                    console.log("\n\n error => ", error);
-                }
-            };
-
-            loginGoogle(params.get("id_token") as string);
-        }
-    }, [window.location.href]);
-
     return (
         <>
             <div className="container col-lg-3 mt-5">
@@ -62,10 +34,13 @@ export default function LoginForm() {
                     </a>
                 </h1>
 
-                <a href={googleLoginLink} className="fs-4 fw-bold button btn-lg btn btn-outline-danger w-100 mb-3">
-                    <i className="bi bi-google me-2"></i>
-                    Login with Google
-                </a>
+                <div
+                    id="g_id_onload"
+                    data-client_id="944810954683-ahhpp7q8ndotmd10f96ri6es0kpv2nh1.apps.googleusercontent.com"
+                    data-context="signin"
+                    data-login_uri={`${API_URL}/login/google/callback`}
+                    data-locale="en"
+                ></div>
 
                 <a
                     href="https://github.com/login/oauth/authorize?client_id=dc8d30a5f12828c5d3f9"
