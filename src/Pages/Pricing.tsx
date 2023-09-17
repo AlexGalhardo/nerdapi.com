@@ -264,7 +264,7 @@ export default function Pricing() {
                                             aria-expanded="false"
                                             aria-controls="collapseTwo"
                                         >
-                                            The transactions are secure?
+                                            The payments transactions are secure?
                                         </button>
                                     </h2>
                                     <div

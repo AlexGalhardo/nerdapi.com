@@ -1,20 +1,12 @@
 import { createContext, useCallback, useContext, useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
-import {
-    CHECK_RESET_PASSWORD_TOKEN,
-    FORGET_PASSWORD,
-    RESET_PASSWORD,
-    SEND_CONTACT,
-    USER_LOGIN,
-    USER_REGISTER,
-} from "../Api";
 import { API_URL } from "../Utils/Envs";
 
 export interface ProfileUpdateDTO {
     username?: string | null;
     telegramNumber?: string | null;
-    olderPassword?: string | null;
     newPassword?: string | null;
+    confirmNewPassword?: string | null;
 }
 
 export interface User {
@@ -62,7 +54,7 @@ interface GlobalStateContextPort {
     sendContact: (name: string, email: string, subject: string, message: string) => Promise<any>;
     getUser: (token: string) => Promise<void>;
     userRegister: (username: string, email: string, password: string) => Promise<any>;
-    updateProfile({ username, telegramNumber, olderPassword, newPassword }: ProfileUpdateDTO): void;
+    updateProfile({ username, telegramNumber, newPassword, confirmNewPassword }: ProfileUpdateDTO): void;
     forgetPassword: (email: string) => Promise<any>;
     resetPassword(resetPasswordToken: string, newPassword: string, confirmNewPassword: string): Promise<any>;
     isValidResetPasswordToken(resetPasswordToken: string): Promise<boolean>;
@@ -138,9 +130,22 @@ export const GlobalStateProvider = ({ children }: React.PropsWithChildren) => {
         try {
             setError(null);
             setLoading(true);
-            const { url, options } = SEND_CONTACT({ name, email, subject, message });
-            const response = await fetch(url, options);
-            if (!response.ok) throw new Error(`Error: ${response.statusText}`);
+            const response = await fetch(`${API_URL}/contact`, {
+                method: "POST",
+                headers: {
+                    "Content-Type": "application/json",
+                },
+                body: JSON.stringify({
+                    name,
+                    email,
+                    subject,
+                    message,
+                }),
+            });
+            if (!response.ok) {
+                const { message } = await response.json();
+                setError(message);
+            }
         } catch (err: any) {
             setError(err.message);
             setContactSend(false);
@@ -163,7 +168,10 @@ export const GlobalStateProvider = ({ children }: React.PropsWithChildren) => {
                     email,
                 }),
             });
-            if (!response.ok) throw new Error(`Error: ${response.statusText}`);
+            if (!response.ok) {
+                const { message } = await response.json();
+                setError(message);
+            }
         } catch (err: any) {
             setError(err.message);
             setSendRecoverPassword(true);
@@ -263,7 +271,7 @@ export const GlobalStateProvider = ({ children }: React.PropsWithChildren) => {
         }
     }
 
-    async function updateProfile({ username, telegramNumber, olderPassword, newPassword }: ProfileUpdateDTO) {
+    async function updateProfile({ username, telegramNumber, newPassword, confirmNewPassword }: ProfileUpdateDTO) {
         try {
             setError(null);
             setLoading(true);
@@ -276,8 +284,8 @@ export const GlobalStateProvider = ({ children }: React.PropsWithChildren) => {
                 body: JSON.stringify({
                     username,
                     telegramNumber,
-                    olderPassword,
                     newPassword,
+                    confirmNewPassword,
                 }),
             });
 
