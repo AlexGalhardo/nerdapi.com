@@ -146,8 +146,9 @@ export const GlobalStateProvider = ({ children }: React.PropsWithChildren) => {
                 const { message } = await response.json();
                 setError(message);
             }
-        } catch (err: any) {
-            setError(err.message);
+        } catch (error: any) {
+            setLoading(false);
+            setError(error.message);
             setContactSend(false);
         } finally {
             setContactSend(true);
