@@ -15,6 +15,10 @@ import ResetPasswordForm from "./Components/Auth/ResetPassword";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap-icons/font/bootstrap-icons.css";
 import "./Style.css";
+import Developer from "./Pages/Developer";
+import Publisher from "./Pages/Publisher";
+import Genre from "./Pages/Genre";
+import Platform from "./Pages/Platform";
 
 export default function App() {
     return (
@@ -24,6 +28,10 @@ export default function App() {
                 <Routes>
                     <Route path="/" element={<Games />} />
                     <Route path="/games/*" element={<Games />} />
+                    <Route path="/developer/:developer_name" element={<Developer />} />
+                    <Route path="/publisher/:publisher_name" element={<Publisher />} />
+                    <Route path="/genre/:genre_name" element={<Genre />} />
+                    <Route path="/platform/:platform_name" element={<Platform />} />
                     <Route path="/contact" element={<Contact />} />
                     <Route path="/pricing" element={<Pricing />} />
                     <Route path="/checkout/*" element={<Checkout />} />

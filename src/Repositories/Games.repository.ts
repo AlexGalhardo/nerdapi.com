@@ -66,9 +66,13 @@ export interface Game {
 }
 
 export interface GamesRepositoryPort {
+    getRandom(): Game;
     getById(gameId: string): Game;
     getByTitle(gameTitle: string): Game[];
-    getRandom(): Game;
+    getByDeveloper(developerName: string): Game[];
+    getByPublisher(publisherName: string): Game[];
+    getByPlatform(platformName: string): Game[];
+    getByGenre(genreName: string): Game[];
 }
 
 export default class GamesRepository implements GamesRepositoryPort {
@@ -76,6 +80,10 @@ export default class GamesRepository implements GamesRepositoryPort {
 
     public getById(gameId: string): Game {
         return this.games.filter((game: Game) => game.id === gameId)[0];
+    }
+
+    public getRandom(): Game {
+        return this.games[Math.floor(Math.random() * this.games.length)];
     }
 
     public getByTitle(gameTitle: string): Game[] {
@@ -99,7 +107,29 @@ export default class GamesRepository implements GamesRepositoryPort {
         return gamesFound;
     }
 
-    public getRandom(): Game {
-        return this.games[Math.floor(Math.random() * this.games.length)];
+    public getByDeveloper(developerName: string): Game[] {
+        return this.games.filter((game: Game) =>
+            game.developer.name.toLowerCase().includes(developerName.toLowerCase()),
+        );
+    }
+
+    public getByPublisher(publisherName: string): Game[] {
+        return this.games.filter((game: Game) =>
+            game.publisher.name.toLowerCase().includes(publisherName.toLowerCase()),
+        );
+    }
+
+    public getByPlatform(platformName: string): Game[] {
+        return this.games.filter((game: Game) =>
+            game.platforms_available.some((platform) =>
+                platform.name.toLowerCase().includes(platformName.toLowerCase()),
+            ),
+        );
+    }
+
+    public getByGenre(genreName: string): Game[] {
+        return this.games.filter((game: Game) =>
+            game.genres.some((platform) => platform.name.toLowerCase().includes(genreName.toLowerCase())),
+        );
     }
 }
