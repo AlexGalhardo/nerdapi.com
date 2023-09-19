@@ -83,7 +83,12 @@ export default function RandomGame() {
                 <div className="row mt-5">
                     {error && <ErrorAlertMessage message={error} />}
 
-                    {totalGamesFound && <SuccessAlertMessage message={`Total Games Found: ${totalGamesFound}`} />}
+                    {totalGamesFound && (
+                        <p className="fs-1 text-center mb-5 alert alert-success">
+                            Searching <strong className="text-success">{queryParams.get("search")}...</strong>{" "}
+                            Found<strong className="text-danger"> {totalGamesFound}</strong> Games
+                        </p>
+                    )}
 
                     {!foundMoreThanOne && (
                         <GameFound game={game} buttonRecommend={true} recommendRandomGame={recommendRandomGame} />
