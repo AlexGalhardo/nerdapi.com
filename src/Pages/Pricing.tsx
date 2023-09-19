@@ -250,7 +250,7 @@ export default function Pricing() {
                                         data-bs-parent="#accordionExample"
                                     >
                                         <div className="accordion-body">
-                                            No, for now we only provide monthly plans with no discounts.
+                                            No, for now we only provide monthly plans without discounts.
                                         </div>
                                     </div>
                                 </div>
