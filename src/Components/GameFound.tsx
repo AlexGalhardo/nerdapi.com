@@ -40,7 +40,7 @@ export default function GameFound({
                             <span className="text-muted">{game?.release.year}</span>)
                         </a>
 
-                        <p className="fs-2 fw-bold text-warning text-decoration-none" target="_blank">
+                        <p className="fs-2 fw-bold text-warning text-decoration-none">
                             ⭐<span id="game_igdb_rating">{game?.metacritic.rating}</span>
                         </p>
                     </div>
