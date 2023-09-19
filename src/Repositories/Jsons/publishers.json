@@ -1,0 +1,172 @@
+[
+	{
+		"id": "32ab1eb2-4e31-48e3-8c2d-4b10bb8e481d",
+		"name": "Sony Computer Entertainment",
+		"slug": "sony-computer-entertainment"
+	},
+	{
+		"id": "e94b5c97-911e-48cc-b325-160d2d9091ca",
+		"name": "Rockstar Games",
+		"slug": "rockstar-games"
+	},
+	{
+		"id": "7c9260f8-9646-4d41-9395-44a111d2f4c2",
+		"name": "Xbox Game Studios",
+		"slug": "xbox-game-studios"
+	},
+	{
+		"id": "307769e5-016c-4c6a-aa5b-8bebd57669c1",
+		"name": "Ninja Kiwi",
+		"slug": "ninja-kiwi"
+	},
+	{
+		"id": "5c5a1cf2-6cfc-42e5-9fce-fef355685e10",
+		"name": "Sony Interactive Entertainment",
+		"slug": "sony-interactive-entertainment"
+	},
+	{
+		"id": "868ef3ec-4f3c-42b8-a4a2-dd198650fa11",
+		"name": "Playtronic",
+		"slug": "playtronic"
+	},
+	{
+		"id": "d63e3f6f-6cc3-42c3-acbd-2d65037badce",
+		"name": "Nintendo",
+		"slug": "nintendo"
+	},
+	{
+		"id": "86ebfbcd-283d-4e91-8149-960b0a7fc8df",
+		"name": "Microsoft Studios",
+		"slug": "microsoft-studios"
+	},
+	{
+		"id": "64233123-14f6-4188-b72a-747d313c7292",
+		"name": "Square Enix",
+		"slug": "square-enix"
+	},
+	{
+		"id": "a3b07f82-c0b7-42d8-a3c4-64dfdbc9d8cc",
+		"name": "Ubisoft Entertainment",
+		"slug": "ubisoft-entertainment"
+	},
+	{
+		"id": "d2ec22c5-bddf-49f3-be81-7c2ec299481a",
+		"name": "FromSoftware",
+		"slug": "fromsoftware"
+	},
+	{
+		"id": "18007a09-3846-4a9f-823f-6daad070ce5b",
+		"name": "Larian Studios",
+		"slug": "larian-studios"
+	},
+	{
+		"id": "1563aa58-969c-4177-abc3-883ae7d7bea8",
+		"name": "Activision",
+		"slug": "activision"
+	},
+	{
+		"id": "20bf396e-01b2-454b-a2d1-20c3b5404018",
+		"name": "Valve",
+		"slug": "valve"
+	},
+	{
+		"id": "5d7d8c3f-4174-4f3f-9c3e-d4cdfa275151",
+		"name": "Blizzard Entertainment",
+		"slug": "blizzard-entertainment"
+	},
+	{
+		"id": "28bc1dbe-9df4-4848-a479-a6391c2f8731",
+		"name": "Sabotage",
+		"slug": "sabotage"
+	},
+	{
+		"id": "3962d9f2-72c1-4716-a252-2449af7a2afd",
+		"name": "Team Cherry",
+		"slug": "team-cherry"
+	},
+	{
+		"id": "71239aca-161b-4353-a8cc-b26ee2f40829",
+		"name": "Square",
+		"slug": "square"
+	},
+	{
+		"id": "fb199dc2-52b8-4fe6-9b47-92bbc96a0cdf",
+		"name": "cdp.pl",
+		"slug": "cdp.pl"
+	},
+	{
+		"id": "81bfc1b6-3471-4335-9371-e89684edab9f",
+		"name": "505 Games",
+		"slug": "505-games"
+	},
+	{
+		"id": "2f8242bd-e347-4f00-ac76-06da993f62d4",
+		"name": "2K Games",
+		"slug": "2k-games"
+	},
+	{
+		"id": "167bf7e4-e27b-401a-871a-36c75b233521",
+		"name": "Sierra Entertainment",
+		"slug": "sierra-entertainment"
+	},
+	{
+		"id": "9981e874-4c34-4624-8824-18652902a8bd",
+		"name": "Vivendi Universal",
+		"slug": "vivendi-universal"
+	},
+	{
+		"id": "e6d7b88f-285b-4f9c-a2fd-65cf99868671",
+		"name": "Valve Software",
+		"slug": "valve-software"
+	},
+	{
+		"id": "0f5b26f8-2229-4cea-8077-c0c0d40f1757",
+		"name": "Take-Two Interactive",
+		"slug": "take-two-interactive"
+	},
+	{
+		"id": "8f8dc82e-5ac9-4c0d-90cf-89dba957b45d",
+		"name": "ZA/UM",
+		"slug": "zaum"
+	},
+	{
+		"id": "804155e9-3b86-414c-9bbc-4fda2330c1a5",
+		"name": "Focus Entertainment",
+		"slug": "focus-entertainment"
+	},
+	{
+		"id": "39e7def1-ef9c-47a8-9748-5d3696bf5173",
+		"name": "11 bit studios",
+		"slug": "11-bit-studios"
+	},
+	{
+		"id": "71073af4-1d9d-47b1-8b66-e15ad5397456",
+		"name": "Capcom",
+		"slug": "capcom"
+	},
+	{
+		"id": "9540dc59-b44a-42ed-b35a-ad81f1cee7f7",
+		"name": "Microsoft Game Studios",
+		"slug": "microsoft-game-studios"
+	},
+	{
+		"id": "0bb2ab3d-6b1e-482f-8cb3-9bba50c91180",
+		"name": "Freebird Games",
+		"slug": "freebird-games"
+	},
+	{
+		"id": "38ad6330-9584-4eb3-a729-3580f6fbf6de",
+		"name": "Crowbar Collective",
+		"slug": "crowbar-collective"
+	},
+	{
+		"id": "c8770873-aa15-4920-aaa0-386ff989cfd7",
+		"name": "Electronic Arts",
+		"slug": "electronic-arts"
+	},
+	{
+		"id": "e6e94ae0-d6ed-4c14-ba72-f9149ca53f4a",
+		"name": "CipSoft",
+		"slug": "cipsoft"
+	}
+]

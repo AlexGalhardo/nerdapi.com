@@ -4,8 +4,8 @@ import Head from "../Components/Head";
 import { CSSProperties, useCallback, useEffect, useState } from "react";
 import { useNavigate, useParams } from "react-router-dom";
 import GamesRepository, { Game } from "../Repositories/Games.repository";
-import SuccessAlertMessage from "../Components/Alerts/SuccessAlertMessage";
 import GameFound from "../Components/GameFound";
+import developersJson from "../Repositories/Jsons/developers.json";
 
 const container: CSSProperties = {
     marginTop: "100px",
@@ -13,6 +13,7 @@ const container: CSSProperties = {
 
 export default function Developer() {
     const { developer_name } = useParams();
+    const developerName = developersJson.filter((developer) => developer.slug === developer_name)[0].name;
     const pageTitle = `${developer_name} Games`;
     const pageDescription = `See games made by developer ${developer_name}`;
     const navigate = useNavigate();
@@ -42,7 +43,10 @@ export default function Developer() {
             <div className="container" style={container}>
                 <div className="row mt-5">
                     {totalGamesFound && (
-                        <SuccessAlertMessage message={`Developer ${developer_name} Games Found: ${totalGamesFound}`} />
+                        <p className="fs-1 text-center mb-5 alert alert-success">
+                            Developer <strong className="text-success">{developerName}</strong> Games Found:{" "}
+                            <strong className="text-danger">{totalGamesFound}</strong>
+                        </p>
                     )}
 
                     {games?.map((game) => <GameFound game={game} />)}

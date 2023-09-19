@@ -5,21 +5,25 @@ import gamesDatabase from "./Jsons/games.json";
 export interface PlatformAvailable {
     id: string;
     name: string;
+    slug: string;
 }
 
 export interface Developer {
     id: string;
     name: string;
+    slug: string;
 }
 
 export interface Publisher {
     id: string;
     name: string;
+    slug: string;
 }
 
 export interface Genre {
     id: string;
     name: string;
+    slug: string;
 }
 
 export interface WhereToBuy {
@@ -31,6 +35,7 @@ export interface WhereToBuy {
 export interface Game {
     id: string;
     title: string;
+    slug: string;
     cover_image: string;
     summary: string;
     release: {
@@ -68,7 +73,8 @@ export interface Game {
 export interface GamesRepositoryPort {
     getRandom(): Game;
     getById(gameId: string): Game;
-    getByTitle(gameTitle: string): Game[];
+    getByTitleSlug(gameTitle: string): Game;
+    searchAllGamesSimilarTitle(gameTitle: string): Game[];
     getByDeveloper(developerName: string): Game[];
     getByPublisher(publisherName: string): Game[];
     getByPlatform(platformName: string): Game[];
@@ -86,7 +92,11 @@ export default class GamesRepository implements GamesRepositoryPort {
         return this.games[Math.floor(Math.random() * this.games.length)];
     }
 
-    public getByTitle(gameTitle: string): Game[] {
+    public getByTitleSlug(gameTitle: string): Game {
+        return this.games.filter((game: Game) => game.slug.toLowerCase().includes(gameTitle.toLowerCase()))[0];
+    }
+
+    public searchAllGamesSimilarTitle(gameTitle: string): Game[] {
         const gamesFound = this.games.filter((game: Game) =>
             game.title.toLowerCase().includes(gameTitle.toLowerCase()),
         );
@@ -109,27 +119,27 @@ export default class GamesRepository implements GamesRepositoryPort {
 
     public getByDeveloper(developerName: string): Game[] {
         return this.games.filter((game: Game) =>
-            game.developer.name.toLowerCase().includes(developerName.toLowerCase()),
+            game.developer.slug.toLowerCase().includes(developerName.toLowerCase()),
         );
     }
 
     public getByPublisher(publisherName: string): Game[] {
         return this.games.filter((game: Game) =>
-            game.publisher.name.toLowerCase().includes(publisherName.toLowerCase()),
+            game.publisher.slug.toLowerCase().includes(publisherName.toLowerCase()),
         );
     }
 
     public getByPlatform(platformName: string): Game[] {
         return this.games.filter((game: Game) =>
             game.platforms_available.some((platform) =>
-                platform.name.toLowerCase().includes(platformName.toLowerCase()),
+                platform.slug.toLowerCase().includes(platformName.toLowerCase()),
             ),
         );
     }
 
     public getByGenre(genreName: string): Game[] {
         return this.games.filter((game: Game) =>
-            game.genres.some((platform) => platform.name.toLowerCase().includes(genreName.toLowerCase())),
+            game.genres.some((platform) => platform.slug.toLowerCase().includes(genreName.toLowerCase())),
         );
     }
 }

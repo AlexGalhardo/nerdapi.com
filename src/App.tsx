@@ -1,6 +1,6 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import { GlobalStateProvider } from "./Context/GlobalStateContext";
-import Games from "./Pages/Games";
+import Games from "./Pages/RandomGame";
 import ProgressBar from "./Components/ProgressBar";
 import Contact from "./Pages/Contact";
 import Pricing from "./Pages/Pricing";
@@ -19,6 +19,8 @@ import Developer from "./Pages/Developer";
 import Publisher from "./Pages/Publisher";
 import Genre from "./Pages/Genre";
 import Platform from "./Pages/Platform";
+import RandomGame from "./Pages/RandomGame";
+import Game from "./Pages/Game";
 
 export default function App() {
     return (
@@ -26,12 +28,13 @@ export default function App() {
             <GlobalStateProvider>
                 <ProgressBar />
                 <Routes>
-                    <Route path="/" element={<Games />} />
+                    <Route path="/" element={<RandomGame />} />
                     <Route path="/games/*" element={<Games />} />
                     <Route path="/developer/:developer_name" element={<Developer />} />
                     <Route path="/publisher/:publisher_name" element={<Publisher />} />
                     <Route path="/genre/:genre_name" element={<Genre />} />
                     <Route path="/platform/:platform_name" element={<Platform />} />
+                    <Route path="/game/:game_title_slug" element={<Game />} />
                     <Route path="/contact" element={<Contact />} />
                     <Route path="/pricing" element={<Pricing />} />
                     <Route path="/checkout/*" element={<Checkout />} />

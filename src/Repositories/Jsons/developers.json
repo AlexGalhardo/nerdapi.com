@@ -1,0 +1,222 @@
+[
+	{
+		"id": "6e8a9c62-dca3-4370-8e93-52b4b98b998d",
+		"name": "Naughty Dog",
+		"slug": "naughty-dog"
+	},
+	{
+		"id": "ac750299-ce6b-4710-9f91-ed2492904553",
+		"name": "Rockstar North",
+		"slug": "rockstar-north"
+	},
+	{
+		"id": "53dedd4b-203c-4331-aded-b8954aa61e39",
+		"name": "The Coalition",
+		"slug": "the-coalition"
+	},
+	{
+		"id": "b10559ef-eaee-4f06-a05a-539496a2dd39",
+		"name": "Ninja Kiwi",
+		"slug": "ninja-kiwi"
+	},
+	{
+		"id": "ccacfc2e-b5b6-4059-975d-42a66aecb05f",
+		"name": "Griptonite Games",
+		"slug": "griptonite-games"
+	},
+	{
+		"id": "be255de3-106d-4e36-a950-397028a9541c",
+		"name": "Nintendo EAD",
+		"slug": "nintendo-ead"
+	},
+	{
+		"id": "20d4624f-541f-49e5-ada3-5395889a5df7",
+		"name": "PlatinumGames",
+		"slug": "platinumgames"
+	},
+	{
+		"id": "6a19911b-710c-402e-872f-732ff04d9c0e",
+		"name": "SIE Santa Monica Studio",
+		"slug": "sie-santa-monica-studio"
+	},
+	{
+		"id": "51c29893-6f9b-4c7c-9fa4-64ead5efa62d",
+		"name": "Ubisoft Montreal",
+		"slug": "ubisoft-montreal"
+	},
+	{
+		"id": "fed63a73-601b-47a1-a052-57fe1c799e4c",
+		"name": "FromSoftware",
+		"slug": "fromsoftware"
+	},
+	{
+		"id": "9c8cbef2-f647-462e-bb6b-e6378de12cd2",
+		"name": "Larian Studios",
+		"slug": "larian-studios"
+	},
+	{
+		"id": "409b6b43-deb6-4374-8787-3e9dc27b2189",
+		"name": "Infinity Ward",
+		"slug": "infinity-ward"
+	},
+	{
+		"id": "29b54921-a8fc-4c65-b226-edb9fd80e0d3",
+		"name": "Nintendo",
+		"slug": "nintendo"
+	},
+	{
+		"id": "09d025d3-9385-48c8-abfd-62b193e16d18",
+		"name": "Valve",
+		"slug": "valve"
+	},
+	{
+		"id": "6b6c7499-f3c8-4c4e-b976-b2d79ba6081c",
+		"name": "Blizzard Entertainment",
+		"slug": "blizzard-entertainment"
+	},
+	{
+		"id": "522bd30c-0727-4897-824a-a81cf8160936",
+		"name": "SCE Santa Monica Studio",
+		"slug": "sce-santa-monica-studio"
+	},
+	{
+		"id": "8737007b-3de4-40ec-97b4-fbda395dc98d",
+		"name": "Sabotage",
+		"slug": "sabotage"
+	},
+	{
+		"id": "129c1d7a-9f3d-4097-beae-72943b586b34",
+		"name": "People Can Fly",
+		"slug": "people-can-fly"
+	},
+	{
+		"id": "bc09f149-eca7-4ff6-9428-854033549261",
+		"name": "Team Cherry",
+		"slug": "team-cherry"
+	},
+	{
+		"id": "6aa8dd4c-f4f7-4fcb-9088-30afd7cbe98d",
+		"name": "Square",
+		"slug": "square"
+	},
+	{
+		"id": "1776d9a8-869a-4d67-8cb2-f758aad24920",
+		"name": "CD Projekt RED",
+		"slug": "cd-projekt-red"
+	},
+	{
+		"id": "c006b2a9-d8c2-4d08-aa61-bea89dd3b22c",
+		"name": "Kojima Productions",
+		"slug": "kojima-productions"
+	},
+	{
+		"id": "30656457-262d-4d31-b64a-0124406d86c0",
+		"name": "Insomniac Games",
+		"slug": "insomniac-games"
+	},
+	{
+		"id": "d6a19d17-b507-4837-a8bc-aa46c59afb9a",
+		"name": "2K Boston",
+		"slug": "2k-boston"
+	},
+	{
+		"id": "529554ab-5e8d-444e-b94f-76c68a9e9f26",
+		"name": "2K Australia",
+		"slug": "2k-australia"
+	},
+	{
+		"id": "54abe30b-210f-4d8f-b5a0-8926175b6295",
+		"name": "Valve Software",
+		"slug": "valve-software"
+	},
+	{
+		"id": "fe5f929f-1f72-4120-9d27-b4457743e0d6",
+		"name": "Rockstar Games",
+		"slug": "rockstar-games"
+	},
+	{
+		"id": "c51ab50e-b070-4f82-923d-fb1178830977",
+		"name": "SuperAlloy Interactive",
+		"slug": "superalloy-interactive"
+	},
+	{
+		"id": "d3c70ae1-11bb-4333-a9e7-0d550d9d1910",
+		"name": "ZA/UM",
+		"slug": "zaum"
+	},
+	{
+		"id": "ba49c6bf-3a8e-4dda-a412-78d2b655922d",
+		"name": "Asobo Studio",
+		"slug": "asobo-studio"
+	},
+	{
+		"id": "e0d692c6-6a41-454d-8968-4fbf69f35861",
+		"name": "Dead Mage",
+		"slug": "dead-mage"
+	},
+	{
+		"id": "dc4397f6-2317-4b5c-be74-3fd599dbd7c8",
+		"name": "Capcom",
+		"slug": "capcom"
+	},
+	{
+		"id": "d5201a35-6273-4da7-bf3f-a05a348c44e8",
+		"name": "Rockstar San Diego",
+		"slug": "rockstar-san-diego"
+	},
+	{
+		"id": "bbd1af48-8538-4542-98a9-f9c06b2e5b20",
+		"name": "Epic Games",
+		"slug": "epic-games"
+	},
+	{
+		"id": "a9259354-75a9-4bc9-9005-a22e8e5d990e",
+		"name": "Freebird Games",
+		"slug": "freebird-games"
+	},
+	{
+		"id": "235cf11b-e4e9-4bff-aae6-e4b17c2fd062",
+		"name": "Irrational Games",
+		"slug": "irrational-games"
+	},
+	{
+		"id": "7597110d-bd73-4d7b-be09-8c77db18dd9a",
+		"name": "Square Enix",
+		"slug": "square-enix"
+	},
+	{
+		"id": "de47f350-71b9-48a0-ac32-a374b65af344",
+		"name": "Crowbar Collective",
+		"slug": "crowbar-collective"
+	},
+	{
+		"id": "3d4fa434-6b70-40ed-959e-8a13388e2639",
+		"name": "BioWare",
+		"slug": "bioware"
+	},
+	{
+		"id": "1c796a23-4279-498c-8fa6-0192c30fa2eb",
+		"name": "Sucker Punch Productions",
+		"slug": "sucker-punch-productions"
+	},
+	{
+		"id": "79473e00-c30d-4a5b-a3cc-d8e964fa6535",
+		"name": "Ubisoft Chengdu",
+		"slug": "ubisoft-chengdu"
+	},
+	{
+		"id": "5a478d69-2f67-4fc0-8111-08db783d19db",
+		"name": "Ubisoft Québec",
+		"slug": "ubisoft-quebec"
+	},
+	{
+		"id": "1caf5f6f-6165-4043-9a50-b4fa9d28a688",
+		"name": "Treyarch",
+		"slug": "treyarch"
+	},
+	{
+		"id": "07b744c6-fd39-4d5a-9366-9e2637496c9d",
+		"name": "CipSoft",
+		"slug": "cipsoft"
+	}
+]

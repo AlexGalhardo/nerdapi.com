@@ -1,0 +1,267 @@
+[
+	{
+		"id": "c6ce566c-7e85-40f5-aad4-6997e4c64044",
+		"name": "Shooter",
+		"slug": "shooter"
+	},
+	{
+		"id": "39e6cc0f-68ae-4d93-8e16-441d60e8ac99",
+		"name": "Adventure",
+		"slug": "adventure"
+	},
+	{
+		"id": "0ff311ad-189a-4ac6-b16e-c5e94caf1d6d",
+		"name": "Racing",
+		"slug": "racing"
+	},
+	{
+		"id": "1a04e1de-ce93-4669-876e-6bcd6ba81843",
+		"name": "Strategy",
+		"slug": "strategy"
+	},
+	{
+		"id": "08c58c9b-98ce-4c88-ac58-8406d1929bf8",
+		"name": "Tactical",
+		"slug": "tactical"
+	},
+	{
+		"id": "b58bc953-f1b9-48ce-bd9c-3c24bcae3909",
+		"name": "Platform",
+		"slug": "platform"
+	},
+	{
+		"id": "2409f16e-cc8d-4035-97e7-9176a733ae84",
+		"name": "RPG",
+		"slug": "rpg"
+	},
+	{
+		"id": "dd3e4a70-1233-4da3-87fe-a0031d9901e9",
+		"name": "Hack And Slash",
+		"slug": "hack-and-slash"
+	},
+	{
+		"id": "d1f73f57-9541-4f4b-a6b5-0420bb732406",
+		"name": "Hack And Slash",
+		"slug": "hack-and-slash"
+	},
+	{
+		"id": "1f9ff9f9-4b97-4a29-a55f-67d18fb7698b",
+		"name": "Puzzle",
+		"slug": "puzzle"
+	},
+	{
+		"id": "f7e53247-260e-46e5-8bfb-c23ba3df3321",
+		"name": "RPG",
+		"slug": "rpg"
+	},
+	{
+		"id": "752c252f-7019-4da7-adae-d4e039bb8248",
+		"name": "RPG",
+		"slug": "rpg"
+	},
+	{
+		"id": "656515a5-5d61-487e-98ed-b78dcdf6f6e9",
+		"name": "Turn Based Strategy",
+		"slug": "turn-based-strategy"
+	},
+	{
+		"id": "e763ed35-c32f-46f3-98dd-f84825afe420",
+		"name": "RPG",
+		"slug": "rpg"
+	},
+	{
+		"id": "f7ece67e-ea86-49dc-975b-215068de2502",
+		"name": "RPG",
+		"slug": "rpg"
+	},
+	{
+		"id": "3e8660b4-e7c1-41a5-b05a-92a5633785c8",
+		"name": "Hack And Slash",
+		"slug": "hack-and-slash"
+	},
+	{
+		"id": "f076be06-d7b4-4d26-9251-e41db5d3d06f",
+		"name": "Hack And Slash",
+		"slug": "hack-and-slash"
+	},
+	{
+		"id": "e1b28b50-007d-4342-838a-ac0e2755512e",
+		"name": "RPG",
+		"slug": "rpg"
+	},
+	{
+		"id": "6ce484c4-70c2-4412-89f5-e103d8fa8f57",
+		"name": "Turn Based Strategy",
+		"slug": "turn-based-strategy"
+	},
+	{
+		"id": "0fbc5871-de4b-42e6-a33b-de7e570b7805",
+		"name": "Indie",
+		"slug": "indie"
+	},
+	{
+		"id": "2df075dc-ed04-4cf7-a86f-b491e2228346",
+		"name": "RPG",
+		"slug": "rpg"
+	},
+	{
+		"id": "a0c27275-93b0-4338-a239-c9f0e4a26970",
+		"name": "RPG",
+		"slug": "rpg"
+	},
+	{
+		"id": "35d414be-17af-4ce7-a1f8-b90cfdea77f2",
+		"name": "RPG",
+		"slug": "rpg"
+	},
+	{
+		"id": "4f86c012-65de-4c16-a345-6eb3a9897d65",
+		"name": "RPG",
+		"slug": "rpg"
+	},
+	{
+		"id": "336a2766-237b-4dfd-a464-20a2cbe3efc9",
+		"name": "Hack And Slash",
+		"slug": "hack-and-slash"
+	},
+	{
+		"id": "5b1544de-5f6e-49dc-ba60-9ea0af5a27a2",
+		"name": "RPG",
+		"slug": "rpg"
+	},
+	{
+		"id": "16c299ca-0153-4cf3-b98d-c2a8516796fb",
+		"name": "Hack And Slash",
+		"slug": "hack-and-slash"
+	},
+	{
+		"id": "ff82caf2-bd83-4606-a74d-9e63cd7bc5ab",
+		"name": "RPG",
+		"slug": "rpg"
+	},
+	{
+		"id": "fe709b08-46bd-427d-afaa-cf4db4dcf68e",
+		"name": "RPG",
+		"slug": "rpg"
+	},
+	{
+		"id": "0297e8af-2e9d-45c5-9dac-ecfd09188c86",
+		"name": "RPG",
+		"slug": "rpg"
+	},
+	{
+		"id": "7c4d6810-59ef-45de-b549-c6bc9a189ca9",
+		"name": "Hack And Slash",
+		"slug": "hack-and-slash"
+	},
+	{
+		"id": "788f536f-3b75-4e97-a85a-5c447156a186",
+		"name": "RPG",
+		"slug": "rpg"
+	},
+	{
+		"id": "56526a0f-20a0-4147-8740-b54e58b4cb9e",
+		"name": "RPG",
+		"slug": "rpg"
+	},
+	{
+		"id": "e0c8fa49-3f67-49e0-99f9-acbd628b8b78",
+		"name": "RPG",
+		"slug": "rpg"
+	},
+	{
+		"id": "6ef833a5-0331-487f-94ba-4dc76a7f220e",
+		"name": "RPG",
+		"slug": "rpg"
+	},
+	{
+		"id": "974de8b9-f3e9-43bc-83eb-6511d592b4a9",
+		"name": "RPG",
+		"slug": "rpg"
+	},
+	{
+		"id": "f20234a8-4fee-4885-8789-92b341a7d3ed",
+		"name": "RPG",
+		"slug": "rpg"
+	},
+	{
+		"id": "6dbf5418-d4ae-40d5-8398-9fc2803401f6",
+		"name": "RPG",
+		"slug": "rpg"
+	},
+	{
+		"id": "21c6a136-3b99-49b1-860f-f0363699fcc1",
+		"name": "RPG",
+		"slug": "rpg"
+	},
+	{
+		"id": "aeedb88e-b92d-464c-9a7b-51cfb5fb9abe",
+		"name": "Turn Based Strategy",
+		"slug": "turn-based-strategy"
+	},
+	{
+		"id": "b053068e-cc16-4f66-b990-6110d901533a",
+		"name": "RPG",
+		"slug": "rpg"
+	},
+	{
+		"id": "22fb6dfd-f5e4-4c1a-9222-4c819918ed2a",
+		"name": "Hack And Slash",
+		"slug": "hack-and-slash"
+	},
+	{
+		"id": "7a0a11ce-20e8-4190-baf1-5524a2f36077",
+		"name": "RPG",
+		"slug": "rpg"
+	},
+	{
+		"id": "f5e361ea-c78e-4b7e-b0a6-0ad35e6b46f5",
+		"name": "Point And Click",
+		"slug": "point-and-click"
+	},
+	{
+		"id": "d30eacba-8b19-48ba-a217-ea03b9096576",
+		"name": "RPG",
+		"slug": "rpg"
+	},
+	{
+		"id": "c4374d47-51d4-4c2e-be10-472a8f7ea6e7",
+		"name": "Hack And Slash",
+		"slug": "hack-and-slash"
+	},
+	{
+		"id": "d0b1f2a6-a230-41ee-a9e6-9befe48bb28f",
+		"name": "Hack And Slash",
+		"slug": "hack-and-slash"
+	},
+	{
+		"id": "a2960d76-f4dc-4b18-ba47-b3ddffdfcaf4",
+		"name": "RPG",
+		"slug": "rpg"
+	},
+	{
+		"id": "9291945a-4d41-4a37-a0fe-a71e011133bd",
+		"name": "RPG",
+		"slug": "rpg"
+	},
+	{
+		"id": "723c30d1-d741-4739-a9f5-05fb99d0358b",
+		"name": "RPG",
+		"slug": "rpg"
+	},
+	{
+		"id": "996323f5-91a1-4bb5-923c-2ca5ef1ff2e2",
+		"name": "Hack And Slash",
+		"slug": "hack-and-slash"
+	},
+	{
+		"id": "d0f3e35f-10b0-4f5e-b566-2aec850b2d58",
+		"name": "RPG",
+		"slug": "rpg"
+	},
+	{
+		"id": "b5378f10-c7f2-4cfb-9015-3bcca0ed772d",
+		"name": "RPG",
+		"slug": "rpg"
+	}
+]

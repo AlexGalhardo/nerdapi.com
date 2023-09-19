@@ -1,11 +1,17 @@
+import { CSSProperties } from "react";
 import { Game } from "../Repositories/Games.repository";
+
+const amazonButton: CSSProperties = {
+    border: "none",
+    textDecoration: "none",
+};
 
 export default function GameFound({
     game,
     buttonRecommend,
     recommendRandomGame,
 }: {
-    game: Game | null;
+    game: Game | null | undefined;
     buttonRecommend?: boolean;
     recommendRandomGame?: any;
 }) {
@@ -28,57 +34,36 @@ export default function GameFound({
 
             <div className="col-lg-6">
                 <div className="card-body">
-                    <div className="d-flex justify-content-between mb-3">
-                        <b id="game_igdb_link" className="fs-2 card-link text-decoration-none">
-                            <span id="game_title" className="fw-bold">
-                                {game?.title}{" "}
-                            </span>
-                            (
-                            <span id="game_year_release" className="text-muted">
-                                {game?.release.year}
-                            </span>
-                            )
-                        </b>
+                    <div className="d-flex justify-content-between">
+                        <a className="fs-2 text-decoration-none" href={`/game/${game?.slug}`}>
+                            <span className="fw-bold">{game?.title} </span>(
+                            <span className="text-muted">{game?.release.year}</span>)
+                        </a>
+
+                        <p className="fs-2 fw-bold text-warning text-decoration-none" target="_blank">
+                            ⭐<span id="game_igdb_rating">{game?.metacritic.rating}</span>
+                        </p>
                     </div>
 
-                    <p className="card-text" id="game_resume">
-                        {game?.summary}
-                    </p>
+                    <p>{game?.summary}</p>
                 </div>
             </div>
 
             <div className="col-lg-3 mb-3">
+                <div className="text-center">
+                    {game?.where_to_buy.map((item) => (
+                        <a href="https://amazon.com.br" target="_blank" rel="noopener noreferrer" style={amazonButton}>
+                            <img src="https://www.niftybuttons.com/amazon/amazon-button2.png" />
+                        </a>
+                    ))}
+                </div>
+
                 <ul className="mt-3">
-                    <li className="">
-                        <b>Where To Buy:</b>
-                        <ul>
-                            {game?.where_to_buy.map((item) => (
-                                <li key={item.id}>
-                                    {/* <a href={item.url} target="_blank"> */}
-                                    <a href="#">{item.name}</a>
-                                </li>
-                            ))}
-                        </ul>
-                    </li>
-                    <li className="">
-                        <b>Ratings:</b>
-                        <ul>
-                            <li className="">
-                                {/* <a href={game?.metacritic.url as string} target="_blank"> */}
-                                <a href="#">Metacritic Rating:</a> ⭐
-                                <span id="game_igdb_rating">{game?.metacritic.rating}</span>
-                            </li>
-                            <li className="">
-                                {/* <a href={game?.igdb.url as string} target="_blank"> */}
-                                <a href="#">IGDB Rating:</a> ⭐<span id="game_igdb_rating">{game?.igdb.rating}</span>
-                            </li>
-                        </ul>
-                    </li>
                     <li className="">
                         <b>Developer:</b>
                         <ul>
                             <li>
-                                <a href={`/developer/${game?.developer.name}`}>{game?.developer.name}</a>
+                                <a href={`/developer/${game?.developer.slug}`}>{game?.developer.name}</a>
                                 {/* <a href="#">{game?.developer.name}</a> */}
                             </li>
                         </ul>
@@ -87,7 +72,7 @@ export default function GameFound({
                         <b>Publisher:</b>
                         <ul>
                             <li>
-                                <a href={`/publisher/${game?.publisher.name}`}>{game?.publisher.name}</a>
+                                <a href={`/publisher/${game?.publisher.slug}`}>{game?.publisher.name}</a>
                                 {/* <a href="#">{game?.publisher.name}</a> */}
                             </li>
                         </ul>
@@ -97,7 +82,7 @@ export default function GameFound({
                         <ul>
                             {game?.genres.map((genre) => (
                                 <li key={genre.id}>
-                                    <a href={`/genre/${genre.name}`}>{genre.name}</a>
+                                    <a href={`/genre/${genre.slug}`}>{genre.name}</a>
                                     {/* <a href="#">{genre.name}</a> */}
                                 </li>
                             ))}
@@ -108,7 +93,7 @@ export default function GameFound({
                         <ul>
                             {game?.platforms_available.map((platform) => (
                                 <li key={platform.id}>
-                                    <a href={`/platform/${platform.name}`}>{platform.name}</a>
+                                    <a href={`/platform/${platform.slug}`}>{platform.name}</a>
                                     {/* <a href="#">{platform.name}</a> */}
                                 </li>
                             ))}
@@ -128,7 +113,7 @@ export default function GameFound({
                 </ul>
             </div>
 
-            <br className="mt-5" />
+            <span className="mt-5" />
         </>
     );
 }

@@ -1,0 +1,467 @@
+[
+	{
+		"id": "8f533671-b5bf-4926-8deb-905c29f7747b",
+		"name": "PlayStation 3",
+		"slug": "playstation-3"
+	},
+	{
+		"id": "85afcd2d-6d0b-4679-a017-6a87b21244fa",
+		"name": "Microsoft Windows PC",
+		"slug": "microsoft-windows-pc"
+	},
+	{
+		"id": "80582d27-6bac-49df-892f-4b811600922d",
+		"name": "PlayStation 4",
+		"slug": "playstation-4"
+	},
+	{
+		"id": "5f9f6083-6fa1-4891-bb8d-81e18948cd8e",
+		"name": "Xbox 360",
+		"slug": "xbox-360"
+	},
+	{
+		"id": "226b3332-d62a-4fac-a2c7-16f01eb69e2b",
+		"name": "Xbox One",
+		"slug": "xbox-one"
+	},
+	{
+		"id": "8d0dc02f-c75e-4a24-955e-c0f6ddb2e068",
+		"name": "Microsoft Windows PC",
+		"slug": "microsoft-windows-pc"
+	},
+	{
+		"id": "91c80ccd-b5bf-4ad6-9da0-cd0c045d95f8",
+		"name": "Xbox Series X|S",
+		"slug": "xbox-series-xors"
+	},
+	{
+		"id": "bd109071-7d77-43c8-9f2c-80d13443ee31",
+		"name": "Apple iPhone",
+		"slug": "apple-iphone"
+	},
+	{
+		"id": "beeb7ada-ba76-42bf-b7e3-ae846beaaf01",
+		"name": "Microsoft Windows PC",
+		"slug": "microsoft-windows-pc"
+	},
+	{
+		"id": "49908854-4a59-4482-9cff-cca0c1e80d8a",
+		"name": "Apple MacOS",
+		"slug": "apple-macos"
+	},
+	{
+		"id": "c84b77c7-636e-4457-962b-d1e03bb2b768",
+		"name": "Android",
+		"slug": "android"
+	},
+	{
+		"id": "1ef5eb17-63e2-45fe-9fad-f6e9ccb50e82",
+		"name": "PlayStation Portable",
+		"slug": "playstation-portable"
+	},
+	{
+		"id": "e00fa0f0-fc83-47cd-883f-b6b14c8d9303",
+		"name": "Wii U",
+		"slug": "wii-u"
+	},
+	{
+		"id": "0df989e7-a882-4c08-8146-fed0c96aeac1",
+		"name": "Super Nintendo Entertainment System",
+		"slug": "super-nintendo-entertainment-system"
+	},
+	{
+		"id": "9c569f64-50b1-422c-b698-1d3e4eeef5b4",
+		"name": "Super Famicom",
+		"slug": "super-famicom"
+	},
+	{
+		"id": "8686493f-329d-49ad-9d9c-753a1dc0527b",
+		"name": "New Nintendo 3DS",
+		"slug": "new-nintendo-3ds"
+	},
+	{
+		"id": "c785e6ed-9e20-4b35-8c83-a19ae1913e9a",
+		"name": "Wii",
+		"slug": "wii"
+	},
+	{
+		"id": "68338e0b-f801-4b91-ae01-3a0b10c8b8e7",
+		"name": "Arcade",
+		"slug": "arcade"
+	},
+	{
+		"id": "3eaa205d-1e99-41a3-b504-068665197df1",
+		"name": "Nintendo 64",
+		"slug": "nintendo-64"
+	},
+	{
+		"id": "90e231f8-cd5d-4d19-a2a4-0312c50b3758",
+		"name": "Microsoft Windows PC",
+		"slug": "microsoft-windows-pc"
+	},
+	{
+		"id": "0473332b-818b-454f-b824-690c51517cfb",
+		"name": "Microsoft Windows PC",
+		"slug": "microsoft-windows-pc"
+	},
+	{
+		"id": "918f7ae4-f92e-42a3-a56c-c627225ef57a",
+		"name": "PlayStation 5",
+		"slug": "playstation-5"
+	},
+	{
+		"id": "d1aca38b-3a66-4345-b98f-03ad66466e80",
+		"name": "Microsoft Windows PC",
+		"slug": "microsoft-windows-pc"
+	},
+	{
+		"id": "61b03595-9b80-48a2-8430-186ba56260d7",
+		"name": "Apple MacOS",
+		"slug": "apple-macos"
+	},
+	{
+		"id": "f0d252be-31b4-40b5-a532-5820bdf27ff8",
+		"name": "Microsoft Windows PC",
+		"slug": "microsoft-windows-pc"
+	},
+	{
+		"id": "a28e8d94-2ce2-4459-a281-b6eccbaa9f31",
+		"name": "Microsoft Windows PC",
+		"slug": "microsoft-windows-pc"
+	},
+	{
+		"id": "35c6d159-19dd-4f60-bfd7-89a311da1ac3",
+		"name": "Apple MacOS",
+		"slug": "apple-macos"
+	},
+	{
+		"id": "961a4973-e22e-41bd-8cf3-94350900dd84",
+		"name": "Google Stadia",
+		"slug": "google-stadia"
+	},
+	{
+		"id": "578ff178-c308-470a-8157-3111bba2a09c",
+		"name": "Microsoft Windows PC",
+		"slug": "microsoft-windows-pc"
+	},
+	{
+		"id": "738c99a4-6d1d-49ff-889c-54dab1b90377",
+		"name": "Nintendo Switch",
+		"slug": "nintendo-switch"
+	},
+	{
+		"id": "53b048df-2863-48d8-ba63-99309329f4bb",
+		"name": "Microsoft Windows PC",
+		"slug": "microsoft-windows-pc"
+	},
+	{
+		"id": "c6977a2a-6da1-4451-a996-e1d6d0e4a122",
+		"name": "Apple MacOS",
+		"slug": "apple-macos"
+	},
+	{
+		"id": "49770f48-e108-45b1-a574-ddf3375bfff6",
+		"name": "Linux",
+		"slug": "linux"
+	},
+	{
+		"id": "119a9329-c98d-42b6-b002-79224472092f",
+		"name": "Microsoft Windows PC",
+		"slug": "microsoft-windows-pc"
+	},
+	{
+		"id": "20fbb498-8703-4ea3-9651-f9a88a8ffe0b",
+		"name": "Microsoft Windows PC",
+		"slug": "microsoft-windows-pc"
+	},
+	{
+		"id": "0f6389b8-dd98-4e94-b356-6d8f10ef98b0",
+		"name": "Microsoft Windows PC",
+		"slug": "microsoft-windows-pc"
+	},
+	{
+		"id": "a3145f4d-4e56-485f-8190-844c91e5322c",
+		"name": "Apple iPhone",
+		"slug": "apple-iphone"
+	},
+	{
+		"id": "b00a9417-a098-4fe1-afdc-893451d9b6de",
+		"name": "Microsoft Windows PC",
+		"slug": "microsoft-windows-pc"
+	},
+	{
+		"id": "50e82d9c-792d-48ab-a86a-907db60e8b13",
+		"name": "Apple MacOS",
+		"slug": "apple-macos"
+	},
+	{
+		"id": "9f6bdd12-6b05-4d07-92db-e795d0bbd122",
+		"name": "Microsoft Windows PC",
+		"slug": "microsoft-windows-pc"
+	},
+	{
+		"id": "6c8be91f-831c-435f-b350-9a8eda386a74",
+		"name": "Microsoft Windows PC",
+		"slug": "microsoft-windows-pc"
+	},
+	{
+		"id": "7b3d2b92-388f-4ceb-a1fa-411f4133b015",
+		"name": "Microsoft Windows PC",
+		"slug": "microsoft-windows-pc"
+	},
+	{
+		"id": "1b593c57-d501-4b96-b1d5-8f54fd823d57",
+		"name": "Microsoft Windows PC",
+		"slug": "microsoft-windows-pc"
+	},
+	{
+		"id": "c2b27393-0e9b-4d63-bee2-23d3412e22b4",
+		"name": "Microsoft Windows PC",
+		"slug": "microsoft-windows-pc"
+	},
+	{
+		"id": "82e8e847-f5c8-47a7-bef3-d5516354f757",
+		"name": "Apple MacOS",
+		"slug": "apple-macos"
+	},
+	{
+		"id": "9d7489d8-6322-4a72-8351-b4990e3185a7",
+		"name": "Satellaview",
+		"slug": "satellaview"
+	},
+	{
+		"id": "e72e3d90-bf45-4d2f-bb50-8ca6ec293349",
+		"name": "Microsoft Windows PC",
+		"slug": "microsoft-windows-pc"
+	},
+	{
+		"id": "a6edbc3b-4ef0-4c17-80af-f5e59dac479c",
+		"name": "Microsoft Windows PC",
+		"slug": "microsoft-windows-pc"
+	},
+	{
+		"id": "9fe7b702-a12d-4c02-95a9-bdfed6d403a1",
+		"name": "Microsoft Windows PC",
+		"slug": "microsoft-windows-pc"
+	},
+	{
+		"id": "a59175d4-6b8c-4fae-b65b-aa5aa099ea13",
+		"name": "Microsoft Windows PC",
+		"slug": "microsoft-windows-pc"
+	},
+	{
+		"id": "78839751-655b-42fd-a96b-54c643946a31",
+		"name": "Apple MacOS",
+		"slug": "apple-macos"
+	},
+	{
+		"id": "74fefbd9-43d4-4171-9bfa-603246415e65",
+		"name": "Microsoft Windows PC",
+		"slug": "microsoft-windows-pc"
+	},
+	{
+		"id": "ef20fb87-eaed-4fa3-9a07-a2c6d9a01420",
+		"name": "Apple MacOS",
+		"slug": "apple-macos"
+	},
+	{
+		"id": "b1ca7977-0a7e-4201-992f-9e31abd81855",
+		"name": "Apple iPhone",
+		"slug": "apple-iphone"
+	},
+	{
+		"id": "b92ff1b0-15bd-40e6-bc41-4efabb6faf24",
+		"name": "Microsoft Windows PC",
+		"slug": "microsoft-windows-pc"
+	},
+	{
+		"id": "e06f6ab3-d804-4713-9416-eed47e76d5ba",
+		"name": "Xbox",
+		"slug": "xbox"
+	},
+	{
+		"id": "0484f4a6-7f67-4203-a756-5c8009106f5a",
+		"name": "Apple MacOS",
+		"slug": "apple-macos"
+	},
+	{
+		"id": "c8908422-3ee1-4ded-a53d-497654c634d4",
+		"name": "Microsoft Windows PC",
+		"slug": "microsoft-windows-pc"
+	},
+	{
+		"id": "5246b2b6-da54-4b0d-9373-e59d73e1d68d",
+		"name": "Apple MacOS",
+		"slug": "apple-macos"
+	},
+	{
+		"id": "2fb9773a-16d4-4af3-916e-431e0b4916c7",
+		"name": "Microsoft Windows PC",
+		"slug": "microsoft-windows-pc"
+	},
+	{
+		"id": "0eccedcb-6b13-4929-9ac8-5aab3b3b8501",
+		"name": "Apple MacOS",
+		"slug": "apple-macos"
+	},
+	{
+		"id": "4a0d054a-e126-469e-b169-34d5d5dc10a5",
+		"name": "Microsoft Windows PC",
+		"slug": "microsoft-windows-pc"
+	},
+	{
+		"id": "a63a9eaf-2e61-4a2f-b9ef-6d7c4995e1c9",
+		"name": "Microsoft Windows PC",
+		"slug": "microsoft-windows-pc"
+	},
+	{
+		"id": "d8096018-3f2a-4c4c-9b9c-ea765b32b2e4",
+		"name": "Apple MacOS",
+		"slug": "apple-macos"
+	},
+	{
+		"id": "97dd1562-fe8a-4bc4-82b2-8b646634d32a",
+		"name": "Microsoft Windows PC",
+		"slug": "microsoft-windows-pc"
+	},
+	{
+		"id": "8a7eecef-2fef-4ba3-8a86-e6ac774219e9",
+		"name": "Microsoft Windows PC",
+		"slug": "microsoft-windows-pc"
+	},
+	{
+		"id": "8c8016e5-f310-49dc-80e7-c6c381b41514",
+		"name": "Microsoft Windows PC",
+		"slug": "microsoft-windows-pc"
+	},
+	{
+		"id": "5dfa1918-2c2c-4c1e-b124-460197e0c6f7",
+		"name": "Apple MacOS",
+		"slug": "apple-macos"
+	},
+	{
+		"id": "2ae8c4fd-5968-48c6-b92f-8f81ffa99c21",
+		"name": "Microsoft Windows PC",
+		"slug": "microsoft-windows-pc"
+	},
+	{
+		"id": "b686846f-3f1b-4b83-90cf-2f3f12c30c91",
+		"name": "PlayStation Vita",
+		"slug": "playstation-vita"
+	},
+	{
+		"id": "5688e4e5-2a96-4263-8009-7fa9f69fb4bc",
+		"name": "PlayStation",
+		"slug": "playstation"
+	},
+	{
+		"id": "49174d58-1223-46e9-8585-30dfa840e0a5",
+		"name": "Apple iPhone",
+		"slug": "apple-iphone"
+	},
+	{
+		"id": "53a9d041-1360-4f92-8599-cb6cd0a77685",
+		"name": "Microsoft Windows PC",
+		"slug": "microsoft-windows-pc"
+	},
+	{
+		"id": "9cd5c2f8-0596-465d-a48e-1e8047d56c8e",
+		"name": "Apple MacOS",
+		"slug": "apple-macos"
+	},
+	{
+		"id": "ad7fa8b0-bf19-4e9a-8b7c-ddf69b615530",
+		"name": "Microsoft Windows PC",
+		"slug": "microsoft-windows-pc"
+	},
+	{
+		"id": "42397c36-acd3-46a9-af3d-c9dcd2012145",
+		"name": "Microsoft Windows PC",
+		"slug": "microsoft-windows-pc"
+	},
+	{
+		"id": "f6efc2e2-72c0-4ba6-9d74-8a5244e1f6e9",
+		"name": "Apple MacOS",
+		"slug": "apple-macos"
+	},
+	{
+		"id": "98dab904-20fe-419d-9a11-c7e5792f82f2",
+		"name": "Microsoft Windows PC",
+		"slug": "microsoft-windows-pc"
+	},
+	{
+		"id": "c6669ad4-52fc-4656-a7b8-11cb2eec6bc2",
+		"name": "PlayStation 2",
+		"slug": "playstation-2"
+	},
+	{
+		"id": "acb58b16-d416-458c-b08d-623ac0015c07",
+		"name": "Microsoft Windows PC",
+		"slug": "microsoft-windows-pc"
+	},
+	{
+		"id": "1288cd6b-fe41-4e35-a0da-3dbdc937029c",
+		"name": "Microsoft Windows PC",
+		"slug": "microsoft-windows-pc"
+	},
+	{
+		"id": "425ac47a-f9a3-4f1a-8e46-e012365c10f7",
+		"name": "Microsoft Windows PC",
+		"slug": "microsoft-windows-pc"
+	},
+	{
+		"id": "382df5d5-60ea-4d49-b528-574d7dc3ee0f",
+		"name": "Apple MacOS",
+		"slug": "apple-macos"
+	},
+	{
+		"id": "87c3eb3c-c893-44b0-87bf-be7b6dd84f08",
+		"name": "Apple iPhone",
+		"slug": "apple-iphone"
+	},
+	{
+		"id": "40c5ca9e-795b-4b3d-ba1d-09377014175f",
+		"name": "Microsoft Windows PC",
+		"slug": "microsoft-windows-pc"
+	},
+	{
+		"id": "a59fbb07-1a8c-4ce6-9ab2-f5166ccbe272",
+		"name": "Apple MacOS",
+		"slug": "apple-macos"
+	},
+	{
+		"id": "be2dce0f-fc5b-4ea1-a517-d9e0fddcbf3a",
+		"name": "Microsoft Windows PC",
+		"slug": "microsoft-windows-pc"
+	},
+	{
+		"id": "7f40da41-c8f1-42ad-8a6c-a048818a6747",
+		"name": "Microsoft Windows PC",
+		"slug": "microsoft-windows-pc"
+	},
+	{
+		"id": "d920db6d-91c9-4006-a03f-5b6d387f81a5",
+		"name": "Microsoft Windows PC",
+		"slug": "microsoft-windows-pc"
+	},
+	{
+		"id": "fa32a6dd-dcaf-4b13-ba60-dadfdf934166",
+		"name": "Microsoft Windows PC",
+		"slug": "microsoft-windows-pc"
+	},
+	{
+		"id": "5b38399c-6ef0-4b4e-bec1-a5affd2146b8",
+		"name": "Apple MacOS",
+		"slug": "apple-macos"
+	},
+	{
+		"id": "5bf951c2-d04f-49a1-be88-7cdaa8762984",
+		"name": "Microsoft Windows PC",
+		"slug": "microsoft-windows-pc"
+	},
+	{
+		"id": "431569a1-e513-4762-abd5-022ba5bdb304",
+		"name": "Apple MacOS",
+		"slug": "apple-macos"
+	}
+]

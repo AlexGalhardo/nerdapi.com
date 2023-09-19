@@ -4,8 +4,8 @@ import Head from "../Components/Head";
 import { CSSProperties, useCallback, useEffect, useState } from "react";
 import { useNavigate, useParams } from "react-router-dom";
 import GamesRepository, { Game } from "../Repositories/Games.repository";
-import SuccessAlertMessage from "../Components/Alerts/SuccessAlertMessage";
 import GameFound from "../Components/GameFound";
+import publishersJson from "../Repositories/Jsons/publishers.json";
 
 const container: CSSProperties = {
     marginTop: "100px",
@@ -13,6 +13,7 @@ const container: CSSProperties = {
 
 export default function Publisher() {
     const { publisher_name } = useParams();
+    const publisherName = publishersJson.filter((publisher) => publisher.slug === publisher_name)[0].name;
     const pageTitle = `${publisher_name} Games`;
     const pageDescription = `See games made by publisher ${publisher_name}`;
     const navigate = useNavigate();
@@ -42,7 +43,10 @@ export default function Publisher() {
             <div className="container" style={container}>
                 <div className="row mt-5">
                     {totalGamesFound && (
-                        <SuccessAlertMessage message={`Publisher ${publisher_name} Games Found: ${totalGamesFound}`} />
+                        <p className="fs-1 text-center mb-5 alert alert-success">
+                            Publisher <strong className="text-success">{publisherName}</strong> Games Found:{" "}
+                            <strong className="text-danger">{totalGamesFound}</strong>
+                        </p>
                     )}
 
                     {games?.map((game) => <GameFound game={game} />)}
