@@ -1,17 +1,40 @@
 import { useLocation, useNavigate } from "react-router-dom";
 import { useGlobalState } from "../Context/GlobalStateContext";
 import { useState } from "react";
+import GamesRepository from "../Repositories/Games.repository";
 
 export default function Navbar() {
     const { user, userLogout } = useGlobalState();
     const navigate = useNavigate();
     const [search, setSearch] = useState<string | undefined>();
     const location = useLocation();
+	const [isInputFocused, setIsInputFocused] = useState(false);
 
     function handleLogout() {
         userLogout();
         navigate("/login");
     }
+
+	const [query, setQuery] = useState('');
+	const [suggestions, setSuggestions] = useState<{title: string, slug: string, release_year: number}[]>([]);
+
+	const handleInputChange = (e: any) => {
+		const inputValue = e.target.value;
+		setQuery(inputValue);
+		setSearch(inputValue)
+
+		if (inputValue.trim() !== "") {
+			setSuggestions(new GamesRepository().searchAllGamesSimilarTitle(inputValue).map(game => {
+				return {
+					title: game.title,
+					slug: game.slug,
+					release_year: game.release.year
+				}
+			}).splice(0, 7))
+		} else {
+			setSuggestions([]);
+		}
+	};
 
     function handleSearch(event: any) {
         event.preventDefault();
@@ -19,7 +42,17 @@ export default function Navbar() {
         navigate(`/?search=${search}`);
     }
 
+	const handleFocus = () => {
+    	setIsInputFocused(true);
+  	};
+
+	const handleBlur = () => {
+    	setIsInputFocused(false);
+  	};
+
     return (
+		<>
+
         <div className="fixed-top shadow-sm bg-light mb-5 bg-dark">
             <nav className="container col-lg-10 navbar navbar-expand-lg fixed navbar-dark bg-dark">
                 <div className="container-fluid">
@@ -35,6 +68,10 @@ export default function Navbar() {
                                 className="fs-6 form-control"
                                 placeholder="Search game title..."
                                 onChange={(e) => setSearch(e.target.value)}
+								// onFocus={handleFocus}
+								// onBlur={handleBlur}
+								// value={query}
+								// onChange={handleInputChange}
                             />
                         </div>
                     </form>
@@ -132,5 +169,46 @@ export default function Navbar() {
                 </div>
             </nav>
         </div>
+
+		{/* {suggestions.length > 0 && isInputFocused && (
+
+				<ul className="container col-lg-7 list-group list-group-flush mt-5 card bg-light rounded-3">
+					{suggestions.map((suggestion, index) => (
+							<li key={index} className="list-group-item fw-bold mt-1"><a href={`/game/${suggestion.slug}`}>{suggestion.title} ({suggestion.release_year})</a></li>
+						))
+					}
+				</ul>
+
+		)} */}
+
+		</>
     );
+}
+
+
+function getDummySuggestions(query: string) {
+  // Replace this with actual logic to fetch suggestions from an API/database
+  const suggestions = [
+    'Apple',
+	'alex',
+	'rafaela',
+	'abacate',
+	'abacaxi',
+    'Banana',
+    'Cherry',
+    'Fig',
+    'Grape',
+    'Kiwi',
+    'Lemon',
+    'Mango',
+    'Orange',
+  ];
+
+  const sugestions = suggestions.filter((item) =>
+    item.toLowerCase().includes(query.toLowerCase())
+  );
+
+  console.log('sugestions => ', sugestions)
+
+  return sugestions.splice(0, 5);
 }
