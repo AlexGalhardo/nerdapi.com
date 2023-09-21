@@ -85,8 +85,8 @@ export default function RandomGame() {
 
                     {totalGamesFound && (
                         <p className="fs-1 text-center mb-5 alert alert-success">
-                            Searching <strong className="text-success">{queryParams.get("search")}...</strong>{" "}
-                            Found<strong className="text-danger"> {totalGamesFound}</strong> Games
+                            Searching <strong className="text-success">{queryParams.get("search")}...</strong> Found
+                            <strong className="text-danger"> {totalGamesFound}</strong> Games
                         </p>
                     )}
 
