@@ -2,7 +2,7 @@ import { CSSProperties } from "react";
 
 export default function Footer() {
     return (
-		<></>
+        <></>
         // <div className="container" style={containerFooter}>
         //     <div className="row">
         //         <div className="col-lg-12 text-center text-white mb-5 mt-5">

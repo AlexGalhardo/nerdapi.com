@@ -98,7 +98,7 @@ export default function Contact() {
                                 />
                             </div>
 
-							<label htmlFor="email">Subject</label>
+                            <label htmlFor="email">Subject</label>
                             <select
                                 className="fs-4 form-select mb-3"
                                 name="subject"

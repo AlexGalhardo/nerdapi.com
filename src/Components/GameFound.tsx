@@ -25,7 +25,10 @@ export default function GameFound({
                     alt="game_image"
                 />
                 {buttonRecommend && (
-                    <button className="button mt-3 w-80 btn mb-5 btn-success fw-bold fs-5" onClick={recommendRandomGame}>
+                    <button
+                        className="button mt-3 w-80 btn mb-5 btn-success fw-bold fs-5"
+                        onClick={recommendRandomGame}
+                    >
                         <i className="bi bi-play-fill"></i>
                         Recommend Other Game
                     </button>
@@ -100,14 +103,10 @@ export default function GameFound({
                         </ul>
                     </li>
                     <li className="">
-                        <b>HowLongToBeat:</b>
+                        <b>Play Time</b>
                         <ul>
-                            <li>
-                                {/* <a href={game?.how_long_to_beat?.url as string} target="_blank"> */}
-                                <a href="#">Page</a>
-                            </li>
-                            <li>Main History: {game?.how_long_to_beat?.main_story.average}</li>
-                            <li>Completionist: {game?.how_long_to_beat?.completionist.average}</li>
+                            <li>History: +/- 25h</li>
+                            <li>Completionist: +/- 40h</li>
                         </ul>
                     </li>
                 </ul>

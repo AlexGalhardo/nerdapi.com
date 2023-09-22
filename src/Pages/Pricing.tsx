@@ -90,12 +90,14 @@ export default function Pricing() {
                 <div className="row">
                     <div className="mt-5 text-center">
                         <p className="fs-3 mb-5 mt-3">
-                            <strong>We're building the best Games API with a awesome experience for
-                                software developers and gamers out there to consume and enjoy.
+                            <strong>
+                                We're building the best Games API with a awesome experience for software developers and
+                                gamers out there to consume and enjoy.
                             </strong>{" "}
                             <br />
-                            You can help us by being a subscription member, buying a game from our afiliate link, sharing the site with your friends and
-                            acquaintances, reporting bugs, and sugesting missing or wrong video game data.
+                            You can help us by being a subscription member, buying a game from our afiliate link,
+                            sharing the site with your friends and acquaintances, reporting bugs, and sugesting missing
+                            or wrong video game data.
                         </p>
                     </div>
 
