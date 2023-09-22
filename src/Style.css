@@ -14,15 +14,21 @@ html {
 body {
   font-family: 'Josefin Sans', sans-serif;
   margin: 0px;
-  color: var(--color-1);
-  background: var(--color-4);
+  color: var(--color-5);
+  background: var(--color-5);
   font-size: 1.3rem;
+  background-color: #212529;
+}
+
+small {
+	color: white;
 }
 
 .button {
   text-align: center;
   border-radius: 5px;
-  box-shadow: 3px 3px gray;
+  box-shadow: 1px 1px white;
+  color: white;
 }
 
 .button:active {
@@ -31,7 +37,7 @@ body {
 }
 
 a {
-	text-shadow: 5 5px #666;
+	text-shadow: 5 5px --color-5;
 }
 
 /*
@@ -80,7 +86,7 @@ a {
 
 .progress-bar {
   height: 5px;
-  background-color: #0b07fc !important;
+  background-color: white !important;
   width: 0%;
   position: fixed;
   top: 0;

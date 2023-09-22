@@ -88,7 +88,7 @@ export default function RegisterForm() {
     return (
         <>
             <div className="container col-lg-3 mt-5">
-                <h1 className="text-center text-muted mb-4">
+                <h1 className="text-center text-white mb-4">
                     <a className="text-decoration-none" href="/">
                         <b className="fw-bold text-primary">NerdAPI</b>
                     </a>
@@ -100,7 +100,7 @@ export default function RegisterForm() {
                     </small>
 
                     <div className="form-group mb-3">
-                        <label htmlFor="username" className="text-muted mt-3">
+                        <label htmlFor="username" className="text-white mt-3">
                             Digit Your Username
                         </label>
                         <input
@@ -124,7 +124,7 @@ export default function RegisterForm() {
                     </small>
 
                     <div className="form-group mb-3">
-                        <label htmlFor="email" className="text-muted mt-3">
+                        <label htmlFor="email" className="text-white mt-3">
                             Digit Your Email
                         </label>
                         <input
@@ -148,7 +148,7 @@ export default function RegisterForm() {
                     </small>
 
                     <div className="form-group mb-3">
-                        <label htmlFor="password" className="text-muted mt-3">
+                        <label htmlFor="password" className="text-white mt-3">
                             Digit Your Password
                         </label>
                         <input
@@ -203,7 +203,7 @@ export default function RegisterForm() {
                 <div className="text-center mt-5">
                     <h4>Already have a account?</h4>
                     <h4>
-                        <a href="/login" className="text-success text-decoration-none">
+                        <a href="/login" className="text-success text-decoration-none fs-3">
                             <b>Login</b>
                         </a>
                     </h4>

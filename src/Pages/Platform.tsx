@@ -43,7 +43,7 @@ export default function Platform() {
             <div className="container" style={container}>
                 <div className="row mt-5">
                     {totalGamesFound && (
-                        <p className="fs-1 text-center mb-5 alert alert-success">
+                        <p className="fs-1 mb-5 alert alert-light">
                             Platform <strong className="text-success">{platformName}</strong> Games Found:{" "}
                             <strong className="text-danger">{totalGamesFound}</strong>
                         </p>

@@ -25,7 +25,7 @@ export default function GameFound({
                     alt="game_image"
                 />
                 {buttonRecommend && (
-                    <button className="button mt-3 w-80 btn btn-lg btn-outline-dark mb-3" onClick={recommendRandomGame}>
+                    <button className="button mt-3 w-80 btn mb-5 btn-success fw-bold fs-5" onClick={recommendRandomGame}>
                         <i className="bi bi-play-fill"></i>
                         Recommend Other Game
                     </button>
@@ -37,7 +37,7 @@ export default function GameFound({
                     <div className="d-flex justify-content-between">
                         <a className="fs-2 text-decoration-none" href={`/game/${game?.slug}`}>
                             <span className="fw-bold">{game?.title} </span>(
-                            <span className="text-muted">{game?.release.year}</span>)
+                            <span className="text-white">{game?.release.year}</span>)
                         </a>
 
                         <p className="fs-2 fw-bold text-warning text-decoration-none">

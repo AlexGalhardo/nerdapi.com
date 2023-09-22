@@ -84,7 +84,7 @@ export default function RandomGame() {
                     {error && <ErrorAlertMessage message={error} />}
 
                     {totalGamesFound && (
-                        <p className="fs-1 text-center mb-5 alert alert-success">
+                        <p className="fs-1 mb-5 alert alert-light">
                             Searching <strong className="text-success">{queryParams.get("search")}...</strong> Found
                             <strong className="text-danger"> {totalGamesFound}</strong> Games
                         </p>

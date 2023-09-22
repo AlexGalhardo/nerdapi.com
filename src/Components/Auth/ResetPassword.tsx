@@ -57,7 +57,7 @@ export default function ResetPasswordForm() {
     return (
         <>
             <div className="container col-lg-3 mt-5">
-                <h1 className="text-center text-muted mb-4">
+                <h1 className="text-center text-white mb-4">
                     <a className="text-decoration-none" href="/">
                         <b className="fw-bold text-primary">NerdAPI</b>
                     </a>
@@ -65,7 +65,7 @@ export default function ResetPasswordForm() {
 
                 <form onSubmit={handleSubmit}>
                     <div className="form-group mb-4 mt-5">
-                        <label htmlFor="username" className="text-muted mt-3">
+                        <label htmlFor="username" className="text-white mt-3">
                             Digit your new password
                         </label>
                         <input
@@ -78,7 +78,7 @@ export default function ResetPasswordForm() {
                             required
                         />
 
-                        <label htmlFor="username" className="text-muted mt-3">
+                        <label htmlFor="username" className="text-white mt-3">
                             Confirm your new password
                         </label>
                         <input

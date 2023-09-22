@@ -98,6 +98,7 @@ export default function Contact() {
                                 />
                             </div>
 
+							<label htmlFor="email">Subject</label>
                             <select
                                 className="fs-4 form-select mb-3"
                                 name="subject"
@@ -117,7 +118,7 @@ export default function Contact() {
                                 <label htmlFor="message" className="form-label">
                                     Digit your message ({messageLength ?? undefined} characters remaining)
                                 </label>
-                                <small id="count" className="text-muted"></small>
+                                <small id="count" className="text-white"></small>
                                 <textarea
                                     id="message"
                                     maxLength={1024}

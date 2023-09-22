@@ -90,13 +90,11 @@ export default function Pricing() {
                 <div className="row">
                     <div className="mt-5 text-center">
                         <p className="fs-3 mb-5 mt-3">
-                            It's hard to find good sources to consume video games data on the internet. <br />
-                            <strong>
-                                We want to change that. We're building the best Games API with a awesome experience for
+                            <strong>We're building the best Games API with a awesome experience for
                                 software developers and gamers out there to consume and enjoy.
                             </strong>{" "}
                             <br />
-                            You can help us by being a subscription member, sharing the site with your friends and
+                            You can help us by being a subscription member, buying a game from our afiliate link, sharing the site with your friends and
                             acquaintances, reporting bugs, and sugesting missing or wrong video game data.
                         </p>
                     </div>
@@ -114,7 +112,7 @@ export default function Pricing() {
                                         <h1 className="card-title pricing-card-title">
                                             <small>$</small>
                                             <big>0</big>
-                                            <small className="text-muted fw-light">/mo</small>
+                                            <small className="text-dark fw-light">/mo</small>
                                         </h1>
                                         <ul className="list-unstyled mt-3 mb-4">
                                             <li>
@@ -141,7 +139,7 @@ export default function Pricing() {
                                         <h1 className="card-title pricing-card-title">
                                             <small>$</small>
                                             <big>1.99</big>
-                                            <small className="text-muted fw-light">/mo</small>
+                                            <small className="text-dark fw-light">/mo</small>
                                         </h1>
                                         <ul className="list-unstyled mt-3 mb-4">
                                             <li>
@@ -166,7 +164,7 @@ export default function Pricing() {
                                                 </button>
                                             ) : (
                                                 <button
-                                                    className="button w-100 btn btn-lg btn-outline-danger fw-bold fs-4"
+                                                    className="button w-100 btn btn-lg btn-outline-danger fw-bold fs-4 text-dark shadow"
                                                     id="checkout-and-portal-button"
                                                     type="submit"
                                                 >
@@ -188,7 +186,7 @@ export default function Pricing() {
                                         <h1 className="card-title pricing-card-title">
                                             <small>$</small>
                                             <big>4.99</big>
-                                            <small className="text-muted fw-light">/mo</small>
+                                            <small className="text-dark fw-light">/mo</small>
                                         </h1>
                                         <ul className="list-unstyled mt-3 mb-4">
                                             <li>
@@ -213,7 +211,7 @@ export default function Pricing() {
                                                 </button>
                                             ) : (
                                                 <button
-                                                    className="button w-100 btn btn-lg btn-outline-primary fw-bold fs-4"
+                                                    className="button w-100 btn btn-lg btn-outline-primary fw-bold fs-4 text-dark shadow"
                                                     id="checkout-and-portal-button"
                                                     type="submit"
                                                 >
@@ -226,9 +224,9 @@ export default function Pricing() {
                             </div>
                         </div>
 
-                        <h3 className="fw-bold text-center mt-5 mb-4 text-muted">Frequently Asked Questions</h3>
+                        <h3 className="fw-bold text-center mt-5 mb-4 text-white">Frequently Asked Questions</h3>
 
-                        <div className="container col-lg-8">
+                        <div className="container col-lg-8 mb-5">
                             <div className="accordion" id="accordionExample">
                                 <div className="accordion-item">
                                     <h2 className="accordion-header" id="headingOne">

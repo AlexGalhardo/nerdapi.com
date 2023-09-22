@@ -25,7 +25,7 @@ export default function LoginForm() {
     return (
         <>
             <div className="container col-lg-3 mt-5">
-                <h1 className="text-center text-muted mb-4">
+                <h1 className="text-center text-white mb-4">
                     <a className="text-decoration-none" href="/">
                         <b className="fw-bold text-primary">NerdAPI</b>
                     </a>
@@ -49,7 +49,7 @@ export default function LoginForm() {
 
                 <form onSubmit={handleSubmit}>
                     <div className="form-group mb-4 mt-5">
-                        <label htmlFor="email" className="text-muted mt-3">
+                        <label htmlFor="email" className="text-white mt-3">
                             Digit Your Email
                         </label>
                         <input
@@ -64,7 +64,7 @@ export default function LoginForm() {
                     </div>
 
                     <div className="form-group mb-4">
-                        <label htmlFor="password" className="text-muted mt-3">
+                        <label htmlFor="password" className="text-white mt-3">
                             Digit Your Password
                         </label>
                         <input
