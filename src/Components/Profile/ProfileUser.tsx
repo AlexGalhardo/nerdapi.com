@@ -260,7 +260,7 @@ export default function ProfileUser() {
                     <>
                         <button
                             onClick={notifyCopiedAPIKEY}
-                            className="fw-bold btn btn-outline-success button BUTTON_COPY_API_KEY"
+                            className="fw-bold btn btn-outline-success border-whitebutton BUTTON_COPY_API_KEY"
                             data-clipboard-text={user?.api_token}
                         >
                             COPY API KEY

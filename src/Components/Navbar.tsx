@@ -126,7 +126,7 @@ export default function Navbar() {
                                 <div className="pull-right">
                                     <a
                                         href="/login"
-                                        className="button fw-bold fs-5 btn btn-outline-success"
+                                        className="button fw-bold fs-5 btn btn-outline-success border-white  "
                                         type="submit"
                                     >
                                         <i className="bi bi-person-fill-lock"></i> Login
