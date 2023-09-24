@@ -22,7 +22,7 @@ export default function Navbar() {
     return (
         <>
             <div className="fixed-top shadow-sm bg-light mb-5 bg-dark">
-                <nav className="container col-lg-10 navbar navbar-expand-lg fixed navbar-dark bg-dark">
+                <nav className="container col-lg-10 navbar navbar-expand-lg fixed navbar-dark bg-dark p-3">
                     <div className="container-fluid">
                         <a className="navbar-brand appTitle" href="/">
                             <span className="fs-4 fw-bold navbarTitle">NerdAPI</span>

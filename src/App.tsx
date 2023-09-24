@@ -26,7 +26,7 @@ export default function App() {
     return (
         <BrowserRouter>
             <GlobalStateProvider>
-                <ProgressBar />
+                {/* <ProgressBar /> */}
                 <Routes>
                     <Route path="/" element={<RandomGame />} />
                     <Route path="/games/*" element={<Games />} />

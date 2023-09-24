@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Josefin+Sans');
+@import url('https://fonts.googleapis.com/css2?family=Roboto');
 
 html {
   --color-1: #463220;
@@ -108,7 +109,7 @@ a {
 }
 
 .pace .pace-progress {
-	background: red;
+	background: white;
 	position: fixed;
 	z-index: 2000;
 	top: 0;
