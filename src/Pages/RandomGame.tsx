@@ -1,12 +1,13 @@
 import { CSSProperties, useCallback, useEffect, useState } from "react";
 import Navbar from "../Components/Navbar";
-import Footer from "../Components/Footer";
 import { useLocation } from "react-router-dom";
 import ErrorAlertMessage from "../Components/Alerts/ErrorAlertMessage";
-import SuccessAlertMessage from "../Components/Alerts/SuccessAlertMessage";
+import ReactPaginate from "react-paginate";
 import GamesRepository, { Game } from "../Repositories/Games.repository";
 import Head from "../Components/Head";
 import GameFound from "../Components/GameFound";
+import { iterateFromIndex } from "../Utils/Functions";
+import { TOTAL_GAMES_PER_PAGE } from "../Utils/Envs";
 
 const container: CSSProperties = {
     marginTop: "100px",
@@ -18,6 +19,9 @@ export default function RandomGame() {
     const [games, setGames] = useState<Game[] | null>(null);
     const [foundMoreThanOne, setFoundMoreThanOne] = useState<boolean>(false);
     const [totalGamesFound, setTogalGamesFound] = useState<number | null>(null);
+	const [paginationGames, setPaginationGames] = useState<Game[]>();
+	const [pageCount, setPageCount] = useState(0);
+    const [pageOffset, setPageOffset] = useState(0);
 
     const location = useLocation();
     const queryParams = new URLSearchParams(location.search);
@@ -29,6 +33,7 @@ export default function RandomGame() {
         setGame({
             ...randomGame,
         });
+		setPageCount(0);
     }, []);
 
     const searchGameByTitle = useCallback(async (gameTitle: string | null) => {
@@ -39,6 +44,7 @@ export default function RandomGame() {
                 setError(`Nothing found for search "${gameTitle}". Recommending random game...`);
                 setTogalGamesFound(null);
                 setGames(null);
+				setPageCount(0);
                 setFoundMoreThanOne(false);
 
                 const randomGame = new GamesRepository().getRandom();
@@ -53,9 +59,11 @@ export default function RandomGame() {
                 setFoundMoreThanOne(true);
                 setTogalGamesFound(searchGameTitle.length);
                 setGames(searchGameTitle);
+				setPageCount(Math.ceil(games?.length as number / TOTAL_GAMES_PER_PAGE));
             } else {
                 setGames(null);
                 setFoundMoreThanOne(false);
+				setPageCount(0);
                 setGame({
                     ...searchGameTitle[0],
                 });
@@ -71,6 +79,20 @@ export default function RandomGame() {
             recommendRandomGame();
         }
     }, [queryParams.get("search")]);
+
+	useEffect(() => {
+		if(games?.length){
+			setPaginationGames(iterateFromIndex(TOTAL_GAMES_PER_PAGE, games, 0));
+			setPageCount(Math.ceil(games?.length as number / TOTAL_GAMES_PER_PAGE));
+			setPageOffset(0);
+		}
+	}, [games])
+
+	const handlePageChange = (event: any) => {
+		setPaginationGames(iterateFromIndex(TOTAL_GAMES_PER_PAGE, games, event.selected));
+		setPageCount(Math.ceil(games?.length as number / TOTAL_GAMES_PER_PAGE));
+		setPageOffset(event.selected);
+    };
 
     return (
         <>
@@ -90,14 +112,59 @@ export default function RandomGame() {
                         </p>
                     )}
 
+					{totalGamesFound && totalGamesFound >= 2 && (
+						<ReactPaginate
+							previousLabel="Previous"
+							nextLabel="Next"
+							pageClassName="page-item"
+							pageLinkClassName="page-link"
+							previousClassName="page-item"
+							previousLinkClassName="page-link"
+							nextClassName="page-item"
+							nextLinkClassName="page-link"
+							breakLabel="..."
+							breakClassName="page-item"
+							breakLinkClassName="page-link"
+							pageCount={pageCount}
+							pageRangeDisplayed={TOTAL_GAMES_PER_PAGE}
+							onPageChange={handlePageChange}
+							containerClassName="pagination"
+							activeClassName="active"
+							className="pagination justify-content-center mb-5"
+							forcePage={pageOffset}
+						/>
+					)}
+
                     {!foundMoreThanOne && (
                         <GameFound game={game} buttonRecommend={true} recommendRandomGame={recommendRandomGame} />
                     )}
 
-                    {foundMoreThanOne && games && totalGamesFound && games.map((game) => <GameFound game={game} />)}
+                    {foundMoreThanOne && games && totalGamesFound && paginationGames?.map((game: Game) => <GameFound game={game} />)}
+
+					{totalGamesFound && totalGamesFound >= 2 && (
+						<ReactPaginate
+							previousLabel="Previous"
+							nextLabel="Next"
+							pageClassName="page-item"
+							pageLinkClassName="page-link"
+							previousClassName="page-item"
+							previousLinkClassName="page-link"
+							nextClassName="page-item"
+							nextLinkClassName="page-link"
+							breakLabel="..."
+							breakClassName="page-item"
+							breakLinkClassName="page-link"
+							pageCount={pageCount}
+							pageRangeDisplayed={TOTAL_GAMES_PER_PAGE}
+							onPageChange={handlePageChange}
+							containerClassName="pagination"
+							activeClassName="active"
+							className="pagination justify-content-center mb-5"
+							forcePage={pageOffset}
+						/>
+					)}
                 </div>
             </div>
-            <Footer />
         </>
     );
 }

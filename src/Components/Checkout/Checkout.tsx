@@ -1,5 +1,5 @@
 import { Route, Routes } from "react-router-dom";
-import Footer from "../Footer";
+
 import Navbar from "../Navbar";
 import NotFound from "../NotFound";
 import CheckoutSuccess from "./CheckoutSuccess";
@@ -18,7 +18,7 @@ export default function Checkout() {
                 </div>
             </main>
 
-            <Footer />
+
         </>
     );
 }

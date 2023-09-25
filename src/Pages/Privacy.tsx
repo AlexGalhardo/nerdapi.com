@@ -1,5 +1,4 @@
 import Navbar from "../Components/Navbar";
-import Footer from "../Components/Footer";
 import Head from "../Components/Head";
 import { CSSProperties } from "react";
 
@@ -497,7 +496,7 @@ export default function Privacy() {
                     </li>
                 </ul>
             </div>
-            <Footer />
+
         </>
     );
 }

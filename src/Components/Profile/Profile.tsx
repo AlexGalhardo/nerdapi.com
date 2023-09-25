@@ -1,4 +1,4 @@
-import Footer from "../Footer";
+
 import Navbar from "../Navbar";
 import { Navigate, Route, Routes } from "react-router-dom";
 import { useGlobalState } from "../../Context/GlobalStateContext";
@@ -29,7 +29,7 @@ export default function Profile() {
                 </div>
             </main>
 
-            <Footer />
+
         </>
     );
 }

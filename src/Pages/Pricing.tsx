@@ -1,6 +1,5 @@
 import { CSSProperties, useState } from "react";
 import Navbar from "../Components/Navbar";
-import Footer from "../Components/Footer";
 import { API_URL } from "../Utils/Envs";
 import Head from "../Components/Head";
 import { useGlobalState } from "../Context/GlobalStateContext";
@@ -336,7 +335,7 @@ export default function Pricing() {
                     </main>
                 </div>
             </div>
-            <Footer />
+
         </>
     );
 }

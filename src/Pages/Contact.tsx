@@ -4,7 +4,6 @@ import ErrorAlertMessage from "../Components/Alerts/ErrorAlertMessage";
 import { useGlobalState } from "../Context/GlobalStateContext";
 import SuccessAlertMessage from "../Components/Alerts/SuccessAlertMessage";
 import Button from "../Components/Forms/Button";
-import Footer from "../Components/Footer";
 import Head from "../Components/Head";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
@@ -142,7 +141,7 @@ export default function Contact() {
                     </div>
                 </div>
 
-                <Footer />
+
             </div>
         </>
     );
