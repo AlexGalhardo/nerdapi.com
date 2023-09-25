@@ -68,7 +68,7 @@ export default function Platform() {
                         </p>
                     )}
 
-                    {totalGamesFound && totalGamesFound >= 2 && (
+                    {totalGamesFound && totalGamesFound >= TOTAL_GAMES_PER_PAGE && (
                         <ReactPaginate
                             previousLabel="Previous"
                             nextLabel="Next"
@@ -93,7 +93,7 @@ export default function Platform() {
 
                     {paginationGames?.map((game) => <GameFound game={game} />)}
 
-                    {totalGamesFound && totalGamesFound >= 2 && (
+                    {totalGamesFound && totalGamesFound >= TOTAL_GAMES_PER_PAGE && (
                         <ReactPaginate
                             previousLabel="Previous"
                             nextLabel="Next"

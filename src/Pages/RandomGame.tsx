@@ -112,7 +112,7 @@ export default function RandomGame() {
                         </p>
                     )}
 
-                    {totalGamesFound && totalGamesFound >= 2 && (
+                    {totalGamesFound && totalGamesFound >= TOTAL_GAMES_PER_PAGE && (
                         <ReactPaginate
                             previousLabel="Previous"
                             nextLabel="Next"
@@ -144,7 +144,7 @@ export default function RandomGame() {
                         totalGamesFound &&
                         paginationGames?.map((game: Game) => <GameFound game={game} />)}
 
-                    {totalGamesFound && totalGamesFound >= 2 && (
+                    {totalGamesFound && totalGamesFound >= TOTAL_GAMES_PER_PAGE && (
                         <ReactPaginate
                             previousLabel="Previous"
                             nextLabel="Next"
