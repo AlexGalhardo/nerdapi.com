@@ -16,7 +16,7 @@ const container: CSSProperties = {
 export default function Developer() {
     const { developer_name } = useParams();
     const developerName = developersJson.filter((developer) => developer.slug === developer_name)[0].name;
-    const pageTitle = `${developer_name} Games`;
+    const pageTitle = `${developerName} Games`;
     const pageDescription = `See games made by developer ${developer_name}`;
     const navigate = useNavigate();
     const [games, setGames] = useState<Game[] | null>(null);

@@ -16,7 +16,7 @@ const container: CSSProperties = {
 export default function Publisher() {
     const { publisher_name } = useParams();
     const publisherName = publishersJson.filter((publisher) => publisher.slug === publisher_name)[0].name;
-    const pageTitle = `${publisher_name} Games`;
+    const pageTitle = `${publisherName} Games`;
     const pageDescription = `See games made by publisher ${publisher_name}`;
     const navigate = useNavigate();
     const [games, setGames] = useState<Game[] | null>(null);

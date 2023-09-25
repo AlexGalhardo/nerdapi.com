@@ -16,7 +16,7 @@ const container: CSSProperties = {
 export default function Platform() {
     const { platform_name } = useParams();
     const platformName = platformsJson.filter((platform) => platform.slug === platform_name)[0].name;
-    const pageTitle = `${platform_name} Games`;
+    const pageTitle = `${platformName} Games`;
     const pageDescription = `See games by platform ${platform_name}`;
     const navigate = useNavigate();
     const [games, setGames] = useState<Game[] | null>(null);

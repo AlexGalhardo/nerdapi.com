@@ -16,7 +16,7 @@ const container: CSSProperties = {
 export default function Genre() {
     const { genre_name } = useParams();
     const genreName = genresJson.filter((genre) => genre.slug === genre_name)[0].name;
-    const pageTitle = `${genre_name} Games`;
+    const pageTitle = `${genreName} Games`;
     const pageDescription = `See games by genre ${genre_name}`;
     const navigate = useNavigate();
     const [games, setGames] = useState<Game[] | null>(null);
