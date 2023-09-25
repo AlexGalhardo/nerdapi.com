@@ -140,8 +140,6 @@ export default function Contact() {
                         {error && <ErrorAlertMessage message={error} />}
                     </div>
                 </div>
-
-
             </div>
         </>
     );

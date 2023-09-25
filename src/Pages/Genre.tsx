@@ -21,8 +21,8 @@ export default function Genre() {
     const navigate = useNavigate();
     const [games, setGames] = useState<Game[] | null>(null);
     const [totalGamesFound, setTogalGamesFound] = useState<number | null>(null);
-	const [paginationGames, setPaginationGames] = useState<Game[]>();
-	const [pageCount, setPageCount] = useState(0);
+    const [paginationGames, setPaginationGames] = useState<Game[]>();
+    const [pageCount, setPageCount] = useState(0);
     const [pageOffset, setPageOffset] = useState(0);
 
     const searchGamesByGenre = useCallback(async (genreName: string) => {
@@ -41,18 +41,18 @@ export default function Genre() {
         }
     }, [genre_name]);
 
-	useEffect(() => {
-		if(games?.length){
-			setPaginationGames(iterateFromIndex(TOTAL_GAMES_PER_PAGE, games, 0));
-			setPageCount(Math.ceil(games.length / TOTAL_GAMES_PER_PAGE));
-			setPageOffset(0);
-		}
-	}, [games])
+    useEffect(() => {
+        if (games?.length) {
+            setPaginationGames(iterateFromIndex(TOTAL_GAMES_PER_PAGE, games, 0));
+            setPageCount(Math.ceil(games.length / TOTAL_GAMES_PER_PAGE));
+            setPageOffset(0);
+        }
+    }, [games]);
 
-	const handlePageChange = (event: any) => {
-		setPaginationGames(iterateFromIndex(TOTAL_GAMES_PER_PAGE, games, event.selected));
-		setPageCount(Math.ceil(games?.length as number / TOTAL_GAMES_PER_PAGE));
-		setPageOffset(event.selected);
+    const handlePageChange = (event: any) => {
+        setPaginationGames(iterateFromIndex(TOTAL_GAMES_PER_PAGE, games, event.selected));
+        setPageCount(Math.ceil((games?.length as number) / TOTAL_GAMES_PER_PAGE));
+        setPageOffset(event.selected);
     };
 
     return (
@@ -68,57 +68,55 @@ export default function Genre() {
                         </p>
                     )}
 
-					{totalGamesFound && totalGamesFound >= 2 && (
-						<ReactPaginate
-							previousLabel="Previous"
-							nextLabel="Next"
-							pageClassName="page-item"
-							pageLinkClassName="page-link"
-							previousClassName="page-item"
-							previousLinkClassName="page-link"
-							nextClassName="page-item"
-							nextLinkClassName="page-link"
-							breakLabel="..."
-							breakClassName="page-item"
-							breakLinkClassName="page-link"
-							pageCount={pageCount}
-							pageRangeDisplayed={TOTAL_GAMES_PER_PAGE}
-							onPageChange={handlePageChange}
-							containerClassName="pagination"
-							activeClassName="active"
-							className="pagination justify-content-center mb-5"
-							forcePage={pageOffset}
-						/>
-					)}
+                    {totalGamesFound && totalGamesFound >= 2 && (
+                        <ReactPaginate
+                            previousLabel="Previous"
+                            nextLabel="Next"
+                            pageClassName="page-item"
+                            pageLinkClassName="page-link"
+                            previousClassName="page-item"
+                            previousLinkClassName="page-link"
+                            nextClassName="page-item"
+                            nextLinkClassName="page-link"
+                            breakLabel="..."
+                            breakClassName="page-item"
+                            breakLinkClassName="page-link"
+                            pageCount={pageCount}
+                            pageRangeDisplayed={TOTAL_GAMES_PER_PAGE}
+                            onPageChange={handlePageChange}
+                            containerClassName="pagination"
+                            activeClassName="active"
+                            className="pagination justify-content-center mb-5"
+                            forcePage={pageOffset}
+                        />
+                    )}
 
                     {paginationGames?.map((game) => <GameFound game={game} />)}
 
-					{totalGamesFound && totalGamesFound >= 2 && (
-						<ReactPaginate
-							previousLabel="Previous"
-							nextLabel="Next"
-							pageClassName="page-item"
-							pageLinkClassName="page-link"
-							previousClassName="page-item"
-							previousLinkClassName="page-link"
-							nextClassName="page-item"
-							nextLinkClassName="page-link"
-							breakLabel="..."
-							breakClassName="page-item"
-							breakLinkClassName="page-link"
-							pageCount={pageCount}
-							pageRangeDisplayed={TOTAL_GAMES_PER_PAGE}
-							onPageChange={handlePageChange}
-							containerClassName="pagination"
-							activeClassName="active"
-							className="pagination justify-content-center mb-5"
-							forcePage={pageOffset}
-						/>
-					)}
+                    {totalGamesFound && totalGamesFound >= 2 && (
+                        <ReactPaginate
+                            previousLabel="Previous"
+                            nextLabel="Next"
+                            pageClassName="page-item"
+                            pageLinkClassName="page-link"
+                            previousClassName="page-item"
+                            previousLinkClassName="page-link"
+                            nextClassName="page-item"
+                            nextLinkClassName="page-link"
+                            breakLabel="..."
+                            breakClassName="page-item"
+                            breakLinkClassName="page-link"
+                            pageCount={pageCount}
+                            pageRangeDisplayed={TOTAL_GAMES_PER_PAGE}
+                            onPageChange={handlePageChange}
+                            containerClassName="pagination"
+                            activeClassName="active"
+                            className="pagination justify-content-center mb-5"
+                            forcePage={pageOffset}
+                        />
+                    )}
                 </div>
             </div>
-
-
         </>
     );
 }

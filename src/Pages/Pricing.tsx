@@ -335,7 +335,6 @@ export default function Pricing() {
                     </main>
                 </div>
             </div>
-
         </>
     );
 }

@@ -1,4 +1,3 @@
-
 import Navbar from "../Navbar";
 import { Navigate, Route, Routes } from "react-router-dom";
 import { useGlobalState } from "../../Context/GlobalStateContext";
@@ -28,8 +27,6 @@ export default function Profile() {
                     </Routes>
                 </div>
             </main>
-
-
         </>
     );
 }

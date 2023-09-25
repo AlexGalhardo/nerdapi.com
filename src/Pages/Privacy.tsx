@@ -496,7 +496,6 @@ export default function Privacy() {
                     </li>
                 </ul>
             </div>
-
         </>
     );
 }

@@ -10,4 +10,4 @@ export const APP_URL =
 
 export const APP_NAME = import.meta.env.VITE_APP_NAME ?? "NerdAPI";
 
-export const TOTAL_GAMES_PER_PAGE =  import.meta.env.TOTAL_GAMES_PER_PAGE ?? 2;
+export const TOTAL_GAMES_PER_PAGE = import.meta.env.TOTAL_GAMES_PER_PAGE ?? 2;

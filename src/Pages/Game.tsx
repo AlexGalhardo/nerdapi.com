@@ -38,7 +38,6 @@ export default function GamePage() {
                     <GameFound game={game} />
                 </div>
             </div>
-
         </>
     );
 }

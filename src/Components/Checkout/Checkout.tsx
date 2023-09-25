@@ -17,8 +17,6 @@ export default function Checkout() {
                     </Routes>
                 </div>
             </main>
-
-
         </>
     );
 }
