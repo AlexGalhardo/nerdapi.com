@@ -43,14 +43,14 @@ export default function Developer() {
 
     useEffect(() => {
         if (games?.length) {
-            setPaginationGames(iterateFromIndex(TOTAL_GAMES_PER_PAGE, games, 0));
+            setPaginationGames(iterateFromIndex(games!, 0));
             setPageCount(Math.ceil(games.length / TOTAL_GAMES_PER_PAGE));
             setPageOffset(0);
         }
     }, [games]);
 
     const handlePageChange = (event: any) => {
-        setPaginationGames(iterateFromIndex(TOTAL_GAMES_PER_PAGE, games, event.selected));
+        setPaginationGames(iterateFromIndex(games!, event.selected));
         setPageCount(Math.ceil((games?.length as number) / TOTAL_GAMES_PER_PAGE));
         setPageOffset(event.selected);
     };
