@@ -41,16 +41,20 @@ export default function CheckoutProSuccess({ sessionId }: { sessionId: string })
             </div>
             <div className="card-body">
                 <ul className="list-unstyled mt-3 mb-4">
-                    <li>Access to API KEY</li>
-                    <li>5000 API Requests Day</li>
-                    <li>Access to Telegram BOT</li>
-                    <li>Priority Email Support</li>
-                    <li>Priority Telegram Support</li>
+                    <li>
+						<i className="bi bi-check-circle"></i> 5000 API Requests/daily
+					</li>
+					<li>
+						<i className="bi bi-check-circle"></i> Priority Email Support
+					</li>
+					<li>
+						<i className="bi bi-check-circle"></i> Access To Telegram BOT
+					</li>
                 </ul>
 
                 <form onSubmit={handleSubmit}>
                     <button
-                        className="fs-4 fw-bold button w-100 btn btn-lg btn-outline-primary"
+                        className="fs-4 fw-bold w-100 btn btn-lg btn-outline-primary"
                         id="checkout-and-portal-button"
                         type="submit"
                     >

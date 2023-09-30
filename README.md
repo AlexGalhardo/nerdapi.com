@@ -4,8 +4,13 @@
 
 ## Introduction
 
-*   A personal project I created to learn [ReactJS](https://react.dev/) with Typescript using Stateless Authentication with [JWT](https://jwt.io/) and localStorage, as also improve my skills in product development, UI/UX, SEO, and so on.
-*   This is a Micro SaaS (software as a service) project, that uses Stripe checkout to take care of payments and subscriptions management.
+*   A personal project I created to learn and improve my skills in:
+    *   [ReactJS](https://react.dev/) with Typescript
+    *   Single Page Applicaiton (SPA)
+    *   Stateless Authentication & Authorization using [JWT](https://jwt.io/)
+    *   localStorage
+    *   Product development (UI/UX, SEO, etc)
+    *   SaaS (Software as a Service) FrontEnd Development
 
 ## Tools and Services Used
 
