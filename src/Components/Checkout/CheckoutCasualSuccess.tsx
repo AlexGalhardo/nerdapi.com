@@ -41,15 +41,17 @@ export default function CheckoutCasualSuccess({ sessionId }: { sessionId: string
             </div>
             <div className="card-body">
                 <ul className="list-unstyled mt-3 mb-4">
-                    <li>Access to API KEY</li>
-                    <li>1000 API Requests Day</li>
-                    <li>Priority Email Support</li>
-                    <li>Help center access</li>
+                    <li>
+                        <i className="bi bi-check-circle"></i> 1000 API Requests/daily
+                    </li>
+                    <li>
+                        <i className="bi bi-check-circle"></i> Priority Email Support
+                    </li>
                 </ul>
 
                 <form onSubmit={handleSubmit}>
                     <button
-                        className="fs-4 fw-bold button w-100 btn btn-lg btn-outline-danger"
+                        className="fs-4 fw-bold w-100 btn btn-lg btn-outline-danger"
                         id="checkout-and-portal-button"
                         type="submit"
                     >
