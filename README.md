@@ -4,101 +4,119 @@
 
 ## Introduction
 
-*   A personal project I created to learn and improve my skills in:
-    *   [ReactJS](https://react.dev/) with Typescript
-    *   Single Page Applicaiton (SPA)
-    *   Stateless Authentication & Authorization using [JWT](https://jwt.io/)
-    *   localStorage
-    *   Product development (UI/UX, SEO, etc)
-    *   SaaS (Software as a Service) FrontEnd Development
+* A personal project I created to learn and improve my skills in:
+  * [ReactJS](https://react.dev/) with Typescript
+  * Single Page Applicaiton (SPA)
+  * Stateless Authentication & Authorization using [JWT](https://jwt.io/)
+  * localStorage
+  * Product development (UI/UX, SEO, etc)
+  * SaaS (Software as a Service) FrontEnd Development
 
 ## Tools and Services Used
 
-*   [Linux Mint XFCE 21.04](https://linuxmint.com/)
-*   [Git for control version](https://git-scm.com/)
-*   [Vite v4](https://vitejs.dev/)
-*   [Boostrap v5](https://getbootstrap.com/)
-*   [ReacJS](https://react.dev/)  + TypeScript
-*   [NodeJS v20](https://nodejs.org/en)
-*   Code Editor: [VSCode](https://code.visualstudio.com/)
-*   Google & Github Social Login
-*   HTTP Requests Client: <https://insomnia.rest/>
-*   Telegram API for Logs: <https://core.telegram.org/api>
-*   Deploy: <https://vercel.com/>
-*   Emails API: <https://resend.com/>
-*   Payments API: <https://stripe.com/>
-*   Frontend Global State Management:
-    *   [React Hooks: useContext, useContext, useMemo, useReducer, useCallback](https://react.dev/reference/react)
+* [Linux Mint XFCE 21.04](https://linuxmint.com/)
+* [Git for control version](https://git-scm.com/)
+* [Vite v4](https://vitejs.dev/)
+* [Boostrap v5](https://getbootstrap.com/)
+* [ReacJS](https://react.dev/)  + TypeScript
+* [NodeJS v20](https://nodejs.org/en)
+* Code Editor: [VSCode](https://code.visualstudio.com/)
+* Google & Github Social Login
+* HTTP Requests Client: <https://insomnia.rest/>
+* Telegram API for Logs: <https://core.telegram.org/api>
+* Deploy: <https://vercel.com/>
+* Emails API: <https://resend.com/>
+* Payments API: <https://stripe.com/>
+* Frontend Global State Management:
+  * [React Hooks: useContext, useContext, useMemo, useReducer, useCallback](https://react.dev/reference/react)
 
 ## API
 
-*   BackEnd Source Code: <https://github.com/AlexGalhardo/api.nerdapi.com>
-*   Documentation Source code: <https://github.com/AlexGalhardo/docs.nerdapi.com>
-*   Docs Live: <https://docs.nerdapi.com>
+* BackEnd Source Code: <https://github.com/AlexGalhardo/api.nerdapi.com>
+* Documentation Source code: <https://github.com/AlexGalhardo/docs.nerdapi.com>
+* Docs Live: <https://docs.nerdapi.com>
 
 ## Development Setup Local
 
-*   Clone this repository
+* Clone this repository
 
 <!---->
 
-    git clone https://github.com/AlexGalhardo/nerdapi.com
+```
+git clone https://github.com/AlexGalhardo/nerdapi.com
+```
 
-*   Enter repository
-
-<!---->
-
-    cd nerdapi.com/
-
-*   Install dependencies
+* Enter repository
 
 <!---->
 
-    npm install
+```
+cd nerdapi.com/
+```
 
-*   Setup enviroment variables
-
-<!---->
-
-    cp .env-example .env
-
-*   Start local server
+* Install dependencies
 
 <!---->
 
-    npm run dev
+```
+npm install
+```
 
-*   Go to: <http://localhost:5173/>
+* Setup enviroment variables
+
+<!---->
+
+```
+cp .env-example .env
+```
+
+* Start local server
+
+<!---->
+
+```
+npm run dev
+```
+
+* Go to: <http://localhost:5173/>
 
 ## Build for deploy
 
-*   Create build
+* Create build
 
 <!---->
 
-    npm run build
+```
+npm run build
+```
 
-*   Preview production build
-
-<!---->
-
-    npm run preview
-
-*   Open production build local server (build + preview)
+* Preview production build
 
 <!---->
 
-    npm run start
+```
+npm run preview
+```
 
-*   Go to: <http://localhost:4173/>
+* Open production build local server (build + preview)
+
+<!---->
+
+```
+npm run start
+```
+
+* Go to: <http://localhost:4173/>
 
 ## Before Submit Commits & PRs
 
-*   Run command:
+* Run command:
 
 <!---->
 
-    npm run format
+```
+npm run format
+```
 
 <!---->
 

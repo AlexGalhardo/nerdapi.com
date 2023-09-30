@@ -42,14 +42,14 @@ export default function CheckoutProSuccess({ sessionId }: { sessionId: string })
             <div className="card-body">
                 <ul className="list-unstyled mt-3 mb-4">
                     <li>
-						<i className="bi bi-check-circle"></i> 5000 API Requests/daily
-					</li>
-					<li>
-						<i className="bi bi-check-circle"></i> Priority Email Support
-					</li>
-					<li>
-						<i className="bi bi-check-circle"></i> Access To Telegram BOT
-					</li>
+                        <i className="bi bi-check-circle"></i> 5000 API Requests/daily
+                    </li>
+                    <li>
+                        <i className="bi bi-check-circle"></i> Priority Email Support
+                    </li>
+                    <li>
+                        <i className="bi bi-check-circle"></i> Access To Telegram BOT
+                    </li>
                 </ul>
 
                 <form onSubmit={handleSubmit}>
