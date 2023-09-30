@@ -2,7 +2,7 @@
  <h1 align="center"><a href="https://nerdapi.com/" target="_blank">nerdapi.com</a></h1>
 </div>
 
-https://github.com/AlexGalhardo/nerdapi.com/assets/19540357/5356d6f2-db57-44a9-94a6-432559d2af07
+<https://github.com/AlexGalhardo/nerdapi.com/assets/19540357/5356d6f2-db57-44a9-94a6-432559d2af07>
 
 ## Introduction
 
@@ -11,6 +11,7 @@ https://github.com/AlexGalhardo/nerdapi.com/assets/19540357/5356d6f2-db57-44a9-9
   * Single Page Applicaiton (SPA)
   * Stateless Authentication & Authorization using [JWT](https://jwt.io/)
   * localStorage
+  * Webhooks
   * Product development (UI/UX, SEO, etc)
   * SaaS (Software as a Service) FrontEnd Development
 
