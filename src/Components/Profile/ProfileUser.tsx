@@ -245,23 +245,23 @@ export default function ProfileUser() {
                         name="apiKey"
                         className="fs-4 mb-2 form-control"
                         type="text"
-                        defaultValue={user?.api_token ?? undefined}
+                        defaultValue={user?.api_key ?? undefined}
                         readOnly
                         disabled
                     />
-                    {!user?.api_token && (
+                    {!user?.api_key && (
                         <small>
                             <a href="/pricing">You need to have a subscription active to have access to a API KEY.</a>
                         </small>
                     )}
                 </div>
 
-                {user?.api_token && (
+                {user?.api_key && (
                     <>
                         <button
                             onClick={notifyCopiedAPIKEY}
                             className="fw-bold btn btn-outline-success border-whitebutton BUTTON_COPY_API_KEY"
-                            data-clipboard-text={user?.api_token}
+                            data-clipboard-text={user?.api_key}
                         >
                             COPY API KEY
                         </button>

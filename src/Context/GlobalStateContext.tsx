@@ -16,7 +16,7 @@ export interface User {
     telegram_number: string | null;
     password: string | null;
     jwt_token: string | null;
-    api_token: string | null;
+    api_key: string | null;
     reset_password_token: string | null;
     reset_password_token_expires_at: string | null;
     stripe: {
@@ -102,7 +102,7 @@ export const GlobalStateProvider = ({ children }: React.PropsWithChildren) => {
             telegram_number: data.telegram_number,
             password: data.password,
             jwt_token: data.jwt_token,
-            api_token: data.api_token,
+            api_key: data.api_key,
             reset_password_token: data.reset_password_token,
             reset_password_token_expires_at: data.reset_password_token_expires_at,
             stripe: {
