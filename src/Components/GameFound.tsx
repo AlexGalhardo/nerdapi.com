@@ -54,7 +54,7 @@ export default function GameFound({
             <div className="col-lg-3 mb-3">
                 <div className="text-center">
                     {game?.where_to_buy?.map((item, index) => (
-                        <a key={index} href="#" target="#" rel="noopener noreferrer" style={amazonButton}>
+                        <a key={index} href="#" rel="noopener noreferrer" style={amazonButton}>
                             <img src="https://www.niftybuttons.com/amazon/amazon-button2.png" />
                         </a>
                     ))}
