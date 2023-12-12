@@ -88,6 +88,16 @@ export default function RandomGame() {
         }
     }, [games]);
 
+	useEffect(() => {
+        if (game) {
+            setError("");
+			setGames(null);
+			setFoundMoreThanOne(false);
+			setPageCount(0);
+			setTogalGamesFound(0)
+        }
+    }, [game]);
+
     const handlePageChange = (event: any) => {
         setPaginationGames(iterateFromIndex(games!, event.selected));
         setPageCount(Math.ceil((games?.length as number) / TOTAL_GAMES_PER_PAGE));
@@ -105,14 +115,14 @@ export default function RandomGame() {
                 <div className="row mt-5">
                     {error && <ErrorAlertMessage message={error} />}
 
-                    {totalGamesFound && (
+                    {totalGamesFound !== 0 ? (
                         <p className="fs-1 mb-5 alert alert-light">
                             Searching <strong className="text-success">{queryParams.get("search")}...</strong> Found
                             <strong className="text-danger"> {totalGamesFound}</strong> Games
                         </p>
-                    )}
+                    ) : null}
 
-                    {totalGamesFound && totalGamesFound >= TOTAL_GAMES_PER_PAGE && (
+                    {totalGamesFound && totalGamesFound >= TOTAL_GAMES_PER_PAGE ? (
                         <ReactPaginate
                             previousLabel="Previous"
                             nextLabel="Next"
@@ -133,18 +143,18 @@ export default function RandomGame() {
                             className="pagination justify-content-center mb-5"
                             forcePage={pageOffset}
                         />
-                    )}
+                    ) : null}
 
-                    {!foundMoreThanOne && (
+                    {!foundMoreThanOne ? (
                         <GameFound game={game} buttonRecommend={true} recommendRandomGame={recommendRandomGame} />
-                    )}
+                    ) : null}
 
                     {foundMoreThanOne &&
                         games &&
                         totalGamesFound &&
                         paginationGames?.map((game: Game) => <GameFound game={game} />)}
 
-                    {totalGamesFound && totalGamesFound >= TOTAL_GAMES_PER_PAGE && (
+                    {totalGamesFound && totalGamesFound >= TOTAL_GAMES_PER_PAGE ? (
                         <ReactPaginate
                             previousLabel="Previous"
                             nextLabel="Next"
@@ -165,7 +175,7 @@ export default function RandomGame() {
                             className="pagination justify-content-center mb-5"
                             forcePage={pageOffset}
                         />
-                    )}
+                    ) : null}
                 </div>
             </div>
         </>
