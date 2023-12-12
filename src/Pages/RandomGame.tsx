@@ -88,13 +88,12 @@ export default function RandomGame() {
         }
     }, [games]);
 
-	useEffect(() => {
+    useEffect(() => {
         if (game) {
-            setError("");
-			setGames(null);
-			setFoundMoreThanOne(false);
-			setPageCount(0);
-			setTogalGamesFound(0)
+            setGames(null);
+            setFoundMoreThanOne(false);
+            setPageCount(0);
+            setTogalGamesFound(0);
         }
     }, [game]);
 
