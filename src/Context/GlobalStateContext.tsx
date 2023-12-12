@@ -355,7 +355,6 @@ export const GlobalStateProvider = ({ children }: React.PropsWithChildren) => {
             const urlSearchParams = new URLSearchParams(currentUrl.split("?")[1]);
             let token = null;
             if (urlSearchParams.get("token")) {
-                console.log('urlSearchParams.get("token") ======> ', urlSearchParams.get("token"));
                 token = urlSearchParams.get("token");
                 window.localStorage.setItem("token", token as string);
             } else if (window.localStorage.getItem("token")) token = window.localStorage.getItem("token");

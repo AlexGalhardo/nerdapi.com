@@ -11,7 +11,6 @@ const container: CSSProperties = {
 
 export default function GamePage() {
     const { game_title_slug } = useParams();
-    alert(game_title_slug);
     const pageDescription = `See information about ${game_title_slug}`;
     const navigate = useNavigate();
     const [game, setGame] = useState<Game | null>();

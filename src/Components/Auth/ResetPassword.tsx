@@ -25,8 +25,6 @@ export default function ResetPasswordForm() {
     async function handleSubmit(event: any) {
         event.preventDefault();
 
-        console.log("newPassword !== confirmNewPassword => ", newPassword !== confirmNewPassword);
-
         let securePassword = null;
 
         if (newPassword !== confirmNewPassword) {
