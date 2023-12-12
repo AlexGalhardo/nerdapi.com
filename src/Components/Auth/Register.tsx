@@ -170,8 +170,7 @@ export default function RegisterForm() {
                     <div className="mb-3 mt-4 form-check">
                         <label className="form-check-label" htmlFor="checkbox_policy">
                             <p className="fs-6">
-                                You agree with our
-								{" "}
+                                You agree with our{" "}
                                 <a target="_blank" href="/privacy">
                                     Privacy and Terms of Use Policy
                                 </a>{" "}

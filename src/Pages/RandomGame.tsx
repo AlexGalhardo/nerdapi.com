@@ -39,6 +39,7 @@ export default function RandomGame() {
     const searchGameByTitle = useCallback(async (gameTitle: string | null) => {
         if (gameTitle) {
             const searchGameTitle = new GamesRepository().searchAllGamesSimilarTitle(gameTitle);
+            const randomGame = new GamesRepository().getRandom();
 
             if (!searchGameTitle.length) {
                 setError(`Nothing found for search "${gameTitle}". Recommending random game...`);
@@ -46,8 +47,6 @@ export default function RandomGame() {
                 setGames(null);
                 setPageCount(0);
                 setFoundMoreThanOne(false);
-
-                const randomGame = new GamesRepository().getRandom();
 
                 setGame({
                     ...randomGame,
@@ -60,7 +59,8 @@ export default function RandomGame() {
                 setTogalGamesFound(searchGameTitle.length);
                 setGames(searchGameTitle);
                 setPageCount(Math.ceil((games?.length as number) / TOTAL_GAMES_PER_PAGE));
-            } else {
+            } else if (searchGameTitle.length === 1) {
+                setError("");
                 setGames(null);
                 setFoundMoreThanOne(false);
                 setPageCount(0);

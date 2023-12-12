@@ -11,12 +11,16 @@ const container: CSSProperties = {
 
 export default function GamePage() {
     const { game_title_slug } = useParams();
+    alert(game_title_slug);
     const pageDescription = `See information about ${game_title_slug}`;
     const navigate = useNavigate();
-    const [game, setGame] = useState<Game>();
+    const [game, setGame] = useState<Game | null>();
     const searchGameByTitle = useCallback(async (gameTitleSlug: string) => {
         const gameFound = new GamesRepository().getByTitleSlug(gameTitleSlug);
-        if (!gameFound) navigate("/");
+        if (!gameFound) {
+            setGame(null);
+            navigate("/");
+        }
 
         setGame(gameFound);
     }, []);

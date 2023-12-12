@@ -14,7 +14,7 @@
 	"editor.formatOnPaste": true,
 	"json.format.keepLines": false,
 	"editor.codeActionsOnSave": {
-		"source.fixAll": true
+		"source.fixAll": "explicit"
 	},
 	"javascript.format.insertSpaceBeforeFunctionParenthesis": false,
 	"javascript.format.placeOpenBraceOnNewLineForControlBlocks": false,
@@ -24,7 +24,6 @@
 	"typescript.format.placeOpenBraceOnNewLineForFunctions": false,
 	"explorer.confirmDragAndDrop": true,
 	"editor.inlineSuggest.enabled": true,
-	"workbench.editor.untitled.hint": "hidden",
 	"git.autofetch": true,
 	"css.format.enable": false,
 	"php.validate.enable": false,

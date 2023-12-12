@@ -8,6 +8,6 @@ export function iterateFromIndex(games: Game[], pageOffset: number): Game[] {
         if (games[i]) arrayFromOffeset.push(games[i]);
         if (!games[i]) break;
     }
-    console.log("arrayFromOffeset => ", arrayFromOffeset);
+
     return arrayFromOffeset;
 }
