@@ -18,7 +18,7 @@
 ## Tools and Services Used
 
 * [Linux Mint XFCE 21.04](https://linuxmint.com/)
-* [Git for control version](https://git-scm.com/)
+* [Git](https://git-scm.com/)
 * [Vite v4](https://vitejs.dev/)
 * [Boostrap v5](https://getbootstrap.com/)
 * [ReacJS](https://react.dev/)  + TypeScript
