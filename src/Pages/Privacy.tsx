@@ -1,10 +1,6 @@
 import Navbar from "../Components/Navbar";
 import Head from "../Components/Head";
-import { CSSProperties } from "react";
-
-const container: CSSProperties = {
-    marginTop: "300px",
-};
+import { container } from "../Utils/Functions";
 
 export default function Privacy() {
     return (
@@ -57,7 +53,7 @@ export default function Privacy() {
                     <li>
                         <p>
                             <strong>Company</strong> (referred to as either &quot;the Company&quot;, &quot;We&quot;,
-                            &quot;Us&quot; or &quot;Our&quot; in this Agreement) refers to NerdAPI.
+                            &quot;Us&quot; or &quot;Our&quot; in this Agreement) refers to Nerd API.
                         </p>
                     </li>
                     <li>
@@ -113,7 +109,7 @@ export default function Privacy() {
                     </li>
                     <li>
                         <p>
-                            <strong>Website</strong> refers to NerdAPI, accessible from{" "}
+                            <strong>Website</strong> refers to Nerd API, accessible from{" "}
                             <a href="https://nerdapi.com" rel="external nofollow noopener" target="_blank">
                                 https://nerdapi.com
                             </a>

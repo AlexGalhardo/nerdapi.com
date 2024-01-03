@@ -21,11 +21,11 @@ export default function Navbar() {
 
     return (
         <>
-            <div className="fixed-top shadow-sm bg-light mb-5 bg-dark">
+            <div className="fixed-top bg-light mb-5 bg-dark">
                 <nav className="container col-lg-10 navbar navbar-expand-lg fixed navbar-dark bg-dark p-3">
                     <div className="container-fluid">
                         <a className="navbar-brand appTitle" href="/">
-                            <span className="fs-4 fw-bold navbarTitle">NerdAPI</span>
+                            <span className="fs-4 fw-bold navbarTitle">Nerd API</span>
                         </a>
 
                         <form className="d-flex w-50" onSubmit={handleSearch}>
@@ -34,7 +34,7 @@ export default function Navbar() {
                                     type="text"
                                     name="search"
                                     className="fs-6 form-control"
-                                    placeholder="Search game title..."
+                                    placeholder="Search Game Title..."
                                     onChange={(e) => setSearch(e.target.value)}
                                 />
                             </div>
@@ -62,7 +62,7 @@ export default function Navbar() {
                                         aria-current="page"
                                         href="/contact"
                                     >
-                                        <i className="bi bi-envelope"></i> Contact
+                                    	Contact
                                     </a>
                                 </li>
 
@@ -74,8 +74,6 @@ export default function Navbar() {
                                         aria-current="page"
                                         href="/pricing"
                                     >
-                                        {" "}
-                                        <i className="bi bi-award"></i>
                                         Pricing
                                     </a>
                                 </li>
@@ -87,7 +85,7 @@ export default function Navbar() {
                                         href="https://docs.nerdapi.com"
                                         target="_blank"
                                     >
-                                        <i className="bi bi-code"></i> API
+                                    	API
                                     </a>
                                 </li>
                             </ul>
@@ -126,7 +124,7 @@ export default function Navbar() {
                                 <div className="pull-right">
                                     <a
                                         href="/login"
-                                        className="button fw-bold fs-5 btn btn-outline-success border-white  "
+                                        className="button fw-bold fs-5 btn btn-success"
                                         type="submit"
                                     >
                                         <i className="bi bi-person-fill-lock"></i> Login

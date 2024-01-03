@@ -1,7 +1,6 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import { GlobalStateProvider } from "./Context/GlobalStateContext";
 import Games from "./Pages/RandomGame";
-import ProgressBar from "./Components/ProgressBar";
 import Contact from "./Pages/Contact";
 import Pricing from "./Pages/Pricing";
 import Checkout from "./Components/Checkout/Checkout";
@@ -26,7 +25,6 @@ export default function App() {
     return (
         <BrowserRouter>
             <GlobalStateProvider>
-                {/* <ProgressBar /> */}
                 <Routes>
                     <Route path="/" element={<RandomGame />} />
                     <Route path="/games/*" element={<Games />} />

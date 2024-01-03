@@ -1,4 +1,4 @@
-import { CSSProperties, useCallback, useEffect, useState } from "react";
+import { useCallback, useEffect, useState } from "react";
 import Navbar from "../Components/Navbar";
 import { useLocation } from "react-router-dom";
 import ErrorAlertMessage from "../Components/Alerts/ErrorAlertMessage";
@@ -6,12 +6,8 @@ import ReactPaginate from "react-paginate";
 import GamesRepository, { Game } from "../Repositories/Games.repository";
 import Head from "../Components/Head";
 import GameFound from "../Components/GameFound";
-import { iterateFromIndex } from "../Utils/Functions";
+import { container, iterateFromIndex } from "../Utils/Functions";
 import { TOTAL_GAMES_PER_PAGE } from "../Utils/Envs";
-
-const container: CSSProperties = {
-    marginTop: "100px",
-};
 
 export default function RandomGame() {
     const [error, setError] = useState<string | null>();

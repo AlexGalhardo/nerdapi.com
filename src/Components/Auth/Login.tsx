@@ -27,7 +27,7 @@ export default function LoginForm() {
             <div className="container col-lg-3 mt-5">
                 <h1 className="text-center text-white mb-4">
                     <a className="text-decoration-none" href="/">
-                        <b className="fw-bold text-primary">NerdAPI</b>
+                        <b className="fw-bold text-primary">Nerd API</b>
                     </a>
                 </h1>
 
@@ -41,7 +41,7 @@ export default function LoginForm() {
 
                 <a
                     href="https://github.com/login/oauth/authorize?client_id=dc8d30a5f12828c5d3f9"
-                    className="fs-4 fw-bold button btn-lg btn btn-outline-secondary w-100"
+                    className="fs-4 fw-bold button btn-lg btn btn-secondary w-100"
                 >
                     <i className="bi bi-github me-2"></i>
                     Login with GitHub

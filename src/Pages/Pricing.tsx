@@ -5,6 +5,7 @@ import Head from "../Components/Head";
 import { useGlobalState } from "../Context/GlobalStateContext";
 import { useNavigate } from "react-router-dom";
 import SuccessAlertMessage from "../Components/Alerts/SuccessAlertMessage";
+import { container } from "../Utils/Functions";
 
 export default function Pricing() {
     const { login, user } = useGlobalState();
@@ -83,9 +84,9 @@ export default function Pricing() {
 
     return (
         <>
-            <Head title="Pricing" description="See ours plans to get access to NerdAPI!" />
+            <Head title="Pricing" description="See ours plans to get access to Nerd API!" />
             <Navbar />
-            <div className="container col-lg-7" style={containerPricing}>
+            <div className="container col-lg-7" style={container}>
                 <div className="row">
                     <div className="mt-5 text-center">
                         <p className="fs-3 mb-5 mt-3">
@@ -338,7 +339,3 @@ export default function Pricing() {
         </>
     );
 }
-
-const containerPricing: CSSProperties = {
-    marginTop: "50px",
-};

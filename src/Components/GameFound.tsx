@@ -1,11 +1,6 @@
 import { CSSProperties } from "react";
 import { Game } from "../Repositories/Games.repository";
 
-const amazonButton: CSSProperties = {
-    border: "none",
-    textDecoration: "none",
-};
-
 export default function GameFound({
     game,
     buttonRecommend,
@@ -30,7 +25,7 @@ export default function GameFound({
                         onClick={recommendRandomGame}
                     >
                         <i className="bi bi-play-fill"></i>
-                        Recommend Other Game
+                        Recommend Random Game
                     </button>
                 )}
             </div>
@@ -42,9 +37,11 @@ export default function GameFound({
                             <span className="fw-bold">{game?.title} </span>(<span className="text-white">2020</span>)
                         </a>
 
-                        <p className="fs-2 fw-bold text-warning text-decoration-none">
-                            ⭐<span id="game_igdb_rating">{game?.metacritic?.rating}</span>
-                        </p>
+                        {game?.metacritic?.rating && (
+							<p className="fs-2 fw-bold text-warning text-decoration-none">
+                            	⭐<span id="game_igdb_rating">{game?.metacritic?.rating}</span>
+                        	</p>
+						)}
                     </div>
 
                     <p>{game?.summary}</p>
@@ -52,14 +49,6 @@ export default function GameFound({
             </div>
 
             <div className="col-lg-3 mb-3">
-                <div className="text-center">
-                    {game?.where_to_buy?.map((item, index) => (
-                        <a key={index} href="#" target="#" rel="noopener noreferrer" style={amazonButton}>
-                            <img src="https://www.niftybuttons.com/amazon/amazon-button2.png" />
-                        </a>
-                    ))}
-                </div>
-
                 <ul className="mt-3">
                     <li className="">
                         <b>Developer:</b>
@@ -99,13 +88,6 @@ export default function GameFound({
                                     {/* <a href="#">{platform.name}</a> */}
                                 </li>
                             ))}
-                        </ul>
-                    </li>
-                    <li className="">
-                        <b>Play Time</b>
-                        <ul>
-                            <li>History: +/- 25h</li>
-                            <li>Completionist: +/- 40h</li>
                         </ul>
                     </li>
                 </ul>

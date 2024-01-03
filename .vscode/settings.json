@@ -57,6 +57,6 @@
 	"files.associations": {
 		"*.ts": "typescript"
 	},
-	"window.zoomLevel": 1,
+	"window.zoomLevel": 0,
 	"workbench.editor.empty.hint": "hidden"
 }

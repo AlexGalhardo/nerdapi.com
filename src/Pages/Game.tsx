@@ -1,17 +1,13 @@
-import { CSSProperties, useCallback, useEffect, useState } from "react";
+import { useCallback, useEffect, useState } from "react";
 import Navbar from "../Components/Navbar";
 import { useNavigate, useParams } from "react-router-dom";
 import GamesRepository, { Game } from "../Repositories/Games.repository";
 import Head from "../Components/Head";
 import GameFound from "../Components/GameFound";
-
-const container: CSSProperties = {
-    marginTop: "100px",
-};
+import { container } from "../Utils/Functions";
 
 export default function GamePage() {
     const { game_title_slug } = useParams();
-    alert(game_title_slug);
     const pageDescription = `See information about ${game_title_slug}`;
     const navigate = useNavigate();
     const [game, setGame] = useState<Game | null>();

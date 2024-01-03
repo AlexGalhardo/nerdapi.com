@@ -1,17 +1,13 @@
 import Navbar from "../Components/Navbar";
 import Head from "../Components/Head";
-import { CSSProperties, useCallback, useEffect, useState } from "react";
+import { useCallback, useEffect, useState } from "react";
 import { useNavigate, useParams } from "react-router-dom";
 import GamesRepository, { Game } from "../Repositories/Games.repository";
 import GameFound from "../Components/GameFound";
 import platformsJson from "../Repositories/Jsons/platforms.json";
 import { TOTAL_GAMES_PER_PAGE } from "../Utils/Envs";
 import ReactPaginate from "react-paginate";
-import { iterateFromIndex } from "../Utils/Functions";
-
-const container: CSSProperties = {
-    marginTop: "100px",
-};
+import { container, iterateFromIndex } from "../Utils/Functions";
 
 export default function Platform() {
     const { platform_name } = useParams();
@@ -61,10 +57,11 @@ export default function Platform() {
             <Navbar />
             <div className="container" style={container}>
                 <div className="row mt-5">
-                    {totalGamesFound && (
-                        <p className="fs-1 mb-5 alert alert-light">
-                            Platform <strong className="text-success">{platformName}</strong> Games Found:{" "}
-                            <strong className="text-danger">{totalGamesFound}</strong>
+					{totalGamesFound && (
+                        <p className="fs-3 mb-5 alert alert-light d-flex justify-content-between">
+                            <span>Platform: <strong className="text-success">{platformName}</strong></span>
+							<span>Found: <strong className="text-danger">{totalGamesFound} {totalGamesFound > 1 ? 'Games' : 'Game'}</strong> </span>
+
                         </p>
                     )}
 
