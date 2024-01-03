@@ -57,11 +57,17 @@ export default function Genre() {
             <Navbar />
             <div className="container" style={container}>
                 <div className="row mt-5">
-					{totalGamesFound && (
+                    {totalGamesFound && (
                         <p className="fs-3 mb-5 alert alert-light d-flex justify-content-between">
-                            <span>Genre: <strong className="text-success">{genreName}</strong></span>
-							<span>Found: <strong className="text-danger">{totalGamesFound} {totalGamesFound > 1 ? 'Games' : 'Game'}</strong> </span>
-
+                            <span>
+                                Genre: <strong className="text-success">{genreName}</strong>
+                            </span>
+                            <span>
+                                Found:{" "}
+                                <strong className="text-danger">
+                                    {totalGamesFound} {totalGamesFound > 1 ? "Games" : "Game"}
+                                </strong>{" "}
+                            </span>
                         </p>
                     )}
 

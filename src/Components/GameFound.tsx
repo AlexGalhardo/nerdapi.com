@@ -38,10 +38,10 @@ export default function GameFound({
                         </a>
 
                         {game?.metacritic?.rating && (
-							<p className="fs-2 fw-bold text-warning text-decoration-none">
-                            	⭐<span id="game_igdb_rating">{game?.metacritic?.rating}</span>
-                        	</p>
-						)}
+                            <p className="fs-2 fw-bold text-warning text-decoration-none">
+                                ⭐<span id="game_igdb_rating">{game?.metacritic?.rating}</span>
+                            </p>
+                        )}
                     </div>
 
                     <p>{game?.summary}</p>

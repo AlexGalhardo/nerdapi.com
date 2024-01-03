@@ -62,7 +62,7 @@ export default function Navbar() {
                                         aria-current="page"
                                         href="/contact"
                                     >
-                                    	Contact
+                                        Contact
                                     </a>
                                 </li>
 
@@ -85,7 +85,7 @@ export default function Navbar() {
                                         href="https://docs.nerdapi.com"
                                         target="_blank"
                                     >
-                                    	API
+                                        API
                                     </a>
                                 </li>
                             </ul>
@@ -122,11 +122,7 @@ export default function Navbar() {
                                 </ul>
                             ) : (
                                 <div className="pull-right">
-                                    <a
-                                        href="/login"
-                                        className="button fw-bold fs-5 btn btn-success"
-                                        type="submit"
-                                    >
+                                    <a href="/login" className="button fw-bold fs-5 btn btn-success" type="submit">
                                         <i className="bi bi-person-fill-lock"></i> Login
                                     </a>
                                 </div>

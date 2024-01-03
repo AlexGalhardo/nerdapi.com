@@ -59,9 +59,15 @@ export default function Publisher() {
                 <div className="row mt-5">
                     {totalGamesFound && (
                         <p className="fs-3 mb-5 alert alert-light d-flex justify-content-between">
-                            <span>Publisher: <strong className="text-success">{publisherName}</strong></span>
-							<span>Found: <strong className="text-danger">{totalGamesFound} {totalGamesFound > 1 ? 'Games' : 'Game'}</strong> </span>
-
+                            <span>
+                                Publisher: <strong className="text-success">{publisherName}</strong>
+                            </span>
+                            <span>
+                                Found:{" "}
+                                <strong className="text-danger">
+                                    {totalGamesFound} {totalGamesFound > 1 ? "Games" : "Game"}
+                                </strong>{" "}
+                            </span>
                         </p>
                     )}
 
