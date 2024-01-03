@@ -9,7 +9,7 @@ export default function Privacy() {
             <Navbar />
             <br></br>
             <br></br>
-            <div className="container col-lg-8 mt-5" style={container}>
+            <div className="container col-lg-8 mt-5 mb-5" style={container}>
                 <h1>Privacy Policy</h1>
                 <p>Last updated: September 09, 2023</p>
                 <p>

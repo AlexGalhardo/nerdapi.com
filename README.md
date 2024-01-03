@@ -18,15 +18,13 @@
 ## Tools and Services Used
 
 * [Linux Mint XFCE 21.04](https://linuxmint.com/)
-* [Git for control version](https://git-scm.com/)
-* [Vite v4](https://vitejs.dev/)
+* [Git](https://git-scm.com/)
+* [Vite v5](https://vitejs.dev/)
 * [Boostrap v5](https://getbootstrap.com/)
 * [ReacJS](https://react.dev/)  + TypeScript
 * [NodeJS v20](https://nodejs.org/en)
 * Code Editor: [VSCode](https://code.visualstudio.com/)
 * Google & Github Social Login
-* HTTP Requests Client: <https://insomnia.rest/>
-* Telegram API for Logs: <https://core.telegram.org/api>
 * Deploy: <https://vercel.com/>
 * Emails API: <https://resend.com/>
 * Payments API: <https://stripe.com/>
@@ -110,16 +108,6 @@ npm run start
 ```
 
 * Go to: <http://localhost:4173/>
-
-## Before Submit Commits & PRs
-
-* Run command:
-
-<!---->
-
-```
-npm run format
-```
 
 <!---->
 
