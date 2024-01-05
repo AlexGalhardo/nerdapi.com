@@ -111,9 +111,9 @@ export default function RandomGame() {
                     {error && <ErrorAlertMessage message={error} />}
 
                     {totalGamesFound !== 0 ? (
-                        <p className="fs-1 mb-5 alert alert-light">
-                            Searching <strong className="text-success">{queryParams.get("search")}...</strong> Found
-                            <strong className="text-danger"> {totalGamesFound}</strong> Games
+                        <p className="fs-1 mb-5 alert alert-light d-flex justify-content-between">
+                            <span>Searching: <strong className="text-success">{queryParams.get("search")}</strong></span>
+							<span>Found: <strong className="text-danger"> {totalGamesFound} {totalGamesFound! > 1 ? 'Games' : 'Game'} </strong></span>
                         </p>
                     ) : null}
 
