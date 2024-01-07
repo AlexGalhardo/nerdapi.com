@@ -55,7 +55,6 @@ export default function GameFound({
                         <ul>
                             <li>
                                 <a href={`/developer/${game?.developer?.slug}`}>{game?.developer?.name}</a>
-                                {/* <a href="#">{game?.developer.name}</a> */}
                             </li>
                         </ul>
                     </li>
@@ -64,7 +63,6 @@ export default function GameFound({
                         <ul>
                             <li>
                                 <a href={`/publisher/${game?.publisher?.slug}`}>{game?.publisher?.name}</a>
-                                {/* <a href="#">{game?.publisher.name}</a> */}
                             </li>
                         </ul>
                     </li>
@@ -74,7 +72,6 @@ export default function GameFound({
                             {game?.genres?.map((genre) => (
                                 <li key={genre.id}>
                                     <a href={`/genre/${genre?.slug}`}>{genre?.name}</a>
-                                    {/* <a href="#">{genre.name}</a> */}
                                 </li>
                             ))}
                         </ul>
@@ -85,7 +82,6 @@ export default function GameFound({
                             {game?.platforms_available?.map((platform) => (
                                 <li key={platform.id}>
                                     <a href={`/platform/${platform.slug}`}>{platform.name}</a>
-                                    {/* <a href="#">{platform.name}</a> */}
                                 </li>
                             ))}
                         </ul>
