@@ -4,7 +4,6 @@ import { useNavigate, useParams } from "react-router-dom";
 import GamesRepository, { Game } from "../Repositories/Games.repository";
 import Head from "../Components/Head";
 import GameFound from "../Components/GameFound";
-import { container } from "../Utils/Functions";
 
 export default function GamePage() {
     const { game_title_slug } = useParams();
@@ -33,7 +32,7 @@ export default function GamePage() {
         <>
             <Head title={game?.title} description={pageDescription} />
             <Navbar />
-            <div className="container" style={container}>
+            <div className="container" style={{ marginTop: "100px" }}>
                 <div className="row mt-5">
                     <GameFound game={game} />
                 </div>

@@ -6,110 +6,84 @@
 
 ## Introduction
 
-* A personal project I created to learn and improve my skills in:
-  * [ReactJS](https://react.dev/) with Typescript
-  * Single Page Applicaiton (SPA)
-  * Stateless Authentication & Authorization using [JWT](https://jwt.io/)
-  * localStorage
-  * Webhooks
-  * Product development (UI/UX, SEO, etc)
-  * SaaS (Software as a Service) FrontEnd Development
+- A personal project I created to learn and improve my skills in:
+   - [ReactJS](https://react.dev/) with Typescript
+   - Single Page Applicaiton (SPA)
+   - Stateless Authentication & Authorization using [JWT](https://jwt.io/)
+   - localStorage
+   - Webhooks
+   - Product development (UI/UX, SEO, etc)
+   - SaaS (Software as a Service) FrontEnd Development
 
-## Tools and Services Used
+## Tools & Features
 
-* [Linux Mint XFCE 21.04](https://linuxmint.com/)
-* [Git](https://git-scm.com/)
-* [Vite v5](https://vitejs.dev/)
-* [Boostrap v5](https://getbootstrap.com/)
-* [ReacJS](https://react.dev/)  + TypeScript
-* [NodeJS v20](https://nodejs.org/en)
-* Code Editor: [VSCode](https://code.visualstudio.com/)
-* Google & Github Social Login
-* Deploy: <https://vercel.com/>
-* Emails API: <https://resend.com/>
-* Payments API: <https://stripe.com/>
-* Frontend Global State Management:
-  * [React Hooks: useContext, useContext, useMemo, useReducer, useCallback](https://react.dev/reference/react)
+- [Vite v5](https://vitejs.dev/)
+- [Boostrap v5](https://getbootstrap.com/)
+- [ReactJS + TypeScript](https://react.dev/)
+- [Bun](https://bun.sh/docs/installation)
+- Prettier & [Husky](https://www.npmjs.com/package/husky)
+- Pagination & Search
+- Contact Forms
+- Subscriptions
+- Google & Github Social Login
+- Deploy: <https://vercel.com/>
+- Emails: <https://resend.com/>
+- Payments: <https://stripe.com/>
+- Frontend Global State Management:
+   - [React Hooks: useContext, useContext, useMemo, useReducer, useCallback](https://react.dev/reference/react)
+
+## ToDo v2
+- [ ] Refactor using [TailwindCSS](https://tailwindcss.com/)
+- [ ] Refactor using [NextJS and SSR](https://nextjs.org/)
+- [ ] Create unit tests using [Jest for React](https://jestjs.io/docs/tutorial-react)
+- [ ] Create End to End Tests using [Playwright](https://playwright.dev/)
+- [ ] CI/CD using Github Actions to format code, run unit and end to end tests and deploy to [Vercel](https://vercel.com/)
 
 ## API
-
-* BackEnd Source Code: <https://github.com/AlexGalhardo/api.nerdapi.com>
-* Documentation Source code: <https://github.com/AlexGalhardo/docs.nerdapi.com>
-* Docs Live: <https://docs.nerdapi.com>
+- BackEnd Source Code: <https://github.com/AlexGalhardo/api.nerdapi.com>
+- Documentation Source code: <https://github.com/AlexGalhardo/docs.nerdapi.com>
+- Docs Live: <https://docs.nerdapi.com>
 
 ## Development Setup Local
 
-* Clone this repository
+- Install Bun: <https://bun.sh/docs/installation>
 
-<!---->
-
+1. Clone this repository
+```bash
+git clone git@github.com:AlexGalhardo/nerdapi.com.git
 ```
-git clone https://github.com/AlexGalhardo/nerdapi.com
-```
 
-* Enter repository
-
-<!---->
-
-```
+2. Enter repository
+```bash
 cd nerdapi.com/
 ```
 
-* Install dependencies
-
-<!---->
-
-```
-npm install
+3. Install dependencies
+```bash
+bun install
 ```
 
-* Setup enviroment variables
-
-<!---->
-
-```
-cp .env-example .env
+4. Setup your environment variables
+```bash
+cp .env.example .env
 ```
 
-* Start local server
-
-<!---->
-
+5. Start local server
+```bash
+bun run dev
 ```
-npm run dev
-```
-
-* Go to: <http://localhost:5173/>
 
 ## Build for deploy
 
-* Create build
-
-<!---->
-
-```
-npm run build
+a. Creating build
+```bash
+bun run build
 ```
 
-* Preview production build
-
-<!---->
-
+b. Preview build server
+```bash
+bun run start
 ```
-npm run preview
-```
-
-* Open production build local server (build + preview)
-
-<!---->
-
-```
-npm run start
-```
-
-* Go to: <http://localhost:4173/>
-
-<!---->
 
 ## License
 

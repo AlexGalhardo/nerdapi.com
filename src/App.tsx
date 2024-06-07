@@ -1,6 +1,5 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import { GlobalStateProvider } from "./Context/GlobalStateContext";
-import Games from "./Pages/RandomGame";
 import Contact from "./Pages/Contact";
 import Pricing from "./Pages/Pricing";
 import Checkout from "./Components/Checkout/Checkout";
@@ -27,7 +26,7 @@ export default function App() {
             <GlobalStateProvider>
                 <Routes>
                     <Route path="/" element={<RandomGame />} />
-                    <Route path="/games/*" element={<Games />} />
+                    <Route path="/games/*" element={<RandomGame />} />
                     <Route path="/developer/:developer_name" element={<Developer />} />
                     <Route path="/publisher/:publisher_name" element={<Publisher />} />
                     <Route path="/genre/:genre_name" element={<Genre />} />

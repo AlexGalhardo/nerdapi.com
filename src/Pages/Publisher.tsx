@@ -7,7 +7,7 @@ import GameFound from "../Components/GameFound";
 import publishersJson from "../Repositories/Jsons/publishers.json";
 import ReactPaginate from "react-paginate";
 import { TOTAL_GAMES_PER_PAGE } from "../Utils/Envs";
-import { container, iterateFromIndex } from "../Utils/Functions";
+import { iterateFromIndex } from "../Utils/Functions";
 
 export default function Publisher() {
     const { publisher_name } = useParams();
@@ -55,7 +55,7 @@ export default function Publisher() {
         <>
             <Head title={pageTitle} description={pageDescription} />
             <Navbar />
-            <div className="container" style={container}>
+            <div className="container" style={{ marginTop: "100px" }}>
                 <div className="row mt-5">
                     {totalGamesFound && (
                         <p className="fs-3 mb-5 alert alert-light d-flex justify-content-between">

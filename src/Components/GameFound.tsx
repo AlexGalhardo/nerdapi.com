@@ -34,7 +34,8 @@ export default function GameFound({
                 <div className="card-body">
                     <div className="d-flex justify-content-between">
                         <a className="fs-2 text-decoration-none" href={`/game/${game?.slug}`}>
-                            <span className="fw-bold">{game?.title} </span>(<span className="text-white">{game?.release?.year}</span>)
+                            <span className="fw-bold">{game?.title} </span>(
+                            <span className="text-white">{game?.release?.year}</span>)
                         </a>
 
                         {game?.metacritic?.rating && (

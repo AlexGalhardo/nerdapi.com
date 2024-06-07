@@ -2,9 +2,9 @@ import Navbar from "../Navbar";
 import { Navigate, Route, Routes } from "react-router-dom";
 import { useGlobalState } from "../../Context/GlobalStateContext";
 import ProfileUser from "./ProfileUser";
-import NotFound from "../NotFound";
 import Head from "../Head";
 import HeadScript from "../HeadScript";
+import NotFound from "../NotFound";
 
 export default function Profile() {
     const { login } = useGlobalState();

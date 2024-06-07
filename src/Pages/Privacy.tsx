@@ -1,6 +1,5 @@
 import Navbar from "../Components/Navbar";
 import Head from "../Components/Head";
-import { container } from "../Utils/Functions";
 
 export default function Privacy() {
     return (
@@ -9,7 +8,7 @@ export default function Privacy() {
             <Navbar />
             <br></br>
             <br></br>
-            <div className="container col-lg-8 mt-5 mb-5" style={container}>
+            <div className="container col-lg-8 mt-5 mb-5" style={{ marginTop: "100px" }}>
                 <h1>Privacy Policy</h1>
                 <p>Last updated: September 09, 2023</p>
                 <p>

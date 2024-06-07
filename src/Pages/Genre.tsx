@@ -6,7 +6,7 @@ import GamesRepository, { Game } from "../Repositories/Games.repository";
 import GameFound from "../Components/GameFound";
 import genresJson from "../Repositories/Jsons/genres.json";
 import ReactPaginate from "react-paginate";
-import { container, iterateFromIndex } from "../Utils/Functions";
+import { iterateFromIndex } from "../Utils/Functions";
 import { TOTAL_GAMES_PER_PAGE } from "../Utils/Envs";
 
 export default function Genre() {
@@ -55,7 +55,7 @@ export default function Genre() {
         <>
             <Head title={pageTitle} description={pageDescription} />
             <Navbar />
-            <div className="container" style={container}>
+            <div className="container" style={{ marginTop: "100px" }}>
                 <div className="row mt-5">
                     {totalGamesFound && (
                         <p className="fs-3 mb-5 alert alert-light d-flex justify-content-between">

@@ -6,7 +6,7 @@ import ReactPaginate from "react-paginate";
 import GamesRepository, { Game } from "../Repositories/Games.repository";
 import Head from "../Components/Head";
 import GameFound from "../Components/GameFound";
-import { container, iterateFromIndex } from "../Utils/Functions";
+import { iterateFromIndex } from "../Utils/Functions";
 import { TOTAL_GAMES_PER_PAGE } from "../Utils/Envs";
 
 export default function RandomGame() {
@@ -106,14 +106,22 @@ export default function RandomGame() {
                 description="The best games recomendation system and api for developers & gamers on internet."
             />
             <Navbar />
-            <div className="container" style={container}>
+            <div className="container" style={{ marginTop: "100px" }}>
                 <div className="row mt-5">
                     {error && <ErrorAlertMessage message={error} />}
 
                     {totalGamesFound !== 0 ? (
                         <p className="fs-1 mb-5 alert alert-light d-flex justify-content-between">
-                            <span>Searching: <strong className="text-success">{queryParams.get("search")}</strong></span>
-							<span>Found: <strong className="text-danger"> {totalGamesFound} {totalGamesFound! > 1 ? 'Games' : 'Game'} </strong></span>
+                            <span>
+                                Searching: <strong className="text-success">{queryParams.get("search")}</strong>
+                            </span>
+                            <span>
+                                Found:{" "}
+                                <strong className="text-danger">
+                                    {" "}
+                                    {totalGamesFound} {totalGamesFound! > 1 ? "Games" : "Game"}{" "}
+                                </strong>
+                            </span>
                         </p>
                     ) : null}
 

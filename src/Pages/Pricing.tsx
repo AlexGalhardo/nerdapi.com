@@ -1,11 +1,10 @@
-import { CSSProperties, useState } from "react";
+import { useState } from "react";
 import Navbar from "../Components/Navbar";
 import { API_URL } from "../Utils/Envs";
 import Head from "../Components/Head";
 import { useGlobalState } from "../Context/GlobalStateContext";
 import { useNavigate } from "react-router-dom";
 import SuccessAlertMessage from "../Components/Alerts/SuccessAlertMessage";
-import { container } from "../Utils/Functions";
 
 export default function Pricing() {
     const { login, user } = useGlobalState();
@@ -86,7 +85,7 @@ export default function Pricing() {
         <>
             <Head title="Pricing" description="See ours plans to get access to Nerd API!" />
             <Navbar />
-            <div className="container col-lg-7" style={container}>
+            <div className="container col-lg-7" style={{ marginTop: "100px" }}>
                 <div className="row">
                     <div className="mt-5 text-center">
                         <p className="fs-3 mb-5 mt-3">
