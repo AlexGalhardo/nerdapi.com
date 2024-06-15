@@ -8,6 +8,7 @@ import publishersJson from "../Repositories/Jsons/publishers.json";
 import ReactPaginate from "react-paginate";
 import { TOTAL_GAMES_PER_PAGE } from "../Utils/Envs";
 import { iterateFromIndex } from "../Utils/Functions";
+import ProgressBar from "../Components/ProgressBar";
 
 export default function Publisher() {
     const { publisher_name } = useParams();
@@ -54,8 +55,9 @@ export default function Publisher() {
     return (
         <>
             <Head title={pageTitle} description={pageDescription} />
+            <ProgressBar />
             <Navbar />
-            <div className="container" style={{ marginTop: "100px" }}>
+            <div className="container col-lg-8" style={{ marginTop: "100px" }}>
                 <div className="row mt-5">
                     {totalGamesFound && (
                         <p className="fs-3 mb-5 alert alert-light d-flex justify-content-between">
@@ -94,7 +96,7 @@ export default function Publisher() {
                         />
                     )}
 
-                    {paginationGames?.map((game) => <GameFound game={game} />)}
+                    {paginationGames?.map((game) => <GameFound key={game.id} game={game} />)}
 
                     {totalGamesFound && totalGamesFound >= TOTAL_GAMES_PER_PAGE && (
                         <ReactPaginate

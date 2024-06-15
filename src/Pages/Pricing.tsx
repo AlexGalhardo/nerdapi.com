@@ -85,10 +85,10 @@ export default function Pricing() {
         <>
             <Head title="Pricing" description="See ours plans to get access to Nerd API!" />
             <Navbar />
-            <div className="container col-lg-7" style={{ marginTop: "100px" }}>
+            <div className="container col-lg-7" style={{ marginTop: "50px" }}>
                 <div className="row">
                     <div className="mt-5 text-center">
-                        <p className="fs-3 mb-5 mt-3">
+                        <p className="fs-4 mb-5">
                             <strong>
                                 We're building the best Games API with a awesome experience for software developers and
                                 gamers out there to consume and enjoy.

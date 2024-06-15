@@ -200,12 +200,12 @@ export default function RegisterForm() {
                 </form>
 
                 <div className="text-center mt-5">
-                    <h4>Already have a account?</h4>
-                    <h4>
+                    <h5>Already have a account?</h5>
+                    <h5>
                         <a href="/login" className="text-success text-decoration-none fs-3">
                             <b>Login</b>
                         </a>
-                    </h4>
+                    </h5>
                 </div>
             </div>
         </>

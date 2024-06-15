@@ -21,11 +21,11 @@ export default function GameFound({
                 />
                 {buttonRecommend && (
                     <button
-                        className="button mt-3 w-80 btn mb-5 btn-success fw-bold fs-5"
+                        className="button mt-3 w-100 btn mb-5 btn-outline-success fw-bold fs-6 shadow-lg"
                         onClick={recommendRandomGame}
                     >
                         <i className="bi bi-play-fill"></i>
-                        Recommend Random Game
+                        Random Game
                     </button>
                 )}
             </div>
@@ -33,17 +33,12 @@ export default function GameFound({
             <div className="col-lg-6">
                 <div className="card-body">
                     <div className="d-flex justify-content-between">
-                        <a className="fs-2 text-decoration-none" href={`/game/${game?.slug}`}>
-                            <span className="fw-bold">{game?.title} </span>(
-                            <span className="text-white">{game?.release?.year}</span>)
-                        </a>
-
-                        {game?.metacritic?.rating && (
-                            <p className="fs-2 fw-bold text-warning text-decoration-none">
-                                ⭐<span id="game_igdb_rating">{game?.metacritic?.rating}</span>
-                            </p>
-                        )}
+                        <h2>
+                            <span className="fw-bold text-warning">{game?.title} </span>
+                        </h2>
                     </div>
+
+                    <hr />
 
                     <p>{game?.summary}</p>
                 </div>
@@ -51,6 +46,19 @@ export default function GameFound({
 
             <div className="col-lg-3 mb-3">
                 <ul className="mt-3">
+                    {game?.metacritic?.rating && (
+                        <li>
+                            <span className="fw-bold text-decoration-none">
+                                Rating: ⭐{" "}
+                                <span id="game_igdb_rating" className="fw-bold text-warning">
+                                    {game?.metacritic?.rating}
+                                </span>
+                            </span>
+                        </li>
+                    )}
+                    <li>
+                        <span className="fw-bold text-decoration-none">Release Year: {game?.release?.year}</span>
+                    </li>
                     <li className="">
                         <b>Developer:</b>
                         <ul>
@@ -78,7 +86,7 @@ export default function GameFound({
                         </ul>
                     </li>
                     <li className="">
-                        <b>Platforms available:</b>
+                        <b>Platforms:</b>
                         <ul>
                             {game?.platforms_available?.map((platform) => (
                                 <li key={platform.id}>

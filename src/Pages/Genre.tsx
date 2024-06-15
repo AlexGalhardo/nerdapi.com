@@ -8,6 +8,7 @@ import genresJson from "../Repositories/Jsons/genres.json";
 import ReactPaginate from "react-paginate";
 import { iterateFromIndex } from "../Utils/Functions";
 import { TOTAL_GAMES_PER_PAGE } from "../Utils/Envs";
+import ProgressBar from "../Components/ProgressBar";
 
 export default function Genre() {
     const { genre_name } = useParams();
@@ -54,8 +55,9 @@ export default function Genre() {
     return (
         <>
             <Head title={pageTitle} description={pageDescription} />
+            <ProgressBar />
             <Navbar />
-            <div className="container" style={{ marginTop: "100px" }}>
+            <div className="container col-lg-8" style={{ marginTop: "100px" }}>
                 <div className="row mt-5">
                     {totalGamesFound && (
                         <p className="fs-3 mb-5 alert alert-light d-flex justify-content-between">
@@ -94,7 +96,7 @@ export default function Genre() {
                         />
                     )}
 
-                    {paginationGames?.map((game) => <GameFound game={game} />)}
+                    {paginationGames?.map((game) => <GameFound key={game.id} game={game} />)}
 
                     {totalGamesFound && totalGamesFound >= TOTAL_GAMES_PER_PAGE && (
                         <ReactPaginate

@@ -12,7 +12,7 @@ import ForgetPasswordForm from "./Components/Auth/ForgetPassword";
 import ResetPasswordForm from "./Components/Auth/ResetPassword";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap-icons/font/bootstrap-icons.css";
-import "./Style.css";
+import "./styles.css";
 import Developer from "./Pages/Developer";
 import Publisher from "./Pages/Publisher";
 import Genre from "./Pages/Genre";

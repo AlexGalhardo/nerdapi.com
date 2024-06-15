@@ -68,13 +68,13 @@ export default function Contact() {
 
             <div className="container col-lg-8 mt-5" style={containerContact}>
                 <div className="row mt-5">
-                    <div className="container col-lg-6 mt-5" style={containerContact}>
+                    <div className="container col-lg-8 mt-5" style={containerContact}>
                         <form onSubmit={handleSubmit}>
                             <div className="form-group mb-3">
                                 <label htmlFor="name">Your Name</label>
                                 <input
                                     type="text"
-                                    className="fs-4 mb-3 form-control"
+                                    className="fs-5 mb-3 form-control"
                                     id="name"
                                     name="name"
                                     required
@@ -90,7 +90,7 @@ export default function Contact() {
                                     type="email"
                                     id="email"
                                     name="email"
-                                    className="fs-4 form-control"
+                                    className="fs-5 form-control"
                                     value={email}
                                     required
                                     onChange={(e) => setEmail(e.target.value)}
@@ -99,7 +99,7 @@ export default function Contact() {
 
                             <label htmlFor="email">Subject</label>
                             <select
-                                className="fs-4 form-select mb-3"
+                                className="fs-5 form-select mb-3"
                                 name="subject"
                                 onChange={(e) => setSubject(e.target.value)}
                                 value={subject}
@@ -121,7 +121,7 @@ export default function Contact() {
                                 <textarea
                                     id="message"
                                     maxLength={1024}
-                                    className="fs-4 form-control"
+                                    className="fs-5 form-control"
                                     name="message"
                                     value={message}
                                     rows={7}

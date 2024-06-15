@@ -8,6 +8,7 @@ import Head from "../Components/Head";
 import GameFound from "../Components/GameFound";
 import { iterateFromIndex } from "../Utils/Functions";
 import { TOTAL_GAMES_PER_PAGE } from "../Utils/Envs";
+import ProgressBar from "../Components/ProgressBar";
 
 export default function RandomGame() {
     const [error, setError] = useState<string | null>();
@@ -105,13 +106,14 @@ export default function RandomGame() {
                 title="Games API for Developers"
                 description="The best games recomendation system and api for developers & gamers on internet."
             />
+            <ProgressBar />
             <Navbar />
-            <div className="container" style={{ marginTop: "100px" }}>
+            <div className="container col-lg-8" style={{ marginTop: "100px" }}>
                 <div className="row mt-5">
                     {error && <ErrorAlertMessage message={error} />}
 
                     {totalGamesFound !== 0 ? (
-                        <p className="fs-1 mb-5 alert alert-light d-flex justify-content-between">
+                        <p className="fs-3 mb-5 alert alert-light d-flex justify-content-between">
                             <span>
                                 Searching: <strong className="text-success">{queryParams.get("search")}</strong>
                             </span>
@@ -149,13 +151,18 @@ export default function RandomGame() {
                     ) : null}
 
                     {!foundMoreThanOne ? (
-                        <GameFound game={game} buttonRecommend={true} recommendRandomGame={recommendRandomGame} />
+                        <GameFound
+                            key={game?.id}
+                            game={game}
+                            buttonRecommend={true}
+                            recommendRandomGame={recommendRandomGame}
+                        />
                     ) : null}
 
                     {foundMoreThanOne &&
                         games &&
                         totalGamesFound &&
-                        paginationGames?.map((game: Game) => <GameFound game={game} />)}
+                        paginationGames?.map((game: Game) => <GameFound key={game.id} game={game} />)}
 
                     {totalGamesFound && totalGamesFound >= TOTAL_GAMES_PER_PAGE ? (
                         <ReactPaginate

@@ -21,11 +21,11 @@ export default function Navbar() {
 
     return (
         <>
-            <div className="fixed-top bg-light mb-5 bg-dark">
-                <nav className="container col-lg-10 navbar navbar-expand-lg fixed navbar-dark bg-dark p-3">
+            <div className="fixed-top mb-5" style={{ backgroundColor: "#05050B" }}>
+                <nav className="container col-lg-8 navbar navbar-expand-lg fixed p-3">
                     <div className="container-fluid">
                         <a className="navbar-brand appTitle" href="/">
-                            <span className="fs-4 fw-bold navbarTitle">Nerd API</span>
+                            <span className="fs-4 fw-bold text-white">Nerd API</span>
                         </a>
 
                         <form className="d-flex w-50" onSubmit={handleSearch}>
@@ -41,7 +41,7 @@ export default function Navbar() {
                         </form>
 
                         <button
-                            className="navbar-toggler"
+                            className="navbar-toggler bg-white"
                             type="button"
                             data-bs-toggle="collapse"
                             data-bs-target="#navbarSupportedContent"
@@ -56,8 +56,8 @@ export default function Navbar() {
                             <ul className="navbar-nav me-auto mb-2 mb-lg-0">
                                 <li className="nav-item">
                                     <a
-                                        className={`fs-5 nav-link fw-bold ${
-                                            location.pathname === "/contact" ? "text-white" : undefined
+                                        className={`fs-5 nav-link ${
+                                            location.pathname === "/contact" ? "text-warning fw-bold" : "text-white"
                                         }`}
                                         aria-current="page"
                                         href="/contact"
@@ -68,8 +68,8 @@ export default function Navbar() {
 
                                 <li className="nav-item">
                                     <a
-                                        className={`fs-5 nav-link fw-bold ${
-                                            location.pathname === "/pricing" ? "text-white" : undefined
+                                        className={`fs-5 nav-link ${
+                                            location.pathname === "/pricing" ? "text-warning fw-bold" : "text-white"
                                         }`}
                                         aria-current="page"
                                         href="/pricing"
@@ -80,7 +80,7 @@ export default function Navbar() {
 
                                 <li className="nav-item">
                                     <a
-                                        className="fs-5 nav-link fw-bold"
+                                        className="fs-5 nav-link fw-bold text-white"
                                         aria-current="page"
                                         href="https://docs.nerdapi.com"
                                         target="_blank"
@@ -122,7 +122,11 @@ export default function Navbar() {
                                 </ul>
                             ) : (
                                 <div className="pull-right">
-                                    <a href="/login" className="button fw-bold fs-5 btn btn-success" type="submit">
+                                    <a
+                                        href="/login"
+                                        className="button fw-bold fs-6 btn btn-outline-success shadow"
+                                        type="submit"
+                                    >
                                         <i className="bi bi-person-fill-lock"></i> Login
                                     </a>
                                 </div>
