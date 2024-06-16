@@ -1,10 +1,12 @@
 import Navbar from "../Components/Navbar";
 import Head from "../Components/Head";
+import ProgressBar from "../Components/ProgressBar";
 
 export default function Privacy() {
     return (
         <>
             <Head title="Privacy Policy" description="Our privacy policy and terms of service." />
+			<ProgressBar />
             <Navbar />
             <br></br>
             <br></br>

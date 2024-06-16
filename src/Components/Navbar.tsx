@@ -80,7 +80,7 @@ export default function Navbar() {
 
                                 <li className="nav-item">
                                     <a
-                                        className="fs-5 nav-link fw-bold text-white"
+                                        className="fs-5 nav-link text-white"
                                         aria-current="page"
                                         href="https://docs.nerdapi.com"
                                         target="_blank"
@@ -124,7 +124,7 @@ export default function Navbar() {
                                 <div className="pull-right">
                                     <a
                                         href="/login"
-                                        className="button fw-bold fs-6 btn btn-outline-success shadow"
+                                        className="button fw-bold fs-6 btn btn-success shadow"
                                         type="submit"
                                     >
                                         <i className="bi bi-person-fill-lock"></i> Login

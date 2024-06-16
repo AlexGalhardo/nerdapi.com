@@ -21,7 +21,7 @@ export default function GameFound({
                 />
                 {buttonRecommend && (
                     <button
-                        className="button mt-3 w-100 btn mb-5 btn-outline-success fw-bold fs-6 shadow-lg"
+                        className="button mt-3 w-100 btn mb-5 btn-success fw-bold fs-6 shadow-lg"
                         onClick={recommendRandomGame}
                     >
                         <i className="bi bi-play-fill"></i>
