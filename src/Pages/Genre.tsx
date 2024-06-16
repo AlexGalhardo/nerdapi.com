@@ -7,7 +7,7 @@ import GameFound from "../Components/GameFound";
 import genresJson from "../Repositories/Jsons/genres.json";
 import ReactPaginate from "react-paginate";
 import { iterateFromIndex } from "../Utils/Functions";
-import { TOTAL_GAMES_PER_PAGE } from "../Utils/Envs";
+import { SHOW_GAMES_PER_PAGE } from "../Utils/Envs";
 import ProgressBar from "../Components/ProgressBar";
 
 export default function Genre() {
@@ -41,14 +41,14 @@ export default function Genre() {
     useEffect(() => {
         if (games?.length) {
             setPaginationGames(iterateFromIndex(games, 0));
-            setPageCount(Math.ceil(games.length / TOTAL_GAMES_PER_PAGE));
+            setPageCount(Math.ceil(games.length / SHOW_GAMES_PER_PAGE));
             setPageOffset(0);
         }
     }, [games]);
 
     const handlePageChange = (event: any) => {
         setPaginationGames(iterateFromIndex(games!, event.selected));
-        setPageCount(Math.ceil((games?.length as number) / TOTAL_GAMES_PER_PAGE));
+        setPageCount(Math.ceil((games?.length as number) / SHOW_GAMES_PER_PAGE));
         setPageOffset(event.selected);
     };
 
@@ -73,7 +73,7 @@ export default function Genre() {
                         </p>
                     )}
 
-                    {totalGamesFound && totalGamesFound >= TOTAL_GAMES_PER_PAGE && (
+                    {totalGamesFound && totalGamesFound > SHOW_GAMES_PER_PAGE && (
                         <ReactPaginate
                             previousLabel="Previous"
                             nextLabel="Next"
@@ -87,7 +87,7 @@ export default function Genre() {
                             breakClassName="page-item"
                             breakLinkClassName="page-link"
                             pageCount={pageCount}
-                            pageRangeDisplayed={TOTAL_GAMES_PER_PAGE}
+                            pageRangeDisplayed={SHOW_GAMES_PER_PAGE}
                             onPageChange={handlePageChange}
                             containerClassName="pagination"
                             activeClassName="active"
@@ -98,7 +98,7 @@ export default function Genre() {
 
                     {paginationGames?.map((game) => <GameFound key={game.id} game={game} />)}
 
-                    {totalGamesFound && totalGamesFound >= TOTAL_GAMES_PER_PAGE && (
+                    {totalGamesFound && totalGamesFound > SHOW_GAMES_PER_PAGE && (
                         <ReactPaginate
                             previousLabel="Previous"
                             nextLabel="Next"
@@ -112,7 +112,7 @@ export default function Genre() {
                             breakClassName="page-item"
                             breakLinkClassName="page-link"
                             pageCount={pageCount}
-                            pageRangeDisplayed={TOTAL_GAMES_PER_PAGE}
+                            pageRangeDisplayed={SHOW_GAMES_PER_PAGE}
                             onPageChange={handlePageChange}
                             containerClassName="pagination"
                             activeClassName="active"

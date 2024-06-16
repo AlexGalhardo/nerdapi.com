@@ -42,7 +42,7 @@ export default function CheckoutCasualSuccess({ sessionId }: { sessionId: string
             <div className="card-body">
                 <ul className="list-unstyled mt-3 mb-4">
                     <li>
-                        <i className="bi bi-check-circle"></i> 1000 API Requests/daily
+                        <i className="bi bi-check-circle"></i> 500 API Requests/daily
                     </li>
                     <li>
                         <i className="bi bi-check-circle"></i> Priority Email Support

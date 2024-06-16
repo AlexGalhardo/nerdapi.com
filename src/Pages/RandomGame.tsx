@@ -7,7 +7,7 @@ import GamesRepository, { Game } from "../Repositories/Games.repository";
 import Head from "../Components/Head";
 import GameFound from "../Components/GameFound";
 import { iterateFromIndex } from "../Utils/Functions";
-import { TOTAL_GAMES_PER_PAGE } from "../Utils/Envs";
+import { SHOW_GAMES_PER_PAGE } from "../Utils/Envs";
 import ProgressBar from "../Components/ProgressBar";
 
 export default function RandomGame() {
@@ -55,7 +55,7 @@ export default function RandomGame() {
                 setFoundMoreThanOne(true);
                 setTogalGamesFound(searchGameTitle.length);
                 setGames(searchGameTitle);
-                setPageCount(Math.ceil((games?.length as number) / TOTAL_GAMES_PER_PAGE));
+                setPageCount(Math.ceil((games?.length as number) / SHOW_GAMES_PER_PAGE));
             } else if (searchGameTitle.length === 1) {
                 setError("");
                 setGames(null);
@@ -80,7 +80,7 @@ export default function RandomGame() {
     useEffect(() => {
         if (games?.length) {
             setPaginationGames(iterateFromIndex(games, 0));
-            setPageCount(Math.ceil(games?.length / TOTAL_GAMES_PER_PAGE));
+            setPageCount(Math.ceil(games?.length / SHOW_GAMES_PER_PAGE));
             setPageOffset(0);
         }
     }, [games]);
@@ -96,7 +96,7 @@ export default function RandomGame() {
 
     const handlePageChange = (event: any) => {
         setPaginationGames(iterateFromIndex(games!, event.selected));
-        setPageCount(Math.ceil((games?.length as number) / TOTAL_GAMES_PER_PAGE));
+        setPageCount(Math.ceil((games?.length as number) / SHOW_GAMES_PER_PAGE));
         setPageOffset(event.selected);
     };
 
@@ -127,7 +127,7 @@ export default function RandomGame() {
                         </p>
                     ) : null}
 
-                    {totalGamesFound && totalGamesFound >= TOTAL_GAMES_PER_PAGE ? (
+                    {totalGamesFound && totalGamesFound > SHOW_GAMES_PER_PAGE ? (
                         <ReactPaginate
                             previousLabel="Previous"
                             nextLabel="Next"
@@ -141,7 +141,7 @@ export default function RandomGame() {
                             breakClassName="page-item"
                             breakLinkClassName="page-link"
                             pageCount={pageCount}
-                            pageRangeDisplayed={TOTAL_GAMES_PER_PAGE}
+                            pageRangeDisplayed={SHOW_GAMES_PER_PAGE}
                             onPageChange={handlePageChange}
                             containerClassName="pagination"
                             activeClassName="active"
@@ -164,7 +164,7 @@ export default function RandomGame() {
                         totalGamesFound &&
                         paginationGames?.map((game: Game) => <GameFound key={game.id} game={game} />)}
 
-                    {totalGamesFound && totalGamesFound >= TOTAL_GAMES_PER_PAGE ? (
+                    {totalGamesFound && totalGamesFound > SHOW_GAMES_PER_PAGE ? (
                         <ReactPaginate
                             previousLabel="Previous"
                             nextLabel="Next"
@@ -178,7 +178,7 @@ export default function RandomGame() {
                             breakClassName="page-item"
                             breakLinkClassName="page-link"
                             pageCount={pageCount}
-                            pageRangeDisplayed={TOTAL_GAMES_PER_PAGE}
+                            pageRangeDisplayed={SHOW_GAMES_PER_PAGE}
                             onPageChange={handlePageChange}
                             containerClassName="pagination"
                             activeClassName="active"
