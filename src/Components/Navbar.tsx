@@ -94,7 +94,7 @@ export default function Navbar() {
                                 <ul className="navbar-nav me-auto mb-2 mb-lg-0 right">
                                     <li className="nav-item dropdown">
                                         <a
-                                            className="fs-5 fw-bold nav-link dropdown-toggle"
+                                            className="fs-5 fw-bold nav-link dropdown-toggle text-white"
                                             href="#"
                                             id="navbarDropdown"
                                             role="button"

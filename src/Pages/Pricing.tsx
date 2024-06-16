@@ -94,9 +94,12 @@ export default function Pricing() {
                                 gamers out there to consume and enjoy.
                             </strong>{" "}
                             <br />
-                            You can help us by being a subscription member, buying a game from our afiliate link,
-                            sharing the site with your friends and acquaintances, reporting bugs, and sugesting missing
-                            or wrong video game data.
+                            <br />
+                            <small className="text-white">
+                                You can help us by being a subscription member, buying a game from our afiliate link,
+                                sharing the site with your friends and acquaintances, reporting bugs, and sugesting
+                                missing or wrong video game data.
+                            </small>
                         </p>
                     </div>
 
