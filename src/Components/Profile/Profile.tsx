@@ -19,7 +19,7 @@ export default function Profile() {
             <HeadScript url="https://cdn.jsdelivr.net/npm/clipboard@2.0.11/dist/clipboard.min.js" />
             <Navbar />
 
-            <main className="container col-lg-12 mt-5 mb-5">
+            <main className="container col-lg-8 mt-5 mb-5">
                 <div className="row">
                     <Routes>
                         <Route path="/" element={<ProfileUser />} />

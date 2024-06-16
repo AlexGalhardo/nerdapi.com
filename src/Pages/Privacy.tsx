@@ -6,7 +6,7 @@ export default function Privacy() {
     return (
         <>
             <Head title="Privacy Policy" description="Our privacy policy and terms of service." />
-			<ProgressBar />
+            <ProgressBar />
             <Navbar />
             <br></br>
             <br></br>

@@ -115,7 +115,7 @@ export default function Pricing() {
                                             <big>0</big>
                                             <small className="text-dark fw-light">/mo</small>
                                         </h1>
-                                        <ul className="list-unstyled mt-3 mb-4">
+                                        <ul className="list-unstyled mt-3 mb-4 fs-6">
                                             <li>
                                                 <i className="bi bi-check-circle"></i> 20 API Requests/daily
                                             </li>
@@ -142,7 +142,7 @@ export default function Pricing() {
                                             <big>1.99</big>
                                             <small className="text-dark fw-light">/mo</small>
                                         </h1>
-                                        <ul className="list-unstyled mt-3 mb-4">
+                                        <ul className="list-unstyled mt-3 mb-4 fs-6">
                                             <li>
                                                 <i className="bi bi-check-circle"></i> 500 API Requests/daily
                                             </li>
@@ -189,7 +189,7 @@ export default function Pricing() {
                                             <big>4.99</big>
                                             <small className="text-dark fw-light">/mo</small>
                                         </h1>
-                                        <ul className="list-unstyled mt-3 mb-4">
+                                        <ul className="list-unstyled mt-3 mb-4 fs-6">
                                             <li>
                                                 <i className="bi bi-check-circle"></i> 2000 API Requests/daily
                                             </li>
