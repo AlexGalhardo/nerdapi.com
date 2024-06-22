@@ -24,6 +24,7 @@ export default function Publisher() {
 
     const searchPublisherGames = useCallback(async (publisherName: string) => {
         const gamesFound = new GamesRepository().getByPublisher(publisherName);
+		console.log('gamesFound', gamesFound)
         if (!gamesFound.length) navigate("/");
 
         setTogalGamesFound(gamesFound.length);

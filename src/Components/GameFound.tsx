@@ -46,12 +46,12 @@ export default function GameFound({
 
             <div className="col-lg-3 mb-3">
                 <ul className="mt-3">
-                    {game?.metacritic?.rating && (
+                    {game?.igdb?.rating && (
                         <li>
                             <span className="fw-bold text-decoration-none">
                                 Rating: ⭐{" "}
                                 <span id="game_igdb_rating" className="fw-bold text-warning">
-                                    {game?.metacritic?.rating}
+                                    {game?.igdb?.rating}
                                 </span>
                             </span>
                         </li>
