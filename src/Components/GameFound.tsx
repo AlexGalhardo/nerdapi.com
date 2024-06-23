@@ -57,7 +57,7 @@ export default function GameFound({
                         </li>
                     )}
                     <li>
-                        <span className="fw-bold text-decoration-none">Release Year: {game?.release?.year}</span>
+                        <span className="fw-bold text-decoration-none">Release Year: {game?.release_year}</span>
                     </li>
                     <li className="">
                         <b>Developer:</b>

@@ -1,111 +1,111 @@
 [
 	{
-		"id": "757f50b7-f14f-42a8-813c-4f738ed7b6c7",
-		"name": "Shooter",
-		"slug": "shooter"
-	},
-	{
-		"id": "9073ea95-2c5b-445b-8b77-4cc4e5087f1c",
-		"name": "Simulator",
-		"slug": "simulator"
-	},
-	{
-		"id": "f53dbd61-2860-4a11-80df-32cb79843f5e",
+		"id": 31,
 		"name": "Adventure",
 		"slug": "adventure"
 	},
 	{
-		"id": "7dd617fb-4ce9-4da4-bcd9-bc70c7860fbf",
-		"name": "RPG",
-		"slug": "rpg"
+		"id": 5,
+		"name": "Shooter",
+		"slug": "shooter"
 	},
 	{
-		"id": "334d169d-1914-4f51-a475-d015cd28d8fb",
+		"id": 11,
+		"name": "Real Time Strategy (RTS)",
+		"slug": "real-time-strategy-rts"
+	},
+	{
+		"id": 12,
+		"name": "Role-playing (RPG)",
+		"slug": "role-playing-rpg"
+	},
+	{
+		"id": 15,
 		"name": "Strategy",
 		"slug": "strategy"
 	},
 	{
-		"id": "8c696a8c-1c0b-43d0-b2fc-00f3eb87664b",
-		"name": "Turn Based Strategy",
-		"slug": "turn-based-strategy"
-	},
-	{
-		"id": "e850fbd7-5b38-4825-b28f-d0b183e36e7f",
-		"name": "Tactical",
-		"slug": "tactical"
-	},
-	{
-		"id": "6b647236-15e0-48d3-9934-07103d3c691d",
+		"id": 9,
 		"name": "Puzzle",
 		"slug": "puzzle"
 	},
 	{
-		"id": "0f2c16b5-f25e-4abb-93e7-9a8825c6603d",
-		"name": "Real Time Strategy (RTS)",
-		"slug": "real-time-strategy-(rts)"
-	},
-	{
-		"id": "541e8f4c-9689-42bd-9b26-dbb81d61d65c",
-		"name": "Point And Click",
-		"slug": "point-and-click"
-	},
-	{
-		"id": "c3558536-c9f9-4aa3-90ed-6e92f29bdef5",
+		"id": "e73ab26f-c224-4460-b4e3-fc6692b3108e",
 		"name": "Fighting",
 		"slug": "fighting"
 	},
 	{
-		"id": "f7a7e351-ff10-48ee-8ebb-9bb9e546c9a5",
+		"id": 10,
 		"name": "Racing",
 		"slug": "racing"
 	},
 	{
-		"id": "c71e75cb-9962-4ff7-a04d-76deb0349280",
-		"name": "Hack And Slash",
-		"slug": "hack-and-slash"
+		"id": 25,
+		"name": "Hack and slash/Beat 'em up",
+		"slug": "hack-and-slashbeat-em-up"
 	},
 	{
-		"id": "c7352712-2916-4d86-9c96-ce751227cfb8",
+		"id": 24,
+		"name": "Tactical",
+		"slug": "tactical"
+	},
+	{
+		"id": 13,
+		"name": "Simulator",
+		"slug": "simulator"
+	},
+	{
+		"id": 16,
+		"name": "Turn-based strategy (TBS)",
+		"slug": "turn-based-strategy-tbs"
+	},
+	{
+		"id": 2,
+		"name": "Point-and-click",
+		"slug": "point-and-click"
+	},
+	{
+		"id": 8,
 		"name": "Platform",
 		"slug": "platform"
 	},
 	{
-		"id": "5750a37b-454f-49cd-85ff-8c111393185d",
+		"id": 14,
 		"name": "Sport",
 		"slug": "sport"
 	},
 	{
-		"id": "eb64ea68-c0d6-4dd2-a000-0081a0c07b66",
+		"id": "ea757dae-a083-42e1-bb32-202ced7f01b3",
 		"name": "Arcade",
 		"slug": "arcade"
 	},
 	{
-		"id": "6c583a77-e731-4566-a402-2b0ecd83c6fb",
+		"id": 32,
 		"name": "Indie",
 		"slug": "indie"
 	},
 	{
-		"id": "1a029817-da7f-4c0b-a3a7-5bfb8adb8c4b",
+		"id": 36,
 		"name": "MOBA",
 		"slug": "moba"
 	},
 	{
-		"id": "e48bb680-b1dd-4e8c-81e6-e7693a8a3dbd",
+		"id": "ea6693d8-d64c-4b83-8bf9-0d292ca77b90",
 		"name": "Music",
 		"slug": "music"
 	},
 	{
-		"id": "02ea8e3f-de22-4ed7-9e7f-7eb0972ce683",
+		"id": "181cf857-365e-4222-824b-157b2587c1a2",
 		"name": "Quiz/Trivia",
 		"slug": "quiztrivia"
 	},
 	{
-		"id": "46bc8034-5c08-4f52-9515-a303d03aed67",
+		"id": "746567db-d8d0-4c84-a6bb-0a0649edda38",
 		"name": "Card & Board Game",
 		"slug": "card-and-board-game"
 	},
 	{
-		"id": "1ec8ca66-aa64-45fa-bb75-617efa2cd1f6",
+		"id": "48b5924b-2735-43d8-b903-b4e079f4c6dc",
 		"name": "Visual Novel",
 		"slug": "visual-novel"
 	}

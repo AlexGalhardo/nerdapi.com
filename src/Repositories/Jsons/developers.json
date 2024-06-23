@@ -1,1102 +1,1757 @@
 [
 	{
-		"id": "c78f1f80-e47f-4715-a29f-1cfde64d8879",
-		"name": "Looking Glass Studios",
-		"slug": "looking-glass-studios"
-	},
-	{
-		"id": "60e391f4-744e-433b-864f-486626a25798",
-		"name": "Ion Storm",
-		"slug": "ion-storm"
-	},
-	{
-		"id": "4cf4af17-f3d9-4c67-a216-e6a7fd680f1e",
-		"name": "Eidos Montréal",
-		"slug": "eidos-montreal"
-	},
-	{
-		"id": "1802ace1-e0b8-4dbd-8abf-40db56f1ae36",
-		"name": "BioWare Edmonton",
-		"slug": "bioware-edmonton"
-	},
-	{
-		"id": "cd3f9c35-a535-4575-81be-3ee41cc7eab1",
-		"name": "BioWare",
-		"slug": "bioware"
-	},
-	{
-		"id": "74e1a1e6-695a-4689-9e81-55351ef4cab6",
-		"name": "Madlab Software",
-		"slug": "madlab-software"
-	},
-	{
-		"id": "bd42b190-ade0-4825-85aa-0154fd9c9b9e",
-		"name": "Sir-Tech Canada",
-		"slug": "sir-tech-canada"
-	},
-	{
-		"id": "87dee556-7451-430c-ac1f-eb90461d9ead",
-		"name": "Troika Games",
-		"slug": "troika-games"
-	},
-	{
-		"id": "c37043da-c332-47fd-91fb-1c8bc45650d5",
-		"name": "Nihilistic Software",
-		"slug": "nihilistic-software"
-	},
-	{
-		"id": "1585df71-db90-40be-9ffc-0fe23e7b5861",
-		"name": "Black Isle Studios",
-		"slug": "black-isle-studios"
-	},
-	{
-		"id": "329c50ad-64d8-4384-bf02-fb26dac7ebd6",
-		"name": "Bethesda Game Studios",
-		"slug": "bethesda-game-studios"
-	},
-	{
-		"id": "7664b3b0-8edb-4cb5-b9d9-aa9675342cbc",
-		"name": "Obsidian Entertainment",
-		"slug": "obsidian-entertainment"
-	},
-	{
-		"id": "ae94b584-3b27-4d7a-97f1-b7ec52e4da9e",
-		"name": "Micro Forté",
-		"slug": "micro-forte"
-	},
-	{
-		"id": "b488f12f-1a06-45ec-b0cd-b4ddf1afc5e3",
-		"name": "Remedy Entertainment",
-		"slug": "remedy-entertainment"
-	},
-	{
-		"id": "6c64b016-db58-4f2c-b215-06d92279c6e4",
-		"name": "2K Boston",
-		"slug": "2k-boston"
-	},
-	{
-		"id": "96ba4f0f-a481-46d3-84c0-2da979bd5d84",
-		"name": "2K Australia",
-		"slug": "2k-australia"
-	},
-	{
-		"id": "84623e30-c001-4c0a-8e31-016525000127",
-		"name": "Irrational Games",
-		"slug": "irrational-games"
-	},
-	{
-		"id": "c5764bfb-c29b-4f8a-adff-b0642d6964ed",
-		"name": "Mythos Games",
-		"slug": "mythos-games"
-	},
-	{
-		"id": "4598436a-4101-4d5d-9a5a-e3442ae185c9",
-		"name": "MicroProse Software, Inc.",
-		"slug": "microprose-software-inc."
-	},
-	{
-		"id": "5e736203-e819-4a3f-9596-f69bc8508fa4",
-		"name": "Sierra On-Line",
-		"slug": "sierra-on-line"
-	},
-	{
-		"id": "4db6c897-e7a9-4754-93b4-3de1f807d7cf",
-		"name": "Sierra Entertainment",
-		"slug": "sierra-entertainment"
-	},
-	{
-		"id": "4d7c00a0-ff32-4297-a349-2eef80d82604",
-		"name": "Dynamix",
-		"slug": "dynamix"
-	},
-	{
-		"id": "7627a4af-caec-40b7-95b1-b099853e17d6",
-		"name": "Sierra",
-		"slug": "sierra"
-	},
-	{
-		"id": "463ab6b2-48c1-4e56-8be8-72e3a2bbe3ca",
+		"id": "eec36c6b-f379-41ab-b917-ea32798c3d65",
 		"name": "Planet Moon Studios",
 		"slug": "planet-moon-studios"
 	},
 	{
-		"id": "ae1ffa84-fa64-424c-8476-c24358305cbe",
+		"id": "dc3abe52-a13b-47bb-937f-4037686d15cc",
 		"name": "Bullfrog Productions",
 		"slug": "bullfrog-productions"
 	},
 	{
-		"id": "24b883fe-ba35-493c-bf03-9b284c0b1495",
+		"id": "fae9991b-1497-49d6-b832-14ce6d44aa31",
 		"name": "EA Redwood Shores",
 		"slug": "ea-redwood-shores"
 	},
 	{
-		"id": "ebb07e08-6788-46e5-a758-fe951951f8ac",
+		"id": "45de133d-4c83-43e1-a4c1-c7e7eb1bb9f7",
 		"name": "Visceral Games",
 		"slug": "visceral-games"
 	},
 	{
-		"id": "fc61d776-d41f-43ec-88aa-8685296a5770",
+		"id": "1278ea79-6e2d-463c-abd9-39eb084435e2",
 		"name": "Illusion Softworks",
 		"slug": "illusion-softworks"
 	},
 	{
-		"id": "179c6d8e-eb05-407d-80e8-1a510122e5cc",
+		"id": "2b0b8128-e11b-464a-928a-bc01bcfb060e",
 		"name": "2K Czech",
 		"slug": "2k-czech"
 	},
 	{
-		"id": "4fb7e577-c8c8-4ae9-b209-2f9645454f6a",
+		"id": "9707de64-7f4c-475c-9b7f-6663936cb3c1",
+		"name": "Ion Storm",
+		"slug": "ion-storm"
+	},
+	{
+		"id": "21540f59-05fc-43b0-a4fd-170d83494fc6",
+		"name": "Eidos Montréal",
+		"slug": "eidos-montreal"
+	},
+	{
+		"id": "4dbb4f66-d4f4-4127-aae3-79b81210783e",
 		"name": "Triumph Studios",
 		"slug": "triumph-studios"
 	},
 	{
-		"id": "f51ae89b-52c0-4ea5-94f7-2d2d03b942d0",
+		"id": "5ad5aed2-fb37-4ae0-9bf0-c6f794b5ed6f",
 		"name": "Climax Studios",
 		"slug": "climax-studios"
 	},
 	{
-		"id": "a25be38e-1353-4f30-94a9-f026c0a83c98",
+		"id": "f177be09-b3e3-40d8-ad1a-e02c4eaac135",
 		"name": "Bethesda Softworks",
 		"slug": "bethesda-softworks"
 	},
 	{
-		"id": "adae89ca-fcb8-4b29-b36b-51f25d0113e9",
-		"name": "4J Studios",
-		"slug": "4j-studios"
+		"id": "cb5172fe-3f16-4ecd-aff4-1f7d6601fa20",
+		"name": "Bethesda Game Studios",
+		"slug": "bethesda-game-studios"
 	},
 	{
-		"id": "a3ac150f-6c68-472b-9fe9-2e667ff5d5d1",
-		"name": "Lucasfilm Games",
-		"slug": "lucasfilm-games"
+		"id": "f8d5b4e3-1c8b-4d76-81c3-bfee3612aa46",
+		"name": "Looking Glass Studios",
+		"slug": "looking-glass-studios"
 	},
 	{
-		"id": "13cd608a-fd8a-4675-9aee-2fd7fb200e39",
-		"name": "LucasArts",
-		"slug": "lucasarts"
+		"id": "95377dcf-d297-4c63-9170-926143cb5e26",
+		"name": "BioWare Edmonton",
+		"slug": "bioware-edmonton"
 	},
 	{
-		"id": "2f7aaae9-a70a-4a7a-8ea6-f080460ca2a4",
-		"name": "Telltale Games",
-		"slug": "telltale-games"
+		"id": "8a252652-1869-4741-93ca-007ea4985f2f",
+		"name": "BioWare",
+		"slug": "bioware"
 	},
 	{
-		"id": "4bc0c8fd-2fb5-45ae-a5df-caffb402e2da",
-		"name": "Simtex",
-		"slug": "simtex"
+		"id": "c6d3ed41-2804-403d-aa53-a780b1eda725",
+		"name": "Madlab Software",
+		"slug": "madlab-software"
 	},
 	{
-		"id": "071b52f6-22a6-463a-8af3-0ed2849cc589",
-		"name": "Quicksilver Software",
-		"slug": "quicksilver-software"
+		"id": "7c742ed0-c3f9-4a15-b268-21ed2f7851a2",
+		"name": "Sir-Tech Canada",
+		"slug": "sir-tech-canada"
 	},
 	{
-		"id": "cf295144-328e-4adc-ad5d-b8a7a2403589",
-		"name": "Valve",
-		"slug": "valve"
+		"id": "b1b31e3c-2563-4177-967c-c030ddc4a983",
+		"name": "Troika Games",
+		"slug": "troika-games"
 	},
 	{
-		"id": "fcb340cd-a544-488c-bf58-8eeb490e2162",
-		"name": "Wideload Games",
-		"slug": "wideload-games"
+		"id": "ac309bb5-221e-4272-b2d4-b8397c8e97e8",
+		"name": "Nihilistic Software",
+		"slug": "nihilistic-software"
 	},
 	{
-		"id": "1ed19148-0a3e-435c-891a-a8c3c39a4bb0",
-		"name": "CD Projekt RED",
-		"slug": "cd-projekt-red"
+		"id": "698f7828-a8f0-4406-a17d-a643fa3a972e",
+		"name": "Black Isle Studios",
+		"slug": "black-isle-studios"
 	},
 	{
-		"id": "8c03d015-0893-4ede-97ac-89972aada0ce",
-		"name": "Snowblind Studios",
-		"slug": "snowblind-studios"
+		"id": "1f34d933-5973-418b-94dc-ebe305e8d705",
+		"name": "Obsidian Entertainment",
+		"slug": "obsidian-entertainment"
 	},
 	{
-		"id": "afd028b8-e071-4e15-8af5-6aadbfe15d59",
-		"name": "Cryo Interactive",
-		"slug": "cryo-interactive"
+		"id": "c46b3b73-a1b0-4850-a1b2-783f89fc104b",
+		"name": "Micro Forté",
+		"slug": "micro-forte"
 	},
 	{
-		"id": "692e020a-cdde-4b21-8b0e-d9241d1d0d13",
-		"name": "Westwood Studios",
-		"slug": "westwood-studios"
-	},
-	{
-		"id": "6026d7c8-55d2-44cf-8632-c86ed8af5a48",
-		"name": "Widescreen Games",
-		"slug": "widescreen-games"
-	},
-	{
-		"id": "0c05d1c2-67d1-4648-bee2-cdc46a7cef3d",
-		"name": "Intelligent Games",
-		"slug": "intelligent-games"
-	},
-	{
-		"id": "c65415fa-ca02-4d5c-aeee-7bb88fe192fa",
-		"name": "EA Canada",
-		"slug": "ea-canada"
-	},
-	{
-		"id": "55367d5f-2e7f-4def-8ce3-4c9fa34f6bb6",
-		"name": "Eden Studios",
-		"slug": "eden-studios"
-	},
-	{
-		"id": "7428bd4a-b1fe-490c-8149-ca58c892a95e",
-		"name": "Black Box Games",
-		"slug": "black-box-games"
-	},
-	{
-		"id": "72217526-c3b8-4b80-94c3-e581a03b52f3",
-		"name": "EA Black Box",
-		"slug": "ea-black-box"
-	},
-	{
-		"id": "27f39a32-f0cf-437a-b279-9359d1c93796",
-		"name": "TransGaming Inc.",
-		"slug": "transgaming-inc."
-	},
-	{
-		"id": "df5d0dfc-ad65-44b5-af45-ba7fd052d037",
-		"name": "Slightly Mad Studios",
-		"slug": "slightly-mad-studios"
-	},
-	{
-		"id": "4c39c58f-ea17-484b-81af-87f8842bfd68",
-		"name": "EA Montreal",
-		"slug": "ea-montreal"
-	},
-	{
-		"id": "41365e03-ebb6-4ee4-8544-a4ae8e855212",
-		"name": "EA Singapore",
-		"slug": "ea-singapore"
-	},
-	{
-		"id": "9d806136-d3d6-4959-a3a6-590f9e962807",
-		"name": "EA Digital Illusions CE",
-		"slug": "ea-digital-illusions-ce"
-	},
-	{
-		"id": "a57a37cf-0f94-4671-894c-c4e5cf3b5414",
-		"name": "Team Bondi",
-		"slug": "team-bondi"
-	},
-	{
-		"id": "8359a360-30bd-4c5e-a02d-4822c569061a",
-		"name": "Frictional Games",
-		"slug": "frictional-games"
-	},
-	{
-		"id": "640cfd47-5fe9-4e5c-907b-5be1679dbf17",
-		"name": "Capcom Production Studio 1",
-		"slug": "capcom-production-studio-1"
-	},
-	{
-		"id": "ef1d57f1-389d-4ede-ab2e-f281ffe7f758",
-		"name": "Ubisoft Montreal",
-		"slug": "ubisoft-montreal"
-	},
-	{
-		"id": "939ff079-42ee-4bb3-a32a-9222e232d9af",
-		"name": "BioWare Austin",
-		"slug": "bioware-austin"
-	},
-	{
-		"id": "d6686db2-783b-4c2c-aaa6-22657871b737",
-		"name": "Riot Games",
-		"slug": "riot-games"
-	},
-	{
-		"id": "236ba63d-3874-4ee3-a5b6-6e5032a60ba0",
-		"name": "SIE Japan Studio",
-		"slug": "sie-japan-studio"
-	},
-	{
-		"id": "2b8fb932-bfee-44d1-9de8-f9c47fbac3bd",
-		"name": "NetherRealm Studios",
-		"slug": "netherrealm-studios"
-	},
-	{
-		"id": "52a71ab1-79af-4882-b391-72ce0b136344",
-		"name": "Blizzard Entertainment",
-		"slug": "blizzard-entertainment"
-	},
-	{
-		"id": "0d24a904-81c9-4617-99e8-dde022a5b18e",
-		"name": "Mojang Studios",
-		"slug": "mojang-studios"
-	},
-	{
-		"id": "20b70d76-3423-43d3-bae9-2ad7d7d6490d",
-		"name": "Certain Affinity",
-		"slug": "certain-affinity"
-	},
-	{
-		"id": "6d92b4af-2c4c-4b84-9712-5472337e9037",
-		"name": "Blizzard North",
-		"slug": "blizzard-north"
-	},
-	{
-		"id": "dc78454b-e9e9-4607-b71a-a159c77cf8c9",
-		"name": "Cyberlore Studios",
-		"slug": "cyberlore-studios"
-	},
-	{
-		"id": "686140d4-b35b-4a5d-b3ed-96b8e16df74b",
-		"name": "Capcom Production Studio 4",
-		"slug": "capcom-production-studio-4"
-	},
-	{
-		"id": "af8e4f45-26fe-48ce-bd4e-7decee2b2035",
-		"name": "Traveller's Tales",
-		"slug": "traveller's-tales"
-	},
-	{
-		"id": "4cbc464b-3307-49af-9379-f1269189e12b",
-		"name": "Beenox",
-		"slug": "beenox"
-	},
-	{
-		"id": "d449c381-daa4-4f5d-9305-2309f35546df",
-		"name": "Pandemic Studios",
-		"slug": "pandemic-studios"
-	},
-	{
-		"id": "bae8a498-f4bb-4453-8bb5-b31cc1dddd79",
-		"name": "Luxoflux",
-		"slug": "luxoflux"
-	},
-	{
-		"id": "7f9a333a-3056-4d29-9f9f-73d935081466",
-		"name": "Petroglyph Games",
-		"slug": "petroglyph-games"
-	},
-	{
-		"id": "75a33d10-10d6-4246-a822-4daab1b2f73c",
-		"name": "Sony Online Entertainment",
-		"slug": "sony-online-entertainment"
-	},
-	{
-		"id": "94d1abc7-1c78-4291-8a91-96d3a26a5590",
-		"name": "Vicarious Visions",
-		"slug": "vicarious-visions"
-	},
-	{
-		"id": "47e3ad97-8029-451a-9c72-87492fadffff",
-		"name": "Factor 5",
-		"slug": "factor-5"
-	},
-	{
-		"id": "f99753c8-fc88-453f-8979-7c49dd704371",
-		"name": "Big Bang",
-		"slug": "big-bang"
-	},
-	{
-		"id": "6d51295d-64df-46a8-b708-68a3452ef584",
-		"name": "Big Ape Productions",
-		"slug": "big-ape-productions"
-	},
-	{
-		"id": "9c12a2fd-3a86-4f36-88b2-b4095ba31dd2",
-		"name": "Ronin Entertainment",
-		"slug": "ronin-entertainment"
-	},
-	{
-		"id": "94b48dcc-d595-476f-9880-5a0b05cb5e8f",
-		"name": "Totally Games",
-		"slug": "totally-games"
-	},
-	{
-		"id": "faacd7eb-a575-4de2-91c9-8fc7eef5e876",
-		"name": "Tiertex Design Studios",
-		"slug": "tiertex-design-studios"
-	},
-	{
-		"id": "916276df-6cd3-422d-9eeb-9bd69aff8749",
-		"name": "Robosoft Technologies",
-		"slug": "robosoft-technologies"
-	},
-	{
-		"id": "ec5d1317-f751-4a88-93be-f048139ef667",
-		"name": "Attention To Detail",
-		"slug": "attention-to-detail"
-	},
-	{
-		"id": "fc6f438a-8669-4758-b13a-f9c56d403434",
-		"name": "The Assembly Line",
-		"slug": "the-assembly-line"
-	},
-	{
-		"id": "708acefd-ae58-45fc-a83c-754f6887ccb9",
-		"name": "Frontier Developments",
-		"slug": "frontier-developments"
-	},
-	{
-		"id": "5fa9d04c-1f01-4c31-8ab5-75f439520c4a",
-		"name": "Krome Studios",
-		"slug": "krome-studios"
-	},
-	{
-		"id": "61746726-593f-4107-9cb1-3d85b60b4b6f",
-		"name": "Double Fine Productions",
-		"slug": "double-fine-productions"
-	},
-	{
-		"id": "edb3fd71-f07d-4050-9681-a377d8c4061a",
-		"name": "Mythic Entertainment",
-		"slug": "mythic-entertainment"
-	},
-	{
-		"id": "5063671e-1f9c-4922-9534-68d58f0dd272",
-		"name": "Shiny Entertainment",
-		"slug": "shiny-entertainment"
-	},
-	{
-		"id": "006f4e6e-6990-412c-9b39-8af2d3fc7e46",
-		"name": "Infini Entertainment Technology",
-		"slug": "infini-entertainment-technology"
-	},
-	{
-		"id": "f5c38b96-5c1e-472a-b356-02e44906beee",
-		"name": "Maxis",
-		"slug": "maxis"
-	},
-	{
-		"id": "2fc29952-7678-412a-80cb-5e2e404ef15b",
-		"name": "Gearbox Software",
-		"slug": "gearbox-software"
-	},
-	{
-		"id": "8e511ea6-3af8-4a9c-a32c-e1db462207dc",
-		"name": "ArenaNet",
-		"slug": "arenanet"
-	},
-	{
-		"id": "f958836e-673d-427f-be2d-244c38f4526e",
-		"name": "Cyan Worlds",
-		"slug": "cyan-worlds"
-	},
-	{
-		"id": "a2bacdaf-d1c0-4728-a216-9c9cff3708fb",
-		"name": "Digital Illusions CE",
-		"slug": "digital-illusions-ce"
-	},
-	{
-		"id": "663956d2-f234-413c-a4e9-e8fa0d22a3a7",
-		"name": "GSC Game World",
-		"slug": "gsc-game-world"
-	},
-	{
-		"id": "1d7731d3-976d-488a-8425-0aead035fa97",
-		"name": "Hothouse Creations",
-		"slug": "hothouse-creations"
-	},
-	{
-		"id": "a6a6adc0-8592-446b-91b5-0c8412427d1b",
-		"name": "2K Marin",
-		"slug": "2k-marin"
-	},
-	{
-		"id": "9968a8b1-95c3-482b-b9c7-6957bb6c0008",
-		"name": "Westwood Pacific",
-		"slug": "westwood-pacific"
-	},
-	{
-		"id": "6d23e476-1ad4-4d91-8633-d82b0604349f",
-		"name": "Legend Entertainment",
-		"slug": "legend-entertainment"
-	},
-	{
-		"id": "6bb23bd9-685f-4ae3-bfa7-b2110096abbf",
-		"name": "Starbreeze Studios",
-		"slug": "starbreeze-studios"
-	},
-	{
-		"id": "6cece858-7c7b-4cf6-9555-c273db44f4ff",
-		"name": "Brøderbund Software",
-		"slug": "broderbund-software"
-	},
-	{
-		"id": "ee780e6f-3ed5-47ce-95ae-663cb49948a2",
-		"name": "Sunstorm Interactive",
-		"slug": "sunstorm-interactive"
-	},
-	{
-		"id": "f65401b8-dbf8-4fea-9555-b344820bda80",
-		"name": "Interplay Entertainment",
-		"slug": "interplay-entertainment"
-	},
-	{
-		"id": "7f9abe67-456d-4b05-8eb9-b29a73a2deea",
-		"name": "Sylum Entertainment",
-		"slug": "sylum-entertainment"
-	},
-	{
-		"id": "66d2b251-c2a9-4c62-a192-a142e4dc3949",
-		"name": "Relic Entertainment",
-		"slug": "relic-entertainment"
-	},
-	{
-		"id": "980e6391-8036-4f36-ab1b-33a815dbeb2a",
-		"name": "The Sims Studio",
-		"slug": "the-sims-studio"
-	},
-	{
-		"id": "6342e044-0c18-49e4-8029-a8fc2ee135be",
-		"name": "Southlogic Studios",
-		"slug": "southlogic-studios"
-	},
-	{
-		"id": "69a101ce-5f5a-4e33-bbdd-0a49dcf976d3",
-		"name": "Morning Star Multimedia",
-		"slug": "morning-star-multimedia"
-	},
-	{
-		"id": "43ebe49b-0a74-471a-82f5-43342c0070fd",
-		"name": "Glu Mobile",
-		"slug": "glu-mobile"
-	},
-	{
-		"id": "8fe0e755-25ba-403b-a3cd-ab067ffe23ef",
-		"name": "Pterodon",
-		"slug": "pterodon"
-	},
-	{
-		"id": "3428f341-dff7-4f19-a0f5-d1628ac6b1ee",
-		"name": "Epic Games",
-		"slug": "epic-games"
-	},
-	{
-		"id": "b9e354ab-ffce-440d-8aed-dd67f76e8af8",
-		"name": "Digital Extremes",
-		"slug": "digital-extremes"
-	},
-	{
-		"id": "092ba983-8887-4ffb-9b2a-5b312fce2afb",
-		"name": "PopTop Software",
-		"slug": "poptop-software"
-	},
-	{
-		"id": "cc7baeb9-ecac-4ee2-993b-a19d9037c056",
-		"name": "Pyro Studios",
-		"slug": "pyro-studios"
-	},
-	{
-		"id": "8375e09e-d15d-4c11-a857-c2b72af885f9",
-		"name": "Hellbent Games",
-		"slug": "hellbent-games"
-	},
-	{
-		"id": "28f6bf13-edac-4272-b953-d248b4b34728",
-		"name": "Pendulo Studios",
-		"slug": "pendulo-studios"
-	},
-	{
-		"id": "dd2b6a53-7c24-4894-a520-e1b23e00a6d1",
-		"name": "Infocom",
-		"slug": "infocom"
-	},
-	{
-		"id": "30a0f965-577a-4d34-a90d-21a268221128",
-		"name": "id Software",
-		"slug": "id-software"
-	},
-	{
-		"id": "63c0d624-d7aa-46a6-9427-d178a7bdff78",
-		"name": "Raster Productions",
-		"slug": "raster-productions"
-	},
-	{
-		"id": "23b76b9c-7692-4d99-8da7-95bb2474b461",
-		"name": "Krisalis Software",
-		"slug": "krisalis-software"
-	},
-	{
-		"id": "a1177e47-4803-4c62-ab97-dd98773dc068",
-		"name": "Hammerhead",
-		"slug": "hammerhead"
-	},
-	{
-		"id": "c6db2931-85f2-4e52-aa22-aa1cf9734225",
-		"name": "Ascaron Entertainment",
-		"slug": "ascaron-entertainment"
-	},
-	{
-		"id": "99ad8014-9124-481c-85df-5bba740b477c",
-		"name": "Bohemia Interactive Studio",
-		"slug": "bohemia-interactive-studio"
-	},
-	{
-		"id": "2b4687b0-da1b-47a5-aa4a-b2f5ad31ba6f",
-		"name": "Ensemble Studios",
-		"slug": "ensemble-studios"
-	},
-	{
-		"id": "c4b84ff3-acac-4bca-8d7e-d99f83832ed1",
-		"name": "Haemimont Games",
-		"slug": "haemimont-games"
-	},
-	{
-		"id": "e780510f-d30b-4bda-819b-abfe2616cb3c",
-		"name": "Enlight Software Limited",
-		"slug": "enlight-software-limited"
-	},
-	{
-		"id": "ca1c0343-5ec3-4cbc-bbd4-12f0d9d969a6",
-		"name": "Firaxis Games",
-		"slug": "firaxis-games"
-	},
-	{
-		"id": "9bbd8012-eb42-4531-b342-54b01240c85c",
-		"name": "Crytek Frankfurt",
-		"slug": "crytek-frankfurt"
-	},
-	{
-		"id": "0819c116-2603-4b46-9ccf-5ac817a966a1",
-		"name": "Ritual Entertainment",
-		"slug": "ritual-entertainment"
-	},
-	{
-		"id": "2f47705b-c888-496d-90a6-c07a05fc04c3",
-		"name": "Max Design",
-		"slug": "max-design"
-	},
-	{
-		"id": "93fdffd6-7650-4741-88d6-7aa9a500bdbf",
-		"name": "Microsoft Game Studios",
-		"slug": "microsoft-game-studios"
-	},
-	{
-		"id": "e1246e65-8381-453d-978a-ee0cef7e8037",
-		"name": "Stainless Steel Studios",
-		"slug": "stainless-steel-studios"
-	},
-	{
-		"id": "bb29bcb8-7931-4824-ab92-493540fe7b8d",
-		"name": "Heuristic Park",
-		"slug": "heuristic-park"
-	},
-	{
-		"id": "2e47979b-a05c-4fb5-8b7c-7c4fcd775c79",
-		"name": "Lionhead Studios",
-		"slug": "lionhead-studios"
-	},
-	{
-		"id": "c712bebf-aec5-4a83-a588-c285a7c9fe40",
-		"name": "Yosemite Entertainment",
-		"slug": "yosemite-entertainment"
-	},
-	{
-		"id": "f40f9668-0a1f-46cd-8c66-4f1f773abdbe",
-		"name": "Sierra Northwest",
-		"slug": "sierra-northwest"
-	},
-	{
-		"id": "07716eca-a197-4054-baf8-54216c7261b1",
-		"name": "Argonaut Games",
-		"slug": "argonaut-games"
-	},
-	{
-		"id": "bc2a654d-804d-4681-9331-f9638d028e6c",
-		"name": "GRAVITY",
-		"slug": "gravity"
-	},
-	{
-		"id": "da6edbb6-62a9-4854-900f-119316df652f",
-		"name": "3G Studios",
-		"slug": "3g-studios"
-	},
-	{
-		"id": "099565f1-b95f-4902-a5f7-01e85f5f812e",
-		"name": "TransGaming Technologies",
-		"slug": "transgaming-technologies"
-	},
-	{
-		"id": "584b9e1e-b3b1-4111-9277-d76782e62c18",
-		"name": "Trilobyte",
-		"slug": "trilobyte"
-	},
-	{
-		"id": "d7c7ba78-4d75-4d14-b6f0-3144409fff7f",
-		"name": "Flagship Studios",
-		"slug": "flagship-studios"
-	},
-	{
-		"id": "785985ec-d465-4806-b853-442e91a3c13d",
-		"name": "2015",
-		"slug": "2015"
-	},
-	{
-		"id": "65a50f84-db09-40ac-a0eb-b46926ef03c4",
+		"id": "9d9481e6-f955-4585-b0dd-0a5c31a92e95",
 		"name": "Westlake Interactive",
 		"slug": "westlake-interactive"
 	},
 	{
-		"id": "f73e8627-c9dc-48ae-a4c8-88ce5fc9aacc",
+		"id": "cb21ecbc-e5f5-4dfd-8536-46fd54f5ddb1",
+		"name": "Remedy Entertainment",
+		"slug": "remedy-entertainment"
+	},
+	{
+		"id": "66470922-3a99-4df0-bb6f-f943d64be5d4",
+		"name": "2K Australia",
+		"slug": "2k-australia"
+	},
+	{
+		"id": "c9a8f347-09e7-4e0e-b91b-4893b868da78",
+		"name": "2K Marin",
+		"slug": "2k-marin"
+	},
+	{
+		"id": "ff0a92d7-f94a-443a-9a64-16c03f578481",
+		"name": "Irrational Games",
+		"slug": "irrational-games"
+	},
+	{
+		"id": "ac4796b6-264b-423a-abd9-a807ba03de6a",
+		"name": "Mythos Games",
+		"slug": "mythos-games"
+	},
+	{
+		"id": "45b869df-96dc-4d43-a0e1-d4f86fda3e90",
+		"name": "MicroProse Software, Inc.",
+		"slug": "microprose-software-inc"
+	},
+	{
+		"id": "a2dda72d-4e65-4cc4-891b-5ce734f8cae2",
+		"name": "Sierra On-Line",
+		"slug": "sierra-on-line"
+	},
+	{
+		"id": "5c00a711-55f8-41e8-8211-121a919e75fa",
+		"name": "Sierra Entertainment",
+		"slug": "sierra-entertainment"
+	},
+	{
+		"id": 2240,
+		"name": "Dynamix",
+		"slug": "dynamix"
+	},
+	{
+		"id": "2b5854cc-95e9-40ab-a17a-87af1bc0b50c",
+		"name": "Sierra",
+		"slug": "sierra"
+	},
+	{
+		"id": "69b0bf09-f527-43ff-a8cf-7d76eea07ea8",
+		"name": "Lucasfilm Games",
+		"slug": "lucasfilm-games"
+	},
+	{
+		"id": "7cca2d52-1904-449d-b8a2-fc4bf5d5f04a",
+		"name": "LucasArts",
+		"slug": "lucasarts"
+	},
+	{
+		"id": "ef1e1bde-d35e-40d6-9774-e1c9cd907031",
+		"name": "Telltale Games",
+		"slug": "telltale-games"
+	},
+	{
+		"id": "ef9999a4-1926-45b4-ab09-a231366497fb",
+		"name": "Simtex",
+		"slug": "simtex"
+	},
+	{
+		"id": "de8580c9-f1eb-43f8-b2e4-3166f0094467",
+		"name": "Quicksilver Software",
+		"slug": "quicksilver-software"
+	},
+	{
+		"id": "56b0f2c4-43d3-4d88-ae9b-2d647187ff59",
+		"name": "Valve",
+		"slug": "valve"
+	},
+	{
+		"id": "6189b859-4ad6-4956-9b77-023340635c43",
+		"name": "Wideload Games",
+		"slug": "wideload-games"
+	},
+	{
+		"id": "a108937c-1bec-402f-a998-c048b7636aed",
+		"name": "CD Projekt RED",
+		"slug": "cd-projekt-red"
+	},
+	{
+		"id": "0f213657-8244-489f-bb41-aedb2edfffad",
+		"name": "Snowblind Studios",
+		"slug": "snowblind-studios"
+	},
+	{
+		"id": "7e364b92-7a12-47c0-862d-64b01b7636a2",
+		"name": "Cryo Interactive",
+		"slug": "cryo-interactive"
+	},
+	{
+		"id": "7b4ef5a7-0c90-4801-be52-c1a422264175",
+		"name": "Westwood Studios",
+		"slug": "westwood-studios"
+	},
+	{
+		"id": "94ab4f90-c750-471f-90fb-096e0c1d6600",
+		"name": "Widescreen Games",
+		"slug": "widescreen-games"
+	},
+	{
+		"id": "2e9d0ad5-70a4-4517-9028-12aefddb4ef8",
+		"name": "Intelligent Games",
+		"slug": "intelligent-games"
+	},
+	{
+		"id": 2326,
+		"name": "EA Canada",
+		"slug": "ea-canada"
+	},
+	{
+		"id": "d50a5dee-0151-4fc1-b1ca-e5f9e67e6f19",
+		"name": "Eden Studios",
+		"slug": "eden-studios"
+	},
+	{
+		"id": "8705ecb1-48be-44b4-9d64-d3fff3ec75a9",
+		"name": "Black Box Games",
+		"slug": "black-box-games"
+	},
+	{
+		"id": "6f800ca4-3b08-4d90-8db5-08d770e17349",
+		"name": "EA Black Box",
+		"slug": "ea-black-box"
+	},
+	{
+		"id": "94e5c7eb-98fd-4976-a2df-ccffbc41b0bf",
+		"name": "TransGaming Inc.",
+		"slug": "transgaming-inc"
+	},
+	{
+		"id": "fa2cd354-fa31-43da-aafc-4d68a7ee3a1a",
+		"name": "Slightly Mad Studios",
+		"slug": "slightly-mad-studios"
+	},
+	{
+		"id": "5aacaca3-04db-4802-b681-46a88b22f2ad",
+		"name": "EA Montreal",
+		"slug": "ea-montreal"
+	},
+	{
+		"id": "3741e4d7-ab18-4818-9400-89c9abe3a90e",
+		"name": "EA Singapore",
+		"slug": "ea-singapore"
+	},
+	{
+		"id": "3c25b22c-4f80-4477-b0e9-67fdc5818095",
+		"name": "EA Digital Illusions CE",
+		"slug": "ea-digital-illusions-ce"
+	},
+	{
+		"id": "a7f3a563-7a33-46f1-949b-5e3a9a453e40",
+		"name": "Team Bondi",
+		"slug": "team-bondi"
+	},
+	{
+		"id": "a1756fc0-77fc-43ca-abfe-002946cd9fee",
+		"name": "Frictional Games",
+		"slug": "frictional-games"
+	},
+	{
+		"id": "033d09c7-3c53-4fc7-ae49-8fd8bde3665b",
+		"name": "Capcom Production Studio 1",
+		"slug": "capcom-production-studio-1"
+	},
+	{
+		"id": 1785,
+		"name": "Ubisoft Montreal",
+		"slug": "ubisoft-montreal"
+	},
+	{
+		"id": "d0f93db1-c8dd-469a-9d41-578e5f6aa001",
+		"name": "BioWare Austin",
+		"slug": "bioware-austin"
+	},
+	{
+		"id": "d33ed885-8aa4-477d-9bd3-907b85de2fe8",
+		"name": "Riot Games",
+		"slug": "riot-games"
+	},
+	{
+		"id": "30dc7b2e-e7c6-4f53-9c99-2f9be21d231f",
+		"name": "SIE Japan Studio",
+		"slug": "sie-japan-studio"
+	},
+	{
+		"id": "edd3ab9e-c349-4116-81b2-a7daae411be0",
+		"name": "NetherRealm Studios",
+		"slug": "netherrealm-studios"
+	},
+	{
+		"id": "c9d1d7b1-3ddd-4cad-bee2-b7732d9ca6b0",
+		"name": "Blizzard Entertainment",
+		"slug": "blizzard-entertainment"
+	},
+	{
+		"id": "17a01e73-164c-406c-bc1b-2c65d8c6cf8e",
+		"name": "Mojang Studios",
+		"slug": "mojang-studios"
+	},
+	{
+		"id": "8da5192d-3d1a-4eb5-9959-44108c80a788",
+		"name": "Certain Affinity",
+		"slug": "certain-affinity"
+	},
+	{
+		"id": "e1a4a363-06fd-4baa-ba9b-624ee7c3734d",
+		"name": "Blizzard North",
+		"slug": "blizzard-north"
+	},
+	{
+		"id": "59bb2d50-2c77-403d-ac86-bb3282dd17b7",
+		"name": "Cyberlore Studios",
+		"slug": "cyberlore-studios"
+	},
+	{
+		"id": "f65e0f71-3269-4876-9cdc-ffba9295cc93",
+		"name": "Capcom Production Studio 4",
+		"slug": "capcom-production-studio-4"
+	},
+	{
+		"id": "75a4039a-7181-4e72-9ac7-5d69fbb370b8",
+		"name": "Traveller's Tales",
+		"slug": "travellers-tales"
+	},
+	{
+		"id": "2b86b00a-bb5c-4d3b-acf3-bdb3f87af020",
+		"name": "Beenox",
+		"slug": "beenox"
+	},
+	{
+		"id": "952fa3e9-dacc-4d54-9c81-f21b116928a7",
+		"name": "Pandemic Studios",
+		"slug": "pandemic-studios"
+	},
+	{
+		"id": "872f3b27-6e96-4802-b339-d986679f307c",
+		"name": "Luxoflux",
+		"slug": "luxoflux"
+	},
+	{
+		"id": "c15e3f35-ea24-45bc-8c4a-0b2f41f626ca",
+		"name": "Petroglyph Games",
+		"slug": "petroglyph-games"
+	},
+	{
+		"id": "5d696d80-4efb-4463-9239-f70d9fc1d1ba",
+		"name": "Sony Online Entertainment",
+		"slug": "sony-online-entertainment"
+	},
+	{
+		"id": "2229b5e2-f3a3-4147-9d8d-dc137943bd9c",
+		"name": "Vicarious Visions",
+		"slug": "vicarious-visions"
+	},
+	{
+		"id": "7ffafa32-49cf-492f-b5aa-88044590f989",
+		"name": "Factor 5",
+		"slug": "factor-5"
+	},
+	{
+		"id": "93e8b2f9-36ff-441e-8e17-82f5fb553178",
+		"name": "Big Bang",
+		"slug": "big-bang"
+	},
+	{
+		"id": "8edddd2c-8a71-486e-a0ae-d07ed84ff542",
+		"name": "Big Ape Productions",
+		"slug": "big-ape-productions"
+	},
+	{
+		"id": "1818a876-70c6-441c-8d13-7fcf2f248aae",
+		"name": "Ronin Entertainment",
+		"slug": "ronin-entertainment"
+	},
+	{
+		"id": "d604cf61-2931-4fbd-9e2a-bdcdf171e902",
+		"name": "Totally Games",
+		"slug": "totally-games"
+	},
+	{
+		"id": "c9678427-1d04-4ca9-942d-473a1f7e19b3",
+		"name": "Tiertex Design Studios",
+		"slug": "tiertex-design-studios"
+	},
+	{
+		"id": "2f89ef4e-0270-406e-9298-2c9e1f59d9eb",
+		"name": "The Collective",
+		"slug": "the-collective"
+	},
+	{
+		"id": "09ef6773-7b79-4be7-a1e7-f028e907345b",
+		"name": "Robosoft Technologies",
+		"slug": "robosoft-technologies"
+	},
+	{
+		"id": "4df17a3c-c00f-4d55-bcdb-cb2c03cf45bb",
+		"name": "Attention To Detail",
+		"slug": "attention-to-detail"
+	},
+	{
+		"id": "2f792062-6839-4aad-b6a7-92292ef980e5",
+		"name": "The Assembly Line",
+		"slug": "the-assembly-line"
+	},
+	{
+		"id": "e77a2319-7420-47b2-a74b-995907d2cc41",
+		"name": "Frontier Developments",
+		"slug": "frontier-developments"
+	},
+	{
+		"id": "49300dd9-ed54-4df9-b833-1ff7f8c2625b",
+		"name": "Krome Studios",
+		"slug": "krome-studios"
+	},
+	{
+		"id": "eb60b7f0-ddd0-467f-9752-1e7763ae460f",
+		"name": "Double Fine Productions",
+		"slug": "double-fine-productions"
+	},
+	{
+		"id": "384fbfdf-f861-4ea4-a71b-11c441512b3c",
+		"name": "Mythic Entertainment",
+		"slug": "mythic-entertainment"
+	},
+	{
+		"id": "d306204b-4764-4f70-875e-7e97f94a20b3",
+		"name": "Shiny Entertainment",
+		"slug": "shiny-entertainment"
+	},
+	{
+		"id": "35ccd1af-ad97-477a-a0eb-5c8f8df82b44",
+		"name": "Infini Entertainment Technology",
+		"slug": "infini-entertainment-technology"
+	},
+	{
+		"id": "a0327646-088c-4980-bbd5-bef3356ad1c5",
+		"name": "Maxis",
+		"slug": "maxis"
+	},
+	{
+		"id": "7bf69511-41b5-4957-9cf6-d907e58ad103",
+		"name": "Gearbox Software",
+		"slug": "gearbox-software"
+	},
+	{
+		"id": "e5d2911a-b86e-441b-88a8-d29857fdeacd",
+		"name": "ArenaNet",
+		"slug": "arenanet"
+	},
+	{
+		"id": "7036414e-2eff-4c9a-a69b-05f590556555",
+		"name": "Cyan Worlds",
+		"slug": "cyan-worlds"
+	},
+	{
+		"id": "8e3d84d9-ddc0-488f-9add-7e4f08768913",
+		"name": "Digital Illusions CE",
+		"slug": "digital-illusions-ce"
+	},
+	{
+		"id": "fc1ee24f-9b9e-430a-8273-dcf30a0ef6ca",
+		"name": "GSC Game World",
+		"slug": "gsc-game-world"
+	},
+	{
+		"id": "ed452356-9d7f-4abd-a5b4-922dc32dac0e",
+		"name": "Hothouse Creations",
+		"slug": "hothouse-creations"
+	},
+	{
+		"id": "28b9222c-dd9e-4fce-8b68-e4dc36bb0a06",
+		"name": "Westwood Pacific",
+		"slug": "westwood-pacific"
+	},
+	{
+		"id": 1773,
+		"name": "Legend Entertainment",
+		"slug": "legend-entertainment"
+	},
+	{
+		"id": "9eebb65f-a0be-495d-b8e2-173c882fe9a9",
+		"name": "Starbreeze Studios",
+		"slug": "starbreeze-studios"
+	},
+	{
+		"id": "1f35acf9-ef9c-4f08-9fd1-90b026688793",
+		"name": "Brøderbund Software",
+		"slug": "broderbund-software"
+	},
+	{
+		"id": "edcb715f-19d8-4ab3-b0f7-c90e4718edd0",
+		"name": "Sunstorm Interactive",
+		"slug": "sunstorm-interactive"
+	},
+	{
+		"id": "422153f2-50ce-49d0-92e4-4138bacae240",
+		"name": "Interplay Entertainment",
+		"slug": "interplay-entertainment"
+	},
+	{
+		"id": "48224970-b7a1-497f-80db-07e9ddd8ba37",
+		"name": "Sylum Entertainment",
+		"slug": "sylum-entertainment"
+	},
+	{
+		"id": "e830ee26-4fc9-458d-976d-9567ca58f66c",
+		"name": "Relic Entertainment",
+		"slug": "relic-entertainment"
+	},
+	{
+		"id": "ce4256e2-27d2-4d45-9d9d-52bb2f3818c1",
+		"name": "The Sims Studio",
+		"slug": "the-sims-studio"
+	},
+	{
+		"id": "25c2f416-0cc1-44ca-9f6a-45597662db79",
+		"name": "Southlogic Studios",
+		"slug": "southlogic-studios"
+	},
+	{
+		"id": "7cbc6f71-14fc-4b83-bc6d-ffc9ab1e7bb1",
+		"name": "Morning Star Multimedia",
+		"slug": "morning-star-multimedia"
+	},
+	{
+		"id": "3322adcd-8f48-4bf4-b0d8-ffedfff0c6f9",
+		"name": "Glu Mobile",
+		"slug": "glu-mobile"
+	},
+	{
+		"id": "b497ac05-5803-4e36-9aeb-df2d9a5cf4bf",
+		"name": "Pterodon",
+		"slug": "pterodon"
+	},
+	{
+		"id": "11c1ac16-33ac-4cb2-aeca-f003613f4030",
+		"name": "Epic Games",
+		"slug": "epic-games"
+	},
+	{
+		"id": "835af02c-3707-4f58-ac57-2c6a860d2471",
+		"name": "Digital Extremes",
+		"slug": "digital-extremes"
+	},
+	{
+		"id": "95681cf4-3080-4732-acd0-f57019f8be62",
+		"name": "PopTop Software",
+		"slug": "poptop-software"
+	},
+	{
+		"id": "e0894f72-31e3-4fdd-8685-95a15594639e",
+		"name": "Pyro Studios",
+		"slug": "pyro-studios"
+	},
+	{
+		"id": "703bf2ea-daea-4e4b-8481-fbe9041c798a",
+		"name": "Hellbent Games",
+		"slug": "hellbent-games"
+	},
+	{
+		"id": "1fa3932c-84be-480c-95fa-94575cbc2bf2",
+		"name": "Pendulo Studios",
+		"slug": "pendulo-studios"
+	},
+	{
+		"id": "d5072988-802f-4b77-83df-c60ed03023a7",
+		"name": "Infocom",
+		"slug": "infocom"
+	},
+	{
+		"id": "a786081d-ca78-4c76-b3d3-3f3fd1fc43c9",
+		"name": "id Software",
+		"slug": "id-software"
+	},
+	{
+		"id": "0d939d68-b55c-4f22-8d13-0b9f6f762e4b",
+		"name": "Raster Productions",
+		"slug": "raster-productions"
+	},
+	{
+		"id": "59a7c916-3d7a-4284-83f2-130f30ef4904",
+		"name": "Krisalis Software",
+		"slug": "krisalis-software"
+	},
+	{
+		"id": "43e47ee3-2a3e-4af0-a17a-64d8dd6758df",
+		"name": "Hammerhead",
+		"slug": "hammerhead"
+	},
+	{
+		"id": "02daa992-e5d6-46f6-bc3c-7d5485cc8ce4",
+		"name": "Ascaron Entertainment",
+		"slug": "ascaron-entertainment"
+	},
+	{
+		"id": "0cc8feb7-4f45-48a6-8ce1-2ab07f76d68b",
+		"name": "Bohemia Interactive Studio",
+		"slug": "bohemia-interactive-studio"
+	},
+	{
+		"id": "3b27d58a-72ec-49a2-85ed-d13ea7739080",
+		"name": "Ensemble Studios",
+		"slug": "ensemble-studios"
+	},
+	{
+		"id": "b69146b6-6602-4391-8f2a-e8310bf17b4c",
+		"name": "Haemimont Games",
+		"slug": "haemimont-games"
+	},
+	{
+		"id": "122f6bfb-65e5-419c-a01a-bdc75f43bc01",
+		"name": "Enlight Software Limited",
+		"slug": "enlight-software-limited"
+	},
+	{
+		"id": "a428c2fa-0cfb-4fa0-9798-33853840ca60",
+		"name": "Firaxis Games",
+		"slug": "firaxis-games"
+	},
+	{
+		"id": "52ad1ccc-7521-4354-9332-3a6dd9784fcf",
+		"name": "Crytek Frankfurt",
+		"slug": "crytek-frankfurt"
+	},
+	{
+		"id": "b89f0e21-dca7-4019-a9f8-089c8c8483f0",
+		"name": "Ritual Entertainment",
+		"slug": "ritual-entertainment"
+	},
+	{
+		"id": "6f1619dc-bcc1-4fdd-b177-9e29dd303da4",
+		"name": "Max Design",
+		"slug": "max-design"
+	},
+	{
+		"id": "315a6ab9-314e-4a39-a968-f7fea9176a90",
+		"name": "Microsoft Game Studios",
+		"slug": "microsoft-game-studios"
+	},
+	{
+		"id": "e3d4f784-e54d-4ed8-85a9-19bf802633ce",
+		"name": "Stainless Steel Studios",
+		"slug": "stainless-steel-studios"
+	},
+	{
+		"id": "67dee3e0-2e36-43d7-b22a-6670f3ac2b89",
+		"name": "Heuristic Park",
+		"slug": "heuristic-park"
+	},
+	{
+		"id": "f1d55d67-d88b-4e16-8f56-8d2ad096b6cb",
+		"name": "Lionhead Studios",
+		"slug": "lionhead-studios"
+	},
+	{
+		"id": "fbdc28fc-7757-404b-b502-e03a6040ef11",
+		"name": "Yosemite Entertainment",
+		"slug": "yosemite-entertainment"
+	},
+	{
+		"id": "fe315b1d-7abc-4a37-9fbc-8e314a569f45",
+		"name": "Sierra Northwest",
+		"slug": "sierra-northwest"
+	},
+	{
+		"id": "d8bc9a48-8f40-4cc2-a6c6-27b0894c2070",
+		"name": "Argonaut Games",
+		"slug": "argonaut-games"
+	},
+	{
+		"id": "7d056cc7-b74e-4fab-8e94-5a4dae39a28c",
+		"name": "GRAVITY",
+		"slug": "gravity"
+	},
+	{
+		"id": "c08b2765-100e-475a-b91a-611c88513034",
+		"name": "3G Studios",
+		"slug": "3g-studios"
+	},
+	{
+		"id": "9ce35c1a-b54f-4b6e-87d4-9c7d7089bfb5",
+		"name": "TransGaming Technologies",
+		"slug": "transgaming-technologies"
+	},
+	{
+		"id": "1029a804-caf6-47f7-9b1f-95cbf2829299",
+		"name": "Trilobyte",
+		"slug": "trilobyte"
+	},
+	{
+		"id": "4acc5163-6da2-4895-bb1e-e6cc35ca2b49",
+		"name": "Flagship Studios",
+		"slug": "flagship-studios"
+	},
+	{
+		"id": "ac48a196-33a8-4036-95fc-be5dc5b8f781",
+		"name": "2015",
+		"slug": "2015"
+	},
+	{
+		"id": "cef4df34-8204-42b9-a4bb-e8ebbc0f3246",
 		"name": "Chris Sawyer Productions",
 		"slug": "chris-sawyer-productions"
 	},
 	{
-		"id": "6f958b01-dd69-47ba-b730-5bbfe2984c45",
+		"id": "7566fdca-4847-4a58-97d3-8d9c0ad66256",
 		"name": "Blue Fang Games",
 		"slug": "blue-fang-games"
 	},
 	{
-		"id": "11f938ae-a033-4842-9758-99ce1139451e",
+		"id": "ef4185fd-b61c-4bd9-a758-89f36ae00683",
 		"name": "Digital Illusions CE: Canada",
-		"slug": "digital-illusions-ce:-canada"
+		"slug": "digital-illusions-ce-canada"
 	},
 	{
-		"id": "c73f242a-fb7d-4e15-835b-171b9f13401e",
+		"id": "faee51b5-7688-4f66-9e55-966a11d4a90f",
 		"name": "Crytek Budapest",
 		"slug": "crytek-budapest"
 	},
 	{
-		"id": "03f052c4-bf02-4a62-b05b-45a6e11eb090",
+		"id": "429e4727-5302-4981-a626-7ba63a97c2ee",
 		"name": "Rogue Entertainment",
 		"slug": "rogue-entertainment"
 	},
 	{
-		"id": "d74968c5-dcee-438b-a7e6-f41aeb9b1c01",
+		"id": "395eb829-6bf8-40a7-a6e7-127528c43297",
 		"name": "3D Realms",
 		"slug": "3d-realms"
 	},
 	{
-		"id": "fea633be-261d-468a-b5f5-3cf074d4fdb0",
+		"id": "1a893347-8a82-4a38-a0d8-6d2dea67d885",
 		"name": "Refraction Games",
 		"slug": "refraction-games"
 	},
 	{
-		"id": "b77b8871-c10e-49c3-a340-cda0c5f6c9be",
+		"id": "73eaa3c1-06e5-4d3c-bc47-ef272daafc57",
 		"name": "Raven Software",
 		"slug": "raven-software"
 	},
 	{
-		"id": "11ca965f-197b-4859-9fad-743d8840526a",
+		"id": "575b3ef3-8df6-417e-a4cd-95aecd13c2f7",
 		"name": "NovaLogic",
 		"slug": "novalogic"
 	},
 	{
-		"id": "9f17d6a0-03b9-4ba1-92da-7b23c31192e5",
+		"id": "32b1e372-d4af-43a3-b4bc-460c049ecf61",
 		"name": "Nintendo R&D4",
 		"slug": "nintendo-randd4"
 	},
 	{
-		"id": "58818401-40ae-405c-b5e5-ec4205b8b57e",
-		"name": "Square Enix",
-		"slug": "square-enix"
+		"id": "1365cbe8-3380-4061-89cb-2dca13c0b089",
+		"name": "Square Enix Business Division 2",
+		"slug": "square-enix-business-division-2"
 	},
 	{
-		"id": "1dd51709-d7ac-4dd7-9d67-a8cb8d8d9b0c",
+		"id": "bbffd6b5-85e6-4ef3-951c-880de5a63b52",
 		"name": "Ubisoft Casablanca",
 		"slug": "ubisoft-casablanca"
 	},
 	{
-		"id": "5398db65-da47-4ed5-bf15-47d30029e1d4",
+		"id": 1772,
 		"name": "New World Computing",
 		"slug": "new-world-computing"
 	},
 	{
-		"id": "4ab3d79e-1aa3-4214-9dae-5d374fbace29",
+		"id": "88b75ae9-49f8-473d-a29f-cebbfa4eeed1",
 		"name": "Loki Software",
 		"slug": "loki-software"
 	},
 	{
-		"id": "2586fd3a-b872-434f-8a25-f07884956519",
+		"id": "d2a4c826-325f-4e30-bab5-d92998690448",
 		"name": "Nival Interactive",
 		"slug": "nival-interactive"
 	},
 	{
-		"id": "59526711-477b-49b5-8722-ad49fedbf651",
+		"id": "55ae72a0-7a7e-49cc-9325-7d75e5fcebf5",
 		"name": "Virtuos",
 		"slug": "virtuos"
 	},
 	{
-		"id": "0830bd26-a80b-4527-b3b7-a67742e67dde",
+		"id": "f5722aa6-0e82-40be-9f49-fc439726cc25",
 		"name": "Konami",
 		"slug": "konami"
 	},
 	{
-		"id": "a662f26b-b146-4d40-a58c-ef6e45990928",
+		"id": "a93af4fa-4880-4314-8ce1-4bbd57cf23cb",
 		"name": "Konami Computer Entertainment Japan",
 		"slug": "konami-computer-entertainment-japan"
 	},
 	{
-		"id": "ea24e7ef-5eb3-4659-9e2f-8668fa59c8b7",
+		"id": "3f61c655-f277-4b7f-92a2-c241f1975c67",
 		"name": "PlatinumGames",
 		"slug": "platinumgames"
 	},
 	{
-		"id": "18ee207a-ba35-4ef1-819c-4f194c7688df",
+		"id": "ab6da7cd-7447-4bcd-9b94-137f135dacfb",
 		"name": "Kojima Productions",
 		"slug": "kojima-productions"
 	},
 	{
-		"id": "a05181dc-11b4-4749-8067-43e42cd72c36",
+		"id": "74de6f49-946e-4d6b-b393-d2f41d971ab8",
+		"name": "Square Enix 1st Production Department",
+		"slug": "square-enix-1st-production-department"
+	},
+	{
+		"id": "c6a71ba7-b434-40c7-ab67-e288dec09d28",
 		"name": "tri-Ace",
 		"slug": "tri-ace"
 	},
 	{
-		"id": "f324e28d-3fb0-40cb-8d30-3913d8107aff",
+		"id": "f8f93500-ae6a-4e28-8cb1-98a53b5d2bbf",
 		"name": "Square",
 		"slug": "square"
 	},
 	{
-		"id": "b3175f61-8940-4319-85bc-b28c67801e57",
-		"name": "SuperAlloy Interactive",
-		"slug": "superalloy-interactive"
+		"id": "68d97a4f-29a6-410f-a4b1-9f331068af49",
+		"name": "Square Enix Product Development Division 3",
+		"slug": "square-enix-product-development-division-3"
 	},
 	{
-		"id": "6a747570-0018-42cf-855d-6705acf47f4b",
-		"name": "Attention Software",
-		"slug": "attention-software"
+		"id": "661216a4-3235-4d30-b531-9f9ef763fae1",
+		"name": "Square Enix",
+		"slug": "square-enix"
 	},
 	{
-		"id": "62ebbf3d-335e-42ec-bb4d-9e0718ee0bc2",
+		"id": "8e0d2697-f522-427e-b456-773db0bc587b",
+		"name": "Square Enix Business Division 1",
+		"slug": "square-enix-business-division-1"
+	},
+	{
+		"id": "b7938a95-3c91-4598-8cf7-2ae7056959a2",
+		"name": "Square Enix Product Development Division 1",
+		"slug": "square-enix-product-development-division-1"
+	},
+	{
+		"id": "3cef5678-d897-4c25-ad22-3be4d9a3e936",
 		"name": "Think & Feel",
 		"slug": "think-and-feel"
 	},
 	{
-		"id": "ca1d74a0-9830-4052-bbcb-aeaf8bbd6a4b",
-		"name": "Tose",
-		"slug": "tose"
-	},
-	{
-		"id": "e8036bcf-cce9-4c71-b913-28f11f5d832d",
+		"id": "fa74ea6b-a231-4f2e-a340-decd953704c3",
 		"name": "Matrix Software",
 		"slug": "matrix-software"
 	},
 	{
-		"id": "4505dec3-f29e-44da-82a1-4e505a6d0e6b",
+		"id": "14389f83-ea25-4019-8741-59224252b29e",
+		"name": "Square Enix Product Development Division 4",
+		"slug": "square-enix-product-development-division-4"
+	},
+	{
+		"id": "7b9f020d-fac3-42cd-bca8-d17fd7b0f374",
+		"name": "Square Enix Product Development Division 5",
+		"slug": "square-enix-product-development-division-5"
+	},
+	{
+		"id": "1ee5597a-eef2-4458-88a5-842edb9be907",
+		"name": "Square Enix Product Development Division 2",
+		"slug": "square-enix-product-development-division-2"
+	},
+	{
+		"id": "142c2439-6e47-47ef-86f0-979467fb8daf",
+		"name": "Square Enix Product Development Division 7",
+		"slug": "square-enix-product-development-division-7"
+	},
+	{
+		"id": "e1712d65-706d-4326-a4a5-75c5ae6135b5",
+		"name": "Tose",
+		"slug": "tose"
+	},
+	{
+		"id": "db1399f1-81a9-4164-bf21-badea4cd2944",
+		"name": "Square Osaka Development Department",
+		"slug": "square-osaka-development-department"
+	},
+	{
+		"id": "5e041407-9385-490d-8c21-aa069352a511",
+		"name": "Square Product Development Division 3",
+		"slug": "square-product-development-division-3"
+	},
+	{
+		"id": "9a31eb28-e182-408f-b1fd-c33eb50fb4f3",
 		"name": "The Game Designers Studio",
 		"slug": "the-game-designers-studio"
 	},
 	{
-		"id": "debb8541-d4ec-4503-9066-7959864a44b5",
+		"id": "179edc03-53f3-4631-b60b-9c35da3a3a9a",
+		"name": "Square Product Development Division 1",
+		"slug": "square-product-development-division-1"
+	},
+	{
+		"id": "781a9a02-cfef-4386-9b33-821f535d4e8e",
+		"name": "Square Product Development Division 4",
+		"slug": "square-product-development-division-4"
+	},
+	{
+		"id": "62b6d48c-b384-4a66-bae0-1a7692c496ac",
+		"name": "Square USA",
+		"slug": "square-usa"
+	},
+	{
+		"id": "805c560b-e8d1-4364-89ec-e0cc487c4394",
 		"name": "High Voltage Software",
 		"slug": "high-voltage-software"
 	},
 	{
-		"id": "0bde3ee5-9352-4dae-ae6c-d60ca7c8e910",
+		"id": "268de491-8aa5-4089-8dae-e2bdc0ea2d47",
 		"name": "Capcom Planning Room 2",
 		"slug": "capcom-planning-room-2"
 	},
 	{
-		"id": "fea65705-2e96-4001-af3e-e7dccbca1cbb",
+		"id": "b8ff6f05-2290-4eb6-b803-656010cf2969",
 		"name": "Techland",
 		"slug": "techland"
 	},
 	{
-		"id": "c22c5d72-4428-47b5-84df-7b07282ce743",
+		"id": "6ce71710-c494-4401-983b-a875e375a214",
 		"name": "Naughty Dog",
 		"slug": "naughty-dog"
 	},
 	{
-		"id": "084b7dd2-d560-4699-99eb-4cfe7c0da5ef",
+		"id": "7877c372-93d2-4a5e-802a-e42c3ffd92f9",
 		"name": "The Creative Assembly",
 		"slug": "the-creative-assembly"
 	},
 	{
-		"id": "dd2f6082-6834-48c5-a28d-840ce7f70529",
+		"id": "2a5b2289-aa27-41fa-9fe6-b1a41b3afc94",
 		"name": "Tigon Studios",
 		"slug": "tigon-studios"
 	},
 	{
-		"id": "98c6e30f-8a81-4d7b-be18-f742aeced723",
+		"id": "133cdd52-47c1-4ea9-83b9-9f3ef120a818",
 		"name": "Rockstar San Diego",
 		"slug": "rockstar-san-diego"
 	},
 	{
-		"id": "dcdf2196-ae23-4bd1-bbee-bde0ad42b2e8",
+		"id": "19bbe117-be89-4d0f-9769-bd07d6f0138e",
 		"name": "reLINE Software",
 		"slug": "reline-software"
 	},
 	{
-		"id": "c5abe512-b5c1-4ea1-ad78-9569de6cd077",
+		"id": "65c2b3e2-8145-4cb6-8fb3-4ada561a111a",
 		"name": "Codemasters",
 		"slug": "codemasters"
 	},
 	{
-		"id": "c2e9549d-a956-4ab3-b172-f6ca4a30fbdf",
+		"id": "24a9964c-b29c-4a3a-8b56-c80627e5abdb",
 		"name": "Codemasters Southam",
 		"slug": "codemasters-southam"
 	},
 	{
-		"id": "4835b93d-f0d4-4c27-b421-6a1eb5621118",
+		"id": "e73a1b08-1af7-431a-9941-c3d8c478891c",
 		"name": "Mass Media Inc",
 		"slug": "mass-media-inc"
 	},
 	{
-		"id": "ac58b6f0-8add-4ee4-8088-19b078043505",
-		"name": "Sunsoft",
+		"id": "709f67fe-1353-46b1-a85e-301cc7686a44",
+		"name": "SUNSOFT",
 		"slug": "sunsoft"
 	},
 	{
-		"id": "992cf1e0-dfad-4b31-aa67-1f01bae33d0e",
+		"id": "97031314-9722-441c-b3f4-ba2753441532",
 		"name": "Silicon & Synapse",
 		"slug": "silicon-and-synapse"
 	},
 	{
-		"id": "a64a935f-eebb-43fa-ac87-78a98a587e85",
+		"id": "ebbf5516-7435-4baa-9948-a89719871862",
 		"name": "Saffire",
 		"slug": "saffire"
 	},
 	{
-		"id": "ebffba7e-2cca-4b51-94ae-395bdf26a6c2",
+		"id": "81a96f41-966d-4608-9aa7-02a5c3133f5e",
 		"name": "iPhSoft",
 		"slug": "iphsoft"
 	},
 	{
-		"id": "1bdf83c1-0d86-4db7-84ad-31659dcb9351",
-		"name": "Polyphony Digital",
-		"slug": "polyphony-digital"
+		"id": "fa162d34-3540-4a15-a438-557a9864406b",
+		"name": "Adventure Soft",
+		"slug": "adventure-soft"
 	},
 	{
-		"id": "16a97ed6-f059-4505-ad16-04550252e337",
-		"name": "Rockstar North",
-		"slug": "rockstar-north"
+		"id": "8094b8e4-9dd9-4c7d-a416-cb2c094dfc9e",
+		"name": "Headfirst Productions",
+		"slug": "headfirst-productions"
 	},
 	{
-		"id": "8eec7116-5eb7-427b-a2cf-0aeb7f18cf8b",
-		"name": "The Coalition",
-		"slug": "the-coalition"
+		"id": "67d543b6-e327-4f0b-83af-cdf864387399",
+		"name": "Silver Style Entertainment",
+		"slug": "silver-style-entertainment"
 	},
 	{
-		"id": "7b0220ea-f790-4f1b-aa3c-8cb12614a200",
-		"name": "Ninja Kiwi",
-		"slug": "ninja-kiwi"
+		"id": "a7e5388d-619f-42f3-8a7b-9a5bc0ca73f1",
+		"name": "n-Space",
+		"slug": "n-space"
 	},
 	{
-		"id": "910c4413-81a1-43a1-aecd-9880d7cfaafe",
-		"name": "Griptonite Games",
-		"slug": "griptonite-games"
+		"id": "aadf5797-f543-4170-bc95-beacf381a5af",
+		"name": "Team Silent",
+		"slug": "team-silent"
 	},
 	{
-		"id": "1d291e72-7dec-474e-a983-04c25a627708",
-		"name": "Nintendo EAD",
-		"slug": "nintendo-ead"
+		"id": "d16b9514-2b00-4d69-932d-a6486f18b5f2",
+		"name": "Double Helix Games",
+		"slug": "double-helix-games"
 	},
 	{
-		"id": "fe0a7a05-a0c8-4c60-b6a8-943bfc68dc6e",
-		"name": "SIE Santa Monica Studio",
-		"slug": "sie-santa-monica-studio"
+		"id": "43cc814b-7a31-4d5c-a586-769fa4256889",
+		"name": "Vatra Games",
+		"slug": "vatra-games"
 	},
 	{
-		"id": "fe44ba95-8238-40da-8fe7-4c78aee47532",
-		"name": "FromSoftware",
-		"slug": "fromsoftware"
+		"id": "02634d65-afd0-4dc8-9d75-c1769e6a9fe2",
+		"name": "IO Interactive",
+		"slug": "io-interactive"
 	},
 	{
-		"id": "d8c7bd02-7942-4993-bd63-02009ae7eb46",
-		"name": "Larian Studios",
-		"slug": "larian-studios"
+		"id": "3487b07b-04c3-4c6e-ab16-6c0222ebf1d1",
+		"name": "Trion Worlds",
+		"slug": "trion-worlds"
 	},
 	{
-		"id": "d2e06aac-666b-4165-80ba-bedea3155533",
-		"name": "Infinity Ward",
-		"slug": "infinity-ward"
+		"id": "df650911-e152-419c-ad04-615397f30f36",
+		"name": "Triptych Games",
+		"slug": "triptych-games"
 	},
 	{
-		"id": "04abc56a-c30c-40d3-81cf-587199e7fcd0",
-		"name": "Nintendo",
-		"slug": "nintendo"
+		"id": "b8fcd8bc-cbe9-4c11-b05c-770b44396220",
+		"name": "MercurySteam",
+		"slug": "mercurysteam"
 	},
 	{
-		"id": "a268029e-b16f-440d-9c9c-2f9ca4ede5f1",
-		"name": "SCE Santa Monica Studio",
-		"slug": "sce-santa-monica-studio"
+		"id": "690c3687-8a96-4c7e-91d9-914a773667bd",
+		"name": "Quantic Dream",
+		"slug": "quantic-dream"
 	},
 	{
-		"id": "25d7b75b-aa24-45da-b95b-fe3347f0cda5",
-		"name": "Sabotage",
-		"slug": "sabotage"
-	},
-	{
-		"id": "6d4c729d-a0dc-4373-adc9-1b9cfdb337b1",
+		"id": "a6997fb0-ed32-45d1-b842-d4187d4a1367",
 		"name": "People Can Fly",
 		"slug": "people-can-fly"
 	},
 	{
-		"id": "16710d1d-4a6e-4edb-8732-254b8ba8fdf2",
-		"name": "Team Cherry",
-		"slug": "team-cherry"
+		"id": "00cd06aa-1c37-418e-88ee-5d9f4a1e3d69",
+		"name": "4A Games",
+		"slug": "4a-games"
 	},
 	{
-		"id": "d3ba0eaa-1a55-4fe8-bad6-9d2047d21821",
-		"name": "Round8 Studio",
-		"slug": "round8-studio"
-	},
-	{
-		"id": "7228affb-c9b4-4f91-92c1-5eb3acad6e42",
-		"name": "Insomniac Games",
-		"slug": "insomniac-games"
-	},
-	{
-		"id": "d1d0e4a4-f26c-412e-a61d-ddb3f3e2218e",
-		"name": "Valve Software",
-		"slug": "valve-software"
-	},
-	{
-		"id": "a9a33e71-d5f7-4eda-95a6-74fd98a70648",
-		"name": "Rockstar Games",
-		"slug": "rockstar-games"
-	},
-	{
-		"id": "22960632-0220-4b84-96f0-25606182c839",
-		"name": "ZA/UM",
-		"slug": "zaum"
-	},
-	{
-		"id": "86099516-39d5-4eaf-aec7-df545559f549",
-		"name": "Asobo Studio",
-		"slug": "asobo-studio"
-	},
-	{
-		"id": "a0740cc1-0b38-4be4-b5d6-f792a40bea04",
-		"name": "Square Enix Creative Business Unit III",
-		"slug": "square-enix-creative-business-unit-iii"
-	},
-	{
-		"id": "ca795c1d-352c-41ea-9c47-b4827f61090c",
-		"name": "Dead Mage",
-		"slug": "dead-mage"
-	},
-	{
-		"id": "abed3ae3-40a9-4686-86b2-ed4cb54470ae",
+		"id": "441bf515-38a6-42ca-ad24-539d3203acf9",
 		"name": "Capcom",
 		"slug": "capcom"
 	},
 	{
-		"id": "c5a68425-4640-4326-a81a-ee7caa7b8107",
-		"name": "Freebird Games",
-		"slug": "freebird-games"
+		"id": "70a69852-3a6e-475e-8e58-a1323236fda1",
+		"name": "Cavia",
+		"slug": "cavia"
 	},
 	{
-		"id": "fffcaa59-659d-4271-86b8-0f33c0bfda2c",
-		"name": "Crowbar Collective",
-		"slug": "crowbar-collective"
+		"id": "4433173f-d3a2-4cb5-8289-2241b247eb3d",
+		"name": "Feral Interactive",
+		"slug": "feral-interactive"
 	},
 	{
-		"id": "7b6c5a18-6eb2-42bf-b037-8dd3528273d1",
+		"id": "005f3b83-0f62-4f32-b34b-2050245743cf",
+		"name": "SCE Santa Monica Studio",
+		"slug": "sce-santa-monica-studio"
+	},
+	{
+		"id": "f5e4e14a-aa46-4332-aae2-0ed082a57848",
+		"name": "Rocksteady Studios",
+		"slug": "rocksteady-studios"
+	},
+	{
+		"id": "fdc21d2f-c19b-46f3-9d51-33bbb6a351a4",
+		"name": "Splash Damage",
+		"slug": "splash-damage"
+	},
+	{
+		"id": "6c064f5b-3f4b-407a-9b23-b7af2f05fea1",
+		"name": "inXile Entertainment",
+		"slug": "inxile-entertainment"
+	},
+	{
+		"id": "27fa482e-0b5e-4a82-8ab5-27d71f66598a",
+		"name": "Sonic Team",
+		"slug": "sonic-team"
+	},
+	{
+		"id": "66b98981-8c14-4f5b-8daf-8126b74b1efd",
+		"name": "Darkworks",
+		"slug": "darkworks"
+	},
+	{
+		"id": "6250746a-415b-46f5-8384-388c8cc35b6e",
+		"name": "Nadeo",
+		"slug": "nadeo"
+	},
+	{
+		"id": "f22a8b8f-2ce2-445e-82db-61fd116d5b6d",
+		"name": "Longtail Studios",
+		"slug": "longtail-studios"
+	},
+	{
+		"id": "d173538e-19c3-412c-a373-5e8c89beca43",
+		"name": "SCE Japan Studio",
+		"slug": "sce-japan-studio"
+	},
+	{
+		"id": "2ad8db76-40ea-409f-82d1-e988d78cfaf9",
+		"name": "Online Entertainment R&D",
+		"slug": "online-entertainment-randd"
+	},
+	{
+		"id": "df989f76-0e63-4200-8919-3c5d4d37084b",
+		"name": "Day 1 Studios",
+		"slug": "day-1-studios"
+	},
+	{
+		"id": "4e84138c-055a-4fff-9ad7-9c2ca919f320",
 		"name": "Sucker Punch Productions",
 		"slug": "sucker-punch-productions"
 	},
 	{
-		"id": "5bc1cc20-79f0-48e5-89db-694f156c16f1",
-		"name": "Ubisoft Chengdu",
-		"slug": "ubisoft-chengdu"
+		"id": "be9268b7-d07a-44db-936c-13f92a7dd8c2",
+		"name": "Cyanide Studio",
+		"slug": "cyanide-studio"
 	},
 	{
-		"id": "e7425495-96a3-47b6-8cea-eb2db5911325",
-		"name": "Ubisoft Québec",
-		"slug": "ubisoft-quebec"
+		"id": "8e0cb8e8-7fd8-4a3b-8412-228ef3ed38d5",
+		"name": "Monolith Productions",
+		"slug": "monolith-productions"
 	},
 	{
-		"id": "9c875d2e-03e8-4a5b-80e5-00e5268d59c1",
+		"id": "6c229355-a660-493a-a49b-8e9aa97b677c",
+		"name": "TimeGate Studios",
+		"slug": "timegate-studios"
+	},
+	{
+		"id": "99dd3887-e544-40fa-979c-432dfb9f5844",
+		"name": "Big Blue Box",
+		"slug": "big-blue-box"
+	},
+	{
+		"id": "45a1a0df-f568-4254-ac60-41d7ba526ba8",
+		"name": "Human Head Studios",
+		"slug": "human-head-studios"
+	},
+	{
+		"id": "cfb37b05-8bd7-4f39-834e-2c831ae4d15b",
+		"name": "Croteam",
+		"slug": "croteam"
+	},
+	{
+		"id": "5b669641-9ecb-41eb-9fcb-1e14330e2a21",
+		"name": "Volition",
+		"slug": "volition"
+	},
+	{
+		"id": "2d46e74b-a853-4c8a-ae9e-9d35efe14461",
+		"name": "Project Aces",
+		"slug": "project-aces"
+	},
+	{
+		"id": "5a07969d-7bc4-4695-a9c7-b788a9ada9c8",
+		"name": "Flying Wild Hog",
+		"slug": "flying-wild-hog"
+	},
+	{
+		"id": "f70817ea-856c-4160-9c46-13cadffcc6e8",
+		"name": "Arkane Studios",
+		"slug": "arkane-studios"
+	},
+	{
+		"id": "270c48d5-993a-4195-a864-fe20fc3410c5",
+		"name": "Nintendo EAD Software Development Group No.3",
+		"slug": "nintendo-ead-software-development-group-no3"
+	},
+	{
+		"id": "07e872b7-ae3c-4559-96b2-fec8c4edb58d",
+		"name": "Carbine Studios",
+		"slug": "carbine-studios"
+	},
+	{
+		"id": "bcff3d01-68b4-495b-82ba-586cb406a12c",
+		"name": "Eurocom Entertainment Software",
+		"slug": "eurocom-entertainment-software"
+	},
+	{
+		"id": "6f00d196-7c53-4758-af89-a840791f764d",
+		"name": "Bugbear Entertainment",
+		"slug": "bugbear-entertainment"
+	},
+	{
+		"id": "c7587888-8f17-4f7d-8a6a-ac67820b4170",
 		"name": "Treyarch",
 		"slug": "treyarch"
 	},
 	{
-		"id": "dd6800c4-587b-4425-971a-ff731c28fa2a",
-		"name": "CipSoft",
-		"slug": "cipsoft"
+		"id": "bd5ee57a-3a8c-4acc-a06f-b65a47ebfb30",
+		"name": "Ready at Dawn",
+		"slug": "ready-at-dawn"
+	},
+	{
+		"id": "b72d7218-15b8-4748-ad51-4c7d7a788fa8",
+		"name": "Ubisoft Reflections",
+		"slug": "ubisoft-reflections"
+	},
+	{
+		"id": "889b3c38-3fc1-4d4c-8a2d-ef9b8ab7c46c",
+		"name": "High Moon Studios",
+		"slug": "high-moon-studios"
+	},
+	{
+		"id": "b0020020-fc5a-4976-b2e7-215cd520614a",
+		"name": "Danger Close",
+		"slug": "danger-close"
+	},
+	{
+		"id": "55ae7b16-0662-40f8-ad7d-9c2577f2149a",
+		"name": "ZootFly",
+		"slug": "zootfly"
+	},
+	{
+		"id": "8107c5b6-cc04-42ec-9d37-63b8727a2985",
+		"name": "Avalanche Studios",
+		"slug": "avalanche-studios"
+	},
+	{
+		"id": "e601d377-5e60-4713-9c36-23010894f566",
+		"name": "Infinity Ward",
+		"slug": "infinity-ward"
+	},
+	{
+		"id": "40d46253-4f9c-4804-afa6-8dd4bb25874e",
+		"name": "Rebellion Developments",
+		"slug": "rebellion-developments"
+	},
+	{
+		"id": "6a85e448-57e1-42a4-a836-ec72b6d5a33b",
+		"name": "NCSOFT",
+		"slug": "ncsoft"
+	},
+	{
+		"id": "002132d7-df73-4f20-b925-12ad808175f8",
+		"name": "Terminal Reality",
+		"slug": "terminal-reality"
+	},
+	{
+		"id": "81635104-1850-4629-acc2-3c850fdf0185",
+		"name": "Asobo Studio",
+		"slug": "asobo-studio"
+	},
+	{
+		"id": "48e4a99b-f89d-4a6a-99b3-79002e71c4b6",
+		"name": "Savage Entertainment",
+		"slug": "savage-entertainment"
+	},
+	{
+		"id": "eb9c776d-13c8-416a-971e-b42e855f2ead",
+		"name": "Radical Entertainment",
+		"slug": "radical-entertainment"
+	},
+	{
+		"id": "4584e836-70b1-4b8b-9e30-289346fa737d",
+		"name": "Amaze Entertainment",
+		"slug": "amaze-entertainment"
+	},
+	{
+		"id": "9083b84f-cdb3-42fb-93a2-fb2c5ecb36bc",
+		"name": "Vicious Cycle Software",
+		"slug": "vicious-cycle-software"
+	},
+	{
+		"id": "029096f5-bcba-42dc-9195-2b6a5b852ffd",
+		"name": "Daybreak Game Company",
+		"slug": "daybreak-game-company"
+	},
+	{
+		"id": "b035e1ac-aa26-4060-9f02-f2db19dd64f4",
+		"name": "Interactive Simulations",
+		"slug": "interactive-simulations"
+	},
+	{
+		"id": "ab1e6ae7-7913-49f8-9d2b-b02d63bcd090",
+		"name": "Sonalysts",
+		"slug": "sonalysts"
+	},
+	{
+		"id": "5fa237a3-d62f-4d07-97ac-ebd8e00baca5",
+		"name": "Exakt Entertainment",
+		"slug": "exakt-entertainment"
+	},
+	{
+		"id": "f0351aa6-defb-44dd-8e9d-b1db37300939",
+		"name": "Eugen Systems",
+		"slug": "eugen-systems"
+	},
+	{
+		"id": "f7058c6c-3f63-405a-8cb9-88511503b5ed",
+		"name": "Funcom",
+		"slug": "funcom"
+	},
+	{
+		"id": 2349,
+		"name": "Origin Systems",
+		"slug": "origin-systems"
+	},
+	{
+		"id": "d2cdd352-6e3c-4ec8-a15c-17f60cd1ae83",
+		"name": "DivoGames",
+		"slug": "divogames"
+	},
+	{
+		"id": "3022b347-af90-44fb-9d62-a193d06ab5e3",
+		"name": "Microsoft Research",
+		"slug": "microsoft-research"
+	},
+	{
+		"id": "9f46d399-0736-499d-a4c2-b0f48ae3b155",
+		"name": "U.S. Army",
+		"slug": "us-army"
+	},
+	{
+		"id": "0df770d5-f65e-4c19-a80c-2574dc4611fc",
+		"name": "Digital Integration",
+		"slug": "digital-integration"
+	},
+	{
+		"id": "996a54f0-cd88-4f94-b419-796ad0e88b89",
+		"name": "Turbine",
+		"slug": "turbine"
+	},
+	{
+		"id": "6ebb6db8-3f84-4fe2-be4b-a48099440a83",
+		"name": "Pulse Entertainment",
+		"slug": "pulse-entertainment"
+	},
+	{
+		"id": "82912989-34ad-49e3-977e-077aad894e23",
+		"name": "Infinite Monkey",
+		"slug": "infinite-monkey"
+	},
+	{
+		"id": "897d5544-7afb-4822-8120-3456caa89c8d",
+		"name": "Liquid Entertainment",
+		"slug": "liquid-entertainment"
+	},
+	{
+		"id": "e98f44f8-628c-4c74-8954-bd19a284d987",
+		"name": "TalonSoft",
+		"slug": "talonsoft"
+	},
+	{
+		"id": "86dfebe5-c0b8-45f6-8f84-fc02a792a8ea",
+		"name": "Strategic Studies Group",
+		"slug": "strategic-studies-group"
+	},
+	{
+		"id": "e7eb2d08-8773-4dae-a3bf-c331f09dca02",
+		"name": "Revolution Software",
+		"slug": "revolution-software"
+	},
+	{
+		"id": "fb4a3856-a795-4e28-8614-a066b5b6671c",
+		"name": "Activision",
+		"slug": "activision"
+	},
+	{
+		"id": "1a01e28f-c0ec-43f4-a493-009d171e985e",
+		"name": "PopCap Games",
+		"slug": "popcap-games"
+	},
+	{
+		"id": "c61150ea-d2d6-4f81-bb5f-2b835f41706b",
+		"name": "Reflexive Entertainment",
+		"slug": "reflexive-entertainment"
+	},
+	{
+		"id": "dfd31f23-4ee5-43e2-84dc-a9d9ffeb3dff",
+		"name": "Criterion Games",
+		"slug": "criterion-games"
+	},
+	{
+		"id": "aecb45fd-5ec0-43be-bbe1-c80264193ba2",
+		"name": "Gray Matter Interactive",
+		"slug": "gray-matter-interactive"
+	},
+	{
+		"id": "f05e1689-26f3-4e69-a5a2-31c902b96982",
+		"name": "Stainless Games Ltd.",
+		"slug": "stainless-games-ltd"
+	},
+	{
+		"id": "715006c9-c0a4-496c-913a-6e60a320fb57",
+		"name": "Sports Interactive",
+		"slug": "sports-interactive"
+	},
+	{
+		"id": "edd331b2-8876-4f1b-87a3-f2926d39ecc5",
+		"name": "Stick Man Games",
+		"slug": "stick-man-games"
+	},
+	{
+		"id": "6e40a236-7811-415f-b306-f249ad32e17a",
+		"name": "Mindscape",
+		"slug": "mindscape"
+	},
+	{
+		"id": "5c2e534d-8fd7-4308-bd51-34dc5132222d",
+		"name": "BreakAway Games",
+		"slug": "breakaway-games"
+	},
+	{
+		"id": "859dd602-3e5c-44a6-8d43-8ae3b47ad4fa",
+		"name": "Dreamworks Interactive",
+		"slug": "dreamworks-interactive"
+	},
+	{
+		"id": "c910a55c-be73-425d-a429-35961c306768",
+		"name": "Atomic Games",
+		"slug": "atomic-games"
+	},
+	{
+		"id": "0da1bc76-e7c9-471d-8560-39d0b8f7b9af",
+		"name": "Stormregion",
+		"slug": "stormregion"
+	},
+	{
+		"id": "27721982-0655-4c82-9a5c-737bd9aa151a",
+		"name": "Microsoft",
+		"slug": "microsoft"
+	},
+	{
+		"id": "e462831a-04a6-40df-91c1-67a98ec39c7b",
+		"name": "Big Time Software",
+		"slug": "big-time-software"
+	},
+	{
+		"id": "983e0e33-bc71-481d-8d78-f30bf44bb01c",
+		"name": "EA Pacific",
+		"slug": "ea-pacific"
+	},
+	{
+		"id": "64f2ce2b-f414-433b-ae46-b4f72b773945",
+		"name": "EA Los Angeles",
+		"slug": "ea-los-angeles"
+	},
+	{
+		"id": "e84389b7-f867-4175-8275-1316a6a6c381",
+		"name": "On-Line Systems",
+		"slug": "on-line-systems"
+	},
+	{
+		"id": "bf186787-4e0c-4115-b8a0-ecefa2b59467",
+		"name": "Zonic Limited",
+		"slug": "zonic-limited"
+	},
+	{
+		"id": "e6efce9a-87ac-4054-90b4-fbe18a3f8677",
+		"name": "Auran",
+		"slug": "auran"
+	},
+	{
+		"id": "8b22b9a5-e094-4982-8434-3ab721d38bc4",
+		"name": "Delphine Software",
+		"slug": "delphine-software"
+	},
+	{
+		"id": "aa897c7b-a6f4-48a2-ab50-488c4b23247e",
+		"name": "Introversion Software",
+		"slug": "introversion-software"
+	},
+	{
+		"id": "7b37bd6a-5901-4997-b282-814bb67fb8b7",
+		"name": "Related Designs",
+		"slug": "related-designs"
+	},
+	{
+		"id": "beead06c-0c51-436b-8e23-41cb25bacb32",
+		"name": "Parallax Software",
+		"slug": "parallax-software"
+	},
+	{
+		"id": "f5fb8b3a-0cfa-468c-ab02-5678f23ad02f",
+		"name": "Hyperion Entertainment",
+		"slug": "hyperion-entertainment"
+	},
+	{
+		"id": "aee3f7cf-ef8b-4f25-a401-23ffd6430c0d",
+		"name": "Larian Studios",
+		"slug": "larian-studios"
+	},
+	{
+		"id": "73324676-e96e-4141-98b0-2f974f8bd13c",
+		"name": "Nerve Software, LLC",
+		"slug": "nerve-software-llc"
+	},
+	{
+		"id": "d8a1ce27-63a2-433f-8b22-87c8f5bf0347",
+		"name": "Reflections Interactive",
+		"slug": "reflections-interactive"
+	},
+	{
+		"id": "8abd814f-e783-4bd9-bef7-bdda22a0e70d",
+		"name": "Digital Image Design",
+		"slug": "digital-image-design"
+	},
+	{
+		"id": "d1a3c623-4be0-4e01-ab55-c3db5cb8e12d",
+		"name": "Razorworks Studios",
+		"slug": "razorworks-studios"
+	},
+	{
+		"id": "b0a5ae61-60b2-4565-86a5-946725be3ae4",
+		"name": "4HEAD Studios",
+		"slug": "4head-studios"
+	},
+	{
+		"id": "6fe58f0a-6aa6-454b-83ed-fb3cff5c4349",
+		"name": "Paradox Interactive",
+		"slug": "paradox-interactive"
+	},
+	{
+		"id": "a86f96ed-3419-49f0-a59b-a12f433d2acd",
+		"name": "Jane's Combat Simulations",
+		"slug": "janes-combat-simulations"
+	},
+	{
+		"id": "99def9eb-f621-4e7a-ae29-980824697726",
+		"name": "Graphic Simulations",
+		"slug": "graphic-simulations"
+	},
+	{
+		"id": "8d8ee3aa-0bcf-48cb-93ef-1ab40fbd2302",
+		"name": "Image Space Incorporated",
+		"slug": "image-space-incorporated"
+	},
+	{
+		"id": "ae8015e7-947e-4588-9fd0-c429d6a1e10a",
+		"name": "Ubisoft Entertainment",
+		"slug": "ubisoft-entertainment"
+	},
+	{
+		"id": "50593cc0-22a1-4e77-b31a-b32cd86f4250",
+		"name": "Lead Pursuit",
+		"slug": "lead-pursuit"
+	},
+	{
+		"id": "48e944b9-ae08-4b83-ac9e-b037f3cc46a7",
+		"name": "EA Sports",
+		"slug": "ea-sports"
+	},
+	{
+		"id": "9d26ffb0-610b-4023-b9c0-82a41715c5e2",
+		"name": "Flying Legends",
+		"slug": "flying-legends"
+	},
+	{
+		"id": "a47c46d8-682c-4e28-866c-5f9ad741f042",
+		"name": "Eagle Dynamics",
+		"slug": "eagle-dynamics"
+	},
+	{
+		"id": "ca1cd5c7-1097-4ad4-867f-c1db989e4e8f",
+		"name": "Iguana Entertainment UK",
+		"slug": "iguana-entertainment-uk"
+	},
+	{
+		"id": "36eba584-9a82-4381-833b-c920972de0af",
+		"name": "Stardock",
+		"slug": "stardock"
+	},
+	{
+		"id": "6bf55135-1655-465f-9332-b51f5daaf44f",
+		"name": "Sick Puppies",
+		"slug": "sick-puppies"
+	},
+	{
+		"id": 1789,
+		"name": "Papyrus Design Group",
+		"slug": "papyrus-design-group"
+	},
+	{
+		"id": "1019d571-2521-45d4-a301-b9fa05d69bde",
+		"name": "DMA Design",
+		"slug": "dma-design"
+	},
+	{
+		"id": "4c5be8ae-186b-4cd4-a880-828efec21927",
+		"name": "Rockstar North",
+		"slug": "rockstar-north"
+	},
+	{
+		"id": 1671,
+		"name": "Massive Entertainment",
+		"slug": "massive-entertainment"
+	},
+	{
+		"id": 1675,
+		"name": "SimBin",
+		"slug": "simbin"
+	},
+	{
+		"id": 1677,
+		"name": "Blimey! Games",
+		"slug": "blimey-games"
+	},
+	{
+		"id": 22513,
+		"name": "Bungie",
+		"slug": "bungie"
+	},
+	{
+		"id": 1692,
+		"name": "Team .366",
+		"slug": "team-366"
+	},
+	{
+		"id": 1701,
+		"name": "Barking Dog",
+		"slug": "barking-dog"
+	},
+	{
+		"id": 1703,
+		"name": "Rage Software",
+		"slug": "rage-software"
+	},
+	{
+		"id": 2197,
+		"name": "Maddox Games",
+		"slug": "maddox-games"
+	},
+	{
+		"id": 1713,
+		"name": "Particle Systems",
+		"slug": "particle-systems"
+	},
+	{
+		"id": 1719,
+		"name": "Eclipse Software",
+		"slug": "eclipse-software"
+	},
+	{
+		"id": 1721,
+		"name": "Hypnos Entertainment",
+		"slug": "hypnos-entertainment"
+	},
+	{
+		"id": 53895,
+		"name": "S2 Games",
+		"slug": "s2-games"
+	},
+	{
+		"id": 180954,
+		"name": "Orange Games",
+		"slug": "orange-games"
+	},
+	{
+		"id": 1727,
+		"name": "NetDevil",
+		"slug": "netdevil"
+	},
+	{
+		"id": 265387,
+		"name": "Crystal Dynamics",
+		"slug": "crystal-dynamics"
+	},
+	{
+		"id": 1737,
+		"name": "Access Software",
+		"slug": "access-software"
+	},
+	{
+		"id": 2232,
+		"name": "EA Tiburon",
+		"slug": "ea-tiburon"
+	},
+	{
+		"id": 1750,
+		"name": "Budcat Creations",
+		"slug": "budcat-creations"
+	},
+	{
+		"id": 52064,
+		"name": "BioWare Montréal",
+		"slug": "bioware-montreal"
+	},
+	{
+		"id": 4435,
+		"name": "FASA Interactive",
+		"slug": "fasa-interactive"
+	},
+	{
+		"id": 1768,
+		"name": "ACES Game Studio",
+		"slug": "aces-game-studio"
+	},
+	{
+		"id": 3544,
+		"name": "Rowan Software",
+		"slug": "rowan-software"
+	},
+	{
+		"id": 1776,
+		"name": "Magnetic Fields",
+		"slug": "magnetic-fields"
+	},
+	{
+		"id": 1780,
+		"name": "Rainbow Studios",
+		"slug": "rainbow-studios"
+	},
+	{
+		"id": 1783,
+		"name": "Presto Studios",
+		"slug": "presto-studios"
+	},
+	{
+		"id": 8770,
+		"name": "EA Manchester",
+		"slug": "ea-manchester"
+	},
+	{
+		"id": 2334,
+		"name": "HB Studios",
+		"slug": "hb-studios"
+	},
+	{
+		"id": 214095,
+		"name": "Midway Games",
+		"slug": "midway-games"
 	}
 ]
