@@ -35,6 +35,7 @@ small {
 
 a {
 	text-shadow: 5 5px --color-5;
+	text-decoration: none;
 }
 
 /*
