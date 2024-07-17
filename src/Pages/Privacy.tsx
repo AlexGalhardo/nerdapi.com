@@ -54,7 +54,7 @@ export default function Privacy() {
                     <li>
                         <p>
                             <strong>Company</strong> (referred to as either &quot;the Company&quot;, &quot;We&quot;,
-                            &quot;Us&quot; or &quot;Our&quot; in this Agreement) refers to Nerd API.
+                            &quot;Us&quot; or &quot;Our&quot; in this Agreement) refers to Games.
                         </p>
                     </li>
                     <li>
@@ -110,9 +110,9 @@ export default function Privacy() {
                     </li>
                     <li>
                         <p>
-                            <strong>Website</strong> refers to Nerd API, accessible from{" "}
-                            <a href="https://nerdapi.com" rel="external nofollow noopener" target="_blank">
-                                https://nerdapi.com
+                            <strong>Website</strong> refers to Games, accessible from{" "}
+                            <a href="https://games.alexgalhardo.com" rel="external nofollow noopener" target="_blank">
+                                https://games.alexgalhardo.com
                             </a>
                         </p>
                     </li>
@@ -481,13 +481,13 @@ export default function Privacy() {
                 <p>If you have any questions about this Privacy Policy, You can contact us:</p>
                 <ul>
                     <li>
-                        <p>By email: support@nerdapi.com</p>
+                        <p>By email: support@games.alexgalhardo.com</p>
                     </li>
                     <li>
                         <p>
                             By visiting this page on our website:{" "}
-                            <a href="https://nerdapi.com/contact" rel="external nofollow noopener" target="_blank">
-                                https://nerdapi.com/contact
+                            <a href="https://games.alexgalhardo.com/contact" rel="external nofollow noopener" target="_blank">
+                                https://games.alexgalhardo.com/contact
                             </a>
                         </p>
                     </li>

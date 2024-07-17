@@ -59,7 +59,7 @@ export default function ResetPasswordForm() {
             <div className="container col-lg-3 mt-5">
                 <h1 className="text-center text-white mb-4">
                     <a className="text-decoration-none" href="/">
-                        <b className="fw-bold text-primary">Nerd API</b>
+                        <b className="fw-bold text-primary">Games</b>
                     </a>
                 </h1>
 

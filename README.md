@@ -1,8 +1,8 @@
 <div align="center">
- <h1 align="center"><a href="https://nerdapi.com/" target="_blank">nerdapi.com</a></h1>
+ <h1 align="center"><a href="https://games.alexgalhardo.com/" target="_blank">games.alexgalhardo.com</a></h1>
 </div>
 
-<https://github.com/AlexGalhardo/nerdapi.com/assets/19540357/5356d6f2-db57-44a9-94a6-432559d2af07>
+<https://github.com/AlexGalhardo/games.alexgalhardo.com/assets/19540357/5356d6f2-db57-44a9-94a6-432559d2af07>
 
 ## Introduction
 
@@ -40,9 +40,9 @@
 - [ ] CI/CD using Github Actions to format code, run unit and end to end tests and deploy to [Vercel](https://vercel.com/)
 
 ## API
-- BackEnd Source Code: <https://github.com/AlexGalhardo/api.nerdapi.com>
-- Documentation Source code: <https://github.com/AlexGalhardo/docs.nerdapi.com>
-- Docs Live: <https://docs.nerdapi.com>
+- BackEnd Source Code: <https://github.com/AlexGalhardo/api.games.alexgalhardo.com>
+- Documentation Source code: <https://github.com/AlexGalhardo/docs.games.alexgalhardo.com>
+- Docs Live: <https://docs.games.alexgalhardo.com>
 
 ## Development Setup Local
 
@@ -50,12 +50,12 @@
 
 1. Clone this repository
 ```bash
-git clone git@github.com:AlexGalhardo/nerdapi.com.git
+git clone git@github.com:AlexGalhardo/games.alexgalhardo.com.git
 ```
 
 2. Enter repository
 ```bash
-cd nerdapi.com/
+cd games.alexgalhardo.com/
 ```
 
 3. Install dependencies

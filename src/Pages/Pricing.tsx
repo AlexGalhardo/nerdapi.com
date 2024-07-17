@@ -83,7 +83,7 @@ export default function Pricing() {
 
     return (
         <>
-            <Head title="Pricing" description="See ours plans to get access to Nerd API!" />
+            <Head title="Pricing" description="See ours plans to get access to Games!" />
             <Navbar />
             <div className="container col-lg-7" style={{ marginTop: "50px" }}>
                 <div className="row">

@@ -25,7 +25,7 @@ export default function Navbar() {
                 <nav className="container col-lg-8 navbar navbar-expand-lg fixed p-3">
                     <div className="container-fluid">
                         <a className="navbar-brand appTitle" href="/">
-                            <span className="fs-4 fw-bold text-white">Nerd API</span>
+                            <span className="fs-4 fw-bold text-white">Games</span>
                         </a>
 
                         <form className="d-flex w-50" onSubmit={handleSearch}>
@@ -82,7 +82,7 @@ export default function Navbar() {
                                     <a
                                         className="fs-5 nav-link text-white"
                                         aria-current="page"
-                                        href="https://docs.nerdapi.com"
+                                        href="https://docs.games.alexgalhardo.com"
                                         target="_blank"
                                     >
                                         API
