@@ -24,79 +24,84 @@ export default function LoginForm() {
 
     return (
         <>
-            <div className="container col-lg-3 mt-5">
-                <h1 className="text-center text-white mb-4">
-                    <a className="text-decoration-none" href="/">
-                        <b className="fw-bold text-primary">Games</b>
-                    </a>
-                </h1>
+  <div className="container mx-auto mt-5 max-w-md">
+    <h1 className="text-center text-white mb-4">
+      <a className="no-underline" href="/">
+        <b className="font-bold text-blue-500">Games</b>
+      </a>
+    </h1>
 
-                <div
-                    id="g_id_onload"
-                    data-client_id="944810954683-ahhpp7q8ndotmd10f96ri6es0kpv2nh1.apps.googleusercontent.com"
-                    data-context="signin"
-                    data-login_uri={`${API_URL}/login/google/callback`}
-                    data-locale="en"
-                ></div>
+    <div
+      id="g_id_onload"
+      data-client_id="944810954683-ahhpp7q8ndotmd10f96ri6es0kpv2nh1.apps.googleusercontent.com"
+      data-context="signin"
+      data-login_uri={`${API_URL}/login/google/callback`}
+      data-locale="en"
+    ></div>
 
-                <a
-                    href="https://github.com/login/oauth/authorize?client_id=dc8d30a5f12828c5d3f9"
-                    className="fs-4 fw-bold button btn-lg btn btn-secondary w-100"
-                >
-                    <i className="bi bi-github me-2"></i>
-                    Login with GitHub
-                </a>
+    <a
+      href="https://github.com/login/oauth/authorize?client_id=dc8d30a5f12828c5d3f9"
+      className="text-xl font-bold btn btn-secondary w-full flex justify-center items-center"
+    >
+      <i className="bi bi-github mr-2"></i>
+      Login with GitHub
+    </a>
 
-                <form onSubmit={handleSubmit}>
-                    <div className="form-group mb-4 mt-5">
-                        <label htmlFor="email" className="text-white mt-3">
-                            Digit Your Email
-                        </label>
-                        <input
-                            className="fs-4 form-control"
-                            placeholder="Digit your email"
-                            minLength={8}
-                            type="email"
-                            name="email"
-                            onChange={(e) => setEmail(e.target.value)}
-                            required
-                        />
-                    </div>
+    <form onSubmit={handleSubmit}>
+      <div className="form-group mb-4 mt-5">
+        <label htmlFor="email" className="text-white mt-3">
+          Digit Your Email
+        </label>
+        <input
+          className="text-xl form-control"
+          placeholder="Digit your email"
+          minLength={8}
+          type="email"
+          name="email"
+          onChange={(e) => setEmail(e.target.value)}
+          required
+        />
+      </div>
 
-                    <div className="form-group mb-4">
-                        <label htmlFor="password" className="text-white mt-3">
-                            Digit Your Password
-                        </label>
-                        <input
-                            className="fs-4 form-control"
-                            minLength={12}
-                            placeholder="Digit your password"
-                            type="password"
-                            name="password"
-                            onChange={(e) => setPassword(e.target.value)}
-                            required
-                        />
-                    </div>
+      <div className="form-group mb-4">
+        <label htmlFor="password" className="text-white mt-3">
+          Digit Your Password
+        </label>
+        <input
+          className="text-xl form-control"
+          minLength={12}
+          placeholder="Digit your password"
+          type="password"
+          name="password"
+          onChange={(e) => setPassword(e.target.value)}
+          required
+        />
+      </div>
 
-                    {loading ? <Button disabled={true}>Processing...</Button> : <Button>Login</Button>}
+      {loading ? (
+        <Button disabled={true}>Processing...</Button>
+      ) : (
+        <Button>Login</Button>
+      )}
 
-                    <ErrorAlertMessage message={error && "Email and/or Password Invalid"} />
-                </form>
+      <ErrorAlertMessage message={error && "Email and/or Password Invalid"} />
+    </form>
 
-                <div className="text-center mt-5">
-                    <p className="text-center mb-3 mt-3">
-                        <a href="/forget-password" className="text-decoration-none">
-                            <b>Forget My Password</b>
-                        </a>
-                    </p>
+    <div className="text-center mt-5">
+      <p className="text-center mb-3 mt-3">
+        <a href="/forget-password" className="no-underline">
+          <b>Forget My Password</b>
+        </a>
+      </p>
 
-                    <p>
-                        <a href="/register" className="text-success text-decoration-none">
-                            <b>Register Account</b>
-                        </a>
-                    </p>
-                </div>
-            </div>
-        </>
+      <p>
+        <a href="/register" className="text-green-500 no-underline">
+          <b>Register Account</b>
+        </a>
+      </p>
+    </div>
+  </div>
+</>
+
     );
 }

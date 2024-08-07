@@ -486,7 +486,11 @@ export default function Privacy() {
                     <li>
                         <p>
                             By visiting this page on our website:{" "}
-                            <a href="https://games.alexgalhardo.com/contact" rel="external nofollow noopener" target="_blank">
+                            <a
+                                href="https://games.alexgalhardo.com/contact"
+                                rel="external nofollow noopener"
+                                target="_blank"
+                            >
                                 https://games.alexgalhardo.com/contact
                             </a>
                         </p>

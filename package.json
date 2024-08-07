@@ -17,7 +17,7 @@
 		"react-bootstrap": "^2.10.4",
 		"react-dom": "^18.3.1",
 		"react-paginate": "^8.2.0",
-		"react-router-dom": "^6.25.0",
+		"react-router-dom": "^6.26.0",
 		"react-toastify": "^10.0.5",
 		"string-similarity": "^4.0.4"
 	},
@@ -26,10 +26,11 @@
 		"@types/react-dom": "^18.3.0",
 		"@types/string-similarity": "^4.0.2",
 		"@vitejs/plugin-react": "^4.3.1",
-		"husky": "^9.0.11",
-		"postcss": "^8.4.39",
+		"husky": "^9.1.4",
+		"postcss": "^8.4.41",
 		"prettier": "^3.3.3",
-		"typescript": "^5.5.3",
-		"vite": "^5.3.4"
+		"tailwindcss": "^3.4.7",
+		"typescript": "^5.5.4",
+		"vite": "^5.3.5"
 	}
 }
